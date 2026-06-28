@@ -1,0 +1,25 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_timer.c(28),INFO" ID="0xa04c00e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="interval too large! @osal_timer.c(32),INFO" ID="0xa04c0105" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_timer.c(41),INFO" ID="0xa04c014d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hrtimer_create fail! @osal_timer.c(46),INFO" ID="0xa04c0175" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_timer.c(57),INFO" ID="0xa04c01cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="interval too large! @osal_timer.c(61),INFO" ID="0xa04c01ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_timer.c(73),INFO" ID="0xa04c024d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="timer_init:0x%x @osal_timer.c(93),INFO" ID="0xa04c02ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_timer.c(96),INFO" ID="0xa04c0305" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="interval:%d invalid! @osal_timer.c(100),INFO" ID="0xa04c0325" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SwtmrCreate fail! ret=%#x. @osal_timer.c(112),INFO" ID="0xa04c0385" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="timer_mod:0x%x @osal_timer.c(132),INFO" ID="0xa04c0425" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="interval=%d param invalid! @osal_timer.c(135),INFO" ID="0xa04c043d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SwtmrDelete fail! ret=%#x. @osal_timer.c(140),INFO" ID="0xa04c0465" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SwtmrCreate fail! ret=%#x. @osal_timer.c(148),INFO" ID="0xa04c04a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SwtmrStart fail! ret=%#x. @osal_timer.c(153),INFO" ID="0xa04c04cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_timer.c(166),INFO" ID="0xa04c0535" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SwtmrStart fail! ret=%#x. @osal_timer.c(172),INFO" ID="0xa04c0565" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_timer.c(180),INFO" ID="0xa04c05a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SwtmrStop fail! ret=%#x. @osal_timer.c(190),INFO" ID="0xa04c05f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="timer_destroy:0x%x @osal_timer.c(198),INFO" ID="0xa04c0635" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_timer.c(201),INFO" ID="0xa04c064d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SwtmrDelete fail! ret=%#x. @osal_timer.c(207),INFO" ID="0xa04c067d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="clock_gettime fail! @osal_timer.c(230),INFO" ID="0xa04c0735" />
+			</MSG_LOG>

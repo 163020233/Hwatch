@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SPP][DLC_ESTAB_CFM] INIT_CREDITIN=%u @spp_fsm.c(158),INFO" ID="0xeb4e04f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SPP][CREITIN_IND] OLD_CREDITIN=%u, NEW_CREDITIN=%u @spp_fsm.c(398),INFO" ID="0xeb4e0c75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SPP][RF_DISC_IND], comm is null, msgid=%u @spp_fsm.c(482),INFO" ID="0xeb4e0f15" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SPP][RF_DISC_IND] msgid=%u, vport=%d, srvchnl=%d, rfhandle=%d, port_value=%d @spp_fsm.c(486),INFO" ID="0xeb4e0f35" />
+			</MSG_LOG>

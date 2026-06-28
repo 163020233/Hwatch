@@ -1,0 +1,81 @@
+config LOSCFG_DRIVERS_UART_VENDOR
+    bool
+
+config LOSCFG_DRIVERS_UART_ARM_PL011
+    bool
+    select LOSCFG_HWI_WITH_ARG      if (LOSCFG_DRIVERS_UART_LITEOS && LOSCFG_DRIVERS_UART)
+    select LOSCFG_BASE_IPC_EVENT    if (LOSCFG_DRIVERS_UART_LITEOS && LOSCFG_DRIVERS_UART)
+    select LOSCFG_KERNEL_RINGBUF    if (LOSCFG_DRIVERS_UART_LITEOS && LOSCFG_DRIVERS_UART)
+
+config LOSCFG_DRIVERS_UART_HQ_UART
+    bool
+    select LOSCFG_HWI_WITH_ARG      if (LOSCFG_DRIVERS_UART_LITEOS && LOSCFG_DRIVERS_UART)
+    select LOSCFG_BASE_IPC_EVENT    if (LOSCFG_DRIVERS_UART_LITEOS && LOSCFG_DRIVERS_UART)
+    select LOSCFG_KERNEL_RINGBUF    if (LOSCFG_DRIVERS_UART_LITEOS && LOSCFG_DRIVERS_UART)
+
+config LOSCFG_DRIVERS_UART_HQ_UART_V5XX
+    bool
+    select LOSCFG_DRIVERS_UART_HQ_UART
+
+config LOSCFG_DRIVERS_UART_HQ_UART_V500
+    bool
+    select LOSCFG_DRIVERS_UART_HQ_UART_V5XX
+
+config LOSCFG_DRIVERS_UART_HQ_UART_V501
+    bool
+    select LOSCFG_DRIVERS_UART_HQ_UART_V5XX
+
+config LOSCFG_DRIVERS_UART_HQ_UART_V502
+    bool
+    select LOSCFG_DRIVERS_UART_HQ_UART_V5XX
+
+config LOSCFG_DRIVERS_UART_HQ_UART_V200
+    bool
+    select LOSCFG_DRIVERS_UART_HQ_UART
+
+config LOSCFG_DRIVERS_UART_VUART_RPQ
+    bool
+    select LOSCFG_KERNEL_RPQUEUE
+
+choice
+    prompt "Uart Type"
+    default LOSCFG_DRIVERS_SIMPLE_UART
+
+config LOSCFG_DRIVERS_UART
+    bool "General Uart"
+    select LOSCFG_BASE_CORE_SWTMR   if LOSCFG_DRIVERS_UART_LINUX
+    select LOSCFG_BASE_IPC_MUX      if LOSCFG_DRIVERS_UART_LINUX
+    select LOSCFG_BASE_IPC_EVENT    if LOSCFG_DRIVERS_UART_LINUX
+    select LOSCFG_COMPAT_LINUX      if LOSCFG_DRIVERS_UART_LINUX
+    select LOSCFG_COMPAT_LINUX_DRIVER_BASE  if LOSCFG_DRIVERS_UART_LINUX
+    select LOSCFG_COMPAT_LINUX_IRQ  if LOSCFG_DRIVERS_UART_LINUX
+    select LOSCFG_DRIVERS_BASE      if LOSCFG_DRIVERS_UART_LITEOS
+
+    help
+      This option indicates that both serial input and output are supported.
+      If LOSCFG_FS_VFS is enabled, the uart will support vfs operations.
+
+config LOSCFG_DRIVERS_SIMPLE_UART
+    bool "Simple Uart"
+    help
+      This option indicates that only serial output is supported.
+
+endchoice
+
+choice
+    prompt "Main Uart Driver"
+
+config LOSCFG_DRIVERS_UART_MAIN_ARM_PL011
+    bool "ARM PL011"
+    depends on LOSCFG_DRIVERS_UART_ARM_PL011
+
+config LOSCFG_DRIVERS_UART_MAIN_HQ_UART
+    bool "HQ UART"
+    depends on LOSCFG_DRIVERS_UART_HQ_UART
+
+config LOSCFG_DRIVERS_UART_MAIN_VUART_RPQ
+    bool "vUart-RPQ"
+    depends on LOSCFG_DRIVERS_UART_VUART_RPQ
+
+endchoice
+

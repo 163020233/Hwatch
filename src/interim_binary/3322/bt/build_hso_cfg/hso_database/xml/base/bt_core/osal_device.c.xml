@@ -1,0 +1,35 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="file invalid @osal_device.c(34),INFO" ID="0xa0300115" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="invalid param! @osal_device.c(39),INFO" ID="0xa030013d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="file invalid @osal_device.c(67),INFO" ID="0xa030021d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="file invalid @osal_device.c(97),INFO" ID="0xa030030d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="kmalloc cmd buffer fail! @osal_device.c(136),INFO" ID="0xa0300445" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="copy_from_user fail! cmd=0x%x @osal_device.c(144),INFO" ID="0xa0300485" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="cmd %x invalid @osal_device.c(150),INFO" ID="0xa03004b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="cmd %x invalid @osal_device.c(180),INFO" ID="0xa03005a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="file invalid @osal_device.c(196),INFO" ID="0xa0300625" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="file invalid @osal_device.c(251),INFO" ID="0xa03007dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pfdev is NULL @osal_device.c(287),INFO" ID="0xa03008fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="snprintf_s fail! ret=%#x. @osal_device.c(292),INFO" ID="0xa0300925" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="register_driver fail! ret=%#x. @osal_device.c(297),INFO" ID="0xa030094d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pfdev is NULL @osal_device.c(308),INFO" ID="0xa03009a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="snprintf_s fail! ret=%#x. @osal_device.c(313),INFO" ID="0xa03009cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unregister_driver fail! ret=%#x. @osal_device.c(318),INFO" ID="0xa03009f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_device.c(364),INFO" ID="0xa0300b65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="platform_device_register fail! ret=%#x. @osal_device.c(373),INFO" ID="0xa0300bad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="platform_device_unregister fail! ret=%#x. @osal_device.c(385),INFO" ID="0xa0300c0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="platform_drive_unregister fail! ret=%#x. @osal_device.c(403),INFO" ID="0xa0300c9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_device.c(424),INFO" ID="0xa0300d45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="kmalloc fail! @osal_device.c(429),INFO" ID="0xa0300d6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memset_s fail! @osal_device.c(435),INFO" ID="0xa0300d9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memset_s fail! @osal_device.c(440),INFO" ID="0xa0300dc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_device.c(450),INFO" ID="0xa0300e15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_device.c(464),INFO" ID="0xa0300e85" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fops param invalid! @osal_device.c(469),INFO" ID="0xa0300ead" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="kmalloc fail! @osal_device.c(474),INFO" ID="0xa0300ed5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="memset_s fail! ret=%#x. @osal_device.c(481),INFO" ID="0xa0300f0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_device.c(502),INFO" ID="0xa0300fb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="platform_unregister fail! @osal_device.c(509),INFO" ID="0xa0300fed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="table(NULL) invalid! @osal_device.c(520),INFO" ID="0xa0301045" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="wait(NULL) invalid! @osal_device.c(525),INFO" ID="0xa030106d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_device.c(534),INFO" ID="0xa03010b5" />
+			</MSG_LOG>

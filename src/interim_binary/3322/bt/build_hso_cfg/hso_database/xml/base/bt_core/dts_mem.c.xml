@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][mem]dts_malloc: size(0x%x)LR(0x%x) @dts_mem.c(72),ERROR" ID="0x88840242" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][mem]btc_info_free err: free_LR(0x%x)malloc_LR(0x%x)verify_flag(0x%x)last_free_lr(0x%x) @dts_mem.c(93),ERROR" ID="0x888402ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][mem]dts_malloc: size(0x%x) @dts_mem.c(200),ERROR" ID="0x88840642" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BTC heap]address: %p, lr: %p, size: %d @dts_mem.c(233),INFO" ID="0x8884074d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BTC heap]address: 0x%p, lr: 0x%p, size: %d @dts_mem.c(246),INFO" ID="0x888407b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BTC heap]heap used: %d, max heap used: %d, heap size:%d @dts_mem.c(256),INFO" ID="0x88840805" />
+			</MSG_LOG>

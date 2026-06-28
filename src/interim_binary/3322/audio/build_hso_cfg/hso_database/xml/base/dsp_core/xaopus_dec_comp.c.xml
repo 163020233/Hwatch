@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xaopus_dec_comp.c(151),ERROR" ID="0x992004ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;bit_depth = %u @xaopus_dec_comp.c(157),ERROR" ID="0x992004ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xaopus_dec_comp.c(165),ERROR" ID="0x9920052a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call opus_decoder_create Failed, Error Code: [0x%08X] @xaopus_dec_comp.c(236),ERROR" ID="0x99200762" />
+			</MSG_LOG>

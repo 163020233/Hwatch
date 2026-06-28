@@ -1,0 +1,50 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_cal_rx_flush_time_cnt, iog_env is null, iog_idx=%d. @evt_task_gle_iob_data.c(85),ERROR" ID="0x8b9a02aa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] evt_task_gle_iob_cal_rx_flush_time_cnt, rx_ft is invalid, iog_idx=%d, rx_ft=%d, rx_bn=%d. @evt_task_gle_iob_data.c(92),ERROR" ID="0x8b9a02e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_cal_rx_pld_cnt, iog_env is null, iog_idx=%d. @evt_task_gle_iob_data.c(126),ERROR" ID="0x8b9a03f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_cal_rx_pld_cnt, rx_bn is invalid, iog_idx=%d, rx_bn=%d. @evt_task_gle_iob_data.c(133),ERROR" ID="0x8b9a042a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_cal_next_flush_time, iog_env is null, iog_idx=%d. @evt_task_gle_iob_data.c(147),ERROR" ID="0x8b9a049a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_save_next_flush_time, iog_env is null, iog_idx=%d. @evt_task_gle_iob_data.c(177),ERROR" ID="0x8b9a058a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_save_next_flush_time, rx_bn is invalid, iog_idx=%d, rx_bn=%d. @evt_task_gle_iob_data.c(184),ERROR" ID="0x8b9a05c2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_gle_iob_save_next_flush_time: last_ts_g=%d, ft_cnt=%d, pld_cnt=%d, next_ftime=%u. @evt_task_gle_iob_data.c(200),DBG" ID="0x8b9a0646" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_rx_flush_timeout_check, iog_env is null, iog_idx=%d. @evt_task_gle_iob_data.c(214),ERROR" ID="0x8b9a06b2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_gle_iob_rx_flush_timeout_check:cnt %d, clk off %d, curtime %d @evt_task_gle_iob_data.c(232),ERROR" ID="0x8b9a0742" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[BGTP] gle_iob_rx_flush_timeout: conhdl=%d, g_time=%u, pkt_seq_num=%d, pld_cnt=%d, rx_flush_ts=%d @evt_task_gle_iob_data.c(238),DBG" ID="0x8b9a0776" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] iob_counter=%d, next pkt_seq_num=%d, pld_cnt=%d, rx_flush_time=%u. @evt_task_gle_iob_data.c(252),DBG" ID="0x8b9a07e6" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_send_empty_pkt_to_dsp, iog_env is null, iog_idx=%d. @evt_task_gle_iob_data.c(269),ERROR" ID="0x8b9a086a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_send_empty_pkt_to_dsp, invalid rx sn=%d, pkt_seq_num=%d. @evt_task_gle_iob_data.c(279),ERROR" ID="0x8b9a08ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_send_empty_pkt_to_dsp, invalid rx sn=%d, pkt_seq_num=%d. @evt_task_gle_iob_data.c(286),ERROR" ID="0x8b9a08f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_send_empty_pkt_to_dsp: pkt_seq_num=%d. @evt_task_gle_iob_data.c(294),INFO" ID="0x8b9a0935" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_send_empty_pkt_to_dsp: pkt_seq_num=%d. @evt_task_gle_iob_data.c(308),INFO" ID="0x8b9a09a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_send_data_to_hci: build data failed, iob_conhdl=%d, length=%d @evt_task_gle_iob_data.c(367),ERROR" ID="0x8b9a0b7a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_gle_iob_send_data_to_hci: iob_conhdl=%d, rx_base=%lu, pkt_seq_num=%d, length=%d. @evt_task_gle_iob_data.c(372),INFO" ID="0x8b9a0ba5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_gle_iob_send_data_to_dsp: iob_conhdl=%d, rx_base=%lu, pkt_seq_num=%d, length=%d @evt_task_gle_iob_data.c(404),DBG" ID="0x8b9a0ca6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_iob_send_data_to_dsp length is 0 @evt_task_gle_iob_data.c(407),ERROR" ID="0x8b9a0cba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][SEND_DATA]iob_send_data_to_dsp_by_uart, build data failed, iob_conhdl %d, length %d @evt_task_gle_iob_data.c(426),ERROR" ID="0x8b9a0d52" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[L2][SEND_DATA]iob_send_data_to_dsp_by_uart, iob_conhdl %d, rx_sn %d, pkt_seq_num %d, length %d, iog_cnt_diff %d @evt_task_gle_iob_data.c(434),INFO" ID="0x8b9a0d95" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_send_data_to_sh: build data failed, iob_conhdl=%d, length=%d @evt_task_gle_iob_data.c(461),ERROR" ID="0x8b9a0e6a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_gle_iob_send_data_to_sh: iob_conhdl=%d, iob_counter=%u, pkt_seq_num=%d, length=%d. @evt_task_gle_iob_data.c(466),INFO" ID="0x8b9a0e95" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_send_data_to_sh: not support spatial audio data, iob_conhdl=%d, length=%d @evt_task_gle_iob_data.c(474),ERROR" ID="0x8b9a0ed2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[IOB][RX]RX LEN ERR! @evt_task_gle_iob_data.c(483),ERROR" ID="0x8b9a0f1a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IOB_DATA]evt_task_gle_iob_process_rx_content_isr, data path is invalid, iob_conhdl %d, output_data_path %d @evt_task_gle_iob_data.c(498),WARNING" ID="0x8b9a0f93" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] iob event task set input data path failed, iob_env is null, iob_conhdl: %d. @evt_task_gle_iob_data.c(506),ERROR" ID="0x8b9a0fd2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] iob event task set input data path failed, invalid path id. iob_conhdl: %d, data_path_id: %d. @evt_task_gle_iob_data.c(513),ERROR" ID="0x8b9a100a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] iob event task set input data path successed. iob_conhdl: %d, data_path_id: %d. @evt_task_gle_iob_data.c(519),INFO" ID="0x8b9a103d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] iob event task set output data path failed, iob_env is null, iob_conhdl: %d. @evt_task_gle_iob_data.c(527),ERROR" ID="0x8b9a107a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] iob event task set output data path failed, invalid path id. iob_conhdl: %d, data_path_id: %d. @evt_task_gle_iob_data.c(534),ERROR" ID="0x8b9a10b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] iob event task set output data path successed. iob_conhdl: %d, data_path_id: %d. @evt_task_gle_iob_data.c(540),INFO" ID="0x8b9a10e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] iob event task start toggle failed, iob_env is null, iob_conhdl: %d. @evt_task_gle_iob_data.c(555),ERROR" ID="0x8b9a115a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] iob event task start toggle, iog_env is null, iog_idx: %d. @evt_task_gle_iob_data.c(561),ERROR" ID="0x8b9a118a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[BGTP] gle_iob_start_tog, conhdl=%d, contr_delay=%u, sync_delay=%u, sync_clk_p=%u, sync_delay_p=%d @evt_task_gle_iob_data.c(567),INFO" ID="0x8b9a11bd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] gle_iob_start_tog, g_tog_clock_125=%u, tog_clock_125=%u, tog_us_offset=%u @evt_task_gle_iob_data.c(613),INFO" ID="0x8b9a132d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_stop_tog, iob_conhdl=%d. @evt_task_gle_iob_data.c(621),INFO" ID="0x8b9a136d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][DATA_PATH]Tog0 not started! Current type %d, handle %d @evt_task_gle_iob_data.c(636),ERROR" ID="0x8b9a13e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][DATA_PATH]gle_iob_start_tog1, iob_env is null, iob_conhdl %d. @evt_task_gle_iob_data.c(643),ERROR" ID="0x8b9a141a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][DATA_PATH]gle_iob_start_tog1, iog_env is null, iog_idx %d. @evt_task_gle_iob_data.c(650),ERROR" ID="0x8b9a1452" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[L2][DATA_PATH]gle_iob_start_tog1, g_tog_clock_125 0x%x, tog_clock_125 0x%x, tog_us_offset 0x%x, tog1_start_counter %d, sync_counter_p %d. @evt_task_gle_iob_data.c(679),INFO" ID="0x8b9a153d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][DATA_PATH]evt_task_gle_iob_stop_tog1, iob_conhdl %d. @evt_task_gle_iob_data.c(687),INFO" ID="0x8b9a157d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] iob event task start toggle2, iog_env is null, iog_idx: %d. @evt_task_gle_iob_data.c(701),ERROR" ID="0x8b9a15ea" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[BGTP] gle_iob_start_tog2, conhdl=%d, contr_delay=%u, sync_delay=%u, ft_cnt=%d, sync_counter_p=%d @evt_task_gle_iob_data.c(707),INFO" ID="0x8b9a161d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] gle_iob_start_tog2, g_tog_clock_125=%u, tog_clock_125=%u, tog_us_offset=%u, toggle_sn=%u @evt_task_gle_iob_data.c(731),INFO" ID="0x8b9a16dd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_gle_iob_tog_calibrate, iob_conhdl=%d, counter=%lu, basetime_cnt=%u, finetime_cnt=%d. @evt_task_gle_iob_data.c(750),INFO" ID="0x8b9a1775" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] evt_task_gle_iob_tog_context_update: iob_conhdl=%d, base_offset=%u, new_offset=%u @evt_task_gle_iob_data.c(759),INFO" ID="0x8b9a17bd" />
+			</MSG_LOG>

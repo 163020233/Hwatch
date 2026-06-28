@@ -1,0 +1,59 @@
+.container {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  left: 0px;
+  top: 0px;
+  width: 454px;
+  height: 454px;
+}
+
+.header {
+  width: 454px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1890ff;
+}
+
+.title {
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+}
+
+.todo-wrapper {
+  width: 454px;
+  height: 454px;
+}
+
+.section-header {
+  width: 454px;
+  height: 80px;
+  background-color: #f0f0f0;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.todo-item {
+  width: 454px;
+  height: 80px;
+  flex-direction: column;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.todo-title {
+  width: 454px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 24px;
+}

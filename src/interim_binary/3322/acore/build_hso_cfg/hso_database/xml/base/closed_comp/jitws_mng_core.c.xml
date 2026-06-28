@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SAVE_MOBILE_HANDLE]HANDLE=0x%x @jitws_mng_core.c(131),INFO" ID="0xebe8041d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS][GET_MOBILE_HANDLE]Joint ADDR=%02x:%02x:*:*:*:%02x @jitws_mng_core.c(143),INFO" ID="0xebe8047d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS][GET_MOBILE_HANDLE]handle invalid, ADDR=%02x:%02x:*:*:*:%02x @jitws_mng_core.c(145),INFO" ID="0xebe8048d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][START_JOINT_FAIL][EXIT_MOBILE_SNIFF] RESULT=0x%x @jitws_mng_core.c(181),INFO" ID="0xebe805ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][JITWS][START_JOINT_FAIL][EXIT_PEER_SNIFF]RESULT=0x%x @jitws_mng_core.c(248),ERROR" ID="0xebe807c2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[JITWS][START_JOINT] addr:%02x:%02x:*:*:*:%02x one_to_two_flag:%u. @jitws_mng_core.c(270),INFO" ID="0xebe80875" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][STOP_JOINT_FAIL]arg malloc fail @jitws_mng_core.c(320),WARNING" ID="0xebe80a03" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][CLEANUP]memcpy fail @jitws_mng_core.c(368),WARNING" ID="0xebe80b83" />
+			</MSG_LOG>

@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][lm_classic_acl_srv_enc_alg_h3]src_id=0x%x @lm_classic_acl_srv_enc_alg.c(54),ERROR" ID="0x8a5401b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][lm_classic_acl_srv_auth_alg_h4]src_id=0x%x @lm_classic_acl_srv_enc_alg.c(90),ERROR" ID="0x8a5402d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][lm_classic_acl_srv_auth_alg_h5]src_id=0x%x @lm_classic_acl_srv_enc_alg.c(122),ERROR" ID="0x8a5403d2" />
+			</MSG_LOG>

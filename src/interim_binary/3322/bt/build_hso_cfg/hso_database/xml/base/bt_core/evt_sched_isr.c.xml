@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="finetarget_time(0x%x) is smaller than or equal to cur_time(0x%x), lr 0x%x, task_id = 0x%x @evt_sched_isr.c(206),WARNING" ID="0x8ad60673" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[es] es_finetimer_isr late cancel: task id 0x%x, timestamp 0x%x, latency %d, current 0x%x @evt_sched_isr.c(266),WARNING" ID="0x8ad60853" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="es_slot625_isr clock late, clock 0x%x, finecnt %d, con_hdl %d, isr time info 0x%x @evt_sched_isr.c(366),WARNING" ID="0x8ad60b73" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="es_slot625_isr repeat, clock 0x%x, finecnt %d, con_hdl %d, isr time info 0x%x @evt_sched_isr.c(376),WARNING" ID="0x8ad60bc3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="es_slot_enable, clk cb is not null. New con hdl %d, old con hdl %d @evt_sched_isr.c(399),ERROR" ID="0x8ad60c7a" />
+			</MSG_LOG>

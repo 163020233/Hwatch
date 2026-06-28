@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]em_wr memcpy_s fail sys_len(%d) em_len(%d) @em_mgr.c(47),WARNING" ID="0x888c017b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]em_set memset_s fail sys_len(%d) em_len(%d) @em_mgr.c(61),WARNING" ID="0x888c01eb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]em_rd memcpy_s fail sys_len(%d) em_len(%d) @em_mgr.c(75),WARNING" ID="0x888c025b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]CBB %d init em timeout! @em_mgr.c(170),INFO" ID="0x888c0555" />
+			</MSG_LOG>

@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dm_ble_hci_le_encrypt_done memcpy error! @dm_ble.c(283),ERROR" ID="0x8a0c08da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L3][BLE]set_max_txpower, adjusted acl pwr level, sed_id=%d @dm_ble.c(799),INFO" ID="0x8a0c18fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L3][BLE]set_max_txpower, adjusted adv pwr level, sed_id=%d @dm_ble.c(804),INFO" ID="0x8a0c1925" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L3][BLE]set_max_txpower, adjusted scan pwr level, sed_id=%d @dm_ble.c(814),INFO" ID="0x8a0c1975" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L3][BLE]set_max_txpower, adjusted initiate pwr level, sed_id=%d @dm_ble.c(821),INFO" ID="0x8a0c19ad" />
+			</MSG_LOG>

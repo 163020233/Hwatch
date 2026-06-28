@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="bt_hci_general_process_cmds module_id:%x cmd_evt_code:%x is not matched. @sapi_ble_hci.c(42),ERROR" ID="0xedd60152" />
+			</MSG_LOG>

@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] not restore maxslot @lm_classic_sco_fsm.c(70),WARNING" ID="0x8a020233" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_classic_sco_fsm_create_srv fsm_id(0x%x) @lm_classic_sco_fsm.c(155),INFO" ID="0x8a0204dd" />
+			</MSG_LOG>

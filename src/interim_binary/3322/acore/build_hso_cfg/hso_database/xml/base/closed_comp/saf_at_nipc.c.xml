@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf nipc read net id fail, ret: 0x%x @saf_at_nipc.c(148),ERROR" ID="0xe98004a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf nipc read operator name fail, ret: 0x%x @saf_at_nipc.c(159),ERROR" ID="0xe98004fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf nipc read network standard fail, ret: 0x%x @saf_at_nipc.c(170),ERROR" ID="0xe9800552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf nipc read network signal strength fail, ret: 0x%x @saf_at_nipc.c(181),ERROR" ID="0xe98005aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf nipc register client fail, ret: 0x%x @saf_at_nipc.c(198),ERROR" ID="0xe9800632" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf nipc unregister client fail, ret: 0x%x @saf_at_nipc.c(208),ERROR" ID="0xe9800682" />
+			</MSG_LOG>

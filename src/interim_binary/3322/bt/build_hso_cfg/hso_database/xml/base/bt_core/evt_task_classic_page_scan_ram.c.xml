@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]create_fsm: fsm_register failed @evt_task_classic_page_scan_ram.c(94),WARNING" ID="0x8b0a02f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]pscan_init: pscan_desc is NULL! @evt_task_classic_page_scan_ram.c(174),WARNING" ID="0x8b0a0573" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]pscan_init: ES_MEM_ALLOC_FAIL! @evt_task_classic_page_scan_ram.c(181),ERROR" ID="0x8b0a05aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PSCAN]pscan_init: es_insert_fail, con_hdl %d @evt_task_classic_page_scan_ram.c(192),WARNING" ID="0x8b0a0603" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]evt_cbk: get desc failed @evt_task_classic_page_scan_ram.c(215),WARNING" ID="0x8b0a06bb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PSCAN]fhs_rx: con_hdl %d, peer bdaddr is same as local, abort ID Tx @evt_task_classic_page_scan_ram.c(241),INFO" ID="0x8b0a078d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]isr_cbk: prog elt is NULL @evt_task_classic_page_scan_ram.c(255),WARNING" ID="0x8b0a07fb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]isr_cbk: get desc failed @evt_task_classic_page_scan_ram.c(262),WARNING" ID="0x8b0a0833" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PSCAN]isr_cbk: get es_env failed, con_hdl %d @evt_task_classic_page_scan_ram.c(269),ERROR" ID="0x8b0a086a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PSCAN]isr_cbk: es_elt is NULL, con_hdl %d @evt_task_classic_page_scan_ram.c(274),ERROR" ID="0x8b0a0892" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_PSCAN]isr_cbk: task id error, prog_task_id=0x%x, pscan_task_id=0x%x, time_info=0x%x @evt_task_classic_page_scan_ram.c(280),WARNING" ID="0x8b0a08c3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PSCAN]pscan_stop: con_hdl %d, pscan_par-&gt;evt_status:%d @evt_task_classic_page_scan_ram.c(309),INFO" ID="0x8b0a09ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]start_cbk: get desc failed @evt_task_classic_page_scan_ram.c(368),WARNING" ID="0x8b0a0b83" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]start_cbk: es_env-&gt;es_elt != elt @evt_task_classic_page_scan_ram.c(374),WARNING" ID="0x8b0a0bb3" />
+			</MSG_LOG>

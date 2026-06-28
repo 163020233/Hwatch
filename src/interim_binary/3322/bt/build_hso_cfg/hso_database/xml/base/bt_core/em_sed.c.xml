@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="em_alloc_head_sed_id user_type(%d)sed_id(%d) @em_sed.c(42),INFO" ID="0x88800155" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_head_sed_id fail user_type(%d) @em_sed.c(46),ERROR" ID="0x88800172" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="em_alloc_tail_sed_id user_type(%d)sed_id(%d) @em_sed.c(63),INFO" ID="0x888001fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_tail_sed_id fail user_type(%d) @em_sed.c(67),ERROR" ID="0x8880021a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="em_alloc_head_iog_sed_id user_type(%d)sed_id(%d) @em_sed.c(84),INFO" ID="0x888002a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_head_iog_sed_id fail user_type(%d) @em_sed.c(88),ERROR" ID="0x888002c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="em_alloc_tail_sed_id user_type(%d)sed_id(%d) @em_sed.c(105),INFO" ID="0x8880034d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_tail_iog_sed_id fail user_type(%d) @em_sed.c(109),ERROR" ID="0x8880036a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="em_alloc_head_classic_sed_id user_type(%d)sed_id(%d) @em_sed.c(120),INFO" ID="0x888003c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_head_classic_sed_id fail user_type(%d) @em_sed.c(124),ERROR" ID="0x888003e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="em_alloc_tail_classic_sed_id user_type(%d)sed_id(%d) @em_sed.c(134),INFO" ID="0x88800435" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_tail_classic_sed_id fail user_type(%d) @em_sed.c(138),ERROR" ID="0x88800452" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="em_update_classic_sed_id_user_type sed_id(%d)old_user_type(%d)new_user_type(%d) @em_sed.c(146),INFO" ID="0x88800495" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_free_sed_id sed_id(%d) @em_sed.c(163),INFO" ID="0x8880051d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_free_sed_id sed_id(%d) @em_sed.c(173),INFO" ID="0x8880056d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_free_iog_sed_id sed_id(%d) @em_sed.c(183),INFO" ID="0x888005bd" />
+			</MSG_LOG>

@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[RFCOMM][FSM]rfcomm uih signal general, dlci=%d, cr=%d, type=%d, status=%d @rfcomm_fsm.c(606),INFO" ID="0xeade12f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[RFCOMM][CMD_TIMEOUT] ddlci=0x%x, dlcix_status=%d, type=%d @rfcomm_fsm.c(732),WARNING" ID="0xeade16e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[RFCOMM][CMD_TIMEOUT]NO MORE DLCIX, DISC DLCI0 @rfcomm_fsm.c(745),WARNING" ID="0xeade174b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[RFCOMM][FSM]rfcommc security cfm, ddlci=%d, mask=%d, bond=%d, status=%d @rfcomm_fsm.c(907),INFO" ID="0xeade1c5d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[RFCOMM][CONNECT_REQ] SERVER_CHANNEL=%u, dlci0 status=%d @rfcomm_fsm.c(984),INFO" ID="0xeade1ec5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[RFCOMM][L2CAP_IND]Create REMOTE_ADDR=%02x:%02x:**:**:**:%02x, LOCAL_CID=0x%x @rfcomm_fsm.c(1114),INFO" ID="0xeade22d5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[RFCOMM][L2CAP_IND]Obj has been exist, REMOTE_ADDR=%02x:%02x:**:**:**:%02x, LOCAL_CID=0x%x @rfcomm_fsm.c(1121),WARNING" ID="0xeade230b" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[RFCOMM][L2CAP_DISC_IND]Can't find obj for ADDR=%02x:%02x:**:**:**:%02x, CID=0x%x, REASON=0x%x @rfcomm_fsm.c(1174),WARNING" ID="0xeade24b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[RFCOMM][FSM]rfcomm dlc ix uih req rom error @rfcomm_fsm.c(1324),INFO" ID="0xeade2965" />
+			</MSG_LOG>

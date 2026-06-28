@@ -1,0 +1,32 @@
+include $(RTOSLITETOPDIR)/config.mk
+
+MODULE_$(LOSCFG_FS_COMPAT_NUTTX) += compat
+MODULE_$(LOSCFG_FS_VFS) += vfs
+MODULE_$(LOSCFG_FS_VFS_BLOCK_DEVICE) += vfs/bch
+MODULE_$(LOSCFG_DRIVER_DISK) += vfs/disk
+
+MODULE_$(LOSCFG_FS_FAT) += fat
+MODULE_$(LOSCFG_FS_FAT_VIRTUAL_PARTITION) += fat/virpart
+MODULE_$(LOSCFG_FS_FAT_CACHE) += vfs/bcache
+MODULE_$(LOSCFG_FS_FAT_FTL) += vfs/ftl
+MODULE_$(LOSCFG_FS_FAT_UNI_TRIM) += vfs/utrim
+
+MODULE_$(LOSCFG_FS_RAMFS) += ramfs
+
+MODULE_$(LOSCFG_FS_YAFFS) += yaffs2
+
+MODULE_$(LOSCFG_FS_NFS) += nfs
+
+MODULE_$(LOSCFG_FS_PROC) += proc
+
+MODULE_$(LOSCFG_FS_JFFS) += jffs2
+
+MODULE_$(LOSCFG_FS_ROMFS) += romfs
+
+MODULE_$(LOSCFG_FS_LITTLEFS) += littlefs
+
+ifeq ($(LOSCFG_COMPAT_LINUX), y)
+MODULE_$(LOSCFG_FS_VFS) += vfs/multi_partition
+endif
+
+include $(MODULE)

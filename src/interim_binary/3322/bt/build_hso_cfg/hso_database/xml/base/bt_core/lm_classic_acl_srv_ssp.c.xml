@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSP] start SSP as initiator. @lm_classic_acl_srv_ssp.c(33),INFO" ID="0x89c8010d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] start SSP as responder. @lm_classic_acl_srv_ssp.c(61),INFO" ID="0x89c801ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSP] lm_classic_acl_srv_ssp_create_info_srv Secure Connection %d, Debug Mode %d. @lm_classic_acl_srv_ssp.c(110),INFO" ID="0x89c80375" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_response_timeout_act Remote device not responding, procedure ends. @lm_classic_acl_srv_ssp.c(265),WARNING" ID="0x89c8084b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_check_conflict transaction collision occurred, solving conflicts. @lm_classic_acl_srv_ssp.c(296),INFO" ID="0x89c80945" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP] lm_classic_acl_srv_ssp_defer_early_arrived_msg remote runs faster, message 0x%x deferred. @lm_classic_acl_srv_ssp.c(337),INFO" ID="0x89c80a8d" />
+			</MSG_LOG>

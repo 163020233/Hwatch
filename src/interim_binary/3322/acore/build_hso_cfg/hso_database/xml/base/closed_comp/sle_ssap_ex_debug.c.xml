@@ -1,0 +1,33 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug]data_len = %u @sle_ssap_ex_debug.c(20),ERROR" ID="0xea3000a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]data[%u] = 0x%x  @sle_ssap_ex_debug.c(22),ERROR" ID="0xea3000b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug] inst NULL = 0x%x @sle_ssap_ex_debug.c(29),ERROR" ID="0xea3000ea" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ssap_ex_debug]inst info, inst_id = %u server_id = %u property_count = %u @sle_ssap_ex_debug.c(36),ERROR" ID="0xea300122" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]inst info start_handle = %u end_handle = %u @sle_ssap_ex_debug.c(42),ERROR" ID="0xea300152" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]inst info, property_handle[%u]= %u @sle_ssap_ex_debug.c(49),ERROR" ID="0xea30018a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug] add service param NULL = 0x%x @sle_ssap_ex_debug.c(57),ERROR" ID="0xea3001ca" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]add_service ret=0x%x handle=%u uuid=0x%x 0x%x @sle_ssap_ex_debug.c(67),ERROR" ID="0xea30021a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug] add property param NULL = 0x%x @sle_ssap_ex_debug.c(75),ERROR" ID="0xea30025a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]add_property ret=0x%x handle=%u service_handle=%u property_addr=0x%x @sle_ssap_ex_debug.c(86),ERROR" ID="0xea3002b2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]add_property permissions=0x%x operate_indication=0x%x value_addr=0x%x val_len=%u @sle_ssap_ex_debug.c(94),ERROR" ID="0xea3002f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]add_property uuid=0x%x 0x%x @sle_ssap_ex_debug.c(100),ERROR" ID="0xea300322" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]add_property value=0x%x 0x%x @sle_ssap_ex_debug.c(107),ERROR" ID="0xea30035a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug] add method param NULL = 0x%x @sle_ssap_ex_debug.c(118),ERROR" ID="0xea3003b2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]add_method ret=0x%x handle=%u service_handle=%u property_addr=0x%x @sle_ssap_ex_debug.c(128),ERROR" ID="0xea300402" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]add_method permissions=0x%x operate_indication=0x%x value_addr=0x%x val_len=%u @sle_ssap_ex_debug.c(136),ERROR" ID="0xea300442" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]add_method uuid=0x%x 0x%x @sle_ssap_ex_debug.c(142),ERROR" ID="0xea300472" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug] add event param NULL = 0x%x @sle_ssap_ex_debug.c(152),ERROR" ID="0xea3004c2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]add_event ret=0x%x handle=%u service_handle=%u property_addr=0x%x @sle_ssap_ex_debug.c(162),ERROR" ID="0xea300512" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]add_event permissions=0x%x operate_indication=0x%x value_addr=0x%x val_len=%u @sle_ssap_ex_debug.c(170),ERROR" ID="0xea300552" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]add_event uuid=0x%x 0x%x @sle_ssap_ex_debug.c(176),ERROR" ID="0xea300582" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug] add des param NULL = 0x%x @sle_ssap_ex_debug.c(186),ERROR" ID="0xea3005d2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]add_des ret=0x%x property_handle=%u type=%u permissions=0x%x @sle_ssap_ex_debug.c(196),ERROR" ID="0xea300622" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]add_des operate_indication=0x%x value=%u value_len=&amp;u  @sle_ssap_ex_debug.c(203),ERROR" ID="0xea30065a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]add_des des value=0x%x 0x%x @sle_ssap_ex_debug.c(213),ERROR" ID="0xea3006aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex_debug]add_des cc value=0x%x 0x%x @sle_ssap_ex_debug.c(221),ERROR" ID="0xea3006ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug] rsp param NULL = 0x%x @sle_ssap_ex_debug.c(231),ERROR" ID="0xea30073a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]response ret=0x%x conn_id=%u status=%u request_id=0x%x @sle_ssap_ex_debug.c(241),ERROR" ID="0xea30078a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug] notify param NULL = 0x%x @sle_ssap_ex_debug.c(251),ERROR" ID="0xea3007da" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]ntf_ind ret=0x%x conn_id=%u handle=%u type=0x%x @sle_ssap_ex_debug.c(260),ERROR" ID="0xea300822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex_debug] method rsp param NULL = 0x%x @sle_ssap_ex_debug.c(270),ERROR" ID="0xea300872" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ssap_ex_debug]method rsp ret=0x%x conn_id=%u handle=%u type=0x%x @sle_ssap_ex_debug.c(279),ERROR" ID="0xea3008ba" />
+			</MSG_LOG>

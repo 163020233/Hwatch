@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_info_cancel_pair local host does not support SSP @lm_classic_acl_srv_ssp_info.c(143),WARNING" ID="0x89ca047b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_info_cancel_pair remote host does not support SSP @lm_classic_acl_srv_ssp_info.c(149),WARNING" ID="0x89ca04ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_info_generate_public_key_done memcpy private key error! @lm_classic_acl_srv_ssp_info.c(287),ERROR" ID="0x89ca08fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_info_generate_public_key_done memcpy public key X error! @lm_classic_acl_srv_ssp_info.c(295),ERROR" ID="0x89ca093a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_info_generate_public_key_done memcpy public key Y error! @lm_classic_acl_srv_ssp_info.c(302),ERROR" ID="0x89ca0972" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_info_continue_transmit_public_key memcpy error! @lm_classic_acl_srv_ssp_info.c(435),ERROR" ID="0x89ca0d9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP] transmit public key packet No.%d @lm_classic_acl_srv_ssp_info.c(439),INFO" ID="0x89ca0dbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_info_continue_recieve_public_key memcpy error! @lm_classic_acl_srv_ssp_info.c(527),ERROR" ID="0x89ca107a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP] recieve public key packet No.%d @lm_classic_acl_srv_ssp_info.c(530),INFO" ID="0x89ca1095" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_info_calculate_dhkey_done memcpy error! @lm_classic_acl_srv_ssp_info.c(574),ERROR" ID="0x89ca11f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] Stage 1(infomation exchange) finished successfully! @lm_classic_acl_srv_ssp_info.c(597),INFO" ID="0x89ca12ad" />
+			</MSG_LOG>

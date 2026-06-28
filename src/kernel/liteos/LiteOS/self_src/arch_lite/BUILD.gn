@@ -1,0 +1,67 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../build/gn/config.gni")
+
+group("arch_lite") {
+    deps = []
+    if (defined(LOSCFG_ARCH_ARM_AARCH32)) {
+        deps += ["arm"]
+    }
+    if (defined(LOSCFG_ARCH_ARM_AARCH64)) {
+        deps += ["arm64"]
+    }
+    if (defined(xtensa)) {
+        deps += ["xtensa"]
+    }
+    if (defined(LOSCFG_ARCH_RISCV32)) {
+        deps += ["riscv"]
+    }
+    if (defined(LOSCFG_ARCH_LINGLONG)) {
+        deps += ["linglong"]
+    }
+}
+
+config("public") {
+    include_dirs = []
+    configs = []
+    if (defined(LOSCFG_ARCH_ARM_AARCH32)) {
+        if (defined(LOSCFG_ARCH_ARM_CORTEX_M)) {
+            include_dirs += [
+                "$LITEOSTOPDIR/arch_lite/arm/cortex_m/include",
+            ]
+        } else {
+            include_dirs += ["$LITEOSTOPDIR/arch_lite/arm/cortex_a_r/include"]
+        }
+        configs += ["arm:public"]
+    }
+    
+    if (defined(LOSCFG_ARCH_ARM_AARCH64)) {
+        include_dirs += ["$LITEOSTOPDIR/arch_lite/arm64/include"]
+        configs += ["arm64:public"]
+    }
+
+    if (defined(LOSCFG_ARCH_MMU_ENABLE)) {
+        include_dirs += ["$LITEOSTOPDIR/arch_lite/common/mmu/include"]
+    }
+
+    if (defined(LOSCFG_ARCH_XTENSA_XEA2)) {
+        include_dirs += ["$LITEOSTOPDIR/arch_lite/xtensa/xea2/include"]
+        configs += ["xtensa:public"]
+    } else if (defined(LOSCFG_ARCH_XTENSA_XEA3)) {
+        include_dirs += ["$LITEOSTOPDIR/arch_lite/xtensa/xea3/include"]
+        configs += ["xtensa:public"]
+    }
+
+    if (defined(LOSCFG_ARCH_RISCV32)) {
+        include_dirs += ["$LITEOSTOPDIR/arch_lite/riscv/include"]
+        configs += ["riscv:public"]
+    }
+
+    if (defined(LOSCFG_ARCH_LINGLONG)) {
+        include_dirs += ["$LITEOSTOPDIR/arch_lite/linglong/include"]
+        configs += ["linglong:public"]
+    }
+}

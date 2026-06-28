@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[L2CAP][NEW_CID] PSM=0x%x, STATUS=%d, LOCAL_CID=%d @l2cap_core.c(86),INFO" ID="0xeada02b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2CAP][DELETE_CID] PSM=0x%x, STATUS=%d, LOCAL_CID=%d, ERR_CODE=0x%x @l2cap_core.c(108),INFO" ID="0xeada0365" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[T%x][TIMEOUT] CID PROCEDURE, CID_LOCAL=%u @l2cap_core.c(268),WARNING" ID="0xeada0863" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to initialize L2CAP ACL link. @l2cap_core.c(456),ERROR" ID="0xeada0e42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP][SIGNAL_PSM]PSM=0x%x @l2cap_core.c(812),INFO" ID="0xeada1965" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP] STATUS=0x%x @l2cap_core.c(835),WARNING" ID="0xeada1a1b" />
+			</MSG_LOG>

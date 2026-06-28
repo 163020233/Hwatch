@@ -1,0 +1,76 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="reg_print_more  reg_start  0x%x   reg_print_num_4 0x%x @bgtp_sleep_auto_eng.c(229),INFO" ID="0x8bb4072d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="reg_print_more  0000   A 0x%x  b 0x%x  c 0x%x  d 0x%x @bgtp_sleep_auto_eng.c(245),INFO" ID="0x8bb407ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp_auto_sniff_rtc_enable] uapi_rtc_start  handle=%p, ret=0x%x create_code=0x%x  @bgtp_sleep_auto_eng.c(258),INFO" ID="0x8bb40815" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp_auto_sniff_rtc_enable] g_auto_sniff_rtc!=NULL  handle=%p, ret=0x%x @bgtp_sleep_auto_eng.c(262),INFO" ID="0x8bb40835" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="The number of links exceeds two  @bgtp_sleep_auto_eng.c(363),INFO" ID="0x8bb40b5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bgtp_auto_sniff_enter_check_es_list ready_ee-&gt;task_type=0x%x @bgtp_sleep_auto_eng.c(393),INFO" ID="0x8bb40c4d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bgtp_auto_sniff_enter_check_es_list, there is a task[%d] after sniff, ts=0x%x @bgtp_sleep_auto_eng.c(404),INFO" ID="0x8bb40ca5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Only the sniff @bgtp_sleep_auto_eng.c(415),INFO" ID="0x8bb40cfd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bgtp_auto_sniff_enter_check, timer [ts=0x%x] is too close to cur time[0x%x] @bgtp_sleep_auto_eng.c(475),INFO" ID="0x8bb40edd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bgtp_auto_sniff_enter_check, next_timer_ts 0x%x  @bgtp_sleep_auto_eng.c(501),INFO" ID="0x8bb40fad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="bgtp_auto_sniff_enter_check true 1  next_es_ts=0x%x  next_instant_ts=0x%x  next_timer_ts=0x%x @bgtp_sleep_auto_eng.c(524),INFO" ID="0x8bb41065" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bgtp_auto_sniff_enter_check_first_interval next_sniff_ts=0x%x, next_sniff_ts + sniff_intv=0x%x @bgtp_sleep_auto_eng.c(539),INFO" ID="0x8bb410dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bgtp_auto_sniff_rtc_cbk start  @bgtp_sleep_auto_eng.c(548),INFO" ID="0x8bb41125" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bgtp_auto_sniff_rtc_enable sleep_ms=0x%x, next_ts=0x%x, current_time=0x%x, g_dbg_diag_val %p @bgtp_sleep_auto_eng.c(582),INFO" ID="0x8bb41235" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp_auto_sniff_rtc_enable] uapi_rtc_start  handle=%p, ret=0x%x create_code=0x%x  sleep_ms=0x%x  @bgtp_sleep_auto_eng.c(593),INFO" ID="0x8bb4128d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp_auto_sniff_rtc_enable] g_auto_sniff_rtc!=NULL  handle=%p, ret=0x%x sleep_ms=0x%x @bgtp_sleep_auto_eng.c(599),INFO" ID="0x8bb412bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bgtp_auto_sniff_enter_check    _sniff_cnt !!!!!! @bgtp_sleep_auto_eng.c(614),INFO" ID="0x8bb41335" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bgtp_auto_sniff_enter_check    _wait_queue!!!!!! @bgtp_sleep_auto_eng.c(629),INFO" ID="0x8bb413ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bgtp_auto_sniff_enter_check    _non_sniff !!!!!! @bgtp_sleep_auto_eng.c(635),INFO" ID="0x8bb413dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bgtp_auto_sniff_enter_check    _instant_list !!!!!! @bgtp_sleep_auto_eng.c(640),INFO" ID="0x8bb41405" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bgtp_auto_sniff_enter_check    _timer_list !!!!!! @bgtp_sleep_auto_eng.c(645),INFO" ID="0x8bb4142d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bgtp_auto_sniff_enter_check_first_interval    _first_interval !!!!!! @bgtp_sleep_auto_eng.c(651),INFO" ID="0x8bb4145d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME=" bg_sleep_auto_eng_table_refresh 0 sched_clock_off 0x%x   last_sync_timestamp 0x%x  env_ptr-&gt;delay_p  0x%x  auto_eng_table-&gt;winsz  0x%x   @bgtp_sleep_auto_eng.c(809),INFO" ID="0x8bb4194d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME=" bg_sleep_auto_eng_table_refresh 1 ns_ee_clkn 0x%x ns_ee_uso 0x%x ns_c_clkn 0x%x ns_ee_clkn1 0x%x @bgtp_sleep_auto_eng.c(815),INFO" ID="0x8bb4197d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME=" bg_sleep_auto_eng_table_refresh 2 ns_ee_uso1 0x%x ms 0x%x sniffto_l 0x%x sniffto_h 0x%x @bgtp_sleep_auto_eng.c(821),INFO" ID="0x8bb419ad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME=" bg_sleep_auto_eng_table_refresh 3 syncgap_cnt 0x%x sniffcnt 0x%x sed_ptr 0x%x interval_l 0x%x @bgtp_sleep_auto_eng.c(827),INFO" ID="0x8bb419dd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME=" bg_sleep_auto_eng_table_refresh 4 init_att_num 0x%x  rem_att_num 0x%x rxwinsz_proc_mode 0x%x cfg_drift 0x%x @bgtp_sleep_auto_eng.c(834),INFO" ID="0x8bb41a15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bg_sleep_auto_eng_table_refresh creat failed @bgtp_sleep_auto_eng.c(845),ERROR" ID="0x8bb41a6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bg_sleep_auto_eng_table_refresh addr @bgtp_sleep_auto_eng.c(859),INFO" ID="0x8bb41add" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]bg_sleep_auto_eng_table_cfg: auto_eng_table malloc fail! @bgtp_sleep_auto_eng.c(897),ERROR" ID="0x8bb41c0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid number of links @bgtp_sleep_auto_eng.c(917),ERROR" ID="0x8bb41caa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME=" enter bg_sleep_auto_eng_table_cfg   0 count=0x%x  BT_CTRL_BTBB_AUTO_ENG_CTRL3=0x%x  @bgtp_sleep_auto_eng.c(924),INFO" ID="0x8bb41ce5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bg_sleep_auto_eng_cd_idx_cfg map_conhdl = %d, ready_ee-&gt;sed_id = %d @bgtp_sleep_auto_eng.c(941),INFO" ID="0x8bb41d6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bg_sleep_auto_eng_cd_idx_cfg error @bgtp_sleep_auto_eng.c(947),ERROR" ID="0x8bb41d9a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_sleep_auto_eng_cd_idx_cfg 0 sed_id %d, CTRL_0 0x%x ,true_number 0x%x cs_index 0x%x @bgtp_sleep_auto_eng.c(957),INFO" ID="0x8bb41ded" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR][bg_sleep_auto_eng_enable]fsm_cur_sts != 0x2  ERROR @bgtp_sleep_auto_eng.c(976),ERROR" ID="0x8bb41e82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR][bg_sleep_auto_eng_enable]fsm_cur_sts != 0xe ERROR @bgtp_sleep_auto_eng.c(987),ERROR" ID="0x8bb41eda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME=" enter bg_sleep_auto_eng_enable  LPEG_CURR_STATUS = 0x%x   @bgtp_sleep_auto_eng.c(995),INFO" ID="0x8bb41f1d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_wakeup_evt_task_env_refresh  0  last_sync_clk_off 0x%x, last_sync_delay_p 0x%x  winsz_offet  0x%x  offset  0x%x  @bgtp_sleep_auto_eng.c(1023),INFO" ID="0x8bb41ffd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_wakeup_evt_task_env_refresh 1  sniff_par.anchor_point 0x%x, sched_bit_off 0x%x  sched_clock_off  0x%x  last_sync_intv  0x%x  @bgtp_sleep_auto_eng.c(1030),INFO" ID="0x8bb42035" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_wakeup_evt_task_env_refresh 2  sed_index 0x%x late 0x%x   syncgap_cnt 0x%x   delay_p  0x%x @bgtp_sleep_auto_eng.c(1036),INFO" ID="0x8bb42065" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_wakeup_evt_task_env_refresh 3 ns_ee_clkn 0x%x ns_ee_uso 0x%x  init_att_num  0x%x  rem_att_num  0x%x @bgtp_sleep_auto_eng.c(1043),INFO" ID="0x8bb4209d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_wakeup_evt_task_env_refresh 4 ns_ee_clkn1 0x%x ns_ee_uso1 0x%x clk_off 0x%x winsz 0x%x @bgtp_sleep_auto_eng.c(1049),INFO" ID="0x8bb420cd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_wakeup_evt_task_env_refresh 5 acl_anchor_point 0x%x   last_timestamp 0x%x   last_sync_timestamp 0x%x   auto_eng_table-&gt;ns_c_clkn 0x%x @bgtp_sleep_auto_eng.c(1056),INFO" ID="0x8bb42105" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]bg_wakeup_evt_task_env_refresh: auto_eng_table malloc fail! @bgtp_sleep_auto_eng.c(1066),ERROR" ID="0x8bb42152" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid number of links @bgtp_sleep_auto_eng.c(1106),ERROR" ID="0x8bb42292" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bg_sleep_auto_eng_es_save error @bgtp_sleep_auto_eng.c(1150),INFO" ID="0x8bb423f5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_sleep_auto_eng_es_save save cnt=%d ready_ee-&gt;sed_id 0x=%x ready_ee-&gt;task_type 0x=%x   task_id 0x=%x  @bgtp_sleep_auto_eng.c(1164),INFO" ID="0x8bb42465" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bg_sleep_auto_eng_es_save save malloc fail. @bgtp_sleep_auto_eng.c(1171),INFO" ID="0x8bb4249d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bg_sleep_auto_eng_es_save next_ee_prog == NULL @bgtp_sleep_auto_eng.c(1189),INFO" ID="0x8bb4252d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bg_sleep_auto_eng_es_recover 0 BT_READ16(BT_CTRL_BTBB_AUTO_ENG_CTRL0) 0x%x  eng_ctrl_reg 0x%x   @bgtp_sleep_auto_eng.c(1200),INFO" ID="0x8bb42585" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ERROR valid_con_hdl, index=%u @bgtp_sleep_auto_eng.c(1206),INFO" ID="0x8bb425b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ERROR to_con_hdl, index=%u @bgtp_sleep_auto_eng.c(1215),INFO" ID="0x8bb425fd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bg_sleep_auto_eng_es_recover 1  to_con_hdl=%u valid_con_hdl=%u @bgtp_sleep_auto_eng.c(1223),INFO" ID="0x8bb4263d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][bgtp_auto_eng_recover_priority]1111: last_sync_clk_off %d, clk_off 0x%x, last_sync_delay_p 0x%x, delay_po 0x%x @bgtp_sleep_auto_eng.c(1244),WARNING" ID="0x8bb426e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ES_RECOVER_FAIL @bgtp_sleep_auto_eng.c(1334),INFO" ID="0x8bb429b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_sleep_auto_eng_es_recover  12 tailsed_id=0x%x  sed_id=0x%x  timestamp=0x%x  tailtimestamp =0x%x  @bgtp_sleep_auto_eng.c(1341),INFO" ID="0x8bb429ed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="sed-1 bg_sleep_auto_eng_es_recover 2 sed-&gt;bt_usoffset=0x%x, sed-&gt;bt_clkoffl=0x%x sed-&gt;bt_clkoffh=0x%x  @bgtp_sleep_auto_eng.c(1355),INFO" ID="0x8bb42a5d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bg_sleep_auto_eng_es_recover 2 next_ee-&gt;sed_id=0x%x, list_size=0x%x num=0x%x  bt_asynlink_rxpdcnt  0x%x @bgtp_sleep_auto_eng.c(1362),INFO" ID="0x8bb42a95" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][auto_eng]receive valid pkt. con_hdl 0x%x @bgtp_sleep_auto_eng.c(1370),INFO" ID="0x8bb42ad5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="receive sniff timeout wakeup. con_hdl=0x%x, list_size=0x%x @bgtp_sleep_auto_eng.c(1382),INFO" ID="0x8bb42b35" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bg_sleep_auto_eng_es_recover ready_ee-&gt;task_type=%d, size of wait=%d @bgtp_sleep_auto_eng.c(1409),INFO" ID="0x8bb42c0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[lowpower][bgtp_soc_sniff_wakeup_done_irq_handler]  eeq_prog_list list_size 0x%x @bgtp_sleep_auto_eng.c(1436),INFO" ID="0x8bb42ce5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="leave bgtp_soc_sniff_wakeup_done_irq_handler @bgtp_sleep_auto_eng.c(1500),INFO" ID="0x8bb42ee5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[lowpower][bgtp_soc_sniff_software_stop_done_irq_handler]  start  @bgtp_sleep_auto_eng.c(1505),INFO" ID="0x8bb42f0d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[AUTO_ENG][stop_done_irq]software_stop_sts 0x%x  LPEG_CTRL_WORD1 0x%x @bgtp_sleep_auto_eng.c(1515),INFO" ID="0x8bb42f5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR][bgtp_soc_sniff_software_stop_done_irq_handler] stop_done_ctrl  ERROR @bgtp_sleep_auto_eng.c(1532),ERROR" ID="0x8bb42fe2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR][bgtp_soc_sniff_software_stop_done_irq_handler] GLB_CTL_B_RB_TGLP_STATUS_REG  ERROR @bgtp_sleep_auto_eng.c(1565),ERROR" ID="0x8bb430ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR][bgtp_soc_sniff_software_stop_done_irq_handler] LP_CTL_BT_RB_LP_CTL_BT_WKUP_STS_REG  &quot;ERROR @bgtp_sleep_auto_eng.c(1580),ERROR" ID="0x8bb43162" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][auto_eng]bgtp_soc_sniff_software_stop_done_irq_handler 1 software_stop_sts 0x%x cur 0x%x @bgtp_sleep_auto_eng.c(1588),INFO" ID="0x8bb431a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][auto_eng] bgtp_soc_sniff_software_stop_done_irq_handler 2 software_stop_sts 0x%x cur 0x%x @bgtp_sleep_auto_eng.c(1635),INFO" ID="0x8bb4331d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[lowpower][bgtp_soc_sniff_abnormal_irq_handler]  start  BT_CTRL_AUTO_ENG_CTRL5 0x%x  abnormal_num  0x%x  @bgtp_sleep_auto_eng.c(1653),ERROR" ID="0x8bb433aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Disable the auto_eng function @bgtp_sleep_auto_eng.c(1655),ERROR" ID="0x8bb433ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR][bgtp_soc_sniff_abnormal_irq_handler] GLB_CTL_B_RB_TGLP_STATUS_REG  ERROR @bgtp_sleep_auto_eng.c(1672),ERROR" ID="0x8bb43442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BGTP][PMU]lp data copy failed! @bgtp_sleep_auto_eng.c(1778),ERROR" ID="0x8bb43792" />
+			</MSG_LOG>

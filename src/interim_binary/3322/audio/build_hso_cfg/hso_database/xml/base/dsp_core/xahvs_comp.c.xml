@@ -1,0 +1,37 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_set_parameter Failed, Error Code: [0x%08X] @xahvs_comp.c(104),ERROR" ID="0x99160342" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][hvs][write]param tool is invalid @xahvs_comp.c(110),WARNING" ID="0x99160373" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @xahvs_comp.c(119),ERROR" ID="0x991603ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @xahvs_comp.c(132),ERROR" ID="0x99160422" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_hvs_home_set_params Failed, Error Code: [0x%08X] @xahvs_comp.c(140),ERROR" ID="0x99160462" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_get_parameter Failed, Error Code: [0x%08X] @xahvs_comp.c(161),ERROR" ID="0x9916050a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][hvs][read]param tool is invalid @xahvs_comp.c(168),WARNING" ID="0x99160543" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memset_s Failed, Error Code: [0x%08X] @xahvs_comp.c(176),ERROR" ID="0x99160582" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @xahvs_comp.c(183),ERROR" ID="0x991605ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @xahvs_comp.c(196),ERROR" ID="0x99160622" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]frame-&gt;channels = 0x%08X @xahvs_comp.c(209),ERROR" ID="0x9916068a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]frame-&gt;bit_depth = 0x%08X @xahvs_comp.c(214),ERROR" ID="0x991606b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]frame-&gt;sample_rate = 0x%08X @xahvs_comp.c(219),ERROR" ID="0x991606da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]frame-&gt;pcm_samples = 0x%08X @xahvs_comp.c(224),ERROR" ID="0x99160702" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_frame_valid_check Failed, Error Code: [0x%08X] @xahvs_comp.c(247),ERROR" ID="0x991607ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_hvs_home_apply Failed, Error Code: [0x%08X] @xahvs_comp.c(258),ERROR" ID="0x99160812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_alloc_total_buf Failed, Error Code: [0x%08X] @xahvs_comp.c(310),ERROR" ID="0x991609b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_alloc_mem_size Failed, Error Code: [0x%08X] @xahvs_comp.c(337),ERROR" ID="0x99160a8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_init_scratch_buf Failed, Error Code: [0x%08X] @xahvs_comp.c(350),ERROR" ID="0x99160af2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_alloc_para_config Failed, Error Code: [0x%08X] @xahvs_comp.c(365),ERROR" ID="0x99160b6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_init_param_tool_array Failed, Error Code: [0x%08X] @xahvs_comp.c(416),ERROR" ID="0x99160d02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]param tool is invalid @xahvs_comp.c(425),WARNING" ID="0x99160d4b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_alloc_para_config Failed, Error Code: [0x%08X] @xahvs_comp.c(449),ERROR" ID="0x99160e0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_set_config_fixed Failed, Error Code: [0x%08X] @xahvs_comp.c(455),ERROR" ID="0x99160e3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_hvs_home_set_params Failed, Error Code: [0x%08X] @xahvs_comp.c(462),ERROR" ID="0x99160e72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_alloc_mem_size Failed, Error Code: [0x%08X] @xahvs_comp.c(475),ERROR" ID="0x99160eda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_hvs_home_get_size Failed, Error Code: [0x%08X] @xahvs_comp.c(481),ERROR" ID="0x99160f0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_init_data Failed, Error Code: [0x%08X] @xahvs_comp.c(494),ERROR" ID="0x99160f72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_init_mem_size Failed, Error Code: [0x%08X] @xahvs_comp.c(500),ERROR" ID="0x99160fa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_init_scratch_buf Failed, Error Code: [0x%08X] @xahvs_comp.c(506),ERROR" ID="0x99160fd2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_alloc_total_buf Failed, Error Code: [0x%08X] @xahvs_comp.c(512),ERROR" ID="0x99161002" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_hvs_home_init Failed, Error Code: [0x%08X] @xahvs_comp.c(518),ERROR" ID="0x99161032" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_init_para_config_and_set_params Failed, Error Code: [0x%08X] @xahvs_comp.c(524),ERROR" ID="0x99161062" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_init_param_tool_array Failed, Error Code: [0x%08X] @xahvs_comp.c(530),ERROR" ID="0x99161092" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_create Failed, Error Code: [0x%08X] @xahvs_comp.c(547),ERROR" ID="0x9916111a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hvs_lite_lib_init Failed, Error Code: [0x%08X] @xahvs_comp.c(554),ERROR" ID="0x99161152" />
+			</MSG_LOG>

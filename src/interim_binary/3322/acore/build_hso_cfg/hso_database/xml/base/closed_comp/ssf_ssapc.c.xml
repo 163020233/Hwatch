@@ -1,0 +1,48 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] pointer is null @ssf_ssapc.c(33),ERROR" ID="0xef7e010a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] register client fail @ssf_ssapc.c(38),ERROR" ID="0xef7e0132" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC] register client succ, client id: %d @ssf_ssapc.c(46),INFO" ID="0xef7e0175" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS][SSAPC] unregister client: %d, result: %d @ssf_ssapc.c(57),INFO" ID="0xef7e01cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="service node is NULL @ssf_ssapc.c(72),ERROR" ID="0xef7e0242" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param is NULL @ssf_ssapc.c(95),ERROR" ID="0xef7e02fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="service_node is NULL @ssf_ssapc.c(100),ERROR" ID="0xef7e0322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] pointer is null @ssf_ssapc.c(115),ERROR" ID="0xef7e039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]service malloc fail @ssf_ssapc.c(183),ERROR" ID="0xef7e05ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]service param malloc fail @ssf_ssapc.c(194),ERROR" ID="0xef7e0612" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC] find all service failed %d @ssf_ssapc.c(217),ERROR" ID="0xef7e06ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] find all service success @ssf_ssapc.c(219),INFO" ID="0xef7e06dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] client_id is not registered @ssf_ssapc.c(226),ERROR" ID="0xef7e0712" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] invalid connection id  @ssf_ssapc.c(232),ERROR" ID="0xef7e0742" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC] find service by uuid failed %d @ssf_ssapc.c(251),ERROR" ID="0xef7e07da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] client_id is not registered @ssf_ssapc.c(261),ERROR" ID="0xef7e082a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] invalid connection id  @ssf_ssapc.c(267),ERROR" ID="0xef7e085a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] find service malloc fail @ssf_ssapc.c(272),ERROR" ID="0xef7e0882" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]read cb malloc failed @ssf_ssapc.c(343),ERROR" ID="0xef7e0aba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]read cb malloc failed @ssf_ssapc.c(353),ERROR" ID="0xef7e0b0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]read cb malloc failed @ssf_ssapc.c(409),ERROR" ID="0xef7e0cca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]read cb malloc failed @ssf_ssapc.c(419),ERROR" ID="0xef7e0d1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]read cb malloc failed @ssf_ssapc.c(475),ERROR" ID="0xef7e0eda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]read cb malloc failed @ssf_ssapc.c(484),ERROR" ID="0xef7e0f22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]notify cb malloc failed @ssf_ssapc.c(540),ERROR" ID="0xef7e10e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]notify cb malloc failed @ssf_ssapc.c(550),ERROR" ID="0xef7e1132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]indicate cb malloc failed @ssf_ssapc.c(606),ERROR" ID="0xef7e12f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC]indicate cb malloc failed @ssf_ssapc.c(615),ERROR" ID="0xef7e133a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] client_id is not registered @ssf_ssapc.c(636),ERROR" ID="0xef7e13e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] invalid connection id  @ssf_ssapc.c(642),ERROR" ID="0xef7e1412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC]register callbacks failed %d @ssf_ssapc.c(654),ERROR" ID="0xef7e1472" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC]SSAPC register success, client_id: %d @ssf_ssapc.c(679),INFO" ID="0xef7e153d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC]unregister callbacks failed %d @ssf_ssapc.c(695),ERROR" ID="0xef7e15ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] client_id is not registered @ssf_ssapc.c(712),ERROR" ID="0xef7e1642" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] invalid connection id  @ssf_ssapc.c(718),ERROR" ID="0xef7e1672" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC] read failed %d @ssf_ssapc.c(743),ERROR" ID="0xef7e173a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] client_id is not registered @ssf_ssapc.c(750),ERROR" ID="0xef7e1772" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] invalid connection id  @ssf_ssapc.c(756),ERROR" ID="0xef7e17a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC] write result: %d @ssf_ssapc.c(781),INFO" ID="0xef7e186d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] client_id is not registered @ssf_ssapc.c(787),ERROR" ID="0xef7e189a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] invalid connection id  @ssf_ssapc.c(793),ERROR" ID="0xef7e18ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC] write result: %d @ssf_ssapc.c(840),INFO" ID="0xef7e1a45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] client_id is not registered @ssf_ssapc.c(846),ERROR" ID="0xef7e1a72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] invalid connection id  @ssf_ssapc.c(852),ERROR" ID="0xef7e1aa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][SSAPC] exchange mtu result: %d @ssf_ssapc.c(888),INFO" ID="0xef7e1bc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] client_id is not registered @ssf_ssapc.c(894),ERROR" ID="0xef7e1bf2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][SSAPC] invalid connection id  @ssf_ssapc.c(900),ERROR" ID="0xef7e1c22" />
+			</MSG_LOG>

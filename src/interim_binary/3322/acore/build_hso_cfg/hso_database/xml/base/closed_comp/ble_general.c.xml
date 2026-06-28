@@ -1,0 +1,48 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="ble general : HciEvConnUpdate, ev NULL @ble_general.c(85),ERROR" ID="0xed0602aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : conn result status = 0x%02x @ble_general.c(92),INFO" ID="0xed0602e5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble general : handle&amp;interval&amp;latency&amp;timeout, 0x%04x &amp; 0x%04x &amp; 0x%04x &amp; 0x%04x @ble_general.c(94),INFO" ID="0xed0602f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : HciEvEncryptionChange, ev NULL @ble_general.c(117),ERROR" ID="0xed0603aa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble general : ENCRYPTION, status&amp;handle&amp;result = 0x%02x &amp; 0x%04x &amp; 0x%02x @ble_general.c(121),INFO" ID="0xed0603cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : HciEncryptionNegativeReply, ev NULL @ble_general.c(138),ERROR" ID="0xed060452" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : BLE GENERAL KEY MISS, handle = 0x%04x @ble_general.c(141),ERROR" ID="0xed06046a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : ble general pair cfm callback, result = 0x%04x @ble_general.c(149),INFO" ID="0xed0604ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : ble general start pair ble addr null @ble_general.c(196),ERROR" ID="0xed060622" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : memcpy addr fail when start pair @ble_general.c(201),ERROR" ID="0xed06064a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : set bondle fail = %d @ble_general.c(208),ERROR" ID="0xed060682" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : sais service cb arg is NULL @ble_general.c(229),ERROR" ID="0xed06072a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble general : GattsSaisServiceCbk, event len = %d, %d @ble_general.c(235),INFO" ID="0xed06075d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : register sais service @ble_general.c(270),INFO" ID="0xed060875" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : reg sais service service is NULL @ble_general.c(273),ERROR" ID="0xed06088a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : reg sais service character is NULL @ble_general.c(283),ERROR" ID="0xed0608da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : alipay service cb arg is NULL @ble_general.c(305),ERROR" ID="0xed06098a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble general : GattsAlipayServiceCbk, uuid = 0x%x, event = %d, len = %d @ble_general.c(313),INFO" ID="0xed0609cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : GattsAlipayServiceCbk, pend uuid = 0x%04x @ble_general.c(333),DBG" ID="0xed060a6e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : register alipay service @ble_general.c(359),INFO" ID="0xed060b3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : reg alipay service service is NULL @ble_general.c(362),ERROR" ID="0xed060b52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : reg alipay service character is NULL @ble_general.c(372),ERROR" ID="0xed060ba2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble core: get key from btc fail: %d @ble_general.c(426),ERROR" ID="0xed060d52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : ble general read local public key from controller @ble_general.c(432),INFO" ID="0xed060d85" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="product type:%x @ble_general.c(445),INFO" ID="0xed060ded" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : App_RecoverSMPKeys data_len err, %d @ble_general.c(465),ERROR" ID="0xed060e8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : NEW key_list fail, %d @ble_general.c(470),ERROR" ID="0xed060eb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : List NEW key fail, %d @ble_general.c(480),ERROR" ID="0xed060f02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : List NEW key fail, %d @ble_general.c(486),ERROR" ID="0xed060f32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BT_DEV: stopBluetooth fail 0x%x @ble_general.c(571),WARNING" ID="0xed0611db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : gap general dfr cb para is NULL @ble_general.c(595),ERROR" ID="0xed06129a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : gap general conn cb para is NULL @ble_general.c(609),ERROR" ID="0xed06130a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble general : ble general connection event &amp; cap: 0x%02x, 0x%02x, 0x%02x @ble_general.c(615),INFO" ID="0xed06133d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : gap general identity addr update cb para is NULL @ble_general.c(657),ERROR" ID="0xed06148a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : gap general clean key cb para is NULL @ble_general.c(673),ERROR" ID="0xed06150a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble tws: sync up cb para is NULL @ble_general.c(688),ERROR" ID="0xed061582" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : gap general smp succeed cb para is NULL @ble_general.c(705),ERROR" ID="0xed06160a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : GAP_IND_SMP_EV_KEY_NOTIFICATION, cap = 0x%02x @ble_general.c(711),INFO" ID="0xed06163d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble general : conn handle is invalid, addr: %02x:xx:xx:xx:%02x:%02x @ble_general.c(718),ERROR" ID="0xed061672" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : memcpy smp key store value fail: %d @ble_general.c(724),ERROR" ID="0xed0616a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : authentication failure cb para is NULL @ble_general.c(741),ERROR" ID="0xed06172a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble general : BLE GENERAL SMP REQUEST FAIL, cap = 0x%02x status: %x @ble_general.c(747),ERROR" ID="0xed06175a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : other branch @ble_general.c(765),INFO" ID="0xed0617ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : smp key display cb para is NULL @ble_general.c(777),ERROR" ID="0xed06184a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble gap: passkey notif ind:%02x:**:**:**:%02x @ble_general.c(797),INFO" ID="0xed0618ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : smp passkey entry cb para is NULL @ble_general.c(823),ERROR" ID="0xed0619ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : gap general link exceed limit cb para is NULL @ble_general.c(840),ERROR" ID="0xed061a42" />
+			</MSG_LOG>

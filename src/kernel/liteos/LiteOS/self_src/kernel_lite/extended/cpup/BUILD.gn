@@ -1,0 +1,17 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+
+kernel_module("cpup") {
+    sources = [
+        "los_cpup.c",
+    ]
+    if (!defined(LOSCFG_COMPILER_ICCARM)) {
+        sources += [
+            "cpup_shellcmd.c",
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="evt_task_gle_acb_recv_iob_label_ind_len_identify: llcp_len=%d,rx_llcp_len=%d @evt_task_gle_acb_isr_ram.c(29),INFO" ID="0x8b8e00ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_acb_rssi_statistics, env_ptr_ram is NULL @evt_task_gle_acb_isr_ram.c(127),INFO" ID="0x8b8e03fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACB][RX]RX LEN ERR! @evt_task_gle_acb_isr_ram.c(223),ERROR" ID="0x8b8e06fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACB][RX]MSG_ALLOC_FAILED! @evt_task_gle_acb_isr_ram.c(242),ERROR" ID="0x8b8e0792" />
+			</MSG_LOG>

@@ -1,0 +1,40 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="pbap_err_code_event result: 0x%x. @cpi_pbap_pce_cbk.c(31),WARNING" ID="0xee7e00fb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce_cbk.c(34),ERROR" ID="0xee7e0112" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap conn ev memcpy fail. @cpi_pbap_pce_cbk.c(38),ERROR" ID="0xee7e0132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce_cbk.c(53),ERROR" ID="0xee7e01aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap conn ev memcpy fail. @cpi_pbap_pce_cbk.c(57),ERROR" ID="0xee7e01ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce_cbk.c(71),ERROR" ID="0xee7e023a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap conn ev memcpy fail. @cpi_pbap_pce_cbk.c(75),ERROR" ID="0xee7e025a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="pbap app ev event = 0x%x result = 0x%x. @cpi_pbap_pce_cbk.c(87),INFO" ID="0xee7e02bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="start transferring : @cpi_pbap_pce_cbk.c(94),INFO" ID="0xee7e02f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="%10u bytes @cpi_pbap_pce_cbk.c(96),INFO" ID="0xee7e0305" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="%10u byte transferred @cpi_pbap_pce_cbk.c(98),INFO" ID="0xee7e0315" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="extra app event =%u g_pbap_get_size = 0x%x @cpi_pbap_pce_cbk.c(102),INFO" ID="0xee7e0335" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="result: 0x%x @cpi_pbap_pce_cbk.c(104),ERROR" ID="0xee7e0342" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="free g_pbap_pull_param. @cpi_pbap_pce_cbk.c(117),INFO" ID="0xee7e03ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap pce update status null returned. @cpi_pbap_pce_cbk.c(126),WARNING" ID="0xee7e03f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce_cbk.c(133),ERROR" ID="0xee7e042a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce_cbk.c(144),ERROR" ID="0xee7e0482" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="pbap conn event = 0x%x. @cpi_pbap_pce_cbk.c(160),INFO" ID="0xee7e0505" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap connection completed. @cpi_pbap_pce_cbk.c(170),INFO" ID="0xee7e0555" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap connect is already exist. @cpi_pbap_pce_cbk.c(173),INFO" ID="0xee7e056d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap disconnected. @cpi_pbap_pce_cbk.c(181),INFO" ID="0xee7e05ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce_cbk.c(193),ERROR" ID="0xee7e060a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap conn ev memcpy fail. @cpi_pbap_pce_cbk.c(197),ERROR" ID="0xee7e062a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce_cbk.c(214),ERROR" ID="0xee7e06b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce_cbk.c(222),ERROR" ID="0xee7e06f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="pbap pull cb, event = 0x%x result = 0x%x. @cpi_pbap_pce_cbk.c(252),INFO" ID="0xee7e07e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="pbap obex err event=0x%x result=0x%x. @cpi_pbap_pce_cbk.c(258),ERROR" ID="0xee7e0812" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap l2 set path cbk error, result is null. @cpi_pbap_pce_cbk.c(287),ERROR" ID="0xee7e08fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="pbap L2 set path cbk event=0x%x, result=0x%x. @cpi_pbap_pce_cbk.c(296),INFO" ID="0xee7e0945" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce_cbk.c(299),ERROR" ID="0xee7e095a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap conn ev memcpy fail. @cpi_pbap_pce_cbk.c(303),ERROR" ID="0xee7e097a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_pce_set_folder_cfm finish @cpi_pbap_pce_cbk.c(311),INFO" ID="0xee7e09bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_pce_conn_state_changed_callback functon is not registered. @cpi_pbap_pce_cbk.c(333),INFO" ID="0xee7e0a6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_pce_phone_book_size_callback functon is not registered. @cpi_pbap_pce_cbk.c(343),INFO" ID="0xee7e0abd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_pce_trans_complete_callback functon is not registered. @cpi_pbap_pce_cbk.c(353),INFO" ID="0xee7e0b0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_pce_receive_data_callback functon is not registered. @cpi_pbap_pce_cbk.c(363),INFO" ID="0xee7e0b5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_pce_error_code_callback functon is not registered. @cpi_pbap_pce_cbk.c(374),INFO" ID="0xee7e0bb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_pce_set_phone_book_callback functon is not registered. @cpi_pbap_pce_cbk.c(384),INFO" ID="0xee7e0c05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id 0x%x @cpi_pbap_pce_cbk.c(412),ERROR" ID="0xee7e0ce2" />
+			</MSG_LOG>

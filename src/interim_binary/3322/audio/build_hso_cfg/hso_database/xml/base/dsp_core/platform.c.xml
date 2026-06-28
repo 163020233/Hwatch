@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mod_type = %u @platform.c(99),ERROR" ID="0x98d4031a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]get_sap_mod_type(handle) = %u @platform.c(121),ERROR" ID="0x98d403ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]get_sap_mod_type(handle) = %u @platform.c(136),ERROR" ID="0x98d40442" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]get_sap_mod_type(handle) = %u @platform.c(152),ERROR" ID="0x98d404c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]get_sap_mod_type(handle) = %u @platform.c(168),ERROR" ID="0x98d40542" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]get_sap_mod_type(handle) = %u @platform.c(183),ERROR" ID="0x98d405ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]get_sap_mod_type(handle) = %u @platform.c(198),ERROR" ID="0x98d40632" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]get_sap_mod_type(handle) = %u @platform.c(213),ERROR" ID="0x98d406aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]get_sap_mod_type(handle) = %u @platform.c(228),ERROR" ID="0x98d40722" />
+			</MSG_LOG>

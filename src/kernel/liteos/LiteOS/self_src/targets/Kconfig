@@ -1,0 +1,252 @@
+choice
+    prompt "Family"
+
+config LOSCFG_FAMILY_BVT
+    bool "BVT"
+    select LOSCFG_DRIVERS_USE_VENDOR_HISI_CAMERA
+
+config LOSCFG_FAMILY_DPT
+    bool "DPT"
+    select LOSCFG_DRIVERS_USE_VENDOR_HISI_CAMERA
+
+config LOSCFG_FAMILY_AIOT
+    bool "AIOT"
+
+config LOSCFG_FAMILY_TEST
+    bool "TEST"
+
+config LOSCFG_FAMILY_SMC
+    bool "SMC"
+
+config LOSCFG_FAMILY_STB
+    bool "STB"
+
+config LOSCFG_FAMILY_QEMU
+    bool "QEMU"
+
+config LOSCFG_FAMILY_STM32
+    bool "STM32"
+
+config LOSCFG_FAMILY_SECRET
+    bool "SECRET"
+    select LOSCFG_DRIVERS_USE_VENDOR_HISI_CAMERA
+
+config LOSCFG_FAMILY_HQ
+    bool "HQ"
+
+config LOSCFG_FAMILY_ENERGY
+    bool "ENERGY"
+
+config LOSCFG_FAMILY_SHC
+    bool "SHC"
+
+config LOSCFG_FAMILY_ASCEND
+    bool "ASCEND"
+
+config LOSCFG_FAMILY_DATACOM
+    bool "DATACOM"
+
+endchoice
+
+config LOSCFG_FAMILY
+    string
+    default "aiot" if LOSCFG_FAMILY_AIOT
+    default "ascend" if LOSCFG_FAMILY_ASCEND
+
+orsource "Kconfig.smc"
+orsource "Kconfig.test"
+orsource "Kconfig.bvt"
+orsource "Kconfig.dpt"
+orsource "Kconfig.aiot"
+orsource "Kconfig.stb"
+orsource "Kconfig.qemu"
+orsource "Kconfig.stm32"
+orsource "Kconfig.secret"
+orsource "Kconfig.hq"
+orsource "Kconfig.energy"
+orsource "Kconfig.shc"
+orsource "Kconfig.ascend"
+orsource "Kconfig.datacom"
+orsource "Kconfig.dt"
+
+config LOSCFG_PLATFORM_ASCEND
+    bool
+    select LOSCFG_ARM_GENERIC_TIMER
+    select LOSCFG_ARM_GIC_V3
+    select LOSCFG_USING_BOARD_LD
+    select LOSCFG_DRIVERS_UART_LITEOS
+    select LOSCFG_DRIVERS_UART_ARM_PL011
+    help
+        This is genenel setup for 64bit ARMv8 based ascend platforms which should directly
+        select this option and add specific processor cores.
+
+
+config LOSCFG_PLATFORM_HISI_BVT_ARM
+    bool
+    select LOSCFG_ARM_GIC_V2
+    select LOSCFG_ARM_GENERIC_TIMER
+    select LOSCFG_ARM_SP804_HRTIMER
+    select LOSCFG_DRIVERS_UART_ARM_PL011
+    select LOSCFG_DRIVERS_UART_LINUX
+    help
+        This is genenel setup for 32bit ARMv7/8 based platforms which should directly
+        select this option and add specific processor cores. For example:
+
+        config LOSCFG_PLATFORM_HI35xxVxxx
+            bool "HI35xxVxxx"
+            select LOSCFG_ARCH_CORTEX_A7
+            select LOSCFG_PLATFORM_HISI_BVT_ARM
+
+config LOSCFG_PLATFORM_HISI_RISCV
+    bool
+    select LOSCFG_ARCH_LINXCORE_131
+    select LOSCFG_ARM_SP804_TIMER
+    select LOSCFG_DRIVERS_UART_ARM_PL011
+    help
+        This is genenel setup for risc-v based hisilicon platforms which should directly
+        select this option and add specific processor cores.
+
+config LOSCFG_USING_BOARD_LD
+    bool
+
+config LOSCFG_USING_BOARD_RESET_VECTOR
+    bool
+    default n
+    help
+        Use board reset vector instead of arch default implementation.
+
+config LOSCFG_PLATFORM_EXTENDED_FEATURE
+    string
+    default "normal"  if LOSCFG_PLATFORM_STM32F769IDISCOVERY_N
+    default "safety"  if LOSCFG_PLATFORM_STM32F769IDISCOVERY_S
+    default "safety_rom"  if LOSCFG_PLATFORM_STM32F769IDISCOVERY_S_ROM
+
+choice
+    prompt "Extended Feature"
+    depends on LOSCFG_PLATFORM_STM32F769IDISCOVERY
+
+config LOSCFG_PLATFORM_STM32F769IDISCOVERY_N
+    bool "normal"
+
+config LOSCFG_PLATFORM_STM32F769IDISCOVERY_S
+    bool "safety"
+    select LOSCFG_SAFETY_KERNEL
+
+config LOSCFG_PLATFORM_STM32F769IDISCOVERY_S_ROM
+    bool "safety_rom"
+    select LOSCFG_SAFETY_KERNEL
+    select LOSCFG_MULTI_BINARIES
+endchoice
+
+config LOSCFG_DATA_SECTION_ALWAYSON
+    bool
+    default n
+    help
+        When low-power data need to include in custom section, this config should enable.
+
+config LOSCFG_USING_GCC_NOPIC_LIB
+    bool
+    default n
+    depends on LOSCFG_PLATFORM_HI3892_SE
+    help
+        When the platform is RISCV, the gcc library is changed to gcc-nopic.
+
+choice
+    prompt "Board Type"
+    depends on LOSCFG_PLATFORM_ISP_V500 || LOSCFG_PLATFORM_ISP_V600
+    default LOSCFG_PLATFORM_ISP_V500_NSV if LOSCFG_PLATFORM_ISP_V500
+    default LOSCFG_PLATFORM_ISP_V600_CHS if LOSCFG_PLATFORM_ISP_V600
+
+config LOSCFG_PLATFORM_ISP_V500_NSV
+    bool "Nashville"
+    depends on LOSCFG_PLATFORM_ISP_V500
+    select LOSCFG_ARM_GENERIC_TIMER
+    select LOSCFG_DRIVERS_UART_HQ_UART_V502
+    select LOSCFG_DRIVERS_UART_VUART_RPQ if LOSCFG_DEBUG_VERSION
+
+config LOSCFG_PLATFORM_ISP_V500_FPGA
+    bool "Nashville FPGA"
+    depends on LOSCFG_PLATFORM_ISP_V500
+    select LOSCFG_RISCV_HQTIMER_V510
+    select LOSCFG_DRIVERS_UART_HQ_UART_V502
+    select LOSCFG_DRIVERS_UART_VUART_RPQ if LOSCFG_DEBUG_VERSION
+
+config LOSCFG_PLATFORM_ISP_V500_ESL
+    bool "Nashville ESL"
+    depends on LOSCFG_PLATFORM_ISP_V500
+    select LOSCFG_ARM_GENERIC_TIMER
+    select LOSCFG_DRIVERS_UART_ARM_PL011
+
+config LOSCFG_PLATFORM_ISP_V600_CHS
+    bool "Changsha"
+    depends on LOSCFG_PLATFORM_ISP_V600
+    select LOSCFG_ARM_GENERIC_TIMER
+    select LOSCFG_DRIVERS_UART_HQ_UART_V502
+
+config LOSCFG_PLATFORM_ISP_V600_CHS_FPGA
+    bool "Changsha FPGA"
+    depends on LOSCFG_PLATFORM_ISP_V600
+    select LOSCFG_RISCV_HQTIMER_V510
+    select LOSCFG_DRIVERS_UART_HQ_UART_V502
+
+config LOSCFG_PLATFORM_ISP_V600_CHS_ESL
+    bool "Changsha ESL"
+    depends on LOSCFG_PLATFORM_ISP_V600
+    select LOSCFG_ARM_GENERIC_TIMER
+    select LOSCFG_DRIVERS_UART_ARM_PL011
+
+endchoice
+
+choice
+    prompt "Board Type"
+    depends on LOSCFG_PLATFORM_OISP_V100
+    default LOSCFG_PLATFORM_OISP_V100_DUAL
+
+config LOSCFG_PLATFORM_OISP_V100_DUAL
+    bool "Oisp dual"
+    select LOSCFG_DRIVERS_UART_VENDOR
+
+config LOSCFG_PLATFORM_OISP_V100_SINGLE
+    bool "Oisp Single"
+    select LOSCFG_DRIVERS_UART_VUART_RPQ
+    select LOSCFG_DRIVERS_UART_LITEOS
+
+endchoice
+
+choice
+    prompt "Board Type"
+    depends on LOSCFG_PLATFORM_AUDIODSP_LINGLONG
+    default LOSCFG_PLATFORM_AUDIODSP_LINGLONG_NSV
+
+config LOSCFG_PLATFORM_AUDIODSP_LINGLONG_NSV
+    select LOSCFG_RISCV_HQTIMER_V510 if LOSCFG_TEST
+    bool "Nashville"
+
+config LOSCFG_PLATFORM_AUDIODSP_LINGLONG_XIAN
+    select LOSCFG_RISCV_HQTIMER_V510 if LOSCFG_TEST
+    bool "XiAn"
+
+config LOSCFG_PLATFORM_AUDIODSP_LINGLONG_CHS
+    select LOSCFG_RISCV_HQTIMER_V510 if LOSCFG_TEST
+    bool "Changsha"
+
+config LOSCFG_PLATFORM_AUDIODSP_LINGLONG_BVP
+    select LOSCFG_TIMER_VENDOR
+    bool "BVP Simulator"
+
+endchoice
+ 
+choice
+    prompt "Board Type"
+    depends on LOSCFG_PLATFORM_ISP_V350
+    default LOSCFG_PLATFORM_ISP_V350_CLT
+ 
+config LOSCFG_PLATFORM_ISP_V350_XIAN
+    bool "isp v350 xian"
+    select LOSCFG_DRIVERS_UART_HQ_UART_V502
+ 
+config LOSCFG_PLATFORM_ISP_V350_CLT
+    bool "isp v350 charlotte"
+    select LOSCFG_DRIVERS_UART_HQ_UART_V500
+ 
+endchoice

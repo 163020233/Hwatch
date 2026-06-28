@@ -1,0 +1,40 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="avrcp is connected. @cpi_avrcp_tg.c(32),ERROR" ID="0xee620102" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp event_num is invalid. @cpi_avrcp_tg.c(42),ERROR" ID="0xee620152" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="avrcp event is not support, id=0x%x. @cpi_avrcp_tg.c(48),ERROR" ID="0xee620182" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(58),ERROR" ID="0xee6201d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp event id is valid. @cpi_avrcp_tg.c(69),ERROR" ID="0xee62022a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(77),ERROR" ID="0xee62026a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_tg.c(93),ERROR" ID="0xee6202ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(99),ERROR" ID="0xee62031a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(119),ERROR" ID="0xee6203ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(124),ERROR" ID="0xee6203e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(134),ERROR" ID="0xee620432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp volume is invalid. @cpi_avrcp_tg.c(138),ERROR" ID="0xee620452" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(149),ERROR" ID="0xee6204aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(154),ERROR" ID="0xee6204d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(164),ERROR" ID="0xee620522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(176),ERROR" ID="0xee620582" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(181),ERROR" ID="0xee6205aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(191),ERROR" ID="0xee6205fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(206),ERROR" ID="0xee620672" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(211),ERROR" ID="0xee62069a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(221),ERROR" ID="0xee6206ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(233),ERROR" ID="0xee62074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(238),ERROR" ID="0xee620772" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(248),ERROR" ID="0xee6207c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(259),ERROR" ID="0xee62081a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(264),ERROR" ID="0xee620842" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(274),ERROR" ID="0xee620892" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(287),ERROR" ID="0xee6208fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(292),ERROR" ID="0xee620922" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(302),ERROR" ID="0xee620972" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(314),ERROR" ID="0xee6209d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(319),ERROR" ID="0xee6209fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(329),ERROR" ID="0xee620a4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(340),ERROR" ID="0xee620aa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(345),ERROR" ID="0xee620aca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(355),ERROR" ID="0xee620b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(366),ERROR" ID="0xee620b72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg.c(371),ERROR" ID="0xee620b9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg.c(382),ERROR" ID="0xee620bf2" />
+			</MSG_LOG>

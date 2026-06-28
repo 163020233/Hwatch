@@ -1,0 +1,42 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+declare_args() {
+    linx_liteos_contexthub_product = false
+    system_view_enable = false
+}
+if (!defined(device_path)) {
+    device_path = "vendor/ap/platform/an"
+}
+import("$device_path/config.gni")
+import("$LITEOSTOPDIR/lib/lib.gni")
+
+CONFIG_SYSTEM_VIEW = system_view_enable
+
+LIBC_REDUNDANT_FILE = []
+LIBC_REDUNDANT_FILE += [
+    "$LITEOSTOPDIR/lib/liteos_libc/locale/setlocale.c",
+
+    "$LIBC_DIR_PATH/src/stdlib/labs.c",
+    "$LIBC_DIR_PATH/src/stdlib/llabs.c",
+
+    #duplicate definitions in m7M_tlv.a
+    "$LIBC_DIR_PATH/src/time/difftime.c",
+    "$LIBC_DIR_PATH/src/complex/cabs.c",
+    "$LIBC_DIR_PATH/src/stdlib/atol.c",
+    "$LIBC_DIR_PATH/src/stdlib/atoll.c",
+    "$LIBC_DIR_PATH/src/string/strrchr.c",
+
+    #dep local
+    "$LIBC_DIR_PATH/src/time/asctime_r.c",
+    "$LIBC_DIR_PATH/src/time/strftime.c",
+    "$LIBC_DIR_PATH/src/time/asctime.c",
+    "$LIBC_DIR_PATH/src/time/strptime.c",
+    "$LIBC_DIR_PATH/src/time/ctime.c",
+    "$LIBC_DIR_PATH/src/time/ctime_r.c",
+
+    # Customize Modification
+    "$LIBC_DIR_PATH/src/time/time.c",
+]

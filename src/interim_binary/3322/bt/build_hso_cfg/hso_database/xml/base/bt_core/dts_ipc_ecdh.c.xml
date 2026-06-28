@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSP] ipc_ecdh_queue_init @dts_ipc_ecdh.c(28),INFO" ID="0x8a6600e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP]ipc_req_sec_rand , status = %u @dts_ipc_ecdh.c(46),WARNING" ID="0x8a660173" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP]ipc_req_ecc_gen_key ::osal_msg_queue_read_copy fail! @dts_ipc_ecdh.c(54),ERROR" ID="0x8a6601b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP]ipc_req_sec_rand , rand = %u @dts_ipc_ecdh.c(58),INFO" ID="0x8a6601d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP]ipc_req_check_dot_on_curve , status = %u @dts_ipc_ecdh.c(78),WARNING" ID="0x8a660273" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP]ipc_req_ecc_gen_key ::osal_msg_queue_read_copy fail! @dts_ipc_ecdh.c(86),ERROR" ID="0x8a6602b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP]ipc_req_check_dot_on_curve , status = %u @dts_ipc_ecdh.c(117),WARNING" ID="0x8a6603ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP]ipc_req_ecc_gen_ecdh_key ::osal_msg_queue_read_copy fail! @dts_ipc_ecdh.c(124),ERROR" ID="0x8a6603e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP]ipc_req_check_dot_on_curve , status = %u @dts_ipc_ecdh.c(153),WARNING" ID="0x8a6604cb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP]ipc_req_check_dot_on_curve ::osal_msg_queue_read_copy fail! @dts_ipc_ecdh.c(160),ERROR" ID="0x8a660502" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP]ipc_req_check_dot_on_curve ::osal_msg_queue_write_copy fail!, ret=0x%x @dts_ipc_ecdh.c(174),ERROR" ID="0x8a660572" />
+			</MSG_LOG>

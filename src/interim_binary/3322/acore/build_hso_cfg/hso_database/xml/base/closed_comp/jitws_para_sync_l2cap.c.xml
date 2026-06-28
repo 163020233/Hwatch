@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][COLLECT_L2CAP]lastTransid=%d, last_common_minorsid=%d @jitws_para_sync_l2cap.c(86),INFO" ID="0xebfa02b5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][COLLECT_L2CAP_FAIL]exp_len = %u, real_len = %u @jitws_para_sync_l2cap.c(108),WARNING" ID="0xebfa0363" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_L2CAP_FAIL]get hci joint addr fail @jitws_para_sync_l2cap.c(122),WARNING" ID="0xebfa03d3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_L2CAP_FAIL]get acllink fail @jitws_para_sync_l2cap.c(129),WARNING" ID="0xebfa040b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS][PARSE_L2CAP] PSM=0x%x, LOCAL_CID=0x%x, REMOTE_CID=0x%x @jitws_para_sync_l2cap.c(254),INFO" ID="0xebfa07f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][PARSE_L2CAP]lastTransid=%d, last_common_minorsid=%d @jitws_para_sync_l2cap.c(283),INFO" ID="0xebfa08dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_L2CAP_FAIL]acllink is null @jitws_para_sync_l2cap.c(305),WARNING" ID="0xebfa098b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][PARSE_L2CAP_FAIL]parse l2cap data cid list fail ret=%d @jitws_para_sync_l2cap.c(314),WARNING" ID="0xebfa09d3" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[JITWS][PARSE_L2CAP] cidLocalLast=[0x%x, 0x%x, 0x%x, 0x%x, 0x%x, 0x%x] @jitws_para_sync_l2cap.c(326),INFO" ID="0xebfa0a35" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][PARSE_L2CAP_FAIL]parse l2cap len err parse_len(%d), air_len(%d) @jitws_para_sync_l2cap.c(333),WARNING" ID="0xebfa0a6b" />
+			</MSG_LOG>

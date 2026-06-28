@@ -1,0 +1,29 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="init osal mutex bs_ble_service_inst_lock failed! @bs_ble_gatts.c(32),ERROR" ID="0xeea60102" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS] inst id alloc fail @bs_ble_gatts.c(122),ERROR" ID="0xeea603d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS] mem alloc fail @bs_ble_gatts.c(128),ERROR" ID="0xeea60402" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS] add service fail @bs_ble_gatts.c(149),ERROR" ID="0xeea604aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS] attr type invalid @bs_ble_gatts.c(162),ERROR" ID="0xeea60512" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS] add attr fail @bs_ble_gatts.c(167),ERROR" ID="0xeea6053a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GATTS_debug] inst NULL @bs_ble_gatts.c(177),ERROR" ID="0xeea6058a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GATTS_debug] inst info, inst_id: %d server_id: %d attribute_count: %d @bs_ble_gatts.c(180),INFO" ID="0xeea605a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GATTS_debug] inst info, start_handle: %d end_handle: %d @bs_ble_gatts.c(182),INFO" ID="0xeea605b5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GATTS_debug] inst info, attribute_handle[%u]= %u @bs_ble_gatts.c(185),INFO" ID="0xeea605cd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS][GATTS] unregister server: %d, result: %d @bs_ble_gatts.c(204),INFO" ID="0xeea60665" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS] bs_gatts_service_instance_deinit server_id %d @bs_ble_gatts.c(216),INFO" ID="0xeea606c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS] bs_gatts_service_instance_deinit service hdl:0x%x @bs_ble_gatts.c(222),INFO" ID="0xeea606f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatts_stop_service fail, ret:0x%x @bs_ble_gatts.c(225),ERROR" ID="0xeea6070a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs_gatts_service_instance_deinit param fail, id not matched @bs_ble_gatts.c(233),ERROR" ID="0xeea6074a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS] send rsp fail, ret: %d @bs_ble_gatts.c(246),ERROR" ID="0xeea607b2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BS][GATTS]service stop, server_id: 0x%02x, inst_id: 0x%02x, status %d @bs_ble_gatts.c(270),INFO" ID="0xeea60875" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS] bs_gatts_service_instance_deinit service hdl:0x%x @bs_ble_gatts.c(285),INFO" ID="0xeea608ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS][GATTS]service delete, server_id: 0x%02x, status 0x%x @bs_ble_gatts.c(304),INFO" ID="0xeea60985" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS] bs_gatts_service_instance_deinit server, id:0x%x @bs_ble_gatts.c(314),INFO" ID="0xeea609d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS] register server fail @bs_ble_gatts.c(330),ERROR" ID="0xeea60a52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS] register server succ, server id: %d @bs_ble_gatts.c(332),INFO" ID="0xeea60a65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS] service instance create fail, invalid server id, server_id:0x%x @bs_ble_gatts.c(344),ERROR" ID="0xeea60ac2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS] service instance create fail @bs_ble_gatts.c(355),ERROR" ID="0xeea60b1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS]reg cbk fail, ret:0x%x @bs_ble_gatts.c(364),ERROR" ID="0xeea60b62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS] service start fail, ret:0x%x @bs_ble_gatts.c(371),ERROR" ID="0xeea60b9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS]attr handle 0x%x @bs_ble_gatts.c(432),INFO" ID="0xeea60d85" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS] notify indicate fail, ret: %d @bs_ble_gatts.c(446),ERROR" ID="0xeea60df2" />
+			</MSG_LOG>

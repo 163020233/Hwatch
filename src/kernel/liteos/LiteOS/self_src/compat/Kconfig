@@ -1,0 +1,6 @@
+menu "Compat"
+orsource "cmsis/Kconfig"
+orsource "linux/Kconfig"
+orsource "rt-thread/Kconfig"
+orsource "freertos/Kconfig"
+endmenu

@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="fe_cali_lna_satdet_scan1::icali_code is %d, vdet is %d sat_rslt[%d] @fe_cali_lna_satdet.c(72),INFO" ID="0x8bfa0245" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="fe_cali_lna_satdet_scan2::icali_code is %d, vdet is %d sat_rslt[%d] @fe_cali_lna_satdet.c(101),INFO" ID="0x8bfa032d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="fe_cali_satdet_get_fine_code:chnl=%d, band=%d, sat target is %d @fe_cali_lna_satdet.c(112),INFO" ID="0x8bfa0385" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DEBUG]fe_cali_satdet_calc::vdet[0x%x] voffset[0x%x] @fe_cali_lna_satdet.c(154),INFO" ID="0x8bfa04d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[CALI][LNA_SAT]fe_cali_satdet_calc::sat_val calied is 0x%x @fe_cali_lna_satdet.c(160),INFO" ID="0x8bfa0505" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[CALI]fe_cali_lna_satdet_apply:chn=%d lna_satdet_val is 0x%x @fe_cali_lna_satdet.c(201),INFO" ID="0x8bfa064d" />
+			</MSG_LOG>

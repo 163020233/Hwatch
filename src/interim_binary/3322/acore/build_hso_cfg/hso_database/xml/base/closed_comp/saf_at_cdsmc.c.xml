@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf read cdsmc key info fail, ret: 0x%x @saf_at_cdsmc.c(244),ERROR" ID="0xe98e07a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf read cdsmc secret key fail, ret: 0x%x @saf_at_cdsmc.c(255),ERROR" ID="0xe98e07fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsmc read member count fail, ret: 0x%x @saf_at_cdsmc.c(267),ERROR" ID="0xe98e085a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsmc read role fail, ret: 0x%x @saf_at_cdsmc.c(279),ERROR" ID="0xe98e08ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsmc read discovery mode fail, ret: 0x%x @saf_at_cdsmc.c(291),ERROR" ID="0xe98e091a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsmc read set service fail, ret: 0x%x @saf_at_cdsmc.c(303),ERROR" ID="0xe98e097a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsmc read member address fail, ret: 0x%x @saf_at_cdsmc.c(315),ERROR" ID="0xe98e09da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_cdsmc.c(333),ERROR" ID="0xe98e0a6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_cdsmc.c(341),ERROR" ID="0xe98e0aaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[cdsms] adv report cbk, malloc err @saf_at_cdsmc.c(422),ERROR" ID="0xe98e0d32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsmc unregister client fail, ret: 0x%x @saf_at_cdsmc.c(441),ERROR" ID="0xe98e0dca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] unregister scan cbks memset fail! @saf_at_cdsmc.c(447),ERROR" ID="0xe98e0dfa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsmc register client fail, ret: 0x%x @saf_at_cdsmc.c(466),ERROR" ID="0xe98e0e92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] seek register cbks fail, ret: 0x%x @saf_at_cdsmc.c(473),ERROR" ID="0xe98e0eca" />
+			</MSG_LOG>

@@ -1,0 +1,68 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[cm]event = 0x%x @gle_cm_core.c(32),DBG" ID="0xed6e0106" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="conn_cbks null error @gle_cm_core.c(35),ERROR" ID="0xed6e011a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connection create param invalid @gle_cm_core.c(139),ERROR" ID="0xed6e045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle existing device is connecting @gle_cm_core.c(144),ERROR" ID="0xed6e0482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connection create link create failed @gle_cm_core.c(159),ERROR" ID="0xed6e04fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connection create memcpy failed @gle_cm_core.c(166),ERROR" ID="0xed6e0532" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connection create memcpy failed @gle_cm_core.c(172),ERROR" ID="0xed6e0562" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connection create new failed @gle_cm_core.c(183),ERROR" ID="0xed6e05ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connection release param invalid @gle_cm_core.c(209),ERROR" ID="0xed6e068a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connection release relsese link failed @gle_cm_core.c(214),ERROR" ID="0xed6e06b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle private connection param set param invalid @gle_cm_core.c(243),ERROR" ID="0xed6e079a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connection param update param invalid @gle_cm_core.c(254),ERROR" ID="0xed6e07f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle disconnect create cfm cfm_info invalid @gle_cm_core.c(264),ERROR" ID="0xed6e0842" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle disconnect create cfm enter, result = 0x%x @gle_cm_core.c(269),INFO" ID="0xed6e086d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle disconnect cfm] status = 0x%x @gle_cm_core.c(272),INFO" ID="0xed6e0885" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle disconnect create cfm memcpy failed @gle_cm_core.c(281),ERROR" ID="0xed6e08ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="default tcid activate failed @gle_cm_core.c(326),ERROR" ID="0xed6e0a32" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[gle connect cfm] result:0x%x status = 0x%x @gle_cm_core.c(340),DBG" ID="0xed6e0aa6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connect create cfm memcpy failed @gle_cm_core.c(353),ERROR" ID="0xed6e0b0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connect update cfm memcpy failed @gle_cm_core.c(404),ERROR" ID="0xed6e0ca2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle link set acb latency param invalid @gle_cm_core.c(417),ERROR" ID="0xed6e0d0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle link set acb latency em data invalid @gle_cm_core.c(436),ERROR" ID="0xed6e0da2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle link read remote rssi] param invalid @gle_cm_core.c(468),ERROR" ID="0xed6e0ea2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[gle connect low latency cfm]enter, result:%x latency_param enable = 0x%x, status:0x%x @gle_cm_core.c(593),INFO" ID="0xed6e128d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle connect low latency cfm memcpy failed @gle_cm_core.c(599),ERROR" ID="0xed6e12ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle connect read low latency param] enter, status: = 0x%x @gle_cm_core.c(622),INFO" ID="0xed6e1375" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle connect low latency set em data] enter, status: = 0x%x @gle_cm_core.c(640),INFO" ID="0xed6e1405" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[gle link read remote rssi] result = 0x%x, opindex: 0x%08x @gle_cm_core.c(649),INFO" ID="0xed6e144d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE CM][read rssi v2] exception. @gle_cm_core.c(661),INFO" ID="0xed6e14ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE CM][get audio quality] exception. @gle_cm_core.c(669),INFO" ID="0xed6e14ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE CM][get audio quality] memcpy failed @gle_cm_core.c(698),ERROR" ID="0xed6e15d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[gle link report event] con_handle = 0x%x, rx_per: 0x%08x @gle_cm_core.c(712),INFO" ID="0xed6e1645" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE HCI] set data len cfm_info invalid @gle_cm_core.c(721),ERROR" ID="0xed6e168a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE HCI] set high power mode result = 0x%x, opindex: 0x%04x @gle_cm_core.c(726),INFO" ID="0xed6e16b5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE HCI] set high power mode, conn_id:0x%02x status: 0x%02x @gle_cm_core.c(731),ERROR" ID="0xed6e16da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE HCI] set mcs invalid @gle_cm_core.c(738),ERROR" ID="0xed6e1712" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE HCI] set mcs result = 0x%x, opindex: 0x%04x @gle_cm_core.c(742),INFO" ID="0xed6e1735" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="read access filter list size cmd_result = 0x%x @gle_cm_core.c(753),ERROR" ID="0xed6e178a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="read access filter list size = %u @gle_cm_core.c(758),INFO" ID="0xed6e17b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="clear access filter list cmd_result = 0x%x @gle_cm_core.c(770),ERROR" ID="0xed6e1812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add device to access filter list result 0x%x @gle_cm_core.c(783),ERROR" ID="0xed6e187a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="remove device from access filter list cmd_result = 0x%x @gle_cm_core.c(797),ERROR" ID="0xed6e18ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle read remote feature link not found @gle_cm_core.c(811),ERROR" ID="0xed6e195a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read remote feature cfm memcpy fail. @gle_cm_core.c(815),ERROR" ID="0xed6e197a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read remote feature cfm memcpy fail. @gle_cm_core.c(824),ERROR" ID="0xed6e19c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read remote private feature: link is null. @gle_cm_core.c(848),ERROR" ID="0xed6e1a82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE HCI] read remote private feature conn_id:0x%x @gle_cm_core.c(863),INFO" ID="0xed6e1afd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE HCI] read local private feature @gle_cm_core.c(878),INFO" ID="0xed6e1b75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle read remote version link not found @gle_cm_core.c(894),ERROR" ID="0xed6e1bf2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE] remote version = 0x%02x, company_id: 0x%02x, subversion:0x%02x @gle_cm_core.c(902),INFO" ID="0xed6e1c35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE HCI] set data len cfm_info invalid @gle_cm_core.c(908),ERROR" ID="0xed6e1c62" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE HCI] set data len result = 0x%x, opindex: 0x%04x @gle_cm_core.c(913),INFO" ID="0xed6e1c8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE HCI] set data len failed, status: 0x%02x @gle_cm_core.c(917),ERROR" ID="0xed6e1caa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="set phy cfm status: %d, handle: 0x%04x @gle_cm_core.c(941),INFO" ID="0xed6e1d6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle set_acb_evt_param_cfm]param null @gle_cm_core.c(960),ERROR" ID="0xed6e1e02" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="result = 0x%x, status: 0x%x @gle_cm_core.c(966),INFO" ID="0xed6e1e35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle reset_cfm] enter @gle_cm_core.c(975),INFO" ID="0xed6e1e7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle reset_cfm] stack disable , clean stack @gle_cm_core.c(978),INFO" ID="0xed6e1e95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle frequency band switched cfm cfm_info invalid @gle_cm_core.c(989),ERROR" ID="0xed6e1eea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="frequency band switched: link is null. @gle_cm_core.c(996),ERROR" ID="0xed6e1f22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle set default subrate cfm cfm_info invalid @gle_cm_core.c(1013),ERROR" ID="0xed6e1faa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle set default subrate. status: 0x%02x @gle_cm_core.c(1017),INFO" ID="0xed6e1fcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle subrate change cfm_info invalid @gle_cm_core.c(1023),ERROR" ID="0xed6e1ffa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle subrate change change_evt is NULL @gle_cm_core.c(1028),ERROR" ID="0xed6e2022" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle subrate change. status: 0x%02x conn_id:0x%02x @gle_cm_core.c(1032),INFO" ID="0xed6e2045" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle cm cmd proc] param NULL. @gle_cm_core.c(1050),ERROR" ID="0xed6e20d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle cm cmd proc] type invalid. cmd/evt(%#x) @gle_cm_core.c(1059),ERROR" ID="0xed6e211a" />
+			</MSG_LOG>

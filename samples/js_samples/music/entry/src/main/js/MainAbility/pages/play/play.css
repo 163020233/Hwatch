@@ -1,0 +1,158 @@
+.stack {
+    width: 100%;
+    height: 100%;
+}
+
+.top_record {
+    left: 198px;
+    width: 256px;
+    height: 256px;
+}
+
+.bottom_record {
+    top: 198px;
+    width: 256px;
+    height: 256px;
+}
+
+.album_div {
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    padding-top: 40px;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.song_div {
+    width: 70%;
+    height: 37px;
+    background-color: transparent;
+}
+
+.device_img {
+    width: 26px;
+    height: 37px;
+    background-color: transparent;
+}
+
+.song_text {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.singer_name {
+    font-size: 24px;
+    margin-top: 5px;
+    width: 60%;
+    height: 32px;
+    background-color: transparent;
+}
+
+.play_stack {
+    width: 118px;
+    height: 118px;
+    left: 168px;
+    top: 168px;
+}
+
+.play_img {
+    width: 118px;
+    height: 118px;
+}
+
+.left_btn {
+    width: 78px;
+    height: 78px;
+    left: 40px;
+    top: 188px;
+}
+
+.right_btn {
+    width: 78px;
+    height: 78px;
+    left: 336px;
+    top: 188px;
+}
+
+.order_stack {
+    width: 48px;
+    height: 48px;
+    left: 100px;
+    top: 346px;
+    background-color: transparent;
+}
+
+.order_img {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+}
+
+.volume_img {
+    width: 48px;
+    height: 48px;
+    left: 140px;
+    top: 346px;
+}
+
+.settings_img {
+    width: 26px;
+    height: 37px;
+    left: 277px;
+    top: 351px;
+}
+
+.progress {
+    center-x: 227px;
+    center-y: 227px;
+    width: 100%;
+    height: 100%;
+    start-angle: 120;
+    total-angle: -60;
+    stroke-width: 8px;
+    radius: 220px;
+    color: steelblue;
+    background-color: #333333;
+}
+
+.volume_div {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.volume_exit {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: black;
+}
+
+.volume_div_2 {
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2CFFFFFF;
+}
+
+.hide_div {
+    width: 100%;
+    height: 197px;
+}
+
+.volume_slider {
+    height: 20px;
+    width: 70%;
+    selected-color: steelblue;
+    color: aliceblue;
+}

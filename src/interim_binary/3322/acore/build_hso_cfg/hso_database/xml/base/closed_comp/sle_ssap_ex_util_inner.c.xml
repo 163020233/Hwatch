@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex]inst err handle=%u @sle_ssap_ex_util_inner.c(41),ERROR" ID="0xea34014a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssap_ex]inst property id err @sle_ssap_ex_util_inner.c(47),ERROR" ID="0xea34017a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssap_ex]inst func err @sle_ssap_ex_util_inner.c(64),ERROR" ID="0xea340202" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssap_ex]inst err handle=%u @sle_ssap_ex_util_inner.c(89),ERROR" ID="0xea3402ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssap_ex]inst property id err @sle_ssap_ex_util_inner.c(94),ERROR" ID="0xea3402f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssap_ex]inst func err @sle_ssap_ex_util_inner.c(112),ERROR" ID="0xea340382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssap_ex]inst func err @sle_ssap_ex_util_inner.c(133),ERROR" ID="0xea34042a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssap_ex]property_id err @sle_ssap_ex_util_inner.c(138),ERROR" ID="0xea340452" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssap_ex]func err @sle_ssap_ex_util_inner.c(143),ERROR" ID="0xea34047a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssap_ex]handle err @sle_ssap_ex_util_inner.c(149),ERROR" ID="0xea3404aa" />
+			</MSG_LOG>

@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm classic acl received lmp detach : disc_reason(0x%x) @lm_classic_acl_disc.c(117),INFO" ID="0x89a603ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]evt_task_classic_acl_end:status = 0x%x, con_hdl:%d, cur_ts = 0x%x @lm_classic_acl_disc.c(266),INFO" ID="0x89a60855" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_classic_acl_detach_ind_act con_hdl=0x%x, reason=0x%x, to %d @lm_classic_acl_disc.c(345),INFO" ID="0x89a60acd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm classic acl send detach timeout: disc_reason(0x%x) @lm_classic_acl_disc.c(499),INFO" ID="0x89a60f9d" />
+			</MSG_LOG>

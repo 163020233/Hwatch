@@ -1,0 +1,9 @@
+{
+  "strings": {
+    "hello": "Hello",
+    "world": "World",
+    "search_bar": "Search Bar",
+    "send": "SEND",
+    "placeholder": "Enter search content"
+  }
+}

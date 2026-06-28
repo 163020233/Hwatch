@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[TIMRE_EXPIRE][STACK_TIMER] timer_item:0x%x has been delete, just free item @bg_stack_timer.c(64),ERROR" ID="0xee060202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TIMRE_ADD][STACK_TIMER] timer_init failed @bg_stack_timer.c(134),ERROR" ID="0xee060432" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TIMRE_DELETE][STACK_TIMER] timer_item:0x%x is in expire proc, not free item @bg_stack_timer.c(182),ERROR" ID="0xee0605b2" />
+			</MSG_LOG>

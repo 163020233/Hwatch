@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BS][BATTERY] handle with msg id:0x%x proc @ssf_battery_msg.c(22),INFO" ID="0xefba00b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][BATTERY] handle msg invalid msg id @ssf_battery_msg.c(28),ERROR" ID="0xefba00e2" />
+			</MSG_LOG>

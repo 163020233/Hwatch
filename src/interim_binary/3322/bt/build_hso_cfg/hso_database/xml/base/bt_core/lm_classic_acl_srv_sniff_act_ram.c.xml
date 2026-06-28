@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][sniff]lm_classic_acl_hci_sniff_mode_request_pre_act_ram, command disallowed! sniff_initiated = %d, acl_link_mode = %d @lm_classic_acl_srv_sniff_act_ram.c(71),INFO" ID="0x8b46023d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][sniff_sub]save LMP SSR REQ: sniff_fsm_state==0x%x  @lm_classic_acl_srv_sniff_act_ram.c(107),INFO" ID="0x8b46035d" />
+			</MSG_LOG>

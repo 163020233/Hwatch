@@ -1,0 +1,6 @@
+<div class="container" @swipe="handleSwipe">
+    <text class="title" onclick="replaceHomefoPage">
+        Selected：{{time}}
+    </text>
+    <picker-view class="time-picker" type="time" selected="{{defaultTime}}" @change="handleChange"></picker-view>
+</div>

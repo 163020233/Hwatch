@@ -1,0 +1,8 @@
+<div class="container">
+    <list class="todo-wrapper" on:click="replaceHomefoPage">
+        <list-item class="todo-item">
+            <text class="todo-title">mode {{mode}}</text>
+            <text class="todo-title">value {{value}}</text>
+        </list-item>
+    </list>
+</div>

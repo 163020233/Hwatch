@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pkg-&gt;cmd_id = %u @bt_sync_msg.c(487),WARNING" ID="0x98180f3b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pkg-&gt;ack_flag = %u @bt_sync_msg.c(488),WARNING" ID="0x98180f43" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pkg-&gt;cmd_id = %u @bt_sync_msg.c(496),WARNING" ID="0x98180f83" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pkg-&gt;data_len = %u @bt_sync_msg.c(497),WARNING" ID="0x98180f8b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pkg-&gt;cmd_id = %u @bt_sync_msg.c(504),WARNING" ID="0x98180fc3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pkg-&gt;cmd_id = %u @bt_sync_msg.c(511),WARNING" ID="0x98180ffb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pkg-&gt;is_silent = %u @bt_sync_msg.c(512),WARNING" ID="0x98181003" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][get_toggle_info] toggle_cnt: %u |toggle_ts: %u |last_sn: %u |last_ts: %u @bt_sync_msg.c(550),WARNING" ID="0x98181133" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync][4t1r] MSG_AUDIO2BTC_MIC_READY_IND @bt_sync_msg.c(655),WARNING" ID="0x9818147b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] start_toggle_cnt: %u |first_packet_sn: %u @bt_sync_msg.c(674),WARNING" ID="0x98181513" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sync] msg_from_bth unsupport cmd: %u @bt_sync_msg.c(763),WARNING" ID="0x981817db" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sync] msg_from_btc unsupport cmd: %u @bt_sync_msg.c(823),WARNING" ID="0x981819bb" />
+			</MSG_LOG>

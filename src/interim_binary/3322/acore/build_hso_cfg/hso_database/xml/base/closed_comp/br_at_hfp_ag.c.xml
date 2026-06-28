@@ -1,0 +1,43 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="hfp registered @br_at_hfp_ag.c(47),INFO" ID="0xe92a017d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp init @br_at_hfp_ag.c(54),INFO" ID="0xe92a01b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp deinit @br_at_hfp_ag.c(61),INFO" ID="0xe92a01ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp start server @br_at_hfp_ag.c(68),INFO" ID="0xe92a0225" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp stop server @br_at_hfp_ag.c(75),INFO" ID="0xe92a025d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG connect remote device get addr fail. @br_at_hfp_ag.c(84),ERROR" ID="0xe92a02a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag connect remote device res=0x%x @br_at_hfp_ag.c(88),INFO" ID="0xe92a02c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag disconnect remote device res=0x%x @br_at_hfp_ag.c(95),INFO" ID="0xe92a02fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag connect sco res=0x%x @br_at_hfp_ag.c(102),INFO" ID="0xe92a0335" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag disconnect sco res=0x%x @br_at_hfp_ag.c(109),INFO" ID="0xe92a036d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag pick up call res=0x%x @br_at_hfp_ag.c(116),INFO" ID="0xe92a03a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hang up call res=0x%x @br_at_hfp_ag.c(123),INFO" ID="0xe92a03dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag dial res=0x%x @br_at_hfp_ag.c(130),INFO" ID="0xe92a0415" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG phone info malloc fail. @br_at_hfp_ag.c(139),ERROR" ID="0xe92a045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG phone info memcpys fail. @br_at_hfp_ag.c(148),ERROR" ID="0xe92a04a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag send incoming event res=0x%x @br_at_hfp_ag.c(154),INFO" ID="0xe92a04d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag send network event res=0x%x @br_at_hfp_ag.c(161),INFO" ID="0xe92a050d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag set volume res=0x%x @br_at_hfp_ag.c(168),INFO" ID="0xe92a0545" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG phone info malloc fail. @br_at_hfp_ag.c(177),ERROR" ID="0xe92a058a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG current call list info memcpys fail. @br_at_hfp_ag.c(188),ERROR" ID="0xe92a05e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag send current calls res=0x%x @br_at_hfp_ag.c(194),INFO" ID="0xe92a0615" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG phone info malloc fail. @br_at_hfp_ag.c(202),ERROR" ID="0xe92a0652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG phone info memcpys fail. @br_at_hfp_ag.c(211),ERROR" ID="0xe92a069a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag send subscriber number res=0x%x @br_at_hfp_ag.c(217),INFO" ID="0xe92a06cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag send battery res=0x%x @br_at_hfp_ag.c(224),INFO" ID="0xe92a0705" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag send cmee error res=0x%x @br_at_hfp_ag.c(231),INFO" ID="0xe92a073d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG operators info malloc fail. @br_at_hfp_ag.c(240),ERROR" ID="0xe92a0782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG operators info memcpys fail. @br_at_hfp_ag.c(247),ERROR" ID="0xe92a07ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag send operators info res=0x%x @br_at_hfp_ag.c(253),INFO" ID="0xe92a07ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP AG indicator info malloc fail. @br_at_hfp_ag.c(261),ERROR" ID="0xe92a082a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag set indicator value res=0x%x @br_at_hfp_ag.c(273),INFO" ID="0xe92a088d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag open voice recognition res=0x%x @br_at_hfp_ag.c(280),INFO" ID="0xe92a08c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag close voice recognition res=0x%x @br_at_hfp_ag.c(287),INFO" ID="0xe92a08fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag set inband ring res=0x%x @br_at_hfp_ag.c(294),INFO" ID="0xe92a0935" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag set codec res=0x%x @br_at_hfp_ag.c(301),INFO" ID="0xe92a096d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag set codec res=0x%x @br_at_hfp_ag.c(308),INFO" ID="0xe92a09a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag send at cmd res=0x%x @br_at_hfp_ag.c(315),INFO" ID="0xe92a09dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP ag connect status get addr fail. @br_at_hfp_ag.c(323),ERROR" ID="0xe92a0a1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag connect status=%u @br_at_hfp_ag.c(327),INFO" ID="0xe92a0a3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP ag sco status get addr fail. @br_at_hfp_ag.c(336),ERROR" ID="0xe92a0a82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag sco status=%u @br_at_hfp_ag.c(340),INFO" ID="0xe92a0aa5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] br at hfp register at fail @br_at_hfp_ag.c(643),ERROR" ID="0xe92a141a" />
+			</MSG_LOG>

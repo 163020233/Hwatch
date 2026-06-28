@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg6" NAME="[hifi][watch_music_src] toggle_count: %u |send_count: %u |buf_empty_cnt: %u |cur_size: %u |mute_count: %u |needed_size: %u @watch_music.c(117),WARNING" ID="0x990a03ab" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[hifi][watch_music_src] toggle_count: %u |send_count: %u |buf_empty_cnt: %u |cur_size: %u |total_size: %u |needed_size: %u @watch_music.c(123),WARNING" ID="0x990a03db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][watch_music_src] adp has already registered @watch_music.c(138),ERROR" ID="0x990a0452" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][watch_music_src] register adp handle: 0x%x @watch_music.c(143),WARNING" ID="0x990a047b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][watch_music_src] unregister invalid adp handle: 0x%x |the registered adp handle: 0x%x @watch_music.c(161),ERROR" ID="0x990a050a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][watch_music_src] unregister adp handle: 0x%x @watch_music.c(165),WARNING" ID="0x990a052b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][watch_music_src] bt_packet_data_length: %u @watch_music.c(224),ERROR" ID="0x990a0702" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][watch_music_src] toggle_len: %u, toggle_size: %u, bt_packet_data_length: %u, dsp_packet_data_length: %u @watch_music.c(228),WARNING" ID="0x990a0723" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][watch_music_src] reset needed_size @watch_music.c(230),WARNING" ID="0x990a0733" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][watch_music_src] flow_ctrl_en=%u, flow_ctrl_tog_cnt=%u, needed_size=%u @watch_music.c(241),WARNING" ID="0x990a078b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][watch_music_src] flow_ctrl_en=%u, needed_size=%u @watch_music.c(245),WARNING" ID="0x990a07ab" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][watch_music_src] tog_cnt: %u |send_cnt: %u |flow_ctrl_tog_cnt: %u |needed_size: %u @watch_music.c(263),WARNING" ID="0x990a083b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][watch_music_src] data size info circle buffer is full @watch_music.c(279),ERROR" ID="0x990a08ba" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][watch_music_src] tog_cnt: %u| send_cnt: %u| continuous_buf_empty_cnt: %u| needed_size: %u @watch_music.c(313),WARNING" ID="0x990a09cb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][watch_music_src] frame_cnt: %u| packet_size: %u| buf_empty_cnt: %u| cur_size: %u @watch_music.c(326),WARNING" ID="0x990a0a33" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_acquire_stream Failed, Error Code: [0x%08X] @watch_music.c(428),ERROR" ID="0x990a0d62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_release_stream Failed, Error Code: [0x%08X] @watch_music.c(436),ERROR" ID="0x990a0da2" />
+			</MSG_LOG>

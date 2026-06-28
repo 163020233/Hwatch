@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="discover scan start fail 0x%x @ble_device_discover.c(40),ERROR" ID="0xea5c0142" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="discover adv start fail 0x%x @ble_device_discover.c(46),ERROR" ID="0xea5c0172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="discover scan mode fail @ble_device_discover.c(54),ERROR" ID="0xea5c01b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][BLE_received_peer_addr]not couple @ble_device_discover.c(58),ERROR" ID="0xea5c01d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS]BLE stop scan @ble_device_discover.c(69),ERROR" ID="0xea5c022a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BLE_received_peer_addr]start pair fail, ret 0x%08x @ble_device_discover.c(74),ERROR" ID="0xea5c0252" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS][BLE_received_peer_addr]mode:0x%x, type:0x%x @ble_device_discover.c(83),ERROR" ID="0xea5c029a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="discover scan start fail 0x%x @ble_device_discover.c(120),ERROR" ID="0xea5c03c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="start discovery fail, ret 0x%x @ble_device_discover.c(139),ERROR" ID="0xea5c045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs_ble_start_discovery, dev is in discovering @ble_device_discover.c(146),INFO" ID="0xea5c0495" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs_ble_start_discovery, dev is in advertising @ble_device_discover.c(151),INFO" ID="0xea5c04bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble stop discovery fail, type %d, ret 0x%x @ble_device_discover.c(183),ERROR" ID="0xea5c05ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs_ble_stop_discovery, dev is in BS_BLE_ADV_STATUS_STOPPED @ble_device_discover.c(192),INFO" ID="0xea5c0605" />
+			</MSG_LOG>

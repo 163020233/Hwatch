@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][COLLECT_AVRCP_FAIL]EXP_LEN=%u, REAL_LEN=%u @jitws_para_sync_avrcp.c(256),WARNING" ID="0xec000803" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS]release avrcp fail!, addr: %x***%x%x @jitws_para_sync_avrcp.c(375),ERROR" ID="0xec000bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_AVRCP_FAIL]no acl link! @jitws_para_sync_avrcp.c(658),INFO" ID="0xec001495" />
+			</MSG_LOG>

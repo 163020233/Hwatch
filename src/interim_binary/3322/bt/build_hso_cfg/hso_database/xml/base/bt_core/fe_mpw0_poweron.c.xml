@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]ssi read return err @fe_mpw0_poweron.c(299),ERROR" ID="0x897a095a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR]bt ssi write err:Addr 0x%x-&gt;%x @fe_mpw0_poweron.c(304),ERROR" ID="0x897a0982" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]write to:0x%x = 0x%x, read back value:0x%x @fe_mpw0_poweron.c(327),INFO" ID="0x897a0a3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]CMU lock fail!!! @fe_mpw0_poweron.c(547),WARNING" ID="0x897a111b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]write ssi 2end @fe_mpw0_poweron.c(600),INFO" ID="0x897a12c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]bt_mpw0_poweron_common_work, 0x59004208 read = 0x%x @fe_mpw0_poweron.c(605),INFO" ID="0x897a12ed" />
+			</MSG_LOG>

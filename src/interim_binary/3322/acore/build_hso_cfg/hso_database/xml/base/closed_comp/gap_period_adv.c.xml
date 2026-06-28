@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GAP]gap le set periodic advertising memcpy failed @gap_period_adv.c(85),ERROR" ID="0xeb8c02aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]gap le set periodic advertising memcpy failed @gap_period_adv.c(228),ERROR" ID="0xeb8c0722" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]gap le periodic advertising create sync memcpy failed @gap_period_adv.c(296),ERROR" ID="0xeb8c0942" />
+			</MSG_LOG>

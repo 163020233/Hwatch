@@ -1,0 +1,28 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[HITWS][IsoInitLinkinfo]MOBILE_ADDR=%02x:%02x:**:**:**:%02x,hci_handle=0x%x @hitws_iso_mngt.c(198),INFO" ID="0xec100635" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][RECV_ISO_PARAM]iso param configured @hitws_iso_mngt.c(214),INFO" ID="0xec1006b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][RECV_MOBILE_ISO]remote_addr is NULL @hitws_iso_mngt.c(233),INFO" ID="0xec10074d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HITWS][RECV_ISO_INFO_ENTER]stream_num=%d, acl_handle=0x%x @hitws_iso_mngt.c(239),INFO" ID="0xec10077d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][RECV_ISO_INFO_ENTER]ignore, configuring num=%d @hitws_iso_mngt.c(242),INFO" ID="0xec100795" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][RESTART_SNIFF]result=%d @hitws_iso_mngt.c(281),INFO" ID="0xec1008cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][ISO_UPDATE_ENABLE]stream_id=%d, unknow stream_id @hitws_iso_mngt.c(303),WARNING" ID="0xec10097b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][ISO_UPDATE_ENABLE]stream_id=%d, iso param has not been configed @hitws_iso_mngt.c(310),WARNING" ID="0xec1009b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][ISO_UPDATE_ENABLE]iso_handle=%d, wrong handle @hitws_iso_mngt.c(316),WARNING" ID="0xec1009e3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][ISO_UPDATE]iso_handle=%d, wrong stream_id @hitws_iso_mngt.c(349),WARNING" ID="0xec100aeb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][SETUP_DATAPATH]iso_state=%d, is not ISO_STATE_SETUPDATAPATH @hitws_iso_mngt.c(363),WARNING" ID="0xec100b5b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][ISO_UPDATE_DISABLE]configFlag is false @hitws_iso_mngt.c(378),WARNING" ID="0xec100bd3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][SETUP_DATAPATH_ENTER]stream_id=%d @hitws_iso_mngt.c(403),INFO" ID="0xec100c9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][SETUP_DATAPATH_ENTER]active_device is NULL @hitws_iso_mngt.c(406),INFO" ID="0xec100cb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][SETUP_DATAPATH_ENTER]Ingore, DSP is Opening!!! @hitws_iso_mngt.c(410),INFO" ID="0xec100cd5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][SETUP_DATAPATH_ENTER]iso state is wrong @hitws_iso_mngt.c(418),INFO" ID="0xec100d15" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HITWS][SETUP_DATAPATH_ENTER] input_data_path=%d, output_data_path=%d, hitws_is_silent=%d @hitws_iso_mngt.c(433),INFO" ID="0xec100d8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][GET_CONFIG_PARAM]stream_id=%d, hitws iso get config param @hitws_iso_mngt.c(497),INFO" ID="0xec100f8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][CHANGE_DATAPATH]TWS_ROLE=%d, hitws iso change datapath by role invalid role @hitws_iso_mngt.c(545),WARNING" ID="0xec10110b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][IsoChangeDatapathByRole]IsoChangeDatapathByRole active @hitws_iso_mngt.c(556),WARNING" ID="0xec101163" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][IsoChangeDatapathByRole]IsoChangeDatapathByRole inactive @hitws_iso_mngt.c(563),WARNING" ID="0xec10119b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HITWS][CHANNEL_REQ]stream_id=%d, acl_conn_handle=0x%x, channel_handle=0x%x,channel_id=%d @hitws_iso_mngt.c(610),WARNING" ID="0xec101313" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][CHANNEL_REQ]fsm is NULL @hitws_iso_mngt.c(614),WARNING" ID="0xec101333" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][CHANNEL_RSP]remote_addr is NULL @hitws_iso_mngt.c(636),WARNING" ID="0xec1013e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][CHANNEL_RSP]fsm is NULL @hitws_iso_mngt.c(642),WARNING" ID="0xec101413" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HITWS][CHANNEL_RSP]stream_id=%d, result=%d,iso_handle=0x%x @hitws_iso_mngt.c(647),WARNING" ID="0xec10143b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HDAP]hitws ev number of cmp pkt numsend=%d, numcomplete=%d @hitws_iso_mngt.c(715),INFO" ID="0xec10165d" />
+			</MSG_LOG>

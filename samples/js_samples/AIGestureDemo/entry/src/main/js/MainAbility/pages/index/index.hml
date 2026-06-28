@@ -1,0 +1,13 @@
+<stack class="container">
+    <swiper style="height: 100%;width: 100%;" onchange="onChange" index="{{index}}" loop="false">
+        <text style="width: 100%;height: 100%;text-align: center;text-align-vertical: center;background-color: rosybrown;">
+            {{ index }}
+        </text>
+        <text style="width: 100%;height: 100%;text-align: center;text-align-vertical: center;background-color: mediumslateblue;">
+            {{ index }}
+        </text>
+        <text style="width: 100%;height: 100%;text-align: center;text-align-vertical: center;background-color: peru;">
+            {{ index }}
+        </text>
+    </swiper>
+</stack>

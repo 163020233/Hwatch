@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]data overflow, data[1] %d, BLE_ADV_FILTER_CNT_MAX %d @lm_ble_scan_filter_ram.c(33),WARNING" ID="0x8c32010b" />
+			</MSG_LOG>

@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_TESTMODE]rx_process_data: bt_rxrssi_reg=0x%x rssi_rpt_last=%d  rssi_avg=%d rx_len=%d @evt_task_classic_test_mode_isr.c(87),INFO" ID="0x89f002bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]rx_recv_data: rxpd_cnt%d @evt_task_classic_test_mode_isr.c(114),INFO" ID="0x89f00395" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_TESTMODE]rx_recv_data: rxpd_index%d rx_len%d rxpd_rx_error_status[0x%x] @evt_task_classic_test_mode_isr.c(128),INFO" ID="0x89f00405" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]evt_task_bt_test_mode_tx_freq_hop_resched null_ptr. @evt_task_classic_test_mode_isr.c(163),INFO" ID="0x89f0051d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_TESTMODE] tx_freq_hop_resched insert err. cur=0x%X, new_ts=0x%X, intv=%u. @evt_task_classic_test_mode_isr.c(174),INFO" ID="0x89f00575" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_bt_test_mode_rx_cbk: null env @evt_task_classic_test_mode_isr.c(267),ERROR" ID="0x89f0085a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]isr_cbk: isr_pos %d @evt_task_classic_test_mode_isr.c(291),INFO" ID="0x89f0091d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE] cancel_cbk @evt_task_classic_test_mode_isr.c(313),INFO" ID="0x89f009cd" />
+			</MSG_LOG>

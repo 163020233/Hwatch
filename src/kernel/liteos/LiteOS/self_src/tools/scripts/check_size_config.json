@@ -1,0 +1,37 @@
+{
+    "name" : "hiwing",
+    "map_filename" : "vs_server.map",
+    "map_path" : "out/hiwing/{}",
+
+    "liteos" : ["libtargets.a", "libm.a", "libsec.a", "libtimer.a",
+        "libdynload.a", "liblinux.a", "libuart.a", "lib.a", "libshell.a",
+        "libinit.a", "libcompat.a", "libposix.a", "libcsysdeps.a",
+        "libarm_pl011.a", "libc.a", "libcmsis.a", "libdriverbase.a",
+        "libbase.a", "libriscv.a", "libarchcommon.a", "libinterrupt.a", "libLiteOS_T*.a",
+        "libhi_osal.a","libclang_rt*.a"
+    ],
+    "liteos.a" : 62123,
+    "libbase.a": 23274,
+    "libinit.a": 15392,
+    "libshell.a": 5634,
+    "libsec.a": 3819,
+    "libc.a": 3608,
+    "libarm_pl011.a": 1712,
+    "libinterrupt.a": 1703,
+    "libriscv.a": 1498,
+    "libcsysdeps.a": 1438,
+    "liblinux.a": 989,
+    "libdriverbase.a": 802,
+    "libuart.a": 739,
+    "libtargets.a": 671,
+    "libtimer.a": 418,
+    "libclang_rt*.a": 234,
+    "libposix.a": 152,
+
+    "change_history" : [
+        {
+            "date": "2024-02-28",
+            "description": "The initial value of liteos.a is set to 62123."
+        }
+    ]
+}

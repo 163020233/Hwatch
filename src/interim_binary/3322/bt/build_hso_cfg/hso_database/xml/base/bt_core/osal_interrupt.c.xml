@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="param_dev is NULL! @osal_interrupt.c(37),INFO" ID="0xa038012d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="handler is NULL! @osal_interrupt.c(51),INFO" ID="0xa038019d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="HwiCreate fail! irq[%u] ret=%#x. @osal_interrupt.c(62),INFO" ID="0xa03801f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="HwiDelete fail! ret=%#x. @osal_interrupt.c(72),INFO" ID="0xa0380245" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="OS_ERRNO_HWI_HWINUM_UNCREATE! @osal_interrupt.c(98),INFO" ID="0xa0380315" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="HwiDelete fail! ret=%#x. @osal_interrupt.c(100),INFO" ID="0xa0380325" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="not supported. @osal_interrupt.c(195),INFO" ID="0xa038061d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="not supported. @osal_interrupt.c(221),INFO" ID="0xa03806ed" />
+			</MSG_LOG>

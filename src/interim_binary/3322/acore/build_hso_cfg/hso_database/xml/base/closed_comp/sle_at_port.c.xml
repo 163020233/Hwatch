@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error]:port server, start server falied:0x%x @sle_at_port.c(633),ERROR" ID="0xea3a13ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]:port profile connect falied:0x%x @sle_at_port.c(647),ERROR" ID="0xea3a143a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]at port alloc port failed:0x%x @sle_at_port.c(677),ERROR" ID="0xea3a152a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]at port register manager cbk failed:0x%x @sle_at_port.c(683),ERROR" ID="0xea3a155a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]at port delete, delete port info by port failed:0x%x @sle_at_port.c(698),ERROR" ID="0xea3a15d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]at port delete, delete by uuid failed:0x%x @sle_at_port.c(729),ERROR" ID="0xea3a16ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]at port get_remoteport by std uuid failed:0x%x @sle_at_port.c(760),ERROR" ID="0xea3a17c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] port get_tc_handle fail! ret = %u  @sle_at_port.c(788),ERROR" ID="0xea3a18a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] port del_tc_handle fail! ret = %u  @sle_at_port.c(811),ERROR" ID="0xea3a195a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle read remote device rssi fail! ret = %u  @sle_at_port.c(847),ERROR" ID="0xea3a1a7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]at port delete, delete app info failed:0x%x @sle_at_port.c(863),ERROR" ID="0xea3a1afa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]register_channel_cbk, register channel cbk info by port failed:0x%x @sle_at_port.c(877),ERROR" ID="0xea3a1b6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]unregister_channel_cbk, unregister channel cbk info by port failed:0x%x @sle_at_port.c(891),ERROR" ID="0xea3a1bda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]at port register capability callbacks failed, reg callback ret:%u @sle_at_port.c(933),ERROR" ID="0xea3a1d2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]at capability query, query failed:0x%x @sle_at_port.c(948),ERROR" ID="0xea3a1da2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_at_port_get_remote_port_num_by_conn_id, get remote port num failed:0x%x @sle_at_port.c(962),ERROR" ID="0xea3a1e12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]port_get_remote_info_by_conn_id, alloc port_info_list failed. @sle_at_port.c(985),ERROR" ID="0xea3a1eca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]get_remote_info_by_conn_id, get remote info failed:0x%x @sle_at_port.c(997),ERROR" ID="0xea3a1f2a" />
+			</MSG_LOG>

@@ -1,0 +1,77 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="structure_find_result malloc fail. @btsrv_gatt_multi_client.c(108),ERROR" ID="0xe8920362" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="conn_node not found. @btsrv_gatt_multi_client.c(118),ERROR" ID="0xe89203b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][INFO] add service node, structure_find_result is NULL @btsrv_gatt_multi_client.c(140),ERROR" ID="0xe8920462" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[btsrv][INFO] add service node start hdl:0x%0x, end hdl:0x%0x @btsrv_gatt_multi_client.c(145),INFO" ID="0xe892048d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][INFO] add service node malloc fail @btsrv_gatt_multi_client.c(154),ERROR" ID="0xe89204d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add service node memcpy fail @btsrv_gatt_multi_client.c(168),ERROR" ID="0xe8920542" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="add service node connid(%d),start hdl:0x%0x, uuid:0x%02x%02x @btsrv_gatt_multi_client.c(178),INFO" ID="0xe8920595" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure fail, connid(%d), client_id:0x%x @btsrv_gatt_multi_client.c(188),ERROR" ID="0xe89205e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][INFO]structure_find_result is NULL @btsrv_gatt_multi_client.c(199),ERROR" ID="0xe892063a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc find service_node fail @btsrv_gatt_multi_client.c(217),ERROR" ID="0xe89206ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc find chara_node fail @btsrv_gatt_multi_client.c(228),ERROR" ID="0xe8920722" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc find des start hdl exceed end hdl @btsrv_gatt_multi_client.c(239),INFO" ID="0xe892077d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find descri start hdl: 0x%x, end hdl: 0x%x @btsrv_gatt_multi_client.c(243),INFO" ID="0xe892079d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="service_node is NULL @btsrv_gatt_multi_client.c(266),ERROR" ID="0xe8920852" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="character_node is NULL @btsrv_gatt_multi_client.c(272),ERROR" ID="0xe8920882" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="add character node duplicated on connid(%d), handle:0x%x, properties:0x%02x @btsrv_gatt_multi_client.c(285),INFO" ID="0xe89208ed" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="add character node connid(%d), handle:0x%x, uuid:0x%02x%02x @btsrv_gatt_multi_client.c(293),INFO" ID="0xe892092d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find character fail, connid(%d), client_id:0x%x @btsrv_gatt_multi_client.c(301),ERROR" ID="0xe892096a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="service node is NULL @btsrv_gatt_multi_client.c(330),ERROR" ID="0xe8920a52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="character node is NULL @btsrv_gatt_multi_client.c(336),ERROR" ID="0xe8920a82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc new descriptor node fail @btsrv_gatt_multi_client.c(342),ERROR" ID="0xe8920ab2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="add descriptor node duplicated on connid(%d), handle:0x%x @btsrv_gatt_multi_client.c(352),INFO" ID="0xe8920b05" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="add descriptor node connid(%d), handle:0x%x, uuid:0x%02x%02x @btsrv_gatt_multi_client.c(359),INFO" ID="0xe8920b3d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find descriptor fail, connid(%d), client_id:0x%x @btsrv_gatt_multi_client.c(367),ERROR" ID="0xe8920b7a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GATT][Client]find item hdl: %x, type = %d @btsrv_gatt_multi_client.c(404),INFO" ID="0xe8920ca5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="connect param update, conn_node not found. @btsrv_gatt_multi_client.c(474),ERROR" ID="0xe8920ed2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="service node is NULL @btsrv_gatt_multi_client.c(500),ERROR" ID="0xe8920fa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="service node is NULL @btsrv_gatt_multi_client.c(578),ERROR" ID="0xe8921212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GATTC]service node item copy fail @btsrv_gatt_multi_client.c(623),ERROR" ID="0xe892137a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="find structure complete fail, connid(%d) @btsrv_gatt_multi_client.c(644),ERROR" ID="0xe8921422" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure complete, connid(%d), is_found_comp:0x%x @btsrv_gatt_multi_client.c(652),INFO" ID="0xe8921465" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure complete multi cbk find_structure_cbk, connid(%d) client_id:%d @btsrv_gatt_multi_client.c(660),INFO" ID="0xe89214a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure complete multi cbk find by uuid on connid(%d) client_id:%d @btsrv_gatt_multi_client.c(668),INFO" ID="0xe89214e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure complete fail, connid(%d), client_id:0x%x @btsrv_gatt_multi_client.c(695),ERROR" ID="0xe89215ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure complete fail, service node null: connid(%d), client_id:0x%x @btsrv_gatt_multi_client.c(709),ERROR" ID="0xe892162a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure complete fail, chara node null:connid(%d), client_id:0x%x @btsrv_gatt_multi_client.c(716),ERROR" ID="0xe8921662" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure complete, connid(%d), client_id:0x%x @btsrv_gatt_multi_client.c(736),INFO" ID="0xe8921705" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="service_node is NULL @btsrv_gatt_multi_client.c(753),ERROR" ID="0xe892178a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="chara_node is NULL @btsrv_gatt_multi_client.c(764),ERROR" ID="0xe89217e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure complete fail, connid(%d), client_id:0x%x @btsrv_gatt_multi_client.c(794),ERROR" ID="0xe89218d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GATTC][INFO] unknown type: %d @btsrv_gatt_multi_client.c(811),INFO" ID="0xe892195d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="find structure complete fail, connid(%d), client_id:0x%x, status:0x%x @btsrv_gatt_multi_client.c(824),ERROR" ID="0xe89219c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="find structure complete fail @btsrv_gatt_multi_client.c(828),ERROR" ID="0xe89219e2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="find structure complete fail, connid(%d), client_id:0x%x, status:0x%x @btsrv_gatt_multi_client.c(840),ERROR" ID="0xe8921a42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="find structure complete fail @btsrv_gatt_multi_client.c(844),ERROR" ID="0xe8921a62" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="find structure complete fail, connid(%d), client_id:0x%x, status:0x%x @btsrv_gatt_multi_client.c(855),ERROR" ID="0xe8921aba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="find structure complete fail @btsrv_gatt_multi_client.c(859),ERROR" ID="0xe8921ada" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="find_structure_result is NULL @btsrv_gatt_multi_client.c(884),ERROR" ID="0xe8921ba2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc_free_structure_service_node start_handle:0x%x, end_handle:0x%x @btsrv_gatt_multi_client.c(891),INFO" ID="0xe8921bdd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="structure_context is NULL @btsrv_gatt_multi_client.c(908),ERROR" ID="0xe8921c62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gattc_get_structure_result get node fail, connid(%d) @btsrv_gatt_multi_client.c(961),ERROR" ID="0xe8921e0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gattc_delete_structure_result_node success, connid(%d) @btsrv_gatt_multi_client.c(968),INFO" ID="0xe8921e45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gattc_get_structure_result_by_conn_id node is null, conn_id:0x%02x @btsrv_gatt_multi_client.c(977),ERROR" ID="0xe8921e8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gattc_delete_find_ctx_structure_node node is null, conn_id:0x%02x @btsrv_gatt_multi_client.c(992),ERROR" ID="0xe8921f02" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gattc_get_structure_result_by_addr node is null, 0x%02x:**:**:**:0x%02x:0x%02x @btsrv_gatt_multi_client.c(1026),ERROR" ID="0xe8922012" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gattc_pair_remove_cbk mac:0x%02x:**:**:**:0x%02x:0x%02x @btsrv_gatt_multi_client.c(1039),INFO" ID="0xe892207d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gattc_pair_remove_cbk status error on mac:0x%02x:**:**:**:0x%02x:0x%02x, status:0x%0x @btsrv_gatt_multi_client.c(1043),ERROR" ID="0xe892209a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gattc connect_state_changed_callback. conn_id = %u, conn_state = %u, pair_state = %u, disc_reason = %u @btsrv_gatt_multi_client.c(1065),INFO" ID="0xe892214d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc_multi_cbk list lock init fail @btsrv_gatt_multi_client.c(1082),ERROR" ID="0xe89221d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="init osal mutex gattc_structure_list_lock failed! @btsrv_gatt_multi_client.c(1088),ERROR" ID="0xe8922202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="init osal mutex gattc find_structure lock failed! @btsrv_gatt_multi_client.c(1094),ERROR" ID="0xe8922232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc gap_ble_callbacks_inner_register fail @btsrv_gatt_multi_client.c(1101),ERROR" ID="0xe892226a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] gattc find structure all cbk is null @btsrv_gatt_multi_client.c(1130),ERROR" ID="0xe8922352" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[btsrv][ERROR] gattc find structure all client_id: %d, connid: %d @btsrv_gatt_multi_client.c(1136),ERROR" ID="0xe8922382" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc_find_structure_all gattc client_id(%d), connid(%d) gattc_find_structure fail. @btsrv_gatt_multi_client.c(1202),ERROR" ID="0xe8922592" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc_find_structure_all gattc client_id(%d), connid(%d) begin ind all structure. @btsrv_gatt_multi_client.c(1211),INFO" ID="0xe89225dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc discovery service cbk mem cpy failed @btsrv_gatt_multi_client.c(1251),ERROR" ID="0xe892271a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] gattc find by_uuid_group is null @btsrv_gatt_multi_client.c(1271),ERROR" ID="0xe89227ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[btsrv][ERROR] gattc find by_uuid_group client_id: %d, connid: %d @btsrv_gatt_multi_client.c(1277),ERROR" ID="0xe89227ea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc_find_structure_by_uuid_group gattc client_id(%d), connid(%d) find structure by cache. @btsrv_gatt_multi_client.c(1297),ERROR" ID="0xe892288a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc find by uuid client_id(%d), connid(%d) malloc fail. @btsrv_gatt_multi_client.c(1319),ERROR" ID="0xe892293a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc find by uuid client_id(%d), connid(%d) add uuid fail. @btsrv_gatt_multi_client.c(1334),ERROR" ID="0xe89229b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc find by uuid client_id(%d), connid(%d) is finding. @btsrv_gatt_multi_client.c(1345),ERROR" ID="0xe8922a0a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc_find_structure_by_uuid_group gattc client_id(%d), connid(%d) begin ind structure by uuid. @btsrv_gatt_multi_client.c(1366),INFO" ID="0xe8922ab5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc find by uuid client_id(%d), connid(%d) gattc_find_structure fail. @btsrv_gatt_multi_client.c(1370),ERROR" ID="0xe8922ad2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc find by uuid client_id(%d), connid(%d) gattc_find_structure fail. @btsrv_gatt_multi_client.c(1381),ERROR" ID="0xe8922b2a" />
+			</MSG_LOG>

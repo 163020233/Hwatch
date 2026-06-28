@@ -1,0 +1,73 @@
+<div class="container" style="flex-direction : column;">
+    <list class="todo-wrapper" >
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceMapPage">
+            <text class="todo-title">输入框测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceTextFontFamilyPage">
+            <text class="todo-title">文本字体测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replacePickerFontFamilyPage">
+            <text class="todo-title">Picker字体测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceGetDeviceInfoPage">
+            <text class="todo-title">GetDeviceInfo接口测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceBatteryPage">
+            <text class="todo-title">Battery接口测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceBrightnessPage">
+            <text class="todo-title">Brightness接口测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceSensorPage">
+            <text class="todo-title">Sensor接口测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceVibratorPage">
+            <text class="todo-title">Vibrator接口测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceCanvasDrawPage">
+            <text class="todo-title">Canvas画笔测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceCalculatorPage">
+            <text class="todo-title">Calculator接口测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceNetworkPage">
+            <text class="todo-title">Network接口测试</text>
+        </list-item>
+	    <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceCanvasDrawImagePage">
+            <text class="todo-title">Canvas DrawImage测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceFileReadRawFile">
+            <text class="todo-title">filereadrawfile接口测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceInitRouterToPage">
+            <text class="todo-title">init router 跳转测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceListItemAdapter">
+            <text class="todo-title">list-item 长文本</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceArcList">
+            <text class="todo-title">arcList 缩放列表</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceScroll">
+            <text class="todo-title">scroll 容器</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceTimerAppGlobal">
+            <text class="todo-title">AppGlobalTimer</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceFileWriteSubarray">
+            <text class="todo-title">fileWriteSubarray测试</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceImageAnimator">
+            <text class="todo-title">image-animator</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="replaceMarqueeSample">
+            <text class="todo-title">marquee</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceText">
+            <text class="todo-title">text 组件</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="exit">
+            <text class="todo-title">BACK</text>
+        </list-item>
+    </list>
+</div>

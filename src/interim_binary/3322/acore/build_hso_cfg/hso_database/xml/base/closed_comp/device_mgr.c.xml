@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="dev_id alloc %d @device_mgr.c(72),INFO" ID="0xea660245" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dev_id find %d @device_mgr.c(86),INFO" ID="0xea6602b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dev id invalid %d @device_mgr.c(96),INFO" ID="0xea660305" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs_device_id_release:%d @device_mgr.c(105),INFO" ID="0xea66034d" />
+			</MSG_LOG>

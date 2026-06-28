@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] err encrypt_state:0x%x err state @ssf_conn_callback.c(84),ERROR" ID="0xef7a02a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] copy_result alloc failed @ssf_conn_callback.c(90),ERROR" ID="0xef7a02d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] send connect or pair state msg, encrypt_state:0x%x @ssf_conn_callback.c(96),INFO" ID="0xef7a0305" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] send connect or pair state msg failed, encrypt_state:0x%x ret: %u @ssf_conn_callback.c(112),ERROR" ID="0xef7a0382" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] connect state cbk, device_id: %u, addr: %02x:**:**:**:%02x:%02x @ssf_conn_callback.c(125),INFO" ID="0xef7a03ed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] connect state cbk, conn_state: %u, encrypt_state: %u, reason: %u @ssf_conn_callback.c(128),INFO" ID="0xef7a0405" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] ssf_conn_distribute_connect_state, invaild dev_id:%u ! @ssf_conn_callback.c(131),ERROR" ID="0xef7a041a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] sle_get_connect_role failed, ret:0x%x! @ssf_conn_callback.c(135),ERROR" ID="0xef7a043a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] ssf_conn_distribute_member_connect_state, invaild dev_id:%u ! @ssf_conn_callback.c(162),ERROR" ID="0xef7a0512" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] sle_get_connect_role failed, ret:0x%x! @ssf_conn_callback.c(167),ERROR" ID="0xef7a053a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] pair complete cbk, device_id: %u, addr: %02x:**:**:**:%02x:%02x @ssf_conn_callback.c(193),INFO" ID="0xef7a060d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] pair remove cbk, device_id: %u @ssf_conn_callback.c(208),INFO" ID="0xef7a0685" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] copy_result alloc failed @ssf_conn_callback.c(221),ERROR" ID="0xef7a06ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] send pair state msg failed, ret: %u @ssf_conn_callback.c(231),ERROR" ID="0xef7a073a" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[SSF][CONN] discovery result cbk, addr: %02x:**:**:**:%02x:%02x, full_name %s, short_name %s, company_id: %u data_len: %u @ssf_conn_callback.c(247),INFO" ID="0xef7a07bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] discovery: %u, state: %u @ssf_conn_callback.c(263),INFO" ID="0xef7a083d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] auto conn state: %u @ssf_conn_callback.c(278),INFO" ID="0xef7a08b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] read rssi complete, dev 0x%04x, rssi %d, status %d @ssf_conn_callback.c(295),INFO" ID="0xef7a093d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] sle link report, dev_id 0x%04x, status 0x%08x, bitmap 0x%04x, per %d @ssf_conn_callback.c(357),INFO" ID="0xef7a0b2d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] reg member conn cbk failed, cbk is null @ssf_conn_callback.c(373),ERROR" ID="0xef7a0baa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] start member conn failed, mem conn cbk is null @ssf_conn_callback.c(385),ERROR" ID="0xef7a0c0a" />
+			</MSG_LOG>

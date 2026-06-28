@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][scan]MSG_ALLOC_FAILED! @evt_task_ble_scan_isr.c(136),ERROR" ID="0x885e0442" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_SCAN]recv_data, ble_rxdone is 0, rx_counter is %d, rxpd_handled_cnt is %d, ble_rxthr is %d @evt_task_ble_scan_isr.c(184),ERROR" ID="0x885e05c2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_SCAN]recv_data free rxpd_index:%d, rx_counter:%d, status:0x%x @evt_task_ble_scan_isr.c(209),INFO" ID="0x885e068d" />
+			</MSG_LOG>

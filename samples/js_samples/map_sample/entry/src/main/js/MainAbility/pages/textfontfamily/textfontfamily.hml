@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="containerTitle">
+        <text class="title" onclick="replaceHomefoPage">
+	        字体加粗
+        </text>
+    </div>
+    <div class="containerTitle">
+        <input class="button" onclick="replaceHomefoPage">
+            字体加粗
+        </input>
+    </div>
+</div>

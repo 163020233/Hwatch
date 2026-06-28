@@ -1,0 +1,18 @@
+menu "FileSystem"
+orsource "compat/Kconfig"
+orsource "vfs/Kconfig"
+orsource "fat/Kconfig"
+orsource "ramfs/Kconfig"
+orsource "romfs/Kconfig"
+orsource "yaffs2/os_adapt/adapt_liteos/Kconfig"
+orsource "nfs/Kconfig"
+orsource "proc/Kconfig"
+orsource "littlefs/Kconfig"
+endmenu
+
+config LOSCFG_DRIVER_DISK
+    bool
+    default n
+    depends on LOSCFG_FS_VFS
+    help
+      Answer Y to enable LiteOS support pluggable device manager.

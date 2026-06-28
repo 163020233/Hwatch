@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="es_alarm_set: elt already exit, elt-&gt;ts 0x%x @evt_sched_alarm.c(87),ERROR" ID="0x8adc02ba" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="es_check_alarm_wait_list_prog,cur_time_g(0x%x)cur_time_b(0x%x)elt_ts(0x%x),elt_start_cbk(0x%x) @evt_sched_alarm.c(241),WARNING" ID="0x8adc078b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[WARN]es_check_alarm_wait_list_prog,cur_time(0x%x),alarm_timestamp(0x%x),alarm_cbk(0x%x) @evt_sched_alarm.c(259),WARNING" ID="0x8adc081b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[WARNING][EA]es_check_alarm_wait_list_prog:es_prog_timer again fail @evt_sched_alarm.c(272),WARNING" ID="0x8adc0883" />
+			</MSG_LOG>

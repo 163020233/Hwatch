@@ -1,0 +1,8 @@
+#===============================================================================
+# @brief    cmake make file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2022. All rights reserved.
+#===============================================================================
+add_subdirectory_if_exist(common)
+add_subdirectory_if_exist(fuzzy_command_word)
+add_subdirectory_if_exist(tts)
+add_subdirectory_if_exist(ai_sample)

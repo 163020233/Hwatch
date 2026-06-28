@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_legacy_auth_req_auth_act:: get_stroed_link_key @lm_classic_acl_srv_legacy_auth.c(78),INFO" ID="0x89e40275" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_legacy_auth_rsp_auth_act:: get_stroed_link_key @lm_classic_acl_srv_legacy_auth.c(107),INFO" ID="0x89e4035d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_legacy_auth_req_auth_act:: used_last_link_key @lm_classic_acl_srv_legacy_auth.c(114),INFO" ID="0x89e40395" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_legacy_auth_req_pair_act:: not req pair while recv peer inrand @lm_classic_acl_srv_legacy_auth.c(173),INFO" ID="0x89e4056d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AUT]lm_classic_acl_legacy_auth_check_denial_act:: code:0x%x @lm_classic_acl_srv_legacy_auth.c(213),INFO" ID="0x89e406ad" />
+			</MSG_LOG>

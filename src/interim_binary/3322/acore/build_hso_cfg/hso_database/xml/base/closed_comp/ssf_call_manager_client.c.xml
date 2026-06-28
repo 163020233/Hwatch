@@ -1,0 +1,92 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client call out param invalid @ssf_call_manager_client.c(72),ERROR" ID="0xef8a0242" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call out invalid out type=%u @ssf_call_manager_client.c(88),ERROR" ID="0xef8a02c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call out invalid sle_obj. err=%u @ssf_call_manager_client.c(98),ERROR" ID="0xef8a0312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call out get conn_id failed. err=%u @ssf_call_manager_client.c(105),ERROR" ID="0xef8a034a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call out get call inst failed. err=%u @ssf_call_manager_client.c(110),ERROR" ID="0xef8a0372" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] saf_ccpc_outgoing_call. conn_id=%u, call_inst_id=%u, outgoing_type=%u @ssf_call_manager_client.c(115),INFO" ID="0xef8a039d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call out failed. err=%u @ssf_call_manager_client.c(118),ERROR" ID="0xef8a03b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client accept param invalid @ssf_call_manager_client.c(126),ERROR" ID="0xef8a03f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call accept obj=%u @ssf_call_manager_client.c(129),INFO" ID="0xef8a040d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call accept invalid sle_obj. err=%u @ssf_call_manager_client.c(136),ERROR" ID="0xef8a0442" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call accept get conn_id failed. err=%u @ssf_call_manager_client.c(142),ERROR" ID="0xef8a0472" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call accept get call inst failed. err=%u @ssf_call_manager_client.c(147),ERROR" ID="0xef8a049a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] saf_ccpc_accept_call. conn_id=%u, call_inst_id=%u, call_id=%u @ssf_call_manager_client.c(153),INFO" ID="0xef8a04cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call accept failed. err=%u @ssf_call_manager_client.c(156),ERROR" ID="0xef8a04e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client terminate param invalid @ssf_call_manager_client.c(164),ERROR" ID="0xef8a0522" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call terminate obj=%u @ssf_call_manager_client.c(167),INFO" ID="0xef8a053d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call terminate invalid sle_obj. err=%u @ssf_call_manager_client.c(174),ERROR" ID="0xef8a0572" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call terminate get conn_id failed. err=%u @ssf_call_manager_client.c(180),ERROR" ID="0xef8a05a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call terminate get call inst failed. err=%u @ssf_call_manager_client.c(185),ERROR" ID="0xef8a05ca" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] saf_ccpc_terminate_call. conn_id=%u, call_inst_id=%u, call_id=%u @ssf_call_manager_client.c(191),INFO" ID="0xef8a05fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call terminate failed. err=%u @ssf_call_manager_client.c(194),ERROR" ID="0xef8a0612" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call terminate delete call record. call_id=%u @ssf_call_manager_client.c(200),INFO" ID="0xef8a0645" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client hold param invalid @ssf_call_manager_client.c(208),ERROR" ID="0xef8a0682" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call hold obj=%u @ssf_call_manager_client.c(211),INFO" ID="0xef8a069d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call hold invalid sle_obj. err=%u @ssf_call_manager_client.c(218),ERROR" ID="0xef8a06d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call hold get conn_id failed. err=%u @ssf_call_manager_client.c(224),ERROR" ID="0xef8a0702" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call hold get call inst failed. err=%u @ssf_call_manager_client.c(229),ERROR" ID="0xef8a072a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] saf_ccpc_hold_call. conn_id=%u, call_inst_id=%u, call_id=%u @ssf_call_manager_client.c(235),INFO" ID="0xef8a075d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call hold failed. err=%u @ssf_call_manager_client.c(238),ERROR" ID="0xef8a0772" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client retrive param invalid @ssf_call_manager_client.c(246),ERROR" ID="0xef8a07b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call retrive obj=%u @ssf_call_manager_client.c(249),INFO" ID="0xef8a07cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call retrive invalid sle_obj. err=%u @ssf_call_manager_client.c(256),ERROR" ID="0xef8a0802" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call retrive get conn_id failed. err=%u @ssf_call_manager_client.c(262),ERROR" ID="0xef8a0832" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call retrive get call inst failed. err=%u @ssf_call_manager_client.c(267),ERROR" ID="0xef8a085a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] saf_ccpc_retrieve_call. conn_id=%u, call_inst_id=%u, call_id=%u @ssf_call_manager_client.c(273),INFO" ID="0xef8a088d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call retrive failed. err=%u @ssf_call_manager_client.c(276),ERROR" ID="0xef8a08a2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] client report ccs name callback, conn_id=%u,inst_id=%u, status=%u @ssf_call_manager_client.c(298),INFO" ID="0xef8a0955" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] client report ccs icon obtain way callback,conn_id=%u,inst_id=%u, status=%u @ssf_call_manager_client.c(311),INFO" ID="0xef8a09bd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] client report feature state callback, conn_id=%u,inst_id=%u, feature_state=%u @ssf_call_manager_client.c(323),DBG" ID="0xef8a0a1e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client report feature state callback, invalid device id @ssf_call_manager_client.c(326),ERROR" ID="0xef8a0a32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client report feature state get invalid obj. @ssf_call_manager_client.c(332),ERROR" ID="0xef8a0a62" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] client report protocol support callback, conn_id=%u,inst_id=%u, status=%u @ssf_call_manager_client.c(350),INFO" ID="0xef8a0af5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] client report last call info callback, conn_id=%u,inst_id=%u, status=%u @ssf_call_manager_client.c(361),INFO" ID="0xef8a0b4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client report last call info callback, invalid info. conn_id=%u @ssf_call_manager_client.c(364),ERROR" ID="0xef8a0b62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client report last call info callback, find call record. conn_id=%u @ssf_call_manager_client.c(371),INFO" ID="0xef8a0b9d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client report last call info callback, append failed, conn_id=%u @ssf_call_manager_client.c(385),ERROR" ID="0xef8a0c0a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] append call record. call_id=%u, call_state=%u @ssf_call_manager_client.c(418),INFO" ID="0xef8a0d15" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] client update call record list, call_id=%u, call_state=%u @ssf_call_manager_client.c(435),INFO" ID="0xef8a0d9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] having held call and count &gt;=2, going to report one by one @ssf_call_manager_client.c(457),INFO" ID="0xef8a0e4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client filter out held if active call, malloc failed @ssf_call_manager_client.c(460),ERROR" ID="0xef8a0e62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client check if reported single incoming call, already reported. call_id=%u @ssf_call_manager_client.c(500),INFO" ID="0xef8a0fa5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CALL] client report call status callback, conn_id=%u,inst_id=%u, status=%u, count=%u @ssf_call_manager_client.c(514),INFO" ID="0xef8a1015" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] reporting call status, call status is null or cnt is 0 @ssf_call_manager_client.c(516),ERROR" ID="0xef8a1022" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client report status cbk, invalid device id @ssf_call_manager_client.c(521),ERROR" ID="0xef8a104a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client report status cbk get invalid obj @ssf_call_manager_client.c(528),ERROR" ID="0xef8a1082" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] failed to mem alloc for client_status, conn_id=%u @ssf_call_manager_client.c(534),ERROR" ID="0xef8a10b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] client report call status callback, report twice, count=%u, conn_id=%u @ssf_call_manager_client.c(541),INFO" ID="0xef8a10ed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] client report call terminate callback, conn_id=%u,inst_id=%u, status=%u @ssf_call_manager_client.c(570),DBG" ID="0xef8a11d6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client report terminate cbk, invalid device id @ssf_call_manager_client.c(573),ERROR" ID="0xef8a11ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client report terminate cbk get invalid obj @ssf_call_manager_client.c(579),ERROR" ID="0xef8a121a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call terminate delete call record. call_id=%u @ssf_call_manager_client.c(590),INFO" ID="0xef8a1275" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] client report media instance callback, conn_id=%u,inst_id=%u, status=%u @ssf_call_manager_client.c(608),INFO" ID="0xef8a1305" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] client report net select callback, conn_id=%u,inst_id=%u @ssf_call_manager_client.c(622),INFO" ID="0xef8a1375" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] client report call operation support callback, conn_id=%u,inst_id=%u @ssf_call_manager_client.c(635),INFO" ID="0xef8a13dd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] client report call operation callback, conn_id=%u,inst_id=%u @ssf_call_manager_client.c(648),INFO" ID="0xef8a1445" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client report voice assistant state, invalid device id @ssf_call_manager_client.c(662),ERROR" ID="0xef8a14b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client report voice assistant state get invalid obj. @ssf_call_manager_client.c(668),ERROR" ID="0xef8a14e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] client report voice assistant operation callback, conn_id=%u,inst_id=%u @ssf_call_manager_client.c(686),INFO" ID="0xef8a1575" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client call operate request invalid type @ssf_call_manager_client.c(694),ERROR" ID="0xef8a15b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client call operate request invalid param @ssf_call_manager_client.c(698),ERROR" ID="0xef8a15d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] bs_sle_call_operate_request. obj: %u, type: %u, param_len:%u @ssf_call_manager_client.c(702),INFO" ID="0xef8a15f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client call operate request, type=%u @ssf_call_manager_client.c(703),DBG" ID="0xef8a15fe" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client call operate request func is null @ssf_call_manager_client.c(715),ERROR" ID="0xef8a165a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] client call operate failed, type=%u, err=%u @ssf_call_manager_client.c(720),ERROR" ID="0xef8a1682" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] bs_sle_set_voice_assistant_state. obj=%u, state=%u @ssf_call_manager_client.c(727),INFO" ID="0xef8a16bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] set vas state invalid sle_obj. err=%u @ssf_call_manager_client.c(734),ERROR" ID="0xef8a16f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] set vas state invalid device num. num=%u @ssf_call_manager_client.c(739),ERROR" ID="0xef8a171a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] set vas state get conn_id failed. err=%u @ssf_call_manager_client.c(744),ERROR" ID="0xef8a1742" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] set vas state get call inst failed. err=%u @ssf_call_manager_client.c(749),ERROR" ID="0xef8a176a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] saf_vapc_set_voice_assistant_state. conn_id=%u, vas_inst_id=%u,state=%u @ssf_call_manager_client.c(753),INFO" ID="0xef8a178d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client set vas state failed. err=%u @ssf_call_manager_client.c(756),ERROR" ID="0xef8a17a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] client find call inst,conn_id=%u inst_id=%u @ssf_call_manager_client.c(764),DBG" ID="0xef8a17e6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] cliecnt find call inst invalid device id @ssf_call_manager_client.c(768),ERROR" ID="0xef8a1802" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client find call inst read call status failed. err=%u @ssf_call_manager_client.c(773),ERROR" ID="0xef8a182a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client find call inst read feature state failed. err=%u @ssf_call_manager_client.c(777),ERROR" ID="0xef8a184a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] client find vas inst,conn_id=%u inst_id=%u @ssf_call_manager_client.c(785),DBG" ID="0xef8a188e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] cliecnt find new vas inst, invalid device id @ssf_call_manager_client.c(789),ERROR" ID="0xef8a18aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] client find vas inst read vas status failed. err=%u @ssf_call_manager_client.c(794),ERROR" ID="0xef8a18d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] ccp client init failed. err=%u @ssf_call_manager_client.c(817),ERROR" ID="0xef8a198a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] vap client init failed. err=%u @ssf_call_manager_client.c(826),ERROR" ID="0xef8a19d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] client clear call record list @ssf_call_manager_client.c(836),INFO" ID="0xef8a1a25" />
+			</MSG_LOG>

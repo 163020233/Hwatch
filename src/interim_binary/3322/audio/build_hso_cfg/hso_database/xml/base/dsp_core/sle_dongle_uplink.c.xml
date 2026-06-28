@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi][dongle_ul] input adp has already registered @sle_dongle_uplink.c(38),ERROR" ID="0x98e80132" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][dongle_ul] register input adp, handle: 0x%x @sle_dongle_uplink.c(43),WARNING" ID="0x98e8015b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][dongle_ul] unregister invalid input adp handle: 0x%x |the registered adp handle: 0x%x @sle_dongle_uplink.c(69),ERROR" ID="0x98e8022a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][dongle_ul] unregister input adp, handle: 0x%x @sle_dongle_uplink.c(74),WARNING" ID="0x98e80253" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][dongle_ul]send_data_count: %u |cur_data_size: %u |total_data_size: %u @sle_dongle_uplink.c(112),WARNING" ID="0x98e80383" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][dongle_ul] input adp is NULL! @sle_dongle_uplink.c(125),ERROR" ID="0x98e803ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][dongle_ul] input adp overrun, stream size: %d @sle_dongle_uplink.c(131),ERROR" ID="0x98e8041a" />
+			</MSG_LOG>

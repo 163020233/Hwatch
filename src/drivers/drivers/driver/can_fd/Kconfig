@@ -1,0 +1,38 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2022. All rights reserved.
+#===============================================================================
+config CAN_BUS_NUM
+    int
+    prompt "Number of CAN controller bus"
+    range 1 3
+    default 1
+    depends on DRIVER_SUPPORT_CAN_FD
+
+choice
+    prompt "Choose CAN driver"
+    default CAN_USE_V1_DRIVER
+
+config CAN_USE_V1_DRIVER
+    bool "CAN use V1 driver"
+    depends on DRIVER_SUPPORT_CAN_FD
+    help
+        This option enables the use of the CAN V1 driver.
+        This driver provides a lower-level interface for CAN communication.
+        It is not recommended for general use and should only be selected
+        if you have specific requirements that cannot be met by the standard
+        AUTOSAR driver.
+
+config CAN_USE_V2_DRIVER
+    bool "CAN use V2 driver"
+    depends on DRIVER_SUPPORT_CAN_FD
+    help
+        Enable the CAN V2 driver which introduces new callback functions for transmission and reception,
+        aligning more closely with AUTOSAR interface logic.
+        This driver version supports enhanced communication features and improves compatibility with AUTOSAR standards.
+endchoice
+
+config CAN_SUPPORT_TTCAN
+    bool "CAN Support TTCAN"
+    default false
+    depends on CAN_USE_V2_DRIVER

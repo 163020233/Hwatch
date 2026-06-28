@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[sle_disc]disconnect reason=0x%x @lm_gle_acb_ram.c(190),INFO" ID="0x8b6205f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SLE_ACB]lm_gle_llcp_terminate_act_ram, not acb link @lm_gle_acb_ram.c(276),WARNING" ID="0x8b6208a3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]unknown rsp has no handler func, opcode:0x%x @lm_gle_acb_ram.c(465),WARNING" ID="0x8b620e8b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP]lm_gle_acb_start con_hdl 0x%x, role %d @lm_gle_acb_ram.c(639),INFO" ID="0x8b6213fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_acb_hci_vendor_mass_data_rpt_act, env_ptr is NULL @lm_gle_acb_ram.c(657),INFO" ID="0x8b62148d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_acb_hci_vendor_mass_data_rpt_act, env_ptr_ram is NULL @lm_gle_acb_ram.c(664),INFO" ID="0x8b6214c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_acb_hci_vendor_read_rssi_act, evt fsm_msg_malloc failed. @lm_gle_acb_ram.c(689),INFO" ID="0x8b62158d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_acb_hci_vendor_read_rssi_act, env_ptr is NULL @lm_gle_acb_ram.c(697),INFO" ID="0x8b6215cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_acb_hci_vendor_read_rssi_act, env_ptr_ram is NULL @lm_gle_acb_ram.c(704),INFO" ID="0x8b621605" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_acb_hci_vendor_read_rssi_act, rssi_avg_cnt_or_acc is 0. @lm_gle_acb_ram.c(710),INFO" ID="0x8b621635" />
+			</MSG_LOG>

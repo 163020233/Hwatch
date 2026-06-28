@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="lm_classic_sco_get_offset_clke:offset = %d, interval = %d, offset_e = %d @lm_classic_sco.c(514),INFO" ID="0x89c61015" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_classic_sco_get_offset_clke:clkoff = 0x%x, clock_n = 0x%x, flags = %d @lm_classic_sco.c(515),INFO" ID="0x89c6101d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[LM]lm_classic_sco_check_esco_bandwidth:status=0x%x,Tesco=%d,Framesize=%d,Wesco=%d @lm_classic_sco.c(1647),INFO" ID="0x89c6337d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_sco_modify_prepare, env_ptr is null @lm_classic_sco.c(1709),ERROR" ID="0x89c6356a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]sco_modify:src_hv_flag=%d, dst_hv_flag=%d @lm_classic_sco.c(1734),WARNING" ID="0x89c63633" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]lm_classic_lmp_sco_req_act, a tr_id conflict occured here! @lm_classic_sco.c(2095),INFO" ID="0x89c6417d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]lm_classic_lmp_sco_req_act, a tr_id conflict occured here! @lm_classic_sco.c(2104),INFO" ID="0x89c641c5" />
+			</MSG_LOG>

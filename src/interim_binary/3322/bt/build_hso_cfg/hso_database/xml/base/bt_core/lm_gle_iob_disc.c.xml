@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_iob_send_disc_cmp: close_flag = %d, conhdl=%d @lm_gle_iob_disc.c(64),INFO" ID="0x88520205" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="acb_reschedule_when_iob_disc, acb_env or iob_env is null @lm_gle_iob_disc.c(123),ERROR" ID="0x885203da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_iob_event_sched_stop_act:con_hdl=%d @lm_gle_iob_disc.c(471),INFO" ID="0x88520ebd" />
+			</MSG_LOG>

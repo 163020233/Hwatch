@@ -1,0 +1,24 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(52),ERROR" ID="0xe9f001a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server already register! @saf_cdsm_server.c(77),ERROR" ID="0xe9f0026a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsms] server register failed! ret = %u @saf_cdsm_server.c(82),ERROR" ID="0xe9f00292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsms] group init failed! ret = %u @saf_cdsm_server.c(87),ERROR" ID="0xe9f002ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(116),ERROR" ID="0xe9f003a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsms] inst not found, inst id: %u @saf_cdsm_server.c(135),ERROR" ID="0xe9f0043a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(148),ERROR" ID="0xe9f004a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsms] inst not found, inst id: %u @saf_cdsm_server.c(172),ERROR" ID="0xe9f00562" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(184),ERROR" ID="0xe9f005c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsms] inst not found, inst id: %u @saf_cdsm_server.c(207),ERROR" ID="0xe9f0067a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(220),ERROR" ID="0xe9f006e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsms] inst not found, inst id: %u @saf_cdsm_server.c(244),ERROR" ID="0xe9f007a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(257),ERROR" ID="0xe9f0080a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsms] inst not found, inst id: %u @saf_cdsm_server.c(281),ERROR" ID="0xe9f008ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(295),ERROR" ID="0xe9f0093a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsms] inst not found, inst id: %u @saf_cdsm_server.c(319),ERROR" ID="0xe9f009fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(343),ERROR" ID="0xe9f00aba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[cdsms] set service fail, ret: 0x%0x @saf_cdsm_server.c(422),ERROR" ID="0xe9f00d32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsms] inst not found, inst id: %u @saf_cdsm_server.c(446),ERROR" ID="0xe9f00df2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(464),ERROR" ID="0xe9f00e82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(620),ERROR" ID="0xe9f01362" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] server not register! @saf_cdsm_server.c(699),ERROR" ID="0xe9f015da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] inst is null! @saf_cdsm_server.c(704),ERROR" ID="0xe9f01602" />
+			</MSG_LOG>

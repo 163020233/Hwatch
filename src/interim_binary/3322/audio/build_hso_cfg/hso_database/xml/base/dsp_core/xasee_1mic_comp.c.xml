@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi][4t1r][lpc] request freq: %u @xasee_1mic_comp.c(382),WARNING" ID="0x992c0bf3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]set usr param failed! @xasee_1mic_comp.c(404),ERROR" ID="0x992c0ca2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][4t1r][param] usr has setted @xasee_1mic_comp.c(408),WARNING" ID="0x992c0cc3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]set agc param failed! @xasee_1mic_comp.c(420),ERROR" ID="0x992c0d22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][4t1r][param] agc has setted @xasee_1mic_comp.c(423),WARNING" ID="0x992c0d3b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]set nr param failed! @xasee_1mic_comp.c(441),ERROR" ID="0x992c0dca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][4t1r][param] nr has setted @xasee_1mic_comp.c(445),WARNING" ID="0x992c0deb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call vqe_mic4stream_set_agc_params Failed, Error Code: [0x%08X] @xasee_1mic_comp.c(507),ERROR" ID="0x992c0fda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call vqe_mic4stream_set_nr_params Failed, Error Code: [0x%08X] @xasee_1mic_comp.c(515),ERROR" ID="0x992c101a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][4t1r][param info]usr param size: %u, nr param size: %u, agc param size: %u @xasee_1mic_comp.c(576),WARNING" ID="0x992c1203" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ret = %d @xasee_1mic_comp.c(687),ERROR" ID="0x992c157a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][4t1r][sea] options: 0x%x, NR|WNR|AGC|HP|EQ: 0x%05x, EQ Mode(0:HIFI / 1:AH): %d @xasee_1mic_comp.c(785),WARNING" ID="0x992c188b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][4t1r][sea][param] NR|WNR|AGC|HP|EQ: 0x%05x, EQ Mode(0:HIFI / 1:AH): %d @xasee_1mic_comp.c(873),WARNING" ID="0x992c1b4b" />
+			</MSG_LOG>

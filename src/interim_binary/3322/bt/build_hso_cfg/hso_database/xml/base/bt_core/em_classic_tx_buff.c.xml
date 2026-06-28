@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="em_alloc_classic_cntl_pri_tx_buff fail! @em_classic_tx_buff.c(86),WARNING" ID="0x8b1e02b3" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[EM]em_alloc_classic_cntl_pri_tx_buff: lr 0x%x, buff_used %d, buff_free %d @em_classic_tx_buff.c(91),INFO" ID="0x8b1e02dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM]em_free_classic_cntl_pri_tx_buff: node is NULL, lr 0x%x @em_classic_tx_buff.c(132),ERROR" ID="0x8b1e0422" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[EM]em_free_classic_cntl_pri_tx_buff: lr 0x%x, buff_used %d, buff_free %d @em_classic_tx_buff.c(144),INFO" ID="0x8b1e0485" />
+			</MSG_LOG>

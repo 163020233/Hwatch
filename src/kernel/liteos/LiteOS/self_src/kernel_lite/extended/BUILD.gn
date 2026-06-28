@@ -1,0 +1,43 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+group("extended") {
+    deps = []
+    if (defined(LOSCFG_KERNEL_CPUP)) {
+        deps += ["cpup"]
+    }
+    if (defined(LOSCFG_KERNEL_DYNLOAD)) {
+        deps += ["dynload"]
+    }
+    if (defined(LOSCFG_KERNEL_SCATTER)) {
+        deps += ["scatter"]
+    }
+    if (defined(LOSCFG_KERNEL_TRACE)) {
+        deps += ["trace"]
+    }
+    if (defined(LOSCFG_KERNEL_PERF)) {
+        deps += ["perf"]
+    }
+    if (defined(LOSCFG_KERNEL_CONSOLE)) {
+        deps += ["console"]
+    }
+    if (defined(LOSCFG_KERNEL_LMS)) {
+        deps += ["lms"]
+    }
+    if (defined(LOSCFG_KERNEL_LOWPOWER)) {
+        deps += ["lowpower"]
+    }
+    if (defined(LOSCFG_KERNEL_CPPSUPPORT)) {
+        deps += ["cppsupport"]
+    }
+    if (defined(LOSCFG_KERNEL_DYNSHM)) {
+        deps += ["dynshm"]
+    }
+    if (defined(LOSCFG_KERNEL_RPQUEUE)) {
+        deps += ["rpqueue"]
+    }
+}

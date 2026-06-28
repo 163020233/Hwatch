@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][COLLECT_HFP_FAIL]hfp conn null @jitws_para_sync_hfp.c(95),INFO" ID="0xebf202fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_HFP_FAIL]server is null SERVER_CHANNEL=0x%x @jitws_para_sync_hfp.c(101),WARNING" ID="0xebf2032b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][CODEC]BRSF_CodecNeg=%d @jitws_para_sync_hfp.c(188),WARNING" ID="0xebf205e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_HFP_FAIL]ready hfp hfpconn is null @jitws_para_sync_hfp.c(204),INFO" ID="0xebf20665" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][PARSE_HFP_FAIL]len=%d,data_valid_flag=%d @jitws_para_sync_hfp.c(262),INFO" ID="0xebf20835" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_HFP_FAIL]no acl link! @jitws_para_sync_hfp.c(266),INFO" ID="0xebf20855" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][PARSE_HFP_FAIL]server not registered SERVER_CHANNEL=0x%x @jitws_para_sync_hfp.c(274),WARNING" ID="0xebf20893" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_AT_CMD]Hfp hfpconn is null @jitws_para_sync_hfp.c(360),INFO" ID="0xebf20b45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][PARSE_AT_CMD]EXP_LEN=%u @jitws_para_sync_hfp.c(364),INFO" ID="0xebf20b65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][PARSE_AT_CMD]Add to pend list for CODE=0x%x @jitws_para_sync_hfp.c(392),INFO" ID="0xebf20c45" />
+			</MSG_LOG>

@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "モジュールの説明"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "説明"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "サプライヤマップ"
+    }
+  ]
+}

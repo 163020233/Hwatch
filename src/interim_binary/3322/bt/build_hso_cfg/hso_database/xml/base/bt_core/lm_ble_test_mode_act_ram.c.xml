@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="ble_msg_le_test_mode_stopping_act num packets = %d, mode_type = %d @lm_ble_test_mode_act_ram.c(105),INFO" ID="0x8c30034d" />
+			</MSG_LOG>

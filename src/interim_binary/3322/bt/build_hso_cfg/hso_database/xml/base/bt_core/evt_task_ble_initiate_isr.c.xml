@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_ble_initiate_report_data, env_ptr is null @evt_task_ble_initiate_isr.c(177),ERROR" ID="0x8862058a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_INIT]report_data, txdone is 0! pdu_type:%d, maxevtime:%d, init_dur:%d @evt_task_ble_initiate_isr.c(193),WARNING" ID="0x8862060b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]MSG_ALLOC_FAILED! @evt_task_ble_initiate_isr.c(204),ERROR" ID="0x88620662" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_INIT]report_data, clock=0x%x, us_offset=0x%x, window_offset=%d, sed_id:%d @evt_task_ble_initiate_isr.c(214),INFO" ID="0x886206b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_INIT]evt_task_ble_initiate_recv_data, status=0x%x @evt_task_ble_initiate_isr.c(229),INFO" ID="0x8862072d" />
+			</MSG_LOG>

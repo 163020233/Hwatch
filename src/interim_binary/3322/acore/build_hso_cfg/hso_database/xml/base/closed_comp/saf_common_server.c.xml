@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] ssaps already register @saf_common_server.c(33),INFO" ID="0xe960010d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common]ssaps register failed! ret = %u @saf_common_server.c(38),ERROR" ID="0xe9600132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] ssaps not register! @saf_common_server.c(49),INFO" ID="0xe960018d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] ssaps unregister failed! ret = %u @saf_common_server.c(55),ERROR" ID="0xe96001ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] ssaps notify indicate, server not register! @saf_common_server.c(66),ERROR" ID="0xe9600212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] ssaps event notify, server not register! @saf_common_server.c(80),ERROR" ID="0xe9600282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] ssaps rsp, server not register! @saf_common_server.c(93),ERROR" ID="0xe96002ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] ssaps method rsp, server not register! @saf_common_server.c(106),ERROR" ID="0xe9600352" />
+			</MSG_LOG>

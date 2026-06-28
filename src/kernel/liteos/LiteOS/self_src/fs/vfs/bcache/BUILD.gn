@@ -1,0 +1,56 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("bcache") {
+        sources = [
+            "src/bcache.c",
+        ]
+
+        if (defined(LOSCFG_FS_FAT_CACHE_PROC)) {
+            sources += [
+                "src/bcache_proc.c"
+            ]
+        }
+        configs += [
+            ":private",
+        ]
+    }
+} else {
+    static_library("libbcache") {
+        import("../../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        sources = [
+            "src/bcache.c",
+        ]
+
+        if (defined(LOSCFG_FS_FAT_CACHE_PROC)) {
+            sources += [
+                "src/bcache_proc.c"
+            ]
+        }
+        configs += [
+            ":private",
+        ]
+    }
+}
+
+config("private") {
+    include_dirs = [
+        "$LITEOSTOPDIR/fs/vfs/include/disk",
+        "$LITEOSTOPDIR/fs/include",
+    ]
+}

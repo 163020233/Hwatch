@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] client register fail, param null! @saf_ccp_client.c(41),ERROR" ID="0xe9c6014a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] client already register! @saf_ccp_client.c(45),ERROR" ID="0xe9c6016a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccpc] ccp client init fail!:%u @saf_ccp_client.c(51),ERROR" ID="0xe9c6019a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] client not register! @saf_ccp_client.c(61),ERROR" ID="0xe9c601ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] read property value, state unregistered @saf_ccp_client.c(81),ERROR" ID="0xe9c6028a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] write property value, state unregistered @saf_ccp_client.c(93),ERROR" ID="0xe9c602ea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][ccpc] call operation: handle: %d, op: %d @saf_ccp_client.c(98),INFO" ID="0xe9c60315" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccpc] btsrv_msg handle, msg id: %x @saf_ccp_client.c(393),INFO" ID="0xe9c60c4d" />
+			</MSG_LOG>

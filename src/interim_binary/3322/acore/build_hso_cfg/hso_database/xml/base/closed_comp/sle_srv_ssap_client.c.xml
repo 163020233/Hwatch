@@ -1,0 +1,215 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery service cbk param null @sle_srv_ssap_client.c(190),ERROR" ID="0xe8c805f2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[disc_srv_rsp]start_hdl:[0x%02x], end_hdl:[0x%02x], type_indication:[0x%02x] @sle_srv_ssap_client.c(197),DBG" ID="0xe8c8062e" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="uuid:[0x%02x][0x%02x] @sle_srv_ssap_client.c(200),INFO" ID="0xe8c80645" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="uuid[%d]:[0x%02x] @sle_srv_ssap_client.c(205),DBG" ID="0xe8c8066e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery service cbk mem new failed @sle_srv_ssap_client.c(212),ERROR" ID="0xe8c806a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery service cbk mem new failed @sle_srv_ssap_client.c(219),ERROR" ID="0xe8c806da" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="discovery service start hdl:%x, end hdl:%x @sle_srv_ssap_client.c(223),DBG" ID="0xe8c806fe" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc discovery service cbk send bt_service failed, ret %#x @sle_srv_ssap_client.c(228),ERROR" ID="0xe8c80722" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery method cbk param null @sle_srv_ssap_client.c(241),ERROR" ID="0xe8c8078a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery method cbk mem new failed @sle_srv_ssap_client.c(246),ERROR" ID="0xe8c807b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery method cbk mem new failed @sle_srv_ssap_client.c(251),ERROR" ID="0xe8c807da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="discovery method client id:%d conn id:%d hdl:%x @sle_srv_ssap_client.c(256),INFO" ID="0xe8c80805" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc discovery method cbk send bt_service failed, ret %d @sle_srv_ssap_client.c(261),ERROR" ID="0xe8c8082a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery event cbk param null @sle_srv_ssap_client.c(273),ERROR" ID="0xe8c8088a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery event cbk mem new failed @sle_srv_ssap_client.c(278),ERROR" ID="0xe8c808b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery event cbk mem new failed @sle_srv_ssap_client.c(283),ERROR" ID="0xe8c808da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="discovery event client id:%d conn id:%d hdl:0x%x @sle_srv_ssap_client.c(288),INFO" ID="0xe8c80905" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc discovery event cbk send bt_service failed, ret %d @sle_srv_ssap_client.c(293),ERROR" ID="0xe8c8092a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery character cbk param null @sle_srv_ssap_client.c(304),ERROR" ID="0xe8c80982" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery character cbk mem new failed @sle_srv_ssap_client.c(320),ERROR" ID="0xe8c80a02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery character cbk mem new failed @sle_srv_ssap_client.c(326),ERROR" ID="0xe8c80a32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery character cbk mem new failed @sle_srv_ssap_client.c(334),ERROR" ID="0xe8c80a72" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="discovery property property hdl:%x, descriptors_count:%x @sle_srv_ssap_client.c(340),INFO" ID="0xe8c80aa5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc discovery property property cbk send bt_service failed, ret %d @sle_srv_ssap_client.c(345),ERROR" ID="0xe8c80aca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery service complete cbk param null @sle_srv_ssap_client.c(356),ERROR" ID="0xe8c80b22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc create item mem fail @sle_srv_ssap_client.c(361),ERROR" ID="0xe8c80b4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery service cbk mem new failed @sle_srv_ssap_client.c(367),ERROR" ID="0xe8c80b7a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[internal_discovery_services] op_code:0x%02x, type:0x%02x, uuid.len:%u, err_code:0x%02x @sle_srv_ssap_client.c(372),INFO" ID="0xe8c80ba5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[internal_discovery_services] send bt_service failed, ret %#x @sle_srv_ssap_client.c(378),ERROR" ID="0xe8c80bd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create item value fail @sle_srv_ssap_client.c(397),ERROR" ID="0xe8c80c6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv]ssap client node memset fail @sle_srv_ssap_client.c(401),INFO" ID="0xe8c80c8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssapc read complete] send bt_service failed, ret %#x @sle_srv_ssap_client.c(411),ERROR" ID="0xe8c80cda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc internal exchange complete info new memory fail. @sle_srv_ssap_client.c(430),ERROR" ID="0xe8c80d72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssapc internal exchange] send bt_service failed, ret %#x @sle_srv_ssap_client.c(445),ERROR" ID="0xe8c80dea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle ssapc write_req complete null err @sle_srv_ssap_client.c(458),ERROR" ID="0xe8c80e52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle ssapc call_method_req complete null err @sle_srv_ssap_client.c(474),ERROR" ID="0xe8c80ed2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc create item mem fail @sle_srv_ssap_client.c(497),ERROR" ID="0xe8c80f8a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc create value handle:%x, data len:%x @sle_srv_ssap_client.c(502),INFO" ID="0xe8c80fb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc create item mem fail @sle_srv_ssap_client.c(507),ERROR" ID="0xe8c80fda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create item value fail @sle_srv_ssap_client.c(523),ERROR" ID="0xe8c8105a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create item value fail @sle_srv_ssap_client.c(529),ERROR" ID="0xe8c8108a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc ntf item mem fail @sle_srv_ssap_client.c(538),ERROR" ID="0xe8c810d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc value ntf handle:%x, data len:%x @sle_srv_ssap_client.c(555),INFO" ID="0xe8c8115d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="value_item:hdl[0x%02x], value_len = %d @sle_srv_ssap_client.c(562),INFO" ID="0xe8c81195" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create item value fail @sle_srv_ssap_client.c(567),ERROR" ID="0xe8c811ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc value ntf cbk send bt_service msg failed, ret %#x @sle_srv_ssap_client.c(574),ERROR" ID="0xe8c811f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc ntf item fail @sle_srv_ssap_client.c(578),ERROR" ID="0xe8c81212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc value ntf error @sle_srv_ssap_client.c(609),ERROR" ID="0xe8c8130a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc ind item mem fail @sle_srv_ssap_client.c(615),ERROR" ID="0xe8c8133a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create item value fail @sle_srv_ssap_client.c(625),ERROR" ID="0xe8c8138a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc ind item mem fail @sle_srv_ssap_client.c(629),ERROR" ID="0xe8c813aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc ind item cbk send bt_service msg failed, ret %#x @sle_srv_ssap_client.c(651),ERROR" ID="0xe8c8145a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create item value fail @sle_srv_ssap_client.c(671),ERROR" ID="0xe8c814fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create item value fail @sle_srv_ssap_client.c(686),ERROR" ID="0xe8c81572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc read rsp mem fail @sle_srv_ssap_client.c(690),ERROR" ID="0xe8c81592" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc write cmd cbk send bt_service msg failed, ret %#x @sle_srv_ssap_client.c(700),ERROR" ID="0xe8c815e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write rsp mem fail @sle_srv_ssap_client.c(721),ERROR" ID="0xe8c8168a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write rsp mem fail @sle_srv_ssap_client.c(736),ERROR" ID="0xe8c81702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssap write mem cpy failed @sle_srv_ssap_client.c(741),ERROR" ID="0xe8c8172a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc write rsp send bt_service fail ret %#x @sle_srv_ssap_client.c(758),ERROR" ID="0xe8c817b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create method param fail @sle_srv_ssap_client.c(777),ERROR" ID="0xe8c8184a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create method param fail @sle_srv_ssap_client.c(785),ERROR" ID="0xe8c8188a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc call method rsp mem fail @sle_srv_ssap_client.c(789),ERROR" ID="0xe8c818aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc write cmd cbk send bt_service msg failed, ret %#x @sle_srv_ssap_client.c(796),ERROR" ID="0xe8c818e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc_exchange_info_rsp_cb_param_allo mem fail @sle_srv_ssap_client.c(816),ERROR" ID="0xe8c81982" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create item value fail @sle_srv_ssap_client.c(847),ERROR" ID="0xe8c81a7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc read by uuid memcpy failed @sle_srv_ssap_client.c(852),ERROR" ID="0xe8c81aa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ssapc read complete] send bt_service failed, ret %#x @sle_srv_ssap_client.c(863),ERROR" ID="0xe8c81afa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc value handle cbk param null @sle_srv_ssap_client.c(876),ERROR" ID="0xe8c81b62" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="op_code = 0x%02x, control_code = 0x%02x, data_len = %d @sle_srv_ssap_client.c(881),INFO" ID="0xe8c81b8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc method handle cbk param null @sle_srv_ssap_client.c(909),ERROR" ID="0xe8c81c6a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="op_code = 0x%02x, control_code = 0x%02x, data_len = %d @sle_srv_ssap_client.c(914),INFO" ID="0xe8c81c95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc register inter cbk  @sle_srv_ssap_client.c(937),INFO" ID="0xe8c81d4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv]ssap client register malloc fail @sle_srv_ssap_client.c(956),ERROR" ID="0xe8c81de2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv]ssap client node memset fail @sle_srv_ssap_client.c(961),ERROR" ID="0xe8c81e0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv]ssap client num reached maximum @sle_srv_ssap_client.c(968),ERROR" ID="0xe8c81e42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv] failed to find available client id @sle_srv_ssap_client.c(983),ERROR" ID="0xe8c81eba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc_register_client reg_node-&gt;client_id:%u @sle_srv_ssap_client.c(989),INFO" ID="0xe8c81eed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[btsrv] add node successfully, client id %u @sle_srv_ssap_client.c(993),INFO" ID="0xe8c81f0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc invalid client_id. @sle_srv_ssap_client.c(1013),ERROR" ID="0xe8c81faa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc find structure failed @sle_srv_ssap_client.c(1036),ERROR" ID="0xe8c82062" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc find structure not support type:0x%x  @sle_srv_ssap_client.c(1042),WARNING" ID="0xe8c82093" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc find structure  mem failed @sle_srv_ssap_client.c(1051),ERROR" ID="0xe8c820da" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ssapc find structure conn_id:0x%x, type:0x%x, hdl:0x%x, uuid len:%u @sle_srv_ssap_client.c(1056),INFO" ID="0xe8c82105" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc find structure uuid:%02x @sle_srv_ssap_client.c(1061),DBG" ID="0xe8c8212e" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ssapc read req conn_id:0x%x, client_id:0x%x, hdl:0x%x, type:0x%x @sle_srv_ssap_client.c(1082),INFO" ID="0xe8c821d5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="handle = 0x%02x, type = 0x%02x @sle_srv_ssap_client.c(1085),INFO" ID="0xe8c821ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write req failed, para is null @sle_srv_ssap_client.c(1110),ERROR" ID="0xe8c822b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc write get_conn_node_by_conn_id failed conn_id:%d @sle_srv_ssap_client.c(1117),ERROR" ID="0xe8c822ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write req failed, link is busy. @sle_srv_ssap_client.c(1121),ERROR" ID="0xe8c8230a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc write req mtu check failed, param-&gt;data_len %u, mtu 0x%x @sle_srv_ssap_client.c(1127),ERROR" ID="0xe8c8233a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc write req conn_id:0x%x, hdl:0x%x, data len:0x%x @sle_srv_ssap_client.c(1131),INFO" ID="0xe8c8235d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="handle = 0x%02x, type = 0x%02x, len = %u @sle_srv_ssap_client.c(1137),INFO" ID="0xe8c8238d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssapc write req mem new failed @sle_srv_ssap_client.c(1141),ERROR" ID="0xe8c823aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssapc write req mem cpy failed @sle_srv_ssap_client.c(1151),ERROR" ID="0xe8c823fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc write cmd len = %u param error @sle_srv_ssap_client.c(1175),ERROR" ID="0xe8c824ba" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="handle = 0x%02x, type = 0x%02x, len = %u @sle_srv_ssap_client.c(1180),INFO" ID="0xe8c824e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write cmd mem new failed @sle_srv_ssap_client.c(1186),ERROR" ID="0xe8c82512" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write cmd mem cpy failed @sle_srv_ssap_client.c(1197),ERROR" ID="0xe8c8256a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc write cmd len = %u param error @sle_srv_ssap_client.c(1212),ERROR" ID="0xe8c825e2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="handle = 0x%02x, type = 0x%02x, len = %u @sle_srv_ssap_client.c(1217),INFO" ID="0xe8c8260d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write cmd mem new failed @sle_srv_ssap_client.c(1222),ERROR" ID="0xe8c82632" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write cmd mem cpy failed @sle_srv_ssap_client.c(1231),ERROR" ID="0xe8c8267a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write cmd failed, para is null @sle_srv_ssap_client.c(1251),ERROR" ID="0xe8c8271a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write cmd failed @sle_srv_ssap_client.c(1256),ERROR" ID="0xe8c82742" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write cmd failed, link is busy. @sle_srv_ssap_client.c(1263),ERROR" ID="0xe8c8277a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc write cmd mtu check failed, param-&gt;data_len %u, mtu %u, mtu_header %u @sle_srv_ssap_client.c(1269),ERROR" ID="0xe8c827aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc write cmd hdl:0x%x, data len:0x%x @sle_srv_ssap_client.c(1275),INFO" ID="0xe8c827dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc call method get_conn_node_by_conn_id failed conn_id:%d @sle_srv_ssap_client.c(1300),ERROR" ID="0xe8c828a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc call method req failed, link is busy. @sle_srv_ssap_client.c(1304),ERROR" ID="0xe8c828c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc method req mtu check failed, param-&gt;data_len %u, mtu 0x%x @sle_srv_ssap_client.c(1310),ERROR" ID="0xe8c828f2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc write req conn_id:0x%x, hdl:0x%x, data len:0x%x @sle_srv_ssap_client.c(1314),INFO" ID="0xe8c82915" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uapi ssapc call method req mem new failed @sle_srv_ssap_client.c(1317),ERROR" ID="0xe8c8292a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uapi ssapc call method req mem cpy failed @sle_srv_ssap_client.c(1325),ERROR" ID="0xe8c8296a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="uapi ssapc call method cmd len = %u param error @sle_srv_ssap_client.c(1347),ERROR" ID="0xe8c82a1a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="handle = 0x%02x, len = %u @sle_srv_ssap_client.c(1352),INFO" ID="0xe8c82a45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uapi ssapc call method cmd mem new failed @sle_srv_ssap_client.c(1359),ERROR" ID="0xe8c82a7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uapi ssapc call method cmd mem cpy failed @sle_srv_ssap_client.c(1370),ERROR" ID="0xe8c82ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc call method cmd failed @sle_srv_ssap_client.c(1389),ERROR" ID="0xe8c82b6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc call method cmd failed, link is busy. @sle_srv_ssap_client.c(1393),ERROR" ID="0xe8c82b8a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc method cmd mtu check failed, param-&gt;data_len %u, mtu 0x%x @sle_srv_ssap_client.c(1399),ERROR" ID="0xe8c82bba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc call method cmd hdl:0x%x, data len:0x%x @sle_srv_ssap_client.c(1404),INFO" ID="0xe8c82be5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssap client callback register failed, prara null. @sle_srv_ssap_client.c(1420),ERROR" ID="0xe8c82c62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy ssap client callback fail @sle_srv_ssap_client.c(1425),ERROR" ID="0xe8c82c8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc read req by uuid failed @sle_srv_ssap_client.c(1443),ERROR" ID="0xe8c82d1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssapc_read_by_uuid_req]uuid memcpy failed @sle_srv_ssap_client.c(1450),ERROR" ID="0xe8c82d52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc exchange info failed, para null @sle_srv_ssap_client.c(1479),ERROR" ID="0xe8c82e3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sapi ssapc_exchange_info_req]mtu = %u @sle_srv_ssap_client.c(1484),INFO" ID="0xe8c82e65" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_free_structure_service_node start_handle:0x%x, end_handle:0x%x @sle_srv_ssap_client.c(1576),INFO" ID="0xe8c83145" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc_get_structure_result_by_conn_id get node fail, connid(%d) @sle_srv_ssap_client.c(1592),INFO" ID="0xe8c831c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc_delete_structure_result_node_by_conn_id find_structure_cbk client_id:%d @sle_srv_ssap_client.c(1618),INFO" ID="0xe8c83295" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc_get_structure_result_by_conn_id get node fail @sle_srv_ssap_client.c(1678),ERROR" ID="0xe8c83472" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc_delete_structure_result_node_by_conn_id connid(%d) @sle_srv_ssap_client.c(1693),INFO" ID="0xe8c834ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc_get_structure_result_by_conn_id get node fail, connid(%d) @sle_srv_ssap_client.c(1697),ERROR" ID="0xe8c8350a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc_delete_structure_result_node_by_addr 0x%02x:**:**:**:0x%02x:0x%02x @sle_srv_ssap_client.c(1709),ERROR" ID="0xe8c8356a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ssapc]malloc find structure whitelist failed @sle_srv_ssap_client.c(1754),ERROR" ID="0xe8c836d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc_pair_remove_cbk mac:0x%02x:**:**:**:0x%02x:0x%02x @sle_srv_ssap_client.c(1783),INFO" ID="0xe8c837bd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ssapc_pair_remove_cbk status error on mac:0x%02x:**:**:**:0x%02x:0x%02x, status:0x%0x @sle_srv_ssap_client.c(1787),ERROR" ID="0xe8c837da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc_pair_remove_cbk conn node not found on mac:0x%02x:**:**:**:0x%02x:0x%02x @sle_srv_ssap_client.c(1795),ERROR" ID="0xe8c8381a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ssapc connect_state_changed_callback. conn_id = %u, conn_state = %u, pair_state = %u, disc_reason = %u @sle_srv_ssap_client.c(1814),INFO" ID="0xe8c838b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc ssapc_multi_cbk_init already init @sle_srv_ssap_client.c(1836),ERROR" ID="0xe8c83962" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc ssapc_multi_cbk list lock init fail @sle_srv_ssap_client.c(1841),ERROR" ID="0xe8c8398a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc malloc structure_list lock fail @sle_srv_ssap_client.c(1847),ERROR" ID="0xe8c839ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc malloc find_structure lock fail @sle_srv_ssap_client.c(1854),ERROR" ID="0xe8c839f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc sle_connection_register_multi_callbacks fail @sle_srv_ssap_client.c(1863),ERROR" ID="0xe8c83a3a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_start_find_service_all_items start_handle:0x%x, find_complete_mask:0x%x @sle_srv_ssap_client.c(1873),INFO" ID="0xe8c83a8d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="get next service to find_property, start_handle:0x%x, find_complete_mask:0x%x @sle_srv_ssap_client.c(1900),INFO" ID="0xe8c83b65" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="service duplicated start_handle:0x%02x, end_handle:0x%02x @sle_srv_ssap_client.c(1941),INFO" ID="0xe8c83cad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="begin add service node start hdl:0x%x, end hdl:0x%x. @sle_srv_ssap_client.c(1959),INFO" ID="0xe8c83d3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc add service node get conn node by conn_id failed conn_id:%d @sle_srv_ssap_client.c(1965),ERROR" ID="0xe8c83d6a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="add_service_node duplicated  delete old service on start hdl:0x%x, end hdl:0x%x. @sle_srv_ssap_client.c(2008),ERROR" ID="0xe8c83ec2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="add service node connid(%d), start hdl:0x%x, end hdl:0x%x. @sle_srv_ssap_client.c(2016),INFO" ID="0xe8c83f05" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure fail, connid(%d), client_id:0x%x @sle_srv_ssap_client.c(2026),ERROR" ID="0xe8c83f52" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="add property node connid:%d, handle:0x%x, operate_indication:0x%02x, descriptors_count:%d @sle_srv_ssap_client.c(2053),INFO" ID="0xe8c8402d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="add property node duplicated on connid(%d), handle:0x%x, operate_indication:0x%02x @sle_srv_ssap_client.c(2081),INFO" ID="0xe8c8410d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="add property node succ connid(%d), handle:0x%x, operate_indication:0x%02x @sle_srv_ssap_client.c(2089),INFO" ID="0xe8c8414d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find property fail, connid(%d), client_id:0x%x @sle_srv_ssap_client.c(2098),ERROR" ID="0xe8c84192" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="add method event find service fail, connid(%d), method_event handle:0x%x @sle_srv_ssap_client.c(2116),ERROR" ID="0xe8c84222" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find method event unknown type(%d) on conn id:%d @sle_srv_ssap_client.c(2137),ERROR" ID="0xe8c842ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find method event fail, connid(%d), client_id:0x%x @sle_srv_ssap_client.c(2186),ERROR" ID="0xe8c84452" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc find structure result handle property_count:%d, method_count:%d, event_count:%d @sle_srv_ssap_client.c(2241),INFO" ID="0xe8c8460d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc_find_structure_next_trigger, connid: %u @sle_srv_ssap_client.c(2336),ERROR" ID="0xe8c84902" />
+			<MSG STRUCTURE="diag_log_msg1" NAME=" find structure complete multi cbk fail, connid(%d) @sle_srv_ssap_client.c(2341),ERROR" ID="0xe8c8492a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc_find_structure_all_next, client_id: %u @sle_srv_ssap_client.c(2358),ERROR" ID="0xe8c849b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc_find_structure_by_uuid_group_next, client_id: %u @sle_srv_ssap_client.c(2370),ERROR" ID="0xe8c84a12" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc find structure result handle service_count:0x%x, find_structure_cbk:0x%x, service_count:0x%x @sle_srv_ssap_client.c(2423),INFO" ID="0xe8c84bbd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="get next service to find item fail, connid(%d), client_id:0x%x @sle_srv_ssap_client.c(2457),ERROR" ID="0xe8c84cca" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="get next service to find item connid(%d), clientid:0x%x,start handle:0x%x, end handle:0x%x @sle_srv_ssap_client.c(2462),INFO" ID="0xe8c84cf5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="find structure complete multi cbk type error, connid(%d), client_id:0x%x, type:0x%x @sle_srv_ssap_client.c(2470),ERROR" ID="0xe8c84d32" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="get next service to find, find complete mask:0x%x, service type:0x%x, start_handle:0x%x @sle_srv_ssap_client.c(2477),INFO" ID="0xe8c84d6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME=" find structure complete multi cbk continue find next no completed service @sle_srv_ssap_client.c(2484),INFO" ID="0xe8c84da5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="structure_result type:%02x @sle_srv_ssap_client.c(2511),INFO" ID="0xe8c84e7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME=" find structure complete multi cbk fail, connid(%d) @sle_srv_ssap_client.c(2516),ERROR" ID="0xe8c84ea2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="client is null connid(%d), client_id:0x%x @sle_srv_ssap_client.c(2523),ERROR" ID="0xe8c84eda" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="find structure complete multi cbk connid(%d), client_id:0x%x, type:0x%02x,status:0x%02x @sle_srv_ssap_client.c(2530),ERROR" ID="0xe8c84f12" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="get structure result by_conn_id fail, connid(%d), client_id:0x%x @sle_srv_ssap_client.c(2538),ERROR" ID="0xe8c84f52" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="find structure complete multi cbk continue, connid:%d,is_found_completed:0x%x, client_id:%d, find_structure_cbk:0x%x @sle_srv_ssap_client.c(2554),INFO" ID="0xe8c84fd5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="find structure complete multi cbk find by uuid on connid(%d) client_id:%d @sle_srv_ssap_client.c(2566),INFO" ID="0xe8c85035" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery service cbk success @sle_srv_ssap_client.c(2591),INFO" ID="0xe8c850fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery service cbk success @sle_srv_ssap_client.c(2611),INFO" ID="0xe8c8519d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery property cbk success @sle_srv_ssap_client.c(2630),INFO" ID="0xe8c85235" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc discovery method cbk success @sle_srv_ssap_client.c(2650),INFO" ID="0xe8c852d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc discovery event cbk success @sle_srv_ssap_client.c(2669),INFO" ID="0xe8c8536d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc read cfm cbk success @sle_srv_ssap_client.c(2690),INFO" ID="0xe8c85415" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc call method cfm cbk success @sle_srv_ssap_client.c(2713),INFO" ID="0xe8c854cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc read cfm cbk success @sle_srv_ssap_client.c(2737),INFO" ID="0xe8c8558d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write cfm cbk success @sle_srv_ssap_client.c(2756),INFO" ID="0xe8c85625" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc notification cbk success @sle_srv_ssap_client.c(2778),INFO" ID="0xe8c856d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc indication cbk success @sle_srv_ssap_client.c(2798),INFO" ID="0xe8c85775" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc indication cbk success @sle_srv_ssap_client.c(2819),INFO" ID="0xe8c8581d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @sle_srv_ssap_client.c(2857),INFO" ID="0xe8c8594d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc handle msg type:%x @sle_srv_ssap_client.c(2865),INFO" ID="0xe8c8598d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @sle_srv_ssap_client.c(2907),INFO" ID="0xe8c85add" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc client_id(%d) not exit. @sle_srv_ssap_client.c(2930),ERROR" ID="0xe8c85b92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="device node not exit, conn id (%d) @sle_srv_ssap_client.c(2937),ERROR" ID="0xe8c85bca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="connect status error, conn id (%d), status(%d) @sle_srv_ssap_client.c(2943),ERROR" ID="0xe8c85bfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc discovery service cbk mem cpy failed @sle_srv_ssap_client.c(2996),ERROR" ID="0xe8c85da2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_find_structure_all ssapc client_id(%d), connid(%d) param invalid. @sle_srv_ssap_client.c(3017),ERROR" ID="0xe8c85e4a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_find_structure_all ssapc client_id(%d), connid(%d) status error. @sle_srv_ssap_client.c(3022),ERROR" ID="0xe8c85e72" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_find_structure_all, list node count &gt; 1, client_id(%d), connid(%d). @sle_srv_ssap_client.c(3079),WARNING" ID="0xe8c8603b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_find_structure_all is going client_id(%d), connid(%d). @sle_srv_ssap_client.c(3092),WARNING" ID="0xe8c860a3" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc_find_structure_all ssapc_find_structure client_id(%d), connid(%d), find_structure_cbk:%x @sle_srv_ssap_client.c(3102),ERROR" ID="0xe8c860f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_find_structure_all ssapc client_id(%d), connid(%d) ssapc_find_structure fail. @sle_srv_ssap_client.c(3117),ERROR" ID="0xe8c8616a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc find structure by uuid group client_id(%d), connid(%d) param invalid. @sle_srv_ssap_client.c(3156),ERROR" ID="0xe8c862a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc find structure by uuid group client_id(%d), connid(%d) status error. @sle_srv_ssap_client.c(3161),ERROR" ID="0xe8c862ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_find_structure_all ssapc client_id(%d), connid(%d) with history structure. @sle_srv_ssap_client.c(3177),ERROR" ID="0xe8c8634a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc find structure by uuid group client_id(%d), connid(%d) malloc fail. @sle_srv_ssap_client.c(3215),ERROR" ID="0xe8c8647a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc find structure by uuid group client_id(%d), connid(%d) convert uuid fail. @sle_srv_ssap_client.c(3231),ERROR" ID="0xe8c864fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc find structure by uuid group client_id(%d), connid(%d) busy. @sle_srv_ssap_client.c(3247),ERROR" ID="0xe8c8657a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_find_structure_by_uuid is going client_id(%d), connid(%d). @sle_srv_ssap_client.c(3253),WARNING" ID="0xe8c865ab" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc find structure by uuid group client_id(%d), connid(%d) ssapc_find_structure fail. @sle_srv_ssap_client.c(3265),ERROR" ID="0xe8c8660a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc find structure by uuid group client_id(%d), connid(%d) ssapc_find_structure fail. @sle_srv_ssap_client.c(3274),ERROR" ID="0xe8c86652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc client init @sle_srv_ssap_client.c(3312),INFO" ID="0xe8c86785" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc client deinit @sle_srv_ssap_client.c(3328),INFO" ID="0xe8c86805" />
+			</MSG_LOG>

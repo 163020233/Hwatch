@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]HCI_CONNECTION_PACKET_TYPE_CHANGED event-&gt;pkt_type = 0x%x @lm_classic_acl_srv_pkt_tbl.c(238),INFO" ID="0x89c40775" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_ptt_create_srv:create ptt srv fail @lm_classic_acl_srv_pkt_tbl.c(370),INFO" ID="0x89c40b95" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_classic_acl_edr_set:%d @lm_classic_acl_srv_pkt_tbl.c(401),INFO" ID="0x89c40c8d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]acl_tx_packet_type_set:env_ptr-&gt;br_packet_types = 0x%x, env_ptr-&gt;edr_packet_types=0x%x @lm_classic_acl_srv_pkt_tbl.c(441),INFO" ID="0x89c40dcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_ptt_create_srv: creat change packet type table srv fsm wrong @lm_classic_acl_srv_pkt_tbl.c(564),WARNING" ID="0x89c411a3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_ptt_create_srv: creat change packet type table srv fsm wrong @lm_classic_acl_srv_pkt_tbl.c(590),WARNING" ID="0x89c41273" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][acl]hci_chg_pkt_tbl:acl_packet_type = 0x%x, param-&gt;pkt_type=0x%x @lm_classic_acl_srv_pkt_tbl.c(694),INFO" ID="0x89c415b5" />
+			</MSG_LOG>

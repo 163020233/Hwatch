@@ -1,0 +1,42 @@
+set(MODULE_y)
+
+if(NOT LOSCFG_INTERRUPT_VENDOR)
+    list(APPEND MODULE_y interrupt)
+endif()
+
+if(NOT LOSCFG_TIMER_VENDOR)
+    list(APPEND MODULE_y timer)
+endif()
+
+if (LOSCFG_DRIVERS_UART_LITEOS)
+    list(APPEND MODULE_y uart)
+endif()
+
+list(APPEND MODULE_${LOSCFG_DRIVERS_BASE} base)
+
+list(APPEND MODULE_${LOSCFG_DRIVERS_RANDOM} random)
+list(APPEND MODULE_${LOSCFG_DRIVERS_VIDEO} video)
+
+list(APPEND MODULE_${LOSCFG_DRIVERS_MMC} mmc)
+list(APPEND MODULE_${LOSCFG_DRIVERS_USB} usb)
+list(APPEND MODULE_${LOSCFG_DRIVERS_USB_DWC_DRIVER} usb/gadget)
+list(APPEND MODULE_${LOSCFG_DRIVERS_CIPHER} cipher)
+list(APPEND MODULE_${LOSCFG_DRIVERS_IOMMU} iommu)
+
+if(LOSCFG_DRIVERS_USB)
+    if(NOT EXISTS ${LITEOS_TOP_DIR}/self_src/drivers/usb/phy/usb_phy.c)
+        include(${LITEOS_TOP_DIR}/build/release/usb_phy.cmake)
+    else()
+        list(APPEND MODULE_${LOSCFG_DRIVERS_USB} usb/phy)
+    endif()
+endif()
+
+FOREACH(CUR_MODULE_y ${MODULE_y})
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/${CUR_MODULE_y})
+ENDFOREACH(CUR_MODULE_y)
+
+if (LOSCFG_DRIVERS_USE_VENDOR_DRIVERS)
+if (LOSCFG_DRIVERS_USE_VENDOR_HISI_CAMERA)
+add_subdirectory(${LITEOSTOPDIR}/${LOSCFG_DRIVERS_VENDOR_PATH} vendor_drivers)
+endif()
+endif()

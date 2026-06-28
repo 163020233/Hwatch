@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bs br] start pair proc, add remote err! dev_id:%u @br_device_pair.c(34),ERROR" ID="0xea4a0112" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] start pair proc, dev_id:%u, ret:0x%08X @br_device_pair.c(40),INFO" ID="0xea4a0145" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] remove pair proc, get addr err! dev_id:%u @br_device_pair.c(68),ERROR" ID="0xea4a0222" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] remove pair proc, dev_id:%u, ret:0x%08X @br_device_pair.c(72),INFO" ID="0xea4a0245" />
+			</MSG_LOG>

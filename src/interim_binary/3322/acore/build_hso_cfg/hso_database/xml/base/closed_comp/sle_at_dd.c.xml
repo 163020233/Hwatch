@@ -1,0 +1,41 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle register file path failed: 0x:%x @sle_at_dd.c(71),ERROR" ID="0xe932023a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to addr error! @sle_at_dd.c(282),ERROR" ID="0xe93208d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle set local addr fail! ret = %d  @sle_at_dd.c(289),ERROR" ID="0xe932090a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk get addr fail! @sle_at_dd.c(303),ERROR" ID="0xe932097a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble at name len error @sle_at_dd.c(318),ERROR" ID="0xe93209f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle set local name fail! ret = %d  @sle_at_dd.c(324),ERROR" ID="0xe9320a22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk get name malloc fail! @sle_at_dd.c(338),ERROR" ID="0xe9320a92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to addr error! @sle_at_dd.c(366),ERROR" ID="0xe9320b72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to addr error! @sle_at_dd.c(371),ERROR" ID="0xe9320b9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] announce tx power id is error -127~20, 127 @sle_at_dd.c(386),ERROR" ID="0xe9320c12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk set dd announce data new fail! @sle_at_dd.c(415),ERROR" ID="0xe9320cfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(420),ERROR" ID="0xe9320d22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk set dd scan rsp data new fail! @sle_at_dd.c(428),ERROR" ID="0xe9320d62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(433),ERROR" ID="0xe9320d8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to addr error! @sle_at_dd.c(587),ERROR" ID="0xe932125a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] param len err! @sle_at_dd.c(602),ERROR" ID="0xe93212d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk parse name filter data new fail! @sle_at_dd.c(609),ERROR" ID="0xe932130a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(615),ERROR" ID="0xe932133a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] param len err! @sle_at_dd.c(633),ERROR" ID="0xe93213ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk parse service data data new fail! @sle_at_dd.c(642),ERROR" ID="0xe9321412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(648),ERROR" ID="0xe9321442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk parse service data mask data new fail! @sle_at_dd.c(658),ERROR" ID="0xe9321492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(666),ERROR" ID="0xe93214d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] param len err! @sle_at_dd.c(685),ERROR" ID="0xe932156a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk parse manufacturer data data new fail! @sle_at_dd.c(694),ERROR" ID="0xe93215b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(700),ERROR" ID="0xe93215e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk parse manufacturer data mask data new fail! @sle_at_dd.c(711),ERROR" ID="0xe932163a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(719),ERROR" ID="0xe932167a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] param len err! @sle_at_dd.c(736),ERROR" ID="0xe9321702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk parse service data data new fail! @sle_at_dd.c(746),ERROR" ID="0xe9321752" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(752),ERROR" ID="0xe9321782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] param len err! @sle_at_dd.c(771),ERROR" ID="0xe932181a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk parse service data data new fail! @sle_at_dd.c(781),ERROR" ID="0xe932186a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(787),ERROR" ID="0xe932189a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at cmd sdk parse service data mask data new fail! @sle_at_dd.c(798),ERROR" ID="0xe93218f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_dd.c(806),ERROR" ID="0xe9321932" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle_at_parse_add_adv_filter_param, filter type %u err. @sle_at_dd.c(840),ERROR" ID="0xe9321a42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle_at_free_adv_filter_buff filter type err. @sle_at_dd.c(872),ERROR" ID="0xe9321b42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle_at_add_adv_filter parse param fail. @sle_at_dd.c(882),ERROR" ID="0xe9321b92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] sle add adv filter fail! @sle_at_dd.c(890),ERROR" ID="0xe9321bd2" />
+			</MSG_LOG>

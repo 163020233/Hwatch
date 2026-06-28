@@ -1,0 +1,41 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] btsrv_apec_discover_complete_cbk, session is null @saf_ape_client.c(125),ERROR" ID="0xe9ae03ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] btsrv_apec_discover_complete_cbk, discover cache is null @saf_ape_client.c(131),ERROR" ID="0xe9ae041a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] client already register! @saf_ape_client.c(144),ERROR" ID="0xe9ae0482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] client registered! @saf_ape_client.c(149),INFO" ID="0xe9ae04ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] client already unregister! @saf_ape_client.c(156),ERROR" ID="0xe9ae04e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] client unregistered! @saf_ape_client.c(161),INFO" ID="0xe9ae050d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] apec_load_property_info, session is null @saf_ape_client.c(212),ERROR" ID="0xe9ae06a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] apec_load_property_info, discover cache is null @saf_ape_client.c(218),ERROR" ID="0xe9ae06d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover attribute group data len err @saf_ape_client.c(251),ERROR" ID="0xe9ae07da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover capability data len err @saf_ape_client.c(274),ERROR" ID="0xe9ae0892" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] capability malloc fail @saf_ape_client.c(295),ERROR" ID="0xe9ae093a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover location data len err @saf_ape_client.c(323),ERROR" ID="0xe9ae0a1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] location malloc fail @saf_ape_client.c(331),ERROR" ID="0xe9ae0a5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover avaliable contexts data len err @saf_ape_client.c(347),ERROR" ID="0xe9ae0ada" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apec] read property uuid not support! uuid:%04X @saf_ape_client.c(380),ERROR" ID="0xe9ae0be2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apec] read property status err, status:%04X @saf_ape_client.c(391),ERROR" ID="0xe9ae0c3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] apec_read_property_cbk_proc, session is null @saf_ape_client.c(396),ERROR" ID="0xe9ae0c62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] apec_read_property_cbk_proc, discover cache is null @saf_ape_client.c(402),ERROR" ID="0xe9ae0c92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apec] read property handle err, current hdl:%04X @saf_ape_client.c(410),ERROR" ID="0xe9ae0cd2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apec] read property info err, ret:%04X @saf_ape_client.c(423),ERROR" ID="0xe9ae0d3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apec] send app msg err, ret:%04X @saf_ape_client.c(430),ERROR" ID="0xe9ae0d72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] apec_read_property_info, session is null @saf_ape_client.c(445),ERROR" ID="0xe9ae0dea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] apec_read_property_info, discover cache is null @saf_ape_client.c(451),ERROR" ID="0xe9ae0e1a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][apec] read property err, connid=%u handle=%u @saf_ape_client.c(460),ERROR" ID="0xe9ae0e62" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][apec] received notify, handle: %d, len: %d @saf_ape_client.c(472),INFO" ID="0xe9ae0ec5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf]%02x @saf_ape_client.c(474),INFO" ID="0xe9ae0ed5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover result malloc fail @saf_ape_client.c(494),ERROR" ID="0xe9ae0f72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apec] group_num with dir:%u is empty @saf_ape_client.c(506),ERROR" ID="0xe9ae0fd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover ape service fail @saf_ape_client.c(519),ERROR" ID="0xe9ae103a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] saf_apec_find_structure_cbk, session is null @saf_ape_client.c(524),ERROR" ID="0xe9ae1062" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] saf_apec_find_structure_cbk, discover cache is null @saf_ape_client.c(532),ERROR" ID="0xe9ae10a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover cache info malloc fail @saf_ape_client.c(545),ERROR" ID="0xe9ae110a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover proc, read property err @saf_ape_client.c(553),ERROR" ID="0xe9ae114a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apec] get session fail, conn_id:%d @saf_ape_client.c(573),ERROR" ID="0xe9ae11ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apec] check session, busy! connid = %u @saf_ape_client.c(578),ERROR" ID="0xe9ae1212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover cache malloc fail @saf_ape_client.c(584),ERROR" ID="0xe9ae1242" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover, client not register @saf_ape_client.c(591),ERROR" ID="0xe9ae127a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover, find structure err @saf_ape_client.c(598),ERROR" ID="0xe9ae12b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apec] discover, client not register @saf_ape_client.c(607),ERROR" ID="0xe9ae12fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apec] discover param err, direction = %u @saf_ape_client.c(611),ERROR" ID="0xe9ae131a" />
+			</MSG_LOG>

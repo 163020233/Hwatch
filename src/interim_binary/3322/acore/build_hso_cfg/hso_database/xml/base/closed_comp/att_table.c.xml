@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ATT]attg tool del char from string memcpy error @att_table.c(763),ERROR" ID="0xec8e17da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]attg tool output description auto warp memcpy error @att_table.c(1002),ERROR" ID="0xec8e1f52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]attg uuid get by name memcpy error @att_table.c(1172),ERROR" ID="0xec8e24a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]attg uuid gen macro memcpy error @att_table.c(1259),ERROR" ID="0xec8e275a" />
+			</MSG_LOG>

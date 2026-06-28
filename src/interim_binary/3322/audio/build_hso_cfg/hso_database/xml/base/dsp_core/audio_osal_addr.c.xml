@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[hifi]malloc size(%zu) failed, cur free:%u @audio_osal_addr.c(66),ERROR" ID="0x980e0212" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]malloc:addr:0x%08x, size:%u @audio_osal_addr.c(74),WARNING" ID="0x980e0253" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]calloc:addr:0x%08x, size:%u @audio_osal_addr.c(106),WARNING" ID="0x980e0353" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]realloc:addr:0x%08x, size:%u @audio_osal_addr.c(123),WARNING" ID="0x980e03db" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]kmalloc_aligned:addr:0x%08x, size:%u @audio_osal_addr.c(187),WARNING" ID="0x980e05db" />
+			</MSG_LOG>

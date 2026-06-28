@@ -1,0 +1,417 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+if(!IS_INSTALL || !IS_COMMERCIAL) {
+  import("../../ldconfig.gni")
+
+  kconfig_out_dir = "${root_out_dir}"
+  ld_s_file_path = "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM"
+  ld_include_path = "$LITEOSTOPDIR/$rtos_lite_kernel_path/base/include"
+  menuconfig_path = "$root_out_dir/"
+  
+  if (has_dynload_gsymbol == true) {
+      liteos_top_dir = rebase_path("$LITEOSTOPDIR")
+      if (arch == "riscv32") {
+        compile_targets = "--target=riscv32 -march=rv32imfdcb0p92vxlinxma_xlinxmb_xlinxmc_xlinxmd -mabi=ilp32d"
+      }
+      if (defined(LOSCFG_SAFETY_KERNEL)) {
+          action("generate_gsymbol_o") {
+                  script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+                  args = [
+                          "srctree=" + rebase_path("../.."),
+                          rebase_path("${board_toolchain_path}/clang"),
+                          compile_targets,
+                          " -c",
+                          rebase_path("$liteos_top_dir/dynload_dir/dynload_sym/los_dynload_gsymbol.c"),
+                          "-o " + rebase_path("$kconfig_out_dir/los_dynload_gsymbol.o"),
+                          "-I",
+                          rebase_path("$liteos_top_dir/dynload_dir/dynload_sym/include"),
+                          "-I",
+                          rebase_path("$liteos_top_dir/kernel_s/usr/dynload/include"),
+                          "-I",
+                          rebase_path("$liteos_top_dir/kernel_s/include"),
+                          "-I",
+                          rebase_path("$liteos_top_dir/targets/$LOSCFG_PLATFORM/include"),
+                  ]
+                  inputs = [ rebase_path(liteos_config_file) ]
+                  outputs = [ "$kconfig_out_dir/los_dynload_gsymbol.o" ]
+          }
+      } else {
+          action("generate_gsymbol_o") {
+                  script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+                  args = [
+                          "srctree=" + rebase_path("../.."),
+                          rebase_path("${board_toolchain_path}/clang"),
+                          compile_targets,
+                          " -c",
+                          rebase_path("$liteos_top_dir/dynload_dir/dynload_sym/los_dynload_gsymbol.c"),
+                          "-o " + rebase_path("$kconfig_out_dir/los_dynload_gsymbol.o"),
+                          "-I",
+                          rebase_path("$liteos_top_dir/dynload_dir/dynload_sym/include"),
+                          "-I",
+                          rebase_path("$liteos_top_dir/kernel_lite/extended/dynload/include"),
+                          "-I",
+                          rebase_path("$liteos_top_dir/kernel_lite/include"),
+                  ]
+                  inputs = [ rebase_path(liteos_config_file) ]
+                  outputs = [ "$kconfig_out_dir/los_dynload_gsymbol.o" ]
+          }
+      }
+  }
+  
+  action("generate_board_ld") {
+         script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+         args = [
+                 "srctree=" + rebase_path("../.."),
+                 rebase_path("${board_toolchain_path}/clang"),
+                 "-E",
+                 rebase_path("${ld_s_file_path}/board.ld.S"),
+                 "-I",
+                 rebase_path("${ld_include_path}"),
+                 "-I",
+                 rebase_path("$menuconfig_path"),
+                 "-o " + rebase_path("$kconfig_out_dir/board.ld"),
+                 "-P -D__COMPILER_HUAWEILITEOS__"
+         ]
+         inputs = [ rebase_path(liteos_config_file) ]
+         outputs = [ "$kconfig_out_dir/board.ld" ]
+  }
+  
+  if (defined(LOSCFG_SAFETY_KERNEL)) {
+      action("copy_liteos_ld") {
+             script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+             args = [
+                     " srctree=" + rebase_path("../.."),
+                     " cp",
+                     rebase_path("${ld_s_file_path}/box/liteos.ld"),
+                     rebase_path("${kconfig_out_dir}/liteos.ld")
+             ]
+             inputs = [ rebase_path(liteos_config_file) ]
+             outputs = [ "${kconfig_out_dir}/liteos.ld" ]
+      }
+      if (defined(LOSCFG_TEST)) {
+          test_s_out_path = "$kconfig_out_dir/box/boxes_cfg/test"
+          action("make_test_s_out_path"){
+                  script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+                  args = [
+                          " srctree=" + rebase_path("../.."),
+                          " mkdir -p",
+                          rebase_path("$test_s_out_path")
+                  ]
+                  inputs = [ rebase_path(liteos_config_file) ]
+                  outputs = ["$test_s_out_path"]
+          }
+          action("copy_boxes_ld") {
+                 script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+                 args = [
+                         " srctree=" + rebase_path("../.."),
+                         " cp",
+                         rebase_path("${ld_s_file_path}/box/boxes_cfg/test/boxes.ld"),
+                         rebase_path("$kconfig_out_dir/box/boxes_cfg/test/boxes.ld")
+                 ]
+                 inputs = [ rebase_path(liteos_config_file) ]
+                 outputs = [ "$kconfig_out_dir/box/boxes_cfg/test/boxes.ld" ]
+          }
+      } else {
+          action("make_boxes_cfg_path"){
+                  script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+                  args = [
+                          " srctree=" + rebase_path("../.."),
+                          " mkdir -p",
+                          rebase_path("$kconfig_out_dir/box/boxes_cfg/")
+                  ]
+                  inputs = [ rebase_path(liteos_config_file) ]
+                  outputs = ["$kconfig_out_dir/box/boxes_cfg/"]
+          }
+          action("copy_boxes_ld"){
+                 script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+                 args = [
+                         " srctree=" + rebase_path("../.."),
+                         " cp",
+                         rebase_path("${ld_s_file_path}/box/boxes_cfg/boxes.ld"),
+                         rebase_path("$kconfig_out_dir/box/boxes_cfg/boxes.ld")
+                 ]
+                 inputs = [ rebase_path(liteos_config_file) ]
+                 outputs = [ "$kconfig_out_dir/box/boxes_cfg/boxes.ld" ]
+          }
+      }
+  }
+  
+  if (defined(LOSCFG_SAFETY_KERNEL) && defined(LOSCFG_TEST)) {
+      test_s_file_path = "$LITEOSTOPDIR/$test_path/build"
+      action("generate_test_kernel_text_ld") {
+             script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+             args = [
+                     "srctree=" + rebase_path("../.."),
+                     rebase_path("${board_toolchain_path}/clang"),
+                     "-E",
+                     "-include " + rebase_path(LITEOS_MENUCONFIG_H),
+                     rebase_path("${test_s_file_path}/test_kernel_text.ld.S"),
+                     "-o " + rebase_path("${kconfig_out_dir}/box/boxes_cfg/test/test_kernel_text.ld"),
+                     "-P -D__COMPILER_HUAWEILITEOS__"
+             ]
+             inputs = [ rebase_path(liteos_config_file) ]
+             outputs = [ "${kconfig_out_dir}/test/test_kernel_text.ld" ]
+      }
+  
+      action("generate_test_kernel_data_ld") {
+              script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+              args = [
+                      "srctree=" + rebase_path("../.."),
+                      rebase_path("${board_toolchain_path}/clang"),
+                      "-E",
+                      "-include " + rebase_path(LITEOS_MENUCONFIG_H),
+                      rebase_path("${test_s_file_path}/test_kernel_data.ld.S"),
+                      "-o " + rebase_path("${kconfig_out_dir}/box/boxes_cfg/test/test_kernel_data.ld"),
+                      "-P -D__COMPILER_HUAWEILITEOS__"
+              ]
+              inputs = [ rebase_path(liteos_config_file) ]
+              outputs = [ "${kconfig_out_dir}/test/test_kernel_data.ld" ]
+      }
+  
+      action("generate_test_usr_text_ld"){
+             script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+             args = [
+                      "srctree=" + rebase_path("../.."),
+                      rebase_path("${board_toolchain_path}/clang"),
+                      "-E",
+                      "-include " + rebase_path(LITEOS_MENUCONFIG_H),
+                      rebase_path("${test_s_file_path}/test_usr_text.ld.S"),
+                      "-o " + rebase_path("${kconfig_out_dir}/box/boxes_cfg/test/test_usr_text.ld"),
+                      "-P -D__COMPILER_HUAWEILITEOS__"
+              ]
+              inputs = [ rebase_path(liteos_config_file) ]
+              outputs = [ "${kconfig_out_dir}/test/test_usr_text.ld" ]
+      }
+  
+      action("generate_test_usr_text_ddr_ld"){
+             script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+             args = [
+                      "srctree=" + rebase_path("../.."),
+                      rebase_path("${board_toolchain_path}/clang"),
+                      "-E",
+                      "-include " + rebase_path(LITEOS_MENUCONFIG_H),
+                      rebase_path("${test_s_file_path}/test_usr_text_ddr.ld.S"),
+                      "-o " + rebase_path("${kconfig_out_dir}/box/boxes_cfg/test/test_usr_text_ddr.ld"),
+                      "-P -D__COMPILER_HUAWEILITEOS__"
+              ]
+              inputs = [ rebase_path(liteos_config_file) ]
+              outputs = [ "${kconfig_out_dir}/test/test_usr_text_ddr.ld" ]
+      }
+  
+      action("generate_test_usr_rodata_ld"){
+             script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+             args = [
+                      "srctree=" + rebase_path("../.."),
+                      rebase_path("${board_toolchain_path}/clang"),
+                      "-E",
+                      "-include " + rebase_path(LITEOS_MENUCONFIG_H),
+                      rebase_path("${test_s_file_path}/test_usr_rodata.ld.S"),
+                      "-o " + rebase_path("${kconfig_out_dir}/box/boxes_cfg/test/test_usr_rodata.ld"),
+                      "-P -D__COMPILER_HUAWEILITEOS__"
+              ]
+              inputs = [ rebase_path(liteos_config_file) ]
+              outputs = [ "${kconfig_out_dir}/test/test_usr_rodata.ld" ]
+      }
+  
+      action("generate_test_usr_rodata_ddr_ld"){
+             script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+             args = [
+                      "srctree=" + rebase_path("../.."),
+                      rebase_path("${board_toolchain_path}/clang"),
+                      "-E",
+                      "-include " + rebase_path(LITEOS_MENUCONFIG_H),
+                      rebase_path("${test_s_file_path}/test_usr_rodata_ddr.ld.S"),
+                      "-o " + rebase_path("${kconfig_out_dir}/box/boxes_cfg/test/test_usr_rodata_ddr.ld"),
+                      "-P -D__COMPILER_HUAWEILITEOS__"
+              ]
+              inputs = [ rebase_path(liteos_config_file) ]
+              outputs = [ "${kconfig_out_dir}/test/test_usr_rodata_ddr.ld" ]
+      }
+  
+      action("generate_test_usr_data_ld"){
+             script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+             args = [
+                      "srctree=" + rebase_path("../.."),
+                      rebase_path("${board_toolchain_path}/clang"),
+                      "-E",
+                      "-include " + rebase_path(LITEOS_MENUCONFIG_H),
+                      rebase_path("${test_s_file_path}/test_usr_data.ld.S"),
+                      "-o " + rebase_path("${kconfig_out_dir}/box/boxes_cfg/test/test_usr_data.ld"),
+                      "-P -D__COMPILER_HUAWEILITEOS__"
+              ]
+              inputs = [ rebase_path(liteos_config_file) ]
+              outputs = [ "${kconfig_out_dir}/test/test_usr_data.ld" ]
+      }
+  
+      action("generate_test_usr_data_ddr_ld"){
+             script = "//self_src/targets/${LOSCFG_PLATFORM}/vendor/scripts/run_shell_cmd.py"
+             args = [
+                      "srctree=" + rebase_path("../.."),
+                      rebase_path("${board_toolchain_path}/clang"),
+                      "-E",
+                      "-include " + rebase_path(LITEOS_MENUCONFIG_H),
+                      rebase_path("${test_s_file_path}/test_usr_data_ddr.ld.S"),
+                      "-o " + rebase_path("${kconfig_out_dir}/box/boxes_cfg/test/test_usr_data_ddr.ld"),
+                      "-P -D__COMPILER_HUAWEILITEOS__"
+              ]
+              inputs = [ rebase_path(liteos_config_file) ]
+              outputs = [ "${kconfig_out_dir}/test/test_usr_data_ddr.ld" ]
+      }
+  }
+}
+config("clang_language_c") {
+  cflags_c = [ ]
+}
+
+config("clang_language_cpp") {
+  cflags_cc = [ ]
+}
+
+# Optimize Options
+LITEOS_COPTS_OPTIMIZE = []
+if (defined(LOSCFG_COMPILER_OPTIMIZE_NONE)) {
+    LITEOS_COPTS_OPTIMIZE += ["-O0"]
+} else if (defined(LOSCFG_COMPILER_OPTIMIZE_SPEED)) {
+    LITEOS_COPTS_OPTIMIZE += ["-O2"]
+} else if (defined(LOSCFG_COMPILER_OPTIMIZE_SIZE)) {
+    LITEOS_COPTS_OPTIMIZE += ["-Os"]
+}
+
+if (defined(LOSCFG_ARCH_ARM_SVE2)) {
+    LITEOS_COPTS_OPTIMIZE += ["--emit-relocs"]
+}
+
+# Security Options
+LITEOS_SSP = []
+if (defined(LOSCFG_CC_STACKPROTECTOR)) {
+    LITEOS_SSP += ["-fstack-protector --param ssp-buffer-size=4"]
+} else if (defined(LOSCFG_CC_STACKPROTECTOR_STRONG)) {
+    LITEOS_SSP += ["-fstack-protector-strong"]
+} else if (defined(LOSCFG_CC_STACKPROTECTOR_ALL)) {
+    LITEOS_SSP += ["-fstack-protector-all"]
+}
+
+#complier options
+WARNING_AS_ERROR = ["-Wall", "-Werror", "-Wextra"]
+if (defined(LOSCFG_COMPILER_RISCV_CLANG_UNKNOWN) || defined(LOSCFG_COMPILER_RISCV_CLANG_MUSL) || defined(LOSCFG_COMPILER_LINGLONG)) {
+  WARNING_AS_ERROR += [
+    "-Wno-tautological-constant-out-of-range-compare",
+    "-Wno-parentheses-equality",
+    "-Wno-string-plus-int",
+    "-Wno-unused-parameter",
+    "-Wno-missing-field-initializers"
+  ]
+}
+
+config("clang_common") {
+  cflags = [
+      "-fno-builtin",
+      "-funsigned-char",
+      "-ffunction-sections",
+      "-fdata-sections",
+  ]
+  cflags += WARNING_AS_ERROR
+  if (!defined(LOSCFG_LASLR)) {
+    cflags += ["-fno-pic"]
+  }
+  cflags += [
+      "-Wformat=2",
+  ]
+  if (defined(LOSCFG_LIB_LIBC)) {
+    cflags += ["-nostdinc", "-nostdlib"]
+  }
+  cflags_cc = cflags
+  asmflags = cflags
+}
+
+config("clang_opt") {
+  cflags_cc = []
+  cflags = [
+    "-Wpointer-arith",
+    "-fno-exceptions",
+    "-pipe",
+    "-Wstrict-prototypes",
+    "-fno-common",
+    "-Wfloat-equal",
+    "-Wunused",
+    "-Wswitch-default",
+    "-fvisibility=hidden",
+    "-Wvla",
+    "-Wdate-time",
+    "-Wshadow",
+    "-Winit-self",
+    "-fno-unwind-tables",
+    "-fno-builtin-printf",
+  ]
+  cflags += LITEOS_COPTS_OPTIMIZE
+  cflags_cc += LITEOS_COPTS_OPTIMIZE
+  mllvmFlags = [
+      "-mllvm", "-enable-ldst-multiple-opt=true",
+      "-mllvm", "-allow-unalign-ldst=true",
+      "-mllvm", "-enable-machine-outliner=always",
+      "-mllvm", "-enable-sequence-abstract=true",
+      "-mllvm", "-enable-branch-imm-no-zero=true",
+      "-mllvm", "-enable-oz-inline-threshold=true",
+  ]
+  cflags += mllvmFlags
+  cflags_cc += mllvmFlags
+  if (defined(LOSCFG_COMPILE_DEBUG)) {
+      cflags += ["-g", "-gdwarf-2"]
+  }
+
+  if (defined(LOSCFG_COMPILER_CLANG)) {
+      if (defined(LOSCFG_COMPILER_LINGLONG)) {
+          cflags += ["-std=c99"]
+      } else {
+          cflags += ["-std=c11"]
+      }
+  } else if (defined(LOSCFG_COMPILER_XTENSA_32)) {
+      cflags += ["-std=gnu99"]
+  } else {
+      cflags += ["-std=c99"]
+  }
+
+  if(defined(LOSCFG_BACKTRACE_FP)) {
+      cflags += ["-fno-omit-frame-pointer"]
+      cflags_cc += ["-fno-omit-frame-pointer"]
+  }
+
+  if(!defined(LOSCFG_COMPILER_XTENSA_32)) {
+      cflags += ["-Winvalid-pch"]
+  }
+
+  cflags_cc += ["-std=c++17", "-nostdinc++", "-fno-cxx-exceptions", "-fpermissive", "-fno-use-cxa-atexit", "-frtti"]
+}
+
+config("clang_stack_protector") {
+  cflags = LITEOS_SSP
+  cflags_cc = cflags
+}
+
+config("clang_default_sp_options") {
+    configs = [ ":clang_stack_protector" ]
+}
+
+config("kconfig_config") {
+    cflags = [
+        "--include",
+        "$LITEOS_MENUCONFIG_H",
+        ]
+    cflags_cc = cflags
+    asmflags = [
+      "--include",
+      "$LITEOS_MENUCONFIG_H",
+    ]
+
+    ldflags = []
+    if(!PRODUCT_BUILD) {
+      if(!IS_INSTALL || !IS_COMMERCIAL) {
+          ldflags += LITEOS_LD_OPTS + LITEOS_LD_PATH + LITEOS_TABLES_LDFLAGS
+          ldflags += ["--start-group"] + LITEOS_DEP_LIBS_EXT + ["--end-group"]
+      }
+    }
+
+}

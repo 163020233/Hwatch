@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="gle set addr: 0x%02x:**:**:**:%02x:%02x @gle_service_database_comm.c(67),INFO" ID="0xe8ea021d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy failed @gle_service_database_comm.c(70),ERROR" ID="0xe8ea0232" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="memcpy = %d failed @gle_service_database_comm.c(90),INFO" ID="0xe8ea02d5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle set name[%u] = 0x%02x @gle_service_database_comm.c(95),INFO" ID="0xe8ea02fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] data config write err. @gle_service_database_comm.c(117),INFO" ID="0xe8ea03ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] config sync data memcpy err. @gle_service_database_comm.c(121),ERROR" ID="0xe8ea03ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_file_store_init enter. @gle_service_database_comm.c(132),INFO" ID="0xe8ea0425" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_file_store_init already init. @gle_service_database_comm.c(134),INFO" ID="0xe8ea0435" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_file_store_init get sle conf failed. @gle_service_database_comm.c(139),INFO" ID="0xe8ea045d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_file_store_init get sle key failed. @gle_service_database_comm.c(148),INFO" ID="0xe8ea04a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_file_store_init get hid file opt failed. @gle_service_database_comm.c(159),INFO" ID="0xe8ea04fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_deinit_config enter. @gle_service_database_comm.c(180),INFO" ID="0xe8ea05a5" />
+			</MSG_LOG>

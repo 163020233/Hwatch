@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble at gap register at fail @ble_at_gap.c(521),ERROR" ID="0xe91c104a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[Error] ble at link common failed,ret = %x, type = %u @ble_at_gap.c(600),ERROR" ID="0xe91c12c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble disconn peer by conn handle connection node NULL! @ble_at_gap.c(634),ERROR" ID="0xe91c13d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] ble at filter data len error filter data len %u @ble_at_gap.c(789),ERROR" ID="0xe91c18aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] set adv data filter data mem malloc fail, i = %d @ble_at_gap.c(797),ERROR" ID="0xe91c18ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] ble at scan adv data filter data convert fail ret 0x%x @ble_at_gap.c(811),ERROR" ID="0xe91c195a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap ble set ctkd enable fail, ret = %x @ble_at_gap.c(941),ERROR" ID="0xe91c1d6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble set adv param tx_power error -127~20, 127 @ble_at_gap.c(971),ERROR" ID="0xe91c1e5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble set adv data new adv data error @ble_at_gap.c(1007),ERROR" ID="0xe91c1f7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble set adv data adv data fail @ble_at_gap.c(1013),ERROR" ID="0xe91c1faa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble set adv data new scan rsp data error @ble_at_gap.c(1023),ERROR" ID="0xe91c1ffa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble set adv data rsp data fail @ble_at_gap.c(1029),ERROR" ID="0xe91c202a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[INFO] gap ble set adv data ret = %x @ble_at_gap.c(1036),INFO" ID="0xe91c2065" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap ble clear whilt list addr failed,ret = %x @ble_at_gap.c(1055),ERROR" ID="0xe91c20fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap ble connect whilt list addr failed,ret = %x @ble_at_gap.c(1066),ERROR" ID="0xe91c2152" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap ble get whilt list addr failed,ret = %x @ble_at_gap.c(1077),ERROR" ID="0xe91c21aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap ble set passkey tk failed,ret = %x @ble_at_gap.c(1158),ERROR" ID="0xe91c2432" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap ble passkey entry failed,ret = %x @ble_at_gap.c(1173),ERROR" ID="0xe91c24aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap ble set privacy param failed,ret = %x @ble_at_gap.c(1188),ERROR" ID="0xe91c2522" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="l2cap bth ota init failed =%x @ble_at_gap.c(1199),ERROR" ID="0xe91c257a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap ble set pair info available failed,ret = %x @ble_at_gap.c(1240),ERROR" ID="0xe91c26c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble show ble conn list fail @ble_at_gap.c(1265),ERROR" ID="0xe91c278a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble_at_register_file_path %s  @ble_at_gap.c(1283),INFO" ID="0xe91c281d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] ble register file path failed: 0x:%x @ble_at_gap.c(1285),ERROR" ID="0xe91c282a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] ble_at_set_channel_scan_switch failed: 0x%x @ble_at_gap.c(1306),ERROR" ID="0xe91c28d2" />
+			</MSG_LOG>

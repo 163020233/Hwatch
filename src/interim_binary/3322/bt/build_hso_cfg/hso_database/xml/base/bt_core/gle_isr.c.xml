@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][gle_sub0_isr] isr(%d) not registered yet @gle_isr.c(155),INFO" ID="0x887a04dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]sle_sub%d_swint_isr @gle_isr.c(174),INFO" ID="0x887a0575" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[GLE_ERR_INT][sub%d]comm_errint1=0x%x, comm_errint2=0x%x, gle_errint=0x%x @gle_isr.c(190),ERROR" ID="0x887a05f2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE_ERR_INT]clk=0x%x, fincnt=%d, linklabel=%d @gle_isr.c(192),ERROR" ID="0x887a0602" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][gle_sub1_isr] isr(%d) not registered yet @gle_isr.c(255),INFO" ID="0x887a07fd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp_restore_int] sle sub0 ISR queue remain clear::[%d][0x%x] @gle_isr.c(356),WARNING" ID="0x887a0b23" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp_restore_int] sle sub1 ISR queue remain clear::[%d][0x%x] @gle_isr.c(365),WARNING" ID="0x887a0b6b" />
+			</MSG_LOG>

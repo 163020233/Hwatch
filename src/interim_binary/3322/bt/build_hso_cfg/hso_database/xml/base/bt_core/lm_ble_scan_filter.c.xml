@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[INFO]lm_ble_filter_judge_deli_del:filter_index=0X%x,elt=0x%x,onfd_filter_nb=0x%x @lm_ble_scan_filter.c(201),INFO" ID="0x8912064d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_ble_scan_filter_adv_sol_uuid_insert:count=%d, len_cpy = %d, bit_type = 0x%x, len_tmp=%d @lm_ble_scan_filter.c(1208),INFO" ID="0x891225c5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_ble_scan_filter_adv_insert_list:len_tmp=0x%x, adv_total_len=0x%x, position=%d @lm_ble_scan_filter.c(1354),WARNING" ID="0x89122a53" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="llm_le_onfound_list_delete found next = NULL @lm_ble_scan_filter.c(1949),WARNING" ID="0x89123ceb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BT][SCAN_FILTER]lm_ble_creat_fdnode this filter is full @lm_ble_scan_filter.c(2030),WARNING" ID="0x89123f73" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_ble_scan_filter_scan_filter_report tx_evt = false @lm_ble_scan_filter.c(2369),WARNING" ID="0x89124a0b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_ble_scan_filter_scan_filter_report tx_evt = false, data_len = %d, scan_type = %d @lm_ble_scan_filter.c(2389),INFO" ID="0x89124aad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_ble_scan_filter_ae_adv_report_check adv insert fail @lm_ble_scan_filter.c(2562),WARNING" ID="0x89125013" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_ble_scan_filter_ae_adv_report_check tx_evt = %d @lm_ble_scan_filter.c(2574),INFO" ID="0x89125075" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_ble_scan_filter_adv_report_handle event_tosh malloc fail @lm_ble_scan_filter.c(2585),INFO" ID="0x891250cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_ble_scan_filter_dir_adv_report_handle event_tosh malloc fail @lm_ble_scan_filter.c(2621),INFO" ID="0x891251ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_ble_scan_filter_undir_adv_report_handle event_tosh malloc fail @lm_ble_scan_filter.c(2657),INFO" ID="0x8912530d" />
+			</MSG_LOG>

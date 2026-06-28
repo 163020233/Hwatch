@@ -1,0 +1,10 @@
+<div class="div-container">
+    <list class="list" >
+    <list-item class="list-item">
+        <text class="text" style="text-overflow: autoWidth; text-align: left;">{{text1}}</text>
+    </list-item>
+    <list-item class="list-item">
+        <text class="text" style="text-overflow: autoWidth; text-align: left;">{{text2}}</text>
+    </list-item>
+    </list>
+</div>

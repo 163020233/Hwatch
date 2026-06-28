@@ -1,0 +1,97 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+LITEOS_FATFS_PATH = "../../../$open_source_path/FatFs"
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("fat") {
+        sources = [
+            "$LITEOS_FATFS_PATH/source/ff.c",
+            "$LITEOS_FATFS_PATH/source/ffunicode.c",
+
+            #os_adapt
+            "os_adapt/fat_shellcmd.c",
+            "os_adapt/fatfs_dentry.c",
+            "os_adapt/fatfs_extend.c",
+            "os_adapt/fatfs_porting.c",
+            "os_adapt/fatfs.c",
+
+            #src
+            "src/format.c",
+        ]
+
+        if (defined(LOSCFG_FS_FAT_DCACHE)) {
+            sources += [
+                "dcache/src/dentry.c",
+                "dcache/src/hash.c"
+            ]
+        }
+
+        if (defined(LOSCFG_COMPILER_ICCARM)) {
+            cflags = [
+                "--diag_suppress=Pe546",
+            ]
+        }
+
+        configs += [
+            ":private",
+        ]
+    }
+} else {
+    static_library("libfat") {
+        import("../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        sources = [
+            "$LITEOS_FATFS_PATH/source/ff.c",
+            "$LITEOS_FATFS_PATH/source/ffunicode.c",
+
+            #os_adapt
+            "os_adapt/fat_shellcmd.c",
+            "os_adapt/fatfs_dentry.c",
+            "os_adapt/fatfs_extend.c",
+            "os_adapt/fatfs_porting.c",
+            "os_adapt/fatfs.c",
+
+            #src
+            "src/format.c",
+        ]
+
+        if (defined(LOSCFG_FS_FAT_DCACHE)) {
+            sources += [
+                "dcache/src/dentry.c",
+                "dcache/src/hash.c"
+            ]
+        }
+
+        if (defined(LOSCFG_COMPILER_ICCARM)) {
+            cflags = [
+                "--diag_suppress=Pe546",
+            ]
+        }
+        include_dirs = LITEOS_GN_KSTATIC_INCLUDE
+        configs += [
+            ":private",
+        ]
+    }
+}
+
+config("private") {
+    include_dirs = [
+        "$LITEOSTOPDIR/fs/fat/virpart/include",
+        "$LITEOSTOPDIR/fs/fat/dcache/include",
+        "$LITEOSTOPDIR/fs/vfs/include/utrim",
+    ]
+    defines = ["CONFIG_PRIVATE_DIRENT_STRUCT"]
+}

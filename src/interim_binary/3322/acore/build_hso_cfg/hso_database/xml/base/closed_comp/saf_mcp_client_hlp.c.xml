@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] instance name decode, malloc fail! @saf_mcp_client_hlp.c(56),ERROR" ID="0xe9e801c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] instance name decode, memcpy fail! @saf_mcp_client_hlp.c(63),ERROR" ID="0xe9e801fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] basic info decode, malloc fail! @saf_mcp_client_hlp.c(107),ERROR" ID="0xe9e8035a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] playback position decode, malloc fail! @saf_mcp_client_hlp.c(142),ERROR" ID="0xe9e80472" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] playback speed decode, malloc fail! @saf_mcp_client_hlp.c(175),ERROR" ID="0xe9e8057a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] seeking speed decode, malloc fail! @saf_mcp_client_hlp.c(209),ERROR" ID="0xe9e8068a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] feature supported decode, malloc fail! @saf_mcp_client_hlp.c(238),ERROR" ID="0xe9e80772" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] decode media state err, malloc fail! @saf_mcp_client_hlp.c(269),ERROR" ID="0xe9e8086a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] media id decode, malloc fail! @saf_mcp_client_hlp.c(292),ERROR" ID="0xe9e80922" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] decode cp operation result err, malloc fail! @saf_mcp_client_hlp.c(315),ERROR" ID="0xe9e809da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] inst id map is null @saf_mcp_client_hlp.c(415),INFO" ID="0xe9e80cfd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] inst id map is null @saf_mcp_client_hlp.c(437),INFO" ID="0xe9e80dad" />
+			</MSG_LOG>

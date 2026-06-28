@@ -1,0 +1,18 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+
+kernel_module("lms") {
+    include_dirs = [
+        "$LITEOSTOPDIR/kernel_lite/extended/include",
+    ]
+    sources = [
+        "los_lms.c",
+    ]
+    if (defined(LOSCFG_LMS_LIBC_HIGH_FREQ_FUNC_CHECK)) {
+        sources += ["lms_libc.c"]
+    }
+}

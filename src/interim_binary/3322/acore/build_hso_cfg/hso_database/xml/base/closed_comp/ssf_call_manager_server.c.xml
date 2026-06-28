@@ -1,0 +1,41 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call in param invalid @ssf_call_manager_server.c(30),ERROR" ID="0xef8c00f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] server call in failed. err=%u @ssf_call_manager_server.c(43),ERROR" ID="0xef8c015a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call out param invalid @ssf_call_manager_server.c(54),ERROR" ID="0xef8c01b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] server call out failed. err=%u @ssf_call_manager_server.c(67),ERROR" ID="0xef8c021a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] sle_server_call_accept.call_id=%u @ssf_call_manager_server.c(78),INFO" ID="0xef8c0275" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] server call accept failed. err=%u @ssf_call_manager_server.c(81),ERROR" ID="0xef8c028a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call terminate param invalid @ssf_call_manager_server.c(90),ERROR" ID="0xef8c02d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] saf_ccps_terminate_notify. call_id=%u, reason=%u @ssf_call_manager_server.c(95),INFO" ID="0xef8c02fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] server call terminate failed. err=%u @ssf_call_manager_server.c(98),ERROR" ID="0xef8c0312" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call hold param invalid @ssf_call_manager_server.c(107),ERROR" ID="0xef8c035a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] saf_ccps_hold_notify. call_id=%u, role=%u @ssf_call_manager_server.c(112),INFO" ID="0xef8c0385" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] server call hold failed. err=%u @ssf_call_manager_server.c(115),ERROR" ID="0xef8c039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call retrive param invalid @ssf_call_manager_server.c(124),ERROR" ID="0xef8c03e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] saf_ccps_retrieve_notify. call_id=%u, role=%u @ssf_call_manager_server.c(129),INFO" ID="0xef8c040d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] server call retrive failed. err=%u @ssf_call_manager_server.c(132),ERROR" ID="0xef8c0422" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] outgoing call req callback, conn_id=%u,inst_id=%u, call_id=%u @ssf_call_manager_server.c(153),DBG" ID="0xef8c04ce" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call outgoing req callback, invalid device id @ssf_call_manager_server.c(156),ERROR" ID="0xef8c04e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call outgoing req callback, invalid obj @ssf_call_manager_server.c(162),ERROR" ID="0xef8c0512" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] server call out req callback, invalid out type=%u @ssf_call_manager_server.c(175),ERROR" ID="0xef8c057a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] operation call req callback, opcode=%u,conn_id=%u, call_id=%u @ssf_call_manager_server.c(192),DBG" ID="0xef8c0606" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call operation req callback, invalid device id @ssf_call_manager_server.c(195),ERROR" ID="0xef8c061a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call operation req callback, invalid obj @ssf_call_manager_server.c(201),ERROR" ID="0xef8c064a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CALL] merge call req callback, conn_id=%u,call_count=%u @ssf_call_manager_server.c(217),INFO" ID="0xef8c06cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server vap state req callback, invalid device id @ssf_call_manager_server.c(229),ERROR" ID="0xef8c072a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server vap state req callback, invalid obj @ssf_call_manager_server.c(235),ERROR" ID="0xef8c075a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call status notify invalid type @ssf_call_manager_server.c(246),ERROR" ID="0xef8c07b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call status notify invalid param @ssf_call_manager_server.c(250),ERROR" ID="0xef8c07d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CALL] bs_sle_call_status_notify. obj: %u, type: %uparam_len: %u @ssf_call_manager_server.c(254),INFO" ID="0xef8c07f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] server call status notify, type=%u @ssf_call_manager_server.c(255),DBG" ID="0xef8c07fe" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] server call status notify func is null @ssf_call_manager_server.c(267),ERROR" ID="0xef8c085a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] bs_sle_notify_voice_assistant_state. state=%u @ssf_call_manager_server.c(276),INFO" ID="0xef8c08a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] server vap notify state failed. err=%u @ssf_call_manager_server.c(279),ERROR" ID="0xef8c08ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] vap mananger register server failed. err=%u @ssf_call_manager_server.c(291),ERROR" ID="0xef8c091a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] vap server add inst failed. err=%u @ssf_call_manager_server.c(296),ERROR" ID="0xef8c0942" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] call mananger register server failed. err=%u @ssf_call_manager_server.c(311),ERROR" ID="0xef8c09ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] call server add inst failed. err=%u @ssf_call_manager_server.c(316),ERROR" ID="0xef8c09e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] call server set inst name failed. err=%u @ssf_call_manager_server.c(326),ERROR" ID="0xef8c0a32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] get_config feature_state failed. err=%u @ssf_call_manager_server.c(333),ERROR" ID="0xef8c0a6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] call server set feature state failed. err=%u @ssf_call_manager_server.c(339),ERROR" ID="0xef8c0a9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] call server set operation support failed. err=%u @ssf_call_manager_server.c(347),ERROR" ID="0xef8c0ada" />
+			</MSG_LOG>

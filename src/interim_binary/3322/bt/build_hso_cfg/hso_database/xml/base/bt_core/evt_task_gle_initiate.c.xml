@@ -1,0 +1,28 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_INIT]es_create_elt fail! @evt_task_gle_initiate.c(86),ERROR" ID="0x88ce02b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_INIT]aux_elt create fail! @evt_task_gle_initiate.c(92),ERROR" ID="0x88ce02e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_INIT]req_tx_elt create fail! @evt_task_gle_initiate.c(97),ERROR" ID="0x88ce030a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_INIT]rsp_rx_elt create fail! @evt_task_gle_initiate.c(102),ERROR" ID="0x88ce0332" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] initiate_phy_nego, frame_format=%d, pilot_ratio=%d @evt_task_gle_initiate.c(278),INFO" ID="0x88ce08b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_pack_con_ind, clkn=0x%x, con_intv=%d, delay=%d, offset=%d @evt_task_gle_initiate.c(339),INFO" ID="0x88ce0a9d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_pack_con_ind, clkn=0x%x, con_intv=%d, delay=%d, offset=%d @evt_task_gle_initiate.c(375),INFO" ID="0x88ce0bbd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_start_rsp_rx, clock=0x%x, anchor_point=0x%x, us_offset=%d, rsp_offset=%d @evt_task_gle_initiate.c(421),INFO" ID="0x88ce0d2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="es_insert_elt err! task_id = %#x @evt_task_gle_initiate.c(427),INFO" ID="0x88ce0d5d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_start_req_tx, clock=0x%x, us_offset=%d, anchor_point=0x%x, tx_offset=%d @evt_task_gle_initiate.c(451),INFO" ID="0x88ce0e1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="es_insert_elt err! task_id = %#x @evt_task_gle_initiate.c(469),INFO" ID="0x88ce0ead" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_INIT]statis: curr_time=0x%x, total_time=%d, total_window=%d, start_cbk_cnt=%d @evt_task_gle_initiate.c(484),INFO" ID="0x88ce0f25" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_INIT]statis: cancel_cbk_cnt=%d, evt_cbk_cnt=%d, abort_cbk_cnt=%d, abnormal_cbk_cnt=%d @evt_task_gle_initiate.c(487),INFO" ID="0x88ce0f3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_initiate_create_desc, env_ptr is NULL @evt_task_gle_initiate.c(520),WARNING" ID="0x88ce1043" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_INIT]evt_task_gle_initiate_create_desc, time_info is NULL @evt_task_gle_initiate.c(526),WARNING" ID="0x88ce1073" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_initiate_create_desc, fsm register fail! @evt_task_gle_initiate.c(535),WARNING" ID="0x88ce10bb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_initiate_set_intv_window_frame_fromat, window:%d, intv:%d @evt_task_gle_initiate.c(649),INFO" ID="0x88ce144d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_initiate_set_intv_window_phy, window:%d, intv:%d @evt_task_gle_initiate.c(707),INFO" ID="0x88ce161d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_set_env,gt_role_ind(%d)init_frame_format(%d)filter_policy(%d),peer_addr_type(%d) @evt_task_gle_initiate.c(742),INFO" ID="0x88ce1735" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_set_env, gt_role_ind(%d)init_phys(%d)filter_policy(%d)peer_addr_type(%d) @evt_task_gle_initiate.c(757),INFO" ID="0x88ce17ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]evt_task_gle_initiate_set_env, peer_addr:0x%x:0x%x:xx:xx:xx:0x%x @evt_task_gle_initiate.c(760),INFO" ID="0x88ce17c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_initiate_intv_offset_req, intv_req fail! @evt_task_gle_initiate.c(941),INFO" ID="0x88ce1d6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_initiate_intv_offset_req, offset_req fail! @evt_task_gle_initiate.c(948),INFO" ID="0x88ce1da5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_initiate_start, start fail, env_ptr is NULL! @evt_task_gle_initiate.c(1085),WARNING" ID="0x88ce21eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_INIT]start_patch, es_create_elt fail! @evt_task_gle_initiate.c(1093),ERROR" ID="0x88ce222a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="es_insert_elt err! task_id = %#x @evt_task_gle_initiate.c(1131),INFO" ID="0x88ce235d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_initiate_fsm_start, switch to idle! @evt_task_gle_initiate.c(1151),INFO" ID="0x88ce23fd" />
+			</MSG_LOG>

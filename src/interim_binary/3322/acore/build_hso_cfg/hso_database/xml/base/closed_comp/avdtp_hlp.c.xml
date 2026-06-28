@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP]avdtp remote done avdtp stream done  @avdtp_hlp.c(589),INFO" ID="0xeac4126d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[AVDTP][REMOTE_DONE] SIGNAL_CID=0x%x, REASON=%u @avdtp_hlp.c(595),INFO" ID="0xeac4129d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP][GET_SEP_FAIL] Can not get sep info @avdtp_hlp.c(654),WARNING" ID="0xeac41473" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP]avdtp delete stream info fail @avdtp_hlp.c(666),ERROR" ID="0xeac414d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP]avdtp stream done reason=%d @avdtp_hlp.c(733),INFO" ID="0xeac416ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP]avdtp stream done avdtp remote done @avdtp_hlp.c(742),INFO" ID="0xeac41735" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[AVDTP]avdtp local sep done seid=%d sep_type=%d @avdtp_hlp.c(943),INFO" ID="0xeac41d7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP]avdtp sep done local avdtp stream done  @avdtp_hlp.c(951),INFO" ID="0xeac41dbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP]avdtp sep done remote avdtp stream done  @avdtp_hlp.c(971),INFO" ID="0xeac41e5d" />
+			</MSG_LOG>

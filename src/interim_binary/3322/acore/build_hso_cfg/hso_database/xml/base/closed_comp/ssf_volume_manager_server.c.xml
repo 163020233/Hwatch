@@ -1,0 +1,25 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[SSF][VOLUME] bs_sle_set_main_volume_notify obj:%u, volume:%u @ssf_volume_manager_server.c(41),INFO" ID="0xef9a014d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] set main volume notify invalid sle_obj. err=%u @ssf_volume_manager_server.c(46),ERROR" ID="0xef9a0172" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] main volume notify invalid conn id. device=%u @ssf_volume_manager_server.c(54),ERROR" ID="0xef9a01b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][VOLUME] saf_vcps_volume_value_synchronize_request. conn_id:%u, volume:%u @ssf_volume_manager_server.c(59),INFO" ID="0xef9a01dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] main volume notify failed. err=%u @ssf_volume_manager_server.c(62),ERROR" ID="0xef9a01f2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][VOLUME] set volume info req. conn_id=%u, state=%u, value=%u, effective_time=%u @ssf_volume_manager_server.c(76),INFO" ID="0xef9a0265" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] set command cache failed, cache is full. obj=%u @ssf_volume_manager_server.c(120),ERROR" ID="0xef9a03c2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][VOLUME] update cache obj: %u, ep_id: %u, volume: %u @ssf_volume_manager_server.c(135),INFO" ID="0xef9a043d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] update cache failed, cannot find correct obj. @ssf_volume_manager_server.c(140),ERROR" ID="0xef9a0462" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][VOLUME] volume change req recevied. volume: %u, ep_id: %u @ssf_volume_manager_server.c(150),INFO" ID="0xef9a04b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] volume change req report, invalid device id @ssf_volume_manager_server.c(153),ERROR" ID="0xef9a04ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] volume change req report, invalid obj. @ssf_volume_manager_server.c(159),ERROR" ID="0xef9a04fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] volume change req report, obj is not active. obj=%u @ssf_volume_manager_server.c(174),INFO" ID="0xef9a0575" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][VOLUME] volume change req report, sync volume=%u, ep_id=%u @ssf_volume_manager_server.c(180),INFO" ID="0xef9a05a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] as state change, obj is not in cache. obj=%u @ssf_volume_manager_server.c(201),ERROR" ID="0xef9a064a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][VOLUME] as state change, sync volume%u, ep_id=%u @ssf_volume_manager_server.c(210),INFO" ID="0xef9a0695" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] set server inital volume failed. ep_num is null @ssf_volume_manager_server.c(224),ERROR" ID="0xef9a0702" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] set server inital volume failed. err=%u @ssf_volume_manager_server.c(235),ERROR" ID="0xef9a075a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] volume change req report, set stream volume failed. ep_id=%u @ssf_volume_manager_server.c(252),ERROR" ID="0xef9a07e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] volume handle sync result, invalid ep id. ep_id=%u @ssf_volume_manager_server.c(262),ERROR" ID="0xef9a0832" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] volume sync result event malloc failed. @ssf_volume_manager_server.c(278),ERROR" ID="0xef9a08b2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][VOLUME] ssf_send_simple_msg. toggle_cnt:%u, target_volume:%u, valid_flag:%u, volume_type:%u @ssf_volume_manager_server.c(287),INFO" ID="0xef9a08fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] volume mananger register server failed. err=%u @ssf_volume_manager_server.c(299),ERROR" ID="0xef9a095a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] volume mananger start vcps failed. err=%u @ssf_volume_manager_server.c(304),ERROR" ID="0xef9a0982" />
+			</MSG_LOG>

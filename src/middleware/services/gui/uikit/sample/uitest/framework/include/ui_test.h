@@ -1,0 +1,115 @@
+/*
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2025-2025. All rights reserved.
+ * Description: Test Case Public Interface
+ * Create: 2025-09-20
+ */
+
+#ifndef UI_TEST_H
+#define UI_TEST_H
+
+#include "common/screen.h"
+#include "components/ui_label.h"
+#include "components/ui_view_group.h"
+#include "gfx_utils/style.h"
+
+namespace OHOS {
+constexpr uint16_t TITLE_LABEL_DEFAULT_HEIGHT = 30;
+constexpr uint16_t FONT_DEFAULT_SIZE = 20;
+constexpr uint16_t VIEW_DISTANCE_TO_LEFT_SIDE = 48;
+constexpr uint16_t VIEW_DISTANCE_TO_TOP_SIDE = 48;
+constexpr uint16_t VIEW_DISTANCE_TO_LEFT_SIDE2 = 24;
+constexpr uint16_t TEXT_DISTANCE_TO_LEFT_SIDE = 50;
+constexpr uint16_t TEXT_DISTANCE_TO_TOP_SIDE = 11;
+constexpr uint16_t HALF_OPA_OPAQUE = OPA_OPAQUE / 2;
+constexpr uint16_t VIEW_STYLE_BORDER_WIDTH = 2;
+constexpr uint16_t VIEW_STYLE_BORDER_RADIUS = 8;
+constexpr uint16_t BUTTON_LABEL_SIZE = 16;
+constexpr uint8_t BUTTON_STYLE_BORDER_RADIUS_VALUE = 20;
+constexpr uint32_t BUTTON_STYLE_BACKGROUND_COLOR_VALUE = 0xFF333333;
+constexpr uint32_t BUTTON_STYLE_BACKGROUND_COLOR_PRESS = 0xFF2D2D2D;
+constexpr int16_t BACK_BUTTON_HEIGHT = 50;
+constexpr uint16_t BUTTON_WIDHT1 = 80;
+constexpr uint16_t BUTTON_HEIGHT1 = 40;
+constexpr uint16_t BUTTON_WIDHT2 = 120;
+constexpr uint16_t BUTTON_HEIGHT2 = 40;
+constexpr uint16_t BUTTON_WIDHT3 = 150;
+constexpr uint16_t BUTTON_HEIGHT3 = 40;
+constexpr uint16_t TEST_LABEL_WIDTH = 300;
+constexpr uint16_t TEST_LABEL_HEIGHT = 50;
+constexpr uint16_t OPA_150 = 150;
+constexpr uint16_t OPA_50 = 50;
+
+class UITest : public HeapBase {
+public:
+    UITest() {}
+
+    virtual ~UITest() {}
+
+    /**
+     * @brief Set up display environment.
+     *
+     */
+    virtual void SetUp() = 0;
+
+    /**
+     * @brief Tear down display environment.
+     *
+     */
+    virtual void TearDown()
+    {
+        positionX_ = 0;
+        positionY_ = 0;
+    }
+
+    /**
+     * @brief Get test view to add to root view.
+     *
+     * @returns test container view.
+     *
+     */
+    virtual const UIView* GetTestView() = 0;
+
+    void DeleteChildren(UIView* view)
+    {
+        while (view != nullptr) {
+            UIView* tempView = view;
+            view = view->GetNextSibling();
+            if (tempView->IsViewGroup() && (tempView->GetViewType() != UI_DIGITAL_CLOCK)) {
+                DeleteChildren(static_cast<UIViewGroup*>(tempView)->GetChildrenHead());
+            }
+            if (tempView->GetParent()) {
+                static_cast<UIViewGroup*>(tempView->GetParent())->Remove(tempView);
+            }
+            delete tempView;
+            tempView = nullptr;
+        }
+    }
+
+    UILabel* GetTitleLabel(const char* titleName)
+    {
+        if (titleName == nullptr) {
+            return nullptr;
+        }
+        UILabel* label = new UILabel();
+        if (label == nullptr) {
+            return nullptr;
+        }
+        label->SetPosition(0, 0);
+        // 2: half of screen width
+        label->Resize(Screen::GetInstance().GetWidth() / 2, TITLE_LABEL_DEFAULT_HEIGHT);
+        label->SetText(titleName);
+        label->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        return label;
+    }
+
+protected:
+    int16_t positionX_ = 0;
+    int16_t positionY_ = 0;
+};
+
+struct TestCaseInfo {
+    const char* sliceId;
+    UITest* testObj;
+};
+} // namespace OHOS
+#endif

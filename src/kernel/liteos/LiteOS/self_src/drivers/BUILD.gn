@@ -1,0 +1,102 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../build/gn/config.gni")
+
+group("drivers") {
+    deps = []
+    if (!defined(LOSCFG_INTERRUPT_VENDOR)) {
+        if (!defined(LOSCFG_SAFETY_KERNEL)) {
+            deps += ["interrupt:interrupt"]
+        }
+    }
+    if (!defined(LOSCFG_TIMER_VENDOR)) {
+        deps += ["timer:timer"]
+    }
+
+    if (defined(LOSCFG_DRIVERS_UART_LITEOS)) {
+        deps += ["uart:uart"]
+    }
+
+    if (defined(LOSCFG_DRIVERS_BASE) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["base:drivers_base"]
+    }
+
+    if (defined(LOSCFG_DRIVERS_RANDOM)) {
+        deps += ["random:random"]
+    }
+
+    if (defined(LOSCFG_DRIVERS_VIDEO)) {
+        deps += ["video:video"]
+    }
+
+    if (defined(LOSCFG_DRIVERS_MMC) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["mmc:mmc"]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB)) {
+        deps += ["usb:usb"]
+        deps += ["usb/phy:phy"]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_DWC_DRIVER)) {
+        deps += ["usb/gadget:gadget"]
+    }
+
+    if (defined(LOSCFG_DRIVERS_CIPHER)) {
+        deps += ["cipher:cipher"]
+    }
+
+    if (defined(LOSCFG_DRIVERS_IOMMU)) {
+        deps += ["iommu:iommu"]
+    }
+}
+
+config("public") {
+    include_dirs = [
+        "$LITEOSTOPDIR/drivers/interrupt/include",
+        "$LITEOSTOPDIR/drivers/timer/include"
+    ]
+    if (defined(LOSCFG_DRIVERS_UART_LITEOS)) {
+        include_dirs += ["$LITEOSTOPDIR/drivers/uart/include"]
+    }
+    if (defined(LOSCFG_DRIVERS_IOMMU)) {
+        include_dirs += ["$LITEOSTOPDIR/drivers/iommu/include"]
+    }
+    if (defined(LOSCFG_DRIVERS_BASE)) {
+        include_dirs += ["$LITEOSTOPDIR/drivers/base/include"]
+    }
+    if (defined(LOSCFG_DRIVERS_MMC)) {
+        include_dirs += [
+            "$LITEOSTOPDIR/drivers/mmc/include",
+            "$RTOSLITETOPDIR/$open_source_path/freebsd/liteos/drivers/mmc/include"
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_CIPHER)) {
+        include_dirs += [
+            "$LITEOSTOPDIR/drivers/cipher/cipher/include",
+            "$LITEOSTOPDIR/drivers/cipher/cipher/src/drv/cipher_v1.0/osal/include",
+            "$LITEOSTOPDIR/drivers/cipher/cipher/src/drv/cipher_v1.0/drivers/core/include",
+            "$LITEOSTOPDIR/drivers/cipher/cipher/src/drv/cipher_v1.0/drivers/crypto/include",
+            "$LITEOSTOPDIR/drivers/cipher/osal/include",
+            "$LITEOSTOPDIR/drivers/cipher/sample",
+            "$LITEOSTOPDIR/drivers/cipher/hi_include"
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB)) {
+        include_dirs += [
+            "$LITEOSTOPDIR/drivers/usb/include",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB)) {
+        include_dirs += ["$RTOSLITETOPDIR/$open_source_path/incubator-nuttx/liteos/drivers/video/include"]
+    }
+    if (defined(LOSCFG_DRIVERS_RANDOM)) {
+        include_dirs += ["$LITEOSTOPDIR/drivers/random/include"]
+    }
+}

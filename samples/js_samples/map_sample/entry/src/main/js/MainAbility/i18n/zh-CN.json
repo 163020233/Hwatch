@@ -1,0 +1,9 @@
+{
+  "strings": {
+    "hello": "您好",
+    "world": "世界",
+    "search_bar": "搜索框",
+    "send": "发送",
+    "placeholder": "请输入搜索内容"
+  }
+}

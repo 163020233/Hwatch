@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF] diff_sched_prog=%d timestamp=%d, rx_win_size=%d, last_sync=%d @evt_task_classic_acl_sniff.c(97),WARNING" ID="0x8a00030b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_SNIFF]abnormal_cbk: con_hdl %d, nb_prog == 0 @evt_task_classic_acl_sniff.c(225),ERROR" ID="0x8a00070a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF]abnormal_cbk: con_hdl %d, intv|eeq_prio 0x%08x, last_ts 0x%x, elt_ts 0x%x @evt_task_classic_acl_sniff.c(231),INFO" ID="0x8a00073d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT SNIFF] acl_sniff: conhdl %d, current mode %d, offset %d, intv %d @evt_task_classic_acl_sniff.c(277),INFO" ID="0x8a0008ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_sniff_insert_try, env_ptr is null @evt_task_classic_acl_sniff.c(303),ERROR" ID="0x8a00097a" />
+			</MSG_LOG>

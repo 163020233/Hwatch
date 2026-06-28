@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_classic_acl_start_detach_process:kick succ, acl_fsm_state %d, con_hdl %d @lm_classic_page_scan_act_ram.c(45),INFO" ID="0x8aec016d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_page_scan_end_kick_conhdl, env_ptr is null @lm_classic_page_scan_act_ram.c(70),ERROR" ID="0x8aec0232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_page_scan_end_kick_conhdl, acl_desc is null @lm_classic_page_scan_act_ram.c(77),ERROR" ID="0x8aec026a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_classic_page_scan_end_kick_conhdl:kick succ, acl_fsm_state %d, con_hdl %d @lm_classic_page_scan_act_ram.c(119),INFO" ID="0x8aec03bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]page_scan has already been turn off @lm_classic_page_scan_act_ram.c(128),INFO" ID="0x8aec0405" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]page_scan has already been turn on @lm_classic_page_scan_act_ram.c(136),INFO" ID="0x8aec0445" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]page_scan is turnning off @lm_classic_page_scan_act_ram.c(144),INFO" ID="0x8aec0485" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]page_scan is turnning off, please wait @lm_classic_page_scan_act_ram.c(155),INFO" ID="0x8aec04dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][pscan]lm_classic_pscan_off_msg_scan_enable_act: page scan is disabled @lm_classic_page_scan_act_ram.c(181),INFO" ID="0x8aec05ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][pscan]lm_classic_pscan_ending_msg_sched_stop_act,LM classia page scan fsm create fail @lm_classic_page_scan_act_ram.c(205),WARNING" ID="0x8aec066b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bt_reset]stop page complete @lm_classic_page_scan_act_ram.c(234),INFO" ID="0x8aec0755" />
+			</MSG_LOG>

@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="lm_bt_test_mode_create_desc::lm_bt_test_mode_desc alloc failed @lm_classic_test_mode.c(46),ERROR" ID="0x89f60172" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_bt_test_mode_send_cmp_evt:alloc failed num_packets=%d msg_id=0x%x @lm_classic_test_mode.c(82),WARNING" ID="0x89f60293" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_bt_test_mode_send_cmp_evt: status=%d,num packets=%d,pow=%d opcode=0x%x @lm_classic_test_mode.c(93),WARNING" ID="0x89f602eb" />
+			</MSG_LOG>

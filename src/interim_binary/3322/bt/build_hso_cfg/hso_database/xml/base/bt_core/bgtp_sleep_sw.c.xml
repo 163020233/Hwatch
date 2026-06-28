@@ -1,0 +1,31 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][lowpower] cail clock error change origin_clk = 0x%x cur_clk = 0x%x @bgtp_sleep_sw.c(135),INFO" ID="0x8898043d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="cail timeout error timeout @bgtp_sleep_sw.c(139),ERROR" ID="0x8898045a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="bgtp_sleep_period ----  rtc_info-&gt;task_id:0x%x  rtc_info-&gt;task_info0x%x, g_rtc_func_list_idx=%u @bgtp_sleep_sw.c(201),INFO" ID="0x8898064d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="pm_port_rtc_timer_for_btc.  handle=%p, ret=%#x  @bgtp_sleep_sw.c(211),INFO" ID="0x8898069d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="print_prog,111 list_sizeelt_wait 0x%x  list_sizeeeq_prog_list  0x%x  sed_id  0x%x timestamp 0x%x  @bgtp_sleep_sw.c(297),INFO" ID="0x8898094d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="print_prog, there is a task_type 0x%x timestamp =0x%x  task_id  =0x%x  sed_id  =0x%x @bgtp_sleep_sw.c(305),INFO" ID="0x8898098d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[lowpower]bgtp_lowpower_init RC 32K CLOCK @bgtp_sleep_sw.c(354),INFO" ID="0x88980b15" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[lowpower]bgtp_lowpower_init. lowpower_feature=0x%x. deepsleep_wkup_delay_time=%u. g_macro_cfg_flags =0x%x @bgtp_sleep_sw.c(362),INFO" ID="0x88980b55" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[lowpower][bgtp_prevent_sleep_set]  g_prevent_sleep_reasons 0x%x   prevent_sleep_reason 0x%x  @bgtp_sleep_sw.c(385),INFO" ID="0x88980c0d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[lowpower][bgtp_sleep_time_calc] cur:0x%x  es_bt:0x%x  btc_timer:0x%x   sleep_duration:0x%x @bgtp_sleep_sw.c(444),INFO" ID="0x88980de5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[lowpower][bgtp_start_sleep] TSENSOR TEMPERATURE IS HIGH. g_tsensor_temp=0x%x  @bgtp_sleep_sw.c(511),INFO" ID="0x88980ffd" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[BGTP]bgtp_sleep_status_ready timeout !!!  macc_comm_slpctrl_cfg=0x%X,reg_tglp_sts=0x%X, reg_57007A10=0x%X, reg_57007A14=0x%X, reg_570000B0=0x%X, reg_57006A00=0x%X @bgtp_sleep_sw.c(607),ERROR" ID="0x889812fa" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[lowpower][bgtp_start_sleep] end   BT_WKUP_STS_REG 0x%x BT_WKUP_INT_STS_REG 0x%x  bt_ctl_btbb_wakeup 0x%x   macc_comm_slpctrl_cfg 0x%x  macc_comm_wkuptime_cfg_get  0x%x  @bgtp_sleep_sw.c(631),INFO" ID="0x889813bd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP][lowpower]bgtp_start_sleep. g_es_env_v2.elt_wait is NULL cur_clk=0x%X, sleep_duration=%u. em_pwroff_stats=0x%X. @bgtp_sleep_sw.c(661),INFO" ID="0x889814ad" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[BGTP][lowpower]bgtp_start_sleep. cur_clk=0x%X, sleep_duration=%u. em_pwroff_stats=0x%X.  task_id=0x%X timestamp=0x%X mac_bt_finetimtgt_get=0x%X mac_ble_finetimtgt_get=0x%X @bgtp_sleep_sw.c(673),INFO" ID="0x8898150d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[lowpower][bgtp_bsub_wakeup_irq_handler]  g_bg_sleep_in_auto_eng = YES_AUTO_ENG @bgtp_sleep_sw.c(831),INFO" ID="0x889819fd" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[BGTP][lowpower]bgtp_soc_wakeup_irq_handler. BT_WKUP_STS_REG=0x%X. BT_WKUP_INT_STS_REG=0x%X. bt_ctl_btbb_wakeup=0x%X. macc_comm_slpctrl_cfg=0x%X. macc_comm_rbuf_bitmap=0x%X @bgtp_sleep_sw.c(909),INFO" ID="0x88981c6d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP][SLEEP]bgtp_soc_wakeup_irq_handler cur_state:%d @bgtp_sleep_sw.c(918),INFO" ID="0x88981cb5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP][SLEEP] bgtp_soc_wakeup_irq_handler dbbrdy:0x%x @bgtp_sleep_sw.c(926),INFO" ID="0x88981cf5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR][bgtp_soc_wakeup_irq_handler]LP_CTL_BT_RB_LP_CTL_BT_WKUP_CLR_REG  ERROR @bgtp_sleep_sw.c(955),ERROR" ID="0x88981dda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR][bgtp_soc_wakeup_irq_handler]LP_CTL_BT_RB_LP_CTL_BT_WKUP_INT_CLR_REG  ERROR @bgtp_sleep_sw.c(964),ERROR" ID="0x88981e22" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][SLEEP] bgtp_bsub_wakeup_irq_handler bg_pmu_get_state() == BG_IDLEtime_info(0x%x), diag_info(0x%x) @bgtp_sleep_sw.c(995),ERROR" ID="0x88981f1a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][lowpower] uapi_pm_sw_32mclock_to_rc g_lowpower_clock_freq = 0x%x  g_cur_cail_clock_freq = 0x%x @bgtp_sleep_sw.c(1005),INFO" ID="0x88981f6d" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[BGTP][lowpower]bgtp_bsub_wakeup_irq_handler. cur_clk=0x%X, cur_systick=%u, slp_dur_us=%u.MACC_COMM_SLPCTRL_CFG=0x%X. finetimtgt=0x%X. bt_int_queue_ctrl1=0x%X. eeq_ctrl_rpt=0x%X @bgtp_sleep_sw.c(1043),INFO" ID="0x8898209d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP][SLEEP]bgtp_bsub_wakeup_irq_handler sleep_clk:0x%x, sleep_finecnt:%d, sleep_systick:0x%x, period:%d @bgtp_sleep_sw.c(1077),INFO" ID="0x889821ad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP][SLEEP]bgtp_bsub_wakeup_irq_handler, cur_clk:0x%x, finecnt:%d, slp_dur:%d, systick_count:0x%d @bgtp_sleep_sw.c(1079),INFO" ID="0x889821bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[lowpower][bgtp_bsub_extern_wakeup]  start @bgtp_sleep_sw.c(1105),INFO" ID="0x8898228d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AUTO_ENG][bgtp_bsub_extern_wakeup] LPEG_CTRL_WORD0  0x%x, LPEG_INTR_CTRL= 0x%x  LPEG_INTR_STATUS= 0x%x  LPEG_CURR_STATUS= 0x%x @bgtp_sleep_sw.c(1123),INFO" ID="0x8898231d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BGTP][PMU]bgtp_sleep_wait_to_idle extern wakeup timeout @bgtp_sleep_sw.c(1157),ERROR" ID="0x8898242a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP]bgtp_wakeup_bt_em_pwr_on. LP_CTL_BT_LP_CTL_BT_STS=0x%X, BT_EM_MEM_1_PWR_EN_SLP_VAL=%u, BT_EM_MEM_1_PWR_EN_WORK_VAL_POS=%u @bgtp_sleep_sw.c(1195),INFO" ID="0x8898255d" />
+			</MSG_LOG>

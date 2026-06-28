@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]lm_classic_lmp_qos_act get qos param failed:ret=0x%x @lm_classic_acl_srv_qos_setup_act.c(109),WARNING" ID="0x8a34036b" />
+			</MSG_LOG>

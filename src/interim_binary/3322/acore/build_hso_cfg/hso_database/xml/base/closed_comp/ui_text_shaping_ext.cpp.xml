@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="ttfDataAddr_ is not set. @ui_text_shaping_ext.cpp(358),ERROR" ID="0xcb040b32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="open ttf file failed. @ui_text_shaping_ext.cpp(363),ERROR" ID="0xcb040b5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ttf data file is too large to read into a psram mem. @ui_text_shaping_ext.cpp(368),ERROR" ID="0xcb040b82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read ttf file failed. @ui_text_shaping_ext.cpp(375),ERROR" ID="0xcb040bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new UIShapingCache failed. @ui_text_shaping_ext.cpp(418),ERROR" ID="0xcb040d12" />
+			</MSG_LOG>

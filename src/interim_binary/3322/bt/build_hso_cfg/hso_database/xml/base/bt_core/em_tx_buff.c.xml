@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] em_gle_icb_set_tx_buff_header_len icb_header_len=%d, pre_header_len=%d @em_tx_buff.c(94),INFO" ID="0x888802f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_iob_get_tx_pkt_cnt: tx_pkt_cnt %d @em_tx_buff.c(112),INFO" ID="0x88880385" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_comm_tx_buff fail len(%d) @em_tx_buff.c(209),ERROR" ID="0x8888068a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[EM]em_alloc_gle_icb_pri_tx_buff: lr 0x%x, buff_used %d, buff_free %d @em_tx_buff.c(287),INFO" ID="0x888808fd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[EM]em_free_gle_icb_pri_tx_buff: lr 0x%x, buff_used %d, buff_free %d @em_tx_buff.c(322),INFO" ID="0x88880a15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_comm_tx_buff fail len(%d) @em_tx_buff.c(372),ERROR" ID="0x88880ba2" />
+			</MSG_LOG>

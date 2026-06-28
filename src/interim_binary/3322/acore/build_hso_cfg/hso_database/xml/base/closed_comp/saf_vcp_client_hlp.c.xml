@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[vcpc] read effective time support proc err, malloc fail! @saf_vcp_client_hlp.c(51),ERROR" ID="0xe9b4019a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] report volume info proc err, malloc fail! @saf_vcp_client_hlp.c(66),ERROR" ID="0xe9b40212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] decode audio stream volume info err, ep_num null! @saf_vcp_client_hlp.c(79),ERROR" ID="0xe9b4027a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcpc] decode audio stream volume info err, data_len:%u, length:%u! @saf_vcp_client_hlp.c(85),ERROR" ID="0xe9b402aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] decode audio stream volume info err, malloc fail! @saf_vcp_client_hlp.c(91),ERROR" ID="0xe9b402da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[vcpc] cp rsp, data len err, data_len = %u @saf_vcp_client_hlp.c(109),ERROR" ID="0xe9b4036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] cp rsp, op check err! @saf_vcp_client_hlp.c(115),ERROR" ID="0xe9b4039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] report volume info proc err, malloc fail! @saf_vcp_client_hlp.c(122),ERROR" ID="0xe9b403d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] volume change request, data len err! @saf_vcp_client_hlp.c(134),ERROR" ID="0xe9b40432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] volume change request, op check err! @saf_vcp_client_hlp.c(141),ERROR" ID="0xe9b4046a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] volume change request proc err, malloc fail! @saf_vcp_client_hlp.c(150),ERROR" ID="0xe9b404b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcpc] build vcs inst err, ret = %d @saf_vcp_client_hlp.c(264),ERROR" ID="0xe9b40842" />
+			</MSG_LOG>

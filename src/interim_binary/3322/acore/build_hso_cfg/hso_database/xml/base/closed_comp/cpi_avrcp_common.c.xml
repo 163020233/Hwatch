@@ -1,0 +1,20 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="avrcp connect is fail. @cpi_avrcp_common.c(32),ERROR" ID="0xee660102" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp connect is exist. @cpi_avrcp_common.c(36),ERROR" ID="0xee660122" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memnew error. @cpi_avrcp_common.c(42),ERROR" ID="0xee660152" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy error. @cpi_avrcp_common.c(46),ERROR" ID="0xee660172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp connect is disconnected. @cpi_avrcp_common.c(76),ERROR" ID="0xee660262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp init done. @cpi_avrcp_common.c(124),ERROR" ID="0xee6603e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew error. @cpi_avrcp_common.c(132),ERROR" ID="0xee660422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memset error. @cpi_avrcp_common.c(136),ERROR" ID="0xee660442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="init avrcp resource lock fail! @cpi_avrcp_common.c(143),ERROR" ID="0xee66047a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp deinit done. @cpi_avrcp_common.c(161),ERROR" ID="0xee66050a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp is not init. @cpi_avrcp_common.c(180),ERROR" ID="0xee6605a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp is not init. @cpi_avrcp_common.c(196),ERROR" ID="0xee660622" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="avrcp get remote servce status:0x%x browsing_support:0x%x. @cpi_avrcp_common.c(215),INFO" ID="0xee6606bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_common.c(218),ERROR" ID="0xee6606d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_common.c(222),ERROR" ID="0xee6606f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is connected. @cpi_avrcp_common.c(238),ERROR" ID="0xee660772" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_common.c(248),ERROR" ID="0xee6607c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_common.c(252),ERROR" ID="0xee6607e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is disconnected. @cpi_avrcp_common.c(267),ERROR" ID="0xee66085a" />
+			</MSG_LOG>

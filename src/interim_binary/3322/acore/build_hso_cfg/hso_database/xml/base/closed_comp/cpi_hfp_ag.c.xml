@@ -1,0 +1,30 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="init hfp ag connection list lock fail! @cpi_hfp_ag.c(115),ERROR" ID="0xee76039a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag server start svc_hdl:%d. @cpi_hfp_ag.c(128),INFO" ID="0xee760405" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x open voice recognition. @cpi_hfp_ag.c(156),INFO" ID="0xee7604e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x close voice recognition. @cpi_hfp_ag.c(167),INFO" ID="0xee76053d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x set inband ring. @cpi_hfp_ag.c(178),INFO" ID="0xee760595" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x set codec. @cpi_hfp_ag.c(189),INFO" ID="0xee7605ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x send dial respone. @cpi_hfp_ag.c(200),INFO" ID="0xee760645" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x send at cmd. @cpi_hfp_ag.c(211),INFO" ID="0xee76069d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x send voice tag phone number response. @cpi_hfp_ag.c(222),INFO" ID="0xee7606f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x hold incoming call. @cpi_hfp_ag.c(233),INFO" ID="0xee76074d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x accept held incoming call. @cpi_hfp_ag.c(244),INFO" ID="0xee7607a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x reject held incoming call. @cpi_hfp_ag.c(255),INFO" ID="0xee7607fd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Invalid parameters, manufacturer:%p length:%d. @cpi_hfp_ag.c(266),ERROR" ID="0xee760852" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x send manufacturer id. @cpi_hfp_ag.c(270),INFO" ID="0xee760875" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Invalid parameters, model:%p length:%d. @cpi_hfp_ag.c(281),ERROR" ID="0xee7608ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x send model id. @cpi_hfp_ag.c(285),INFO" ID="0xee7608ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x 3way calling handler. @cpi_hfp_ag.c(296),INFO" ID="0xee760945" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp ag service connect error, bluetooth is disable. @cpi_hfp_ag.c(307),ERROR" ID="0xee76099a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag.c(315),ERROR" ID="0xee7609da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="connect indication memcpy fail. @cpi_hfp_ag.c(323),ERROR" ID="0xee760a1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp already connected @cpi_hfp_ag.c(329),WARNING" ID="0xee760a4b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp is not connected @cpi_hfp_ag.c(348),WARNING" ID="0xee760ae3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl:0x%x @cpi_hfp_ag.c(364),INFO" ID="0xee760b65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sco already connected sco_hdl:0x%x @cpi_hfp_ag.c(366),WARNING" ID="0xee760b73" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl:0x%x @cpi_hfp_ag.c(379),INFO" ID="0xee760bdd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no sco connected @cpi_hfp_ag.c(381),WARNING" ID="0xee760beb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Volume too large %d, change it to 15 @cpi_hfp_ag.c(450),WARNING" ID="0xee760e13" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="connectiong node not found addr:0x%02x:*:*:*:%02x:%02x. @cpi_hfp_ag.c(541),ERROR" ID="0xee7610ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp ag sco conn response status error! @cpi_hfp_ag.c(545),ERROR" ID="0xee76110a" />
+			</MSG_LOG>

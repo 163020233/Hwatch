@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[L2CAP][CONN_IND] PSM=0x%x, LOCAL_CID=0x%x @l2cap_conn.c(335),INFO" ID="0xebb80a7d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2CAP][CONN_REQ] ACTION=INVALID_PSM, PSM=%d, IS_LE=%d @l2cap_conn.c(434),WARNING" ID="0xebb80d93" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to initialize L2CAP ACL link. @l2cap_conn.c(467),ERROR" ID="0xebb80e9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to initialize L2CAP CID node. @l2cap_conn.c(474),ERROR" ID="0xebb80ed2" />
+			</MSG_LOG>

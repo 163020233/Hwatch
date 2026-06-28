@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[hifi]malloc size in overlay: addr 0x%08x || size %u @core_overlay.c(176),WARNING" ID="0x985a0583" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]calloc size in overlay: addr 0x%08x || size %u @core_overlay.c(195),WARNING" ID="0x985a061b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]realloc size in overlay: addr 0x%08x || size %u @core_overlay.c(237),WARNING" ID="0x985a076b" />
+			</MSG_LOG>

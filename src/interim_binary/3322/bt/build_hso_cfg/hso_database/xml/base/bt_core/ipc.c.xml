@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="traced_cpu %d current pc=0x%x, lr=0x%x, sp=0x%x @ipc.c(110),ERROR" ID="0xa0580372" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ipc error 0x%x: core %d =&gt; %d, id=%d  @ipc.c(126),ERROR" ID="0xa05803f2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="core %d current pc=0x%x, lr=0x%x, sp=0x%x @ipc.c(147),ERROR" ID="0xa058049a" />
+			</MSG_LOG>

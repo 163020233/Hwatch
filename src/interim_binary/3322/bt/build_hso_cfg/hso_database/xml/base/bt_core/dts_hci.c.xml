@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][hci]osal_msg_queue_create fail. ret=%#X @dts_hci.c(100),WARNING" ID="0x88860323" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]osal_msg_queue_read_copy fail.queue_id=%d,ret=%#X @dts_hci.c(130),WARNING" ID="0x88860413" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]read_queue_in_int error! mscratchcswl=0x%x, mscratch=0x%x, mcause=0x%x, mstatus=0x%x @dts_hci.c(137),WARNING" ID="0x8886044b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]recv hci msg nullptr. @dts_hci.c(145),WARNING" ID="0x8886048b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][hci]osal_msg_queue_write_copy fail. ret=%#X, queue_id=%d, size=%d. @dts_hci.c(170),WARNING" ID="0x88860553" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][hci]queue list full. @dts_hci.c(196),WARNING" ID="0x88860623" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][hci]dts_open_thread_chnl, queue id invalid. @dts_hci.c(209),WARNING" ID="0x8886068b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][hci]alloc new queue succ. id=%u,count=%u @dts_hci.c(215),INFO" ID="0x888606bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hci] dts write thread chnl fail, status = %u @dts_hci.c(321),ERROR" ID="0x88860a0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hci] dts ipc send hci msg fail, status = %u @dts_hci.c(329),ERROR" ID="0x88860a4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]dts_hci_write, tx_buff_malloc_fail @dts_hci.c(367),WARNING" ID="0x88860b7b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]memcpy fail, size=%d @dts_hci.c(373),WARNING" ID="0x88860bab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]dts_hci_write, tx_buff_malloc_fail @dts_hci.c(415),WARNING" ID="0x88860cfb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]memcpy fail, size=%d @dts_hci.c(421),WARNING" ID="0x88860d2b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ipc send%d fail  @dts_hci.c(455),WARNING" ID="0x88860e3b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]dts_thread_set_sem_fail, ret=0x%x @dts_hci.c(530),WARNING" ID="0x88861093" />
+			</MSG_LOG>

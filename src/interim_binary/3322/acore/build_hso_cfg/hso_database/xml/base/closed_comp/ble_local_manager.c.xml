@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="bs ble inner callback register failed. @ble_local_manager.c(29),ERROR" ID="0xea6000ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble state callback register failed. @ble_local_manager.c(34),ERROR" ID="0xea600112" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="disable ble failed. @ble_local_manager.c(56),ERROR" ID="0xea6001c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble connect state error!!! current state %d, expect state %d @ble_local_manager.c(147),ERROR" ID="0xea60049a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="call gap_ble_read_remote_device_rssi fail: ret = %u @ble_local_manager.c(158),ERROR" ID="0xea6004f2" />
+			</MSG_LOG>

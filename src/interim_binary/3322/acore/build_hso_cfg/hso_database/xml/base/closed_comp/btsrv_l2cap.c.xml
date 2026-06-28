@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ACore] ble general: l2cap general interface conn_node find fail @btsrv_l2cap.c(208),ERROR" ID="0xe87c0682" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] ble general: l2cap general main conn cfm: psm:%d @btsrv_l2cap.c(234),INFO" ID="0xe87c0755" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACore] ble general: l2cap general main conn complete: cid %d rcid %d role %d. @btsrv_l2cap.c(253),INFO" ID="0xe87c07ed" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ACore] ble general: l2cap general main conn complete: addr:0x%02x:**:**:**:**:%02x atype %d cap %d. @btsrv_l2cap.c(256),INFO" ID="0xe87c0805" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] ble general: l2cap general main conn indication bth address copy fail. @btsrv_l2cap.c(270),INFO" ID="0xe87c0875" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ACore] ble general: l2cap general main conn indication: psm %d cid %d. @btsrv_l2cap.c(284),INFO" ID="0xe87c08e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] ble general: l2cap general psm:%d not regist. @btsrv_l2cap.c(298),INFO" ID="0xe87c0955" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ACore] ble general: l2cap general channel req result: psm %d cid %d rcid %d result %d. @btsrv_l2cap.c(311),INFO" ID="0xe87c09bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] ble general: l2cap general channel disconnect: cid %d. @btsrv_l2cap.c(323),INFO" ID="0xe87c0a1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ST L2cap]sdk_reg done! @btsrv_l2cap.c(355),INFO" ID="0xe87c0b1d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ACore] ble: l2cap le psm. psm:%d type:%d error. @btsrv_l2cap.c(363),ERROR" ID="0xe87c0b5a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ACore] ble: l2cap le psm. psm:%d type:%d error. @btsrv_l2cap.c(369),ERROR" ID="0xe87c0b8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] ble: l2cap reg le psm:%d already regist. @btsrv_l2cap.c(387),INFO" ID="0xe87c0c1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] ble: l2cap reg le psm create psm_node fail. @btsrv_l2cap.c(393),INFO" ID="0xe87c0c4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] ble: l2cap unreg le psm:%d not regist. @btsrv_l2cap.c(431),ERROR" ID="0xe87c0d7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] ble: l2cap reg le psm:%d not regist. @btsrv_l2cap.c(453),ERROR" ID="0xe87c0e2a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACore] ble: l2cap channel tx addr is not ready addr:0x%02x:**:**:**:%02x:%02x. @btsrv_l2cap.c(469),ERROR" ID="0xe87c0eaa" />
+			</MSG_LOG>

@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_prog_get_eeq_allow_prog_cnt, mac%d eeq_allow_cnt=0 @evt_prog.c(162),INFO" ID="0x88760515" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_prog_is_earlier_than_last_elt_in_prog_list:fifo_last_ts=0x%x, isr_cbk=0x%x, sed_id=%d,insert_ts=0x%x @evt_prog.c(180),WARNING" ID="0x887605a3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="prog_list_dump:sed_id 0x%x, ee_type 0x%x, clkn 0x%x  cur 0x%x @evt_prog.c(334),INFO" ID="0x88760a75" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[ES]bgle_pop_elt_match, match_elt_by_ee_gclkn fail!, elt-&gt;timestamp 0x%x, elt-&gt;clkn 0x%x, elt-&gt;ee_type %d, ee_gclkn 0x%x, isr_idx 0x%x. @evt_prog.c(370),INFO" ID="0x88760b95" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_prog_bgle_pop_elt_match_isr ee_gclkn(0x%x)link_label(%d) not found in (%d) isr, last isr(%d) @evt_prog.c(385),ERROR" ID="0x88760c0a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ble][ae_scan]evt_prog_bgle_pop_elt_match_isr, scan evt_status:%d, aux_rx_on:%d, mac_id:%d @evt_prog.c(395),WARNING" ID="0x88760c5b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_prog_classic_abn_match_isr ee_gclkn(0x%x)link_label(%d) not found in (%d) isr, cur_clk:0x%x @evt_prog.c(437),WARNING" ID="0x88760dab" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_prog_bgle_abn_pop_elt_match_isr ee_gclkn(0x%x)link_label(%d) not found in (%d) isr @evt_prog.c(448),ERROR" ID="0x88760e02" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ES] classic_pop_elt_match: first-&gt;sed_id|elt-&gt;sed_id 0x%x, isr_pos=0x%x, first-&gt;timestamp=0x%x, elt-&gt;timestamp=0x%x, first.task_id=0x%x, elt.task_id=0x%x @evt_prog.c(564),WARNING" ID="0x887611a3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_prog_classic_sket_pop_elt_match_isr ee_gclkn(0x%x)link_label(%d) not found in (%d) isr, cur_clk:0x%x @evt_prog.c(630),WARNING" ID="0x887613b3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_prog_classic_sket_pop_elt_match_isr ee_gclkn(0x%x)link_label(%d) not found in (%d) isr  cur_clk:0x%x @evt_prog.c(644),ERROR" ID="0x88761422" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][eeq_fullint_urgent][sub%d]next_free_idx=%d, eeq_offset=0x%x, eeq_size=%d @evt_prog.c(712),ERROR" ID="0x88761642" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][eeq_fullint_normal][sub%d]next_free_idx=%d, eeq_offset=0x%x, eeq_size=%d @evt_prog.c(720),ERROR" ID="0x88761682" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[em][free_rxpd_gle] linklbl=0x%x, rxpd_index=0x%x @evt_prog.c(802),ERROR" ID="0x88761912" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[em][free_rxpd] linklbl=0x%x, rxpd_index=0x%x @evt_prog.c(811),ERROR" ID="0x8876195a" />
+			</MSG_LOG>

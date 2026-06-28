@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="bt rtc wakeup isr @pm_sleep_porting.c(134),INFO" ID="0xa0ae0435" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bt wakeup isr 0x%x, cost time %d count @pm_sleep_porting.c(338),INFO" ID="0xa0ae0a95" />
+			</MSG_LOG>

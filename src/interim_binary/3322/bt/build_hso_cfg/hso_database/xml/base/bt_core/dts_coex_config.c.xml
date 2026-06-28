@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[COEX]coex_btstate_set, error state=%d @dts_coex_config.c(129),ERROR" ID="0x8b4e040a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[COEX]coex_btstate_get, error state=%d @dts_coex_config.c(155),ERROR" ID="0x8b4e04da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[COEX]coex_wlanstate_get, error state=%d @dts_coex_config.c(180),ERROR" ID="0x8b4e05a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][coex]coex_set_protect_wlan: protect_bt_start_ts = %u, protect_wlan_start_ts = %u @dts_coex_config.c(239),INFO" ID="0x8b4e077d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][coex]coex_set_protect_wlan: protect_bt_start_ts = %u, protect_wlan_start_ts = %u @dts_coex_config.c(252),INFO" ID="0x8b4e07e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][coex]coex_set_protect_wlan: protect_wlan_status = %u, pta_action = %u @dts_coex_config.c(269),INFO" ID="0x8b4e086d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][coex]coex_protect_wlan_under_sco: protect_wlan_start_ts %d @dts_coex_config.c(301),INFO" ID="0x8b4e096d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][coex]coex_uart_rx_callback: buf_len error! %u @dts_coex_config.c(549),ERROR" ID="0x8b4e112a" />
+			</MSG_LOG>

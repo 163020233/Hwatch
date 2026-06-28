@@ -1,0 +1,6 @@
+config LOSCFG_COMPAT_RT_THREAD
+    bool "Enable RT_Thread"
+    default n
+    select LOSCFG_TASK_STACK_STATIC_ALLOCATION
+    help
+      Answer Y to enable LiteOS support RT_Thread interface.

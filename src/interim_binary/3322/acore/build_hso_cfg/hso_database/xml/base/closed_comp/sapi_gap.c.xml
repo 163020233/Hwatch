@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SADP][GAP] gap set local addr cbk result is %u @sapi_gap.c(99),INFO" ID="0xee4c031d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SADP][GAP] gap set local addr cbk result is %u @sapi_gap.c(117),INFO" ID="0xee4c03ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dev connect already,return ok! @sapi_gap.c(727),ERROR" ID="0xee4c16ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi_gap_create_connection_async enter! @sapi_gap.c(739),INFO" ID="0xee4c171d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]memset failed @sapi_gap.c(1339),ERROR" ID="0xee4c29da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]memcpy failed @sapi_gap.c(1343),ERROR" ID="0xee4c29fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]gap get local name memcpy failed @sapi_gap.c(1347),ERROR" ID="0xee4c2a1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]memset failed @sapi_gap.c(1378),ERROR" ID="0xee4c2b12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]memcpy failed @sapi_gap.c(1382),ERROR" ID="0xee4c2b32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]gap get local name memcpy failed @sapi_gap.c(1386),ERROR" ID="0xee4c2b52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]gap set simple pairing oob data memcpy failed @sapi_gap.c(1793),ERROR" ID="0xee4c380a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]gap set simple pairing oob data memcpy failed @sapi_gap.c(1797),ERROR" ID="0xee4c382a" />
+			</MSG_LOG>

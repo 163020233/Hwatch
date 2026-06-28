@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][ble_isr_sub0] isr(%d) not registered yet @ble_isr.c(196),INFO" ID="0x88780625" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ble_isr_sub0] trigger slpint process manualy @ble_isr.c(222),ERROR" ID="0x887806f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]ble_sub%d_swint_isr @ble_isr.c(235),INFO" ID="0x8878075d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BLE_ERR_INT][sub%d]comm_errint1=0x%x, comm_errint2=0x%x, ble_errint=0x%x @ble_isr.c(247),ERROR" ID="0x887807ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BLE_ERR_INT]clk=0x%x, fincnt=%d @ble_isr.c(249),ERROR" ID="0x887807ca" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]ble_errorint_isr rbuf_rls0(0x%x)bitmap_prt0(0x%x)rxpd_ctrl(0x%x)rxbuf_error_info(0x%x) @ble_isr.c(254),INFO" ID="0x887807f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][ble_isr_sub1] isr(%d) not registered yet @ble_isr.c(328),INFO" ID="0x88780a45" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp_restore_int] ble sub0 ISR queue remain clear::[%d][0x%x] @ble_isr.c(437),WARNING" ID="0x88780dab" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp_restore_int] ble sub1 ISR queue remain clear::[%d][0x%x] @ble_isr.c(446),WARNING" ID="0x88780df3" />
+			</MSG_LOG>

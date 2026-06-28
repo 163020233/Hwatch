@@ -1,0 +1,41 @@
+.container {
+    width: 454px;
+    height: 454px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: red;
+    font-size: 30px;
+    text-align: center;
+}
+
+.game_level_btn_confirm {
+    width: 170px;
+    height: 64px;
+    top: 296px;
+    left: 250px;
+    color: #EBEBEB;
+    background-color: #262626;
+    font-size: 30px;
+}
+.notice_text {
+    font-size: 22px;
+    color: #6f6e76;
+    width: 80%;
+    height: 36px;
+}
+
+.notice_ctn {
+    width: 250px;
+    height: 45px;
+    margin-top: 10px;
+    background-color: #2A169B;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}

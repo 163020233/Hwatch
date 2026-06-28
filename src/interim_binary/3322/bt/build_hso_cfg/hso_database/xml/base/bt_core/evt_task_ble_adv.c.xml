@@ -1,0 +1,20 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[l2v2][adv disable]task_type= %d, sed_id = 0x%x @evt_task_ble_adv.c(51),INFO" ID="0x885a019d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][adv disable]prim_elt free, sed_id:%d @evt_task_ble_adv.c(60),INFO" ID="0x885a01e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][adv disable]prim_elt free, aux_sed_id:%d @evt_task_ble_adv.c(67),INFO" ID="0x885a021d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_ble_adv_idle_event_int, src_env_ptr is null @evt_task_ble_adv.c(134),ERROR" ID="0x885a0432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_ble_adv_idle_event_int, env_ptr-&gt;adv_txnode is null @evt_task_ble_adv.c(155),ERROR" ID="0x885a04da" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]ble_adv_idle_event_int:task_type(0x%x),stop_type(0x%x),env_ptr-&gt;evt_status(0x%x),cur_clk(0x%x) @evt_task_ble_adv.c(171),INFO" ID="0x885a055d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] evt_task_ble_adv_conn_req_check timeout:0x%x interval:0x%x latency:0x%x @evt_task_ble_adv.c(329),INFO" ID="0x885a0a4d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_ble_adv_conn_req_check address 0x%x:%x:xx:xx:xx:%x adv_type(%d) @evt_task_ble_adv.c(333),INFO" ID="0x885a0a6d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][adv]evt_task_ble_adv_recv_check: ble_rxsyncerr(%x), err status(0x%x), rxlen(%d), rxtype(0x%x) @evt_task_ble_adv.c(379),WARNING" ID="0x885a0bdb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_ble_adv_config_es task_id(0x%x)task_type(0x%x)interval(%d)duration_min_slots(%d) @evt_task_ble_adv.c(706),INFO" ID="0x885a1615" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][adv]patch:evt_task_ble_adv_init_elt, elt-&gt;timestamp:0x%x @evt_task_ble_adv.c(751),INFO" ID="0x885a177d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]patch:evt_task_ble_adv_set_adv_en ES_MEM_ALLOC_FAIL! @evt_task_ble_adv.c(778),ERROR" ID="0x885a1852" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv]patch:evt_task_ble_adv_set_adv_en, evt task start fail! @evt_task_ble_adv.c(794),WARNING" ID="0x885a18d3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_ble_adv_check_adv_stop:adv_start_ts(0x%x),cur_time(0x%x),intv(0x%x),dura(0x%x) @evt_task_ble_adv.c(837),INFO" ID="0x885a1a2d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv deinit]aux_elt free @evt_task_ble_adv.c(911),INFO" ID="0x885a1c7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv deinit]prim_elt free @evt_task_ble_adv.c(917),INFO" ID="0x885a1cad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv destory]aux_elt free @evt_task_ble_adv.c(946),INFO" ID="0x885a1d95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv destory]prim_elt free @evt_task_ble_adv.c(952),INFO" ID="0x885a1dc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_ble_adv_start, evt task start fail! @evt_task_ble_adv.c(1122),WARNING" ID="0x885a2313" />
+			</MSG_LOG>

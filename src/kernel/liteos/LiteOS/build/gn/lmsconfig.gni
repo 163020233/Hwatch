@@ -1,0 +1,22 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("$root_out_dir/liteos_kconfig.gni")
+# Reference lms.cmake
+if(defined(LOSCFG_COMPILER_RISCV_CLANG_MUSL)) {
+    LMS_COPTS = []
+    LMS_CMACRO = ["__SANITIZE_ADDRESS__"]
+} else {
+    LMS_COPTS = ["-fsanitize=kernel-address"]
+    LMS_CMACRO = []
+    if(defined(LOSCFG_COMPILER_CLANG)) {
+        LMS_COPTS += [
+            "-mllvm -asan-instrumentation-with-call-threshold=0", # no inline check
+            "-mllvm -asan-globals=0",                             # no check global variables
+            "-mllvm -asan-stack=0",                               # no check stack
+        ]
+        LMS_CMACRO += ["__SANITIZE_ADDRESS__"]
+    }
+}

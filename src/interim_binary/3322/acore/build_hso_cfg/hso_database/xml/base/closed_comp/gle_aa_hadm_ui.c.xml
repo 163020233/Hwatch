@@ -1,0 +1,27 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="gle aa read local channel sounding caps @gle_aa_hadm_ui.c(86),INFO" ID="0xed7a02b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle aa read remote channel sounding caps, conn id(%d) @gle_aa_hadm_ui.c(103),INFO" ID="0xed7a033d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle aa set channel sounding param, conn id(%d) @gle_aa_hadm_ui.c(245),INFO" ID="0xed7a07ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle aa set channel sounding param gttt, conn id(%d) @gle_aa_hadm_ui.c(276),INFO" ID="0xed7a08a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle aa set channel sounding param, conn id(%d) @gle_aa_hadm_ui.c(312),INFO" ID="0xed7a09c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle aa set channel sounding param gttt, conn id(%d) @gle_aa_hadm_ui.c(362),INFO" ID="0xed7a0b55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle aa read channel sounding param, conn id(%u) @gle_aa_hadm_ui.c(374),INFO" ID="0xed7a0bb5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle measure enable link not found, conn_id = 0x%x. @gle_aa_hadm_ui.c(391),ERROR" ID="0xed7a0c3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle measure remote feature not support. @gle_aa_hadm_ui.c(396),ERROR" ID="0xed7a0c62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle measure malloc fail. @gle_aa_hadm_ui.c(400),ERROR" ID="0xed7a0c82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle aa set channel sounding enable state(%d) @gle_aa_hadm_ui.c(419),INFO" ID="0xed7a0d1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle_aa_cmd_set_phase_and_tof]melloc fail @gle_aa_hadm_ui.c(431),ERROR" ID="0xed7a0d7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle aa set channel sounding enable gttt state(%d) @gle_aa_hadm_ui.c(465),INFO" ID="0xed7a0e8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle read local cs caps status(%d) @gle_aa_hadm_ui.c(509),INFO" ID="0xed7a0fed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle read remote cs caps status(%d) @gle_aa_hadm_ui.c(544),INFO" ID="0xed7a1105" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle set cs config status(%d) @gle_aa_hadm_ui.c(562),INFO" ID="0xed7a1195" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle set cs enable status(%d) @gle_aa_hadm_ui.c(581),INFO" ID="0xed7a122d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="iq state info new fail @gle_aa_hadm_ui.c(639),ERROR" ID="0xed7a13fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="vendor data new fail @gle_aa_hadm_ui.c(652),ERROR" ID="0xed7a1462" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle cs iq data len is 0 @gle_aa_hadm_ui.c(677),INFO" ID="0xed7a152d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle aa evt cs iq report: The sum len(%u) exceeds the processing capability! @gle_aa_hadm_ui.c(684),ERROR" ID="0xed7a1562" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle aa evt cs iq report: malloc fail! @gle_aa_hadm_ui.c(689),ERROR" ID="0xed7a158a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle cs iq report status(%d) @gle_aa_hadm_ui.c(701),INFO" ID="0xed7a15ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle cs iq report status(%d) @gle_aa_hadm_ui.c(721),INFO" ID="0xed7a168d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle cs iq report status(%d) @gle_aa_hadm_ui.c(741),INFO" ID="0xed7a172d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle cs iq change status(%d) @gle_aa_hadm_ui.c(760),INFO" ID="0xed7a17c5" />
+			</MSG_LOG>

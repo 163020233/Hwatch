@@ -1,0 +1,22 @@
+<!-- index.hml -->
+<div class="container">
+
+    <text>运动听单</text>
+
+    <div class="list_container">
+        <text class="list_text">播放表单：</text>
+        <switch onchange="goList"></switch>
+    </div>
+
+
+    <list class="todo-wrapper" on:swipe="swipeExit">
+        <list-item for="{{ musicList }}" class="todo-item">
+            <div class="item_divider"></div>
+            <div class="item_div_wrapper">
+                <input style="align-items: center; margin-top: 15px;" type="checkbox" checked="{{ $item.check }}"
+                       onchange="changeCheckbox($item.index)"></input>
+                <text class="todo-title" on:click="goPlay({{ $item.index }})">{{ $item.name }}-{{ $item.singer }}</text>
+            </div>
+        </list-item>
+    </list>
+</div>

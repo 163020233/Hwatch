@@ -1,0 +1,37 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] set timer failed @ssf_auto_conn.c(62),ERROR" ID="0xef7801f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] create timer failed @ssf_auto_conn.c(75),ERROR" ID="0xef78025a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] remove filter list @ssf_auto_conn.c(110),DBG" ID="0xef780376" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] access filter list is full @ssf_auto_conn.c(118),ERROR" ID="0xef7803b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] get device addr failed @ssf_auto_conn.c(123),ERROR" ID="0xef7803da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] add access filter list @ssf_auto_conn.c(126),DBG" ID="0xef7803f6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] add device to access filter list failed @ssf_auto_conn.c(129),ERROR" ID="0xef78040a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] create timeout timer failed @ssf_auto_conn.c(146),ERROR" ID="0xef780492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] set timeout timer failed @ssf_auto_conn.c(153),ERROR" ID="0xef7804ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get device ids failed, obj_id=%d @ssf_auto_conn.c(178),ERROR" ID="0xef780592" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] connect deivce.id=%d, oper=%d @ssf_auto_conn.c(188),DBG" ID="0xef7805e6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] start auto conn seek failed @ssf_auto_conn.c(212),ERROR" ID="0xef7806a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] auto conn common adv @ssf_auto_conn.c(216),INFO" ID="0xef7806c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] start auto conn common announce failed @ssf_auto_conn.c(218),ERROR" ID="0xef7806d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] start directed announce.device id=%d @ssf_auto_conn.c(265),DBG" ID="0xef78084e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] dest_addr is NULL, device id=%d @ssf_auto_conn.c(269),ERROR" ID="0xef78086a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] start directed announce failed.device id=%d @ssf_auto_conn.c(274),ERROR" ID="0xef780892" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] checked all priority obj, stop seek @ssf_auto_conn.c(293),INFO" ID="0xef78092d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] start check objs, priority=%d @ssf_auto_conn.c(300),DBG" ID="0xef780966" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] no obj need to connect @ssf_auto_conn.c(306),DBG" ID="0xef780996" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] auto conn timer callback @ssf_auto_conn.c(330),DBG" ID="0xef780a56" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] local state is not auto conn @ssf_auto_conn.c(332),DBG" ID="0xef780a66" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] device has paired, start next auto conn @ssf_auto_conn.c(344),DBG" ID="0xef780ac6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] find wrong device @ssf_auto_conn.c(355),INFO" ID="0xef780b1d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] start auto connect device. addr: %02x:%02x @ssf_auto_conn.c(360),INFO" ID="0xef780b45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] need connect remote device, but failed, err=%u @ssf_auto_conn.c(363),ERROR" ID="0xef780b5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] init auto conn @ssf_auto_conn.c(376),DBG" ID="0xef780bc6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] create auto conn timer failed @ssf_auto_conn.c(383),ERROR" ID="0xef780bfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] already in auto conn mode @ssf_auto_conn.c(397),ERROR" ID="0xef780c6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] close central disc mode. @ssf_auto_conn.c(401),INFO" ID="0xef780c8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] close peripheral disc mode. @ssf_auto_conn.c(405),INFO" ID="0xef780cad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get reconn phase error, ret: %x @ssf_auto_conn.c(418),ERROR" ID="0xef780d12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] in peripheral phase 2, only reconn peer! @ssf_auto_conn.c(421),INFO" ID="0xef780d2d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] start member conn fail, err: %u role: %u @ssf_auto_conn.c(426),INFO" ID="0xef780d55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] start auto conn. @ssf_auto_conn.c(428),INFO" ID="0xef780d65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] stop auto conn @ssf_auto_conn.c(445),INFO" ID="0xef780ded" />
+			</MSG_LOG>

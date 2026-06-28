@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]overlay_id = %u @core_overlay_main.c(154),ERROR" ID="0x985c04d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call snprintf_s Failed, Error Code: [0x%08X] @core_overlay_main.c(227),ERROR" ID="0x985c071a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call overlay_set_sys_func Failed, Error Code: [0x%08X] @core_overlay_main.c(250),ERROR" ID="0x985c07d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call overlay_set_nds_func Failed, Error Code: [0x%08X] @core_overlay_main.c(258),ERROR" ID="0x985c0812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call overlay_set_npu_func Failed, Error Code: [0x%08X] @core_overlay_main.c(268),ERROR" ID="0x985c0862" />
+			</MSG_LOG>

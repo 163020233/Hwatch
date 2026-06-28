@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="hid device connect req new fail @hid_ui.c(138),INFO" ID="0xeca80455" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hid device connect req nmemcpy fail @hid_ui.c(142),INFO" ID="0xeca80475" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hid device disconnect req new fail @hid_ui.c(162),INFO" ID="0xeca80515" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hid device disconnect req nmemcpy fail @hid_ui.c(166),INFO" ID="0xeca80535" />
+			</MSG_LOG>

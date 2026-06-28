@@ -1,0 +1,15 @@
+config PM_WAKEUP_BY_UART
+    bool "Wakeup by UART"
+    depends on XMIT_WITH_UART
+
+config PM_CHECK_SLEEP_ACK_IN_FALLING_EDGE
+    bool
+    prompt "Support check sleep ack in the falling edge interrupt of wakein gpio."
+    default n
+
+config PM_MANAGE_LOWPOWER
+    bool
+    prompt "Manage lowpower"
+    default y
+    help
+        This option means support lowpower.

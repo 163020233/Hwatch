@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="br phone book connect error, result:0x%x @bs_br_phone_book.c(46),ERROR" ID="0xee9e0172" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br phone book connect get addr is NULL, dev_id:%d @bs_br_phone_book.c(57),ERROR" ID="0xee9e01ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br phone book malloc error @bs_br_phone_book.c(62),ERROR" ID="0xee9e01f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br phone book disconnect error, result:0x%x @bs_br_phone_book.c(83),ERROR" ID="0xee9e029a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br phone book disconnect get addr is NULL, dev_id:%d @bs_br_phone_book.c(92),ERROR" ID="0xee9e02e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br phone book malloc error. @bs_br_phone_book.c(97),ERROR" ID="0xee9e030a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br pull phone book error, result:0x%x @bs_br_phone_book.c(118),ERROR" ID="0xee9e03b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br phone book has a pulling in progress. @bs_br_phone_book.c(130),ERROR" ID="0xee9e0412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br phone book get addr is NULL, dev_id:%d @bs_br_phone_book.c(136),ERROR" ID="0xee9e0442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br phone book version param error. @bs_br_phone_book.c(140),ERROR" ID="0xee9e0462" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br phone book malloc failed. @bs_br_phone_book.c(146),ERROR" ID="0xee9e0492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br phone book malloc error. @bs_br_phone_book.c(151),ERROR" ID="0xee9e04ba" />
+			</MSG_LOG>

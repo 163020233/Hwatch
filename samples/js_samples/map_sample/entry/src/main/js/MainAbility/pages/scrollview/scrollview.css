@@ -1,0 +1,26 @@
+.scroll-container {
+  width: 454px;
+  height: 454px;
+}
+
+.div-container {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 454px;
+  height: 1000px;
+  background-color: gray;
+}
+
+.scroll-view {
+  width: 200px;
+  height: 200px;
+  background-color: rebeccapurple;
+}
+
+.test-title {
+  width: 400px;
+  height: 60px;
+  text-align: center;
+}

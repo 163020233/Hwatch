@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset phy param faild: invalid input! @ssf_config_conn.c(94),ERROR" ID="0xef7602f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle add preset phy param update mode_id:0x%x @ssf_config_conn.c(104),ERROR" ID="0xef760342" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle add preset phy param faild: reach max num[0x%x]! @ssf_config_conn.c(111),ERROR" ID="0xef76037a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset phy param faild: mem alloc fail @ssf_config_conn.c(116),ERROR" ID="0xef7603a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle rmv preset phy param faild: invalid input! @ssf_config_conn.c(127),ERROR" ID="0xef7603fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle rmv preset phy param faild: no match! @ssf_config_conn.c(138),ERROR" ID="0xef760452" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle qry preset phy param faild: invalid input! @ssf_config_conn.c(149),ERROR" ID="0xef7604aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle qry preset phy param faild: no match! @ssf_config_conn.c(160),ERROR" ID="0xef760502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle lst preset phy param faild: invalid input! @ssf_config_conn.c(170),ERROR" ID="0xef760552" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle lst preset phy param faild: empty! @ssf_config_conn.c(182),ERROR" ID="0xef7605b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle operate preset phy param type invalid! @ssf_config_conn.c(214),ERROR" ID="0xef7606b2" />
+			</MSG_LOG>

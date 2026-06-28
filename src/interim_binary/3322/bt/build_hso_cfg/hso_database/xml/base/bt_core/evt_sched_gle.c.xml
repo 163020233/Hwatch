@@ -1,0 +1,32 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]init_elt_by_param: task_id=0x%x interval=0x%x duration_max_us=%d duration_min_us=%d @evt_sched_gle.c(273),INFO" ID="0x8ade088d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]update_elt_by_param: task_id=0x%x es_sn=%d duration_max_us=%d duration_min_us=%d @evt_sched_gle.c(294),INFO" ID="0x8ade0935" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="es_finetimer_refresh: task_id=0x%x timestamp=0x%x es_sn=%d not enough for cur_time=0x%x @evt_sched_gle.c(372),WARNING" ID="0x8ade0ba3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="es_finetimer_refresh: tmp_ts=0x%x, tmp_clkn=0x%x, gle_cur_clk=0x%x, finetarget_time=0x%x @evt_sched_gle.c(374),INFO" ID="0x8ade0bb5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="es_finetimer_refresh: finetarget_msk=%d, last_update_time=0x%x, last_finetarget_time=0x%x @evt_sched_gle.c(377),INFO" ID="0x8ade0bcd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]finetimer_refresh: mac%d lr=0x%x, current_time=0x%x, finetarget_time=0x%x @evt_sched_gle.c(425),INFO" ID="0x8ade0d4d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]dec_elt_count err! task_id=0x%x timestamp=0x%x es_sn=%d cur_priority=%d @evt_sched_gle.c(438),ERROR" ID="0x8ade0db2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]dec_elt_count err! ee=NULL timestamp=0x%x es_sn=%d cur_priority=%d @evt_sched_gle.c(442),ERROR" ID="0x8ade0dd2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_prog_program_eeq, cancel_list find classic acl task_id:0x%x, ts:0x%x duplicated! @evt_sched_gle.c(514),INFO" ID="0x8ade1015" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]move_to_cancel_list: lr=0x%x, task_id=0x%x, timestamp=0x%x, cur_priority=%d @evt_sched_gle.c(524),INFO" ID="0x8ade1065" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]process_cancel_cbk: cancel_list task_id=0x%x timestamp=0x%x duration=%d @evt_sched_gle.c(537),INFO" ID="0x8ade10cd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]check_cancel_list fail! task_id=0x%x clkn=0x%x @evt_sched_gle.c(569),WARNING" ID="0x8ade11cb" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][ES info]elt_insert_check_reach_limit_ts fail! task_id=0x%x timestamp=0x%x limit_ts=0x%x @evt_sched_gle.c(829),INFO" ID="0x8ade19ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][ES info]elt_insert_check fail! task_id=0x%x timestamp(0x%x) above MAX_SLOT_CLOCK @evt_sched_gle.c(840),INFO" ID="0x8ade1a45" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][ES info]elt_insert_check fail! task_id=0x%x timestamp=0x%x &lt; first_allowed_ts=0x%x @evt_sched_gle.c(850),INFO" ID="0x8ade1a95" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]es_task_insert arrangement OK! task_id=0x%x timestamp=0x%x es_sn=%d cur_priority=%d @evt_sched_gle.c(1155),INFO" ID="0x8ade241d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][ES err]elt in ready list deleted due to late! task_id=0x%x timestamp=0x%x, cur_gle_time=0x%x @evt_sched_gle.c(1178),ERROR" ID="0x8ade24d2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][ES warning]es_resched_task_elt: task_id=0x%x can't find! timestamp=0x%x instant=%d next_es_sn=%d @evt_sched_gle.c(1232),WARNING" ID="0x8ade2683" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_sched_elt ES_MEM_ALLOC_FAIL! @evt_sched_gle.c(1260),ERROR" ID="0x8ade2762" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_sched_insert_task ES_MEM_ALLOC_FAIL! @evt_sched_gle.c(1266),ERROR" ID="0x8ade2792" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][ES info]evt_sched_delete_task:task_id(0x%x)list(%d)timestamp(0x%x)es_sn(%d) @evt_sched_gle.c(1305),INFO" ID="0x8ade28cd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ERROR]evt_sched_dpc_process_cancel: elt isn't active! task_id=0x%x, sed_id=0x%x, ts=0x%x @evt_sched_gle.c(1343),ERROR" ID="0x8ade29fa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]link_task is NULL, pri=%d, rxwin=%d es_sn=%d duration_us=%d @evt_sched_gle.c(1379),WARNING" ID="0x8ade2b1b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]link_task is NULL, task_id=%d @evt_sched_gle.c(1382),WARNING" ID="0x8ade2b33" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_sched_insert_task, task_elt ES_MEM_ALLOC_FAIL! @evt_sched_gle.c(1538),ERROR" ID="0x8ade3012" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_sched_insert_task, link_task ES_MEM_ALLOC_FAIL! @evt_sched_gle.c(1544),ERROR" ID="0x8ade3042" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_sched_insert_single_task Fail! task_id=0x%x type=%d timestamp=0x%x cur_priority=%d @evt_sched_gle.c(1572),WARNING" ID="0x8ade3123" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_sched_update_task task_id=0x%x @evt_sched_gle.c(1592),INFO" ID="0x8ade31c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][ES warning]evt_sched_update_acl_timestamp_and_delay: task_id=0x%x not found @evt_sched_gle.c(1648),WARNING" ID="0x8ade3383" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][ES err]evt_sched_update_acl_param_with_instant: task_id=0x%x instant(%d) passed! next_es_sn=%d @evt_sched_gle.c(1718),ERROR" ID="0x8ade35b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][ES warning]evt_sched_scan_update_param: task_id=0x%x not found @evt_sched_gle.c(1732),WARNING" ID="0x8ade3623" />
+			</MSG_LOG>

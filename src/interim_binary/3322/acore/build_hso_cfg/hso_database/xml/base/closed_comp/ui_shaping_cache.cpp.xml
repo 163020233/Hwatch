@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="alloc mem hash table size failed. @ui_shaping_cache.cpp(34),ERROR" ID="0xcb020112" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="alloc mem for value failed. @ui_shaping_cache.cpp(128),ERROR" ID="0xcb020402" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy value error @ui_shaping_cache.cpp(134),ERROR" ID="0xcb020432" />
+			</MSG_LOG>

@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="gle dd init @sapi_gle_dev_discovery_inner.c(24),INFO" ID="0xed6000c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd cleanup @sapi_gle_dev_discovery_inner.c(35),INFO" ID="0xed60011d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle clear advertising @sapi_gle_dev_discovery_inner.c(48),INFO" ID="0xed600185" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi_gle_dd_clear_advertising send msg fail @sapi_gle_dev_discovery_inner.c(54),ERROR" ID="0xed6001b2" />
+			</MSG_LOG>

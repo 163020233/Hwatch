@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][test_mode] freq[%u] check err. @lm_classic_test_mode_act_ram.c(27),ERROR" ID="0x8c2e00da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][test_mode] payload_type[%u] check err @lm_classic_test_mode_act_ram.c(31),ERROR" ID="0x8c2e00fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][test_mode] param check failed status=%d @lm_classic_test_mode_act_ram.c(46),ERROR" ID="0x8c2e0172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][test_mode] evt_task_bt_test_mode_tx_create::failed @lm_classic_test_mode_act_ram.c(53),ERROR" ID="0x8c2e01aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][test_mode] cmp evt status=%d @lm_classic_test_mode_act_ram.c(70),INFO" ID="0x8c2e0235" />
+			</MSG_LOG>

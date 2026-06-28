@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="lm_gle_conn_upd_instant_cbk t_ifs=%d to=%d max_latency=%d interval=%d @lm_gle_acb_srv_conn_update.c(291),INFO" ID="0x8900091d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SLE_COEX] lm_gle_hci_conn_update_srv_act_ram, con_hdl=%d, interval=%d, is_froced=%d @lm_gle_acb_srv_conn_update.c(584),INFO" ID="0x89001245" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SLE_COEX] conn_update_auto_req_srv, con_hdl=%d, interval=%d, is_froced=%d @lm_gle_acb_srv_conn_update.c(749),INFO" ID="0x8900176d" />
+			</MSG_LOG>

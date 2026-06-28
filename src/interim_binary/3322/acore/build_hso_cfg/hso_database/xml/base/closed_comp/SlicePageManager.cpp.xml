@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="ClearBackQueue: Slice %d stop page %d @SlicePageManager.cpp(68),INFO" ID="0xb8120225" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="curpage is nullptr @SlicePageManager.cpp(86),ERROR" ID="0xb81202b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to get page container @SlicePageManager.cpp(92),ERROR" ID="0xb81202e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="does not have pending rotate operation @SlicePageManager.cpp(130),ERROR" ID="0xb8120412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="does not need to change orientation @SlicePageManager.cpp(136),ERROR" ID="0xb8120442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="can't change page duing another switching @SlicePageManager.cpp(176),ERROR" ID="0xb8120582" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ChangeSlicePage %d in slice %d, type: %d, canBack: %d @SlicePageManager.cpp(182),INFO" ID="0xb81205b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="page:%d was not been registered @SlicePageManager.cpp(184),ERROR" ID="0xb81205c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="invlid transition type %d @SlicePageManager.cpp(194),ERROR" ID="0xb8120612" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="StartSwitchAnimator failed because nextPage_ is nullptr @SlicePageManager.cpp(233),ERROR" ID="0xb812074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animatorCallback_ new failed @SlicePageManager.cpp(239),ERROR" ID="0xb812077a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animator_ new failed @SlicePageManager.cpp(246),ERROR" ID="0xb81207b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="StartSwitchAnimator @SlicePageManager.cpp(250),DBG" ID="0xb81207d6" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="StopSwitchAnimator canBack_: %d @SlicePageManager.cpp(260),DBG" ID="0xb8120826" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="view or view's container is nullptr! @SlicePageManager.cpp(293),ERROR" ID="0xb812092a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d start page %d @SlicePageManager.cpp(301),INFO" ID="0xb812096d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d resume page %d @SlicePageManager.cpp(336),INFO" ID="0xb8120a85" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="slice container error when rotate! @SlicePageManager.cpp(353),ERROR" ID="0xb8120b0a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d pause page %d @SlicePageManager.cpp(376),INFO" ID="0xb8120bc5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="Slice %d stop page %d, clearBackQueue: %d @SlicePageManager.cpp(398),INFO" ID="0xb8120c75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="No page in back queue @SlicePageManager.cpp(438),ERROR" ID="0xb8120db2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BackToCachedSlicePage failed! Another switching is running! @SlicePageManager.cpp(449),ERROR" ID="0xb8120e0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="pageId %d is not in back queue @SlicePageManager.cpp(464),ERROR" ID="0xb8120e82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="invalid transition type %d @SlicePageManager.cpp(477),ERROR" ID="0xb8120eea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="popNum is 0! @SlicePageManager.cpp(489),ERROR" ID="0xb8120f4a" />
+			</MSG_LOG>

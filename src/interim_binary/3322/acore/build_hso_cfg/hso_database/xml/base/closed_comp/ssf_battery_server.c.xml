@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[BS][BATTERY] start server callback server_id:0x%x handle:0x%x status:0x%x @ssf_battery_server.c(41),INFO" ID="0xefba014d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][BATTERY] start server callback success register msg handle func @ssf_battery_server.c(45),ERROR" ID="0xefba016a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[BS][BATTERY] write callback server_id:0x%x conn_id:0x%x handle:0x%x type:0x%x status:0x%x @ssf_battery_server.c(55),INFO" ID="0xefba01bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][BATTERY] battery server init @ssf_battery_server.c(65),ERROR" ID="0xefba020a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BATTERY] register server fail ret:0x%x @ssf_battery_server.c(78),ERROR" ID="0xefba0272" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BATTERY] register callback set initial ramain capacity fail ret:0x%x @ssf_battery_server.c(88),ERROR" ID="0xefba02c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BATTERY] register callback fail ret:0x%x @ssf_battery_server.c(102),ERROR" ID="0xefba0332" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BATTERY] set remain capacity ratio:0x%x @ssf_battery_server.c(109),ERROR" ID="0xefba036a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BATTERY] transport remain capacity ratio fail ret:0x%x @ssf_battery_server.c(121),ERROR" ID="0xefba03ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BATTERY] register profile conn callback cbk:0x%x @ssf_battery_server.c(148),INFO" ID="0xefba04a5" />
+			</MSG_LOG>

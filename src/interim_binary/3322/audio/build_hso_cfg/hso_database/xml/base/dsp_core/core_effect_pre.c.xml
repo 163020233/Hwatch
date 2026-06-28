@@ -1,0 +1,32 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect_pre.c(42),INFO" ID="0x983a0155" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ops = %p @core_effect_pre.c(44),ERROR" ID="0x983a0162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect_pre.c(50),INFO" ID="0x983a0195" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @core_effect_pre.c(69),ERROR" ID="0x983a022a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @core_effect_pre.c(75),ERROR" ID="0x983a025a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect_pre.c(87),INFO" ID="0x983a02bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect_pre.c(100),INFO" ID="0x983a0325" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect_pre.c(108),INFO" ID="0x983a0365" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_pre_set_def_pcm_attr Failed, Error Code: [0x%08X] @core_effect_pre.c(115),ERROR" ID="0x983a039a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call get_input_pcm_attr Failed, Error Code: [0x%08X] @core_effect_pre.c(122),ERROR" ID="0x983a03d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call get_config Failed, Error Code: [0x%08X] @core_effect_pre.c(131),ERROR" ID="0x983a041a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect_pre.c(136),INFO" ID="0x983a0445" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect_pre.c(145),INFO" ID="0x983a048d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call create Failed, Error Code: [0x%08X] @core_effect_pre.c(154),ERROR" ID="0x983a04d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect_pre.c(158),INFO" ID="0x983a04f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect_pre.c(164),INFO" ID="0x983a0525" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call set_enable Failed, Error Code: [0x%08X] @core_effect_pre.c(172),ERROR" ID="0x983a0562" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect_pre.c(177),INFO" ID="0x983a058d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect_pre.c(187),INFO" ID="0x983a05dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_effect_pre.c(198),ERROR" ID="0x983a0632" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_pre_config_effect Failed, Error Code: [0x%08X] @core_effect_pre.c(204),ERROR" ID="0x983a0662" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_pre_create_effect Failed, Error Code: [0x%08X] @core_effect_pre.c(210),ERROR" ID="0x983a0692" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_pre_start_effect Failed, Error Code: [0x%08X] @core_effect_pre.c(216),ERROR" ID="0x983a06c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_destroy Failed, Error Code: [0x%08X] @core_effect_pre.c(226),ERROR" ID="0x983a0712" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect_pre.c(233),INFO" ID="0x983a074d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect_pre.c(242),INFO" ID="0x983a0795" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect_pre.c(249),INFO" ID="0x983a07cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect_pre.c(259),INFO" ID="0x983a081d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect_pre.c(266),INFO" ID="0x983a0855" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]in_frame-&gt;channels = %u @core_effect_pre.c(282),ERROR" ID="0x983a08d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call proc_frame Failed, Error Code: [0x%08X] @core_effect_pre.c(291),ERROR" ID="0x983a091a" />
+			</MSG_LOG>

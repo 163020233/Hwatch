@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[dts]dst_ipc_dsp_func_reg repeat err. ipc_cmd_id:0x%x, func:0x%p, idx:%d @dts_ipc_dsp.c(56),INFO" ID="0x8a7a01c5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[dts]dst_ipc_dsp_func_reg full err. ipc_cmd_id:0x%x, func:0x%p, idx:%d @dts_ipc_dsp.c(67),INFO" ID="0x8a7a021d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[dts]dst_ipc_dsp_func_reg ok. ipc_cmd_id:0x%x, func:0x%p, idx:%d @dts_ipc_dsp.c(74),INFO" ID="0x8a7a0255" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[dts]dts_ipc_send_ipc_msg fail, status = %u @dts_ipc_dsp.c(105),WARNING" ID="0x8a7a034b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]error in malloc ipc_msg_t @dts_ipc_dsp.c(118),ERROR" ID="0x8a7a03b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]send ipc memcpy fail, ret_err=%d @dts_ipc_dsp.c(135),ERROR" ID="0x8a7a043a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]error in malloc ipc_msg_t @dts_ipc_dsp.c(160),ERROR" ID="0x8a7a0502" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]send ipc memcpy fail, ret_err=%d @dts_ipc_dsp.c(177),ERROR" ID="0x8a7a058a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]error in malloc ipc_msg_t @dts_ipc_dsp.c(223),ERROR" ID="0x8a7a06fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]toggle nullptr error @dts_ipc_dsp.c(253),ERROR" ID="0x8a7a07ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]error in malloc len=%d @dts_ipc_dsp.c(260),ERROR" ID="0x8a7a0822" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]sco_info nullptr error @dts_ipc_dsp.c(284),ERROR" ID="0x8a7a08e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]error in malloc LOS MEMORY.len=%d @dts_ipc_dsp.c(291),ERROR" ID="0x8a7a091a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]a2dp_info nullptr error @dts_ipc_dsp.c(314),ERROR" ID="0x8a7a09d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]error in malloc LOS MEMORY.len=%d @dts_ipc_dsp.c(321),ERROR" ID="0x8a7a0a0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[]dts_ipc_send_music_rate_info_to_dsp fail , status = %u @dts_ipc_dsp.c(339),WARNING" ID="0x8a7a0a9b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dts dsp malloc fail! @dts_ipc_dsp.c(353),ERROR" ID="0x8a7a0b0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]memcpy_s fail!, ret=%d @dts_ipc_dsp.c(359),ERROR" ID="0x8a7a0b3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DSP] bt get msg from dsp failed! @dts_ipc_dsp.c(364),ERROR" ID="0x8a7a0b62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]invalid msg from DSP @dts_ipc_dsp.c(374),ERROR" ID="0x8a7a0bb2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]error dst_trans_id:0x%x, error src_trans_id:0x%x @dts_ipc_dsp.c(382),ERROR" ID="0x8a7a0bf2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]not support ipc cmd_id:0x%x. @dts_ipc_dsp.c(389),ERROR" ID="0x8a7a0c2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]invalid msg from DSP @dts_ipc_dsp.c(421),ERROR" ID="0x8a7a0d2a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]error dst_trans_id:0x%x, error src_trans_id:0x%x @dts_ipc_dsp.c(428),ERROR" ID="0x8a7a0d62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]not suport ipc cmd_id:0x%x. @dts_ipc_dsp.c(441),ERROR" ID="0x8a7a0dca" />
+			</MSG_LOG>

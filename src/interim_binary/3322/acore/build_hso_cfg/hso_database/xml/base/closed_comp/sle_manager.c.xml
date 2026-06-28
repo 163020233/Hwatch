@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="gle manager register cbks pointer null @sle_manager.c(31),ERROR" ID="0xe8ec00fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle conn manager register cbks pointer null @sle_manager.c(41),ERROR" ID="0xe8ec014a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="manager new register cbk table failed @sle_manager.c(77),ERROR" ID="0xe8ec026a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle manager exter_cbks will be overlaped @sle_manager.c(85),WARNING" ID="0xe8ec02ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle manager register cbks new failed @sle_manager.c(90),ERROR" ID="0xe8ec02d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle manager register cbks memcpy failed @sle_manager.c(95),ERROR" ID="0xe8ec02fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] gle general evt param null @sle_manager.c(122),ERROR" ID="0xe8ec03d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] gle manager general event report opcode[%02x] @sle_manager.c(126),INFO" ID="0xe8ec03f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="module_id func not reg @sle_manager.c(130),ERROR" ID="0xe8ec0412" />
+			</MSG_LOG>

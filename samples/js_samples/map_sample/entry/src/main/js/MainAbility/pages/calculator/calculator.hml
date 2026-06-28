@@ -1,0 +1,75 @@
+<div class="wrapper">
+    <list class="todo-wraper" if="{{ isVisable }}">
+        <list-item class="todo-item"  for="{{todoList}}" ref="listItemContain">
+            <text class="todo-title" >{{ $item }}</text>
+        </list-item>
+    </list>
+    <list class="todo-wraper" if="{{ !isVisable }}" ref="listContain">
+        <list-item class="todo-item1"  for="{{todoList}}" ref="listItemContain">
+            <text class="todo-title1" >{{ $item }}</text>
+        </list-item>
+    </list>
+    <div id="content" >
+        <div class="box">
+            <div class="btn" style="color: #FF9E00;" on:click="handleDel()">
+                <image src="/common/images/C.png" class="imgs"></image>
+            </div>
+            <div class="btn" on:click="handleClick('/')" style="color: #FF9E00;">
+                <image src="/common/images/chu.png" class="imgs"></image>
+            </div>
+            <div class="btn" on:click="handleClick('*')" style="color: #FF9E00;">
+                <image src="/common/images/cheng.png" class="imgs"></image>
+            </div>
+            <div class="btn" on:click="handlCancel('X')" style="color: #FF9E00;">
+                <image src="/common/images/del.png" class="img"></image>
+            </div>
+        </div>
+        <div class="box">
+            <div class="btn" on:click="handleClick(7)">
+                <image src="/common/images/7.png" class="img_number"></image>
+            </div>
+            <div class="btn" on:click="handleClick(8)">
+                <image src="/common/images/8.png" class="img_number"></image>
+            </div>
+            <div class="btn" on:click="handleClick(9)">
+                <image src="/common/images/9.png" class="img_number"></image>
+            </div>
+            <div class="btn" on:click="handleClick('-')" style="color: #FF9E00;">
+                <image src="/common/images/jian.png" class="imgs_jian"></image>
+            </div>
+        </div>
+        <div class="box">
+            <div class="btn" on:click="handleClick(4)">
+                <image src="/common/images/4.png" class="img_number"></image>
+            </div>
+            <div class="btn" on:click="handleClick(5)">
+                <image src="/common/images/5.png" class="img_number"></image>
+            </div>
+            <div class="btn" on:click="handleClick(6)">
+                <image src="/common/images/6.png" class="img_number"></image>
+            </div>
+            <div class="btn" on:click="handleClick('+')" style="color: #FF9E00;">
+                <image src="/common/images/jia.png" class="imgs"></image>
+            </div>
+        </div>
+        <div class="box">
+            <div class="btn" on:click="handleClick(3)">
+                <image src="/common/images/3.png" class="img_number"></image>
+            </div>
+            <div class="btn" on:click="handleClick(2)">
+                <image src="/common/images/2.png" class="img_number"></image>
+            </div>
+            <div class="btn" on:click="handleClick(1)">
+                <image src="/common/images/1.png" class="img_number1"></image>
+            </div>
+            <div class="btn" on:click="handleClick(0)" style="background-color: #FF9E00;">
+                <image src="/common/images/0.png" class="img_number"></image>
+            </div>
+        </div>
+        <div class="box">
+            <div class="btn" on:click="handleClick('.')">
+                <image src="/common/images/point.png" class="img_number2"></image>
+            </div>
+        </div>
+    </div>
+</div>

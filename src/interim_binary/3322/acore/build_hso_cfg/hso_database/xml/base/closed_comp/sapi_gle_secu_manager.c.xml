@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sapi start pairing failed, in param is NULL. @sapi_gle_secu_manager.c(47),ERROR" ID="0xed90017a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing start addr_in malloc fail @sapi_gle_secu_manager.c(57),ERROR" ID="0xed9001ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing start addr_in memcpy fail @sapi_gle_secu_manager.c(61),ERROR" ID="0xed9001ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sapi remove pairing failed, in param is NULL. @sapi_gle_secu_manager.c(82),ERROR" ID="0xed900292" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing remove addr melloc fail @sapi_gle_secu_manager.c(97),ERROR" ID="0xed90030a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing remove addr memcpy fail @sapi_gle_secu_manager.c(109),ERROR" ID="0xed90036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_sm_pairing_remove_all send msg fail @sapi_gle_secu_manager.c(133),ERROR" ID="0xed90042a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_sm_set_all_unpaired send msg fail @sapi_gle_secu_manager.c(145),ERROR" ID="0xed90048a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm recover key malloc fail @sapi_gle_secu_manager.c(157),ERROR" ID="0xed9004ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm recover key memcpy fail @sapi_gle_secu_manager.c(163),ERROR" ID="0xed90051a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm passkey entry fail,sm link null @sapi_gle_secu_manager.c(191),ERROR" ID="0xed9005fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE SM] passkey entry time not reach,io:%u,status:%u @sapi_gle_secu_manager.c(204),ERROR" ID="0xed900662" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm proc passkey entry alloc fail @sapi_gle_secu_manager.c(210),ERROR" ID="0xed900692" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm num compare entry fail,sm link null @sapi_gle_secu_manager.c(234),ERROR" ID="0xed900752" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm proc num compare entry alloc fail @sapi_gle_secu_manager.c(240),ERROR" ID="0xed900782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] set pair request result fail, sm link null @sapi_gle_secu_manager.c(264),ERROR" ID="0xed900842" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm proc pair request result alloc fail @sapi_gle_secu_manager.c(270),ERROR" ID="0xed900872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm set keymissing proc fail, sm link null @sapi_gle_secu_manager.c(292),ERROR" ID="0xed900922" />
+			</MSG_LOG>

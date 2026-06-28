@@ -1,0 +1,33 @@
+config LOSCFG_DRIVERS_IOMMU
+    bool "Enable IOMMU"
+    depends on LOSCFG_ARCH_LINXCORE_131 && LOSCFG_APC_ENABLE
+    default n
+    help
+      Answer Y to enable LiteOS to support iommu
+
+choice
+    prompt "IOMMU Support Type"
+    default LOSCFG_DRIVERS_HISI_CUSTOM_IOMMU
+    depends on LOSCFG_DRIVERS_IOMMU
+    help
+      Choose LiteOS IOMMU driver.
+
+config LOSCFG_DRIVERS_HISI_CUSTOM_IOMMU
+    bool "Hisi Custom IOMMU"
+    depends on LOSCFG_DRIVERS_IOMMU
+
+endchoice
+
+choice
+    prompt "IOMMU Virtual Address Bits"
+    default LOSCFG_DRIVERS_IOMMU_VA_BITS_36
+    depends on LOSCFG_DRIVERS_IOMMU
+    help
+      Choose the maximum virtual address space size.
+config LOSCFG_DRIVERS_IOMMU_VA_BITS_36
+    bool "36-bit"
+endchoice
+
+config LOSCFG_DRIVERS_IOMMU_VA_BITS
+    int
+    default 36 if LOSCFG_DRIVERS_IOMMU_VA_BITS_36

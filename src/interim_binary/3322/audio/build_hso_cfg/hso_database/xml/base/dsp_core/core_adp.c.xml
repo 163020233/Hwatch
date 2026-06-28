@@ -1,0 +1,66 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_get_module Failed, Error Code: [%#x] @core_adp.c(100),INFO" ID="0x98280325" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adp = 0x%08X @core_adp.c(101),INFO" ID="0x9828032d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_scene_register_adp Failed, Error Code: [0x%08X] @core_adp.c(219),ERROR" ID="0x982806da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_output_event_callback Failed, Error Code: [0x%08X] @core_adp.c(232),ERROR" ID="0x98280742" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]handle = 0x%08X @core_adp.c(246),INFO" ID="0x982807b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adp report event: %u @core_adp.c(254),WARNING" ID="0x982807f3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call event_proc Failed, Error Code: [0x%08X] @core_adp.c(260),ERROR" ID="0x98280822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adp attach input connector, adp handle: 0x%08X @core_adp.c(309),WARNING" ID="0x982809ab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adp detach input connector, adp handle: 0x%08X @core_adp.c(329),WARNING" ID="0x98280a4b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adp detach output connector, adp handle: 0x%08X @core_adp.c(356),WARNING" ID="0x98280b23" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adp_inst-&gt;adp_type = %u @core_adp.c(359),ERROR" ID="0x98280b3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adp attach output connector, adp handle: 0x%08X @core_adp.c(376),WARNING" ID="0x98280bc3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adp_inst-&gt;adp_type = %u @core_adp.c(380),ERROR" ID="0x98280be2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(413),INFO" ID="0x98280ced" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(416),INFO" ID="0x98280d05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_init Failed, Error Code: [0x%08X] @core_adp.c(422),ERROR" ID="0x98280d32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(427),INFO" ID="0x98280d5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(435),INFO" ID="0x98280d9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(437),INFO" ID="0x98280dad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(442),INFO" ID="0x98280dd5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_deinit Failed, Error Code: [0x%08X] @core_adp.c(448),ERROR" ID="0x98280e02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(454),INFO" ID="0x98280e35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(499),INFO" ID="0x98280f9d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adp_mmz_check_buf_size Failed, Error Code: [0x%08X] @core_adp.c(506),ERROR" ID="0x98280fd2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_alloc Failed, Error Code: [0x%08X] @core_adp.c(512),ERROR" ID="0x98281002" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][adp] create handle: 0x%08X @core_adp.c(524),WARNING" ID="0x98281063" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(525),INFO" ID="0x9828106d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(536),INFO" ID="0x982810c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_alloc_by_id Failed, Error Code: [0x%08X] @core_adp.c(540),ERROR" ID="0x982810e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(553),INFO" ID="0x9828114d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][adp] destroy handle: 0x%08X @core_adp.c(561),WARNING" ID="0x9828118b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(564),INFO" ID="0x982811a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adp_destroy Failed, Error Code: [0x%08X] @core_adp.c(572),ERROR" ID="0x982811e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_free Failed, Error Code: [0x%08X] @core_adp.c(580),ERROR" ID="0x98281222" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(584),INFO" ID="0x98281245" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(593),INFO" ID="0x9828128d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(601),INFO" ID="0x982812cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(610),INFO" ID="0x98281315" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adp_mmz_check_buf_size Failed, Error Code: [0x%08X] @core_adp.c(617),ERROR" ID="0x9828134a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(625),INFO" ID="0x9828138d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(636),INFO" ID="0x982813e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_alloc Failed, Error Code: [0x%08X] @core_adp.c(643),ERROR" ID="0x9828141a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_attach Failed, Error Code: [0x%08X] @core_adp.c(649),ERROR" ID="0x9828144a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_get_rbuf Failed, Error Code: [0x%08X] @core_adp.c(656),ERROR" ID="0x98281482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(661),INFO" ID="0x982814ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(671),INFO" ID="0x982814fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_detach Failed, Error Code: [0x%08X] @core_adp.c(679),ERROR" ID="0x9828153a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_free Failed, Error Code: [0x%08X] @core_adp.c(685),ERROR" ID="0x9828156a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(693),INFO" ID="0x982815ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(703),INFO" ID="0x982815fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_get_id Failed, Error Code: [0x%08X] @core_adp.c(707),ERROR" ID="0x9828161a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_attach Failed, Error Code: [0x%08X] @core_adp.c(713),ERROR" ID="0x9828164a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_get_rbuf Failed, Error Code: [0x%08X] @core_adp.c(719),ERROR" ID="0x9828167a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(723),INFO" ID="0x9828169d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(733),INFO" ID="0x982816ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_detach Failed, Error Code: [0x%08X] @core_adp.c(737),ERROR" ID="0x9828170a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(744),INFO" ID="0x98281745" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_put_buffer Failed, Error Code: [0x%08X] @core_adp.c(830),ERROR" ID="0x982819f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adp = 0x%08X @core_adp.c(831),ERROR" ID="0x982819fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adp.c(1065),INFO" ID="0x9828214d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adp_get_proc_info Failed, Error Code: [0x%08X] @core_adp.c(1073),ERROR" ID="0x9828218a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adp.c(1077),INFO" ID="0x982821ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_acquire_stream Failed, Error Code: [0x%08X] @core_adp.c(1101),ERROR" ID="0x9828226a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_release_stream Failed, Error Code: [0x%08X] @core_adp.c(1106),ERROR" ID="0x98282292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][4t1r][BMIC TX] ADP drop %u frames @core_adp.c(1112),WARNING" ID="0x982822c3" />
+			</MSG_LOG>

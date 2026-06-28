@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[log_reader][header]length error, len = 0x%x @log_buffer_reader.c(250),ERROR" ID="0xa08e07d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[log_reader][data]length error, len1 = 0x%x, len2 = 0x%x @log_buffer_reader.c(270),ERROR" ID="0xa08e0872" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[log_reader][pointer]write_p=0x%x, read_p=0x%x, new_read_p=0x%x @log_buffer_reader.c(292),ERROR" ID="0xa08e0922" />
+			</MSG_LOG>

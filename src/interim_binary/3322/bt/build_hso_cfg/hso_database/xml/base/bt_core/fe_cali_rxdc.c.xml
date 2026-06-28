@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[DEBUG]fe_cali_digital_rx_dc::vo1_i[0x%x]vo1_q[0x%x]vo2_i[0x%x]vo2_q[0x%x] @fe_cali_rxdc.c(96),INFO" ID="0x89740305" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DEBUG]fe_cali_digital_rx_dc::*comp_i[0x%x]*comp_q[0x%x] @fe_cali_rxdc.c(107),INFO" ID="0x8974035d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="rxdc lna = %d, freq = %d, val = 0x%x @fe_cali_rxdc.c(174),INFO" ID="0x89740575" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="fe_cali_rx_dcoc_process::lna_type %d, freq=%d, chnl%d, band%d @fe_cali_rxdc.c(206),INFO" ID="0x89740675" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="rxdc lna = %d, val = 0x%x @fe_cali_rxdc.c(275),INFO" ID="0x8974089d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="fe_cali_rx_dcoc_process::lna_type %d, freq=%d, chnl%d, band%d @fe_cali_rxdc.c(295),INFO" ID="0x8974093d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="rxdc comp not in local ctrl! @fe_cali_rxdc.c(363),INFO" ID="0x89740b5d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="fe_cali_rfctl_set_rxdc_by_lna::band[%d] dcoc_val[0x%x] @fe_cali_rxdc.c(378),INFO" ID="0x89740bd5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="fe_cali_rfctl_set_rxdc_by_lna::band[%d] dcoc_val[0x%x] @fe_cali_rxdc.c(389),INFO" ID="0x89740c2d" />
+			</MSG_LOG>

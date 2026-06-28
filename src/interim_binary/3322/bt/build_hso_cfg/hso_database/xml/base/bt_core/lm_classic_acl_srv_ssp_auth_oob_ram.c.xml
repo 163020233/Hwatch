@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSP] Stage 2(authentication) with Out-of-Band finished successfully! @lm_classic_acl_srv_ssp_auth_oob_ram.c(44),INFO" ID="0x8af60165" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_auth_oob_receive_number Mismatched! Pair Failed! @lm_classic_acl_srv_ssp_auth_oob_ram.c(83),WARNING" ID="0x8af6029b" />
+			</MSG_LOG>

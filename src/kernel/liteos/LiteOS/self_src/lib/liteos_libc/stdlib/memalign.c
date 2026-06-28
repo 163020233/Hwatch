@@ -1,0 +1,63 @@
+/* ----------------------------------------------------------------------------
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2020. All rights reserved.
+ * Description: Function memalign for linux
+ * Author: Huawei LiteOS Team
+ * Create: 2013-01-01
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ * 1. Redistributions of source code must retain the above copyright notice, this list of
+ * conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this list
+ * of conditions and the following disclaimer in the documentation and/or other materials
+ * provided with the distribution.
+ * 3. Neither the name of the copyright holder nor the names of its contributors may be used
+ * to endorse or promote products derived from this software without specific prior written
+ * permission.
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * --------------------------------------------------------------------------- */
+
+#include "los_typedef.h"
+#include "los_memory.h"
+#include "stdlib_mem_alloc_pri.h"
+#ifdef LOSCFG_BOX
+#include "los_task_pri.h"
+#endif
+
+/*
+ * allocates a block of size bytes whose address is a multiple of boundary.
+ * The boundary must be a power of two!
+ */
+void *memalign(size_t boundary, size_t size)
+{
+    if (size == 0) {
+        return NULL;
+    }
+#ifdef LOSCFG_COMPILER_ICCARM
+    /* Libc memory interface use IAR compiler memory pool. */
+    return aligned_alloc(boundary, size);
+#else
+#if defined LOSCFG_BOX && defined LOSCFG_KERNEL_MEM_ALLOC
+#ifdef LOSCFG_FS_EXC_OPERATION
+    if (!OS_IN_KER_STATE && !OS_EXC_ACTIVE_USER) {
+#else
+    if (!OS_IN_KER_STATE) {
+#endif
+        return (void *)LOS_MemAllocAlign(STD_LIBC_MEM_POOL, (UINT32)size, (UINT32)boundary);
+    } else {
+        return (void *)LOS_MemAllocAlign(STD_LIBC_MEM_POOL_KERNEL, (UINT32)size, (UINT32)boundary);
+    }
+#else
+    return (void *)LOS_MemAllocAlign(STD_LIBC_MEM_POOL, (UINT32)size, (UINT32)boundary);
+#endif
+#endif
+}

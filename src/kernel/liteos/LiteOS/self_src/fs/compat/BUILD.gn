@@ -1,0 +1,37 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("compat") {
+        sources = [
+            "nuttx_sem.c",
+        ]
+    }
+} else {
+    static_library("libcompat") {
+        import("../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+
+        sources = [
+            "nuttx_sem.c",
+        ]
+
+        include_dirs = LITEOS_GN_KSTATIC_INCLUDE
+    }
+}
+
+

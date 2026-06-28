@@ -1,0 +1,20 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BREDR] data config write err. @bt_database_comm.c(82),INFO" ID="0xe8300295" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BREDR] config sync data memcpy err. @bt_database_comm.c(86),ERROR" ID="0xe83002b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] bt acore get bt addr memcpy err @bt_database_comm.c(117),ERROR" ID="0xe83003aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] bt acore get bt addr memcpy err @bt_database_comm.c(127),ERROR" ID="0xe83003fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] config name memcpy err. @bt_database_comm.c(140),ERROR" ID="0xe8300462" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] config name memcpy err. @bt_database_comm.c(150),ERROR" ID="0xe83004b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] data_config write err. @bt_database_comm.c(161),INFO" ID="0xe830050d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] config sync data memcpy err. @bt_database_comm.c(167),ERROR" ID="0xe830053a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] nv reserv write in. @bt_database_comm.c(178),INFO" ID="0xe8300595" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] nv reserv write err. @bt_database_comm.c(181),ERROR" ID="0xe83005aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] nv reserv write memcpy err. @bt_database_comm.c(185),ERROR" ID="0xe83005ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt acore set product type type:%02x! @bt_database_comm.c(194),INFO" ID="0xe8300615" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore set sys param err! @bt_database_comm.c(210),ERROR" ID="0xe8300692" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get system config read data err! @bt_database_comm.c(228),ERROR" ID="0xe8300722" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble_file_store_init enter. @bt_database_comm.c(236),INFO" ID="0xe8300765" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble_file_store_init already init. @bt_database_comm.c(238),INFO" ID="0xe8300775" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bgh_init_config ble conf fail. @bt_database_comm.c(244),INFO" ID="0xe83007a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_file_store_init get ble key failed. @bt_database_comm.c(252),INFO" ID="0xe83007e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble_file_store_deinit enter. @bt_database_comm.c(273),INFO" ID="0xe830088d" />
+			</MSG_LOG>

@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[HCI] reg bg link cbk failed @hci_hlp_ram.c(146),ERROR" ID="0xeba40492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI] hci_merged_remote_node! @hci_hlp_ram.c(322),ERROR" ID="0xeba40a12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI] remote identity addr update malloc size %u fail  @hci_hlp_ram.c(398),ERROR" ID="0xeba40c72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI] remove remote exceed upper limit remove fail! @hci_hlp_ram.c(512),ERROR" ID="0xeba41002" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci remote find create memcpy error @hci_hlp_ram.c(531),ERROR" ID="0xeba4109a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci remote num exceed limit mem new error @hci_hlp_ram.c(555),ERROR" ID="0xeba4115a" />
+			</MSG_LOG>

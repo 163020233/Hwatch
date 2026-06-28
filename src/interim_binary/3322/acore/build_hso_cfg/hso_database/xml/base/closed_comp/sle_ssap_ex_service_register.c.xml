@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ssap_ex]inst create fail @sle_ssap_ex_service_register.c(422),ERROR" ID="0xea300d32" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ssap_ex]ssap_ex_register_service fail, ret = %u server_id = %u  @sle_ssap_ex_service_register.c(468),ERROR" ID="0xea300ea2" />
+			</MSG_LOG>

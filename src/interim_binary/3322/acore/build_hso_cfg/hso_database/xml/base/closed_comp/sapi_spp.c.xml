@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SPP][DONE], SERVER=%d @sapi_spp.c(82),INFO" ID="0xeb5c0295" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SPP][AddEntry] vport=%d @sapi_spp.c(234),INFO" ID="0xeb5c0755" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SPP][DelEntry] vport=%d @sapi_spp.c(298),INFO" ID="0xeb5c0955" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SPP][sapi_spp_open] start spp connect @sapi_spp.c(344),INFO" ID="0xeb5c0ac5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SPP] sapi find comm fail vport=%d @sapi_spp.c(389),ERROR" ID="0xeb5c0c2a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SPP][WRITE_DATA] CONGEST=%d, CREDITIN=%d @sapi_spp.c(524),INFO" ID="0xeb5c1065" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SPP][WRITE_DATA] CONGEST=%d, CREDITIN=%d @sapi_spp.c(645),INFO" ID="0xeb5c142d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SPP]sapi find comm fail server_channel=%d @sapi_spp.c(1280),ERROR" ID="0xeb5c2802" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SPP]sapi find comm fail vport=%d @sapi_spp.c(1296),ERROR" ID="0xeb5c2882" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SPP][START_CLIENT] SVR CHANNEL INVALID @sapi_spp.c(1383),INFO" ID="0xeb5c2b3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SPP][START_CLIENT] SVR_CHANNEL=%d @sapi_spp.c(1387),INFO" ID="0xeb5c2b5d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SPP][START_CLIENT] ACTION=SPP_OPEN_SUCCESS, SVR_CHANNEL=%d, V_PORT=%d @sapi_spp.c(1395),INFO" ID="0xeb5c2b9d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SPP][START_CLIENT] ACTION=SPP_OPEN_FAIL, SVR_CHANNEL=%d, V_PORT=%d @sapi_spp.c(1398),WARNING" ID="0xeb5c2bb3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SPP]svr_uuid is NULL, not register @sapi_spp.c(1448),INFO" ID="0xeb5c2d45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SPP]memcpy fail @sapi_spp.c(1457),INFO" ID="0xeb5c2d8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SPP]memcpy fail @sapi_spp.c(1466),INFO" ID="0xeb5c2dd5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SPP][START_SERVER] SVR_CHANNEL=%d @sapi_spp.c(1512),INFO" ID="0xeb5c2f45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SPP][START_SERVER] ACTION=SPP_OPEN, RESULT=%d @sapi_spp.c(1517),INFO" ID="0xeb5c2f6d" />
+			</MSG_LOG>

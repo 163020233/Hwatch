@@ -1,0 +1,17 @@
+enum        32    0
+HSO_ENUM    32    0
+
+uint64_t    64    0
+uint32_t    32    0
+uint16_t    16    0
+uint8_t     8     0
+int64_t     64    1
+int32_t     32    1
+int16_t     16    1
+int8_t      8     1
+bool        8     0
+char        8     1    1
+
+long        32    1
+void_ptr    32    0
+byte_ptr    32    0

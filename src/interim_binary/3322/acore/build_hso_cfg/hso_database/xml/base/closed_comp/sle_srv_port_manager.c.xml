@@ -1,0 +1,35 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] dynamic_channel_cbk, create channel_node failed, tc_handle: %u @sle_srv_port_manager.c(91),ERROR" ID="0xea3e02da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] dynamic_channel_cbk, create port_node failed, tc_handle: %u @sle_srv_port_manager.c(143),ERROR" ID="0xea3e047a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] sle_port_dynamic_channel_cbk, manager node not exist! port: %u @sle_srv_port_manager.c(171),ERROR" ID="0xea3e055a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] sle_port_create_new_channel, reliable config calloc failed! @sle_srv_port_manager.c(248),ERROR" ID="0xea3e07c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] sle_port_create_new_channel, create dynamic channel failed! ret:%u @sle_srv_port_manager.c(259),ERROR" ID="0xea3e081a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] sle_port_release_channel, release dynamic channel failed! ret:%u @sle_srv_port_manager.c(274),ERROR" ID="0xea3e0892" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] sle_port_reconfig_channel, add ports calloc failed! @sle_srv_port_manager.c(300),ERROR" ID="0xea3e0962" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] sle_port_reconfig_channel, del ports calloc failed! @sle_srv_port_manager.c(311),ERROR" ID="0xea3e09ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] sle_port_reconfig_channel, reconfig dynamic channel failed! ret:%u @sle_srv_port_manager.c(322),ERROR" ID="0xea3e0a12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] port_receive_trans_data_cbk, manager_node not exist, port: %u @sle_srv_port_manager.c(360),ERROR" ID="0xea3e0b42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] port_receive_trans_data_cbk, channel_node not exist, tc_handle: %u @sle_srv_port_manager.c(376),ERROR" ID="0xea3e0bc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] manager_delete_node, get manager node failed @sle_srv_port_manager.c(423),ERROR" ID="0xea3e0d3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] manager_delete_node, unregister trans callback, port:%u not exist! @sle_srv_port_manager.c(432),ERROR" ID="0xea3e0d82" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[PORT_MANAGER] manager_delete_node, delete_channel failed, conn_id:%u, tc_handle:%u @sle_srv_port_manager.c(448),ERROR" ID="0xea3e0e02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] manager deinit, get manager node failed @sle_srv_port_manager.c(464),ERROR" ID="0xea3e0e82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] send data params is wrong @sle_srv_port_manager.c(487),ERROR" ID="0xea3e0f3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] trans_args params is wrong @sle_srv_port_manager.c(491),ERROR" ID="0xea3e0f5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] port_send_data, get manager node failed @sle_srv_port_manager.c(503),ERROR" ID="0xea3e0fba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[PORT_MANAGER] send data by port failed, conn_id:%u, ret:0x%x @sle_srv_port_manager.c(514),ERROR" ID="0xea3e1012" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] port server register transmission callbacks failed, reg callback ret:%u @sle_srv_port_manager.c(539),ERROR" ID="0xea3e10da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] create port manager node alloc failed @sle_srv_port_manager.c(549),ERROR" ID="0xea3e112a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] sle port register connectionless trans callback failed @sle_srv_port_manager.c(563),ERROR" ID="0xea3e119a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] sle_port_manager_unregister_callbacks,get manager node failed @sle_srv_port_manager.c(576),ERROR" ID="0xea3e1202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] sle_port_manager_unregister_callbacks,unregister connectionless callback failed @sle_srv_port_manager.c(581),ERROR" ID="0xea3e122a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_MANAGER] alloc_dynamic_channel, not support the stream mode now! @sle_srv_port_manager.c(598),ERROR" ID="0xea3e12b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] alloc_dynamic_channel, manager node not exist, port: %u @sle_srv_port_manager.c(605),ERROR" ID="0xea3e12ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] only support exclusive mode now, input mode: %u @sle_srv_port_manager.c(614),ERROR" ID="0xea3e1332" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] alloc_dynamic_channel, reconfig channel error, ret:%u @sle_srv_port_manager.c(623),ERROR" ID="0xea3e137a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] alloc_dynamic_channel, create channel error, ret:%u @sle_srv_port_manager.c(630),ERROR" ID="0xea3e13b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] sle_port_get_dynamic_channel, reconfig channel error, ret:%u @sle_srv_port_manager.c(650),ERROR" ID="0xea3e1452" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] sle_port_get_dynamic_channel, reconfig channel error, ret:%u @sle_srv_port_manager.c(657),ERROR" ID="0xea3e148a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] sle_port_delete_dynamic_channel, manager node not exist, port: %u @sle_srv_port_manager.c(670),ERROR" ID="0xea3e14f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[PORT_MANAGER] delete channel, src_port:%u, dst_port:%u @sle_srv_port_manager.c(681),ERROR" ID="0xea3e154a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_MANAGER] sle_port_delete_dynamic_channel, tc_handle: %u not exist! @sle_srv_port_manager.c(688),ERROR" ID="0xea3e1582" />
+			</MSG_LOG>

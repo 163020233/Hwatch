@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[JITWS][COLLECT_HCI]QueryHciRemoteAndLinkNums:%02x:%02x:**:**:**:%02x @jitws_para_sync_hci.c(130),INFO" ID="0xebfc0415" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][COLLECT_HCI] sync_remote_nums=%u, sync_link_nums=%u @jitws_para_sync_hci.c(271),INFO" ID="0xebfc087d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][PARSE_HCI]before: remoteCnt(%ld), linkCnt(%ld) @jitws_para_sync_hci.c(408),INFO" ID="0xebfc0cc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_HCI_FAIL]link is null @jitws_para_sync_hci.c(422),WARNING" ID="0xebfc0d33" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][PARSE_HCI]: after remoteCnt(%ld), linkCnt(%ld) @jitws_para_sync_hci.c(436),INFO" ID="0xebfc0da5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="jitws remove hci link @jitws_para_sync_hci.c(446),INFO" ID="0xebfc0df5" />
+			</MSG_LOG>

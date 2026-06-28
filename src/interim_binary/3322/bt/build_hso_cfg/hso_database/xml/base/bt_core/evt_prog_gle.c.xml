@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[ES view]evt_prog_gle_push_eeq: ready_list task_id=0x%x timestamp=0x%x duration=%d @evt_prog_gle.c(186),INFO" ID="0x8ad805d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_prog_gle_get_eeq_allow_prog_cnt, mac%d eeq_allow_cnt=0 @evt_prog_gle.c(207),INFO" ID="0x8ad8067d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_prog_gle_list_print:task_id 0x%x, task_type 0x%x, clkn 0x%x, duration %d @evt_prog_gle.c(365),INFO" ID="0x8ad80b6d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_prog_gle_pop_elt_match_isr ee_gclkn(0x%x)link_label(%d) not found in (%d) isr @evt_prog_gle.c(399),ERROR" ID="0x8ad80c7a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_prog_gle_abn_pop_elt_match_isr ee_gclkn(0x%x)link_label(%d) not found in (%d) isr, cur_clk:0x%x @evt_prog_gle.c(437),WARNING" ID="0x8ad80dab" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_prog_gle_abn_pop_elt_match_isr ee_gclkn(0x%x)link_label(%d) not found in (%d) isr @evt_prog_gle.c(446),ERROR" ID="0x8ad80df2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][gle_eeq_fullint_urgent][sub%d]next_free_idx=%d, eeq_offset=0x%x, eeq_size=%d @evt_prog_gle.c(499),ERROR" ID="0x8ad80f9a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][gle_eeq_fullint_normal][sub%d]next_free_idx=%d, eeq_offset=0x%x, eeq_size=%d @evt_prog_gle.c(509),ERROR" ID="0x8ad80fea" />
+			</MSG_LOG>

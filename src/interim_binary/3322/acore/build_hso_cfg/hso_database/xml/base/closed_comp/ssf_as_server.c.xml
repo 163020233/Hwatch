@@ -1,0 +1,183 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] reg inner cbks failed, param is null @ssf_as_server.c(79),ERROR" ID="0xef82027a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] success find ep=%u volume type=%u @ssf_as_server.c(130),INFO" ID="0xef820415" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS][S] get ep=%u volume type failed. is valid=%d, valid ep=%u @ssf_as_server.c(140),ERROR" ID="0xef820462" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] get ep=%u volume type=%u @ssf_as_server.c(145),INFO" ID="0xef82048d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] active epid=%u, as_state=%u @ssf_as_server.c(157),INFO" ID="0xef8204ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] decode l2hc version failed! remain_len= %u, total_len= %u @ssf_as_server.c(169),ERROR" ID="0xef82054a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] decode l2hc sample rate failed! remain_len= %u, total_len= %u @ssf_as_server.c(181),ERROR" ID="0xef8205aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] decode l2hc bit width failed! remain_len= %u, total_len= %u @ssf_as_server.c(192),ERROR" ID="0xef820602" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] decode l2hc channel failed! length= %u, remain_len= %u @ssf_as_server.c(204),ERROR" ID="0xef820662" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] decode l2hc channel failed! len= %u, remain_len= %u @ssf_as_server.c(221),ERROR" ID="0xef8206ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] decode l2hc frame length mode failed! data_len= %u @ssf_as_server.c(245),ERROR" ID="0xef8207aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] decode l2hc frame coding rate failed! data_len= %u @ssf_as_server.c(256),ERROR" ID="0xef820802" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][AS][S] l2hc codec info:version: 0x%x, sample_rate: 0x%x, bit_width: 0x%x, frame_length_mode: %d, channel: %d @ssf_as_server.c(293),INFO" ID="0xef82092d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][AS][S] l2hc codec coding rate: 0x%x 0x%x 0x%x 0x%x 0x%x @ssf_as_server.c(296),INFO" ID="0xef820945" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] reg server callback, cbk is null! app_id=%u @ssf_as_server.c(312),ERROR" ID="0xef8209c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] reg server callback, appid is repeated! app_id=%u @ssf_as_server.c(316),ERROR" ID="0xef8209e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] reg server callback, list append failed! ret=%u, appid=%u @ssf_as_server.c(325),ERROR" ID="0xef820a2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] bs_sle_audio_stream_register_callbacks_server %d @ssf_as_server.c(329),INFO" ID="0xef820a4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] oper result reply from ux, stream_num=%u @ssf_as_server.c(421),INFO" ID="0xef820d2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] oper result reply, alloc mem failed! stream_num=%u @ssf_as_server.c(424),ERROR" ID="0xef820d42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] oper result reply, send msg failed! ret=%u. @ssf_as_server.c(432),ERROR" ID="0xef820d82" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] not allowed to start the as, response nok to stream: %u, which ep_inst_id is: %u. @ssf_as_server.c(453),ERROR" ID="0xef820e2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] oper result reply, invalid param! stream_num=%u. @ssf_as_server.c(500),ERROR" ID="0xef820fa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] server set data path, member_id=%d. @ssf_as_server.c(513),INFO" ID="0xef82100d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get stream typ fail, ret=%d. @ssf_as_server.c(523),ERROR" ID="0xef82105a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] set data path output, ret=%u, group_id=%u. @ssf_as_server.c(531),INFO" ID="0xef82109d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] set OUTPUT iso data path failed! ret=%u. @ssf_as_server.c(533),ERROR" ID="0xef8210aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] set data path input, ret=%u. @ssf_as_server.c(543),INFO" ID="0xef8210fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] send start response failed! ret=%u. @ssf_as_server.c(548),ERROR" ID="0xef821122" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] unreg server callback, appid unregister! appid=%u. @ssf_as_server.c(563),ERROR" ID="0xef82119a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] copy codec, alloc mem failed! @ssf_as_server.c(611),ERROR" ID="0xef82131a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] copy codec, alloc mem failed! src_codec-&gt;data_len = %u @ssf_as_server.c(619),ERROR" ID="0xef82135a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] config req cbk, send msg failed! ret=%u. @ssf_as_server.c(633),ERROR" ID="0xef8213ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] config req cbk, invalid param! ep_num=%u @ssf_as_server.c(641),ERROR" ID="0xef82140a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] config req cbk, alloc mem failed! ep_num=%u @ssf_as_server.c(683),ERROR" ID="0xef82155a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] sle vendor id:%u is not supported, set to std version. @ssf_as_server.c(718),INFO" ID="0xef821675" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] sle vendor id:%u is not supported, set to sl vendor id. @ssf_as_server.c(737),INFO" ID="0xef82170d" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[SSF][AS][S] codec_config,codec_id: 0x%x, vendor_id: 0x%x, manu_id: 0x%x, stream_id: 0x%x, stream_type: 0x%x, frame_aggregation: %d @ssf_as_server.c(751),INFO" ID="0xef82177d" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[SSF][AS][S] qos_config,interval: %d, max_sdu: %d, presentation_delay: %d, rtn: %d, max_latency: %d, group_id: %d @ssf_as_server.c(756),INFO" ID="0xef8217a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="sle_as_is_frame_aggre_enable in, interval:%d, frame_length_mode:%d @ssf_as_server.c(763),INFO" ID="0xef8217dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] config req cbk impl, alloc mem failed! @ssf_as_server.c(816),ERROR" ID="0xef821982" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] config requst received, conn_id=%u. @ssf_as_server.c(822),INFO" ID="0xef8219b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get obj list failed! ret=%u. @ssf_as_server.c(827),ERROR" ID="0xef8219da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] oper result reply, config response failed! ret=%u. @ssf_as_server.c(854),ERROR" ID="0xef821ab2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] enable req cbk, invalid param! ep_num=%u @ssf_as_server.c(864),ERROR" ID="0xef821b02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] enable request cbk, send msg failed! ret=%u. @ssf_as_server.c(874),ERROR" ID="0xef821b52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] enable req cbk impl, invalid param! ep_num=%u @ssf_as_server.c(882),ERROR" ID="0xef821b92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] enable req cbk, send response failed! ret=%u. @ssf_as_server.c(897),ERROR" ID="0xef821c0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] start req cbk, invalid param! ep_num=%u @ssf_as_server.c(906),ERROR" ID="0xef821c52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] start request cbk, send msg failed! ret=%u. @ssf_as_server.c(916),ERROR" ID="0xef821ca2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] no need distribute state. state: %u @ssf_as_server.c(946),ERROR" ID="0xef821d92" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][AS][S] reporting to ux stru_num: %u, state: %u standard type: %d, stream type: %d,vendor type: %d @ssf_as_server.c(964),INFO" ID="0xef821e25" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] bitrate update failed! ret=%u. @ssf_as_server.c(980),ERROR" ID="0xef821ea2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] rssi = %d, cur_rssi = %d @ssf_as_server.c(1035),INFO" ID="0xef82205d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] select wrong music_coding_rate @ssf_as_server.c(1065),ERROR" ID="0xef82214a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] sle_as_server_select_music_coding_rate err! ret = 0x%08x @ssf_as_server.c(1078),ERROR" ID="0xef8221b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] memcpy_s err! @ssf_as_server.c(1081),ERROR" ID="0xef8221ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] earphone autorate, update bitrate err! ret = 0x%08x @ssf_as_server.c(1086),ERROR" ID="0xef8221f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] earphone autorate, rssi = 0, err! @ssf_as_server.c(1095),ERROR" ID="0xef82223a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] saf_asm_update_bitrate_param_t *params malloc fail @ssf_as_server.c(1101),ERROR" ID="0xef82226a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] params-&gt;bitrate malloc fail @ssf_as_server.c(1108),ERROR" ID="0xef8222a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] earphone autorate, update bitrate to phone err! ret = 0x%08x @ssf_as_server.c(1122),ERROR" ID="0xef822312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] saf_asms_update_bitrate success! rssi = %d @ssf_as_server.c(1127),INFO" ID="0xef82233d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] sle_as_server_bitrate_update_t *bitrate_update_data malloc fail @ssf_as_server.c(1142),ERROR" ID="0xef8223b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] earphone autorate, bitrate alg err! rssi = %d, ret = %u @ssf_as_server.c(1149),ERROR" ID="0xef8223ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] earphone autorate, read rssi fail! @ssf_as_server.c(1162),ERROR" ID="0xef822452" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] earphone autorate, read afh fail! @ssf_as_server.c(1181),ERROR" ID="0xef8224ea" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[GLE_AUDIO_QUALITY_INFO_1]read audio quality report afh1:%d, afh2:%d, afh3:%d, afh4:%d @ssf_as_server.c(1196),INFO" ID="0xef822565" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[GLE_AUDIO_QUALITY_INFO_2]read audio quality report crc:%d, rx_seq:%d, no_sync:%d, ant_cfg:%d @ssf_as_server.c(1199),INFO" ID="0xef82257d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] timer, read rssi err! ret = %u @ssf_as_server.c(1228),ERROR" ID="0xef822662" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] timer, read AFH err! ret = 0x%08x @ssf_as_server.c(1240),ERROR" ID="0xef8226c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] sle_as_server_coding_rate_intersection_result_report success! @ssf_as_server.c(1256),INFO" ID="0xef822745" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] timer, stop timer err! timer == NULL @ssf_as_server.c(1263),ERROR" ID="0xef82277a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] stop timer success! @ssf_as_server.c(1270),INFO" ID="0xef8227b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] bitrate control, new remote_coding_rate == NULL! @ssf_as_server.c(1284),ERROR" ID="0xef822822" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] bitrate control, new music_coding_rates == NULL! @ssf_as_server.c(1294),ERROR" ID="0xef822872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] bitrate control, init timer err! @ssf_as_server.c(1312),ERROR" ID="0xef822902" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] start req cbk impl, invalid param! ep_num:%u @ssf_as_server.c(1324),ERROR" ID="0xef822962" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] start request received, ep_num:%u @ssf_as_server.c(1327),INFO" ID="0xef82297d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] g_sle_local_dev_ep: %u, audio_stream state: %u @ssf_as_server.c(1349),INFO" ID="0xef822a2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get obj list failed! ret=%u. @ssf_as_server.c(1359),ERROR" ID="0xef822a7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] bitrate_update_flag = %d @ssf_as_server.c(1368),INFO" ID="0xef822ac5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] stop req cbk, invalid param! ep_num=%u @ssf_as_server.c(1376),ERROR" ID="0xef822b02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] stop request cbk, send msg failed! ret=%u. @ssf_as_server.c(1386),ERROR" ID="0xef822b52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] stop req cbk impl, invalid param! ep_num=%u @ssf_as_server.c(1394),ERROR" ID="0xef822b92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] stop request received, ep_num=%u @ssf_as_server.c(1397),INFO" ID="0xef822bad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] g_sle_local_dev_ep: %u, %u @ssf_as_server.c(1404),INFO" ID="0xef822be5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] sle_iso_remove_data_path, ret=%u @ssf_as_server.c(1413),INFO" ID="0xef822c2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get obj list failed! ret=%u. @ssf_as_server.c(1418),ERROR" ID="0xef822c52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] stop response failed! ret=%u. @ssf_as_server.c(1435),ERROR" ID="0xef822cda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] release req cbk, invalid param! params is NULL. @ssf_as_server.c(1444),ERROR" ID="0xef822d22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] release request cbk, alloc mem failed! ep_num=%d. @ssf_as_server.c(1449),ERROR" ID="0xef822d4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] release request cbk, send msg failed! ret=%u. @ssf_as_server.c(1457),ERROR" ID="0xef822d8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] release req cbk, invalid param! @ssf_as_server.c(1468),ERROR" ID="0xef822de2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] release request received, ep_num=%u @ssf_as_server.c(1471),INFO" ID="0xef822dfd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] release_request g_sle_local_dev_ep: %u, %u. @ssf_as_server.c(1479),INFO" ID="0xef822e3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get obj list failed! ret=%u. @ssf_as_server.c(1489),ERROR" ID="0xef822e8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] release response failed! ret=%u. @ssf_as_server.c(1510),ERROR" ID="0xef822f32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso connect req cbk, invalid param! @ssf_as_server.c(1519),ERROR" ID="0xef822f7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso connect req cbk, alloc mem failed! @ssf_as_server.c(1524),ERROR" ID="0xef822fa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] iso connect req cbk, send msg failed! ret=%u. @ssf_as_server.c(1531),ERROR" ID="0xef822fda" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] sle_as_iso_connect_request_cbk enter, CONN_ID IS: %d, member_id is: %d @ssf_as_server.c(1540),INFO" ID="0xef823025" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] iso connect req cbk, send response failed! ret=%u. @ssf_as_server.c(1543),ERROR" ID="0xef82303a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS][S] iso conn req, group_id: %d, conn_type: %d, member_id: %d. @ssf_as_server.c(1552),INFO" ID="0xef823085" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS][S] iso_connect_state_changed_cbk enter, group_id is: %d, conn_type is: %d, disc_reason is: %d @ssf_as_server.c(1562),INFO" ID="0xef8230d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso connect state changed cbk, invalid param! @ssf_as_server.c(1564),ERROR" ID="0xef8230e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso connect state changed cbk, alloc mem failed! @ssf_as_server.c(1570),ERROR" ID="0xef823112" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] iso connect state changed cbk, send msg failed! ret=%u. @ssf_as_server.c(1578),ERROR" ID="0xef823152" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] get bitrate list node bt obj:%u failed, label_id:%u. @ssf_as_server.c(1589),ERROR" ID="0xef8231aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] label id set successed, obj:%u, label id:%u @ssf_as_server.c(1594),INFO" ID="0xef8231d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] release_if_overtime, obj:%u @ssf_as_server.c(1603),INFO" ID="0xef82321d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] release_if_overtime, alloc mem failed, obj:%u @ssf_as_server.c(1606),ERROR" ID="0xef823232" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] overtime saf_asms_release_stream failed! ret=%u. @ssf_as_server.c(1618),ERROR" ID="0xef823292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get obj list failed! ret=%u. @ssf_as_server.c(1642),ERROR" ID="0xef823352" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] bitrate list with obj:%u has been deleted! @ssf_as_server.c(1661),INFO" ID="0xef8233ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] iso disconnect. report all stream CLOSED. stream num: %d @ssf_as_server.c(1667),INFO" ID="0xef82341d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] streaming state report proc, find no conn_id. g_ep_inst_num: %u @ssf_as_server.c(1700),ERROR" ID="0xef823522" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] g_sle_local_dev_ep: %u, %u. @ssf_as_server.c(1709),INFO" ID="0xef82356d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] no need to report. @ssf_as_server.c(1714),INFO" ID="0xef823595" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get obj list failed! ret=%u. @ssf_as_server.c(1721),ERROR" ID="0xef8235ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso set data path cbk, invalid param! @ssf_as_server.c(1734),ERROR" ID="0xef823632" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso set data path cbk, alloc mem failed! @ssf_as_server.c(1739),ERROR" ID="0xef82365a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] iso set data path cbk, send msg failed! ret=%u. @ssf_as_server.c(1746),ERROR" ID="0xef823692" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso set datapath cbk impl, invalid param! @ssf_as_server.c(1756),ERROR" ID="0xef8236e2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][AS][S] remove data path cbk enter. group_id:%d, conn_type:%d, direction:%d, status:%d. @ssf_as_server.c(1775),INFO" ID="0xef82377d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] update g_sle_local_dev_ep: %u, %u @ssf_as_server.c(1781),INFO" ID="0xef8237ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS][S] iso_label_report_cbk enter, group_id is: %d, conn_type is: %d, status is: %d @ssf_as_server.c(1791),INFO" ID="0xef8237fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso_label_report_cbk, param is null! @ssf_as_server.c(1797),ERROR" ID="0xef82382a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso_label_report_cbk, malloc fail. @ssf_as_server.c(1806),ERROR" ID="0xef823872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso_label_report_cbk, malloc fail. @ssf_as_server.c(1811),ERROR" ID="0xef82389a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] iso_label_report_cbk, send msg failed! ret=%u. @ssf_as_server.c(1823),ERROR" ID="0xef8238fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] iso_label_report_cbk_impl, malloc fail. @ssf_as_server.c(1836),ERROR" ID="0xef823962" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get obj list failed! ret=%u. @ssf_as_server.c(1844),ERROR" ID="0xef8239a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] label_id:%u, bitrate:%u. @ssf_as_server.c(1862),DBG" ID="0xef823a36" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] obj bitrate info list append failed! ret=%u @ssf_as_server.c(1874),ERROR" ID="0xef823a92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] obj bitrate info list appended, obj:%u. @ssf_as_server.c(1877),INFO" ID="0xef823aad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] sle_as_iso_label_update_cbk, member info is null! @ssf_as_server.c(1886),ERROR" ID="0xef823af2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][AS][S] iso_label_report_cbk enter, group_id is: %d, conn_type is: %d, status is: %d, label_id is: %d @ssf_as_server.c(1891),INFO" ID="0xef823b1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] sle_as_iso_label_update_cbk, malloc fail. @ssf_as_server.c(1897),ERROR" ID="0xef823b4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] sle_as_iso_label_update_cbk, send msg failed! ret=%u. @ssf_as_server.c(1904),ERROR" ID="0xef823b82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] label update in, label id:%d. @ssf_as_server.c(1911),INFO" ID="0xef823bbd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get obj list failed! ret=%u. @ssf_as_server.c(1917),ERROR" ID="0xef823bea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] register apes failed! ret=%u. @ssf_as_server.c(1937),ERROR" ID="0xef823c8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get attribute group len failed! ret=%u. @ssf_as_server.c(1943),ERROR" ID="0xef823cba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] ape_param is NULL! @ssf_as_server.c(1948),ERROR" ID="0xef823ce2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] encode attribute group apes failed! ret=%u. @ssf_as_server.c(1953),ERROR" ID="0xef823d0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] create sink attribute group apes failed! ret=%u. @ssf_as_server.c(1960),ERROR" ID="0xef823d42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] create source attribute group apes failed! ret=%u. @ssf_as_server.c(1966),ERROR" ID="0xef823d72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] create source endpoint failed! ret=%u. @ssf_as_server.c(1991),ERROR" ID="0xef823e3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] create sink endpoint failed! ret=%u. @ssf_as_server.c(2007),ERROR" ID="0xef823eba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] AS create endpoints success! @ssf_as_server.c(2015),INFO" ID="0xef823efd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] register server failed! ret=%u. @ssf_as_server.c(2024),ERROR" ID="0xef823f42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] create endpoints failed! ret=%u. @ssf_as_server.c(2029),ERROR" ID="0xef823f6a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] server set data path, enable:%d, ret:%d @ssf_as_server.c(2063),INFO" ID="0xef82407d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] iso enable %d data_path failed. ret: %u @ssf_as_server.c(2065),ERROR" ID="0xef82408a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get conn_id with no ep_inst. %d @ssf_as_server.c(2080),ERROR" ID="0xef824102" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] no need handover handled. @ssf_as_server.c(2090),INFO" ID="0xef824155" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] swtich role failed. ret: %u @ssf_as_server.c(2111),ERROR" ID="0xef8241fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] set apes location failed! get location error, ret:0x%x @ssf_as_server.c(2122),ERROR" ID="0xef824252" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS][S] set apes location type:0x%x location_len:0x%x stream_channel:0x%x @ssf_as_server.c(2126),INFO" ID="0xef824275" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] set ape location with source failed. ret: %u @ssf_as_server.c(2132),ERROR" ID="0xef8242a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] set ape location with sink failed. ret: %u @ssf_as_server.c(2137),ERROR" ID="0xef8242ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] invalid sub role! %u @ssf_as_server.c(2150),ERROR" ID="0xef824332" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS][S] here get mic state cbk: conn_id: %u, capture: %u @ssf_as_server.c(2160),INFO" ID="0xef824385" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] register micps failed! ret: %u. @ssf_as_server.c(2169),ERROR" ID="0xef8243ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] start micps service failed! ret: %u. @ssf_as_server.c(2174),ERROR" ID="0xef8243f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get sub role failed! ret: %u. @ssf_as_server.c(2181),ERROR" ID="0xef82442a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] notify capture state failed! ret: %u. @ssf_as_server.c(2188),ERROR" ID="0xef824462" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] saf micps notify: %u @ssf_as_server.c(2192),INFO" ID="0xef824485" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] update bitrate request params is null! @ssf_as_server.c(2199),ERROR" ID="0xef8244ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] update bitrate request enter, ep_num:%d. @ssf_as_server.c(2202),INFO" ID="0xef8244d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] bitrate response malloc response fail. @ssf_as_server.c(2206),ERROR" ID="0xef8244f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] update bitrate failed! ret=%u. @ssf_as_server.c(2216),ERROR" ID="0xef824542" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] start apes service failed! ret: %u. @ssf_as_server.c(2263),ERROR" ID="0xef8246ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] start asms service failed! ret: %u. @ssf_as_server.c(2269),ERROR" ID="0xef8246ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] register iso callbacks failed! ret: %u. @ssf_as_server.c(2275),ERROR" ID="0xef82471a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] register sub role callbacks failed! ret: %u. @ssf_as_server.c(2281),ERROR" ID="0xef82474a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS][S] get current bitrate failed, param is NULL! @ssf_as_server.c(2333),ERROR" ID="0xef8248ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] get bitrate list failed, obj:%u! @ssf_as_server.c(2339),ERROR" ID="0xef82491a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] reporting reset obj:%u @ssf_as_server.c(2354),INFO" ID="0xef824995" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] reset as server info on remove pair, device_num:%u. @ssf_as_server.c(2369),INFO" ID="0xef824a0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS][S] overtime saf_asms_release_stream failed! ret=%u. @ssf_as_server.c(2402),ERROR" ID="0xef824b12" />
+			</MSG_LOG>

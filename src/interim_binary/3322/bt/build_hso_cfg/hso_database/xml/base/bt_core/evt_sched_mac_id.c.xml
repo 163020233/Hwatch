@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][ES info]es_get_bgle_task_mac_id, invalid_sed_type! sed_id=%d @evt_sched_mac_id.c(99),INFO" ID="0x8ae0031d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][ES info]classic_multi_mac_distribution: sed_id=%d, mac_id=%d @evt_sched_mac_id.c(143),INFO" ID="0x8ae0047d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][ES info]bgle_multi_mac_distribution: sed_id=%d, mac_id=%d @evt_sched_mac_id.c(148),INFO" ID="0x8ae004a5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][ES info]es_refresh_classic_task_mac_id:cur_mac_sel=%d,new_mac_sel=%d,lr=0x%x,sed_id=%d @evt_sched_mac_id.c(194),INFO" ID="0x8ae00615" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][ES info]es_refresh_ble_task_mac_id:cur_mac_sel=%d,new_mac_sel=%d,lr=0x%x,sed_id=%d @evt_sched_mac_id.c(219),INFO" ID="0x8ae006dd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][ES info]es_refresh_sle_task_mac_id:cur_mac_sel=%d,new_mac_sel=%d,lr=0x%x,sed_id=%d @evt_sched_mac_id.c(250),INFO" ID="0x8ae007d5" />
+			</MSG_LOG>

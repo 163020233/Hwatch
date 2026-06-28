@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_enc_h3_done memcpy error! @lm_classic_acl_srv_enc_ram.c(61),ERROR" ID="0x8afc01ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_enc_key_done:: memcpy private key error! @lm_classic_acl_srv_enc_ram.c(125),ERROR" ID="0x8afc03ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ENC]lm_classic_acl_enc_peripheral_enable_enc:: key_size[%u] @lm_classic_acl_srv_enc_ram.c(196),INFO" ID="0x8afc0625" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]acl_desc is NULL @lm_classic_acl_srv_enc_ram.c(215),INFO" ID="0x8afc06bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]enc srv_desc is NULL @lm_classic_acl_srv_enc_ram.c(221),INFO" ID="0x8afc06ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_hci_set_connection_enc_act:: enc_mode is current mode @lm_classic_acl_srv_enc_ram.c(271),INFO" ID="0x8afc087d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_hci_set_connection_enc_act:: fail to create srv fsm @lm_classic_acl_srv_enc_ram.c(279),ERROR" ID="0x8afc08ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_msg_pause_enc_req_handle_act:: invalid pause enc reqeust! @lm_classic_acl_srv_enc_ram.c(296),WARNING" ID="0x8afc0943" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_msg_pause_enc_req_handle_act:: fail to create srv fsm! @lm_classic_acl_srv_enc_ram.c(319),ERROR" ID="0x8afc09fa" />
+			</MSG_LOG>

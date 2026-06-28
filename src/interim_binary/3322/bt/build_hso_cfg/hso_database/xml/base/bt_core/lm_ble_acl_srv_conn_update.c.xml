@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BGTP]conn_update_calc_param_ind evt_sched_get_offset fail. upd_param-&gt;offset0=0x%x @lm_ble_acl_srv_conn_update.c(534),WARNING" ID="0x882410b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BGTP]conn_update_calc_param_ind evt_sched_get_offset fail. upd_param-&gt;offset0 is 0xFFFF @lm_ble_acl_srv_conn_update.c(544),WARNING" ID="0x88241103" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="linked_ico llcp_conn_param_req reject, con_hdl=%d @lm_ble_acl_srv_conn_update.c(959),INFO" ID="0x88241dfd" />
+			</MSG_LOG>

@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP]avdtp stream abort ind avdtp stream done @avdtp_sep.c(642),INFO" ID="0xeba61415" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP]Delay Report Req stream-&gt;remote_seid=0x%x @avdtp_sep.c(712),INFO" ID="0xeba61645" />
+			</MSG_LOG>

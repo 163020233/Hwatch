@@ -1,0 +1,25 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="add rssi adv filter alloc failed, length:%d @sle_srv_adv_filter.c(51),ERROR" ID="0xea74019a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add addr adv filter alloc failed, length:%d @sle_srv_adv_filter.c(65),ERROR" ID="0xea74020a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add name adv filter param err @sle_srv_adv_filter.c(85),ERROR" ID="0xea7402aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add name adv filter alloc failed, length:%d @sle_srv_adv_filter.c(91),ERROR" ID="0xea7402da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy name adv filter fail. @sle_srv_adv_filter.c(98),ERROR" ID="0xea740312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add service data adv filter alloc failed, length:%d @sle_srv_adv_filter.c(116),ERROR" ID="0xea7403a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy service data adv filter fail. @sle_srv_adv_filter.c(123),ERROR" ID="0xea7403da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy service data mask adv filter fail. @sle_srv_adv_filter.c(129),ERROR" ID="0xea74040a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add manufacturer data adv filter alloc failed, length:%d @sle_srv_adv_filter.c(148),ERROR" ID="0xea7404a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy manufacturer data adv filter fail. @sle_srv_adv_filter.c(155),ERROR" ID="0xea7404da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy manufacturer data mask adv filter fail. @sle_srv_adv_filter.c(161),ERROR" ID="0xea74050a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add adv type and service data adv filter alloc failed, length:%d @sle_srv_adv_filter.c(180),ERROR" ID="0xea7405a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy adv type and service data adv filter fail. @sle_srv_adv_filter.c(188),ERROR" ID="0xea7405e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add adv type and service data mask adv filter alloc failed, length:%d @sle_srv_adv_filter.c(209),ERROR" ID="0xea74068a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy adv type and service data adv filter fail. @sle_srv_adv_filter.c(217),ERROR" ID="0xea7406ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy adv type and service data mask adv filter fail. @sle_srv_adv_filter.c(223),ERROR" ID="0xea7406fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add user data adv filter alloc failed, length:%d @sle_srv_adv_filter.c(241),ERROR" ID="0xea74078a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy adv filter by hardware fail. @sle_srv_adv_filter.c(249),ERROR" ID="0xea7407ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle_parse_add_adv_filter_param, filter type %u err. @sle_srv_adv_filter.c(293),ERROR" ID="0xea74092a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi add adv filter fail, ret:0x%x @sle_srv_adv_filter.c(302),ERROR" ID="0xea740972" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add adv filter param null @sle_srv_adv_filter.c(314),ERROR" ID="0xea7409d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="parse add adv filter param fail, ret:0x%x @sle_srv_adv_filter.c(319),ERROR" ID="0xea7409fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi del adv filter fail, ret:0x%x @sle_srv_adv_filter.c(332),ERROR" ID="0xea740a62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi switch adv filter fail, ret:0x%x @sle_srv_adv_filter.c(345),ERROR" ID="0xea740aca" />
+			</MSG_LOG>

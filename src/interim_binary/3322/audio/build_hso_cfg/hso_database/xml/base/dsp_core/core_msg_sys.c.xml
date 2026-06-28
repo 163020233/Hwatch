@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sys_event.event = %u @core_msg_sys.c(43),INFO" ID="0x9856015d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_set_total_cps Failed, Error Code: [0x%08X] @core_msg_sys.c(80),ERROR" ID="0x98560282" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_set_idle_timeout Failed, Error Code: [0x%08X] @core_msg_sys.c(95),ERROR" ID="0x985602fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_get_proc_info Failed, Error Code: [0x%08X] @core_msg_sys.c(110),ERROR" ID="0x98560372" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_set_clock_attr Failed, Error Code: [0x%08X] @core_msg_sys.c(125),ERROR" ID="0x985603ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_clear_overlay_section Failed, Error Code: [0x%08X] @core_msg_sys.c(139),ERROR" ID="0x9856045a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_set_dsp_log_level Failed, Error Code: [0x%08X] @core_msg_sys.c(153),ERROR" ID="0x985604ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_get_audio_scene Failed, Error Code: [0x%08X] @core_msg_sys.c(167),ERROR" ID="0x9856053a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_set_audio_scene Failed, Error Code: [0x%08X] @core_msg_sys.c(181),ERROR" ID="0x985605aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_get_volume Failed, Error Code: [0x%08X] @core_msg_sys.c(195),ERROR" ID="0x9856061a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sys_set_volume Failed, Error Code: [0x%08X] @core_msg_sys.c(209),ERROR" ID="0x9856068a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sys_audio_get_global_mute Failed, Error Code: [0x%08X] @core_msg_sys.c(224),ERROR" ID="0x98560702" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sys_audio_set_global_mute Failed, Error Code: [0x%08X] @core_msg_sys.c(239),ERROR" ID="0x9856077a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_bmic_set_volume_matrix Failed, Error Code: [0x%08X] @core_msg_sys.c(260),ERROR" ID="0x98560822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_data-&gt;cmd = %u @core_msg_sys.c(292),ERROR" ID="0x98560922" />
+			</MSG_LOG>

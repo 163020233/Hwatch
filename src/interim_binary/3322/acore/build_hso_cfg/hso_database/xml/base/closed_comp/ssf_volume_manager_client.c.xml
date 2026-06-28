@@ -1,0 +1,21 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[SSF][VOLUME] set volume request, get conn id[%u] fail. device_id=%u, err[%u] @ssf_volume_manager_client.c(24),ERROR" ID="0xef9800c2" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][VOLUME] call volume req, get ep fail. devid[%u], conn_id[%u], volume[%u], ep_id[%u], err[%u] @ssf_volume_manager_client.c(35),ERROR" ID="0xef98011a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][VOLUME] media volume req, get ep fail. devid[%u], conn_id[%u], volume[%u], ep_id[%u] err[%u] @ssf_volume_manager_client.c(44),ERROR" ID="0xef980162" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][VOLUME] set device volume failed, devid[%u], conn_id[%u], volume[%u], ep_id[%u], err=%u @ssf_volume_manager_client.c(51),ERROR" ID="0xef98019a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][VOLUME] set channel[%u], type[%u], volume[%u] request, get obj_id[%u] err[%u] @ssf_volume_manager_client.c(63),ERROR" ID="0xef9801fa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][VOLUME] set type[%u], volume[%u] request, get obj_id[%u] err[%u] @ssf_volume_manager_client.c(84),ERROR" ID="0xef9802a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][VOLUME] bs_sle_set_call_volume_request obj:%u, volume:%u @ssf_volume_manager_client.c(95),INFO" ID="0xef9802fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] set call volume request, err=%u @ssf_volume_manager_client.c(98),ERROR" ID="0xef980312" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][VOLUME] bs_sle_set_media_volume_request obj:%u, volume:%u @ssf_volume_manager_client.c(106),INFO" ID="0xef980355" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] set media volume request, err=%u @ssf_volume_manager_client.c(109),ERROR" ID="0xef98036a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][VOLUME] bs_sle_set_media_volume_request obj:%u, volume:%u, chnnel:%d @ssf_volume_manager_client.c(116),INFO" ID="0xef9803a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] set media volume request, err=%u @ssf_volume_manager_client.c(119),ERROR" ID="0xef9803ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] set device initial call speaker volume @ssf_volume_manager_client.c(131),INFO" ID="0xef98041d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] set device initial media volume @ssf_volume_manager_client.c(136),INFO" ID="0xef980445" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] no initial volume need to set device @ssf_volume_manager_client.c(139),INFO" ID="0xef98045d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] set device initial volume failed, err=%u @ssf_volume_manager_client.c(144),ERROR" ID="0xef980482" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][VOLUME] get current volume state failed, err=%u @ssf_volume_manager_client.c(159),ERROR" ID="0xef9804fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] sync req get invalid device id. @ssf_volume_manager_client.c(164),ERROR" ID="0xef980522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] sync req get invalid obj. @ssf_volume_manager_client.c(170),ERROR" ID="0xef980552" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] client register failed @ssf_volume_manager_client.c(206),ERROR" ID="0xef980672" />
+			</MSG_LOG>

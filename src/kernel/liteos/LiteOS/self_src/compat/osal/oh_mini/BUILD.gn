@@ -1,0 +1,115 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+import("../../../../build/gn/libstatic.gni")
+import("$root_out_dir/liteos_kconfig.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("oh_mini") {
+        deps = [":libc_adapt"]
+        sources = [
+            "src/stub.c",
+            "src/shb_exc_info.c",
+            "src/shb_task_switch.c",
+            "src/fs_remove.c",
+            "src/disk_partition.c",
+        ]
+        configs += [":public"]
+    }
+
+    kernel_module("libc_adapt") {
+        sources = [
+            "src/adapt_time.c",
+        ]
+        # Put the private header file in the front.
+        default_config = configs
+        configs = []
+        configs = ["$LITEOSTOPDIR/lib/libc:private"] + default_config
+        configs += [":public"]
+    }
+} else {
+    static_library("oh_mini") {
+        cflags = [
+            "-Wno-macro-redefined",
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = [
+            "-Wno-macro-redefined",
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+            "$LITEOSTOPDIR/arch_s/riscv:public",
+            "$LITEOSTOPDIR/fs:public",
+        ]
+        sources = [
+            "src/stub.c",
+            "src/shb_exc_info.c",
+            "src/shb_task_switch.c",
+            "src/fs_remove.c",
+            "src/adapt_time.c",
+        ]
+
+        if (defined(LOSCFG_FS_FAT)) {
+            sources += [
+                "src/disk_partition.c"
+            ]
+        }
+
+        # Put the private header file in the front.
+        default_config = configs
+        configs = []
+        configs = ["$LITEOSTOPDIR/lib/libc:private"] + default_config
+        configs += [":public"]
+    }
+}
+
+config("public") {
+    if (defined(LOSCFG_ARCH_ARM_AARCH32)) {
+        if (defined(LOSCFG_ARCH_ARM_CORTEX_M)) {
+            arch = "arm/cortex_m"
+        } else {
+            arch = "arm/cortex_a_r"
+        }
+    } else if (defined(LOSCFG_ARCH_ARM_AARCH64)) {
+        arch = "aarch64"
+    } else if (defined(LOSCFG_ARCH_RISCV_RV32IMC)) {
+        arch = "riscv"
+    }
+
+    include_dirs = [
+        "$LITEOSTOPDIR/compat/osal/oh_mini/include",
+        "$LITEOSTOPDIR/${arch_path}/${arch}/include",
+    ]
+
+    defines = [
+        "CONFIG_OH_MINI",
+        "CONFIG_PRIVATE_DIRENT_STRUCT",
+    ]
+
+    if (defined(LOSCFG_PLATFORM_SH_AN)) {
+        defines += ["SUPPORT_DISK_PART"]
+    } else if(defined(LOSCFG_PLATFORM_SW21_APP_SE)) {
+        defines += ["SUPPORT_MBR_MULTIPLE_PART"]
+    } else if(defined(LOSCFG_PLATFORM_SW21_APP)) {
+        defines += ["SUPPORT_MBR_MULTIPLE_PART"]
+    }
+
+    if (defined(LOSCFG_SAFETY_KERNEL)) {
+        include_dirs += LITEOS_GN_USTATIC_INCLUDE
+        include_dirs += [
+            "${LITEOSTOPDIR}/fs/include",
+            "${RTOSLITETOPDIR}/open_source/incubator-nuttx/liteos/fs/include",
+            "${RTOSLITETOPDIR}/open_source/incubator-nuttx/liteos/fs/vfs/include/driver",
+            "${RTOSLITETOPDIR}/open_source/FatFs/source",
+            "${LITEOSTOPDIR}/compat/cmsis",
+            "${LITEOSTOPDIR}/fs/fat/include",
+        ]
+    }
+}

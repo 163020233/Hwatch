@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] gle_test_mode_tx_hopping not support 5.1G channels. @evt_task_gle_test_mode_ram.c(185),INFO" ID="0x8b2a05cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp] gle_test_mode tx_hopping is %d @evt_task_gle_test_mode_ram.c(189),INFO" ID="0x8b2a05ed" />
+			</MSG_LOG>

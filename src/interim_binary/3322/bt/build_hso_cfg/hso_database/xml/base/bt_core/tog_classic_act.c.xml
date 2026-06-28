@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][tog_debug] 0x%x 0x%x 0x%x 0x%x @tog_classic_act.c(185),INFO" ID="0x8a7e05cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tog] hci_toggle_start status=%#X @tog_classic_act.c(220),INFO" ID="0x8a7e06e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][tog] hci_toggle_stop. start_flag=%d, sync_env=%d @tog_classic_act.c(237),INFO" ID="0x8a7e076d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="revise tog time, curr_tog=%d, curr_clkoff=%d, curr_mobile_clk=%d @tog_classic_act.c(282),WARNING" ID="0x8a7e08d3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][tog] phone_clock=%u, tog_count=%u @tog_classic_act.c(290),INFO" ID="0x8a7e0915" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[tog]hci_get_tog_count_act, phone_clock:0x%x @tog_classic_act.c(328),INFO" ID="0x8a7e0a45" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[tog]hci_get_clock_and_tog_act, conhdl:%d, audio_delay:%d, tog_align:%d @tog_classic_act.c(352),INFO" ID="0x8a7e0b05" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[sco]hci_get_tog_count_act, master_clock:0x%x, conhdl:%d @tog_classic_act.c(377),INFO" ID="0x8a7e0bcd" />
+			</MSG_LOG>

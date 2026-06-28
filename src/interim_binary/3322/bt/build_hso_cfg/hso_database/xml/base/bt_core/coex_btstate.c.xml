@@ -1,0 +1,39 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_on_state = %d, mac_id = %d @coex_btstate.c(338),INFO" ID="0x8b520a95" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_inquiry_state = %d, mac_id = %d @coex_btstate.c(349),INFO" ID="0x8b520aed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_page_state = %d, mac_id = %d @coex_btstate.c(360),INFO" ID="0x8b520b45" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_a2dp_state = %d, mac_id = %d @coex_btstate.c(371),INFO" ID="0x8b520b9d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_sco_state = %d, mac_id = %d @coex_btstate.c(387),INFO" ID="0x8b520c1d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_sco_slot_state = %d[1:12, 2:6], mac_id = %d @coex_btstate.c(398),INFO" ID="0x8b520c75" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_bgle_data_send_state = %d, mac_id = %d @coex_btstate.c(409),INFO" ID="0x8b520ccd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_bgle_data_recv_state = %d, mac_id = %d @coex_btstate.c(420),INFO" ID="0x8b520d25" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_acl_num_state = %d, mac_id = %d @coex_btstate.c(450),INFO" ID="0x8b520e15" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP][COEX]coex_classic_link_id=%d, link_role=%d[0:m, 1:s], mac_id = %d @coex_btstate.c(470),INFO" ID="0x8b520eb5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_on_state = %d, mac_id = %d @coex_btstate.c(486),INFO" ID="0x8b520f35" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_scan_state = %d, mac_id = %d @coex_btstate.c(497),INFO" ID="0x8b520f8d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_adv_state = %d, mac_id = %d @coex_btstate.c(508),INFO" ID="0x8b520fe5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_init_state = %d, mac_id = %d @coex_btstate.c(519),INFO" ID="0x8b52103d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_con_state = %d, mac_id = %d @coex_btstate.c(530),INFO" ID="0x8b521095" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_hid_state = %d, mac_id = %d @coex_btstate.c(541),INFO" ID="0x8b5210ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_a2dp_state = %d, mac_id = %d @coex_btstate.c(552),INFO" ID="0x8b521145" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_sco_state = %d, mac_id = %d @coex_btstate.c(563),INFO" ID="0x8b52119d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_con_num_state = %d, mac_id = %d @coex_btstate.c(574),INFO" ID="0x8b5211f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_ble_hid_num_state = %d, mac_id = %d @coex_btstate.c(585),INFO" ID="0x8b52124d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_hid_num_state = %d, mac_id = %d @coex_btstate.c(597),INFO" ID="0x8b5212ad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_hid_state = %d, mac_id = %d @coex_btstate.c(608),INFO" ID="0x8b521305" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_bgle_a2dp_code_state = %d[0:sbc, 2:660, 3:990], mac_id = %d @coex_btstate.c(619),INFO" ID="0x8b52135d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_bgle_cur_use_ant_state = %d[bit0:A0,bit1:A1,bit2:Ad0,bit3:Ad1], mac_id = %d @coex_btstate.c(631),INFO" ID="0x8b5213bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_bgle_ant_occu_prio_state = %d, mac_id = %d @coex_btstate.c(698),INFO" ID="0x8b5215d5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_bgle_ant_occu_state = %d[bit0:C0, bit1:C1], mac_id = %d @coex_btstate.c(710),INFO" ID="0x8b521635" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_bgle_20dbm_state = %d, mac_id = %d @coex_btstate.c(721),INFO" ID="0x8b52168d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_bgle_ba_state = %d, mac_id = %d @coex_btstate.c(732),INFO" ID="0x8b5216e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_bgle_duty_cycle_state = %d, mac_id = %d @coex_btstate.c(743),INFO" ID="0x8b52173d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_sle_on_state = %d, mac_id = %d @coex_btstate.c(755),INFO" ID="0x8b52179d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_sle_hid_num_state = %d, mac_id = %d @coex_btstate.c(766),INFO" ID="0x8b5217f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_sle_hid_state = %d, mac_id = %d @coex_btstate.c(777),INFO" ID="0x8b52184d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_sle_hid_freq_state = %d, mac_id = %d @coex_btstate.c(788),INFO" ID="0x8b5218a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_sle_scan_state = %d, mac_id = %d @coex_btstate.c(799),INFO" ID="0x8b5218fd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_sle_a2dp_state = %d, mac_id = %d @coex_btstate.c(810),INFO" ID="0x8b521955" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_sle_sco_state = %d, mac_id = %d @coex_btstate.c(821),INFO" ID="0x8b5219ad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_low_latency_state = %d, mac_id = %d @coex_btstate.c(833),INFO" ID="0x8b521a0d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][COEX]coex_classic_party_mode_state = %d, mac_id = %d @coex_btstate.c(844),INFO" ID="0x8b521a65" />
+			</MSG_LOG>

@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[sle_reset]env ptr is null(conhdl=%d) @dm_gle_ram.c(101),INFO" ID="0x8b78032d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_reset]iob disconnect(conhdl=%d) @dm_gle_ram.c(106),INFO" ID="0x8b780355" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_reset]acb disconnect(conhdl=%d) @dm_gle_ram.c(125),INFO" ID="0x8b7803ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_reset]desc is null(syshdl=%d) @dm_gle_ram.c(141),INFO" ID="0x8b78046d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_reset]stop adv(handle=0x%x) @dm_gle_ram.c(183),INFO" ID="0x8b7805bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[sle_reset]stop scan start @dm_gle_ram.c(197),INFO" ID="0x8b78062d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[sle_reset]stop initiate start @dm_gle_ram.c(209),INFO" ID="0x8b78068d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="g_device_flag.classic_status %d, ble_status %d @dm_gle_ram.c(376),INFO" ID="0x8b780bc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dm_gle_hci_set_mode_enable_act sle_enable @dm_gle_ram.c(406),INFO" ID="0x8b780cb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dm_gle_hci_set_mode_enable_act sle_disable @dm_gle_ram.c(409),INFO" ID="0x8b780ccd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="not found active acb conhdl @dm_gle_ram.c(437),INFO" ID="0x8b780dad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="dm_gle_hci_set_host_priv_feat_value_act: bit_num=%d, bit_value=%d, feat=%x @dm_gle_ram.c(502),INFO" ID="0x8b780fb5" />
+			</MSG_LOG>

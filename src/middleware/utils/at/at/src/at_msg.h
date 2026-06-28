@@ -1,0 +1,68 @@
+/**
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2022. All rights reserved.
+ *
+ * Description: Provides at msg service header. Only for AT module. \n
+ *
+ * History: \n
+ * 2022-09-02, Create file. \n
+ */
+
+#ifndef    AT_MSG_H
+#define    AT_MSG_H
+
+#include "at_product.h"
+
+typedef enum {
+    AT_CMD_MSG                 = 0x0,
+    AT_CMD_RESULT_MSG          = 0x1,
+    AT_CMD_INTERACTIVITY_MSG   = 0x2,
+    AT_CMD_TIMEOUT_MSG         = 0x3,
+    AT_CMD_URC_REPORT_MSG      = 0x4,
+    AT_CMD_ACK_MSG             = 0x5,
+    AT_CMD_MSG_BUTT,
+} at_msg_type_t;
+
+
+typedef struct {
+    /* uint8_t *ack_str日志起始地址必须使用at_malloc申请的内存
+     * 在at_msg.c的at_msg_process()函数中at_free释放ack_str
+     */
+    uint8_t *ack_str;
+    uint32_t ack_str_len;
+} at_cmd_ack_msg_t;
+
+typedef struct {
+    uint16_t                     channel_id;
+    uint16_t                     len;
+} at_cmd_msg_t;
+
+typedef struct {
+    uint16_t                     err_code;
+    uint16_t                     cmd_id;
+} at_result_msg_t;
+
+typedef struct {
+    uint16_t                     urc_type;
+} at_urc_report_msg_t;
+
+typedef struct {
+    uint16_t                     type;
+    uint16_t                     cmd_id;
+} at_timeout_msg_t;
+
+typedef struct {
+    at_msg_type_t                type;
+    union {
+        at_cmd_msg_t             cmd;
+        at_result_msg_t          result;
+        at_urc_report_msg_t      urc;
+        at_timeout_msg_t         timeout;
+        at_cmd_msg_t             interactivity;
+        at_cmd_ack_msg_t         ack;
+    } sub_msg;
+} at_msg_block_t;
+
+errcode_t at_msg_send(at_msg_block_t *msg);
+
+void at_msg_process(at_msg_block_t *msg);
+#endif

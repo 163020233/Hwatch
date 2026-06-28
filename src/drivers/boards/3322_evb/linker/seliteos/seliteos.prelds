@@ -1,0 +1,338 @@
+/******************************************************************************
+ * @brief    LDS file setting the memory and code locations
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2024-2024. All rights reserved.
+******************************************************************************/
+
+#include "seliteos_memory_config.h"
+OUTPUT_ARCH(riscv)
+ENTRY(Reset_Handler)
+
+/* kernel */
+#define LIB_KERNEL_LIST \
+    *libseliteos_kernel.a:*.obj *libsec_storage.a:*.obj *libtarget.a:*.obj \
+    *libqcbor.a:*.obj \
+    *tee_psa_crypto.a:*.obj \
+    *tee_psa_attestation.a:*.obj \
+    *tee_psa_storage.a:*.obj
+
+#define LIB_KERNEL_FUNC(func) \
+    func(*libseliteos_kernel.a:*.obj) \
+    func(*libsec_storage.a:*.obj) \
+    func(*libtarget.a:*.obj) \
+    func(*libqcbor.a:*.obj) \
+    func(*tee_psa_crypto.a:*.obj) \
+    func(*tee_psa_attestation.a:*.obj) \
+    func(*tee_psa_storage.a:*.obj)
+
+/* commonlib running on flash, just for test */
+#define LIB_FLASH_COMMON_LIST \
+    *libseliteos_testcase.a:*.obj \
+    *libtest_seliteos_kernel.a:*.obj \
+    *libseliteos_startup.a:*.obj
+
+#define LIB_FLASH_COMMON_FUNC(func) \
+    func(*libseliteos_testcase.a:*.obj) \
+    func(*libtest_seliteos_kernel.a:*.obj) \
+    func(*libseliteos_startup.a:*.obj)
+
+/* drvbox */
+#define LIB_DRVBOX_LIST \
+    *libtcxo.a:*.obj *libhal_tcxo.a:*.obj *libtcxo_port.a:*.obj \
+    *libhal_security_unified.a:*.obj *libsecurity_unified_port.a:*.obj *libdrv_security_unified.a:*.obj \
+    *libdrvbox_uart.a:*.obj \
+    *libhal_gpio_v150.a:*.obj *libgpio.a:*.obj *libgpio_port.a:*.obj \
+    *libpinctrl.a:*.obj *libhal_pinctrl.a:*.obj *libport_pinctrl.a:*.obj \
+    *libhal_uart.a:*.obj *libuart.a:*.obj *libuart_port.a:*.obj \
+    *libhal_efuse_v151.a:*.obj *libefuse_porting.a:*.obj \
+    *libtee_efuse.a:*.obj
+
+#define LIB_DRVBOX_FUNC(func) \
+    func(*libtcxo.a:*.obj) \
+    func(*libhal_tcxo.a:*.obj) \
+    func(*libtcxo_port.a:*.obj) \
+    func(*libhal_security_unified.a:*.obj) \
+    func(*libsecurity_unified_port.a:*.obj) \
+    func(*libdrv_security_unified.a:*.obj) \
+    func(*libdrvbox_uart.a:*.obj) \
+    func(*libhal_gpio_v150.a:*.obj) \
+    func(*libgpio.a:*.obj) \
+    func(*libgpio_port.a:*.obj) \
+    func(*libpinctrl.a:*.obj) \
+    func(*libhal_pinctrl.a:*.obj) \
+    func(*libport_pinctrl.a:*.obj) \
+    func(*libhal_uart.a:*.obj) \
+    func(*libuart.a:*.obj) \
+    func(*libuart_port.a:*.obj) \
+    func(*libhal_efuse_v151.a:*.obj) \
+    func(*libefuse_porting.a:*.obj) \
+    func(*libtee_efuse.a:*.obj)
+
+/* boxA */
+#define LIB_BOXA_LIST \
+    *libboxA.a:*.obj
+
+#define LIB_BOXA_FUNC(func) \
+    func(*libboxA.a:*.obj)
+
+/* boxB */
+#define LIB_BOXB_LIST \
+    *libboxB.a:*.obj
+
+#define LIB_BOXB_FUNC(func) \
+    func(*libboxB.a:*.obj)
+
+#define SORT_TEXT(lib) SORT(lib)(.text*)
+#define SORT_RODATA(lib) SORT(lib)(.rodata* .srodata*)
+#define SORT_DATA(lib) SORT(lib)(.data* .sdata*)
+#define SORT_BSS(lib) SORT(lib)(.bss* .sbss*)
+
+/* usrbox */
+#define LIB_USRBOX_LIST LIB_BOXA_LIST LIB_BOXB_LIST
+
+/* not common lib */
+#define LIB_NOT_USER_LIST LIB_KERNEL_LIST LIB_DRVBOX_LIST LIB_USRBOX_LIST LIB_FLASH_COMMON_LIST
+
+/* make this table consistent with the configuration given by the security core */
+MEMORY
+{
+    /* FLASH */
+    FLASH               : ORIGIN = SELITEOS_PROGRAM_ORIGIN,                      LENGTH = SELITEOS_PROGRAM_LENGTH
+
+    /* FLASH_EXT */
+    FLASH_COMMON_TEXT   : ORIGIN = FLASH_COMMON_TEXT_START,                      LENGTH = FLASH_COMMON_TEXT_SIZE
+    FLASH_COMMON_RODATA : ORIGIN = FLASH_COMMON_RODATA_START,                    LENGTH = FLASH_COMMON_RODATA_SIZE
+    FLASH_BOXA_CODE     : ORIGIN = BOXA_TEXT_RODATA_START,                       LENGTH = BOXA_TEXT_RODATA_SIZE
+    FLASH_BOXB_CODE     : ORIGIN = BOXB_TEXT_RODATA_START,                       LENGTH = BOXB_TEXT_RODATA_SIZE
+    FLASH_EXT           : ORIGIN = FLASH_EXT_START,                              LENGTH = FLASH_EXT_SIZE
+
+    /* ITCM */
+    ITCM_KERNEL_CODE    : ORIGIN = KERNEL_TEXT_RODATA_START + FLASH_SIGN_HEADER, LENGTH = KERNEL_TEXT_RODATA_SIZE - FLASH_SIGN_HEADER
+    ITCM_DRVBOX_TEXT    : ORIGIN = DRVBOX_TEXT_START,                            LENGTH = DRVBOX_TEXT_SIZE
+    ITCM_USR_TEXT       : ORIGIN = USR_TEXT_START,                               LENGTH = USR_TEXT_SIZE
+    ITCM_DRVBOX_RODATA  : ORIGIN = DRVBOX_RODATA_START,                          LENGTH = DRVBOX_RODATA_SIZE
+    ITCM_USR_RODATA     : ORIGIN = USR_RODATA_START,                             LENGTH = USR_RODATA_SIZE
+
+    /* DTCM */
+    DTCM_BOXA_DATA      : ORIGIN = BOXA_DATA_START,                              LENGTH = BOXA_DATA_SIZE
+    DTCM_BOXB_DATA      : ORIGIN = BOXB_DATA_START,                              LENGTH = BOXB_DATA_SIZE
+    DTCM_KERNEL_DATA    : ORIGIN = KERNEL_DATA_START,                            LENGTH = KERNEL_DATA_SIZE
+    DTCM_USR_DATA       : ORIGIN = USR_DATA_START,                               LENGTH = USR_DATA_SIZE
+    DTCM_USR_RO_DATA    : ORIGIN = USR_RO_DATA_START,                            LENGTH = USR_RO_DATA_SIZE
+    DTCM_DRVBOX_DATA    : ORIGIN = DRVBOX_DATA_START,                            LENGTH = DRVBOX_DATA_SIZE
+    DTCM_SHARED_DATA    : ORIGIN = SHARED_DATA_START,                            LENGTH = SHARED_DATA_SIZE
+}
+
+SECTIONS
+{
+    /* Code and const data */
+    __kernel_text_rodata_start = KERNEL_TEXT_RODATA_START;
+    .kernel.text : {
+        *(.text.entry)
+        *(.text.lowpower*)
+        SORT(*)(.kernel.text)
+        LIB_KERNEL_FUNC(SORT_TEXT)
+        . = ALIGN(0x4);
+    } > ITCM_KERNEL_CODE AT > FLASH
+
+    .kernel.rodata : {
+        __kernel_rodata_start = .;
+        LIB_KERNEL_FUNC(SORT_RODATA)
+        __kernel_rodata_end = .;
+        __kernel_text_rodata_end = .;
+    } > ITCM_KERNEL_CODE AT > FLASH
+    __kernel_rodata_size = __kernel_rodata_end - __kernel_rodata_start;
+    __kernel_text_rodata_size = __kernel_text_rodata_end - __kernel_text_rodata_start;
+
+    .kernel.rodata.flash.fill : {
+        . += KERNEL_TEXT_RODATA_SIZE - __kernel_text_rodata_size;
+    } > FLASH
+
+    /* drvbox text section */
+    __drvbox_text_start = DRVBOX_TEXT_START;
+    .drvbox.text : {
+        SORT(*)(.drvbox.text*)
+        LIB_DRVBOX_FUNC(SORT_TEXT)
+        __drvbox_text_end = .;
+    } > ITCM_DRVBOX_TEXT AT > FLASH
+    __drvbox_text_size = __drvbox_text_end - __drvbox_text_start;
+
+    .drvbox.text.flash.fill : {
+        . = ALIGN(DRVBOX_TEXT_ALIGNED_SIZE);
+    } > FLASH
+
+    /* common text section */
+    __usr_text_start = USR_TEXT_START;
+    .usr.text : {
+        SORT(*)(.usr.text*)
+        SORT(*)(EXCLUDE_FILE(LIB_NOT_USER_LIST) .text*)
+        __usr_text_end = .;
+    } > ITCM_USR_TEXT AT > FLASH
+    __usr_text_size = __usr_text_end - __usr_text_start;
+
+    .usr.text.flash.fill : {
+        . += USR_TEXT_SIZE - __usr_text_size;
+    } > FLASH
+
+    /* drvbox rodata section */
+    __drvbox_rodata_start = DRVBOX_RODATA_START;
+    .drvbox.rodata : {
+        LIB_DRVBOX_FUNC(SORT_RODATA)
+        __drvbox_rodata_end = .;
+    } > ITCM_DRVBOX_RODATA AT > FLASH
+    __drvbox_rodata_size = __drvbox_rodata_end - __drvbox_rodata_start;
+
+    .drvbox.rodata.flash.fill : {
+        . += DRVBOX_RODATA_SIZE - __drvbox_rodata_size;
+    } > FLASH
+
+    /* common rodata section */
+    __usr_rodata_start = USR_RODATA_START;
+    .usr.rodata : {
+        SORT(*)(EXCLUDE_FILE(LIB_NOT_USER_LIST) .rodata*)
+        SORT(*)(EXCLUDE_FILE(LIB_NOT_USER_LIST) .srodata*)
+        __ta_array_begin__ = .;
+        KEEP(*(SORT(.ta_array*)))
+        __ta_array_end__ = .;
+        __usr_rodata_end = .;
+     } > ITCM_USR_RODATA AT > FLASH
+    __usr_rodata_size = __usr_rodata_end - __usr_rodata_start;
+
+    .usr.rodata.flash.fill : {
+        . += USR_RODATA_SIZE - __usr_rodata_size;
+    } > FLASH
+
+    __flash_common_text_start = FLASH_COMMON_TEXT_START;
+    .flash.common.text : {
+        LIB_FLASH_COMMON_FUNC(SORT_TEXT)
+        __flash_common_text_end = .;
+    } > FLASH_COMMON_TEXT
+    __flash_common_text_size = __flash_common_text_end - __flash_common_text_start;
+
+    __flash_common_rodata_start = FLASH_COMMON_RODATA_START;
+    .flash.common.rodata : {
+        LIB_FLASH_COMMON_FUNC(SORT_RODATA)
+        __flash_common_rodata_end = .;
+    } > FLASH_COMMON_RODATA
+    __flash_common_rodata_size = __flash_common_rodata_end - __flash_common_rodata_start;
+
+    #include "ta.lds"
+
+    /* kernel data section */
+    __kernel_data_start = KERNEL_DATA_START;
+    .kernel.data : ALIGN(0x20) {
+        LIB_KERNEL_FUNC(SORT_DATA)
+        . = ALIGN(0x20);
+        _gp_ = .;
+    } > DTCM_KERNEL_DATA AT > FLASH_EXT
+    __kernel_data_load_start = LOADADDR(.kernel.data);
+    __kernel_data_load_size = SIZEOF(.kernel.data);
+    __global_pointer$ = _gp_;
+
+    /* kernel bss section */
+    .kernel.bss (NOLOAD): ALIGN(0x20) {
+        __kernel_bss_start = .;
+        SORT(*)(.kernel.bss)
+        LIB_KERNEL_FUNC(SORT_BSS)
+        . = ALIGN(0x20);
+        __kernel_bss_end = .;
+    } > DTCM_KERNEL_DATA
+    __kernel_bss_size = __kernel_bss_end - __kernel_bss_start;
+
+    .kernel.stack (NOLOAD): ALIGN(0x20) {
+        __kernel_stack_start = .;
+        __startup_stack = .;
+        . += KERNEL_STACK_SIZE;
+        __startup_stack_top = .;
+        __kernel_stack_end = .;
+    } > DTCM_KERNEL_DATA
+    __kernel_stack_size = __kernel_stack_end - __kernel_stack_start;
+
+    /* kernel heap section */
+    .kernel.heap (NOLOAD) : ALIGN(0x20) {
+        __kernel_heap_start = .;
+        . += KERNEL_HEAP_SIZE;
+        __kernel_heap_end = .;
+        __kernel_data_end = .;
+    } > DTCM_KERNEL_DATA
+    __kernel_heap_size = __kernel_heap_end - __kernel_heap_start;
+    __kernel_data_size = __kernel_data_end - __kernel_data_start;
+
+    /* common data section */
+    __usr_data_start = USR_DATA_START;
+    .usr.data : ALIGN(0x20) {
+        SORT(*)(EXCLUDE_FILE(LIB_NOT_USER_LIST) .data*)
+        SORT(*)(EXCLUDE_FILE(LIB_NOT_USER_LIST) .sdata*)
+        LIB_FLASH_COMMON_FUNC(SORT_DATA)
+        SORT(*)(.usr.data*)
+        . = ALIGN(0x20);
+    } > DTCM_USR_DATA AT > FLASH_EXT
+    __usr_data_load_start = LOADADDR(.usr.data);
+    __usr_data_load_size = SIZEOF(.usr.data);
+
+    /* usr bss section */
+    .usr.bss (NOLOAD) : ALIGN(0x20) {
+        __usr_bss_start = .;
+        SORT(*)(EXCLUDE_FILE(LIB_NOT_USER_LIST) .bss*)
+        SORT(*)(EXCLUDE_FILE(LIB_NOT_USER_LIST) .sbss*)
+        LIB_FLASH_COMMON_FUNC(SORT_BSS)
+        SORT(*)(.usr.bss*)
+        __usr_bss_end = .;
+        __usr_data_end = .;
+    } > DTCM_USR_DATA
+    __usr_bss_size = __usr_bss_end - __usr_bss_start;
+    __usr_data_size = __usr_data_end - __usr_data_start;
+
+    /* .usr.ro.data can only be read by user space, but can both be read and written by kernel space */
+    __usr_readonly_data_start = USR_RO_DATA_START;
+    .usr.ro.data : ALIGN(0x20) {
+        SORT(*)(.usr.ro.data)
+        __usr_readonly_data_end = .;
+    } > DTCM_USR_RO_DATA AT > FLASH_EXT
+    __usr_readonly_data_load_start = LOADADDR(.usr.ro.data);
+    __usr_readonly_data_load_size = SIZEOF(.usr.ro.data);
+    __usr_readonly_data_size = __usr_readonly_data_end - __usr_readonly_data_start;
+
+    /* drvbox data section */
+    __drvbox_data_start = DRVBOX_DATA_START;
+    .drvbox.data : ALIGN(0x20) {
+        SORT(*)(.drvbox.data*)
+        LIB_DRVBOX_FUNC(SORT_DATA)
+        . = ALIGN(0x20);
+    } > DTCM_DRVBOX_DATA AT > FLASH_EXT
+    __drvbox_data_load_start = LOADADDR(.drvbox.data);
+    __drvbox_data_load_size = SIZEOF(.drvbox.data);
+
+    /* drvbox bss section */
+    .drvbox.bss (NOLOAD) : ALIGN(0x20) {
+        __drvbox_bss_start = .;
+        SORT(*)(.drvbox.bss*)
+        LIB_DRVBOX_FUNC(SORT_BSS)
+        __drvbox_bss_end = .;
+    } > DTCM_DRVBOX_DATA
+    __drvbox_bss_size = __drvbox_bss_end - __drvbox_bss_start;
+
+    /* drvbox heap section */
+    .drvbox.heap (NOLOAD) : ALIGN(0x20) {
+        __drvbox_heap_start = .;
+        . += DRVBOX_HEAP_SIZE;
+        __drvbox_heap_end = .;
+        __drvbox_data_end = .;
+    } > DTCM_DRVBOX_DATA
+    __drvbox_heap_size = __drvbox_heap_end - __drvbox_heap_start;
+    __drvbox_data_size = __drvbox_data_end - __drvbox_data_start;
+
+    /* shared data section */
+    __shared_data_start = SHARED_DATA_START;
+    __shared_data_ree_alloc_start = SHARED_DATA_START;
+    .shared.data (NOLOAD) : {
+        . += SHARED_DATA_REE_ALLOC_SIZE;
+        __shared_data_ree_alloc_end = .;
+        __shared_data_tee_alloc_start = .;
+        . += SHARED_DATA_TEE_ALLOC_SIZE;
+        __shared_data_tee_alloc_end = .;
+        __shared_data_end = .;
+    } > DTCM_SHARED_DATA
+    __shared_data_ree_alloc_size = __shared_data_ree_alloc_end - __shared_data_ree_alloc_start;
+    __shared_data_tee_alloc_size = __shared_data_tee_alloc_end - __shared_data_tee_alloc_start;
+    __shared_data_size = __shared_data_end - __shared_data_start;
+}

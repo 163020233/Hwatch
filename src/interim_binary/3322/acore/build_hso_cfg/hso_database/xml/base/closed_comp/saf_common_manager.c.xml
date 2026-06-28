@@ -1,0 +1,24 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] conn changed, alloc msg err! conn_id=%u @saf_common_manager.c(78),ERROR" ID="0xe95a0272" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] conn changed, memcpy addr failed! conn_id=%u  @saf_common_manager.c(90),ERROR" ID="0xe95a02d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] conn changed, send msg err! conn_id=%u @saf_common_manager.c(97),ERROR" ID="0xe95a030a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[saf][saf common] conn changed, conn_id=%u conn_state=%u sle_pair_state_t=%u disc_reason=%u @saf_common_manager.c(107),INFO" ID="0xe95a035d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][saf common] pair complete, conn_id=%u status=%u @saf_common_manager.c(116),INFO" ID="0xe95a03a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][saf common] pair complete err!, conn_id=%u status=%u @saf_common_manager.c(119),ERROR" ID="0xe95a03ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] conn node init, memset err! @saf_common_manager.c(130),ERROR" ID="0xe95a0412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] new node, memcpy err! conn id = %u @saf_common_manager.c(146),ERROR" ID="0xe95a0492" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] new conn code err! conn id = %u @saf_common_manager.c(172),ERROR" ID="0xe95a0562" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][saf common] get conn node, conn node exist! conn id = %u, state = %u @saf_common_manager.c(178),ERROR" ID="0xe95a0592" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] clear conn node, conn node not found! conn id = %u @saf_common_manager.c(197),ERROR" ID="0xe95a062a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] free proc fun null! @saf_common_manager.c(204),ERROR" ID="0xe95a0662" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] clear conn_node, memset addr err! conn id = %u @saf_common_manager.c(217),ERROR" ID="0xe95a06ca" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][saf common] find structure complete, conn_id=%u service_count=%u status=%u @saf_common_manager.c(351),INFO" ID="0xe95a0afd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] find structure, not register @saf_common_manager.c(367),ERROR" ID="0xe95a0b7a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][saf common] find structure, conn_id=%u ret=%u @saf_common_manager.c(372),INFO" ID="0xe95a0ba5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] conn change proc, param len err! param_len=%u @saf_common_manager.c(381),ERROR" ID="0xe95a0bea" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[saf][saf common] conn change proc, conn_id=%u conn_state=%u sle_pair_state=%u disc_reason=%u @saf_common_manager.c(388),INFO" ID="0xe95a0c25" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] conn change proc, already paired, start find structure, ret=%u @saf_common_manager.c(394),INFO" ID="0xe95a0c55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] already init! @saf_common_manager.c(412),INFO" ID="0xe95a0ce5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] connect cbk register failed! ret = %u @saf_common_manager.c(428),ERROR" ID="0xe95a0d62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] connect cbk not register @saf_common_manager.c(438),INFO" ID="0xe95a0db5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] connect cbk unregister failed! ret = %u @saf_common_manager.c(450),ERROR" ID="0xe95a0e12" />
+			</MSG_LOG>

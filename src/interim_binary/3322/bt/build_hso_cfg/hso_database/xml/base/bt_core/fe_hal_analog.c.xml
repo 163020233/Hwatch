@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]write to:0x%x = 0x%x, read back value:0x%x @fe_hal_analog.c(398),INFO" ID="0x89780c75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]bt_hal_get_full_addr: INVALID reg 0x%x @fe_hal_analog.c(422),ERROR" ID="0x89780d32" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]fe_write_rf_reg error address 0x%x, value 0x%x @fe_hal_analog.c(431),ERROR" ID="0x89780d7a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ERROR]ADDR 0x%x, read=0x%x, VALUE=0x%x @fe_hal_analog.c(443),ERROR" ID="0x89780dda" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="fe_restore_rf_register:Wrong reg type[%d]! reg_idx[%d] rf_idx[%d] @fe_hal_analog.c(582),INFO" ID="0x89781235" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="fe_restore_rf_register: type[%d] Not found reg_idx=%d rf_idx[%d] @fe_hal_analog.c(593),INFO" ID="0x8978128d" />
+			</MSG_LOG>

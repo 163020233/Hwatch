@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="br call conn state error @bs_br_hfp_ag.c(38),ERROR" ID="0xee8a0132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call conn state error @bs_br_hfp_ag.c(62),ERROR" ID="0xee8a01f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call dial req cbk number is NULL. @bs_br_hfp_ag.c(84),ERROR" ID="0xee8a02a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_hfp_ag.c(91),ERROR" ID="0xee8a02da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_hfp_ag.c(113),ERROR" ID="0xee8a038a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_hfp_ag.c(131),ERROR" ID="0xee8a041a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_hfp_ag.c(155),ERROR" ID="0xee8a04da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_hfp_ag.c(174),ERROR" ID="0xee8a0572" />
+			</MSG_LOG>

@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][c_frame]resched_first_child_node, group_start_time 0x%x @evt_task_gle_c_frame_child_node_isr.c(58),INFO" ID="0x8bd001d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][c_frame]insert_child_node_sched, offset 0x%x invalid! @evt_task_gle_c_frame_child_node_isr.c(120),WARNING" ID="0x8bd003c3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][c_frame]insert_child_node_sched fail, srv_mode %d, srv_id %d, ts 0x%x, prio %d @evt_task_gle_c_frame_child_node_isr.c(133),WARNING" ID="0x8bd0042b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][c_frame]insert_first_child_node_sched, group_start_time 0x%x, g_ts 0x%x @evt_task_gle_c_frame_child_node_isr.c(187),WARNING" ID="0x8bd005db" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][c_frame]insert_first_child_node_sched, group_start_time 0x%x, c_ts 0x%x, group_num %d, group_idx %d @evt_task_gle_c_frame_child_node_isr.c(193),INFO" ID="0x8bd0060d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][c_frame]child_node_start_cbk, stop sched, sed_id 0x%x @evt_task_gle_c_frame_child_node_isr.c(224),INFO" ID="0x8bd00705" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][c_frame]evt_task_gle_c_frame_child_node_cancel_cbk @evt_task_gle_c_frame_child_node_isr.c(253),INFO" ID="0x8bd007ed" />
+			</MSG_LOG>

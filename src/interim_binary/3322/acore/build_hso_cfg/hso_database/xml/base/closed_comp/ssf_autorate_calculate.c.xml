@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AUTORATE] no can use param! @ssf_autorate_calculate.c(77),WARNING" ID="0xefbc026b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AUTORATE] default level wrong! @ssf_autorate_calculate.c(144),ERROR" ID="0xefbc0482" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AUTORATE]default level %d! @ssf_autorate_calculate.c(152),INFO" ID="0xefbc04c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AUTORATE] in the best level! @ssf_autorate_calculate.c(164),INFO" ID="0xefbc0525" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AUTORATE] up level wrong! @ssf_autorate_calculate.c(170),ERROR" ID="0xefbc0552" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AUTORATE] begin autorate! up level!: cur level [%d] next level [%d] @ssf_autorate_calculate.c(179),INFO" ID="0xefbc059d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AUTORATE] in the worst level! @ssf_autorate_calculate.c(187),ERROR" ID="0xefbc05da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AUTORATE] down level wrong! @ssf_autorate_calculate.c(193),ERROR" ID="0xefbc060a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AUTORATE] unstable! next up need quality good %ds! @ssf_autorate_calculate.c(206),INFO" ID="0xefbc0675" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AUTORATE] begin autorate! down level!: cur level [%d] next level [%d] @ssf_autorate_calculate.c(214),INFO" ID="0xefbc06b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][AUTORATE] tx_ack: %u, tx_flushed: %u, diff_max: %d, diff_total: %d @ssf_autorate_calculate.c(228),INFO" ID="0xefbc0725" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][AUTORATE] bad:%d | good:%d | keep:%d | unstable: %d | case:%d @ssf_autorate_calculate.c(253),INFO" ID="0xefbc07ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AUTORATE]reset level wrong! @ssf_autorate_calculate.c(276),ERROR" ID="0xefbc08a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AUTORATE] finish autorate level[%d] to [%d] @ssf_autorate_calculate.c(299),INFO" ID="0xefbc095d" />
+			</MSG_LOG>

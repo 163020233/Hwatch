@@ -1,0 +1,40 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="download">
+            <text class="todo-title">连续下载</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="multiHttpRequest">
+            <text class="todo-title">4 http实例请求</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="multiHttpRequestLoop">
+            <text class="todo-title">4 http实例循环请求</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="initWsClient">
+            <text class="todo-title">4 ws实例初始化</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="multiWebsocket">
+            <text class="todo-title">4 ws实例发消息</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="multiWebsocketLoop">
+            <text class="todo-title">4 ws实例循环发消息</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="initHttpAndWebSocket">
+            <text class="todo-title">2 http & 2 ws初始化</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="httpAndWebSocketTest">
+            <text class="todo-title">2 http请求 & 2 ws发消息</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="httpAndWebSocketTestLoop">
+            <text class="todo-title">2 http循环 & 2 ws循环</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="stopHttpRequest">
+            <text class="todo-title">停止http请求</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="closeWsClient">
+            <text class="todo-title">关闭wsClient</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceHomePage">
+            <text class="todo-title">BACK</text>
+        </list-item>
+    </list>
+</div>

@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="ble service memnew fail @ble_device_pair.c(21),ERROR" ID="0xea5a00aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble pair fail, get addr by dev_id error, dev_id 0x%x @ble_device_pair.c(29),ERROR" ID="0xea5a00ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble service memnew fail @ble_device_pair.c(110),ERROR" ID="0xea5a0372" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="disconnect fail 0x%x @ble_device_pair.c(125),ERROR" ID="0xea5a03ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="disconnect dev_id:%d fail. @ble_device_pair.c(154),ERROR" ID="0xea5a04d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="remove paired device fail: dev id list is uninitialized! @ble_device_pair.c(189),ERROR" ID="0xea5a05ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="remove paired device fail: dev_id = %d! @ble_device_pair.c(199),ERROR" ID="0xea5a063a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="removed paired devices num: %u! @ble_device_pair.c(204),INFO" ID="0xea5a0665" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="get paired dev address fail @ble_device_pair.c(223),ERROR" ID="0xea5a06fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="get paired dev info fail: memcpy address fail! @ble_device_pair.c(227),ERROR" ID="0xea5a071a" />
+			</MSG_LOG>

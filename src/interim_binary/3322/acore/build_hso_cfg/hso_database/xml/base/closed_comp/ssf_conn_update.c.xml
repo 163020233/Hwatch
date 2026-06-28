@@ -1,0 +1,32 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] get appearance fail. @ssf_conn_update.c(47),DBG" ID="0xef7c017e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] appearance %d does not need to update connection params @ssf_conn_update.c(58),DBG" ID="0xef7c01d6" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] update param fail, appearance %d. @ssf_conn_update.c(61),ERROR" ID="0xef7c01ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset conn param: repeated mode id, update value! @ssf_conn_update.c(121),DBG" ID="0xef7c03ce" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle add preset connect param faild: reach max num[%u]! @ssf_conn_update.c(127),ERROR" ID="0xef7c03fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset connect param faild: mem alloc fail @ssf_conn_update.c(132),ERROR" ID="0xef7c0422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset connect param faild: memcopy fail @ssf_conn_update.c(137),ERROR" ID="0xef7c044a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset connect param faild: invalid input! @ssf_conn_update.c(147),ERROR" ID="0xef7c049a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle rmv preset connect param faild: no match! @ssf_conn_update.c(170),ERROR" ID="0xef7c0552" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle rmv preset connect param faild: invalid input! @ssf_conn_update.c(181),ERROR" ID="0xef7c05aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle qry preset connect param faild: no match! @ssf_conn_update.c(204),ERROR" ID="0xef7c0662" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle qry preset connect param faild: memcpy fail, ret = %d! @ssf_conn_update.c(213),ERROR" ID="0xef7c06aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle qry preset connect param faild: invalid input! @ssf_conn_update.c(222),ERROR" ID="0xef7c06f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle lst preset connect param faild: empty! @ssf_conn_update.c(242),ERROR" ID="0xef7c0792" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle lst preset connect param faild: input ptr null! @ssf_conn_update.c(252),ERROR" ID="0xef7c07e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle operate preset connect param type invalid! @ssf_conn_update.c(277),ERROR" ID="0xef7c08aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle set connect param by mode id fail: query null! @ssf_conn_update.c(289),ERROR" ID="0xef7c090a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle set connect param device id error! id 0x%x @ssf_conn_update.c(295),ERROR" ID="0xef7c093a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle set connect param by mode id fail: ret = %u! @ssf_conn_update.c(308),ERROR" ID="0xef7c09a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle set default connect param by mode id fail: ret = %u! @ssf_conn_update.c(319),ERROR" ID="0xef7c09fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble set phy param by mode id fail: query null! @ssf_conn_update.c(334),DBG" ID="0xef7c0a76" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] bs_sle_set_phy_param, invaild dev_id:%u ! @ssf_conn_update.c(339),ERROR" ID="0xef7c0a9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble set phy param by mode id fail: ret = %u! @ssf_conn_update.c(354),DBG" ID="0xef7c0b16" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] bs_sle_set_data_length, invaild dev_id:%u ! @ssf_conn_update.c(365),ERROR" ID="0xef7c0b6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] sle_set_data_len failed, ret:%u @ssf_conn_update.c(370),ERROR" ID="0xef7c0b92" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] bs sle set ota state[%d] failed, obj:%d @ssf_conn_update.c(433),ERROR" ID="0xef7c0d8a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] set ota state, can not find obj%u, err 0x%x, device_num:%u @ssf_conn_update.c(441),ERROR" ID="0xef7c0dca" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] set ota state[%d], get conn_id failed, dev_id:%u ret:0x%x @ssf_conn_update.c(450),ERROR" ID="0xef7c0e12" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] set ota phy param, conn_id:%d, ota_state:%d, ret:0x%x @ssf_conn_update.c(456),ERROR" ID="0xef7c0e42" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] set ota subrate, conn_id:%d, ota_state:%d, ret:0x%x @ssf_conn_update.c(462),ERROR" ID="0xef7c0e72" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] bs sle set conn_id[%d] ota state[%d] success. @ssf_conn_update.c(467),ERROR" ID="0xef7c0e9a" />
+			</MSG_LOG>

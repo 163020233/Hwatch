@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][lm_classic_role_switch_cmp] con_hdl %d, status:%x @lm_classic_acl_srv_role_switch_act.c(170),INFO" ID="0x89c20555" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][role switch] restart enc @lm_classic_acl_srv_role_switch_act.c(187),INFO" ID="0x89c205dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][role switch] acl_desc is NULL @lm_classic_acl_srv_role_switch_act.c(209),INFO" ID="0x89c2068d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][role switch] role_switch_desc is NULL @lm_classic_acl_srv_role_switch_act.c(223),INFO" ID="0x89c206fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][role switch] evt task classic acl is NULL con_hdl:%d @lm_classic_acl_srv_role_switch_act.c(334),WARNING" ID="0x89c20a73" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][role switch] con_hdl %d, switch_instant:%x, clock off 0x%x @lm_classic_acl_srv_role_switch_act.c(393),INFO" ID="0x89c20c4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][role switch] enc start role switch err @lm_classic_acl_srv_role_switch_act.c(504),INFO" ID="0x89c20fc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][role switch]role switch in auth or enc @lm_classic_acl_srv_role_switch_act.c(614),INFO" ID="0x89c21335" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][role switch]lmp_switch_req_act:link_policy=%d, acl_link_mode=%d, activ_sco=%d @lm_classic_acl_srv_role_switch_act.c(649),INFO" ID="0x89c2144d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][role switch]lmp_switch_req_act:reason=%d @lm_classic_acl_srv_role_switch_act.c(653),INFO" ID="0x89c2146d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][role switch] evt task classic acl is NULL con_hdl:%d @lm_classic_acl_srv_role_switch_act.c(669),WARNING" ID="0x89c214eb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][role switch]ACl link in wrong mode,linkid:%d,mode:%d @lm_classic_acl_srv_role_switch_act.c(673),WARNING" ID="0x89c2150b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][role switch] not accept err_code:%x @lm_classic_acl_srv_role_switch_act.c(731),WARNING" ID="0x89c216db" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][role switch] status:%x @lm_classic_acl_srv_role_switch_act.c(763),WARNING" ID="0x89c217db" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][role switch] end status:%x @lm_classic_acl_srv_role_switch_act.c(789),WARNING" ID="0x89c218ab" />
+			</MSG_LOG>

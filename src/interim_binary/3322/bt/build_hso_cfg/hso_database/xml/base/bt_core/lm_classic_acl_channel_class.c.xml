@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]find lmp_chnl_class in lmp_tx_queue, refresh: chnl_map:0x%08X-%08X-%04X. @lm_classic_acl_channel_class.c(111),INFO" ID="0x89ec037d" />
+			</MSG_LOG>

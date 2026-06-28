@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[HCI_ICB_PATH]hci_icb_data_env_get error sed_idx %d, dir %d @evt_task_gle_icb_hci_data_path.c(71),ERROR" ID="0x8c12023a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI_ICB_PATH]sdu_out_buf done:send to host, sed_idx %d, sdu buf node 0x%x @evt_task_gle_icb_hci_data_path.c(119),DBG" ID="0x8c1203be" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[WARNING][HCI_ICB_PATH]sdu_out_buf done:rx buffer ptr not correct cur ptr 0x%p, done ptr 0x%p @evt_task_gle_icb_hci_data_path.c(128),WARNING" ID="0x8c120403" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[WARNING][HCI_ICB_PATH]sdu_out_buf_get: already exist buf node ptr 0x%p @evt_task_gle_icb_hci_data_path.c(169),WARNING" ID="0x8c12054b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[WARNING][HCI_ICB_PATH]sdu_out_buf_get: queue empty @evt_task_gle_icb_hci_data_path.c(177),WARNING" ID="0x8c12058b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HCI_ICB_PATH]sdu_out_buf_get: sed_idx %d, buf node 0x%x, sn %d, free list size %d @evt_task_gle_icb_hci_data_path.c(191),DBG" ID="0x8c1205fe" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI_ICB_PATH]sdu_tx_buf_done sed_idx %d, sdu buf node 0x%x @evt_task_gle_icb_hci_data_path.c(219),DBG" ID="0x8c1206de" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI_ICB_PATH]sdu_tx_buf_get sed_idx %d, sdu buf node 0x%x, sdu len %d @evt_task_gle_icb_hci_data_path.c(255),DBG" ID="0x8c1207fe" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI_ICB_PATH]icb_data_path_start sed_idx %d, dir %d [0:h-&gt;c,1:c-&gt;h] @evt_task_gle_icb_hci_data_path.c(310),INFO" ID="0x8c1209b5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI_ICB_PATH] g_icb_data_path_env data path already exist sed_idx%d direction%d @evt_task_gle_icb_hci_data_path.c(313),INFO" ID="0x8c1209cd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI_ICB_PATH]icb_data_path_stop sed_idx %d, dir %d @evt_task_gle_icb_hci_data_path.c(413),INFO" ID="0x8c120ced" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ICB]gle_icb_add_data_path: icb_hdl 0x%x, dir %d, path id %d, cfg_len %d @evt_task_gle_icb_hci_data_path.c(467),INFO" ID="0x8c120e9d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[icbal]gle_icb_add_data_path fail:sed_idx %d, path_dir %d @evt_task_gle_icb_hci_data_path.c(492),INFO" ID="0x8c120f65" />
+			</MSG_LOG>

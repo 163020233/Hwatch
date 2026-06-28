@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SMP]smp cmac aes malloc fail! @aes_cmac_platform.c(39),ERROR" ID="0xeeb2013a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SMP]uapi_drv_cipher_cmac fail:0x%x @aes_cmac_platform.c(49),ERROR" ID="0xeeb2018a" />
+			</MSG_LOG>

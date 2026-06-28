@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sle_music_src] invalid adp type! @sle_music_src.c(65),ERROR" ID="0x98ea020a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sle_music_src] adp has already registered @sle_music_src.c(70),ERROR" ID="0x98ea0232" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sle_music_src] register adp%d handle: 0x%x @sle_music_src.c(85),WARNING" ID="0x98ea02ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sle_music_src] invalid adp type! @sle_music_src.c(103),ERROR" ID="0x98ea033a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_music_src] unregister invalid adp handle: 0x%x  @sle_music_src.c(118),ERROR" ID="0x98ea03b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_music_src] unregister adp handle: 0x%x @sle_music_src.c(130),WARNING" ID="0x98ea0413" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sle_music_src] aenc has already registered @sle_music_src.c(142),ERROR" ID="0x98ea0472" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sle_music_src] register aenc%d handle: 0x%x @sle_music_src.c(150),WARNING" ID="0x98ea04b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_music_src] unregister invalid aenc handle: 0x%x  @sle_music_src.c(173),ERROR" ID="0x98ea056a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_music_src] unregister aenc handle: 0x%x @sle_music_src.c(181),WARNING" ID="0x98ea05ab" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sle_music_src] toggle_count: %u |send_count: %u |mute_count: %u |cur_size: %u @sle_music_src.c(194),WARNING" ID="0x98ea0613" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sle_music_src] toggle_count: %u |send_count: %u |cur_size: %u |total_size: %u @sle_music_src.c(204),WARNING" ID="0x98ea0663" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_to_btc_sle_music_rate_label_ind Failed, Error Code: [0x%08X] @sle_music_src.c(219),ERROR" ID="0x98ea06da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_to_btc_sle_music_src_data_ind Failed, Error Code: [0x%08X] @sle_music_src.c(255),ERROR" ID="0x98ea07fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_release_stream Failed, Error Code: [0x%08X] @sle_music_src.c(266),ERROR" ID="0x98ea0852" />
+			</MSG_LOG>

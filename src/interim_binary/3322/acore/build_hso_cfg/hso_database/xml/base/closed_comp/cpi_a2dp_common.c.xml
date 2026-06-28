@@ -1,0 +1,32 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="a2dp set lhdc sample rate bitmap:0x%02x. @cpi_a2dp_common.c(33),INFO" ID="0xee6c010d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp set lhdc bit width:0x%02x. @cpi_a2dp_common.c(39),INFO" ID="0xee6c013d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_common.c(47),ERROR" ID="0xee6c017a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp init done. @cpi_a2dp_common.c(59),ERROR" ID="0xee6c01da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew error. @cpi_a2dp_common.c(67),ERROR" ID="0xee6c021a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memset error. @cpi_a2dp_common.c(71),ERROR" ID="0xee6c023a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp deinit done. @cpi_a2dp_common.c(84),ERROR" ID="0xee6c02a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp config codec unused:%d. @cpi_a2dp_common.c(303),INFO" ID="0xee6c097d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp config codec used:%d. @cpi_a2dp_common.c(307),INFO" ID="0xee6c099d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp cfg_list is null. @cpi_a2dp_common.c(418),ERROR" ID="0xee6c0d12" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="a2dp AAC sc malloc fail freq:0x%x, channel:0x%x. @cpi_a2dp_common.c(425),ERROR" ID="0xee6c0d4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp sbc sc malloc fail sf_cmp:0x%x. @cpi_a2dp_common.c(478),ERROR" ID="0xee6c0ef2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp is not init. @cpi_a2dp_common.c(501),ERROR" ID="0xee6c0faa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp is not init. @cpi_a2dp_common.c(514),ERROR" ID="0xee6c1012" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp is not init. @cpi_a2dp_common.c(528),ERROR" ID="0xee6c1082" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp is not init. @cpi_a2dp_common.c(542),ERROR" ID="0xee6c10f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_common.c(572),ERROR" ID="0xee6c11e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_a2dp_common.c(577),ERROR" ID="0xee6c120a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="a2dp get remote servce status:0x%x,svc_type:0x%x. @cpi_a2dp_common.c(617),INFO" ID="0xee6c134d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp connect req new fail. @cpi_a2dp_common.c(630),ERROR" ID="0xee6c13b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp get remote servce a2dp_version:0x%x. @cpi_a2dp_common.c(635),INFO" ID="0xee6c13dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp codec sc len is 0. @cpi_a2dp_common.c(700),ERROR" ID="0xee6c15e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_common.c(738),ERROR" ID="0xee6c1712" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_a2dp_common.c(743),ERROR" ID="0xee6c173a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_common.c(768),ERROR" ID="0xee6c1802" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp sep is null. @cpi_a2dp_common.c(773),ERROR" ID="0xee6c182a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_common.c(781),ERROR" ID="0xee6c186a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp config codec support used:0x%X. @cpi_a2dp_common.c(793),INFO" ID="0xee6c18cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp codec sc len is 0. @cpi_a2dp_common.c(801),ERROR" ID="0xee6c190a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_common.c(807),ERROR" ID="0xee6c193a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp set config param is null. @cpi_a2dp_common.c(828),ERROR" ID="0xee6c19e2" />
+			</MSG_LOG>

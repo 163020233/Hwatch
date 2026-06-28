@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_ble_llcp_chnl_map_ind_act next_counter(%d)instant(%d) @lm_ble_acl_srv_map.c(159),INFO" ID="0x882a04fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_ble_req_map_upd_srv_act llcp_data is NULL! @lm_ble_acl_srv_map.c(278),WARNING" ID="0x882a08b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_ble_map_ind_ack_act low probability scenario, instant passed @lm_ble_acl_srv_map.c(321),INFO" ID="0x882a0a0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_ble_send_llcp_status_ind_ram, env_ptr is null @lm_ble_acl_srv_map.c(514),ERROR" ID="0x882a1012" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]find ll_chnl_status_ind in llcp_tx_queue, refresh:con_hdl:0x%x, chnl_cls:0x%08X-%08X-%04X. @lm_ble_acl_srv_map.c(537),INFO" ID="0x882a10cd" />
+			</MSG_LOG>

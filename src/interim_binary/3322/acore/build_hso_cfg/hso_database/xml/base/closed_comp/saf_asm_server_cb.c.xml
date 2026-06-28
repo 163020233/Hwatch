@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] register callback memcpy fail! @saf_asm_server_cb.c(74),ERROR" ID="0xe9a40252" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] unregister callback memset fail! @saf_asm_server_cb.c(83),ERROR" ID="0xe9a4029a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] config_req_cbk new fail! @saf_asm_server_cb.c(93),ERROR" ID="0xe9a402ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] Memory allocation failed.! @saf_asm_server_cb.c(127),ERROR" ID="0xe9a403fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] Memory allocation failed.! @saf_asm_server_cb.c(148),ERROR" ID="0xe9a404a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] report req, btos_new err! op = %u @saf_asm_server_cb.c(258),ERROR" ID="0xe9a40812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] report req, schedule_up err! op = %u @saf_asm_server_cb.c(277),ERROR" ID="0xe9a408aa" />
+			</MSG_LOG>

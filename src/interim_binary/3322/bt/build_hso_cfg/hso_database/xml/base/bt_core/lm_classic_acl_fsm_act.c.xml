@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BGTP][PWR]enhanced pwr unsupported @lm_classic_acl_fsm_act.c(266),WARNING" ID="0x89a40853" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_lmp_tx_cfm_act, env_ptr is null @lm_classic_acl_fsm_act.c(294),ERROR" ID="0x89a40932" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm classic acl send detach tx cfm: disc_reason(0x%x) @lm_classic_acl_fsm_act.c(345),INFO" ID="0x89a40acd" />
+			</MSG_LOG>

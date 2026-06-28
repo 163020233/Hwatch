@@ -1,0 +1,64 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2022. All rights reserved.
+#===============================================================================
+config PWM_USING_V150
+    bool
+    prompt "Using PWM V150."
+    default n
+    depends on DRIVER_SUPPORT_PWM
+
+config PWM_USING_V151
+    bool
+    prompt "Using PWM V151."
+    default n
+    depends on DRIVER_SUPPORT_PWM
+
+config PWM_USING_V152
+    bool
+    prompt "Using PWM V152."
+    default n
+    depends on DRIVER_SUPPORT_PWM
+
+config PWM_PRELOAD
+    bool
+    prompt "Using PWM preload."
+    default n
+    depends on PWM_USING_V151 || PWM_USING_V152
+
+config PWM_GROUP_NUM
+    int
+    prompt "The number of groups in PWM."
+    range 1 16
+    default 6
+    depends on DRIVER_SUPPORT_PWM
+
+config PWM_CHANNEL_NUM
+    int
+    prompt "PWM channel number."
+    default 6
+    depends on DRIVER_SUPPORT_PWM
+
+config PWM_SUPPORT_TIME_32BIT
+    bool
+    prompt "Support time 32bit."
+    default n
+    depends on PWM_USING_V151 || PWM_USING_V152
+
+config PWM_SUPPORT_CLOCK_ENABLE
+    bool
+    prompt "Support PWM clock enable."
+    default n
+    depends on PWM_USING_V151 || PWM_USING_V152
+
+config PWM_PERIODLOAD_FLAG_BIT
+    bool
+    prompt "Support PWM periodload flag."
+    default n
+    depends on PWM_USING_V151
+
+config PWM_IP_VERSION_V151_PRO
+    bool
+    prompt "The pwm ip version support seamless PWM waveform adjustment using DMA."
+    default y
+    depends on PWM_USING_V151 && DRIVER_SUPPORT_LPB

@@ -1,0 +1,59 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2023. All rights reserved.
+#===============================================================================
+
+choice
+    prompt "Choose Chip"
+
+config MIDDLEWARE_CHIP_WS53
+    bool "ws53"
+
+config MIDDLEWARE_CHIP_WS63
+    bool "ws63"
+
+config MIDDLEWARE_CHIP_WS75
+    bool "ws75"
+
+config MIDDLEWARE_CHIP_3322
+    bool "3322"
+
+config MIDDLEWARE_CHIP_USW
+    bool "USW"
+
+endchoice
+
+if MIDDLEWARE_CHIP_WS53
+menu "Chip Configurations for ws53"
+    comment "Config ws53"
+    osource "middleware/chips/ws53/Kconfig"
+endmenu
+endif
+
+if MIDDLEWARE_CHIP_WS63
+menu "Chip Configurations for ws63"
+    comment "Config ws63"
+    osource "middleware/chips/ws63/Kconfig"
+endmenu
+endif
+
+if CHIP_WS75
+menu "middleware Chip Configurations for ws75"
+    comment "ws75 chipset middleware config"
+    osource "middleware/chips/ws75/Kconfig"
+endmenu
+endif
+
+if CHIP_3322
+    menu "middleware Chip Configurations for 3322"
+        comment "3322 chipset middleware config"
+        osource "middleware/chips/3322/Kconfig"
+    endmenu
+endif
+
+if MIDDLEWARE_CHIP_USW
+    menu "middleware Chip Configurations for usw"
+        comment "usw chipset middleware config"
+        osource "middleware/chips/usw/Kconfig"
+    endmenu
+endif

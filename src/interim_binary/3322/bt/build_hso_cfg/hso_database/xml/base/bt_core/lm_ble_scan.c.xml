@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[RPA]lm_ble_scan_set_rpa_sed rpa generation %d rpa resolution %d policy %d @lm_ble_scan.c(152),INFO" ID="0x883404c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][scan]lm_ble_scan_event_sched_stop_act, switch to LM_BLE_STATE_SCAN_OFF @lm_ble_scan.c(212),INFO" ID="0x883406a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[LM][BLE_SCAN]off_stopping_recv_data, em_free_ble_rx_desc, rxpd_index:%d @lm_ble_scan.c(256),INFO" ID="0x88340805" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][scan]lm_ble_scan_set_scan_param_dft, use default scan params! @lm_ble_scan.c(268),INFO" ID="0x88340865" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][scan]lm_ble_scan_evt_task_end, send MSG_TASK_END to evt task fsm! @lm_ble_scan.c(283),INFO" ID="0x883408dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[LM][BLE_SCAN]lm_ble_set_scan_enable, scan evt task env exists, start scan evt task fsm! @lm_ble_scan.c(365),INFO" ID="0x88340b6d" />
+			</MSG_LOG>

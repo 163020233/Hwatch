@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="br call conn state error @bs_br_hfp_hf.c(37),ERROR" ID="0xee8c012a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call conn state error @bs_br_hfp_hf.c(57),ERROR" ID="0xee8c01ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call phone number is invalid number_len:%d. @bs_br_hfp_hf.c(94),ERROR" ID="0xee8c02f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_hfp_hf.c(101),ERROR" ID="0xee8c032a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_hfp_hf.c(124),ERROR" ID="0xee8c03e2" />
+			</MSG_LOG>

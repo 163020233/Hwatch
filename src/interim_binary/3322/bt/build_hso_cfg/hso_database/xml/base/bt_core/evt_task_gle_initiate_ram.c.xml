@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_INIT]statis: curr_time=0x%x, total_time=%d, total_window=%d, start_cbk_cnt=%d @evt_task_gle_initiate_ram.c(25),INFO" ID="0x8ab400cd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_INIT]statis: cancel_cbk_cnt=%d, evt_cbk_cnt=%d, abort_cbk_cnt=%d, abnormal_cbk_cnt=%d @evt_task_gle_initiate_ram.c(28),INFO" ID="0x8ab400e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_initiate_end_process! evt_status = %d state = %d @evt_task_gle_initiate_ram.c(46),INFO" ID="0x8ab40175" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] initiate_phy_nego, frame_format=%d, pilot_ratio=%d @evt_task_gle_initiate_ram.c(103),INFO" ID="0x8ab4033d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_start_rsp_rx, clock=0x%x, anchor_point=0x%x, us_offset=%d, rsp_offset=%d @evt_task_gle_initiate_ram.c(162),INFO" ID="0x8ab40515" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="es_insert_elt_gle_urgent err! task_id = %#x @evt_task_gle_initiate_ram.c(169),INFO" ID="0x8ab4054d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_start_req_tx, clock=0x%x, us_offset=%d, anchor_point=0x%x, tx_offset=%d @evt_task_gle_initiate_ram.c(193),INFO" ID="0x8ab4060d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="es_insert_elt_gle_urgent err! task_id = %#x @evt_task_gle_initiate_ram.c(212),INFO" ID="0x8ab406a5" />
+			</MSG_LOG>

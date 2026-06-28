@@ -1,0 +1,603 @@
+# !/bin/bash
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2026. All rights reserved.
+
+cmake_minimum_required(VERSION 3.16.5)
+option(BUILD_UIKIT "Build uikit." OFF)
+option(BUILD_IN_LINUX "Build in linux." OFF)
+option(BUILD_SIMULATOR "Build simualtor." OFF)
+option(BUILD_SIMULATOR_BY_UIKIT "Build simualtor by uikit." OFF)
+project(simulator)
+
+set(CMAKE_CXX_STANDARD 11)
+if (BUILD_IN_LINUX)
+set(CMAKE_C_COMPILER x86_64-w64-mingw32-gcc)
+set(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++)
+else()
+set(CMAKE_C_COMPILER "gcc")
+set(CMAKE_CXX_COMPILER "g++")
+endif() # BUILD_IN_LINUX
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wfatal-errors -fpermissive")
+set(ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR})
+set(PROJECT_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/middleware/services/gui)
+set(BIN_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/interim_binary/3322/libs)
+set(WEARABLE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/application/wearable)
+set(NativeApp ${WEARABLE_DIR}/nativeapp)
+
+set(SIMULATOR_DIR ${CMAKE_CURRENT_SOURCE_DIR}/tools/simulator)
+
+set(SIMULATOR_BUILD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/simulator_build)
+set(UI_SAMPLE_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/middleware/services/gui/uikit/sample/uitest)
+set(UIKIT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/middleware/services/gui/uikit)
+set(HAL_DIR ${CMAKE_CURRENT_SOURCE_DIR}/middleware/services/gui/hal)
+set(OHOS_DEPS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/application/wearable/ohos_deps)
+set(MIDDLEWARE_DIR ${ROOT_DIR}/middleware)
+set(GRPHIC_DIR ${ROOT_DIR}/ohos/foundation/arkui)
+set(OHOS_DIR ${ROOT_DIR}/ohos)
+set(OHOS_ABILITY_DIR ${OHOS_DIR}/foundation/ability/ability_lite)
+set(PROP_UI_SRC ${UIKIT_DIR}/proprietary/src/ui/frameworks)
+set(BOUNDS_CHECK_DIR ${OHOS_DIR}/third_party/bounds_checking_function)
+set(LibJpegSrc ${SIMULATOR_BUILD_DIR}/gen/third_party/libjpeg-turbo/libjpeg-turbo-2.1.1)
+set(FREETYPE_LIB_PATH ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype)
+set(ARCH "none")
+unset(SIMULATOR_SOURCES CACHE)
+unset(SIMULATOR_APPLICATION_SOURCES CACHE)
+
+# 子项目cmakelist使用的宏，需要重写实现
+macro(build_component)
+    set(SIMULATOR_PUBLIC_HEADER ${SIMULATOR_PUBLIC_HEADER} ${PUBLIC_HEADER} CACHE INTERNAL "")
+    set(SIMULATOR_PRIVATE_HEADER ${SIMULATOR_PRIVATE_HEADER} ${PRIVATE_HEADER} CACHE INTERNAL "")
+    set(SIMULATOR_APPLICATION_SOURCES ${SIMULATOR_APPLICATION_SOURCES} ${SOURCES} CACHE INTERNAL "")
+endmacro()
+macro(add_subdirectory_if_exist dir)
+    if(NOT ${dir} STREQUAL "sample")
+        add_subdirectory(${dir})
+    endif()
+endmacro()
+macro(return_if_not_build)
+endmacro()
+macro(install_sdk)
+endmacro()
+macro(install_sdk_by_sh)
+endmacro()
+
+find_package(Python3 REQUIRED COMPONENTS Interpreter)
+if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+    find_package(Git)
+    if(Git_FOUND)
+        get_filename_component(GIT_INSTALL_DIR "${GIT_EXECUTABLE}" DIRECTORY)
+        get_filename_component(PATCH_EXE ${GIT_INSTALL_DIR}/../usr/bin/patch.exe ABSOLUTE) 
+    else()
+        message(STATUS "本地未找到git工具")
+        set(PATCH_EXE patch)
+    endif()
+else()
+    set(PATCH_EXE patch)
+endif()
+
+function(run_install_script py_script gen_dir source_dir)
+    # 创建标记文件路径
+    get_filename_component(archive_name "${source_dir}" NAME)
+    set(flag_file "${SIMULATOR_BUILD_DIR}/.${archive_name}.extracted")
+    if(EXISTS "${flag_file}" AND EXISTS "${source_dir}")
+        return()
+    endif()
+
+    # 设置安装命令
+    set(INSTALL_CMD
+        ${Python3_EXECUTABLE}
+        ${py_script}
+        --gen-dir
+        ${gen_dir}
+        --source-dir
+        ${source_dir}
+        --patch-dir
+        ${PATCH_EXE}
+    )
+    
+    string(JOIN " " INSTALL_STR ${INSTALL_CMD})
+    message(STATUS "INSTALL = ${INSTALL_STR}")
+    
+    execute_process(
+        COMMAND ${INSTALL_CMD}
+        OUTPUT_VARIABLE output
+        RESULT_VARIABLE result
+        ERROR_VARIABLE error_output
+    )
+     # 创建标记文件
+    string(TIMESTAMP BUILD_TIME "%Y-%m-%d %H:%M:%S")
+    if(result EQUAL 0)
+        message(STATUS "✅ 补丁解压成功==>${source_dir}")
+        file(WRITE "${flag_file}" "Extracted on: ${BUILD_TIME}")
+    else()
+        message(STATUS "❌ 补丁解压失败==>${source_dir}")
+        message(STATUS "err: ${output}")
+    endif()
+endfunction()
+
+run_install_script(
+    "${SIMULATOR_DIR}/third_party/harfbuzz/install.py"
+    "${SIMULATOR_BUILD_DIR}/gen/third_party/harfbuzz"
+    "${OHOS_DIR}/third_party/harfbuzz"
+)
+run_install_script(
+    "${SIMULATOR_DIR}/third_party/libjpeg-turbo/install.py"
+    "${SIMULATOR_BUILD_DIR}/gen/third_party/libjpeg-turbo"
+    "${OHOS_DIR}/third_party/libjpeg-turbo"
+)
+run_install_script(
+    "${SIMULATOR_DIR}/third_party/libpng/install.py"
+    "${SIMULATOR_BUILD_DIR}/gen/third_party/libpng"
+    "${OHOS_DIR}/third_party/libpng"
+)
+run_install_script(
+    "${SIMULATOR_DIR}/third_party/freetype/install.py"
+    "${SIMULATOR_BUILD_DIR}/gen/third_party/freetype"
+    "${OHOS_DIR}/third_party/freetype"
+)
+
+add_subdirectory(application/wearable/nativeabilityfwk)
+add_subdirectory(application/wearable/nativeapp)
+add_subdirectory(application/wearable/ohos_deps)
+add_subdirectory(middleware/services/gui/uikit)
+add_subdirectory(middleware/services/gui/hal)
+
+add_subdirectory(ohos/foundation/arkui/ui_lite)
+add_subdirectory(ohos/foundation/graphic/graphic_utils_lite)
+add_subdirectory(ohos/third_party/cJSON)
+add_subdirectory(ohos/third_party/qrcodegen)
+add_subdirectory(ohos/third_party/icu/icu4c/source/common)
+add_subdirectory(ohos/third_party/harfbuzz)
+add_subdirectory(ohos/third_party/libjpeg-turbo)
+add_subdirectory(ohos/third_party/libpng)
+add_subdirectory(ohos/third_party/zlib)
+
+file(GLOB_RECURSE SRC_THIRD "${BOUNDS_CHECK_DIR}/src/*.c")
+list(REMOVE_ITEM SRC_THIRD ${BOUNDS_CHECK_DIR}/src/sprintf_s.c
+                           ${BOUNDS_CHECK_DIR}/src/memcpy_s.c
+)
+
+file(GLOB_RECURSE HAL_GRALLOC_FILE "${SIMULATOR_DIR}/hal/gralloc/*.c")
+file(GLOB_RECURSE HAL_DISPLAY_FILE "${SIMULATOR_DIR}/hal/display/*.cpp")
+file(GLOB_RECURSE HAL_INPUT_FILE "${SIMULATOR_DIR}/hal/input/*.cpp")
+file(GLOB_RECURSE HAL_TIME_FILE "${SIMULATOR_DIR}/hal/time/*.c")
+file(GLOB_RECURSE HAL_OSAL_FILE "${SIMULATOR_DIR}/hal/osal/*.c")
+file(GLOB_RECURSE UIKIT_CUSTOM_FILE "${SIMULATOR_DIR}/libui/*.cpp")
+file(GLOB_RECURSE HAL_BTS_FILE "${SIMULATOR_DIR}/hal/bts/br/*.c")
+set(DRIVER_FILE ${HAL_GRALLOC_FILE} ${HAL_DISPLAY_FILE} ${HAL_INPUT_FILE} ${HAL_TIME_FILE} ${HAL_OSAL_FILE} ${UIKIT_CUSTOM_FILE} ${HAL_BTS_FILE})
+
+set(TESTFRM ${GRPHIC_DIR}/ui_lite/test/framework)
+file(GLOB_RECURSE TESTFRM_FILE "${TESTFRM}/src/*.cpp")
+file(GLOB_RECURSE TESTFRM_COMFILE "${TESTFRM}/common/*.cpp")
+set(TESTFRM_FILE ${TESTFRM_FILE} ${TESTFRM_COMFILE})
+
+set(ST_FILE
+    ${MIDDLEWARE_DIR}/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_touch_device.cpp
+    ${MIDDLEWARE_DIR}/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_key_device.cpp
+    ${MIDDLEWARE_DIR}/../ohos/foundation/distributeddatamgr/kv_store/frameworks/native/kv_store/src/kvstore_common/kvstore_common.c
+    ${MIDDLEWARE_DIR}/../ohos/foundation/distributeddatamgr/kv_store/frameworks/native/kv_store/src/kvstore_impl_posix/kv_store.c
+    ${MIDDLEWARE_DIR}/../ohos/commonlibrary/utils_lite/file/src/file_impl_hal/file.c
+    ${MIDDLEWARE_DIR}/../ohos/commonlibrary/utils_lite/hals/file/hal_file.c
+)
+
+set(SIMUALTOR_FILE
+    ${SIMULATOR_DIR}/libui/imgdecode/hw_jpeg_decoder.cpp
+)
+
+set(SOURCES ${SRC_THIRD} ${DRIVER_FILE} ${ST_FILE} ${SIMUALTOR_FILE})
+message("zctest ${SIMULATOR_DIR}/include")
+# 头文件路径
+set(PRIVATE_HEADER
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${GRPHIC_DIR}/ui/frameworks/imgdecode
+    ${WEARABLE_DIR}/service/power_manager/include
+    ${SIMULATOR_DIR}/include
+    ${ROOT_DIR}/include
+    ${ROOT_DIR}/include/time
+    ${ROOT_DIR}/include/driver
+    ${ROOT_DIR}/include/driver/driver_backup
+    ${ROOT_DIR}/include/middleware/utils
+    ${ROOT_DIR}/kernel/osal/include/schedule
+    ${ROOT_DIR}/kernel/osal/include/time
+    ${ROOT_DIR}/middleware/utils/fs/include/adapt_freertos
+    ${ROOT_DIR}/middleware/utils/common_headers/native
+    ${ROOT_DIR}/middleware/utils/common_headers/gpu/internal
+    # ${ROOT_DIR}/middleware/utils/common_headers/gpu/external
+    ${ROOT_DIR}/middleware/utils/dfx/diag
+    ${ROOT_DIR}/middleware/utils/dfx/diag/include
+    ${ROOT_DIR}/middleware/utils/dfx/diag/diag_cmd_router/include
+    ${ROOT_DIR}/middleware/utils/dfx/massdata
+    ${ROOT_DIR}/middleware/utils/update/inner_include
+    ${ROOT_DIR}/middleware/chips/3322/dfx/include
+    ${ROOT_DIR}/middleware/chips/3322/update/include
+    ${ROOT_DIR}/middleware/chips/3322/partition/include
+    ${ROOT_DIR}/middleware/services/media/foundation/audiomanager/frameworks/audiostream/include/cpp
+    ${ROOT_DIR}/middleware/services/media/foundation/audiomanager/interfaces/kits/audiomanager/cpp
+    ${ROOT_DIR}/middleware/services/media/foundation/audiomanager/interfaces/kits/audiomanager
+    ${ROOT_DIR}/middleware/services/media/foundation/audiomanager/frameworks/audioservice/include
+    ${ROOT_DIR}/middleware/services/media/foundation/audiomanager/frameworks/audioutils/include
+    ${ROOT_DIR}/middleware/services/media/foundation/audiomanager/interfaces/kits/audiocommon
+    ${ROOT_DIR}/middleware/services/media/foundation/service/video_player_service/include
+    ${ROOT_DIR}/application/wearable/service/broadcast
+    ${ROOT_DIR}/application/wearable/service/msg_center/include/notify
+    ${ROOT_DIR}/application/wearable/nativeapp/nativeui
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/interfaces/kits/font
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/interfaces/kits/animator
+    ${OHOS_ABILITY_DIR}/interfaces/kits/want_lite
+    ${OHOS_ABILITY_DIR}/interfaces/kits/ability_lite
+    ${OHOS_ABILITY_DIR}/interfaces/kits/ability_lite/slite
+    ${OHOS_ABILITY_DIR}/interfaces/inner_api/abilitymgr_lite
+    ${OHOS_ABILITY_DIR}/interfaces/inner_api/abilitymgr_lite/slite
+    ${OHOS_ABILITY_DIR}/frameworks/abilitymgr_lite/include/slite
+    ${OHOS_DIR}/third_party/bounds_checking_function/include
+    ${OHOS_DIR}/foundation/bundlemanager/bundle_framework_lite/utils/bundle_lite
+    ${OHOS_DIR}/foundation/bundlemanager/bundle_framework_lite/interfaces/kits/bundle_lite
+    ${OHOS_DIR}/foundation/bundlemanager/bundle_framework_lite/interfaces/inner_api/bundlemgr_lite/slite
+    ${OHOS_DIR}/foundation/bundlemanager/bundle_framework_lite/interfaces/inner_api/bundlemgr_lite
+    ${OHOS_DIR}/foundation/bundlemanager/bundle_framework_lite/frameworks/bundle_lite/include
+    ${OHOS_DIR}/foundation/bundlemanager/bundle_framework_lite/services/bundlemgr_lite/include
+    ${OHOS_DIR}/foundation/systemabilitymgr/samgr_lite/samgr/adapter
+    ${OHOS_DIR}/foundation/systemabilitymgr/samgr_lite/interfaces/kits/samgr
+    ${OHOS_DIR}/foundation/systemabilitymgr/samgr_lite/interfaces/kits/registry
+    ${OHOS_DIR}/foundation/systemabilitymgr/samgr_lite/interfaces/kits/communication/broadcast
+    ${OHOS_DIR}/foundation/systemabilitymgr/samgr_lite/communication/broadcast/source
+    ${OHOS_DIR}/foundation/communication/ipc/interfaces/innerkits/c/ipc/include
+    ${OHOS_DIR}/foundation/distributeddatamgr/kv_store/interfaces/inner_api/kv_store/include
+    ${OHOS_DIR}/foundation/distributeddatamgr/kv_store/frameworks/native/kv_store/src/kvstore_common
+    ${OHOS_DIR}/foundation/multimedia/media_utils_lite/interfaces/kits
+    ${OHOS_DIR}/foundation/multimedia/media_lite/media_mini
+    ${OHOS_DIR}/foundation/multimedia/media_lite/media_mini/player/interfaces/kits
+    ${OHOS_DIR}/foundation/multimedia/media_lite/media_mini/services/video_player_service
+    ${OHOS_DIR}/foundation/graphic/graphic_utils_lite/interfaces/innerkits
+    ${OHOS_DIR}/drivers/peripheral/display/interfaces/include
+    ${OHOS_DIR}/drivers/peripheral/format/interfaces/include
+    ${ROOT_DIR}/middleware/services/gui/hal/common/include
+    ${ROOT_DIR}/middleware/services/gui/hal/display/mempool/include
+    ${ROOT_DIR}/include/middleware/services/bts/br
+    ${OHOS_DIR}/third_party/jerryscript/jerry-core/api
+    ${OHOS_DIR}/base/security/appverify/interfaces/innerkits/appverify_lite/include
+    ${OHOS_DIR}/base/security/permission_lite/services/pms/include
+    ${OHOS_DIR}/base/security/permission_lite/interfaces/kits
+    ${OHOS_DIR}/commonlibrary/utils_lite/include
+    ${OHOS_DIR}/commonlibrary/utils_lite/hals/file
+    ${ROOT_DIR}/application/wearable/nativeapp/nativeui/include
+    ${ROOT_DIR}/drivers/drivers/driver/security/trng
+    ${ROOT_DIR}/drivers/chips/3322/include
+    #main.cpp need include
+    ${SIMULATOR_DIR}/application/wearable/service/msg_center/include/client
+    ${SIMULATOR_DIR}/wearable/nativeapp
+    ${ROOT_DIR}/open_source/sdl/include
+    ${SIMULATOR_DIR}/hal/vau/include
+    ${SIMULATOR_DIR}/hal/display
+    ${SIMULATOR_DIR}/hal/input
+    ${SIMULATOR_DIR}/hal/osal
+    ${SIMULATOR_DIR}/hal/time
+    ${SIMULATOR_DIR}/middleware/chips/3322/dfx
+    ${SIMULATOR_DIR}/middleware/utils/common_headers
+    ${SIMULATOR_DIR}/hal
+    ${SIMULATOR_DIR}/include/driver
+    ${SIMULATOR_DIR}/kernel
+    ${SIMULATOR_DIR}/middleware/utils/common_headers/gpu/external
+
+    ${NativeApp}/nativeui/include
+    ${NativeApp}/nativeui/uisample/uitest/framework/include
+
+    ${ROOT_DIR}/protocol/bt/host/include/bs_service
+    ${OHOS_DIR}/foundation/ability/ability_lite/frameworks/abilitymgr_lite/include/slite
+    ${OHOS_DIR}/foundation/arkui/ace_engine_lite/frameworks/src/core/modules/network
+    ${ROOT_DIR}/middleware/services/media/foundation/service/a2dp_sink_service/include
+    ${ROOT_DIR}/include/middleware/services/media/common
+    ${OHOS_DIR}/base/global/resource_management_lite/interfaces/inner_api/include
+
+    ${ROOT_DIR}/application/ux/interfaces/solution/bg
+    ${ROOT_DIR}/open_source/flatbuffers/include
+)
+list(REMOVE_ITEM SIMULATOR_PRIVATE_HEADER ${ROOT_DIR}/include
+    ${ROOT_DIR}/middleware/services/gui/uikit/utils/interfaces/innerkits
+)
+
+set(SIMULATOR_PRIVATE_HEADER
+    ${LibJpegSrc}
+    ${SIMULATOR_PRIVATE_HEADER}
+    ${PRIVATE_HEADER}
+)
+
+set(SIMULATOR_PRIORITY_HEADER
+    ${SIMULATOR_DIR}/wearable/nativeapp/main/dial
+    ${SIMULATOR_DIR}/wearable/nativeapp/services/notify
+)
+
+set(SIMULATOR_PRIORITY_HEADER
+    ${SIMULATOR_PRIORITY_HEADER}
+    ${ROOT_DIR}/tools/simulator/libui
+)
+
+set(SIMULATOR_APPLICATION_SOURCES
+    ${SIMULATOR_APPLICATION_SOURCES}
+    ${SOURCES}
+)
+
+set(SIMULATOR_APPLICATION_SOURCES
+    ${SIMULATOR_APPLICATION_SOURCES}
+    ${MIDDLEWARE_DIR}/services/gui/uikit/proprietary/src/ui/frameworks/imgdecode/jpeg_img_decoder.cpp
+    ${MIDDLEWARE_DIR}/services/gui/uikit/proprietary/src/ui/frameworks/imgdecode/png_img_decoder.cpp
+)
+
+list(REMOVE_ITEM SIMULATOR_APPLICATION_SOURCES ${UIKIT_DIR}/utils/frameworks/hal_cpu.cpp
+                                   ${UIKIT_DIR}/proprietary/src/utils/frameworks/hals/display_dev.cpp
+                                   ${UIKIT_DIR}/proprietary/src/utils/frameworks/hals/lite_input_hal.cpp
+                                   ${UIKIT_DIR}/ui/frameworks/dock/lite_key_device.cpp
+                                   ${UIKIT_DIR}/ui/frameworks/dock/lite_touch_device.cpp
+                                   ${UIKIT_DIR}/proprietary/src/ui/frameworks/dfx/dfx_dom_dump.cpp
+                                   ${UIKIT_DIR}/proprietary/src/ui/frameworks/dfx/dfx_frame_trace.cpp
+                                   ${UIKIT_DIR}/proprietary/src/ui/frameworks/dock/*.cpp
+                                   ${UIKIT_DIR}/proprietary/src/ui/frameworks/imgdecode/hw_jpeg_decoder.cpp
+                                   ${HAL_DIR}/display/src/display_gralloc.c
+                                   ${HAL_DIR}/display/src/display_layer.c
+                                   ${HAL_DIR}/input/src/input_manager.c
+                                   ${ROOT_DIR}/middleware/services/gui/hal/display/src/vau_render_offline_list.c
+)
+
+# 添加宏定义
+if (USE_BACKGROUNDIMAGE)
+add_definitions(-DUSE_BACKGROUNDIMAGE)
+endif() # USE_BACKGROUNDIMAGE
+if (RELEASE_VERSION)
+add_definitions(-DRELEASE_VERSION)
+endif() # RELEASE_VERSION
+if (BUILD_IN_LINUX)
+add_definitions(-DBUILD_IN_LINUX)
+endif() # BUILD_IN_LINUX
+add_definitions(-DVERSION_IOT -DBOARD_CS -DVERSION_LITE -DFT2_BUILD_LIBRARY -DLITEWEARABLE_SUPPORT_ENABLED)
+add_definitions(-DSW_RTT_DEBUG -DVERSION_IOT -DENABLE_UIKIT -DMARKET_ENABLE -DENABLE_OHOS_GRAPHIC_UTILS_PRODUCT_CONFIG=1)
+# 指定编译源文件目录
+aux_source_directory(${SIMULATOR_DIR}/main main_file)
+# 添加依赖库文件
+set(LINK_LIBS ${LINK_LIBS} mingw32 SDL2main SDL2.dll freetype)
+# 添加头文件目录到编译中
+include_directories(${SIMULATOR_PRIORITY_HEADER})
+include_directories(${SIMULATOR_PUBLIC_HEADER})
+include_directories(${SIMULATOR_PRIVATE_HEADER})
+
+file(GLOB_RECURSE lottie ${UIKIT_DIR}/proprietary/src/ui/frameworks/lottie/*.cpp)
+file(GLOB_RECURSE components_ext ${PROP_UI_SRC}/components_ext/*.cpp)
+file(GLOB_RECURSE PRINT  ${ROOT_DIR}/kernel/liteos/LiteOS/platform/huawei_secure_c/src/*.c)
+
+set(GRAPHIC_CLOSED_SRC
+    ${lottie}
+    ${components_ext}
+    ${HAL_DIR}/display/src/yuv_to_rgb.c
+    ${HAL_DIR}/display/src/display_gmmu.c
+    ${HAL_DIR}/display/src/display_vau/display_vau_init.c
+    ${HAL_DIR}/display/src/display_vau/display_vau_common.c
+    ${HAL_DIR}/display/src/display_vau/display_vau_path.c
+    ${HAL_DIR}/display/src/display_vau/display_vau_blit.c
+    ${HAL_DIR}/display/src/display_vau/display_vau_blur.c
+    ${HAL_DIR}/display/src/display_vau/display_vau_hsv.c
+    ${HAL_DIR}/display/src/display_vau/display_vau_light.c
+    ${HAL_DIR}/display/src/display_vau/display_vau_rain.c
+    ${HAL_DIR}/display/src/display_vau/display_vau_3d.c
+    ${HAL_DIR}/display/src/yuv_to_rgb.c
+    ${HAL_DIR}/display/src/display_gmmu.c
+    ${HAL_DIR}/common/src/barcode128.c
+    ${PROP_UI_SRC}/engines/gfx/lite_m_gfx_engine.cpp
+    ${PROP_UI_SRC}/font/ui_font_hw_cache.cpp
+    ${PROP_UI_SRC}/font/ui_font_hw_vector.cpp
+    ${PROP_UI_SRC}/font/ui_shaping_cache.cpp
+    ${PROP_UI_SRC}/font/ui_text_shaping_ext.cpp
+    ${PROP_UI_SRC}/font/font_global_manager.cpp
+    ${PROP_UI_SRC}/font/ui_font_hw_vector_stb.cpp
+    ${PROP_UI_SRC}/font/ui_font_vector_stb.cpp
+    ${PROP_UI_SRC}/components_ext/ui_label_ext.cpp
+    ${PROP_UI_SRC}/components_ext/text_ext.cpp
+    ${PROP_UI_SRC}/components_ext/ui_label_button_ext.cpp
+    ${PROP_UI_SRC}/components_ext/image_cache_manager.cpp
+    ${PROP_UI_SRC}/components_ext/ui_hexagons_list.cpp
+    ${PROP_UI_SRC}/components_ext/ui_waterfall_list.cpp
+    ${PROP_UI_SRC}/components_ext/ui_planet_list.cpp
+    ${PROP_UI_SRC}/components_ext/ui_canvas_ext.cpp
+    ${PROP_UI_SRC}/components_ext/ui_card_container.cpp
+    ${PROP_UI_SRC}/components_ext/ui_cross_view.cpp
+    ${PROP_UI_SRC}/components_ext/kaleidoscope_utils.cpp
+    ${PROP_UI_SRC}/components_ext/ui_kaleidoscope_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_roller_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_map_view.cpp
+    ${PROP_UI_SRC}/components_ext/map_svg_parser.cpp
+    ${PROP_UI_SRC}/components_ext/ui_slipflow_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_foldable_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_coverflow_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_coverflow_view2.cpp
+    ${PROP_UI_SRC}/components_ext/ui_icosahedron_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_transform_group.cpp
+    ${PROP_UI_SRC}/components_ext/ui_transform_list.cpp
+    ${PROP_UI_SRC}/components_ext/ui_sphere_view.cpp
+    ${PROP_UI_SRC}/components_ext/particle_cell.cpp
+    ${PROP_UI_SRC}/components_ext/ui_particle_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_float_box_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_scatter_plot.cpp
+    ${PROP_UI_SRC}/components_ext/ui_chart_pillar_ext.cpp
+    ${PROP_UI_SRC}/components_ext/ui_rain_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_3d_view.cpp
+    ${PROP_UI_SRC}/components_ext/ui_3d_mesh.cpp
+    ${PROP_UI_SRC}/components_ext/ui_3d_sphere.cpp
+    ${PROP_UI_SRC}/components_ext/ui_3d_cylinder.cpp
+    ${PROP_UI_SRC}/components_ext/ui_amap_view.cpp
+    ${PROP_UI_SRC}/components_ext/amap_svg_parser.cpp
+    ${WEARABLE_DIR}/nativeabilityfwk/src/View.cpp
+    ${WEARABLE_DIR}/nativeabilityfwk/src/SlicePage.cpp
+    ${WEARABLE_DIR}/nativeabilityfwk/src/BackDragListener.cpp
+    ${WEARABLE_DIR}/nativeabilityfwk/src/PageTransitionMgr.cpp
+    ${WEARABLE_DIR}/nativeabilityfwk/src/TransitionManager.cpp
+    ${WEARABLE_DIR}/nativeabilityfwk/src/RecentManager.cpp
+    ${WEARABLE_DIR}/nativeabilityfwk/src/SlicePageManager.cpp
+    ${WEARABLE_DIR}/nativeabilityfwk/src/SlicePageFactory.cpp
+    ${WEARABLE_DIR}/nativeabilityfwk/src/TransitionRecord.cpp
+    ${WEARABLE_DIR}/nativeapp/nativeui/main/src/dial/parser/DialBinParser.cpp
+    ${WEARABLE_DIR}/nativeapp/nativeui/main/src/dial/parser/DialBinParserManager.cpp
+    ${WEARABLE_DIR}/nativeapp/nativeui/main/src/dial/parser/DialBinParserV3.cpp
+    ${WEARABLE_DIR}/nativeapp/nativeui/main/src/dial/parser/DialBinParserV3_1.cpp
+)
+
+set(CLOSED_SRC
+    ${GRAPHIC_CLOSED_SRC}
+    ${WEARABLE_DIR}/service/msg_center/src/msg_center_protocol.cpp
+    ${WEARABLE_DIR}/service/msg_center/src/notify/phone_msg_notification.cpp
+)
+if(NOT EXISTS "${FREETYPE_LIB_PATH}/libfreetype.a")
+    set(FREETYPE_SOURCES
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/base/ftbase.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/base/ftbbox.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/base/ftbitmap.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/base/ftdebug.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/base/ftglyph.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/base/ftinit.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/base/ftsystem.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/gzip/ftgzip.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/sfnt/sfnt.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/smooth/smooth.c
+        ${SIMULATOR_BUILD_DIR}/gen/third_party/freetype/freetype/src/truetype/truetype.c
+    )
+    add_library("freetype_static" STATIC ${FREETYPE_SOURCES})
+    set_target_properties("freetype_static" PROPERTIES LINKER_LANGUAGE C
+                        COMPILE_DEFINITIONS "FT_CONFIG_OPTION_SYSTEM_ZLIB"
+                        OUTPUT_NAME "freetype"
+                        ARCHIVE_OUTPUT_DIRECTORY ${FREETYPE_LIB_PATH})
+endif()
+
+if (BUILD_UIKIT)
+set(SIMULATOR_SOURCES
+    ${CLOSED_SRC}
+)
+
+# 设置目标名称
+set(TARGET_NAME uikit)
+# 生成静态文件
+set(TARGET_NAME_STATIC "${TARGET_NAME}-static")
+add_library(${TARGET_NAME_STATIC} STATIC ${SIMULATOR_SOURCES})
+TARGET_LINK_LIBRARIES(${TARGET_NAME_STATIC} "-L${BIN_ROOT_DIR}/vau/lib" "-L${BIN_ROOT_DIR}/SDL2/lib/x64" "-L${FREETYPE_LIB_PATH}" ${LINK_LIBS})
+set_target_properties(${TARGET_NAME_STATIC} PROPERTIES LINKER_LANGUAGE C
+                      OUTPUT_NAME ${TARGET_NAME}
+                      ARCHIVE_OUTPUT_DIRECTORY ${SIMULATOR_DIR}/uikit/lib)
+endif() # BUILD_UIKIT
+
+
+if (BUILD_SIMULATOR OR BUILD_SIMULATOR_BY_UIKIT)
+set(SIMULATOR_APPLICATION_SOURCES
+    ${SIMULATOR_APPLICATION_SOURCES}
+    ${SIMULATOR_DIR}/wearable/services/notify/makephone_notification.cpp
+    ${SIMULATOR_DIR}/wearable/services/notify/notification_manager.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/player/PlayersModel.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/player/PlayersView.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/uisample/uitest/components/ui_test_video_play/ui_test_video_play.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/uisample/uitest/components/ui_test_simple_list/ui_test_simple_list.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/uiservice/ui_service.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/phoneservice/PhoneAudio.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/phoneservice/PhoneService.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/activity/ActivityModel.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/alarm/AlarmClockModel.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/alarmclockmanage/AlarmClockManage.cpp
+    ${SIMULATOR_DIR}/wearable/nativeapp/alarmclocktimerconfig/AlarmClockTimerConfig.cpp
+    ${SIMULATOR_DIR}/wearable/services/notify/audio_manager_impl.cpp
+    ${SIMULATOR_DIR}/wearable/services/notify/audio_manager.cpp
+    ${SIMULATOR_DIR}/wearable/services/smart_voice/smart_voice_service/smart_voice_service.c
+    ${SIMULATOR_DIR}/wearable/services/notify/bts_avrcp_controller.c
+    ${SIMULATOR_DIR}/wearable/services/power_manager/power_display_service.c
+    ${SIMULATOR_DIR}/wearable/components/surface.cpp
+    ${SIMULATOR_DIR}/middleware/chips/3322/dfx/dfx_channel.c
+    ${SIMULATOR_DIR}/middleware/utils/dfx/diag/dig_service.c
+    ${SIMULATOR_DIR}/openharmony/foundation/aafwk/abilityms_slite_client.cpp
+    ${SIMULATOR_DIR}/openharmony/foundation/appexecfwk/element_name.cpp
+    ${SIMULATOR_DIR}/openharmony/foundation/base/security/appverify/app_mbedtls_pkcs7.c
+    ${SIMULATOR_DIR}/openharmony/foundation/ace/ace_engine_lite/modules/network/network_module.cpp
+    ${SIMULATOR_DIR}/drivers/trng.cpp
+    ${SIMULATOR_DIR}/application/wearable/service/msg_center/src/client/msg_center_client.cpp
+    ${SIMULATOR_DIR}/include/driver/tcxo.c
+    ${SIMULATOR_DIR}/include/driver/pm_veto.c
+    ${SIMULATOR_DIR}/kernel/cmsis_liteos.c
+    ${WEARABLE_DIR}/service/msg_center/src/msg_center_protocol.cpp
+    ${WEARABLE_DIR}/service/msg_center/src/notify/phone_msg_notification.cpp
+    ${SIMULATOR_DIR}/middleware/services/media/foundation/service/video_player_service/video_player_service.cpp
+    ${SIMULATOR_DIR}/middleware/utils/dfx/massdata/massdata_buffer.c
+    ${SIMULATOR_DIR}/include/middleware/services/bts/bts_br_gap.c
+    ${SIMULATOR_DIR}/include/middleware/services/bs/bs_ble_gatt_server.c
+    ${SIMULATOR_DIR}/middleware/services/media/foundation/service/a2dp_sink_service/src/a2dp_sink_service.cpp
+    ${SIMULATOR_DIR}/hal/vau/src/vau_render_offline_list.c
+)
+if (BUILD_SIMULATOR_BY_UIKIT)
+set(SIMULATOR_SOURCES ${SIMULATOR_APPLICATION_SOURCES} ${PRINT})
+list(REMOVE_ITEM SIMULATOR_SOURCES ${CLOSED_SRC})
+set(LINK_LIBS
+    -Wl,--whole-archive
+    libuikit.a
+    -Wl,--no-whole-archive 
+    ${LINK_LIBS}
+)
+else ()
+set(SIMULATOR_SOURCES ${SIMULATOR_SOURCES} ${SIMULATOR_APPLICATION_SOURCES})
+endif() # BUILD_SIMULATOR_BY_UIKIT
+
+
+list(REMOVE_ITEM SIMULATOR_SOURCES ${NativeApp}/nativeui/main/src/dial/DialModelHeartRate.cpp
+                                   ${NativeApp}/nativeui/main/src/dial/DialModelSteps.cpp
+                                   ${NativeApp}/nativeui/main/src/dial/DialModelPower.cpp
+                                   ${NativeApp}/nativeui/player/src/BluetoothView.cpp
+                                   ${NativeApp}/nativeui/player/src/PlayersView.cpp
+                                   ${NativeApp}/nativeui/player/src/PlayersModel.cpp
+                                   ${NativeApp}/nativeui/player/src/PlayersCaseListAdapter.cpp
+                                   ${NativeApp}/nativeui/rtcservice/src/RtcService.cpp
+                                   ${NativeApp}/nativeui/uiservice/src/ui_service.cpp
+                                   ${NativeApp}/nativeui/uiservice/src/ui_language.cpp
+                                   ${NativeApp}/nativeui/screennotify/src/ui_screennotify.cpp
+                                   ${NativeApp}/nativeui/phoneservice/src/PhoneAudio.cpp
+                                   ${NativeApp}/nativeui/phoneservice/src/PhoneService.cpp
+                                   ${NativeApp}/nativeui/activity/src/ActivityModel.cpp
+                                   ${NativeApp}/nativeui/alarm/src/AlarmClockModel.cpp
+                                   ${NativeApp}/nativeui/alarmclockmanage/src/AlarmClockManage.cpp
+                                   ${NativeApp}/nativeui/alarmclocktimerconfig/src/AlarmClockTimerConfig.cpp
+                                   ${OHOS_DEPS_DIR}/phony_timer.c
+                                   ${UI_SAMPLE_ROOT}/components/ui_test_video_play/ui_test_video_play.cpp
+                                   ${UI_SAMPLE_ROOT}/components/ui_test_simple_list/ui_test_simple_list.cpp
+                                   ${UI_SAMPLE_ROOT}/components/ui_test_hello/ui_test_hello.cpp
+                                   ${UI_SAMPLE_ROOT}/components/ui_test_video_play/ui_test_video_ayuv.cpp
+)
+# 添加可执行文件
+set(EXECUTABLE_OUTPUT_PATH ${SIMULATOR_DIR}/bin)
+add_executable(watch ${main_file} ${SIMULATOR_SOURCES})
+#target_compile_options(watch PRIVATE -H)
+target_compile_options(watch PRIVATE -MD)
+
+TARGET_LINK_LIBRARIES(watch "-L${FREETYPE_LIB_PATH}"
+    "-L${BIN_ROOT_DIR}/uikit/lib"
+    "${BIN_ROOT_DIR}/vau/BLOCK_HTC.dll" "${BIN_ROOT_DIR}/vau/gpu_rm.dll"
+    "-L${BIN_ROOT_DIR}/SDL2/lib/x64"
+    ${LINK_LIBS})
+# 拷贝文件到bin目录
+add_custom_command(TARGET watch POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy
+                   ${BIN_ROOT_DIR}/SDL2/lib/x64/SDL2.dll ${SIMULATOR_DIR}/bin)
+
+add_custom_command(TARGET watch POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy
+                   ${BIN_ROOT_DIR}/vau/gpu_rm.dll ${SIMULATOR_DIR}/bin)
+
+add_custom_command(TARGET watch POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy
+                   ${BIN_ROOT_DIR}/vau/BLOCK_HTC.dll ${SIMULATOR_DIR}/bin)
+if (RELEASE_VERSION)
+list(REMOVE_ITEM SIMULATOR_SOURCES ${CLOSED_SRC})
+file(COPY ${WEARABLE_DIR}/res DESTINATION ${SIMULATOR_DIR}/bin)
+endif() # RELEASE_VERSION
+
+set(OPEN_RES ${OHOS_DIR}/foundation/arkui/ui_lite/tools/qt/simulator)
+file(GLOB FONT_FILES ${OHOS_DIR}/base/global/system_resources/fonts/*)
+file(COPY ${FONT_FILES} DESTINATION ${SIMULATOR_DIR}/bin/res/res/)
+
+file(COPY ${OPEN_RES}/config/faces/default/B024_002.bin DESTINATION ${SIMULATOR_DIR}/bin/res/res)
+file(COPY ${OPEN_RES}/config/images/blue_rgb888.bin DESTINATION ${SIMULATOR_DIR}/bin/res/res)
+file(COPY ${OPEN_RES}/config/images/image_animator_0.bin DESTINATION ${SIMULATOR_DIR}/bin/res/res)
+file(COPY ${OPEN_RES}/config/images/image_animator_1.bin DESTINATION ${SIMULATOR_DIR}/bin/res/res)
+file(COPY ${OPEN_RES}/config/images/image_animator_2.bin DESTINATION ${SIMULATOR_DIR}/bin/res/res)
+file(COPY ${OPEN_RES}/config/images/image_animator_3.bin DESTINATION ${SIMULATOR_DIR}/bin/res/res)
+file(COPY ${OPEN_RES}/font/line_cj.brk DESTINATION ${SIMULATOR_DIR}/bin/res/res)
+file(COPY ${OHOS_DIR}/base/global/i18n_lite/frameworks/i18n/i18n.dat DESTINATION ${SIMULATOR_DIR}/bin/res/res)
+file(RENAME ${SIMULATOR_DIR}/bin/res/res/HarmonyOS_Sans_SC.ttf ${SIMULATOR_DIR}/bin/res/res/HarmonyOS_Sans_SC_Regular.ttf)
+file(RENAME ${SIMULATOR_DIR}/bin/res/res/image_animator_0.bin ${SIMULATOR_DIR}/bin/res/res/image_animator_4.bin)
+
+endif() # BUILD_SIMULATOR OR BUILD_SIMULATOR_BY_UIKIT

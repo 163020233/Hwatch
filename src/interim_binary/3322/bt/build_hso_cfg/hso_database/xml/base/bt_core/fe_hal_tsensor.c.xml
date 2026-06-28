@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[TSENSOR]temperature value: %d-&gt;%d. @fe_hal_tsensor.c(101),INFO" ID="0x8bfe032d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[TSENSOR]fe_rf_bt_tsensor_temp_update:: tsensor_temp=[%d] reg_temp_code=[0x%x] @fe_hal_tsensor.c(218),INFO" ID="0x8bfe06d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TSENSOR]No temperature is reported. @fe_hal_tsensor.c(221),WARNING" ID="0x8bfe06eb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TSENSOR]bt_comp_power_based_on_temperature::cur_tmp_type=[%d] @fe_hal_tsensor.c(255),INFO" ID="0x8bfe07fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TSENSOR]bt_temperature_trigger_txpwr_comp_process::cur_tsensor_temp=[%d] @fe_hal_tsensor.c(273),INFO" ID="0x8bfe088d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[TSENSOR]bt_dtc_cali_enable::g_power_on_cali_temp=[%d] g_tsensor_temp=[%d] status=[%d] @fe_hal_tsensor.c(288),INFO" ID="0x8bfe0905" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[TSENSOR]bt_mod_sen_cali_enable::g_power_on_cali_temp=[%d] g_tsensor_temp=[%d] status=[%d] @fe_hal_tsensor.c(302),INFO" ID="0x8bfe0975" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[TSENSOR]bt_mod_sen_cali_enable::g_power_on_cali_temp=[%d] g_tsensor_temp=[%d] status=[%d] @fe_hal_tsensor.c(316),INFO" ID="0x8bfe09e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TSENSOR]bt_temperature_state_check_process::g_power_on_cali_temp=[%d] @fe_hal_tsensor.c(347),INFO" ID="0x8bfe0add" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TSENSOR]bt_dtc_bkgd_process::g_power_on_cali_temp=[%d] @fe_hal_tsensor.c(380),INFO" ID="0x8bfe0be5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TSENSOR]bt_xo_core_ctrim_by_temp::ctrim=[0x%x] @fe_hal_tsensor.c(455),INFO" ID="0x8bfe0e3d" />
+			</MSG_LOG>

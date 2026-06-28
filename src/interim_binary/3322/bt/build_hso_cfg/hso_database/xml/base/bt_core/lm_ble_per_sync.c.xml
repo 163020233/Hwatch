@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[PER SYNC]alloc memory for complete event failed! @lm_ble_per_sync.c(270),WARNING" ID="0x88dc0873" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PER SYNC]lm_ble_per_sync_send_cmp_evt sync_desc is NULL @lm_ble_per_sync.c(284),WARNING" ID="0x88dc08e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PER SYNC]alloc memory for command status failed! @lm_ble_per_sync.c(292),WARNING" ID="0x88dc0923" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PER SYNC]lm_ble_per_sync_send_cmd_stat sync_desc is NULL @lm_ble_per_sync.c(306),WARNING" ID="0x88dc0993" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PER SYNC]alloc memory for established event failed! @lm_ble_per_sync.c(314),WARNING" ID="0x88dc09d3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PER SYNC]alloc memory for per adv report event failed! @lm_ble_per_sync.c(506),WARNING" ID="0x88dc0fd3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PER SYNC]alloc memory for command status failed! @lm_ble_per_sync.c(550),WARNING" ID="0x88dc1133" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PER SYNC]alloc memory for complete event failed! @lm_ble_per_sync.c(566),WARNING" ID="0x88dc11b3" />
+			</MSG_LOG>

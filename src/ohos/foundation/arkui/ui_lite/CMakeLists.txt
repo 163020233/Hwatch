@@ -1,0 +1,335 @@
+#===============================================================================
+# @brief    cmake file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2023. All rights reserved.
+#===============================================================================
+set(COMPONENT_NAME "graphic_ui")
+
+set(PUBLIC_HEADER
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/interfaces/kits
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/interfaces/innerkits
+)
+
+set(OHOS_AK_ACL_DIR ${OHOS_DIR}/foundation/arkui/ace_engine_lite)
+
+set(_PRIVATE_THIRD_PARTY_HEADER
+    ${OHOS_DIR}/third_party/cJSON
+    ${OHOS_DIR}/third_party/qrcodegen/cpp
+    ${OHOS_DIR}/third_party/icu/icu4c/source/common
+    ${PROJECT_BINARY_DIR}/gen/third_party/freetype/freetype/include
+    ${ROOT_DIR}/open_source/stb
+    ${PROJECT_BINARY_DIR}/gen/third_party/libjpeg-turbo/libjpeg-turbo-2.1.1
+    ${PROJECT_BINARY_DIR}/gen/third_party/libpng/libpng-1.6.38
+    ${PROJECT_BINARY_DIR}/gen/third_party/harfbuzz/harfbuzz-2.8.2/src
+)
+
+set(_PRIVATE_ACE_ENGINE_LITE_HEADER
+    ${OHOS_AK_ACL_DIR}/interfaces/inner_api/builtin
+    ${OHOS_AK_ACL_DIR}/interfaces/inner_api/builtin/async
+    ${OHOS_AK_ACL_DIR}/interfaces/inner_api/builtin/base
+    ${OHOS_AK_ACL_DIR}/interfaces/inner_api/builtin/jsi
+    ${OHOS_AK_ACL_DIR}/frameworks/common/log
+    ${OHOS_AK_ACL_DIR}/frameworks/common/memory
+    ${OHOS_AK_ACL_DIR}/frameworks/common/memory/cache
+    ${OHOS_AK_ACL_DIR}/frameworks/common/utils
+    ${OHOS_AK_ACL_DIR}/frameworks/include/base
+    ${OHOS_AK_ACL_DIR}/frameworks/include/context
+    ${OHOS_AK_ACL_DIR}/frameworks/include/resource
+    ${OHOS_AK_ACL_DIR}/frameworks/targets/liteos_m
+    ${OHOS_AK_ACL_DIR}/frameworks/module_manager
+    ${OHOS_AK_ACL_DIR}/frameworks/native_engine/jsi/internal
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/animation
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/base
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/components
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/components/baidumap
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/context
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/directive
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/modules
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/modules/baidumap
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/modules/battery
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/modules/brightness
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/modules/keyinput
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/modules/network
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/modules/nfc
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/modules/presets
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/modules/vibrator
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/router
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/stylemgr
+    ${OHOS_AK_ACL_DIR}/frameworks/src/core/wrapper
+    ${OHOS_AK_ACL_DIR}/frameworks/targets
+)
+
+set(_PRIVATE_GUI_HAL_HEADER
+    ${OHOS_DIR}/drivers/peripheral/display/interfaces/include
+    ${ROOT_DIR}/middleware/services/gui/hal/display/include
+    ${ROOT_DIR}/middleware/services/gui/hal/input/include
+    ${ROOT_DIR}/middleware/services/gui/hal/common/include
+)
+
+set(_PRIVATE_GUI_PROPRIETARY_HEADER
+    ${ROOT_DIR}/middleware/services/gui/uikit/config
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/include/service
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/utils/innerkits
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/utils/innerkits/hals
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/innerkits
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/include
+)
+
+set(PRIVATE_HEADER
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/imgdecode
+    ${ROOT_DIR}/middleware/services/gui/uikit/surface/interfaces/innerkits
+    ${ROOT_DIR}/middleware/services/gui/uikit/surface/interfaces/kits
+    ${ROOT_DIR}/middleware/services/gui/uikit/utils/interfaces/innerkits
+    ${ROOT_DIR}/middleware/services/gui/uikit/utils/interfaces/kits
+    ${OHOS_DIR}/device/soc/hisilicon/hi3321/sdk_liteos/sdk_adapter/hals/memory
+    ${OHOS_DIR}/base/hiviewdfx/hilog_lite/interfaces/native/innerkits/hilog
+    ${OHOS_DIR}/base/hiviewdfx/hilog_lite/interfaces/native/innerkits
+    ${_PRIVATE_GUI_HAL_HEADER}
+    ${_PRIVATE_GUI_PROPRIETARY_HEADER}
+    ${_PRIVATE_THIRD_PARTY_HEADER}
+)
+
+if(NOT "${CHIP}" STREQUAL "socmn2")
+list(APPEND PRIVATE_HEADER ${_PRIVATE_ACE_ENGINE_LITE_HEADER})
+endif()
+
+set(ARKUI_SRC
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/animator/animator.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/animator/animator_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/animator/easing_equation.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/animator/interpolation.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/common/graphic_startup.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/common/image.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/common/image_decode_ability.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/common/input_device_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/common/screen.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/common/task.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/common/text.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/common/typed_text.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/root_view.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/text_adapter.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_abstract_clock.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_abstract_progress.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_abstract_scroll.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_abstract_scroll_bar.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_analog_clock.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_arc_label.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_arc_scroll_bar.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_axis.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_box_progress.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_box_scroll_bar.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_button.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_canvas.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_chart.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_checkbox.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_circle_progress.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_dialog.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_digital_clock.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_edit_text.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_image_animator.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_image_view.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_label.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_label_button.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_list.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_picker.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_qrcode.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_radio_button.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_scroll_view.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_slider.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_swipe_view.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_texture_mapper.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_time_picker.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_tree_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_toggle_button.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_view.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/components/ui_view_group.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/core/render_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/core/task_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/default_resource/check_box_res.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dfx/event_injector.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dfx/key_event_injector.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dfx/point_event_injector.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dfx/ui_view_bounds.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dock/focus_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dock/input_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dock/gesture_input_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dock/key_input_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dock/pointer_input_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dock/rotate_input_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dock/vibrator_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/dock/virtual_input_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/draw/clip_utils.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/draw/draw_arc.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/draw/draw_curve.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/draw/draw_image.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/draw/draw_label.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/draw/draw_line.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/draw/draw_rect.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/draw/draw_triangle.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/draw/draw_utils.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/engines/gfx/gfx_engine_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/engines/gfx/soft_engine.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/events/event.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/base_font.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/glyphs_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_font.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_font_adaptor.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_font_allocator.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_font_bitmap.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_font_builder.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_font_cache.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_font_vector.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_line_break.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_multi_font_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_text_shaping.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/imgdecode/cache_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/imgdecode/file_img_decoder.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/imgdecode/image_load.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/layout/flex_layout.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/layout/grid_layout.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/layout/list_layout.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/themes/theme.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/themes/theme_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/common/spannable_string.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/ui_font_cache_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/font_ram_allocator.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/glyphs_cache.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/ui/frameworks/font/glyphs_file.cpp
+)
+
+# set build proprietary ui source
+if("${CHIP}" STREQUAL "socmn2")
+set(PROPRIETARY_UI_SRC
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/common/lite_surface.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/common/image_loader.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/common/canvas_hw_drawer.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/icon_adapter.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/image_adapter.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/common_adapter.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_list_nested.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_cmd.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_chr.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_dom_dump.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_frame_trace.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_record.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/fps_task.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/rotate_event_injector.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_key_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_gesture_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_touch_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_encoder_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/engines/gfx/lite_m_gfx_engine.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/font/font_global_manager.cpp
+)
+else()
+set(PROPRIETARY_UI_SRC
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/common/graphic_cond_ext.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/common/lite_surface.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/common/low_power_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/common/ui_barcode.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/common/canvas_hw_drawer.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/common/ui_emoji_table.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/icon_adapter.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/image_adapter.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_abstract_soft_keyboard.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_custom_hexagons_list.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_input_method.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_keyboard_button.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_list_ext.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_list_nested.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_lite_surface_view.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_menu_item.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_option_box.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_pinyin_candidate.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_scroll_view_nested.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_soft_keyboard.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_sweep_clock.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_swipe_view_nested.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_text_preview_box.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_post_effect_image_view.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_fragment.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_coverflow_view_with_circle.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/common_adapter.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/core/input_method_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_cmd.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_chr.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_dom_dump.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_frame_trace.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_record.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/fps_task.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/dfx_img.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dfx/rotate_event_injector.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_key_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_gesture_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_touch_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/dock/lite_encoder_device.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/draw/clip_img.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/draw/hw_draw_utils.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/engines/gfx/lite_m_gfx_engine.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/font/font_global_manager.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/font/ui_font_hw_cache.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/font/ui_font_hw_vector.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/font/ui_font_hw_vector_stb.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/font/ui_font_vector_stb.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/imgdecode/hw_jpeg_decoder.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/imgdecode/jpeg_img_decoder.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/imgdecode/png_img_decoder.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/swipe_effect/card_flip_effect.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/swipe_effect/cube_effect.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/swipe_effect/turn_page_effect.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/swipe_effect/turn_page_view.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/swipe_effect/zoom_effect.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/swipe_effect/push_press_effect.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/swipe_effect/windmill_effect.cpp
+    ${ROOT_DIR}/middleware/services/gui/uikit/proprietary/src/ui/frameworks/components/ui_transform_button.cpp
+)
+endif()
+
+set(SOURCES
+    ${ARKUI_SRC}
+    ${PROPRIETARY_UI_SRC}
+)
+
+set(COMPONENT_PUBLIC_CCFLAGS
+)
+
+set(COMPONENT_CCFLAGS
+    -std=c++11
+    -Wno-writable-strings
+    -Wno-tautological-pointer-compare
+    -Wno-unused-function
+    -Werror=return-type
+    -Wno-macro-redefined
+    -Wno-missing-field-initializers
+    -Wno-reorder-ctor
+    -Wno-c++11-narrowing
+    -Wno-unused-parameter
+    -Wno-float-to-int-overflow
+    -Wno-unused-variable
+    -Wno-unused-but-set-variable
+)
+
+set(COMPONENT_CXXCFLAGS
+)
+
+set(PUBLIC_DEFINES
+    __LITEOS_M__
+    ENABLE_CMSIS
+)
+
+set(PRIVATE_DEFINES
+    ENABLE_GIF=0
+)
+
+set(WHOLE_LINK
+    true
+)
+
+set(MAIN_COMPONENT
+    false
+)
+
+build_component()
+

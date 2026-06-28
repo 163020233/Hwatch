@@ -1,0 +1,31 @@
+include $(RTOSLITETOPDIR)/config.mk
+
+ifneq ($(LOSCFG_INTERRUPT_VENDOR), y)
+    MODULE_y += interrupt
+endif
+
+ifneq ($(LOSCFG_TIMER_VENDOR), y)
+    MODULE_y += timer
+endif
+
+ifeq ($(LOSCFG_DRIVERS_UART_LITEOS), y)
+    MODULE_y += uart
+endif
+
+MODULE_$(LOSCFG_DRIVERS_BASE) += base
+
+MODULE_$(LOSCFG_DRIVERS_MMC) += mmc
+MODULE_$(LOSCFG_DRIVERS_USB) += usb usb/phy
+MODULE_$(LOSCFG_DRIVERS_USB_DWC_DRIVER) += usb/gadget
+MODULE_$(LOSCFG_DRIVERS_CIPHER) += cipher
+MODULE_$(LOSCFG_DRIVERS_IOMMU) += iommu
+
+MODULE_$(LOSCFG_DRIVERS_RANDOM) += random
+MODULE_$(LOSCFG_DRIVERS_VIDEO) += video
+
+# vendor drivers
+ifeq ($(LOSCFG_DRIVERS_USE_VENDOR_DRIVERS), y)
+MODULE_$(LOSCFG_DRIVERS_USE_VENDOR_HISI_CAMERA) += $(LITEOSTOPDIR)/$(LOSCFG_DRIVERS_VENDOR_PATH)
+endif
+
+include $(MODULE)

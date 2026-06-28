@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_key_deriv_calc_responder_check srv_desc creat fail @lm_classic_acl_srv_ssp_key_deriv_ram.c(34),ERROR" ID="0x8afa0112" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_key_deriv_testify_responder_check Mismatched! Pair Failed! @lm_classic_acl_srv_ssp_key_deriv_ram.c(118),WARNING" ID="0x8afa03b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_key_deriv_record_initiator_check srv_desc-&gt;param is NULL @lm_classic_acl_srv_ssp_key_deriv_ram.c(201),WARNING" ID="0x8afa064b" />
+			</MSG_LOG>

@@ -1,0 +1,100 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../build/gn/config.gni")
+
+group("fs") {
+    deps = []
+    if (defined(LOSCFG_FS_COMPAT_NUTTX) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["compat"]
+    }
+    if (defined(LOSCFG_FS_VFS) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["vfs"]
+        if(defined(LOSCFG_COMPAT_LINUX)) {
+            deps += ["vfs/multi_partition:multi_partition"]
+        }
+    }
+    if (defined(LOSCFG_FS_VFS_BLOCK_DEVICE) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["vfs/bch:bch"]
+    }
+    if (defined(LOSCFG_DRIVER_DISK) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["vfs/disk:disk"]
+    }
+    if (defined(LOSCFG_FS_FAT) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["fat:fat"]
+    }
+    if (defined(LOSCFG_FS_FAT_VIRTUAL_PARTITION)) {
+        deps += ["fat/virpart:virpart"]
+    }
+    if (defined(LOSCFG_FS_FAT_CACHE) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["vfs/bcache:bcache"]
+    }
+    if (defined(LOSCFG_FS_FAT_UNI_TRIM)) {
+        deps += ["fat/utrim:utrim"]
+    }
+    if (defined(LOSCFG_FS_FAT_FTL)) {
+        deps += ["fat/ftl:ftl"]
+    }
+    if (defined(LOSCFG_FS_RAMFS)) {
+        deps += ["ramfs:ramfs"]
+    }
+    if (defined(LOSCFG_FS_YAFFS)) {
+        deps += ["yaffs2:yaffs2"]
+    }
+    if (defined(LOSCFG_FS_NFS)) {
+        deps += ["nfs:nfs"]
+    }
+    if (defined(LOSCFG_FS_PROC) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["proc:proc"]
+    }
+    if (defined(LOSCFG_FS_JFFS)) {
+        deps += ["jffs2:jffs2"]
+    }
+    if (defined(LOSCFG_FS_ROMFS)) {
+        deps += ["romfs:romfs"]
+    }
+    if (defined(LOSCFG_FS_LITTLEFS)) {
+        deps += ["littlefs:littlefs"]
+    }
+}
+
+config("public") {
+    include_dirs = []
+    LITEOS_VFS_INCLUDE = []
+    LITEOS_VFS_MTD_INCLUDE = []
+    LITEOS_VFS_DISK_INCLUDE = []
+    LITEOS_FAT_INCLUDE = []
+    LITEOS_PROC_INCLUDE = []
+    LITEOS_FAT_CACHE_INCLUDE = []
+    LITEOS_FAT_VIRPART_INCLUDE = []
+    if (defined(LOSCFG_FS_VFS)) {
+        LITEOS_VFS_INCLUDE = [
+            "$LITEOSTOPDIR/fs/include",
+            "$RTOSLITETOPDIR/$open_source_path/incubator-nuttx/liteos/fs/include",
+            "$LITEOSTOPDIR/fs/vfs/include/driver",
+            "$RTOSLITETOPDIR/$open_source_path/incubator-nuttx/liteos/fs/vfs/include/driver",
+            "$LITEOSTOPDIR/fs/vfs/include/operation",
+        ]
+        LITEOS_VFS_MTD_INCLUDE = ["$LITEOSTOPDIR/fs/vfs/include/multi_partition"]
+        LITEOS_VFS_DISK_INCLUDE = ["$LITEOSTOPDIR/fs/vfs/include/disk"]
+    }
+    if (defined(LOSCFG_FS_FAT)) {
+        LITEOS_FAT_INCLUDE += [
+            "$LITEOSTOPDIR/fs/fat/include",
+            "$RTOSLITETOPDIR/open_source/FatFs/source",
+        ]
+        defines = ["FATFS_EXTEND_CONFIG"]
+    }
+
+    if (defined(LOSCFG_FS_FAT_CACHE)) {
+        LITEOS_FAT_CACHE_INCLUDE += ["$LITEOSTOPDIR/fs/vfs/include/bcache"]
+    }
+
+    if (defined(LOSCFG_FS_PROC)) {
+        LITEOS_PROC_INCLUDE += ["$LITEOSTOPDIR/fs/proc/include"]
+    }
+    include_dirs = LITEOS_VFS_INCLUDE + LITEOS_FAT_CACHE_INCLUDE + LITEOS_VFS_MTD_INCLUDE + LITEOS_VFS_DISK_INCLUDE + LITEOS_PROC_INCLUDE + LITEOS_FAT_VIRPART_INCLUDE + LITEOS_FAT_INCLUDE
+}
+

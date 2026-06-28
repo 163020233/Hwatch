@@ -1,0 +1,30 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[TM_RELIABLE_SEND_DATA] data_len: %u, data: 0x%08x 0x%08x ** ** ** ** 0x%08x @gle_tm_reliable_trans.c(34),ERROR" ID="0xee820112" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[TM_RELIABLE_RECEIVE_DATA] data_len: %u, data: 0x%08x 0x%08x ** ** ** ** 0x%08x @gle_tm_reliable_trans.c(37),ERROR" ID="0xee82012a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RELIABLE COPY PKT] new_node alloc copyed pkt failed! @gle_tm_reliable_trans.c(219),ERROR" ID="0xee8206da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RELIABLE COPY PKT] alloc new_node copyed data buf failed! @gle_tm_reliable_trans.c(234),ERROR" ID="0xee820752" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RELIABLE COPY PKT] memcpy data buf to reliable queue node failed. @gle_tm_reliable_trans.c(241),ERROR" ID="0xee82078a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][CREATE RSP FRAME] alloc rsp_pkt failed! @gle_tm_reliable_trans.c(277),ERROR" ID="0xee8208aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][CREATE RSP FRAME] alloc buff failed! @gle_tm_reliable_trans.c(292),ERROR" ID="0xee820922" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][SEND RSP DATA] gle tm reliable create rsp frame failed! @gle_tm_reliable_trans.c(482),ERROR" ID="0xee820f12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][REORDER TIMEOUT] gle tm reliable send rsp data failed! @gle_tm_reliable_trans.c(520),ERROR" ID="0xee821042" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RSP TIMEOUT] gle tm reliable channel timer arg is NULL. @gle_tm_reliable_trans.c(534),ERROR" ID="0xee8210b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][REPLY TIMEOUT] gle tm reliable send rsp data failed! @gle_tm_reliable_trans.c(556),ERROR" ID="0xee821162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RSP TIMEOUT] gle tm reliable alloc reply timer arg failed @gle_tm_reliable_trans.c(566),ERROR" ID="0xee8211b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][TIMEOUT] gle tm reliable reply timer restart failed @gle_tm_reliable_trans.c(574),ERROR" ID="0xee8211f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][CREATE RX NODE]create queue node alloc failed @gle_tm_reliable_trans.c(585),ERROR" ID="0xee82124a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][CREATE RX NODE]copy the PDU failed @gle_tm_reliable_trans.c(591),ERROR" ID="0xee82127a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][CREATE RX NODE] seq error: %u @gle_tm_reliable_trans.c(621),ERROR" ID="0xee82136a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE TM][FRAG TXSEQ HANDLE] txseq handle, receive_txseq = %u, expected_txseq = %u,maxexpected_txseq = %u @gle_tm_reliable_trans.c(638),ERROR" ID="0xee8213f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][FRAG TXSEQ HANDLE] gle tm reliable send rsp data failed! @gle_tm_reliable_trans.c(673),ERROR" ID="0xee82150a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][FRAG REQSEQ HANDLE] repeat req! @gle_tm_reliable_trans.c(686),ERROR" ID="0xee821572" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE TM][FRAG REQSEQ HANDLE] reqseq handle, receive_reqseq = %u, expected_ack_seq = %u,next_txseq = %u @gle_tm_reliable_trans.c(692),ERROR" ID="0xee8215a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][FRAG REQSEQ HANDLE] retrans node is not exist! @gle_tm_reliable_trans.c(702),ERROR" ID="0xee8215f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ev_code = %d not support @gle_tm_reliable_trans.c(726),INFO" ID="0xee8216b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RECV DATA CBK] unidir frag txseq handle falied! @gle_tm_reliable_trans.c(738),ERROR" ID="0xee821712" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RECV DATA CBK] bidir frag txseq handle falied! @gle_tm_reliable_trans.c(745),ERROR" ID="0xee82174a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RECV DATA CBK] bidir frag reqseq handle falied! @gle_tm_reliable_trans.c(750),ERROR" ID="0xee821772" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RECV DATA CBK] rsp reqseq handle falied! @gle_tm_reliable_trans.c(757),ERROR" ID="0xee8217aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][RELIABLE QUEUE INIT] mem exhaust, data_len = %zu @gle_tm_reliable_trans.c(771),WARNING" ID="0xee82181b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RELIABLE QUEUE INIT] gle tm reliable alloc reply timer arg failed @gle_tm_reliable_trans.c(788),ERROR" ID="0xee8218a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][RELIABLE QUEUE INIT] gle tm reliable reply timer start failed @gle_tm_reliable_trans.c(796),ERROR" ID="0xee8218e2" />
+			</MSG_LOG>

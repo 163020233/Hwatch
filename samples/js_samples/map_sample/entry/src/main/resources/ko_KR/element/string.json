@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "모듈 설명"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "설명"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "공급업체 맵"
+    }
+  ]
+}

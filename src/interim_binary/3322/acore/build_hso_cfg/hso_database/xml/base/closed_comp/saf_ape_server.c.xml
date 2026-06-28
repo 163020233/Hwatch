@@ -1,0 +1,37 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] server already register! @saf_ape_server.c(50),ERROR" ID="0xe9b00192" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apes] server register failed! ret = %u @saf_ape_server.c(55),ERROR" ID="0xe9b001ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apes] server id map init failed! ret = %u @saf_ape_server.c(60),ERROR" ID="0xe9b001e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apes] group init failed! ret = %u @saf_ape_server.c(65),ERROR" ID="0xe9b0020a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] server not register! @saf_ape_server.c(114),ERROR" ID="0xe9b00392" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] server not register! @saf_ape_server.c(178),ERROR" ID="0xe9b00592" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] service already started! @saf_ape_server.c(182),ERROR" ID="0xe9b005b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] register inst failed! @saf_ape_server.c(192),ERROR" ID="0xe9b00602" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apes] associate handle failed! ret = %u @saf_ape_server.c(197),ERROR" ID="0xe9b0062a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] malloc capability fail ! @saf_ape_server.c(219),ERROR" ID="0xe9b006da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] malloc att group property fail ! @saf_ape_server.c(234),ERROR" ID="0xe9b00752" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] malloc location fail ! @saf_ape_server.c(242),ERROR" ID="0xe9b00792" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] direction err! @saf_ape_server.c(314),ERROR" ID="0xe9b009d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] sink attribute group is already full! @saf_ape_server.c(318),ERROR" ID="0xe9b009f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] source attribute group is already full! @saf_ape_server.c(322),ERROR" ID="0xe9b00a12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] capability is null! @saf_ape_server.c(326),ERROR" ID="0xe9b00a32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] codec param is null! @saf_ape_server.c(330),ERROR" ID="0xe9b00a52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] avaliable contexts invalid! @saf_ape_server.c(336),ERROR" ID="0xe9b00a82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] param err! @saf_ape_server.c(348),ERROR" ID="0xe9b00ae2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] server not register! @saf_ape_server.c(353),ERROR" ID="0xe9b00b0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] create attribute group, alloc att group id failed! @saf_ape_server.c(359),ERROR" ID="0xe9b00b3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] create attribute group, new attribute group failed! @saf_ape_server.c(366),ERROR" ID="0xe9b00b72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] load attribute group info failed! @saf_ape_server.c(373),ERROR" ID="0xe9b00baa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] attribute group not exist! @saf_ape_server.c(398),ERROR" ID="0xe9b00c72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] location doesn't exist in att group failed! @saf_ape_server.c(402),ERROR" ID="0xe9b00c92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] malloc location fail ! @saf_ape_server.c(409),ERROR" ID="0xe9b00cca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apes] inst not found, inst id: %u @saf_ape_server.c(417),ERROR" ID="0xe9b00d0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes set location] server not register! @saf_ape_server.c(429),ERROR" ID="0xe9b00d6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes set location] location param is null! @saf_ape_server.c(433),ERROR" ID="0xe9b00d8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes set location] malloc location data fail ! @saf_ape_server.c(439),ERROR" ID="0xe9b00dba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apes set location] fail, ret: 0x%0x @saf_ape_server.c(449),ERROR" ID="0xe9b00e0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] set avaliable contexts attribute group not exist! @saf_ape_server.c(465),ERROR" ID="0xe9b00e8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes] avaliable contexts is beyond support contexts! @saf_ape_server.c(471),ERROR" ID="0xe9b00eba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][apes] inst not found, inst id: %u @saf_ape_server.c(477),ERROR" ID="0xe9b00eea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes set avaliable contexts] server not register! @saf_ape_server.c(489),ERROR" ID="0xe9b00f4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][apes set avaliable contexts] avaliable contexts is 0! @saf_ape_server.c(494),ERROR" ID="0xe9b00f72" />
+			</MSG_LOG>

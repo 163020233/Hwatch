@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="ssap recv data ind rsp op[0x%02x], len = %u @gle_ssap_manager.c(44),INFO" ID="0xed9e0165" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="op[0x%02x] can not support @gle_ssap_manager.c(98),ERROR" ID="0xed9e0312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="op[0x%02x] can not support @gle_ssap_manager.c(119),ERROR" ID="0xed9e03ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssap recv data ind req op[0x%02x], len = %u @gle_ssap_manager.c(159),INFO" ID="0xed9e04fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="op[0x%02x] can not support @gle_ssap_manager.c(191),ERROR" ID="0xed9e05fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssap check type by opcode trans-&gt;op:0x%02x @gle_ssap_manager.c(221),INFO" ID="0xed9e06ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="cs pdu error rsp, op:0x%02x, op_type:0x%02x @gle_ssap_manager.c(246),ERROR" ID="0xed9e07b2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssap recv data ind cbk data_len = %u, data_off = %u, pkt-&gt;lcid = %u @gle_ssap_manager.c(262),INFO" ID="0xed9e0835" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssap recv data ind cbk tl not found by lcid[%u] @gle_ssap_manager.c(269),ERROR" ID="0xed9e086a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="g_ssap_buff_busy_num = %u, g_ssap_buff_recover_num = %u @gle_ssap_manager.c(329),INFO" ID="0xed9e0a4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle access link not exist, hdl:0x%x @gle_ssap_manager.c(342),ERROR" ID="0xed9e0ab2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssap waitfor sigle timeout failed, ret:0x%x. @gle_ssap_manager.c(383),ERROR" ID="0xed9e0bfa" />
+			</MSG_LOG>

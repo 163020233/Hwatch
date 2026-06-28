@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][customize] bt_cust_param_parse_tx_power = %u. @bt_customize_func.c(51),INFO" ID="0x8c2a019d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][customize] bt_cust_param_parse_acb_rpt_rssi_per_intv = %u. @bt_customize_func.c(62),INFO" ID="0x8c2a01f5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][customize] msg len err. len=%u, addr_offset=%u, param_type=%u, param_len=%u. @bt_customize_func.c(88),WARNING" ID="0x8c2a02c3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][customize] received ipc err. addr=%p, len=%u. @bt_customize_func.c(103),WARNING" ID="0x8c2a033b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][customize] receive ipc msg. len=%u. recv_cnt=%u @bt_customize_func.c(107),INFO" ID="0x8c2a035d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BGTP][customize] bt_customize_config_init. @bt_customize_func.c(132),INFO" ID="0x8c2a0425" />
+			</MSG_LOG>

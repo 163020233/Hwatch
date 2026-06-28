@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP][EVENT_CALLBACK] EVENT=%u @sapi_a2dp.c(478),INFO" ID="0xeb9e0ef5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[A2DP][WRITE_SBC] DATA_LEN=%d @sapi_a2dp.c(529),INFO" ID="0xeb9e108d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[A2DP][WRITE_AAC] DATA_LEN=%d @sapi_a2dp.c(565),INFO" ID="0xeb9e11ad" />
+			</MSG_LOG>

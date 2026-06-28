@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @io_mux.c(52),INFO" ID="0x98b601a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]addr:0x%x, val:0x%x @io_mux.c(56),INFO" ID="0x98b601c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @io_mux.c(59),INFO" ID="0x98b601dd" />
+			</MSG_LOG>

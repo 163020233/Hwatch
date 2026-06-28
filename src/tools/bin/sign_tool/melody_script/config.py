@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+
+server_name = "10.30.61.85"
+server_port = 8871
+
+connect_cmd = "melody_signing_request"
+
+trans_ack = "ACK"
+trans_nak = "NAK"

@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_pre_process_hmac_sha256_task memcpy key error! @enc_ha_hmac_sha256.c(49),ERROR" ID="0x89be018a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_pre_process_hmac_sha256_task memcpy text error! @enc_ha_hmac_sha256.c(54),ERROR" ID="0x89be01b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_post_process_hmac_sha256_task memcpy hash error! @enc_ha_hmac_sha256.c(73),ERROR" ID="0x89be024a" />
+			</MSG_LOG>

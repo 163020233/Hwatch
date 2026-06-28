@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xasilk_enc_comp.c(61),ERROR" ID="0x993001ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xasilk_enc_comp.c(66),ERROR" ID="0x99300212" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;bit_depth = %u @xasilk_enc_comp.c(70),ERROR" ID="0x99300232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]audio_osal_kmalloc instance failed! @xasilk_enc_comp.c(206),ERROR" ID="0x99300672" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call silk_sdk_get_encoder_size Failed, Error Code: [0x%08X] @xasilk_enc_comp.c(214),ERROR" ID="0x993006b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]audio_osal_kmalloc silk_enc info failed! @xasilk_enc_comp.c(220),ERROR" ID="0x993006e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call silk_init_encoder_fix Failed, Error Code: [0x%08X] @xasilk_enc_comp.c(232),ERROR" ID="0x99300742" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]memcpy_s failed @xasilk_enc_comp.c(278),ERROR" ID="0x993008b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ret = %d @xasilk_enc_comp.c(279),ERROR" ID="0x993008ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]apkt-&gt;size = %d @xasilk_enc_comp.c(307),INFO" ID="0x9930099d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call silk_sdk_encode Failed, Error Code: [0x%08X] @xasilk_enc_comp.c(323),ERROR" ID="0x99300a1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @xasilk_enc_comp.c(330),ERROR" ID="0x99300a52" />
+			</MSG_LOG>

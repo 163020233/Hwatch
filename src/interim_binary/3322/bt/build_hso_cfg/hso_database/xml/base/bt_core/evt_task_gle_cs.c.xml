@@ -1,0 +1,45 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem] cs_refresh_ts, timestamp=%u-&gt;%u, next_counter=%u, try_times=%u @evt_task_gle_cs.c(215),INFO" ID="0x894006bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]fsm_msg_alloc fail, fsm_id=%#X @evt_task_gle_cs.c(224),WARNING" ID="0x89400703" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem][evt_cbk]es_elt-&gt;timestamp=%d, timestamp_sn==%d, env_ptr-&gt;clk_off=%d, acb_conhdl=%d @evt_task_gle_cs.c(236),INFO" ID="0x89400765" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_cs_evt_cbk, env_ptr is null @evt_task_gle_cs.c(303),ERROR" ID="0x8940097a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]evt_task_gle_cs_evt_cbk, prog_num=%d @evt_task_gle_cs.c(314),WARNING" ID="0x894009d3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]evt_cbk stop!!! counter=%d, limit=%d @evt_task_gle_cs.c(330),WARNING" ID="0x89400a53" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]evt_cbk. es_insert_elt fail. status=%u @evt_task_gle_cs.c(336),WARNING" ID="0x89400a83" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem]evt_task_gle_cs_evt_cbk, slem_hdl: %d, slem_interval:%d, anchor_point:0x%x, ble_txpwr:%d @evt_task_gle_cs.c(339),INFO" ID="0x89400a9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_cs_evt_abnormal_cbk, env_ptr is null @evt_task_gle_cs.c(359),ERROR" ID="0x89400b3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]evt_task_gle_cs_abnormal_cbk, prog_num=%d @evt_task_gle_cs.c(374),WARNING" ID="0x89400bb3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]acb_env=NULL, acb disconnect @evt_task_gle_cs.c(380),INFO" ID="0x89400be5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][slem]abnormal_cbk. timestamp=%u, interval=%u. clk_off=%u @evt_task_gle_cs.c(386),INFO" ID="0x89400c15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]abnormal_cbk. es_insert_elt fail. status=%u @evt_task_gle_cs.c(390),WARNING" ID="0x89400c33" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_cs_evt_cancel_cbk, env_ptr is null @evt_task_gle_cs.c(418),ERROR" ID="0x89400d12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]evt_task_gle_cs_cancel_cbk, prog_num=%d @evt_task_gle_cs.c(428),INFO" ID="0x89400d65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]acb_env=NULL, acb disconnect @evt_task_gle_cs.c(434),INFO" ID="0x89400d95" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][slem]cancel_cbk. timestamp=%u, interval=%u. clk_off=%u @evt_task_gle_cs.c(440),INFO" ID="0x89400dc5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_cs_cancel_cbk slem_hdl 0x%x, cur_prio=%d @evt_task_gle_cs.c(445),INFO" ID="0x89400ded" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]cancel_cbk. es_insert_elt fail. status=%u @evt_task_gle_cs.c(450),WARNING" ID="0x89400e13" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][GLE_CS]evt_task_gle_cs_isr_cbk late int! con_hdl %d, elt-&gt;ts 0x%x, cur_ts 0x%x @evt_task_gle_cs.c(483),WARNING" ID="0x89400f1b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_cs_start_cbk, env_ptr is null @evt_task_gle_cs.c(500),ERROR" ID="0x89400fa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]evt_task_gle_cs_start_cbk: start before end isr ! slem_hdl 0x%x @evt_task_gle_cs.c(507),ERROR" ID="0x89400fda" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[T refl param] instant passed, instant_t=%d, now_time_125=%d, Add %d interval, diff_slot125=%d @evt_task_gle_cs.c(563),INFO" ID="0x8940119d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[T refl param]anchor_point=%d, sed-&gt;sed_usoffset=%d, instant=%d, diff_slot125=%d @evt_task_gle_cs.c(577),INFO" ID="0x8940120d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[T] CS create sed_index 0x%x, interval %d, anchor point 0x%x, delay %d @evt_task_gle_cs.c(585),INFO" ID="0x8940124d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[G cs param] instant passed, instant_t=%d, now_time_125=%d, Add %d interval, diff_slot125=%d @evt_task_gle_cs.c(600),INFO" ID="0x894012c5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[G] CS create sed_index 0x%x, interval %d, anchor point 0x%x, delay %d @evt_task_gle_cs.c(609),INFO" ID="0x8940130d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem] evt_task_gle_cs_init_es_elt. sed_index 0x%x, interval=%u, anchor_point=0x%x, delay=%u @evt_task_gle_cs.c(652),INFO" ID="0x89401465" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]evt_task_gle_slem_create env exist, slem_hdl %d @evt_task_gle_cs.c(699),ERROR" ID="0x894015da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]slem_env malloc fail! @evt_task_gle_cs.c(705),WARNING" ID="0x8940160b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][cs]cs task_type = 0x%x @evt_task_gle_cs.c(727),INFO" ID="0x894016bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_cs_destory, env_ptr is null @evt_task_gle_cs.c(740),ERROR" ID="0x89401722" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]slem destroy, nb_prog &gt; 0 @evt_task_gle_cs.c(748),INFO" ID="0x89401765" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BLE_CS]evt_task_gle_cs_destory es_elt is NULL!!! @evt_task_gle_cs.c(759),ERROR" ID="0x894017ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem] evt_task_gle_cs_destory con_hdl 0x%x @evt_task_gle_cs.c(764),INFO" ID="0x894017e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_cs_ending_act, env_ptr is null @evt_task_gle_cs.c(793),ERROR" ID="0x894018ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem] en param save, env ptr is NULL !!! @evt_task_gle_cs.c(806),WARNING" ID="0x89401933" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem en]slem_env  is NULL ! @evt_task_gle_cs.c(816),WARNING" ID="0x89401983" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem en]acb_env is NULL ! @evt_task_gle_cs.c(821),WARNING" ID="0x894019ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem en]es_elt is NULL ! @evt_task_gle_cs.c(829),WARNING" ID="0x894019eb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]evt_task_gle_acb_set_slem_en, slem_txpwr=%d, acb_pwrlvl=%d @evt_task_gle_cs.c(838),INFO" ID="0x89401a35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE_CS] evt_task_gle_cs_create es insert fail. ret=%u @evt_task_gle_cs.c(846),INFO" ID="0x89401a75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]update_slem_elt_instant, es_elt is NULL !!! @evt_task_gle_cs.c(886),WARNING" ID="0x89401bb3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]update_slem_elt_instant, slem_interval:%d, anchor_point:0x%x @evt_task_gle_cs.c(895),INFO" ID="0x89401bfd" />
+			</MSG_LOG>

@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_auth_passkey_start_io Local User Input Passkey. @lm_classic_acl_srv_ssp_auth_passkey.c(54),INFO" ID="0x89cc01b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_auth_passkey_start_io Local Device Display Passkey. @lm_classic_acl_srv_ssp_auth_passkey.c(70),INFO" ID="0x89cc0235" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP] lm_classic_acl_srv_ssp_auth_passkey_start_io invalid local policy 0x%x @lm_classic_acl_srv_ssp_auth_passkey.c(90),WARNING" ID="0x89cc02d3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_auth_passkey_local_confirm_done memcpy error! @lm_classic_acl_srv_ssp_auth_passkey.c(155),ERROR" ID="0x89cc04da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_auth_passkey_remote_confirm_done memcpy error! @lm_classic_acl_srv_ssp_auth_passkey.c(375),ERROR" ID="0x89cc0bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] Stage 2(authentication) with Passkey Entry finished successfully! @lm_classic_acl_srv_ssp_auth_passkey.c(426),INFO" ID="0x89cc0d55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_auth_passkey_testify_remote_confirm Mismatched! Pair Failed! @lm_classic_acl_srv_ssp_auth_passkey.c(450),WARNING" ID="0x89cc0e13" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_auth_passkey_negative_testify_act Remote Refused! Pair Failed! @lm_classic_acl_srv_ssp_auth_passkey.c(489),WARNING" ID="0x89cc0f4b" />
+			</MSG_LOG>

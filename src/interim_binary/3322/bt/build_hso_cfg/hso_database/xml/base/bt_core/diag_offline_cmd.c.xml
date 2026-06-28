@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="Already in Off-cmd file @diag_offline_cmd.c(43),ERROR" ID="0xa08c015a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Mkdir %s failed @diag_offline_cmd.c(50),ERROR" ID="0xa08c0192" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Open %s failed. @diag_offline_cmd.c(58),ERROR" ID="0xa08c01d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Please enter mode 0 or 1. @diag_offline_cmd.c(73),ERROR" ID="0xa08c024a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Unable to enable offline commands. @diag_offline_cmd.c(106),ERROR" ID="0xa08c0352" />
+			</MSG_LOG>

@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[HFP]build_hf_indicator_list sprintf_s error @hfp_hlp.c(165),WARNING" ID="0xebde052b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP]hfp_code_build_hf_indicator sprintf_s error!!! @hfp_hlp.c(199),WARNING" ID="0xebde063b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP][SEND_AT_CMD]JITWS slave not send at cmd!!! @hfp_hlp.c(239),WARNING" ID="0xebde077b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP][SEND_AT_CMD]PEND_CMD is too much @hfp_hlp.c(247),WARNING" ID="0xebde07bb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HFP][SEND_AT_CMD] CODE=0x%x @hfp_hlp.c(344),INFO" ID="0xebde0ac5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[STACK][RECV_RING_STOP] @hfp_hlp.c(799),INFO" ID="0xebde18fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP][AT_CMD] +CLCC @hfp_hlp.c(1157),INFO" ID="0xebde242d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HFP][AT_CMD] +CIEV=&lt;%u&gt;, &lt;%u&gt; @hfp_hlp.c(1242),WARNING" ID="0xebde26d3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HFP][CONN_DISC] REASON=0x%x @hfp_hlp.c(1457),INFO" ID="0xebde2d8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HFP][CONN_DISC] connection_number=0x%x @hfp_hlp.c(1471),INFO" ID="0xebde2dfd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HFP][SCO_DISC] SCO_HANDLE=0x%x @hfp_hlp.c(1567),INFO" ID="0xebde30fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HFP][SCO_CONN] SCO_HANDLE=0x%x @hfp_hlp.c(1659),INFO" ID="0xebde33dd" />
+			</MSG_LOG>

@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_dac_get_chan_sel Failed, Error Code: [0x%08X] @dev_afe_dac.c(74),ERROR" ID="0x98780252" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_dac_open Failed, Error Code: [0x%08X] @dev_afe_dac.c(80),ERROR" ID="0x98780282" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_dac_close Failed, Error Code: [0x%08X] @dev_afe_dac.c(99),ERROR" ID="0x9878031a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_dac_set_gain Failed, Error Code: [0x%08X] @dev_afe_dac.c(123),ERROR" ID="0x987803da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_dac_set_gain Failed, Error Code: [0x%08X] @dev_afe_dac.c(163),ERROR" ID="0x9878051a" />
+			</MSG_LOG>

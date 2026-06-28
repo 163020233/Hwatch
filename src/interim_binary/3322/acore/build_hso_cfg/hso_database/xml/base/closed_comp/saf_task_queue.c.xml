@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[saf] saf_task_queue_write_queue failed, times:%u. @saf_task_queue.c(47),ERROR" ID="0xe966017a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf] task queue msg get fail ret:0x%x. @saf_task_queue.c(66),INFO" ID="0xe9660215" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf] task queue destory fail ret:0x%x. @saf_task_queue.c(89),INFO" ID="0xe96602cd" />
+			</MSG_LOG>

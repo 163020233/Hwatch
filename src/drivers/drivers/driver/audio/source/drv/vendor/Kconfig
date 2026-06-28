@@ -1,0 +1,200 @@
+menu "Audio Vendor Driver Config"
+
+config VENDOR_DRIVER_SUPPORT
+    bool "Vendor Driver Support"
+    default y          if BRANDY
+    default n
+
+if VENDOR_DRIVER_SUPPORT
+###########################################################
+menu "ANC CODEC Driver"
+
+config VENDOR_DRIVER_ANC_CODEC_SUPPORT
+    bool "ANC CODEC support"
+    default n
+
+if VENDOR_DRIVER_ANC_CODEC_SUPPORT
+
+config CONTROL_ANC_CODEC_IN_ACORE
+    bool "control anc codec via A core"
+    default y
+
+config CONTROL_ANC_CODEC_IN_DSP
+    bool "control anc codec via DSP"
+    default n
+
+config ANC_CODEC_I2C_BUS_ID
+    int "anc codec i2c bus id"
+    default 0
+
+config ANC_CODEC_I2C_ADDR
+    hex "anc codec i2c address"
+    default 0x28
+
+endif
+
+endmenu ## "ANC CODEC Driver"
+
+menu "aw85825 Driver"
+
+config VENDOR_DRIVER_AW85825_SUPPORT
+    bool "aw85825 support"
+    default n
+
+endmenu ## "aw85825 Driver"
+
+menu "acm8623 Driver"
+
+config VENDOR_DRIVER_ACM8623_SUPPORT
+    bool "acm8623 support"
+    default n
+
+if VENDOR_DRIVER_ACM8623_SUPPORT
+
+config ACM8623_PBTL_MODE_ENABLE
+    bool "enable acm8623 PBTL mode"
+    default y
+
+endif
+
+endmenu ## "acm8623 Driver"
+
+menu "acm8625s Driver"
+
+config VENDOR_DRIVER_ACM8625S_SUPPORT
+    bool "acm8625s support"
+    default n
+
+endmenu ## "acm8625s Driver"
+
+menu "acm8815 Driver"
+
+config VENDOR_DRIVER_ACM8815_SUPPORT
+    bool "acm8815 support"
+    default n
+
+endmenu ## "acm8815 Driver"
+
+###########################################################
+menu "aw88262 Driver"
+
+config VENDOR_DRIVER_AW88262_SUPPORT
+    bool "aw88262 support"
+    default n
+
+endmenu ## "aw88262 Driver"
+###########################################################
+menu "aw88166 Driver"
+
+config VENDOR_DRIVER_AW88166_SUPPORT
+    bool "aw88166 support"
+    default n
+
+if VENDOR_DRIVER_AW88166_SUPPORT
+
+config CONTROL_AW88166_IN_ACORE
+    bool "control aw88166 via A core"
+    default y
+
+config CONTROL_AW88166_IN_DSP
+    bool "control aw88166 via DSP"
+    default n
+
+config AW88166_I2C_BUS_ID
+    int "aw88166 i2c bus id"
+    default 0
+
+config AW88166_I2C_ADDR
+    hex "aw88166 i2c address"
+    default 0x34
+
+endif
+
+endmenu ## "aw88166 Driver"
+###########################################################
+menu "es8156 Driver"
+
+config VENDOR_DRIVER_ES8156_SUPPORT
+    bool "es8156 support"
+    default n
+
+if VENDOR_DRIVER_ES8156_SUPPORT
+
+config CONTROL_ES8156_IN_ACORE
+    bool "control es8156 via A core"
+    default y
+
+config CONTROL_ES8156_IN_DSP
+    bool "control es8156 via DSP"
+    default n
+
+config ES8156_I2C_BUS_ID
+    int "es8156 i2c bus id"
+    default 0
+
+config ES8156_I2C_ADDR
+    hex "es8156 i2c address"
+    default 0x28
+
+endif
+
+endmenu ## "es8156 Driver"
+###########################################################
+menu "es8311 Driver"
+
+config VENDOR_DRIVER_ES8311_SUPPORT
+    bool "es8311 support"
+    default n
+
+if VENDOR_DRIVER_ES8311_SUPPORT
+
+config CONTROL_ES8311_IN_ACORE
+    bool "control es8311 via A core"
+    default y
+
+config CONTROL_ES8311_IN_DSP
+    bool "control es8311 via DSP"
+    default n
+
+config ES8311_I2C_BUS_ID
+    int "es8311 i2c bus id"
+    default 0
+
+config ES8311_I2C_ADDR
+    hex "es8311 i2c address"
+    default 0x28
+
+endif
+
+endmenu ## "es8311 Driver"
+###########################################################
+menu "es8396 Driver"
+
+config VENDOR_DRIVER_ES8396_SUPPORT
+    bool "es8396 support"
+    default n
+
+if VENDOR_DRIVER_ES8396_SUPPORT
+
+config CONTROL_ES8396_IN_ACORE
+    bool "control es8396 via A core"
+    default y
+
+config CONTROL_ES8396_IN_DSP
+    bool "control es8396 via DSP"
+    default n
+
+config ES8396_I2C_BUS_ID
+    int "es8396 i2c bus id"
+    default 0
+
+config ES8396_I2C_ADDR
+    hex "es8396 i2c address"
+    default 0x28
+
+endif
+
+endmenu ## "es8396 Driver"
+###########################################################
+endif ## VENDOR_DRIVER_SUPPORT
+endmenu ## "Audio Vendor Driver Config"

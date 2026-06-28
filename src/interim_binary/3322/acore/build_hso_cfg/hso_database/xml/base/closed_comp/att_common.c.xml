@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ATT]gatt task list reserve memcpy error @att_common.c(246),ERROR" ID="0xed2007b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gatt find input report reference by report id item is null @att_common.c(359),ERROR" ID="0xed200b3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gatt find input report reference by report id invalid handle @att_common.c(363),ERROR" ID="0xed200b5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt find input report reference by report id can't find the report reference report_id[%d] in this service @att_common.c(379),ERROR" ID="0xed200bda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt find input report reference by report id found the report reference hdl[%d] in this service @att_common.c(385),INFO" ID="0xed200c0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gatt find report by report reference item null @att_common.c(398),ERROR" ID="0xed200c72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gatt find report by report reference invalid start hdl @att_common.c(402),ERROR" ID="0xed200c92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gatt find report by report reference can't find the report @att_common.c(411),ERROR" ID="0xed200cda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt find report by report reference found the report hdl[%d] @att_common.c(416),INFO" ID="0xed200d05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt get input report handle by report id error start_hdl[%d] @att_common.c(434),ERROR" ID="0xed200d92" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gatt get input report handle by report id find report id in start_hdl[%d] to end_hdl[%d] @att_common.c(439),INFO" ID="0xed200dbd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt get input report handle by report id can't find the report reference report_id[%d] @att_common.c(445),ERROR" ID="0xed200dea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt get input report handle by report id found report_reference_hdl[%d] @att_common.c(449),INFO" ID="0xed200e0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt get input report handle by report id can't find report report_id[%d] @att_common.c(455),ERROR" ID="0xed200e3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt get input report handle by report id found report_hdl[%d] @att_common.c(459),INFO" ID="0xed200e5d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="GATT Server Create UpdateCCC Item, add item[hdl:%d] ccc on addr:0x%02x:**:**:**:%02x:%02x @att_common.c(480),INFO" ID="0xed200f05" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gatt le identity addr update find tl is null  @att_common.c(504),ERROR" ID="0xed200fc2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt le identity addr update fail ret %d  @att_common.c(511),ERROR" ID="0xed200ffa" />
+			</MSG_LOG>

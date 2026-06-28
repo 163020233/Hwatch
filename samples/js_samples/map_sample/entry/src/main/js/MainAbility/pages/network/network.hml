@@ -1,0 +1,19 @@
+<div class="container">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="getConnectState">
+            <text class="todo-title">获取连接状态</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="registerListener">
+            <text class="todo-title">注册回调函数</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="unRegisterListener">
+            <text class="todo-title">注销回调函数</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : steelblue;" on:click="getIpAddress">
+            <text class="todo-title">获取本机IP地址</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceHomePage">
+            <text class="todo-title">BACK</text>
+        </list-item>
+    </list>
+</div>

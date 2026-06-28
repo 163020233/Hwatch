@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_add_instant_prog, env_ptr is null @evt_task_classic_acl_instant.c(38),ERROR" ID="0x8b800132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_del_instant_prog_by_opcode, env_ptr is null @evt_task_classic_acl_instant.c(73),ERROR" ID="0x8b80024a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_instant_prog, env_ptr is null @evt_task_classic_acl_instant.c(140),ERROR" ID="0x8b800462" />
+			</MSG_LOG>

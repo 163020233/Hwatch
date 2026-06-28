@@ -1,0 +1,33 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] ep removed, ep_id=%u @saf_vcp_server.c(80),INFO" ID="0xe9be0285" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] register server callback point is null! @saf_vcp_server.c(106),ERROR" ID="0xe9be0352" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] server already register! @saf_vcp_server.c(111),ERROR" ID="0xe9be037a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] server register failed! ret = %u @saf_vcp_server.c(117),ERROR" ID="0xe9be03aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] group init failed! ret = %u @saf_vcp_server.c(122),ERROR" ID="0xe9be03d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] server not register! @saf_vcp_server.c(136),ERROR" ID="0xe9be0442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[vcps] server not register! @saf_vcp_server.c(154),ERROR" ID="0xe9be04d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] server not register! @saf_vcp_server.c(183),ERROR" ID="0xe9be05ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] notify property proc fail, ret = %u @saf_vcp_server.c(193),ERROR" ID="0xe9be060a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] conn_id %d not exist @saf_vcp_server.c(204),ERROR" ID="0xe9be0662" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] server not register! @saf_vcp_server.c(209),ERROR" ID="0xe9be068a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] state err, state %u @saf_vcp_server.c(221),ERROR" ID="0xe9be06ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] volume state synchronize request fail, ret = %u @saf_vcp_server.c(229),ERROR" ID="0xe9be072a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] conn_id %d not exist @saf_vcp_server.c(242),ERROR" ID="0xe9be0792" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] server not register! @saf_vcp_server.c(247),ERROR" ID="0xe9be07ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] volume value synchronize request fail, ret = %u @saf_vcp_server.c(261),ERROR" ID="0xe9be082a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] server not register! @saf_vcp_server.c(271),ERROR" ID="0xe9be087a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] notify property proc fail, ret = %u @saf_vcp_server.c(281),ERROR" ID="0xe9be08ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] server not register! @saf_vcp_server.c(290),ERROR" ID="0xe9be0912" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] notify property by conn_id[%d] proc fail, ret = %u @saf_vcp_server.c(301),ERROR" ID="0xe9be096a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] param is error, ep_num:%u @saf_vcp_server.c(314),ERROR" ID="0xe9be09d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] ep node is null, ep_id:%u @saf_vcp_server.c(324),ERROR" ID="0xe9be0a22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] ep node not exist, ep_id:%u @saf_vcp_server.c(333),ERROR" ID="0xe9be0a6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcpss] ep node already exist, ep_id:%u. @saf_vcp_server.c(353),ERROR" ID="0xe9be0b0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpss] create ep, new ep failed! @saf_vcp_server.c(360),ERROR" ID="0xe9be0b42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] server not register! @saf_vcp_server.c(402),ERROR" ID="0xe9be0c92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] volume info is NULL, malloc fail @saf_vcp_server.c(416),ERROR" ID="0xe9be0d02" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] set audio stream volume by conn_id[%d] fail, ret: 0x%0x @saf_vcp_server.c(425),ERROR" ID="0xe9be0d4a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] set audio stream volume by conn_id[%d], change_counter: %x @saf_vcp_server.c(429),INFO" ID="0xe9be0d6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] server not register! @saf_vcp_server.c(461),ERROR" ID="0xe9be0e6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] report volume info fail, ret = %u @saf_vcp_server.c(479),ERROR" ID="0xe9be0efa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] report volume info, reason: %x cc_server: %x @saf_vcp_server.c(483),INFO" ID="0xe9be0f1d" />
+			</MSG_LOG>

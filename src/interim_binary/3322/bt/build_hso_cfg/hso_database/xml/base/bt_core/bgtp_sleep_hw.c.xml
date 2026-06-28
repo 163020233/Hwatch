@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][lowpower]bgtp_tglp_reset sema3 fail. ret=0x%X, cnt=%u. @bgtp_sleep_hw.c(107),WARNING" ID="0x8bb8035b" />
+			</MSG_LOG>

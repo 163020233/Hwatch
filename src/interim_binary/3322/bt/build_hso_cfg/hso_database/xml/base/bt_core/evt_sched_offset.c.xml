@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[[L2][ES offset] list dump:Addr = 0x%x, Interval = %d, Offset|Offset_norm = 0x%x @evt_sched_offset.c(108),INFO" ID="0x8ada0365" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[[L2][ES offset] list dump:Duration = %d, Task_id = 0x%x, task_type = 0x%x, Role = %d(0:Master, 1:Slave) @evt_sched_offset.c(113),INFO" ID="0x8ada038d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[[L2][ES offset] list dump:retx_att = %d @evt_sched_offset.c(114),INFO" ID="0x8ada0395" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[[L2][ES offset] input:Interval = %d, Duration = %d, offset = %d, action = %d(0:GET,1:CHECK) @evt_sched_offset.c(121),INFO" ID="0x8ada03cd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[[L2][ES offset] input:Task_id = 0x%x, conhdl = 0x%x, task_type = 0x%x, Role = %d(0:Master, 1:Slave) @evt_sched_offset.c(126),INFO" ID="0x8ada03f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[[L2][ES offset] input:pref_period = %d, retx_att = %d, parity_type = %d @evt_sched_offset.c(130),INFO" ID="0x8ada0415" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][ES offset] ouput:interval = %d, duration = %d, offset = %d @evt_sched_offset.c(138),INFO" ID="0x8ada0455" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]es_view_intv_list_print: intv_list task_id=0x%x task_type=0x%x retx_att=%d @evt_sched_offset.c(149),INFO" ID="0x8ada04ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]es_view_intv_list_print: intv_list interval=%d duration_min=%d offset|offset_norm=0x%x @evt_sched_offset.c(153),INFO" ID="0x8ada04cd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][ES offset] insert_intv: task_id = 0x%x, Interval = %d, Offset|Offset_norm = 0x%x @evt_sched_offset.c(168),INFO" ID="0x8ada0545" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ES]es_create_newstart_arr malloc failed @evt_sched_offset.c(428),WARNING" ID="0x8ada0d63" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][ES offset]optimal value:%d optimal depth:%d @evt_sched_offset.c(624),INFO" ID="0x8ada1385" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][ES offset]es_offset_req_get:status = %d @evt_sched_offset.c(654),INFO" ID="0x8ada1475" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][ES offset]es_offset_req_check:status = %d @evt_sched_offset.c(691),INFO" ID="0x8ada159d" />
+			</MSG_LOG>

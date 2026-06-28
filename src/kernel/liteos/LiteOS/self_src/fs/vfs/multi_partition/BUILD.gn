@@ -1,0 +1,53 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("multi_partition") {
+        sources = [
+            "src/mtd_dev.c",
+            "src/mtd_partition.c",
+            "src/mtd_shellcmd.c",
+        ]
+
+        configs += [
+            ":private",
+        ]
+    }
+} else {
+    static_library("libmulti_partition") {
+        import("../../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        sources = [
+            "src/mtd_dev.c",
+            "src/mtd_partition.c",
+            "src/mtd_shellcmd.c",
+        ]
+        include_dirs = LITEOS_GN_KSTATIC_INCLUDE
+        configs += [
+            ":private",
+        ]
+    }
+}
+
+config("private") {
+    include_dirs = [
+        "$LITEOSTOPDIR/fs/jffs2/include",
+        "$LITEOSTOPDIR/fs/yaffs2/yaffs/include",
+        "$LITEOSTOPDIR/fs/yaffs2/yaffs/direct/include",
+        "$LITEOSTOPDIR/drivers/mtd/common/include",
+        "$LITEOSTOPDIR/fs/vfs/include/multi_partition",
+    ]
+}

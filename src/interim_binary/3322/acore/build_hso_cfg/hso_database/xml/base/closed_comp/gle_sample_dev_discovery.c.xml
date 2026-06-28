@@ -1,0 +1,41 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="gle sample set adv manufacture data memcpy fail @gle_sample_dev_discovery.c(33),ERROR" ID="0xe8dc010a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sample set service uuid16 data memcpy fail @gle_sample_dev_discovery.c(51),ERROR" ID="0xe8dc019a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sample set service uuid128 data: memcpy fail @gle_sample_dev_discovery.c(70),ERROR" ID="0xe8dc0232" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="service_list_len = %u @gle_sample_dev_discovery.c(82),INFO" ID="0xe8dc0295" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new mem fail @gle_sample_dev_discovery.c(85),ERROR" ID="0xe8dc02aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail @gle_sample_dev_discovery.c(92),ERROR" ID="0xe8dc02e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail @gle_sample_dev_discovery.c(96),ERROR" ID="0xe8dc0302" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="local_name[%d] = 0x%02x @gle_sample_dev_discovery.c(111),INFO" ID="0xe8dc037d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail @gle_sample_dev_discovery.c(118),ERROR" ID="0xe8dc03b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail @gle_sample_dev_discovery.c(149),ERROR" ID="0xe8dc04aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_disc_level memcpy fail @gle_sample_dev_discovery.c(172),ERROR" ID="0xe8dc0562" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail @gle_sample_dev_discovery.c(184),ERROR" ID="0xe8dc05c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail @gle_sample_dev_discovery.c(200),ERROR" ID="0xe8dc0642" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail @gle_sample_dev_discovery.c(224),ERROR" ID="0xe8dc0702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="set adv data default @gle_sample_dev_discovery.c(239),INFO" ID="0xe8dc077d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv_data_len = %u error @gle_sample_dev_discovery.c(243),ERROR" ID="0xe8dc079a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="scan_rsp_data_len = %u error @gle_sample_dev_discovery.c(252),ERROR" ID="0xe8dc07e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="set adv ext param default @gle_sample_dev_discovery.c(262),INFO" ID="0xe8dc0835" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sample set conn param default @gle_sample_dev_discovery.c(302),INFO" ID="0xe8dc0975" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt at cmd gle set adv malloc error! @gle_sample_dev_discovery.c(321),ERROR" ID="0xe8dc0a0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv_gt_role = %#x @gle_sample_dev_discovery.c(337),INFO" ID="0xe8dc0a8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle sample set adv data default = %#x failed @gle_sample_dev_discovery.c(351),ERROR" ID="0xe8dc0afa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="adv_data_len = %u, scan_rsp_data_len = %u @gle_sample_dev_discovery.c(356),INFO" ID="0xe8dc0b25" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi gle set adv = %#x failed @gle_sample_dev_discovery.c(360),ERROR" ID="0xe8dc0b42" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="adv_handle = %#x, adv_enable = %#x @gle_sample_dev_discovery.c(386),INFO" ID="0xe8dc0c15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi gle enable adv = %#x failed @gle_sample_dev_discovery.c(389),ERROR" ID="0xe8dc0c2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="default_scan_param new failed @gle_sample_dev_discovery.c(416),ERROR" ID="0xe8dc0d02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi gle set scan = %#x failed @gle_sample_dev_discovery.c(423),ERROR" ID="0xe8dc0d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sample dd adv status cbk @gle_sample_dev_discovery.c(431),INFO" ID="0xe8dc0d7d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="event = 0x%02x, adv_handle = %#x, result = %#x @gle_sample_dev_discovery.c(435),INFO" ID="0xe8dc0d9d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle sample dd scan status cbk event = 0x%02x, result = %#x @gle_sample_dev_discovery.c(442),INFO" ID="0xe8dc0dd5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sample dd adv report cbk @gle_sample_dev_discovery.c(447),INFO" ID="0xe8dc0dfd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="adv report data length: %02x, data: 0x%02x, 0x%02x 0x%02x @gle_sample_dev_discovery.c(453),INFO" ID="0xe8dc0e2d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sample dd get public addr cbk @gle_sample_dev_discovery.c(459),INFO" ID="0xe8dc0e5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="get public address fail. @gle_sample_dev_discovery.c(464),ERROR" ID="0xe8dc0e82" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="get public address success, addr: %02x:**:**:**:%02x:%02x. @gle_sample_dev_discovery.c(468),INFO" ID="0xe8dc0ea5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle sample dd data send is busy, lcid: %u, state: %#x @gle_sample_dev_discovery.c(477),INFO" ID="0xe8dc0eed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle adv register cbks = %#x @gle_sample_dev_discovery.c(491),INFO" ID="0xe8dc0f5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle scan register cbks = %#x @gle_sample_dev_discovery.c(495),INFO" ID="0xe8dc0f7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle basic register cbks = %#x @gle_sample_dev_discovery.c(500),INFO" ID="0xe8dc0fa5" />
+			</MSG_LOG>

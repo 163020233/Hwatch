@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[HCI][LE_CONN_COMPLETE] STATUS=0x%x @hci_ev_le.c(454),INFO" ID="0xead00e35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem malloc is null! @hci_ev_le.c(584),ERROR" ID="0xead01242" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble ev cs cmd memcpy error! @hci_ev_le.c(594),ERROR" ID="0xead01292" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem malloc is null! @hci_ev_le.c(608),ERROR" ID="0xead01302" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble ev cs cmd memcpy error! @hci_ev_le.c(618),ERROR" ID="0xead01352" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem malloc is null! @hci_ev_le.c(632),ERROR" ID="0xead013c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble ev cs cmd memcpy error! @hci_ev_le.c(642),ERROR" ID="0xead01412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem malloc is null! @hci_ev_le.c(656),ERROR" ID="0xead01482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble ev cs cmd memcpy error! @hci_ev_le.c(666),ERROR" ID="0xead014d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem malloc is null! @hci_ev_le.c(680),ERROR" ID="0xead01542" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble ev cs cmd memcpy error! @hci_ev_le.c(690),ERROR" ID="0xead01592" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem malloc is null! @hci_ev_le.c(704),ERROR" ID="0xead01602" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble ev cs cmd memcpy error! @hci_ev_le.c(714),ERROR" ID="0xead01652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI][LE_META_ISO_EV] it is iso event @hci_ev_le.c(739),INFO" ID="0xead0171d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI][bt_onetrack]hci le meta stream to struct memcpy error @hci_ev_le.c(750),ERROR" ID="0xead01772" />
+			</MSG_LOG>

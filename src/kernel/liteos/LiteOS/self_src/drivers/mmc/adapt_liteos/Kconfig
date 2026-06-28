@@ -1,0 +1,141 @@
+config LOSCFG_DRIVERS_MMC
+    bool "Enable MMC"
+    default n
+    depends on LOSCFG_FS_VFS
+    select LOSCFG_BASE_CORE_SWTMR
+    select LOSCFG_BASE_IPC_SEM
+    select LOSCFG_DRIVER_DISK
+    select LOSCFG_COMPAT_LINUX
+    select LOSCFG_COMPAT_LINUX_DRIVER_BASE
+    help
+      Answer Y to enable LiteOS support MMC driver.
+
+config LOSCFG_DRIVERS_MMC_TASK_PRI
+    int "sdio_Task priority"
+    default 2
+    depends on LOSCFG_DRIVERS_MMC
+    help
+      specify the priority of sdio_Task.
+
+config LOSCFG_DRIVERS_MMC_TASK_STACK_SIZE
+    int "sdio_Task stack size"
+    default 0x2000
+    depends on LOSCFG_DRIVERS_MMC
+    help
+      specify the stack size of sdio_Task.
+
+choice
+    depends on LOSCFG_DRIVERS_MMC
+    prompt "MMC Controller"
+    default LOSCFG_DRIVERS_MMC_CONTROLLER_SDHCI
+    help
+      select SDHCI controller.
+      select SDMCI controller.
+      select select HISDEMMC controller.
+
+config LOSCFG_DRIVERS_MMC_CONTROLLER_SDHCI
+    depends on LOSCFG_DRIVERS_MMC
+    bool "Enable SDHCI Controller"
+    help
+       Answer Y to enable standard SDHCI controller
+
+config LOSCFG_DRIVERS_MMC_CONTROLLER_SDMCI
+    depends on LOSCFG_DRIVERS_MMC
+    bool "Enable SDMCI Controller"
+    help
+       Answer Y to enable standard SDMCI controller
+
+config LOSCFG_DRIVERS_MMC_HISDEMMC
+    depends on LOSCFG_DRIVERS_MMC
+    bool "Enable HISDEMMC Controller"
+    help
+       Answer Y to enable HISDEMMC controller
+endchoice
+
+choice
+    depends on LOSCFG_DRIVERS_MMC
+    prompt "MMC0 support device type"
+    default LOSCFG_DRIVERS_SD
+    help
+      Enable LiteOS MMC driver support SD card.
+      Enable LiteOS MMC driver support eMMC.
+
+config LOSCFG_DRIVERS_SD
+    depends on LOSCFG_DRIVERS_MMC
+    bool "Enable MMC0 support SD card type"
+
+config LOSCFG_DRIVERS_EMMC
+    depends on LOSCFG_DRIVERS_MMC
+    bool "Enable MMC0 support eMMC type"
+endchoice
+
+
+choice
+    depends on LOSCFG_DRIVERS_EMMC && LOSCFG_DRIVERS_MMC && LOSCFG_FS_VFS
+    prompt "EMMC chip mode"
+    default LOSCFG_DRIVERS_EMMC_HS200
+    help
+      select EMMC chip mode hs200.
+      select EMMC chip mode hs400.
+      select EMMC chip mode hs400es.
+
+config LOSCFG_DRIVERS_EMMC_HS200
+    depends on LOSCFG_DRIVERS_EMMC
+    bool "Enable EMMC HS200 support"
+    help
+       If you connect the SDIO0 to EMMC chip, figure out which mode of chip and select the mode HS200
+
+config LOSCFG_DRIVERS_EMMC_HS400
+    depends on LOSCFG_DRIVERS_EMMC && LOSCFG_PLATFORM_HI3516EV300
+    bool "Enable EMMC HS400 support"
+    help
+       If you connect the SDIO0 to EMMC chip figure out which mode of chip and select the mode HS400
+
+config LOSCFG_DRIVERS_EMMC_HS400ES
+    depends on LOSCFG_DRIVERS_EMMC && LOSCFG_PLATFORM_HI3516EV300
+    bool "Enable EMMC HS400ES support"
+    help
+       If you connect the SDIO0 to EMMC chip figure out which mode of chip and select the mode HS400ES
+endchoice
+
+config LOSCFG_DRIVERS_MMC_RW_IN_BOOT_AND_EXC
+    depends on LOSCFG_DRIVERS_MMC && (LOSCFG_PLATFORM_SUQIN_APP || LOSCFG_PLATFORM_SW21_APP || LOSCFG_PLATFORM_SW21_APP_SE || LOSCFG_PLATFORM_SW22_APP || LOSCFG_PLATFORM_SW22_APP_SE)
+    default n
+    bool "Enable write/read in boot and exception"
+    help
+      Answer Y to enable MMC driver write/read before system startup (before scheduling is enabled) and in exception.
+
+config LOSCFG_DRIVERS_MMC_RPMB
+    bool "Enable MMC RPMB"
+    default n
+    depends on LOSCFG_DRIVERS_MMC && LOSCFG_DRIVERS_MMC_HISDEMMC
+    help
+      Answer Y to enable LiteOS to support mmc RPMB.
+
+config LOSCFG_DRIVERS_MMC_EXT_CLK_SWITCH
+    bool "Enable MMC external clock switch"
+    default n
+    depends on LOSCFG_DRIVERS_MMC && LOSCFG_DRIVERS_MMC_HISDEMMC
+    help
+      Answer Y to enable LiteOS to support mmc external clock switch.
+
+config LOSCFG_DRIVERS_MMCSD_EXT_POWER_UP_DOWN
+    bool "Enable MMC SD POWER SWITCH"
+    default n
+    depends on LOSCFG_DRIVERS_MMC && LOSCFG_DRIVERS_MMC_HISDEMMC && LOSCFG_DRIVERS_SD
+    help
+      Answer Y to support the function that the mmc sd card power up or power down.
+
+config LOSCFG_DRIVERS_MMC_DMA_CACHE_DISABLE
+    bool "Disable MMC DMA CACHE"
+    default n
+    depends on LOSCFG_DRIVERS_MMC && LOSCFG_DRIVERS_MMC_HISDEMMC
+    help
+      Answer Y to enable LiteOS to support ADMA2.
+
+config LOSCFG_MMCSD_TASK_STACK_SIZE
+    int "mmcsd Task Stack Size"
+    default 3072
+    range LOSCFG_BASE_CORE_TSK_MIN_STACK_SIZE 65535
+    help
+      This represents the mmcsd Task task default stack size .

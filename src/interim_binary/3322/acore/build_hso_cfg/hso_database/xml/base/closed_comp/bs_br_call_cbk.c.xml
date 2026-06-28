@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_CALL] HFP conn state report rmt is NULL, dev_id %d @bs_br_call_cbk.c(38),ERROR" ID="0xee880132" />
+			</MSG_LOG>

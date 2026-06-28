@@ -1,0 +1,75 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws init @tws_act.c(101),INFO" ID="0x8a76032d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws][flag] acl_link_id_src=0x%x @tws_act.c(109),INFO" ID="0x8a76036d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_desc_init dts_malloc fail @tws_act.c(136),ERROR" ID="0x8a760442" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws] acl active links init 0x%x @tws_act.c(175),INFO" ID="0x8a76057d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][tws_cmd]fsm_state=0x%x tws_hci_init_act  role=0x%x no_peer_flag=0x%x connect_handle_peer=0x%x @tws_act.c(181),INFO" ID="0x8a7605ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BTC_TWS-&gt;HCI_CMD-&gt;init-&gt;set_role-&gt;%d @tws_act.c(193),INFO" ID="0x8a76060d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] report CS and CC evt @tws_act.c(205),INFO" ID="0x8a76066d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_mode_set_check_comm env is null @tws_act.c(219),ERROR" ID="0x8a7606da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_mode_set_check_comm param error @tws_act.c(223),ERROR" ID="0x8a7606fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_down_check env is null @tws_act.c(327),ERROR" ID="0x8a760a3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_down_check param is null @tws_act.c(331),ERROR" ID="0x8a760a5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_down_check ear_role is not PERIPHERAL @tws_act.c(335),ERROR" ID="0x8a760a7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_down_check 0x11 0x32 @tws_act.c(340),ERROR" ID="0x8a760aa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_down_check acl link is not active @tws_act.c(346),ERROR" ID="0x8a760ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_up_check env is null @tws_act.c(356),ERROR" ID="0x8a760b22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_up_check handle_src is disallowed @tws_act.c(361),ERROR" ID="0x8a760b4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_up_check handle_src is not STATE_CONNECTION @tws_act.c(371),ERROR" ID="0x8a760b9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_up_check handle_ear is not STATE_CONNECTION @tws_act.c(378),ERROR" ID="0x8a760bd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_up_check ear_role is not central @tws_act.c(383),ERROR" ID="0x8a760bfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_hci_sync_up_check sco_src is not STATE_CONNECTION @tws_act.c(391),ERROR" ID="0x8a760c3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws]tws_sync_data_copy sync_data_type=0x%x @tws_act.c(471),INFO" ID="0x8a760ebd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_sync_data_copy sync_data_type is disallowed @tws_act.c(489),ERROR" ID="0x8a760f4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]report evt is null @tws_act.c(499),ERROR" ID="0x8a760f9a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][tws_cmd]fsm_state=0x%x tws_ready_hci_sync_up_act  connect_handle_src=0x%x tws_sync_type=0x%x @tws_act.c(574),INFO" ID="0x8a7611f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws][flag] acl_link_id_src=0x%x @tws_act.c(578),INFO" ID="0x8a761215" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws]tws_ready_hci_sync_up_act acl_link_id_src=0x%x @tws_act.c(579),INFO" ID="0x8a76121d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][tws_cmd]fsm_state=0x%x tws_working_hci_sync_up_act connect_handle_src=0x%x tws_sync_type=0x%x @tws_act.c(604),INFO" ID="0x8a7612e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws]tws_sync_data_apply sync_data_type=0x%x @tws_act.c(666),INFO" ID="0x8a7614d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_sync_data_apply sync_data_type is wrong @tws_act.c(678),ERROR" ID="0x8a761532" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BTC_TWS-&gt;sync_down-&gt;SCO link rmv before conn @tws_act.c(695),INFO" ID="0x8a7615bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]TWS SCO connected, cannot alloc again @tws_act.c(704),ERROR" ID="0x8a761602" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws_cmd]fsm_state=0x%x tws_working_hci_sync_down_act @tws_act.c(729),INFO" ID="0x8a7616cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_working_hci_sync_down_act fsm_msg_alloc fail @tws_act.c(755),ERROR" ID="0x8a76179a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws] acl active links sync 0x%x @tws_act.c(773),INFO" ID="0x8a76182d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws_cmd]fsm_state=0x%x tws_ready_hci_sync_down_act @tws_act.c(779),INFO" ID="0x8a76185d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws][flag] acl_link_id_src=0x%x @tws_act.c(809),INFO" ID="0x8a76194d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_ready_hci_sync_down_act fsm_msg_alloc fail @tws_act.c(816),ERROR" ID="0x8a761982" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][tws] addr bd_addr_val_l=0x%x bd_addr_val_h=0x%x @tws_act.c(848),INFO" ID="0x8a761a85" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BTC_TWS-&gt;rx_sync:1 @tws_act.c(925),WARNING" ID="0x8a761ceb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BTC_TWS-&gt;rx_sync:2 @tws_act.c(929),WARNING" ID="0x8a761d0b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="BTC_TWS-&gt;rx_sync:mear vs mobile:BITOFF:%d, CLKOFF:%d @tws_act.c(933),WARNING" ID="0x8a761d2b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="BTC_TWS-&gt;rx_sync:mear vs sear:BITOFF:%d, CLKOFF:%d @tws_act.c(934),WARNING" ID="0x8a761d33" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="BTC_TWS-&gt;rx_sync:sear vs mobile:BITOFF:%d, CLKOFF:%d @tws_act.c(935),WARNING" ID="0x8a761d3b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_sear_sco_link_create @tws_act.c(996),INFO" ID="0x8a761f25" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_sear_sco_link_create no sco @tws_act.c(1002),INFO" ID="0x8a761f55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws]tws_sear_sco_link_create sco fsm create fail status=0x%x @tws_act.c(1016),ERROR" ID="0x8a761fc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_sear_sco_link_create sco_desc is NULL @tws_act.c(1022),ERROR" ID="0x8a761ff2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] acl start succ @tws_act.c(1138),INFO" ID="0x8a762395" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]acl start fail @tws_act.c(1142),ERROR" ID="0x8a7623b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_mode_set_open_slave @tws_act.c(1189),INFO" ID="0x8a76252d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws]tws_mode_set_open_slave acl id(0x%x) is not free @tws_act.c(1197),ERROR" ID="0x8a76256a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws][flag] open_slave seqn=0x%x @tws_act.c(1212),INFO" ID="0x8a7625e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_mode_set_open_slave aes @tws_act.c(1222),INFO" ID="0x8a762635" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][tws][flag] open_slave end seqn=0x%x acl_link_id_ear=0x%x acl_link_id_src=0x%x @tws_act.c(1265),INFO" ID="0x8a76278d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws]tws_mode_set_open_master acl_role is 0x%x @tws_act.c(1274),WARNING" ID="0x8a7627d3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_mode_set_open_master sco_link_id is TWSM_LINKID_UNDEF @tws_act.c(1281),WARNING" ID="0x8a76280b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_mode_set_open_master @tws_act.c(1295),INFO" ID="0x8a76287d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws]tws_mode_set_open_master acl_role is 0x%x @tws_act.c(1302),WARNING" ID="0x8a7628b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_mode_set_open_master sco param @tws_act.c(1316),INFO" ID="0x8a762925" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_mode_set_open_master sco_link_id is TWSM_LINKID_UNDEF @tws_act.c(1318),WARNING" ID="0x8a762933" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_mode_set_open_master acl is wait @tws_act.c(1332),INFO" ID="0x8a7629a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_mode_set_open_master acl is working @tws_act.c(1345),INFO" ID="0x8a762a0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws] tws_mode_set_open_master crypt_type=0x%x, E0=1 AES=2 @tws_act.c(1360),INFO" ID="0x8a762a85" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws] print sed bt_acledr=0x%x @tws_act.c(1361),INFO" ID="0x8a762a8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]sear pause, send disc msg @tws_act.c(1396),INFO" ID="0x8a762ba5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws_flag] tws_mode_set_pause @tws_act.c(1474),INFO" ID="0x8a762e15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]mear close, send disc msg @tws_act.c(1521),INFO" ID="0x8a762f8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]sear close, send disc msg @tws_act.c(1548),INFO" ID="0x8a763065" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][tws_cmd]fsm_state=0x%x tws_sync_hci_mode_set_act mode=0x%x connect_handle_src=0x%x @tws_act.c(1630),INFO" ID="0x8a7632f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][tws]tws_working_hci_mode_set_act status=0x%x, mode=0x%x @tws_act.c(1640),INFO" ID="0x8a763345" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][tws_cmd]fsm_state=0x%x tws_sync_hci_mode_set_act mode=0x%x connect_handle_src=0x%x @tws_act.c(1651),INFO" ID="0x8a76339d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][tws]tws_working_hci_mode_set_act status=0x%x, mode=0x%x @tws_act.c(1669),INFO" ID="0x8a76342d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][tws_cmd]fsm_state=0x%x tws_working_hci_mode_set_act mode=0x%x connect_handle_src=0x%x @tws_act.c(1679),INFO" ID="0x8a76347d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][tws]tws_working_hci_mode_set_act status=0x%x, mode=0x%x @tws_act.c(1712),INFO" ID="0x8a763585" />
+			</MSG_LOG>

@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][micps] operation capture state data_len err! @saf_micp_server_hlp.c(61),ERROR" ID="0xea0401ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micps] method req, data is null! @saf_micp_server_hlp.c(80),ERROR" ID="0xea040282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micps] method req, data too small! @saf_micp_server_hlp.c(84),ERROR" ID="0xea0402a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][micps] call cmd not support, opcode = %u @saf_micp_server_hlp.c(97),ERROR" ID="0xea04030a" />
+			</MSG_LOG>

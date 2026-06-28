@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_end_process, env_ptr is null @evt_task_classic_acl_disc.c(55),ERROR" ID="0x8a1e01ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]end_process: con_hdl %d, prog_num %d @evt_task_classic_acl_disc.c(86),INFO" ID="0x8a1e02b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]disc_timeout: con_hdl %d, last_sync_timestamp(0x%x), clock(0x%x), lsto(0x%x) @evt_task_classic_acl_disc.c(197),INFO" ID="0x8a1e062d" />
+			</MSG_LOG>

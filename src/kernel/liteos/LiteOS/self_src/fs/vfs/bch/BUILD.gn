@@ -1,0 +1,91 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+import("../../../../build/gn/config.gni")
+
+NUTTX_VFS_BCH_PATH = "../../../../$open_source_path/incubator-nuttx/liteos/fs/vfs/bch"
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("bch") {
+        include_dirs = [
+            "$LITEOSTOPDIR/compat/nuttx/include",
+            "$LITEOSTOPDIR/fs/compat",
+            "$LITEOSTOPDIR/fs/vfs/include/disk",
+            "$LITEOSTOPDIR/fs/vfs/include/bch",
+            "${NUTTX_VFS_BCH_PATH}/include"
+        ]
+
+        if (defined(LOSCFG_FS_FAT_CACHE)) {
+            include_dirs += [
+                "$LITEOSTOPDIR/fs/vfs/include/bcache"
+            ]
+        }
+
+        sources = [
+            "bch_private.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchdev_driver.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchdev_register.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchdev_unregister.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_cache.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_read.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_setup.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_teardown.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_write.c",
+        ]
+
+        configs += [
+            ":private",
+        ]
+    }
+} else {
+    static_library("libbch") {
+        import("../../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+            "$LITEOSTOPDIR/arch_s/riscv:public",
+            "$LITEOSTOPDIR/lib:public",
+        ]
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        include_dirs = [
+            "$LITEOSTOPDIR/compat/nuttx/include",
+            "$LITEOSTOPDIR/fs/compat",
+            "$LITEOSTOPDIR/fs/vfs/include/disk",
+            "$LITEOSTOPDIR/fs/vfs/include/bch",
+            "${NUTTX_VFS_BCH_PATH}/include"
+        ]
+
+        if (defined(LOSCFG_FS_FAT_CACHE)) {
+            include_dirs += [
+                "$LITEOSTOPDIR/fs/vfs/include/bcache"
+            ]
+        }
+
+        sources = [
+            "bch_private.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchdev_driver.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchdev_register.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchdev_unregister.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_cache.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_read.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_setup.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_teardown.c",
+            "${NUTTX_VFS_BCH_PATH}/src/bchlib_write.c",
+        ]
+
+        include_dirs += LITEOS_GN_KSTATIC_INCLUDE
+        configs += [
+            ":private",
+        ]
+    }
+}
+
+config("private") {
+    defines = ["CONFIG_BCH_EXTEND", "CONFIG_DISABLE_POLL"]
+}

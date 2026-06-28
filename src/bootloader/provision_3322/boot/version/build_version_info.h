@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2021-2021. All rights reserved.
+ * Description:  ROM APPLICATION BUILD VERSION INFORMATION
+ * Author:
+ * Create: 2021-03-09
+ */
+
+#ifndef SRC_APPLICATION_BT_BUILD_VERSION_H
+#define SRC_APPLICATION_BT_BUILD_VERSION_H
+
+
+#define BUILD_VERSION_SECTION ".flash_version"
+
+#define APPLICATION_VERSION_NUMBER (CODELOADER_VERSION & APPLICATION_CORE_VERSION_MASK)
+#define CORE_VERSION               (APPLICATION_CORE_ROM_BUILD | APPLICATION_VERSION_NUMBER)
+
+#endif

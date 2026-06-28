@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] device local name read fail! ret %u @ssf_dis_client.c(30),ERROR" ID="0xefb600f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] discover device_info is NULL, conn_id = %u @ssf_dis_client.c(40),ERROR" ID="0xefb60142" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DIS] discover complete! conn_id = %u, status=%u @ssf_dis_client.c(45),ERROR" ID="0xefb6016a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] read data is NULL, conn_id = %u @ssf_dis_client.c(56),ERROR" ID="0xefb601c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DIS] property handle = %u, property value : %s @ssf_dis_client.c(60),INFO" ID="0xefb601e5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DIS] read date_len = 0! conn_id=%u, type = %u, status=%u @ssf_dis_client.c(66),INFO" ID="0xefb60215" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DIS] malloc report data err, conn_id=%u, type = %u, status=%u @ssf_dis_client.c(71),ERROR" ID="0xefb6023a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DIS] read complete! conn_id=%u, type = %u, status=%u @ssf_dis_client.c(79),INFO" ID="0xefb6027d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] init client, reg cbks fail! ret %u @ssf_dis_client.c(91),ERROR" ID="0xefb602da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] init client, discover service fail! ret %u @ssf_dis_client.c(101),ERROR" ID="0xefb6032a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] DIS read, read romote info by type fail! ret %u @ssf_dis_client.c(110),ERROR" ID="0xefb60372" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] deinit client, unreg cbks fail! ret %u @ssf_dis_client.c(120),ERROR" ID="0xefb603c2" />
+			</MSG_LOG>

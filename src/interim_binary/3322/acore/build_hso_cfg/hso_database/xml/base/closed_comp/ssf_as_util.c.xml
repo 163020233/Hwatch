@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get as codec payload len failed! @ssf_as_util.c(31),ERROR" ID="0xef8600fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] ape_param is NULL! @ssf_as_util.c(157),ERROR" ID="0xef8604ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] frame_length_mode out of range, using default data! @ssf_as_util.c(194),ERROR" ID="0xef860612" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get as location bitmap failed! @ssf_as_util.c(205),ERROR" ID="0xef86066a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get as config failed! @ssf_as_util.c(214),ERROR" ID="0xef8606b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get as channel by location failed! @ssf_as_util.c(251),ERROR" ID="0xef8607da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] get as channel by location failed! channel:0x%x @ssf_as_util.c(278),ERROR" ID="0xef8608b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] ape_param is NULL! @ssf_as_util.c(289),ERROR" ID="0xef86090a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get as location bitmap failed! @ssf_as_util.c(296),ERROR" ID="0xef860942" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] encode apes codec failed! @ssf_as_util.c(302),ERROR" ID="0xef860972" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] encode apes location failed! @ssf_as_util.c(307),ERROR" ID="0xef86099a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] codec_data or codec_param is NULL! @ssf_as_util.c(319),ERROR" ID="0xef8609fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] codec_data len (%d)is too small! @ssf_as_util.c(325),ERROR" ID="0xef860a2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] sample freq not support %d! @ssf_as_util.c(374),ERROR" ID="0xef860bb2" />
+			</MSG_LOG>

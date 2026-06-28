@@ -1,0 +1,67 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="trans_mnode_capability memcpy failed @gle_tm_signal.c(186),ERROR" ID="0xed4405d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="access_sle_capability memcpy failed @gle_tm_signal.c(201),ERROR" ID="0xed44064a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="sle_addr:0x%02x:**:**:**:%02x:%02x @gle_tm_signal.c(207),INFO" ID="0xed44067d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="get_capability_info param is null @gle_tm_signal.c(248),ERROR" ID="0xed4407c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="signal_capability memcpy failed @gle_tm_signal.c(329),ERROR" ID="0xed440a4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] new sm sdu failed @gle_tm_signal.c(342),ERROR" ID="0xed440ab2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] new tm sdu failed @gle_tm_signal.c(352),ERROR" ID="0xed440b02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle tm_signal_capability]param null @gle_tm_signal.c(384),ERROR" ID="0xed440c02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="signal_capability mem new failed @gle_tm_signal.c(390),ERROR" ID="0xed440c32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="signal_capability memcpy failed @gle_tm_signal.c(394),ERROR" ID="0xed440c52" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="capability:%u, data_len:%u @gle_tm_signal.c(415),INFO" ID="0xed440cfd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] new tm sdu failed @gle_tm_signal.c(419),ERROR" ID="0xed440d1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] new tm sdu failed @gle_tm_signal.c(428),ERROR" ID="0xed440d62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[tm gle_tm_signal_capability_ind]len[%u] error @gle_tm_signal.c(466),ERROR" ID="0xed440e92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[tm gle_tm_signal_capability_ind]data len[%u] error @gle_tm_signal.c(475),ERROR" ID="0xed440eda" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="op_code[0x%02x], identifier[0x%02x], data_map[%u] @gle_tm_signal.c(481),INFO" ID="0xed440f0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="remote device loss rsp for capability req, retry on lcid:[%u]. @gle_tm_signal.c(491),WARNING" ID="0xed440f5b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[tm gle_tm_signal_capability_cfm] reset signal_capability req by local @gle_tm_signal.c(522),INFO" ID="0xed441055" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[tm gle_tm_signal_capability_cfm] no signal_capability req by local @gle_tm_signal.c(525),INFO" ID="0xed44106d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="op_code[0x%02x], identifier[0x%02x], data_map[%u], cfm_data_len[%u] @gle_tm_signal.c(531),INFO" ID="0xed44109d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[tm gle_tm_signal_capability_cfm]len[%u] data_len[%u] cfm_data_len[%u] error @gle_tm_signal.c(537),ERROR" ID="0xed4410ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] create tm conn_node failed @gle_tm_signal.c(647),ERROR" ID="0xed44143a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] create_tcid_handle_node failed @gle_tm_signal.c(657),ERROR" ID="0xed44148a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] rollback added new conn_node @gle_tm_signal.c(661),ERROR" ID="0xed4414aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM] conn_node not exist, conn_id:%u @gle_tm_signal.c(679),ERROR" ID="0xed44153a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[tm tcid_get_extend_info_len] the args error. @gle_tm_signal.c(733),ERROR" ID="0xed4416ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN REQ] copy mode config, alloc reliable_mode params failed! @gle_tm_signal.c(757),ERROR" ID="0xed4417aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] dynamic channel failed @gle_tm_signal.c(830),ERROR" ID="0xed4419f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN REQ] gle_tm_connect_get_tcid_node, alloc slqi params failed! @gle_tm_signal.c(883),ERROR" ID="0xed441b9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN REQ] new tm sdu failed @gle_tm_signal.c(999),ERROR" ID="0xed441f3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN REQ] tx_window is error. @gle_tm_signal.c(1034),ERROR" ID="0xed442052" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN REQ] init tcid node failed @gle_tm_signal.c(1041),ERROR" ID="0xed44208a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN REQ] new sm sdu failed @gle_tm_signal.c(1047),ERROR" ID="0xed4420ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE TM CONN RSP] data parsing error failed: slqi_num(%u) &gt; remain_len(%u)! @gle_tm_signal.c(1074),ERROR" ID="0xed442192" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN RSP] tm_connect_rsp_get_tcid_node, alloc slqi params failed! @gle_tm_signal.c(1079),ERROR" ID="0xed4421ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN RSP] new tm sdu failed @gle_tm_signal.c(1153),ERROR" ID="0xed44240a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN RSP] new tm sdu failed @gle_tm_signal.c(1210),ERROR" ID="0xed4425d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[tm gle_tm_signal_tcid_connect_ind]len[%u] error @gle_tm_signal.c(1258),ERROR" ID="0xed442752" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="op_code[0x%02x], identifier[0x%02x] @gle_tm_signal.c(1265),INFO" ID="0xed44278d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle_tm_signal_tcid_connect_ind]failed, ret = 0x%x @gle_tm_signal.c(1270),INFO" ID="0xed4427b5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[tm gle_tm_signal_tcid_connect_cfm]len[%u] data_len[%u] error @gle_tm_signal.c(1293),ERROR" ID="0xed44286a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM CONN CFM] init tcid node failed @gle_tm_signal.c(1301),ERROR" ID="0xed4428aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM TCID_DISCONNECT_REQ] release tcid not exist! @gle_tm_signal.c(1330),ERROR" ID="0xed442992" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM DISCONN REQ] new sm sdu failed @gle_tm_signal.c(1341),ERROR" ID="0xed4429ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] new tm sdu failed @gle_tm_signal.c(1352),ERROR" ID="0xed442a42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM DISCONN RSP] new tm sdu failed @gle_tm_signal.c(1385),ERROR" ID="0xed442b4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM DISCONN RSP] new tm sdu failed @gle_tm_signal.c(1396),ERROR" ID="0xed442ba2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[tm gle_tm_signal_tcid_disconnect_ind]len[%u] error @gle_tm_signal.c(1440),ERROR" ID="0xed442d02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[tm gle_tm_signal_tcid_disconnect_ind]data len[%u] error @gle_tm_signal.c(1449),ERROR" ID="0xed442d4a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="op_code[0x%02x], identifier[0x%02x] @gle_tm_signal.c(1455),INFO" ID="0xed442d7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle_tm_signal_tcid_disconnect_ind]failed, ret = 0x%x @gle_tm_signal.c(1460),INFO" ID="0xed442da5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[tm tm_signal_tcid_disconnect_cfm]len[%u] data_len[%u] error @gle_tm_signal.c(1479),ERROR" ID="0xed442e3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM REF REQ] new tm sdu failed @gle_tm_signal.c(1579),ERROR" ID="0xed44315a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM TCID_DISCONNECT_REQ] release tcid not exist! @gle_tm_signal.c(1618),ERROR" ID="0xed443292" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM REF REQ] new sm sdu failed @gle_tm_signal.c(1630),ERROR" ID="0xed4432f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM REF RSP] new tm sdu failed @gle_tm_signal.c(1745),ERROR" ID="0xed44368a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM REF RSP] new tm sdu failed @gle_tm_signal.c(1756),ERROR" ID="0xed4436e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM REF RSP] find tcid by local failed @gle_tm_signal.c(1781),ERROR" ID="0xed4437aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="op_code[0x%02x], identifier[0x%02x] @gle_tm_signal.c(1804),INFO" ID="0xed443865" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle_tm_signal_tcid_reconfig_ind]failed, ret = 0x%x @gle_tm_signal.c(1809),INFO" ID="0xed44388d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[tm gle_tm_signal_tcid_reconfig_cfm]input data NULL error @gle_tm_signal.c(1821),ERROR" ID="0xed4438ea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[tm gle_tm_signal_tcid_reconfig_cfm]len[%u] data_len[%u] error @gle_tm_signal.c(1835),ERROR" ID="0xed44395a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] find tcid by local failed @gle_tm_signal.c(1844),ERROR" ID="0xed4439a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][trans init] trans new failed, trans id = %d @gle_tm_signal.c(1958),WARNING" ID="0xed443d33" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][trans init] RTX Timer new failed @gle_tm_signal.c(1971),WARNING" ID="0xed443d9b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][trans init] add timer fail @gle_tm_signal.c(1980),ERROR" ID="0xed443de2" />
+			</MSG_LOG>

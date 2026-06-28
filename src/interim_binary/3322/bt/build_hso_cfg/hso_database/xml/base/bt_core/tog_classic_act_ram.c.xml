@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[TWS_TOG3] isr coming now_clk=0x%x @tog_classic_act_ram.c(57),INFO" ID="0x8b1401cd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][tog]tog_start. conhdl=%d,tog_period=%d,audio_delay=%d,min_interval=%d @tog_classic_act_ram.c(174),INFO" ID="0x8b140575" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[tog]hci_audio_sync_start invalid tog mode:%d @tog_classic_act_ram.c(183),WARNING" ID="0x8b1405bb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[tog]hci_get_tog_count_act, fsm_msg_alloc fail! @tog_classic_act_ram.c(237),ERROR" ID="0x8b14076a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[tog]hci_get_tog_count_act, get phone count role error! @tog_classic_act_ram.c(252),ERROR" ID="0x8b1407e2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[tog]hci_get_tog_count_act, current_time:0x%x, clk_off:%d, master_clock:%d, current_tog_count:%d @tog_classic_act_ram.c(268),INFO" ID="0x8b140865" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[tog]get_clock_and_tog, fsm_msg_alloc fail! @tog_classic_act_ram.c(294),ERROR" ID="0x8b140932" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[tog]get_clock_and_tog error! @tog_classic_act_ram.c(313),ERROR" ID="0x8b1409ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][sco]sync_tog_enable error.finecnt_start=%d,finecnt_offset=%d, @tog_classic_act_ram.c(358),ERROR" ID="0x8b140b32" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[tog][sco] sco_tog_start. sco_linkid=%d, tog start slotcnt=0x%x, finecnt=%d, clock=0x%x @tog_classic_act_ram.c(372),INFO" ID="0x8b140ba5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[TWS_TOG3]FE5F:slotcnt_start=0x%x, finecnt_start=%d, clkoff=0x%x, cur_clk=0x%x @tog_classic_act_ram.c(464),INFO" ID="0x8b140e85" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[TWS_TOG3] FE5F:flag=%d, conhdl=0x%x, period=%d, delay=%d @tog_classic_act_ram.c(479),INFO" ID="0x8b140efd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[TWS_TOG3] FE5F:master_clk=0x%x, min_interval=%d @tog_classic_act_ram.c(480),INFO" ID="0x8b140f05" />
+			</MSG_LOG>

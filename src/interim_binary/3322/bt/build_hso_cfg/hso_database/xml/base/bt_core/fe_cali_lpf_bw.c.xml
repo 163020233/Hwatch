@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[LPF_CALI]code = %x, abs_diff_val = %d, pwr_1m = %d, 2 * pwr_2_5m = %d @fe_cali_lpf_bw.c(184),INFO" ID="0x8a5605c5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[CALI][LPF]fe_cali_lpf_bw_serch_fine_code::band[%d] lpw cali opt_rc_code=0x%x @fe_cali_lpf_bw.c(188),INFO" ID="0x8a5605e5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[LPF_CALI wide bw]code = %x, abs_diff_val = %d, pwr_1m = %d, 2 * pwr_4_5m = %d @fe_cali_lpf_bw.c(217),INFO" ID="0x8a5606cd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[CALI][LPF]fe_cali_lpf_bw_serch_fine_code_wide_bw::band[%d] lpw cali opt_rc_code=0x%x @fe_cali_lpf_bw.c(222),INFO" ID="0x8a5606f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[LPF_CALI]drf lpw cali opt_rc_code:0x%x @fe_cali_lpf_bw.c(248),INFO" ID="0x8a5607c5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[LPF_CALI]code = %x, abs_diff_val = %d, pwr_1m = %d, 2 * pwr_2_5m = %d @fe_cali_lpf_bw.c(311),INFO" ID="0x8a5609bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[LPF_CALI]drf lpw cali opt_rc_code:0x%x, last cali value:0x%x @fe_cali_lpf_bw.c(316),INFO" ID="0x8a5609e5" />
+			</MSG_LOG>

@@ -1,0 +1,49 @@
+{
+   "Partition_Tbl":{
+      "image_id" : "0x4B87A54B",
+      "stru_ver" : "0x00010000",
+      "version"  : "0x00000000",
+      "param_info_description" : [
+         "Address Constraints: flash type must fill with relative address, RAM regions must fill with absolute address.",
+         "Item ID Constraints: ssb type:                       0x00 ~ 0x0F, Relative address, Size",
+         "                     firmware on flash:              0x20 ~ 0x2F, Relative address, Size",
+         "                     data on flash:                  0x30 ~ 0x3F, Relative address, Size"
+      ],
+      "Fixed item id" : [
+         "0x00: ssb",
+         "0x01: ssb_backup",
+         "0x20: recovery_image",
+         "0x21: seliteos_image",
+         "0x22: acpu_image",
+         "0x23: bt_image",
+         "0x24: dsp_main_image",
+         "0x25: dsp_overlay_image",
+         "0x30: nv_data",
+         "0x31: fota_data",
+         "0x32: ssb_update",
+         "0x33: seliteos_update",
+         "0x34: dfx_data",
+         "0x35: logfile",
+         "0x36: dump_info",
+         "0x37: filesystem"
+      ],
+      "param_info" : [
+         ["0x00", "0x00001000", "0x00010000"],
+         ["0x01", "0x00011000", "0x00010000"],
+         ["0x20", "0x00021000", "0x0005F000"],
+         ["0x21", "0x00080000", "0x00040000"],
+         ["0x23", "0x000C0000", "0x00078000"],
+         ["0x24", "0x00138000", "0x00040000"],
+         ["0x32", "0x00178000", "0x00010000"],
+         ["0x33", "0x00188000", "0x00040000"],
+         ["0x30", "0x001C8000", "0x00006000"],
+         ["0x31", "0x001CE000", "0x00004000"],
+         ["0x25", "0x001D2000", "0x000D0000"],
+         ["0x22", "0x002A2000", "0x0059E000"],
+         ["0x35", "0x00840000", "0x000C0000"],
+         ["0x37", "0x00900000", "0x00700000"]
+      ],
+      "flash_base_addr" : "0x26000000"
+   },
+   "Output_file_prefix":"AIoT"
+}

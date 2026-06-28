@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][TM init] transmission management module init @sapi_gle_tm_inner.c(38),INFO" ID="0xed3a0135" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][TM done] transmission management module done @sapi_gle_tm_inner.c(69),INFO" ID="0xed3a022d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM] find lcid 0x%04x failed, release default tcid failed. @sapi_gle_tm_inner.c(83),ERROR" ID="0xed3a029a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] register upper cbk func new failed. @sapi_gle_tm_inner.c(117),ERROR" ID="0xed3a03aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] register cbk func new failed. @sapi_gle_tm_inner.c(184),ERROR" ID="0xed3a05c2" />
+			</MSG_LOG>

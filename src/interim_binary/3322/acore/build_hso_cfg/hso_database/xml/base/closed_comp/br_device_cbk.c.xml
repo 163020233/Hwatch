@@ -1,0 +1,47 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bs br] report stack state msg failed: %08X @br_device_cbk.c(49),ERROR" ID="0xea40018a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] malloc err! @br_device_cbk.c(68),ERROR" ID="0xea400222" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] report discover result msg failed: %08X @br_device_cbk.c(78),ERROR" ID="0xea400272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] malloc err! @br_device_cbk.c(97),ERROR" ID="0xea40030a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] report conn req msg failed: %08X @br_device_cbk.c(105),ERROR" ID="0xea40034a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] report conn state msg failed: %08X @br_device_cbk.c(125),ERROR" ID="0xea4003ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] malloc err! @br_device_cbk.c(144),ERROR" ID="0xea400482" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] report pair complete msg failed: %08X @br_device_cbk.c(151),ERROR" ID="0xea4004ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] report pair remove msg failed: %08X @br_device_cbk.c(170),ERROR" ID="0xea400552" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] get remote dev fail, addr is %02x:*:*:*:*:%02x! @br_device_cbk.c(189),ERROR" ID="0xea4005ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] remote name changed malloc fail, len %d @br_device_cbk.c(195),INFO" ID="0xea40061d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] remote name changed msg failed: 0x%08x @br_device_cbk.c(204),ERROR" ID="0xea400662" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] paired device is zero @br_device_cbk.c(216),INFO" ID="0xea4006c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] get paired device fail @br_device_cbk.c(226),INFO" ID="0xea400715" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] remote is null! @br_device_cbk.c(241),ERROR" ID="0xea40078a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] state changed, transport:%d state:%d @br_device_cbk.c(290),INFO" ID="0xea400915" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] recovery info fail 0x%x @br_device_cbk.c(296),INFO" ID="0xea400945" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] scan mode changed: %d @br_device_cbk.c(310),INFO" ID="0xea4009b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] discovery state changed: %d @br_device_cbk.c(316),INFO" ID="0xea4009e5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bs br] discovery device, addr:%02X:*:*:*:*:%02X , cod:0x%08X, rssi:%d @br_device_cbk.c(324),INFO" ID="0xea400a25" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bs br] connect request, addr:%02X:*:*:*:*:%02X cod:0x%08X @br_device_cbk.c(331),INFO" ID="0xea400a5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] no resources, reject! @br_device_cbk.c(339),ERROR" ID="0xea400a9a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bs br] connect state changed, addr:%02X:*:*:*:*:%02X  state:%d reason:0x%02X @br_device_cbk.c(380),INFO" ID="0xea400be5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] remote not found! @br_device_cbk.c(383),ERROR" ID="0xea400bfa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] central reconnected! encrypt link ret: %08X @br_device_cbk.c(404),INFO" ID="0xea400ca5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] central connected! pair remote ret: %08X @br_device_cbk.c(408),INFO" ID="0xea400cc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] disconnected! need reconn! @br_device_cbk.c(421),INFO" ID="0xea400d2d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bs br] pair request, addr:%02X:*:*:*:*:%02X  bondable:%d @br_device_cbk.c(434),INFO" ID="0xea400d95" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bs br] auth complete, addr:%02X:*:*:*:*:%02X status:%08X @br_device_cbk.c(442),INFO" ID="0xea400dd5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] remote is null! @br_device_cbk.c(447),ERROR" ID="0xea400dfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] pair without acl start reconnect @br_device_cbk.c(460),INFO" ID="0xea400e65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] encrypt link, ret: %08X @br_device_cbk.c(468),INFO" ID="0xea400ea5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] remote is null! @br_device_cbk.c(473),ERROR" ID="0xea400eca" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bs br] pair remove, addr:%02X:*:*:*:*:%02X status:%08X @br_device_cbk.c(483),INFO" ID="0xea400f1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] remote is null! @br_device_cbk.c(486),ERROR" ID="0xea400f32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] hfp hf connect, ret: %08X @br_device_cbk.c(503),INFO" ID="0xea400fbd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] a2dp sink connect, ret: %08X @br_device_cbk.c(507),INFO" ID="0xea400fdd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] avrcp ct connect, ret: %08X @br_device_cbk.c(511),INFO" ID="0xea400ffd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] hfp ag connect, ret: %08X @br_device_cbk.c(517),INFO" ID="0xea40102d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] a2dp src, ret: %08X @br_device_cbk.c(522),INFO" ID="0xea401055" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] avrcp tg connect, ret: %08X @br_device_cbk.c(526),INFO" ID="0xea401075" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] pbap connect, ret: %08X @br_device_cbk.c(534),INFO" ID="0xea4010b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bs br] encrypt complete, addr:%02X:*:*:*:*:%02X status:%08X @br_device_cbk.c(543),INFO" ID="0xea4010fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] remote is null! @br_device_cbk.c(546),ERROR" ID="0xea401112" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] local connect as slave, set link role, ret: %08X @br_device_cbk.c(561),INFO" ID="0xea40118d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] local connect as master @br_device_cbk.c(563),INFO" ID="0xea40119d" />
+			</MSG_LOG>

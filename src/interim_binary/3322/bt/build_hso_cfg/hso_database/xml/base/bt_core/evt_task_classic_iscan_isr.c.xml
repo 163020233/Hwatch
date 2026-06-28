@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]iscan_prog: env_ptr is null @evt_task_classic_iscan_isr.c(31),ERROR" ID="0x898a00fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ISCAN]iscan_prog: remaining_slot:0x%x @evt_task_classic_iscan_isr.c(42),INFO" ID="0x898a0155" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]start_cbk: env_ptr is null @evt_task_classic_iscan_isr.c(53),ERROR" ID="0x898a01aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ISCAN]start_cbk: evt_status=%d @evt_task_classic_iscan_isr.c(58),WARNING" ID="0x898a01d3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]evt_cbk: env_ptr is null @evt_task_classic_iscan_isr.c(96),ERROR" ID="0x898a0302" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ISCAN]evt_cbk: remaining_slot:0x%x @evt_task_classic_iscan_isr.c(113),INFO" ID="0x898a038d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]abnormal_cbk: env_ptr is null @evt_task_classic_iscan_isr.c(126),ERROR" ID="0x898a03f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ISCAN]abnormal_cbk: remaining_slot 0x%x @evt_task_classic_iscan_isr.c(143),INFO" ID="0x898a047d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]cancel_cbk: env_ptr is null @evt_task_classic_iscan_isr.c(155),ERROR" ID="0x898a04da" />
+			</MSG_LOG>

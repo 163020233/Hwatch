@@ -1,0 +1,36 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2025-2025. All rights reserved.
+#===============================================================================
+config NONOS_SUPPORT_TIMER
+    bool
+    prompt "nonos support timer"
+    default n
+    depends on DRIVER_SUPPORT_TIMER
+
+config NONOS_SUPPORT_TIMER_USING_RTC
+    bool
+    prompt "nonos support timer using rtc"
+    default n
+    depends on NONOS_SUPPORT_TIMER
+
+config NONOS_SUPPORT_MSGQUEUE
+    bool
+    default y
+    prompt "nonos support message queue"
+
+config NONOS_MSGQUEUE_LIMIT
+    int
+    prompt "max number of nonos msgqueue"
+    default 1
+    depends on NONOS_SUPPORT_MSGQUEUE
+config NONOS_MSGQUEUE_MSG_LIMIT
+    int
+    prompt "maximum number of messages in each msgqueue"
+    default 32
+    depends on NONOS_SUPPORT_MSGQUEUE
+config NONOS_MSGQUEUE_MSG_SIZE_LIMIT
+    int
+    prompt "maximum data length of a message that msgqueue"
+    default 256
+    depends on NONOS_SUPPORT_MSGQUEUE

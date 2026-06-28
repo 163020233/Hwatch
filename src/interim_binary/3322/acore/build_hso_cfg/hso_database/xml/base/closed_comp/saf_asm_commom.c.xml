@@ -1,0 +1,20 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] session is null! @saf_asm_commom.c(19),ERROR" ID="0xe9a0009a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] session is null! @saf_asm_commom.c(30),ERROR" ID="0xe9a000f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] check op, session ep err! ep_inst_id:%u @saf_asm_commom.c(248),ERROR" ID="0xe9a007c2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asm] check op, op = %u state err! ep_inst_id = %u state = %u @saf_asm_commom.c(254),ERROR" ID="0xe9a007f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] check evt, session ep err! ep_inst_id:%u @saf_asm_commom.c(270),ERROR" ID="0xe9a00872" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asm] check evt, op = %u state err! ep_inst_id = %u state = %u @saf_asm_commom.c(276),ERROR" ID="0xe9a008a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] decode codec err, codec data too small len=%u @saf_asm_commom.c(412),ERROR" ID="0xe9a00ce2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] decode codec err, codec param data too small len=%u @saf_asm_commom.c(418),ERROR" ID="0xe9a00d12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] decode config codec err, memcpy_s failed! @saf_asm_commom.c(442),ERROR" ID="0xe9a00dd2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asm] decode config channel err remain_len=%d, required_len:%d @saf_asm_commom.c(478),ERROR" ID="0xe9a00ef2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] decode config channel err, param err communication=%u @saf_asm_commom.c(496),ERROR" ID="0xe9a00f82" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asm] decode config channel, transmission:%u, qos_index:%u @saf_asm_commom.c(516),INFO" ID="0xe9a01025" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] decode config channel err, param err transmission=%u @saf_asm_commom.c(520),ERROR" ID="0xe9a01042" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] decode config metadata err, metadata data too small len=%u @saf_asm_commom.c(538),ERROR" ID="0xe9a010d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asm] decode config metadata err, meta-&gt;len %u exceeds remaining data len %u @saf_asm_commom.c(552),ERROR" ID="0xe9a01142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] decode config metadata err, memcpy_s failed! @saf_asm_commom.c(561),ERROR" ID="0xe9a0118a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] decode config port err, port data too small len=%u @saf_asm_commom.c(575),ERROR" ID="0xe9a011fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] decode config data, type: %u @saf_asm_commom.c(591),INFO" ID="0xe9a0127d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] parse update bitrate param, memcpy_s bitrate param err @saf_asm_commom.c(625),ERROR" ID="0xe9a0138a" />
+			</MSG_LOG>

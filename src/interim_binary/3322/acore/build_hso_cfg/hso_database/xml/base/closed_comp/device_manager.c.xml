@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ACore] recover key num:0x%02x. @device_manager.c(40),INFO" ID="0xe8080145" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] recover nv config:0x%02x. @device_manager.c(55),INFO" ID="0xe80801bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] recover system config:0x%02x. @device_manager.c(58),INFO" ID="0xe80801d5" />
+			</MSG_LOG>

@@ -1,0 +1,23 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[AVDTP]avdtp signal msg process cfm reject code=%d error_code=%d @avdtp_hlp_ram.c(80),INFO" ID="0xebce0285" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP]avdtp signal msg process cfm accept code=%d @avdtp_hlp_ram.c(131),INFO" ID="0xebce041d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP]avdtp signal msg process ind code=%d @avdtp_hlp_ram.c(178),INFO" ID="0xebce0595" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP][GET_SEP_FAIL] Can not get sep info @avdtp_hlp_ram.c(326),WARNING" ID="0xebce0a33" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[AVDTP][LC3][L2HC]select L-&gt;vendor_id=0x%x, R-&gt;vendor_id=0x%x @avdtp_hlp_ram.c(364),INFO" ID="0xebce0b65" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AVDTP][LC3][L2HC]select L-&gt;sample_rate=0x%x, c:0x%x, R-&gt;sample_rate=0x%x, c:0x%x @avdtp_hlp_ram.c(376),INFO" ID="0xebce0bc5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AVDTP][LC3][L2HC]select L-&gt;highBitRate=0x%x, misc:0x%x, R-&gt;highBitRate=0x%x, misc:0x%x @avdtp_hlp_ram.c(380),INFO" ID="0xebce0be5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[AVDTP][LHDC][V5]select L-&gt;sf=0x%02x, R-&gt;sf=0x%02x P-&gt;sf=0x%02x @avdtp_hlp_ram.c(423),INFO" ID="0xebce0d3d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AVDTP][LHDC][V5]select L-&gt;vendor_id=0x%x, R-&gt;vendor_id=0x%x L-&gt;codec_id=0x%04x, R-&gt;codec_id=0x%04x @avdtp_hlp_ram.c(551),INFO" ID="0xebce113d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[AVDTP][LHDC][V5]select L-&gt;byte7=0x%02x, R-&gt;byte7=0x%02x P-&gt;byte7=0x%02x @avdtp_hlp_ram.c(571),INFO" ID="0xebce11dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[AVDTP][LHDC][V5]select L-&gt;byte9=0x%02x, R-&gt;byte9=0x%02x P-&gt;byte9=0x%02x @avdtp_hlp_ram.c(573),INFO" ID="0xebce11ed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[AVDTP][LHDC][V5]select L-&gt;byte10=0x%02x, R-&gt;byte10=0x%02x P-&gt;byte10=0x%02x @avdtp_hlp_ram.c(575),INFO" ID="0xebce11fd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AVDTP][LHDC][V3V4]select L-&gt;vendor_id=0x%x, R-&gt;vendor_id=0x%x L-&gt;codec_id=0x%04x, R-&gt;codec_id=0x%04x @avdtp_hlp_ram.c(606),INFO" ID="0xebce12f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[AVDTP][LHDC]P-&gt;vendor_id=0x%x L-&gt;vendor_id=0x%x, R-&gt;vendor_id=0x%x @avdtp_hlp_ram.c(658),INFO" ID="0xebce1495" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[AVDTP]avdtp sep selector local mask_inuse_cmp=%d, media_type_bit3_cmp=%d,&quot; &quot;codec_type_cmp=%d @avdtp_hlp_ram.c(769),INFO" ID="0xebce180d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP]avdtp sep selector local_seid:%d set&quot; &quot;INUSE @avdtp_hlp_ram.c(793),INFO" ID="0xebce18cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP]avdtp sep selector errcode=%d @avdtp_hlp_ram.c(832),INFO" ID="0xebce1a05" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="aac check @avdtp_hlp_ram.c(886),INFO" ID="0xebce1bb5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="aac check type:0x%x @avdtp_hlp_ram.c(938),INFO" ID="0xebce1d55" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AVDTP]avdtp sep group get available se ps Always reuse the group for this, group_id = %d,&quot; &quot;REMOTE_ADDR = %02x:%02x:**:**:**:%02x @avdtp_hlp_ram.c(1171),INFO" ID="0xebce249d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AVDTP]avdtp sep group get available se ps Return the first idle group, group_id = %d,&quot; &quot;REMOTE_ADDR = %02x:%02x:**:**:**:%02x @avdtp_hlp_ram.c(1189),INFO" ID="0xebce252d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AVDTP]avdtp sep group get available se ps Return the first not connect group, group_id = %d,&quot; &quot;REMOTE_ADDR = %02x:%02x:**:**:**:%02x @avdtp_hlp_ram.c(1196),INFO" ID="0xebce2565" />
+			</MSG_LOG>

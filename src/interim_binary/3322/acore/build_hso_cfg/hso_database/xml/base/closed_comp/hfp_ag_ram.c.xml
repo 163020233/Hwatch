@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[HFP]hfps_ag_subscriber_number_rsp sprintf_s fail @hfp_ag_ram.c(213),ERROR" ID="0xeca206aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP]hfps_ag_current_call_rsp sprintf_s fail @hfp_ag_ram.c(260),ERROR" ID="0xeca20822" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP]sprintf_s fail @hfp_ag_ram.c(264),ERROR" ID="0xeca20842" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP]hfp_ag_bcs: HFP_AG_WAIT4_BCSCMD not set, ignore this command. @hfp_ag_ram.c(1151),INFO" ID="0xeca223fd" />
+			</MSG_LOG>

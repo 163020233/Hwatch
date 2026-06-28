@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="SDK_BTA: simple pair complete ind:%02x:**:**:**:%02x @sdk_bta_if.c(34),INFO" ID="0xec760115" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SDK_BTA: SimplePairComplete result:%#x @sdk_bta_if.c(35),INFO" ID="0xec76011d" />
+			</MSG_LOG>

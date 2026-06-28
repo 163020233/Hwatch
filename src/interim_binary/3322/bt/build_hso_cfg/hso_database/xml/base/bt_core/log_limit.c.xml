@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[log_limit]module:0x%x start lost @log_limit.c(88),ERROR" ID="0xa12802c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[log_limit][set_enable] memcpy_s fail! @log_limit.c(180),ERROR" ID="0xa12805a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[log_limit][send] send ipc fail[0x%x]! @log_limit.c(195),ERROR" ID="0xa128061a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[log_limit]Create reset timer failed! @log_limit.c(259),ERROR" ID="0xa128081a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[log_limit]module:0x%x,available_count:%d,lost_count:%d,printed_count:%d,enable:%u @log_limit.c(289),ERROR" ID="0xa128090a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[log_limit]log limit is enabled @log_limit.c(309),INFO" ID="0xa12809ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[log_limit]log limit is disabled @log_limit.c(312),INFO" ID="0xa12809c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[log_limit][set_enable] send ipc fail[0x%x]! @log_limit.c(340),ERROR" ID="0xa1280aa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[log_limit]log limit module 0x%x is enabled @log_limit.c(357),INFO" ID="0xa1280b2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[log_limit]log limit module 0x%x is disabled @log_limit.c(359),INFO" ID="0xa1280b3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[log_limit][set_mod_enable] send ipc fail[0x%x]! @log_limit.c(386),ERROR" ID="0xa1280c12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[log_limit][get_info] send ipc fail[0x%x]! @log_limit.c(422),ERROR" ID="0xa1280d32" />
+			</MSG_LOG>

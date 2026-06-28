@@ -1,0 +1,72 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] port alloc, create port node alloc failed @br_port_profile.c(74),INFO" ID="0xea4c0255" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_create_server_port, please enable port profile first! @br_port_profile.c(123),INFO" ID="0xea4c03dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_create_server_port, please check the input params or uuid len. @br_port_profile.c(128),INFO" ID="0xea4c0405" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_create_server_port, port match to the uuid already exists :%u @br_port_profile.c(135),INFO" ID="0xea4c043d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_create_server_port, port value error / port is already in use. @br_port_profile.c(141),INFO" ID="0xea4c046d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT]bs_br_port_create_remote_port, bs port create fail. @br_port_profile.c(156),INFO" ID="0xea4c04e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT]bs_br_port_create_remote_port, port create new port node falied @br_port_profile.c(161),INFO" ID="0xea4c050d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_create_remote_port, please enable port profile first! @br_port_profile.c(172),INFO" ID="0xea4c0565" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_create_remote_port, port input error|uuid is NULL|uuid len error. @br_port_profile.c(176),INFO" ID="0xea4c0585" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT]bs_br_port_create_remote_port, the port is already in use :%d @br_port_profile.c(181),INFO" ID="0xea4c05ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT]bs_br_port_create_remote_port, the port match to uuid already exists :%d @br_port_profile.c(188),INFO" ID="0xea4c05e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_create_remote_port, port create new port node falied @br_port_profile.c(201),INFO" ID="0xea4c064d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_destroy, please enable port profile first! @br_port_profile.c(218),INFO" ID="0xea4c06d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_destroy, port: %u not exist in the local cache. @br_port_profile.c(224),INFO" ID="0xea4c0705" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_destroy, not support client side destory. @br_port_profile.c(231),INFO" ID="0xea4c073d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_destroy failed, port: %u @br_port_profile.c(237),INFO" ID="0xea4c076d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs_br_port_client_fixed_port_connect, uuid init 128bit fail ret:0x%x @br_port_profile.c(255),INFO" ID="0xea4c07fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs_br_port_client_fixed_port_connect fail ret:0x%x @br_port_profile.c(261),INFO" ID="0xea4c082d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] store_local_info, port create new port node falied @br_port_profile.c(274),INFO" ID="0xea4c0895" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] store_local_info, create fixed port first or check the find_remote_flag. @br_port_profile.c(279),INFO" ID="0xea4c08bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_connect, node is NULL. @br_port_profile.c(291),ERROR" ID="0xea4c091a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_connect, create fixed port first or check the input flag. port type = %d @br_port_profile.c(296),ERROR" ID="0xea4c0942" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_connect, please enable port profile first! @br_port_profile.c(309),INFO" ID="0xea4c09ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_connect, uuid is NULL @br_port_profile.c(313),ERROR" ID="0xea4c09ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_connect, uuid len is error. uuid len = %u @br_port_profile.c(317),ERROR" ID="0xea4c09ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_connect, get bt_addr by dev_id failed. @br_port_profile.c(322),INFO" ID="0xea4c0a15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_connect, has been connected. @br_port_profile.c(327),INFO" ID="0xea4c0a3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_connect, client fixed port connect failed, ret: 0x%x @br_port_profile.c(333),INFO" ID="0xea4c0a6d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS_BR_PORT] bs_br_port_connect failed, dev_id: %u, find_remote_flag: %u @br_port_profile.c(349),INFO" ID="0xea4c0aed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_connect, please enable port profile first! @br_port_profile.c(360),ERROR" ID="0xea4c0b42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_connect, uuid is NULL @br_port_profile.c(364),ERROR" ID="0xea4c0b62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_connect, uuid len is error. uuid len = %u @br_port_profile.c(368),ERROR" ID="0xea4c0b82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_connect, has been connected. conn state = 0x%x @br_port_profile.c(378),ERROR" ID="0xea4c0bd2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_connect, client fixed port connect failed, ret: 0x%x @br_port_profile.c(384),ERROR" ID="0xea4c0c02" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS_BR_PORT] bs_br_port_connect failed, find_remote_flag: %u, ret = 0x%x @br_port_profile.c(400),ERROR" ID="0xea4c0c82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_send_conn_rsp, please enable port profile first! @br_port_profile.c(411),INFO" ID="0xea4c0cdd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_send_conn_rsp, port: %u not exist in the local cache. @br_port_profile.c(417),INFO" ID="0xea4c0d0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_send_conn_rsp, rsp_port: %u. @br_port_profile.c(422),INFO" ID="0xea4c0d35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_disconnect, please enable port profile first! @br_port_profile.c(436),INFO" ID="0xea4c0da5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_disconnect, port: %u not exist in the local cache. @br_port_profile.c(441),INFO" ID="0xea4c0dcd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_disconnect failed, port: %u @br_port_profile.c(452),INFO" ID="0xea4c0e25" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] conn_state_changed_cbk, dev_id is upper limit. @br_port_profile.c(466),INFO" ID="0xea4c0e95" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] connection_request_callback, port: %u not exist in the local cache. @br_port_profile.c(476),INFO" ID="0xea4c0ee5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] conn_changed_cbk, port: %u not exist in the local cache. @br_port_profile.c(503),INFO" ID="0xea4c0fbd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] conn_changed_cbk, port: %u not exist in the local cache. @br_port_profile.c(514),INFO" ID="0xea4c1015" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] conn_changed_cbk, port: %u not exist in the local cache. @br_port_profile.c(531),INFO" ID="0xea4c109d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] conn_state_changed_cbk, get local port node failed. @br_port_profile.c(546),INFO" ID="0xea4c1115" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] conn_state_changed_cbk, dev_id is upper limit. @br_port_profile.c(551),INFO" ID="0xea4c113d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] conn_state_changed_cbk, dev_id is upper limit. @br_port_profile.c(579),INFO" ID="0xea4c121d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] receive_trans_data, receive data is wrong. @br_port_profile.c(585),INFO" ID="0xea4c124d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] receive_trans_data, port: %u not exist in the local cache. @br_port_profile.c(598),INFO" ID="0xea4c12b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_register_callbacks, check the input params or uuid len. @br_port_profile.c(612),INFO" ID="0xea4c1325" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs port register, port create new port node falied @br_port_profile.c(622),INFO" ID="0xea4c1375" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs port register, spp register callbacks fail, ret:%x @br_port_profile.c(636),INFO" ID="0xea4c13e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="port_delete_spp_info, server destory server port fail, ret 0x%08x @br_port_profile.c(657),INFO" ID="0xea4c148d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="port_delete_spp_info, client disconnect fail, ret 0x%08x @br_port_profile.c(663),INFO" ID="0xea4c14bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_unregister_callbacks, uuid is NULL or uuid len is error. @br_port_profile.c(676),INFO" ID="0xea4c1525" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_unregister_callbacks, node not exist in the local cache @br_port_profile.c(681),INFO" ID="0xea4c154d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_unregister_callbacks, delete spp info fail, ret 0x%08x @br_port_profile.c(689),INFO" ID="0xea4c158d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_write_data, please enable port profile first! @br_port_profile.c(708),INFO" ID="0xea4c1625" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_write_data, send data is wrong. @br_port_profile.c(712),INFO" ID="0xea4c1645" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] bs_br_port_write_data, port: %u not exist in the local cache. @br_port_profile.c(721),INFO" ID="0xea4c168d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS_BR_PORT] bs_br_port_write_data, send data failed, port: %u, ret: %x @br_port_profile.c(732),INFO" ID="0xea4c16e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_enable, [Warning]port profile has been enable! @br_port_profile.c(744),INFO" ID="0xea4c1745" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_enable, port profile already enabled! @br_port_profile.c(750),INFO" ID="0xea4c1775" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] bs_br_port_enable, port profile enable falied! @br_port_profile.c(752),INFO" ID="0xea4c1785" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT]port profile is not enable! @br_port_profile.c(764),INFO" ID="0xea4c17e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bs_br_port_disable, delete spp info fail, ret 0x%08x, port: %d @br_port_profile.c(775),INFO" ID="0xea4c183d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] port_delete_local_info, unregister callbacks fail, ret:%x @br_port_profile.c(782),INFO" ID="0xea4c1875" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_PORT] port_delete_local_info, spp already deinit. @br_port_profile.c(788),INFO" ID="0xea4c18a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_PORT] port_delete_local_info, spp deinit error:0x%x. @br_port_profile.c(790),INFO" ID="0xea4c18b5" />
+			</MSG_LOG>

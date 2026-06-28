@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][ES info]es_dump_elt_list: task_id=0x%x timestamp=0x%x es_sn=%d cur_priority=%d @evt_sched.c(52),INFO" ID="0x886e01a5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][ES info]es_wait_list_dump: task_id=0x%x interval=%d timestamp=%d @evt_sched.c(74),INFO" ID="0x886e0255" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]es_create_elt malloc es_elt_t failed! @evt_sched.c(104),ERROR" ID="0x886e0342" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]es_insert_elt_duplicate, elt = 0x%x @evt_sched.c(353),ERROR" ID="0x886e0b0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]es_insert_elt_duplicate, elt = 0x%x @evt_sched.c(360),ERROR" ID="0x886e0b42" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[bgtp]es cancel. insert_elt:task=0x%x,intv=%u,prio=%u; cancel_elt:task=0x%x,intv=%u,prio=%u. @evt_sched.c(385),WARNING" ID="0x886e0c0b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[WARNING][ASAP_UPDATE_TS] insert_ts=0x%x,pre_ts=0x%x ,duration_min_scan=0x%x,scan_start_cbk=0x%x @evt_sched.c(450),WARNING" ID="0x886e0e13" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[WARNING][ASAP_INSERT] insert_ts=0x%x,pre_ts=0x%x ,next_ts=0x%x,next_start_cbk=0x%x @evt_sched.c(542),WARNING" ID="0x886e10f3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ES][urgent_insert]:rejected(not newer elt), elt-&gt;ts=0x%x, prog_elt-&gt;ts=0x%x @evt_sched.c(627),WARNING" ID="0x886e139b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR][ES]es_insert_elt_gle_urgent, ee_type(0x%x)LR(0x%x) @evt_sched.c(640),ERROR" ID="0x886e1402" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ES]es_insert_elt_gle_urgent, timestamp(0x%x)LR(0x%x) @evt_sched.c(649),ERROR" ID="0x886e144a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ES]es_insert_elt_gle_urgent:rejected(ES_FLAG_NO_ASAP), first_allowed_ts=0x%x,  elt-&gt;ts=0x%x @evt_sched.c(660),WARNING" ID="0x886e14a3" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ES]es_insert_elt_gle_urgent:rejected(ES_FLAG_ASAP_LIMIT), ts=0x%x, limit=0x%x, duration_min=%d @evt_sched.c(665),WARNING" ID="0x886e14cb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR][ES]es_insert_elt timestamp(0x%x)LR(0x%x) @evt_sched.c(701),ERROR" ID="0x886e15ea" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ES]es_insert_elt:rejected(NO_ASAP), first_allowed_ts=0x%X, elt-&gt;ts=0x%X, task_id=0x%X @evt_sched.c(720),INFO" ID="0x886e1685" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP][SLEEP]es_sched_time_passed_check late cur_time :0x%x  timestamp  :0x%x  sub :0x%x @evt_sched.c(940),WARNING" ID="0x886e1d63" />
+			</MSG_LOG>

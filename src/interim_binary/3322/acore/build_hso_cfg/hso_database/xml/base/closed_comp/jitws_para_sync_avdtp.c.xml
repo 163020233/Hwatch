@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[JITWS]jitws serialize avdtp sep group stru notify sep group%d info @jitws_para_sync_avdtp.c(179),INFO" ID="0xebf8059d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVDTP] stream_count:%d @jitws_para_sync_avdtp.c(197),WARNING" ID="0xebf8062b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[JITWS][AVDTP] Cbk for create STREAM=0x%x, addr=%02x:%02x:**:**:**:%02x @jitws_para_sync_avdtp.c(235),INFO" ID="0xebf8075d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][AVDTP] Cbk for Set Configuration, STREAM=0x%x, MEDIA_TYPE=0x%x @jitws_para_sync_avdtp.c(275),INFO" ID="0xebf8089d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS] jitws release avdtp stream obj reason=%d @jitws_para_sync_avdtp.c(373),INFO" ID="0xebf80bad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS]jitws update avdtp stream info lsep not find!! stream-&gt;local_seid=%d @jitws_para_sync_avdtp.c(515),INFO" ID="0xebf8101d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS]jitws update avdtp stream info local_seid:%d set INUSE @jitws_para_sync_avdtp.c(520),INFO" ID="0xebf81045" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[JITWS]jitws update avdtp sep group info group_id=%d, groupMask=%d, latest=%02x:%02x:**:**:**:%02x @jitws_para_sync_avdtp.c(546),INFO" ID="0xebf81115" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS]jitws parse avdtp data data_valid_flag=%d @jitws_para_sync_avdtp.c(572),INFO" ID="0xebf811e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_AVDTP_FAIL]no acl link! @jitws_para_sync_avdtp.c(576),INFO" ID="0xebf81205" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS]jitws parse avdtp data jitws update avdtp stream info ret=%d @jitws_para_sync_avdtp.c(602),INFO" ID="0xebf812d5" />
+			</MSG_LOG>

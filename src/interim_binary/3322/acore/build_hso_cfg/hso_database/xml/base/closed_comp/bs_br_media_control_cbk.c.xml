@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_CALL] AVRCP conn state report rmt is NULL, dev_id %d @bs_br_media_control_cbk.c(31),ERROR" ID="0xee9000fa" />
+			</MSG_LOG>

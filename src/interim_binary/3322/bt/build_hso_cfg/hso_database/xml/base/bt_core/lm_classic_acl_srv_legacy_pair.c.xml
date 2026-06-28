@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[Legacy Pair] start legacy pairing as initiator. @lm_classic_acl_srv_legacy_pair.c(36),INFO" ID="0x89d40125" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[change link key] lm_classic_acl_hci_change_conn_link_key_act. @lm_classic_acl_srv_legacy_pair.c(106),INFO" ID="0x89d40355" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[change link key] start comb key exchange as initiator. @lm_classic_acl_srv_legacy_pair.c(119),INFO" ID="0x89d403bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[change link key] lm_classic_acl_hci_change_conn_link_key_act status[%u]. @lm_classic_acl_srv_legacy_pair.c(129),INFO" ID="0x89d4040d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[change link key] lm_classic_acl_lmp_comb_key_act. @lm_classic_acl_srv_legacy_pair.c(142),INFO" ID="0x89d40475" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[change link key] start comb key exchange as respondor. @lm_classic_acl_srv_legacy_pair.c(149),INFO" ID="0x89d404ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Legacy Pair] hci_pin_code_request_reply with invalid pin length %d @lm_classic_acl_srv_legacy_pair.c(201),WARNING" ID="0x89d4064b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Legacy Pair] lm_classic_acl_srv_legacy_pair_pin_code_req_neg_reply_act user cancelled pair. @lm_classic_acl_srv_legacy_pair.c(242),INFO" ID="0x89d40795" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Legacy Pair]lm_classic_acl_srv_legacy_pair_collision_inrand_early_stage_act switch to responder @lm_classic_acl_srv_legacy_pair.c(267),INFO" ID="0x89d4085d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Legacy Pair]lm_classic_acl_srv_legacy_pair_collision_inrand_not_accepted_act switch to responder @lm_classic_acl_srv_legacy_pair.c(303),INFO" ID="0x89d4097d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Legacy Pair] lm_classic_acl_srv_legacy_pair_inrand_act both devices use fixed pin, pair fail! @lm_classic_acl_srv_legacy_pair.c(377),WARNING" ID="0x89d40bcb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Legacy Pair] lm_classic_acl_srv_legacy_pair_inrand_act remote uses fixed pin. @lm_classic_acl_srv_legacy_pair.c(382),INFO" ID="0x89d40bf5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[change link key] secure conn start auth. @lm_classic_acl_srv_legacy_pair.c(478),INFO" ID="0x89d40ef5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Legacy Pair] lm_classic_acl_srv_legacy_pair_mutual_auth_done_act @lm_classic_acl_srv_legacy_pair.c(519),INFO" ID="0x89d4103d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Legacy Pair] generate_comb_key with invalid pin length %d @lm_classic_acl_srv_legacy_pair.c(637),WARNING" ID="0x89d413eb" />
+			</MSG_LOG>

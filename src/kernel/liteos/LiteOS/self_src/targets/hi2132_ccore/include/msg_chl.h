@@ -1,0 +1,115 @@
+/* ----------------------------------------------------------------------------
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2026-2026. All rights reserved.
+ * Description: main process
+ * Author: Huawei LiteOS Team
+ * Create: 2026-04-10
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ * 1. Redistributions of source code must retain the above copyright notice, this list of
+ * conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this list
+ * of conditions and the following disclaimer in the documentation and/or other materials
+ * provided with the distribution.
+ * 3. Neither the name of the copyright holder nor the names of its contributors may be used
+ * to endorse or promote products derived from this software without specific prior written
+ * permission.
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * --------------------------------------------------------------------------- */
+#ifndef _MSG_CHL_H_
+#define _MSG_CHL_H_
+
+#include "los_base.h"
+#include "cmsis_os2.h"
+
+#ifdef __cplusplus
+#if __cplusplus
+extern "C" {
+#endif /* __cpluscplus */
+#endif /* __cpluscplus */
+
+#define LOS_MSG_CHL_NAME_MAX_LEN 16
+
+typedef void *osMsgChlId_t;
+
+typedef struct tagMsgChl {
+    LOS_DL_LIST stList;
+    CHAR *pcChlName;
+    osMsgChlId_t MsgChlID;
+} LOS_MSG_CHL_CTL_T;
+
+/*****************************************************************************
+ Function    : LOS_MsgChl_Init
+ Description : inilization the Message channel
+ Input       : None
+ Output      : None
+ Return      : None
+ *****************************************************************************/
+VOID LOS_MsgChl_Init(VOID);
+
+/*****************************************************************************
+ Function    : LOS_MsgChl_Open
+ Description : Open a message channel by name
+ Input       : const CHAR *pcMsgChlName
+ Output      : None
+ Return      : osMsgChlId_t or NULL
+ *****************************************************************************/
+osMsgChlId_t LOS_MsgChl_Open(const CHAR *pcMsgChlName);
+
+/*****************************************************************************
+ Function    : LOS_MsgChl_Delete
+ Description : Delete a message channle
+ Input       : osMsgChlId_t MsgChlID: Message Channel ID get by call LOS_MsgChl_Open or LOS_MsgChl_GetChlbyName
+ Output      : None
+ Return      : None
+ *****************************************************************************/
+VOID LOS_MsgChl_Delete(osMsgChlId_t MsgChlID);
+
+/*****************************************************************************
+ Function    : LOS_MsgChl_GetChlbyName
+ Description : Get a message channle by name
+ Input       : const char *pcMsgChlName: name of message channel.
+ Output      : None
+ Return      : osMsgChlId_t :SUCCESS; NULL: FAIL
+ *****************************************************************************/
+osMsgChlId_t LOS_MsgChl_GetChlbyName(const char *pcMsgChlName);
+
+/*****************************************************************************
+ Function    : LOS_MsgChl_Write
+ Description : write data to message channel
+ Input       : osMsgChlId_t MsgChlID: Message Channel ID get by call
+               VOID         *pData  : Data to write in MsgChl; The memory of Data must be malloc by Write.
+               UINT32 timeout       : ms. osNoWait/osWaitForever write timeout time
+ Output      : None
+ Return      : LOS_OK: SUCCESS; LOS_NOK: FAIL
+ *****************************************************************************/
+UINT32 LOS_MsgChl_Write(osMsgChlId_t MsgChlID, VOID *pData, UINT32 timeout);
+
+/*****************************************************************************
+ Function    : LOS_MsgChl_Read
+ Description : read data from a messaeg channel.
+ Input       : osMsgChlId_t     MsgChlID: Message Channel ID get by call
+               VOID         **ppMsgBuf  : the address of the point to save the buff address,
+                                          the buff memory must be free by caller.
+               UINT32           timeout : CMSIS_RTOS_TimeOutValue or 0 in case of no time-out
+ Output      : None
+ Return      : LOS_OK: SUCCESS; LOS_NOK: FAIL
+ *****************************************************************************/
+UINT32 LOS_MsgChl_Read(osMsgChlId_t MsgChlID, VOID **ppMsgBuf, UINT32 timeout);
+
+#ifdef __cplusplus
+#if __cplusplus
+}
+#endif /* __cpluscplus */
+#endif /* __cpluscplus */
+
+#endif

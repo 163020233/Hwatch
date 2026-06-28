@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]iscan_start, create desc fail, env_ptr is NULL! @evt_task_classic_iscan_ram.c(100),WARNING" ID="0x8b060323" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]iscan_start: ES_MEM_ALLOC_FAIL! @evt_task_classic_iscan_ram.c(111),ERROR" ID="0x8b06037a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]iscan_start, insert elt fail! @evt_task_classic_iscan_ram.c(127),WARNING" ID="0x8b0603fb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]evt_cbk: env_ptr is null @evt_task_classic_iscan_ram.c(146),ERROR" ID="0x8b060492" />
+			</MSG_LOG>

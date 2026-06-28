@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[OFFLOAD] stream_handle == NULL @sapi_offload_src_inner.c(45),WARNING" ID="0xee60016b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[OFFLOAD]get watch connection handle fail, can't find link @sapi_offload_src_inner.c(53),INFO" ID="0xee6001ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[OFFLOAD] get watch connection handle =0x%x @sapi_offload_src_inner.c(56),WARNING" ID="0xee6001c3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[OFFLOAD]toggle is already started @sapi_offload_src_inner.c(64),WARNING" ID="0xee600203" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[OFFLOAD]toggle start, stream_handle=0x%x. @sapi_offload_src_inner.c(77),INFO" ID="0xee60026d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[OFFLOAD]toggle is already stopped. @sapi_offload_src_inner.c(84),WARNING" ID="0xee6002a3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[OFFLOAD]toggle stop, stream_handle=0x%x. @sapi_offload_src_inner.c(93),INFO" ID="0xee6002ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[OFFLOAD]toggle stop error, stream_handle=0x%x is not match. @sapi_offload_src_inner.c(96),WARNING" ID="0xee600303" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[OFFLOAD] sapi_offload_src_add_codec_info, streamhdl = 0x%x, size = %d, type = %d, len = %d @sapi_offload_src_inner.c(104),WARNING" ID="0xee600343" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[OFFLOAD] set_toggle_state, enable=0x%x, stream_hdl=0x%x @sapi_offload_src_inner.c(120),INFO" ID="0xee6003c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[OFFLOAD] add stream info fail @sapi_offload_src_inner.c(224),WARNING" ID="0xee600703" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[OFFLOAD] delete stream info hdl=0x%x @sapi_offload_src_inner.c(230),INFO" ID="0xee600735" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[OFFLOAD] delete stream info fail, stream info not find @sapi_offload_src_inner.c(242),WARNING" ID="0xee600793" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[OFFLOAD] clear stream info hdl=0x%x @sapi_offload_src_inner.c(248),INFO" ID="0xee6007c5" />
+			</MSG_LOG>

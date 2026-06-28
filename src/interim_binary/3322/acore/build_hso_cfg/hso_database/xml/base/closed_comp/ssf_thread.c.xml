@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MSG] ssf_handle_task_msg: invalid msg id %d @ssf_thread.c(28),ERROR" ID="0xef8800e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][MSG] handle funcs is null %x, msg id %d @ssf_thread.c(33),ERROR" ID="0xef88010a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MSG] ssf_task_init @ssf_thread.c(41),DBG" ID="0xef88014e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MSG] task already init @ssf_thread.c(45),INFO" ID="0xef88016d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MSG] msg queue create fail ret %08x @ssf_thread.c(52),ERROR" ID="0xef8801a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MSG] task create fail @ssf_thread.c(59),ERROR" ID="0xef8801da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MSG] ssf_init: task create success @ssf_thread.c(64),DBG" ID="0xef880206" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MSG] slesrv_task start @ssf_thread.c(71),DBG" ID="0xef88023e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MSG] try to execute task with msg_id %d @ssf_thread.c(89),DBG" ID="0xef8802ce" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="msg id %d not register @ssf_thread.c(91),ERROR" ID="0xef8802da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][MSG] ssf_send_simple_msg: send fail msg_id: %d param0: %x ret: %08x @ssf_thread.c(99),ERROR" ID="0xef88031a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MSG] param invalid %d @ssf_thread.c(107),ERROR" ID="0xef88035a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MSG] ssf_register_msg_handle_func %d @ssf_thread.c(111),DBG" ID="0xef88037e" />
+			</MSG_LOG>

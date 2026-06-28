@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[ICB] Add data path: conhdl %d, dir %d, id %d, cfg_len %d @lm_gle_icb_data_path.c(66),INFO" ID="0x8b940215" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ICB] Add data path: no cbk! conhdl %d, dir %d, id %d @lm_gle_icb_data_path.c(96),WARNING" ID="0x8b940303" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ICB] Remove data path: conhdl %d, dir %d @lm_gle_icb_data_path.c(108),INFO" ID="0x8b940365" />
+			</MSG_LOG>

@@ -1,0 +1,21 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="sle sample performance cfg par error, send_id %u  @sle_sample_performance.c(82),ERROR" ID="0xe93e0292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle sample performance cfg state is busy, cfg-&gt;send_id %u  @sle_sample_performance.c(87),ERROR" ID="0xe93e02ba" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="cfg param: cfg-&gt;send_id = %u total_num = %u delay = %#x interval = %#x  @sle_sample_performance.c(98),INFO" ID="0xe93e0315" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="err, cmd ssapc write new fail. @sle_sample_performance.c(113),ERROR" ID="0xe93e038a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="err, string to data error! @sle_sample_performance.c(119),ERROR" ID="0xe93e03ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="err, send_id %u cmd ssapc write trans data len is 0. @sle_sample_performance.c(126),ERROR" ID="0xe93e03f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PERFORMANCE] ssapc write start.pra %d  @sle_sample_performance.c(135),INFO" ID="0xe93e043d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PERFORMANCE] ssapc write finish. @sle_sample_performance.c(155),INFO" ID="0xe93e04dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle sample performance write error, send_id %u  @sle_sample_performance.c(165),ERROR" ID="0xe93e052a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="err, send_id %u ssapc write performance is running. @sle_sample_performance.c(170),ERROR" ID="0xe93e0552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="err, send_id %u cmd ssapc write trans par err. @sle_sample_performance.c(179),ERROR" ID="0xe93e059a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="err, sle_at_ssapc_write_performance fail. @sle_sample_performance.c(187),ERROR" ID="0xe93e05da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="err, ssaps notify new fail. @sle_sample_performance.c(206),ERROR" ID="0xe93e0672" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="err, string to data error! @sle_sample_performance.c(212),ERROR" ID="0xe93e06a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PERFORMANCE] ssaps notify performance start. par %u  @sle_sample_performance.c(224),INFO" ID="0xe93e0705" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PERFORMANCE] ssaps notify performance finish. @sle_sample_performance.c(243),INFO" ID="0xe93e079d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle sample performance notify error, send_id %u  @sle_sample_performance.c(253),ERROR" ID="0xe93e07ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AT] err, send_id %u ssaps notify performance is running. @sle_sample_performance.c(258),ERROR" ID="0xe93e0812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle sample performance notify set par error, send_id %u  @sle_sample_performance.c(266),ERROR" ID="0xe93e0852" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] err, ssaps create notify task fail. @sle_sample_performance.c(276),ERROR" ID="0xe93e08a2" />
+			</MSG_LOG>

@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccpc] decode remote uri len err, len = %d @saf_ccp_client_hlp.c(46),ERROR" ID="0xe9c80172" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccpc] decode friend name len err, len = %d @saf_ccp_client_hlp.c(62),ERROR" ID="0xe9c801f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccpc] cmd result proc err, decode get call info data len fail! data_buff_len:0x%x @saf_ccp_client_hlp.c(145),ERROR" ID="0xe9c8048a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] cmd result proc err, malloc fail! @saf_ccp_client_hlp.c(153),ERROR" ID="0xe9c804ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] inst name decode, malloc fail! @saf_ccp_client_hlp.c(193),ERROR" ID="0xe9c8060a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] inst icon decode, malloc fail! @saf_ccp_client_hlp.c(233),ERROR" ID="0xe9c8074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] feature state decode, malloc fail! @saf_ccp_client_hlp.c(270),ERROR" ID="0xe9c80872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] call protocol support decode, malloc fail! @saf_ccp_client_hlp.c(298),ERROR" ID="0xe9c80952" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] last call info decode, malloc fail! @saf_ccp_client_hlp.c(342),ERROR" ID="0xe9c80ab2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] state flags proc err, malloc fail! @saf_ccp_client_hlp.c(383),ERROR" ID="0xe9c80bfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] terminate reason proc err, malloc fail! @saf_ccp_client_hlp.c(415),ERROR" ID="0xe9c80cfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] inst meid proc err, malloc fail! @saf_ccp_client_hlp.c(447),ERROR" ID="0xe9c80dfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][nipc] net selection decode, malloc fail! @saf_ccp_client_hlp.c(469),ERROR" ID="0xe9c80eaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] call operation support decode, malloc fail! @saf_ccp_client_hlp.c(497),ERROR" ID="0xe9c80f8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] cmd result proc err, malloc fail! @saf_ccp_client_hlp.c(523),ERROR" ID="0xe9c8105a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] cmd result proc fail! @saf_ccp_client_hlp.c(535),ERROR" ID="0xe9c810ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] cmd result proc fail! @saf_ccp_client_hlp.c(542),ERROR" ID="0xe9c810f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccpc] state mismatch param len invalid! @saf_ccp_client_hlp.c(550),ERROR" ID="0xe9c81132" />
+			</MSG_LOG>

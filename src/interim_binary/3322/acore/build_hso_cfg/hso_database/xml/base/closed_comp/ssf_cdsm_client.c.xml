@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] key_info is NULL @ssf_cdsm_client.c(23),ERROR" ID="0xef7400ba" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][CONN] in report key info. conn_id: %u, inst_id: %u, key_id: %u, method: %u, status: %u @ssf_cdsm_client.c(28),DBG" ID="0xef7400e6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] secret_key is NULL @ssf_cdsm_client.c(35),ERROR" ID="0xef74011a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] in report secret key. conn_id: %u, inst_id: %u, status: %u @ssf_cdsm_client.c(40),DBG" ID="0xef740146" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] in report member count. conn_id: %u, inst_id: %u, member_count: %u, status: %u @ssf_cdsm_client.c(47),DBG" ID="0xef74017e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] member_address is NULL @ssf_cdsm_client.c(54),ERROR" ID="0xef7401b2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] in report member address. conn_id: %u, inst_id: %u, count: %u, status: %u @ssf_cdsm_client.c(59),DBG" ID="0xef7401de" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] member address: %02x:**:**:**:%02x:%02x @ssf_cdsm_client.c(64),DBG" ID="0xef740206" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] full match get obj_id: %u, err: %u @ssf_cdsm_client.c(82),INFO" ID="0xef740295" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] alloc cdsmc report obj: %u @ssf_cdsm_client.c(85),INFO" ID="0xef7402ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS] CSDM, set peer device addr[%02x][%02x] with type err! ret = 0x%x @ssf_cdsm_client.c(97),INFO" ID="0xef74030d" />
+			</MSG_LOG>

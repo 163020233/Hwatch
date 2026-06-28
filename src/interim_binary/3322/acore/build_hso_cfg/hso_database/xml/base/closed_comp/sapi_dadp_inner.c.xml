@@ -1,0 +1,20 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[DADP][RECV_PRIV_REQ_MSG]buf is null len=%d @sapi_dadp_inner.c(46),WARNING" ID="0xeb9e0173" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;BT][RECV_PRIV_REQ_MSG]not set render flag @sapi_dadp_inner.c(50),WARNING" ID="0xeb9e0193" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[DADP][BT-&gt;BT][RECV_PRIV_REQ_MSG]time_stamp=%d, bt_clk=0x%x, toggle_flag=%d @sapi_dadp_inner.c(57),INFO" ID="0xeb9e01cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;BT][RECV_PRIV_REQ_MSG]Slave RecvPrivAudioSyncInfoReq @sapi_dadp_inner.c(61),INFO" ID="0xeb9e01ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;BT][RECV_PRIV_REQ_MSG]toggle is started, ts=%u @sapi_dadp_inner.c(66),INFO" ID="0xeb9e0215" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;BT][PRIV_SYNC_IND]stream state not right @sapi_dadp_inner.c(91),INFO" ID="0xeb9e02dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;BT][PRIV_SYNC_IND]data_len=%d @sapi_dadp_inner.c(97),INFO" ID="0xeb9e030d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][GET_PEER_SYNC_IND]IPC MSG SEND. @sapi_dadp_inner.c(116),INFO" ID="0xeb9e03a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][GET_PEER_SYNC_IND]ipc fail ret=%d @sapi_dadp_inner.c(119),WARNING" ID="0xeb9e03bb" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[DADP][BT-&gt;BT][SCENE_CHANGE_REQ]scene_flag=%d audio_scene=%d dsp_audio_scene=%d @sapi_dadp_inner.c(132),INFO" ID="0xeb9e0425" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][BT-&gt;BT][SCENE_SYNC]audio_scene=%d dsp_audio_scene=%d @sapi_dadp_inner.c(139),INFO" ID="0xeb9e045d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][TWS_MODE_SWITCH]IPC MSG SEND. @sapi_dadp_inner.c(278),INFO" ID="0xeb9e08b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][TWS_MODE_SWITCH]ipc fail ret=%d @sapi_dadp_inner.c(281),ERROR" ID="0xeb9e08ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][PRINT_DISCONTINUOUS_SN]LAST_SN=%u, CUR_SN=%u @sapi_dadp_inner.c(348),INFO" ID="0xeb9e0ae5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][HITWS_UPDATE_SILENCE]IPC MSG SEND. is_silent=%d @sapi_dadp_inner.c(380),INFO" ID="0xeb9e0be5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][HITWS_UPDATE_SILENCE]ipc fail ret=%d @sapi_dadp_inner.c(383),ERROR" ID="0xeb9e0bfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][GET_RENDER_REQ]Rol is err @sapi_dadp_inner.c(400),ERROR" ID="0xeb9e0c82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][GET_RENDER_REQ]IPC MSG SEND. @sapi_dadp_inner.c(417),INFO" ID="0xeb9e0d0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][GET_RENDER_REQ]ipc fail ret=%x @sapi_dadp_inner.c(420),WARNING" ID="0xeb9e0d23" />
+			</MSG_LOG>

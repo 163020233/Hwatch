@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ICBAL]unframed sdu buf not free 0x%p @evt_task_gle_icbal.c(80),WARNING" ID="0x8c060283" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[icbal]unframe_rx_pdu_done:pdu status %d, len %d, pdu_llid %d @evt_task_gle_icbal.c(97),DBG" ID="0x8c06030e" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ICBAL]unframe_rx_pdu_done:invalid pdu,sdu_frag %d, sdu_len %d, cursor %d, pdu_len %d @evt_task_gle_icbal.c(129),DBG" ID="0x8c06040e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[icbal]unframe_rx_pdu_done:pdu, pldcnt %d @evt_task_gle_icbal.c(133),DBG" ID="0x8c06042e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[icbal]unframed tx pdu get: sdu buf node not free 0x%x @evt_task_gle_icbal.c(149),WARNING" ID="0x8c0604ab" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[icbal]unframed_tx_pdu_get: frag_seq %d, sdu_len %d, pdu len %d, em buf 0x%x, llid %d, buf node 0x%x @evt_task_gle_icbal.c(192),DBG" ID="0x8c060606" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[icbal]data_path_register fail:sed_idx %d, path_dir %d @evt_task_gle_icbal.c(241),INFO" ID="0x8c06078d" />
+			</MSG_LOG>

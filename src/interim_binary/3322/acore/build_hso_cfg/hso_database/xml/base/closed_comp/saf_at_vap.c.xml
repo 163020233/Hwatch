@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf vapc read state fail, ret: 0x%x @saf_at_vap.c(121),ERROR" ID="0xe97a03ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf vapc set voice assistant state fail, ret: 0x%x @saf_at_vap.c(133),ERROR" ID="0xe97a042a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf vapc register client fail, ret: 0x%x @saf_at_vap.c(147),ERROR" ID="0xe97a049a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf vapc unregister client fail, ret: 0x%x @saf_at_vap.c(157),ERROR" ID="0xe97a04ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf vaps add inst fail, ret: 0x%x @saf_at_vap.c(176),ERROR" ID="0xe97a0582" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf vaps notify va state fail, ret: 0x%x @saf_at_vap.c(187),ERROR" ID="0xe97a05da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf vaps register server fail, ret: 0x%x @saf_at_vap.c(200),ERROR" ID="0xe97a0642" />
+			</MSG_LOG>

@@ -1,0 +1,406 @@
+menu "Audio Driver Config"
+
+menu "Audio Proc Info Config"
+
+config PROC_SUPPORT
+    bool "Audio Proc Info support"
+    default y
+
+if PROC_SUPPORT
+###########################################################
+choice
+    prompt "Proc Type"
+    default PROC_TYPE_DUMMY
+
+config PROC_TYPE_DUMMY
+    bool "dummy"
+    help
+        set proc type to dummy
+
+config PROC_TYPE_REAL
+    bool "real"
+    help
+        set proc type to real
+endchoice
+
+###########################################################
+config PROC_OUTPUT_UART
+    bool "enable proc uart output"
+    default y
+    depends on PROC_TYPE_DUMMY
+    help
+        enable proc output to uart
+
+config PROC_OUTPUT_DIAG_SHELL
+    bool "enable proc diag shell output"
+    default n
+    depends on PROC_TYPE_DUMMY
+    help
+        enable proc output to diag shell
+###########################################################
+config SYNC_STATUS_SUPPORT
+    bool "show sync status in proc"
+    default y
+
+endif # PROC_SUPPORT
+endmenu ## "Audio Proc Info Config"
+###########################################################
+menu "Audio Log Config"
+
+config IPC_LOG_SUPPORT
+    bool "DSP ipc log support"
+    default y          if BRANDY || SOCMN1 || SOCMN2 || SW21 || 3322
+
+config IPC_LOG_USE_DIAG_FRAME
+    bool "DSP ipc log diag frame support"
+    default y          if SW21 || 3322
+
+config IPC_LOG_WITHOUT_HEADER
+    bool "DSP ipc log without header support"
+    default n
+
+config DIAG_LOG_SUPPORT
+    bool "APP Core Diag log support"
+    default y          if BRANDY || SOCMN1 || SOCMN2
+
+endmenu ## "Audio Log Config"
+###########################################################
+menu "Audio Debug Config"
+config TIME_CONSUME
+    bool "Audio api time consume support"
+    default n
+
+config DEBUG_MODULE_HANDLE
+    bool "Show module handle in DSP log"
+    default y if BRANDY || SW21 || 3322
+    default n
+
+config DEBUG_BASIC_STATUS_INFO
+    bool "Show basic status info in DSP log"
+    default y if SW21
+    default n
+
+config DEBUG_RUN_STATUS_INFO
+    bool "Show run status info in DSP log"
+    default y if SW21
+    default n
+
+config MEM_STATISTIC
+    bool "DSP memory malloc statistic"
+    default n
+
+config MCPS_STATISTIC
+    bool "DSP mcps statistic"
+    default n
+
+config MINIMIZE_SAMPLE_RELEASE
+    bool "minimize sample release"
+    default n
+config REG_DFX_SAMPLE_SUPPORT
+    bool "w4 and mem32 sample"
+    default n
+endmenu ## "Audio Debug Config"
+###########################################################
+menu "Audio DSP Firmware Config"
+config FLASH_FIRMWARE_SUPPORT
+    bool "flash firmware support"
+    default n
+
+config DSP_OVERLAY_SUPPORT
+    bool "DSP Overlay Support"
+    default y
+
+choice
+    prompt "Overlay Location"
+    default DRV_OVERLAY_LOAD_FROM_FLASH
+    depends on DSP_OVERLAY_SUPPORT
+
+config DRV_OVERLAY_LOAD_FROM_FLASH
+    bool "flash"
+    help
+        load overlay from flash
+
+config DRV_OVERLAY_LOAD_FROM_FILE
+    bool "file system"
+    help
+        load overlay from file system
+endchoice
+
+config DRV_OVERLAY_LOAD_FROM
+    string
+    default "flash"          if DRV_OVERLAY_LOAD_FROM_FLASH
+    default "file"           if DRV_OVERLAY_LOAD_FROM_FILE
+
+config FLASH_PARTITION_SUPPORT
+    bool "Get firmware flash addr by partition interface"
+    default n
+###########################################################
+config SIGN_SUPPORT
+    bool "Audio Firmware Sign support"
+    default n
+
+if SIGN_SUPPORT
+config SIGN_CHECK_ONLY_SUPPORT
+    bool "Audio Firmware Check Sign Only support"
+    default y          if SOCMN2
+    default n
+
+choice
+    prompt "Sign Type"
+    default SIGN_TYPE_CBG  if SW21
+    default SIGN_TYPE_CFBB if SOCMN2
+
+config SIGN_TYPE_CBG
+    bool "cbg"
+config SIGN_TYPE_CFBB
+    bool "cfbb"
+endchoice
+
+config SIGN_TYPE
+    string
+    default "cbg"          if SIGN_TYPE_CBG
+    default "cfbb"         if SIGN_TYPE_CFBB
+
+config SIGN_HEADER_LEN
+    hex "bin header signed info length(Bytes)"
+    default 0x300
+
+endif # SIGN_SUPPORT
+###########################################################
+endmenu ## "Audio DSP Firmware Config"
+###########################################################
+menu "Audio Module Config"
+###########################################################
+config DSP_I2C_SUPPORT
+    bool "dsp i2c support"
+    default n
+
+config SHELL_SUPPORT
+    bool "dsp shell support"
+    default y
+
+config WATCHDOG_SUPPORT
+    bool "dsp watchdog support"
+    default n
+
+config EXCEPTION_TEST_SUPPORT
+    bool "dsp exception test support"
+    default n
+
+config TEST_CORE_SUPPORT
+    bool "dsp test cases support"
+    default y
+
+if TEST_CORE_SUPPORT
+config AI_DFT_TEST_CORE_SUPPORT
+    bool "ai dft test support"
+    default n
+
+config EDMA_DFT_TEST_CORE_SUPPORT
+    bool "edma dft test support"
+    default n
+
+config SIO_DFT_TEST_CORE_SUPPORT
+    bool "sio dft test support"
+    default n
+
+config IPC_TEST_CORE_SUPPORT
+    bool "ipc test support"
+    default n
+
+config I2C_TEST_CORE_SUPPORT
+    bool "i2c test support"
+    default n
+endif # TEST_CORE_SUPPORT
+###########################################################
+config DPM_SUPPORT
+    bool "Data process module support"
+    default n
+
+config DPM_FIR_SUPPORT
+    bool "Fir Data process module support"
+    depends on DPM_SUPPORT
+    default n
+
+config ANC_SUPPORT
+    bool "anc support"
+    default n
+
+config HAID_SUPPORT
+    bool "hearing aid support"
+    default n
+    default y          if SOCMN1 || SOCMN2
+
+config HAID_DMIC_SUPPORT
+    bool "hearing aid through dmic support"
+    depends on HAID_SUPPORT
+
+config BINAURAL_SYNC_SUPPORT
+    bool "binaural sync support"
+    default n
+    default y          if SOCMN1 || SOCMN2
+
+config BT_MUSIC_SNK_LOW_LATENCY_SUPPORT
+    bool "bt music sink low latency support"
+    depends on BINAURAL_SYNC_SUPPORT
+    default n
+
+choice
+    prompt "sync hal driver version"
+    default SYNC_HAL_DALLAS_V100
+
+config SYNC_HAL_DALLAS_V100
+    bool "dallas_v100"
+    help
+        set sync hal driver version to v100
+
+config SYNC_HAL_DALLAS_V400
+    bool "dallas_v400"
+    help
+        set sync hal driver version to v400
+endchoice
+
+config SYNC_HAL_VERSION
+    string
+    default "dallas_v100"        if SYNC_HAL_DALLAS_V100
+    default "dallas_v400"        if SYNC_HAL_DALLAS_V400
+
+if SYNC_HAL_DALLAS_V400
+choice
+    prompt "sync toggle type"
+    default SYNC_TOG_TYPE_SINGLE
+
+config SYNC_TOG_TYPE_SINGLE
+    bool "single toggle"
+    help
+        set sync toggle type to single toggle
+
+config SYNC_TOG_TYPE_MULTI
+    bool "multiple toggle"
+    help
+        set sync toggle type to multiple toggle
+endchoice
+
+config SYNC_TOG_TYPE
+    string
+    default "single_tog"        if SYNC_TOG_TYPE_SINGLE
+    default "multi_tog"         if SYNC_TOG_TYPE_MULTI
+endif # SYNC_HAL_DALLAS_V400
+
+config HW_REF_SUPPORT
+    bool "hardware ref support"
+    default n
+    default y          if SOCMN2
+
+config BT_MUSIC_SEND_MUTE_PACKET_SUPPORT
+    bool "send mute packet in bt music scene support"
+    default n
+
+config BT_MUSIC_FLOW_CTRL_SUPPORT
+    bool "Flow control for bt source music scene support"
+    default n
+
+config BT_MUSIC_OFFLOAD_SUPPORT
+    bool "adaptation for bt music offload changes support"
+    default n
+
+config LOWPOWER_MSG_SUPPORT
+    bool "lower power message support"
+    default n
+    default y          if SOCMN1 || SOCMN2
+
+config ASR_SUPPORT
+    bool "asr support"
+    default n
+    default y          if 3322
+
+config TTS_SUPPORT
+    bool "tts support"
+    default n
+    default y          if 3322
+
+config EFFECT_ADJUSTMENT_SUPPORT
+    bool "effect adjustment support"
+    default n
+    default y          if 3322
+
+if SOCMN1 || SOCMN2
+config LIVE_MIC_SUPPORT
+    bool "live mic support"
+    default n
+endif # SOCMN1 || SOCMN2
+
+config BMIC_UAC_8_CHANNELS_SUPPORT
+    bool "bmic uac 8 channels support"
+    default n
+    depends on LIVE_MIC_SUPPORT
+
+config AUDIO_SPEED_SUPPORT
+    bool "audio speed support"
+    default n
+config AENC_OUT_AFULL_EVENT_SUPPORT
+    bool "aenc output buffer almost full event support"
+    default n
+config ADEC_PSS_SUPPORT
+    bool "get adec play stream size support"
+    default n
+
+config MUTE_DETECT_SUPPORT
+    bool "mute detect support"
+    default n
+
+config MUTE_DETECT_CLAMP_NOISE_SUPPORT
+    bool "mute detect clamp noise support"
+    default n
+    depends on MUTE_DETECT_SUPPORT
+
+config NATURE_DSP_SIGNAL_SUPPORT
+    bool "Nature DSP Signal and VFPU Library support"
+    default n
+    default y          if SW21
+###########################################################
+config SUPPORT_RT_SMALL_MEM
+    bool "rt-thread small mem support"
+    default n
+###########################################################
+choice
+    prompt "ipc driver version"
+    default IPC_DRV_VERSION_V0 if BRANDY || SOCMN1
+    default IPC_DRV_VERSION_V1
+
+config IPC_DRV_VERSION_V0
+    bool "ipc_v0"
+    help
+        set ipc driver version to v0
+
+config IPC_DRV_VERSION_V1
+    bool "ipc_v1"
+    help
+        set ipc driver version to v1
+endchoice
+
+config IPC_DRV_VERSION
+    string
+    default "ipc_v0"        if IPC_DRV_VERSION_V0
+    default "ipc_v1"        if IPC_DRV_VERSION_V1
+###########################################################
+endmenu ## "Audio Module Config"
+###########################################################
+###########################################################
+menu "NPU Support Config"
+config NPU_SUPPORT
+    bool "NPU Support"
+    default n
+
+if NPU_SUPPORT
+config NPU_LIB_TYPE
+    string "NPU Library Type"
+    default "release"
+
+endif # NPU_SUPPORT
+
+endmenu # NPU Support Config
+###########################################################
+source "drv/vendor/Kconfig"
+###########################################################
+endmenu ## "Audio Driver Config"

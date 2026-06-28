@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="sle port state dont need update %d. @subprocess_transport.c(108),ERROR" ID="0xefac0362" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle port profile init ret:0x%x. @subprocess_transport.c(133),WARNING" ID="0xefac042b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle port alloc channel fail. @subprocess_transport.c(159),ERROR" ID="0xefac04fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle port is not connect. @subprocess_transport.c(177),ERROR" ID="0xefac058a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle port is not connect. @subprocess_transport.c(188),ERROR" ID="0xefac05e2" />
+			</MSG_LOG>

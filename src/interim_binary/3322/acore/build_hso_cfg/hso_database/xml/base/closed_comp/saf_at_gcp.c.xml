@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="gcpc read gain id fail, ret:%d @saf_at_gcp.c(230),ERROR" ID="0xe9920732" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcpc read feature support fail, ret:%d @saf_at_gcp.c(240),ERROR" ID="0xe9920782" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcpc read gain info fail, ret:%d @saf_at_gcp.c(250),ERROR" ID="0xe99207d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcpc read stream type fail, ret:%d @saf_at_gcp.c(260),ERROR" ID="0xe9920822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcpc set mute state fail, ret:%d @saf_at_gcp.c(270),ERROR" ID="0xe9920872" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcpc set volume value fail, ret:%d @saf_at_gcp.c(281),ERROR" ID="0xe99208ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcpc register cbks fail, ret:%d @saf_at_gcp.c(299),ERROR" ID="0xe992095a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcpc unregister cbks fail, ret:%d @saf_at_gcp.c(310),ERROR" ID="0xe99209b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcps set gain id fail, ret:%d @saf_at_gcp.c(322),ERROR" ID="0xe9920a12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcps set feature support fail, ret:%d @saf_at_gcp.c(332),ERROR" ID="0xe9920a62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcps set stream type fail, ret:%d @saf_at_gcp.c(342),ERROR" ID="0xe9920ab2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcps notify gain info fail, ret:%d @saf_at_gcp.c(356),ERROR" ID="0xe9920b22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcps add instance fail, ret:%d @saf_at_gcp.c(368),ERROR" ID="0xe9920b82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gcps register cbks fail, ret:%d @saf_at_gcp.c(383),ERROR" ID="0xe9920bfa" />
+			</MSG_LOG>

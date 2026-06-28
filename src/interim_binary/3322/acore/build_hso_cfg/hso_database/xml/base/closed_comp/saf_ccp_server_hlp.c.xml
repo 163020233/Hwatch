@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[saf][ccps] param len error, uri len = %u, friend name len = %u @saf_ccp_server_hlp.c(133),ERROR" ID="0xe9c4042a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][ccps] operation rsp opcode = %u result_code = %u @saf_ccp_server_hlp.c(268),ERROR" ID="0xe9c40862" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps]read call info invalid call_id = %u @saf_ccp_server_hlp.c(645),ERROR" ID="0xe9c4142a" />
+			</MSG_LOG>

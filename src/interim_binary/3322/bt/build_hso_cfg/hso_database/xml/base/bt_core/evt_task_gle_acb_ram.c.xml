@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgle][gle_acb] evt_task_gle_acb_start evt_ptr is null. @evt_task_gle_acb_ram.c(162),WARNING" ID="0x8ab00513" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]ACB FREE! @evt_task_gle_acb_ram.c(428),INFO" ID="0x8ab00d65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]ACB RX DATA MIC ERROR! @evt_task_gle_acb_ram.c(434),WARNING" ID="0x8ab00d93" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]ACB RX DATA MIC ERROR! @evt_task_gle_acb_ram.c(455),WARNING" ID="0x8ab00e3b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_acb_sw_decrypt_data_cbk memcpy failed @evt_task_gle_acb_ram.c(470),ERROR" ID="0x8ab00eb2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_gle_acb_process_rx_desc_isr sed_st(0x%x)sn_len(0x%x)md_n_ll_rssi(0x%x)buf(0x%x) @evt_task_gle_acb_ram.c(548),INFO" ID="0x8ab01125" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACB][CS] find_first_iq_data_node data_type=%d,opcode=0x%x, cs_retran_count=%d @evt_task_gle_acb_ram.c(743),ERROR" ID="0x8ab0173a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACB][CS] find_first_iq_data_node data_type=%d,opcode=0x%x, cs_retran_count=%d @evt_task_gle_acb_ram.c(779),ERROR" ID="0x8ab0185a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]en ind llcp, pdu_len:%d, pdu_data_len:%d @evt_task_gle_acb_ram.c(850),INFO" ID="0x8ab01a95" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] evt_task_gle_acb_destroy con_hdl 0x%x rssi_acc(%d)rssi_avg_cnt(%d) @evt_task_gle_acb_ram.c(923),INFO" ID="0x8ab01cdd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[WARN]gle_acb_elt_insert,dur_min[%d],ts[%d],asap_limit[%d],mode[%d] @evt_task_gle_acb_ram.c(999),INFO" ID="0x8ab01f3d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[WARN]gle_acb_elt_insert,dur_min[%d],ts[%d],asap_limit[%d],mode[%d] @evt_task_gle_acb_ram.c(1027),INFO" ID="0x8ab0201d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_gle_acb_set_cur_priority con_hdl 0x%x, ts 0x%x, counter %d, cur_prio=%d @evt_task_gle_acb_ram.c(1235),INFO" ID="0x8ab0269d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="counter 32bit 0x%x, ref_cnt 32bit 0x%x @evt_task_gle_acb_ram.c(1354),WARNING" ID="0x8ab02a53" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lld_evt_schedule_next,  nb_roll_back_counter=%d, last_sync_counter=%d @evt_task_gle_acb_ram.c(1584),INFO" ID="0x8ab03185" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]evt_task_gle_acb_init sed_index(%d), timestamp(0x%x)us_offset(%d)rx_win(%d) @evt_task_gle_acb_ram.c(1726),INFO" ID="0x8ab035f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_c_frame_set_acb_info, acb info tx complete, acb sync ts update! @evt_task_gle_acb_ram.c(1986),INFO" ID="0x8ab03e15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_c_frame_start_acb_evt_report, malloc fail! @evt_task_gle_acb_ram.c(2006),INFO" ID="0x8ab03eb5" />
+			</MSG_LOG>

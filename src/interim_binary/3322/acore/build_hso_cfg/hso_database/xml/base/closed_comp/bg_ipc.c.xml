@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ACore][Error] ipc data from Core:%d payload null @bg_ipc.c(26),ERROR" ID="0xee0c00d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ipc data from unknow core @bg_ipc.c(33),ERROR" ID="0xee0c010a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore][Error] ipc data from Core:%d payload null @bg_ipc.c(49),ERROR" ID="0xee0c018a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore][Error] ipc data from unknow core, src id %d @bg_ipc.c(57),ERROR" ID="0xee0c01ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore][Warning] ipc send message fail ret:%d! @bg_ipc.c(72),WARNING" ID="0xee0c0243" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore][Error] ipc send message timeout fail ret:%d! @bg_ipc.c(89),ERROR" ID="0xee0c02ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BT CORE ipc payload received is NULL! payload_len = %d. @bg_ipc.c(99),ERROR" ID="0xee0c031a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore][Error]ipc payload received is NULL! payload_len = %d. @bg_ipc.c(111),ERROR" ID="0xee0c037a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore][WARNING] bt core mpc send data fail num:%x! @bg_ipc.c(150),INFO" ID="0xee0c04b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore][Warning] ipc send message fail ret:%d! @bg_ipc.c(175),WARNING" ID="0xee0c057b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore][Error] ipc send message timeout fail ret:%d! @bg_ipc.c(191),ERROR" ID="0xee0c05fa" />
+			</MSG_LOG>

@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BENP] bnep filter net check, data pointer is NULL @bnep_hlp.c(83),ERROR" ID="0xedc0029a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BENP] bnep check addr, remote info or data pointer is NULL @bnep_hlp.c(379),ERROR" ID="0xedc00bda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bnep uuid_size=%d @bnep_hlp.c(439),INFO" ID="0xedc00dbd" />
+			</MSG_LOG>

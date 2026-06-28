@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[WARN]acl slot isr en already con_hdl=%d @evt_task_comm.c(145),WARNING" ID="0x892a048b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_classic_acl_slot_dis 0x%x @evt_task_comm.c(158),WARNING" ID="0x892a04f3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] rx wrong, 8 packet status 0x%x, 0x%x, 0x%x, 0x%x @evt_task_comm.c(211),WARNING" ID="0x892a069b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_SCAN_BACKOFF]evt_task_scan_backoff_status, task_type:0x%x @evt_task_comm.c(346),WARNING" ID="0x892a0ad3" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_SCAN_BACKOFF]inq_check, timestamp:0x%x, ble_scan_start_ts:0x%x, inquiry_start_ts:0x%x @evt_task_comm.c(356),INFO" ID="0x892a0b25" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_SCAN_BACKOFF]backoff_page_check, cur_clk:0x%x, ble_scan_start_ts:0x%x, page_start_ts:0x%x @evt_task_comm.c(373),INFO" ID="0x892a0bad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_SCAN_BACKOFF]evt_task_scan_ts_update, task_type:0x%x @evt_task_comm.c(422),WARNING" ID="0x892a0d33" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_SCAN_BACKOFF]scan_ts_update, clk =0x%x, type_dur = 0x%x, next_ts = 0x%x, stage = %d @evt_task_comm.c(446),INFO" ID="0x892a0df5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_SCAN_BACKOFF]scan_ts_update, in inq, timestamp = 0x%x, window = 0x%x, end_ts = 0x%x @evt_task_comm.c(455),INFO" ID="0x892a0e3d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_SCAN_BACKOFF]evt_task_scan_backoff, timestamp:0x%x, scan_timesamp:0x%x,type_dur:0x%x, g_es_scan_inq_backoff_val:%d @evt_task_comm.c(502),INFO" ID="0x892a0fb5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_SCAN_BACKOFF]evt_task_scan_backoff_pscan_iscan, task_type:0x%x @evt_task_comm.c(519),WARNING" ID="0x892a103b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_SCAN_BACKOFF]evt_task_page_inq_ts_check, task_type:0x%x @evt_task_comm.c(565),WARNING" ID="0x892a11ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_SCAN_BACKOFF]evt_task_page_inq_ts_check, inq_par is null @evt_task_comm.c(598),WARNING" ID="0x892a12b3" />
+			</MSG_LOG>

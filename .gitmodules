@@ -1,0 +1,3 @@
+[submodule "src/tools/bin/compiler/bisheng_26_03_1"]
+	path = src/tools/bin/compiler/bisheng_26_03_1
+	url = https://gitcode.com/HiSpark/bisheng-compiler.git

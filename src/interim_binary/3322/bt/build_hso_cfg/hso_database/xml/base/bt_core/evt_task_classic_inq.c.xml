@@ -1,0 +1,27 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_INQ]eir_debug device change name:addr=0x%x, old_eir=0x%x, new_eir=0x%x @evt_task_classic_inq.c(80),INFO" ID="0x89a00285" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_INQ]eir_debug device change addr:old_addr=0x%x, new_addr=0x%x, eir_name=0x%x @evt_task_classic_inq.c(95),WARNING" ID="0x89a002fb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]create_desc, env_ptr is NULL @evt_task_classic_inq.c(115),WARNING" ID="0x89a0039b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]create_desc, fsm register fail! @evt_task_classic_inq.c(124),WARNING" ID="0x89a003e3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_INQ]report evt mask: 0x%x  0x%x @evt_task_classic_inq.c(350),WARNING" ID="0x89a00af3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]report evt is null @evt_task_classic_inq.c(364),WARNING" ID="0x89a00b63" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]report evt is null @evt_task_classic_inq.c(384),WARNING" ID="0x89a00c03" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_INQ]report evt mask: 0x%x  0x%x @evt_task_classic_inq.c(397),WARNING" ID="0x89a00c6b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]report evt is null @evt_task_classic_inq.c(417),WARNING" ID="0x89a00d0b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_INQ]report evt mask: 0x%x  0x%x @evt_task_classic_inq.c(430),WARNING" ID="0x89a00d73" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_INQ]report default: env_ptr-&gt;inq_mode=0x%x @evt_task_classic_inq.c(452),WARNING" ID="0x89a00e23" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_INQ]eir_debug :clk=0x%x, idx=0x%x, addr=0x%x, eir=0x%x @evt_task_classic_inq.c(620),INFO" ID="0x89a01365" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_INQ]report_data: device addr[5-3,0] %06x:xx:xx:%02x, rxeir_succ:%x, bt_rxeir_en:%x @evt_task_classic_inq.c(634),INFO" ID="0x89a013d5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_INQ]inq_statis: con_hdl=%d, fhs_recv_cnt=%d, rep_cnt=%d, exec_time=0x%x @evt_task_classic_inq.c(676),INFO" ID="0x89a01525" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_INQ]inq_statis: start_cbk_cnt=%d, evt_cbk_cnt=%d, abnormal_cbk_cnt=%d, cancel_cbk_cnt=%d @evt_task_classic_inq.c(679),INFO" ID="0x89a0153d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bt_reset]stop inq complete @evt_task_classic_inq.c(747),INFO" ID="0x89a0175d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]backoff_for_iscan_pscan_check: iscan_par is NULL @evt_task_classic_inq.c(812),WARNING" ID="0x89a01963" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]backoff_for_iscan_pscan_check: classic_pscan_desc is NULL @evt_task_classic_inq.c(833),WARNING" ID="0x89a01a0b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]backoff_for_page_check: ble_scan_env_ptr is null @evt_task_classic_inq.c(858),WARNING" ID="0x89a01ad3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_INQ]backoff_for_page_check: window:0x%x, intv:0x%x @evt_task_classic_inq.c(862),WARNING" ID="0x89a01af3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_INQ]evt_task_classic_inq_backoff_for_ble_scan_check, inquiry_start_ts=0x%x, ble_scan_start_ts:0x%x @evt_task_classic_inq.c(896),INFO" ID="0x89a01c05" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_INQ]evt_task_classic_inq_backoff_for_page_handler, inquiry_start_ts=0x%x, page_start_ts:0x%x @evt_task_classic_inq.c(916),INFO" ID="0x89a01ca5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_INQ]backoff_for_page_handler: page just start timestamp = 0x%x @evt_task_classic_inq.c(929),INFO" ID="0x89a01d0d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_INQ]backoff: clk = 0x%x, type_dur = 0x%x, next_ts = 0x%x, stage = %d @evt_task_classic_inq.c(982),INFO" ID="0x89a01eb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]sched_before_end: ble_scan_env_ptr is null @evt_task_classic_inq.c(997),WARNING" ID="0x89a01f2b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_INQ]sched_before_end: window:0x%x, intv:0x%x @evt_task_classic_inq.c(1004),INFO" ID="0x89a01f65" />
+			</MSG_LOG>

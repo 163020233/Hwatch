@@ -1,0 +1,15 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+#===============================================================================
+
+choice
+    prompt "TOUCH TYPE CONFIG."
+    default INPUT_USING_TPTYPE_ZTW622
+    config INPUT_USING_TPTYPE_ZTW622
+        bool "ztw622"
+    config INPUT_USING_TPTYPE_ZTW523
+        bool "ztw523"
+    config INPUT_USING_TPTYPE_CST820
+        bool "cst820"
+endchoice

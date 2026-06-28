@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_classic_disallowed_hci_cmp_act:: msgid(0x%x) @lm_classic_acl_sc.c(204),WARNING" ID="0x8a5e0663" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_classic_disallowed_hci_cmp_conhdl_act:: msgid(0x%x) @lm_classic_acl_sc.c(222),WARNING" ID="0x8a5e06f3" />
+			</MSG_LOG>

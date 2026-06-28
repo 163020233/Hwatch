@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[TWS][SAVE_PEER_HANDLE]HANDLE=0x%x @sapi_tws.c(41),INFO" ID="0xebea014d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi_tws_send_data: fail, len(%u) too long! @sapi_tws.c(80),WARNING" ID="0xebea0283" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[TWS][PEER]sapi_tws_send_data: fail, len=%u, n_written=%u @sapi_tws.c(89),WARNING" ID="0xebea02cb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="tws send service data, malloc fail. arg_len:%u @sapi_tws.c(103),ERROR" ID="0xebea033a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="sapi_tws_send_service_data: fail, EXP_LEN=%u, REAL_LEN=%u @sapi_tws.c(112),WARNING" ID="0xebea0383" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][SNIFF]tws_sniff_init_for_mobile: error, NO System Timer Source! @sapi_tws.c(612),WARNING" ID="0xebea1323" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][SNIFF]sapi_tws_try_enter_sniff_mode_for_peer ! @sapi_tws.c(807),WARNING" ID="0xebea193b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][SNIFF]TWS_IsInActiveLinkInSniff exit  sniff ! @sapi_tws.c(816),WARNING" ID="0xebea1983" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][COM]sapi_tws_get_mobile_connection_handle: fail, can't find link @sapi_tws.c(862),INFO" ID="0xebea1af5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][COM]sapi_tws_get_mobile_addr_by_handle: fail, can't find link @sapi_tws.c(874),INFO" ID="0xebea1b55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TWS][TONE]get tone tog no tog. not_start_toggle:%d @sapi_tws.c(887),INFO" ID="0xebea1bbd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TWS][SPP]Start Spp Server fail, ret=%d @sapi_tws.c(931),WARNING" ID="0xebea1d1b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TWS][SPP]Start Spp Client fail, ret=%d @sapi_tws.c(940),WARNING" ID="0xebea1d63" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TWS][SPP]Close Spp Client fail, ret=%d @sapi_tws.c(949),WARNING" ID="0xebea1dab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TWS][SPP]Close Spp Server fail, ret=%d @sapi_tws.c(958),WARNING" ID="0xebea1df3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][CLEANUP]memcpy fail @sapi_tws.c(1013),WARNING" ID="0xebea1fab" />
+			</MSG_LOG>

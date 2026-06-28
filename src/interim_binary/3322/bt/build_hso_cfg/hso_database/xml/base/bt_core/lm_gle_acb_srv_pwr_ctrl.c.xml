@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] lm_gle_acb_pwr_ctrl_ind_act, delta=%d, rssi_avg_rssi=%d, local txpower=%d @lm_gle_acb_srv_pwr_ctrl.c(190),INFO" ID="0x892005f5" />
+			</MSG_LOG>

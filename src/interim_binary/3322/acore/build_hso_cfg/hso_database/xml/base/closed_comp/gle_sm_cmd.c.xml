@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] enable encryption @gle_sm_cmd.c(65),INFO" ID="0xed50020d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] encryption parameter request reply @gle_sm_cmd.c(107),INFO" ID="0xed50035d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] encryption parameter request negative reply @gle_sm_cmd.c(136),INFO" ID="0xed500445" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] read support cryptography algorithm @gle_sm_cmd.c(164),INFO" ID="0xed500525" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] encrypt_param_req, conn_id: 0x%04x @gle_sm_cmd.c(174),INFO" ID="0xed500575" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm encrypt change cbk event_parameter is null @gle_sm_cmd.c(191),ERROR" ID="0xed5005fa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE SM] encrypt change, lcid: 0x%04x, status: 0x%x, encryption change: 0x%x @gle_sm_cmd.c(195),INFO" ID="0xed50061d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] encrypt change cbk invalid conn_id @gle_sm_cmd.c(198),INFO" ID="0xed500635" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] encrypt text command fail, status: 0x%x @gle_sm_cmd.c(241),ERROR" ID="0xed50078a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] encrypt text command succeed @gle_sm_cmd.c(245),INFO" ID="0xed5007ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] encrypt text command return param is NULL @gle_sm_cmd.c(247),ERROR" ID="0xed5007ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] encrypt parameter request reply fail, status: 0x%x @gle_sm_cmd.c(259),ERROR" ID="0xed50081a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] encrypt parameter request reply succeed, co-handle: 0x%04x @gle_sm_cmd.c(264),INFO" ID="0xed500845" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] encrypt parameter request reply return param is NULL @gle_sm_cmd.c(266),ERROR" ID="0xed500852" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] read support cryptography algorithm command fail, status: 0x%x @gle_sm_cmd.c(285),ERROR" ID="0xed5008ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] read support cryptography algorithm command return param is NULL @gle_sm_cmd.c(289),ERROR" ID="0xed50090a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[GLE SM] algo: 0x%02x 0x%02x 0x%02x 0x%02x @gle_sm_cmd.c(295),INFO" ID="0xed50093d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sm_cbks = NULL @gle_sm_cmd.c(325),WARNING" ID="0xed500a2b" />
+			</MSG_LOG>

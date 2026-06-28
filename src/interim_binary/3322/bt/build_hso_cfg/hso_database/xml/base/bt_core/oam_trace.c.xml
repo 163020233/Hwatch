@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="cpu usage = %u.%u% @oam_trace.c(95),INFO" ID="0xa02002fd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="memory pool's total size :%d|total_used_size: %d| total_free_size: %d| max_free_node_size: %d @oam_trace.c(102),INFO" ID="0xa0200335" />
+			</MSG_LOG>

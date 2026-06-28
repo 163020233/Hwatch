@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]hci_gle_reset_nb @hci_gle.c(98),WARNING" ID="0x887e0313" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[pub_if]hci_gle_data_buffer_overflow sed idx %d, type @hci_gle.c(118),ERROR" ID="0x887e03b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]hci_gle_cmd_received: opcode = 0x%x, payload length = 0x%x @hci_gle.c(186),INFO" ID="0x887e05d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]hci_gle_cmd_received unknown hci cmd opcode(0x%x) @hci_gle.c(195),WARNING" ID="0x887e061b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]hci_gle_cmd_received opcode(0x%x) out of command window, cmd_pkt_num(%d) @hci_gle.c(203),WARNING" ID="0x887e065b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[WARNING][HCI]em_buf_iob_buf_alloc fail! @hci_gle.c(293),WARNING" ID="0x887e092b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="iob convert tx data, invalid data length: %d @hci_gle.c(423),ERROR" ID="0x887e0d3a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hci_gle_iob_received, data path is invalid, iob_conhdl=%d, input_data_path=%d. @hci_gle.c(505),ERROR" ID="0x887e0fca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hci_gle_iob_received, convert data failed, iob_conhdl=%d, payload_len=%d. @hci_gle.c(514),ERROR" ID="0x887e1012" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="hci_gle_iob_received, data length exceeds, iob_conhdl=%d, payload_len=%d, tx_max_pld_size=%d. @hci_gle.c(524),ERROR" ID="0x887e1062" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="hci_gle_iob_received, data arrived, iob_conhdl=%d, iob_counter=%u, pkt_seq_num=%d, length=%d. @hci_gle.c(532),INFO" ID="0x887e10a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hci_gle_acb_em_buffer_free reset cmd receive, donnot free desc and buffer twice @hci_gle.c(558),INFO" ID="0x887e1175" />
+			</MSG_LOG>

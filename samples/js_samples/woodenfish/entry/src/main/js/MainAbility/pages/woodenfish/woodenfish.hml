@@ -1,0 +1,7 @@
+<div class="container" on:swipe="swipeToDashboard">
+    <stack class="stacker">
+        <image class="logo_img" src="{{ imageSrc }}" @click="manualClick"></image>
+        <text class="top_text">功德：+{{ count }}</text>
+        <text class="bot_text" show="{{ isShow }}">{{$t('strings.pause_resume_text')}}</text>
+    </stack>
+</div>

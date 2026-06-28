@@ -1,0 +1,48 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="hci param config iog:iob_cnt=%d, sca=%d, framed=%d, packing=%d @lm_gle_iog.c(426),INFO" ID="0x8b980d55" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="hci param config iog:ft_g2t=%d, ft_t2g=%d, sdu_intv_g2t=%d, sdu_intv_t2g=%d @lm_gle_iog.c(428),INFO" ID="0x8b980d65" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="hci param config iog:iog_intv=%d, max_transport_latency_g2t=%d, max_transport_latency_t2g=%d @lm_gle_iog.c(430),INFO" ID="0x8b980d75" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="hci param config iog:iob_cnt=%d, sca=%d, framed=%d, packing=%d @lm_gle_iog.c(456),INFO" ID="0x8b980e45" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="hci param config iog:ft_g2t=%d, ft_t2g=%d, sdu_intv_g2t=%d, sdu_intv_t2g=%d @lm_gle_iog.c(458),INFO" ID="0x8b980e55" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="hci param config iog:iog_intv=%d, max_transport_latency_g2t=%d, max_transport_latency_t2g=%d @lm_gle_iog.c(460),INFO" ID="0x8b980e65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_iob_get_sequential_sub_interval:IOB_IDX=%d @lm_gle_iog.c(476),INFO" ID="0x8b980ee5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob init param config:iog_idx=%d, iob_hci_id=%d, phy_g2t=%d, phy_t2g=%d @lm_gle_iog.c(627),INFO" ID="0x8b98139d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob init param config:format_g2t=%d, format_t2g=%d, pilot_ratio_g2t=%d, pilot_ratio_t2g=%d @lm_gle_iog.c(629),INFO" ID="0x8b9813ad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob init param config:bn_g2t=%d, bn_t2g=%d, max_pdu_g2t=%d, max_pdu_t2g=%d @lm_gle_iog.c(631),INFO" ID="0x8b9813bd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob init param config:max_sdu_g2t=%d, max_sdu_t2g=%d, mcs_g2t=%d, mcs_t2g=%d @lm_gle_iog.c(633),INFO" ID="0x8b9813cd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob init param config:nse=%d, iob_intv=%d, sub_evt_intv=%d, g2t_pid=%x @lm_gle_iog.c(636),INFO" ID="0x8b9813e5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob init param config:max_tx_time_offset_g=%d, t_ifs=%d, max_tx_time_offset_t=%d, t_efs=%d @lm_gle_iog.c(638),INFO" ID="0x8b9813f5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob init param config:iob_delay=%d, iog_delay=%d, ch_offset=%d, iog_offset=%d @lm_gle_iog.c(640),INFO" ID="0x8b981405" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="iob init param config:iob_idx=%d, g_crc_init=0x%x @lm_gle_iog.c(641),INFO" ID="0x8b98140d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob init param config:iog_idx=%d, i=%d, iob_conhdl=%d, label_id=%d @lm_gle_iog.c(682),INFO" ID="0x8b981555" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_iog_setup iob_desc is null: iog_idx=%d, i = %d @lm_gle_iog.c(786),INFO" ID="0x8b981895" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_iog_setup_v2 iob_desc is null: iog_idx=%d, i = %d @lm_gle_iog.c(838),INFO" ID="0x8b981a35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_hci_set_iob_labels_act:param err status = %x @lm_gle_iog.c(1153),INFO" ID="0x8b98240d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_hci_set_iob_labels_act:param err status = %x @lm_gle_iog.c(1215),INFO" ID="0x8b9825fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_iog_get_offset offset already exist iog_offset:%d @lm_gle_iog.c(1462),INFO" ID="0x8b982db5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_iog_get_offset acb_device_info is null, use default offset @lm_gle_iog.c(1471),ERROR" ID="0x8b982dfa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_gle_iog_get_offset not first connect:acb_conhdl%d, iob_conhdl%d, device_offset %d @lm_gle_iog.c(1479),INFO" ID="0x8b982e3d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_gle_iog_get_offset first connect:acb_conhdl%d, iob_conhdl%d, device_offset %d @lm_gle_iog.c(1484),INFO" ID="0x8b982e65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_iog_get_offset first get iog_offset:%d @lm_gle_iog.c(1491),INFO" ID="0x8b982e9d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_gle_iog_cal_tnode_mcs:i=%d, max_tx_time_t=%d, time=%d @lm_gle_iog.c(1641),INFO" ID="0x8b98334d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_iog_cal_tnode_mcs invalid mcs @lm_gle_iog.c(1647),INFO" ID="0x8b98337d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_iog_init_input_param iob desc is null! @lm_gle_iog.c(1658),ERROR" ID="0x8b9833d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_gle_iog_init_input_param:subinterval=%d, subtime=%d, label_id=%d @lm_gle_iog.c(1682),INFO" ID="0x8b983495" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="create_iob_v2_act, iog_id: %d, label_id: %d, iob_cnt: %d @lm_gle_iog.c(1711),INFO" ID="0x8b98357d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_iob_setup iob desc is null! @lm_gle_iog.c(1785),ERROR" ID="0x8b9837ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_hci_check_rem_iog_param iogid 0x%x @lm_gle_iog.c(1883),ERROR" ID="0x8b983ada" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_hci_check_rem_iog_param: iog param not set iogid=%d @lm_gle_iog.c(1888),INFO" ID="0x8b983b05" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_gle_iog_tnode_param_set: role=%d, t_acb_conhdl=%d, ft_g2t=%d, ft_t2g=%d @lm_gle_iog.c(2026),INFO" ID="0x8b983f55" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="max_transport_latency_g2t=%d, max_transport_latency_t2g=%d, sdu_intv_g2t=%d, sdu_intv_t2g=%d @lm_gle_iog.c(2029),INFO" ID="0x8b983f6d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="iog_intv=%d, framed=%d @lm_gle_iog.c(2030),INFO" ID="0x8b983f75" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob_ind-&gt;tx_ft=%d, iob_ind-&gt;rx_ft=%d, iob_ind-&gt;tx_bn=%d, iob_ind-&gt;rx_bn=%d @lm_gle_iog.c(2130),INFO" ID="0x8b984295" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_gle_iog_tnode_param_set: role=%d, t_acb_conhdl=%d, ft_g2t=%d, ft_t2g=%d @lm_gle_iog.c(2179),INFO" ID="0x8b98441d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="max_transport_latency_g2t=%d, max_transport_latency_t2g=%d, sdu_intv_g2t=%d, sdu_intv_t2g=%d @lm_gle_iog.c(2182),INFO" ID="0x8b984435" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="iog_intv=%d, framed=%d @lm_gle_iog.c(2183),INFO" ID="0x8b98443d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_iog_reset_sn, iog_idx: %d @lm_gle_iog.c(2226),INFO" ID="0x8b984595" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_iob_get_instant iob_desc is NULL for iob_conhdl=%d @lm_gle_iog.c(2247),ERROR" ID="0x8b98463a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_iob_get_instant acb_env_ptr is NULL for acb_conhdl=%d @lm_gle_iog.c(2255),ERROR" ID="0x8b98467a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_iob_get_instant acb_elt is NULL for acb_conhdl=%d @lm_gle_iog.c(2269),ERROR" ID="0x8b9846ea" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_gle_iob_get_instant:acb_interval=%d, iob_interval=%d, acb_env_ptr-&gt;latency=%d, anchor_point=%d @lm_gle_iog.c(2279),INFO" ID="0x8b98473d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_iob_get_instant:acb_instant_point=%d, acb_duration=%d @lm_gle_iog.c(2281),INFO" ID="0x8b98474d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_iob_get_instant:iob_conhdl=%d, anchor_point=%d @lm_gle_iog.c(2286),INFO" ID="0x8b984775" />
+			</MSG_LOG>

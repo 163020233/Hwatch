@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_INIT]evt_task_ble_initiate_start_cbk, evt_status=%d @evt_task_ble_initiate_cbk.c(39),WARNING" ID="0x8a98013b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_INIT]evt_task_ble_initiate_evt_cbk, rxpd_cnt:%d, rxpd_handled_cnt:%d, abort:%d @evt_task_ble_initiate_cbk.c(99),INFO" ID="0x8a98031d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_INIT]abnormal_cbk, late! sed_id:0x%x,ts:0x%x,cur_ts:0x%x @evt_task_ble_initiate_cbk.c(144),ERROR" ID="0x8a980482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]evt_task_ble_initiate_isr_cbk, es_elt mismatch @evt_task_ble_initiate_cbk.c(191),WARNING" ID="0x8a9805fb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_INIT]evt_task_ble_aux_scan_start_cbk, evt_status=%d, aux_rx_on:%d @evt_task_ble_initiate_cbk.c(221),WARNING" ID="0x8a9806eb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_INIT]cancel_cbk, ts:0x%x, curr_ts:0x%x @evt_task_ble_initiate_cbk.c(253),WARNING" ID="0x8a9807eb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_INIT]evt_task_ble_aux_initiate_evt_cbk, ts:0x%x, curr_ts:0x%x @evt_task_ble_initiate_cbk.c(280),INFO" ID="0x8a9808c5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[[L2][BLE_INIT]evt_task_ble_aux_initiate_evt_cbk, rxpd_cnt:%d, rxpd_handled_cnt:%d @evt_task_ble_initiate_cbk.c(288),WARNING" ID="0x8a980903" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_INIT]aux_initiate_evt_cbk, stop sched, con_hdl %d, evt_status %d, aux_rx_on %d @evt_task_ble_initiate_cbk.c(296),WARNING" ID="0x8a980943" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_INIT]evt_task_ble_aux_initiate_abnormal_cbk, ts:0x%x, curr_ts:0x%x @evt_task_ble_initiate_cbk.c(322),INFO" ID="0x8a980a15" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_INIT]aux_initiate_abn_cbk, stop sched, con_hdl %d, evt_status %d, aux_rx_on %d @evt_task_ble_initiate_cbk.c(327),ERROR" ID="0x8a980a3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]evt_task_ble_aux_initiate_isr_cbk es_elt mismatch @evt_task_ble_initiate_cbk.c(362),WARNING" ID="0x8a980b53" />
+			</MSG_LOG>

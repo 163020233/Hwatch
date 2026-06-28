@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_initiate_intv_offset_req, intv_req fail! @evt_task_gle_initiate_patch.c(63),INFO" ID="0x8b3001fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_initiate_intv_offset_req, offset_req fail! @evt_task_gle_initiate_patch.c(70),INFO" ID="0x8b300235" />
+			</MSG_LOG>

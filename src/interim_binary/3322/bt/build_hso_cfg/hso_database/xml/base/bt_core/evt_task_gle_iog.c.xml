@@ -1,0 +1,23 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[IOB_L2][BGTP] evt_task_gle_iog_create iog_idx 0x%x @evt_task_gle_iog.c(101),INFO" ID="0x8b9c032d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP]evt_task_gle_iog_create iog env exist, iog_idx %d @evt_task_gle_iog.c(106),ERROR" ID="0x8b9c0352" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_gle_iog_create label_info is NULL, iog_idx: %d @evt_task_gle_iog.c(122),ERROR" ID="0x8b9c03d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[IOB_L2]evt_task_gle_iog_create_intv_node, iog_idx: %d, iob_idx: %d @evt_task_gle_iog.c(142),INFO" ID="0x8b9c0475" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_task_gle_iog_create_intv_node, iog_env intv node is exist: iog_idx=%d @evt_task_gle_iog.c(150),INFO" ID="0x8b9c04b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[IOB_L2] evt_task_gle_iog_create_intv_node, iob_env is null. @evt_task_gle_iog.c(162),ERROR" ID="0x8b9c0512" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_imb_create_es_task, INTV node alloc fail! @evt_task_gle_iog.c(187),ERROR" ID="0x8b9c05da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="IOG INTV OFFSET=%d @evt_task_gle_iog.c(190),INFO" ID="0x8b9c05f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_iog_remove_intv_node, remove intv_node fail! @evt_task_gle_iog.c(198),ERROR" ID="0x8b9c0632" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] gle_iog_toggle_cbk, iog_env is NULL. @evt_task_gle_iog.c(244),ERROR" ID="0x8b9c07a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[WARN] gle_iog_toggle_cbk, num_of_active_channel is 0. @evt_task_gle_iog.c(249),WARNING" ID="0x8b9c07cb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gle_iog_toggle_cbk, iog_counter: %d, active_channels: %d, cur_time: %d, toggle_timestamp: %d @evt_task_gle_iog.c(261),INFO" ID="0x8b9c082d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]tog_start_twice record_tog_ts: %d @evt_task_gle_iog.c(265),ERROR" ID="0x8b9c084a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]gle_iog_toggle_cbk iob_env-&gt;evt_state is not ES_EVT_WAIT! cur_time: %d,iog_counter: %d, iob_conhdl: %d, iob_env-&gt;evt_state: %d @evt_task_gle_iog.c(281),WARNING" ID="0x8b9c08cb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iog_destroy iog_idx 0x%x @evt_task_gle_iog.c(321),INFO" ID="0x8b9c0a0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_task_gle_iog_destroy, iog_env is NULL! iog_idx=%d @evt_task_gle_iog.c(327),WARNING" ID="0x8b9c0a3b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_task_gle_iog_destroy, iog_env-&gt;num_of_active_channel: %d @evt_task_gle_iog.c(337),INFO" ID="0x8b9c0a8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[IOB_L2] tog is not start @evt_task_gle_iog.c(348),WARNING" ID="0x8b9c0ae3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_iog_save_label_info:tx_format=%d, rx_format=%d, txphy=%d, rxphy=%d @evt_task_gle_iog.c(468),INFO" ID="0x8b9c0ea5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_iog_save_label_info:tx_pilot_ratio=%d, rx_pilot_ratio=%d, tx_bn=%d, rx_bn=%d @evt_task_gle_iog.c(470),INFO" ID="0x8b9c0eb5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_iog_save_label_info:mcs=%d, nse=%d, subtime=%d, subintv=%d @evt_task_gle_iog.c(472),INFO" ID="0x8b9c0ec5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_gle_iog_save_label_info:interval=%d, role=%d @evt_task_gle_iog.c(473),INFO" ID="0x8b9c0ecd" />
+			</MSG_LOG>

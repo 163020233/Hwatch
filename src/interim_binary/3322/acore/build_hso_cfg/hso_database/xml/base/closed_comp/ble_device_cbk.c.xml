@@ -1,0 +1,64 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="ble service gap cbk is exist, app_id=%d @ble_device_cbk.c(80),ERROR" ID="0xea560282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble service gap cbk memnew fail. @ble_device_cbk.c(85),ERROR" ID="0xea5602aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble service gap cbk memcpy fail. @ble_device_cbk.c(90),ERROR" ID="0xea5602d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BLE]register callbacks success, app id: 0x%x @ble_device_cbk.c(95),INFO" ID="0xea5602fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][BLE]no need repeat regist bs ble dev state callback. @ble_device_cbk.c(102),INFO" ID="0xea560335" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BLE]regist bs ble dev state callback fail, ret = 0x%08x! @ble_device_cbk.c(107),ERROR" ID="0xea56035a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][BLE]regist bs ble dev state callback succ! @ble_device_cbk.c(110),INFO" ID="0xea560375" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble device cbk is exist, app_id=%d @ble_device_cbk.c(121),ERROR" ID="0xea5603ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble device cbk memnew fail. @ble_device_cbk.c(126),ERROR" ID="0xea5603f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble device cbk memcpy fail. @ble_device_cbk.c(132),ERROR" ID="0xea560422" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][BLE]register callbacks success, app id: 0x%x @ble_device_cbk.c(137),INFO" ID="0xea56044d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][BLE]unregister all app_id cbks @ble_device_cbk.c(151),INFO" ID="0xea5604bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][BLE]unregister all app_id cbks. @ble_device_cbk.c(167),INFO" ID="0xea56053d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble enable state %d @ble_device_cbk.c(184),INFO" ID="0xea5605c5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble connect state cbk dev_id %d, connect state %d, encrypt state %d reason 0x%02x @ble_device_cbk.c(203),INFO" ID="0xea56065d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble pair result cbk dev_id %d @ble_device_cbk.c(227),INFO" ID="0xea56071d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble service start adv 0x%02x, status %d @ble_device_cbk.c(379),INFO" ID="0xea560bdd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble call bs_ble_start_adv_cbk_proc fail: ret = %u @ble_device_cbk.c(388),INFO" ID="0xea560c25" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble service stop adv 0x%02x, status %d @ble_device_cbk.c(394),INFO" ID="0xea560c55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble call bs_ble_stop_adv_cbk_proc fail: ret = %u @ble_device_cbk.c(406),INFO" ID="0xea560cb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble scan result memcpy fail @ble_device_cbk.c(437),ERROR" ID="0xea560daa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble scan state ERROR! @ble_device_cbk.c(472),ERROR" ID="0xea560ec2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble scan data len is zero. @ble_device_cbk.c(489),INFO" ID="0xea560f4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble scan data malloc fail. @ble_device_cbk.c(493),ERROR" ID="0xea560f6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble scan data malloc fail. @ble_device_cbk.c(502),ERROR" ID="0xea560fb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble connect up to limit, disconnect remote @ble_device_cbk.c(524),WARNING" ID="0xea561063" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="is_not_auto_pair function is open, no need auto pair after connection. @ble_device_cbk.c(541),INFO" ID="0xea5610ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble central connected dev_id %d @ble_device_cbk.c(543),INFO" ID="0xea5610fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble peripheral connected dev_id %d @ble_device_cbk.c(547),INFO" ID="0xea56111d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble service memnew fail @ble_device_cbk.c(551),ERROR" ID="0xea56113a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble service memnew fail @ble_device_cbk.c(578),ERROR" ID="0xea561212" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble connect state change: %d, reason %d, conn_id 0x%04x @ble_device_cbk.c(620),INFO" ID="0xea561365" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="find old remote node null @ble_device_cbk.c(684),WARNING" ID="0xea561563" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble connect up to limit, disconnect remote @ble_device_cbk.c(699),WARNING" ID="0xea5615db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble auth complete state check fail. @ble_device_cbk.c(708),WARNING" ID="0xea561623" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble connect up to limit, disconnect remote @ble_device_cbk.c(725),WARNING" ID="0xea5616ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble pair complete state check fail. @ble_device_cbk.c(731),WARNING" ID="0xea5616db" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bs ble adv terminate, adv id %d, status %d @ble_device_cbk.c(760),INFO" ID="0xea5617c5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bs ble pair remove, addr %02x:%02x:xx:xx:xx:%02x, status %d @ble_device_cbk.c(774),INFO" ID="0xea561835" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bs ble read RSSI result of dev_id[%u](conn_id=%u): rssi %d, status %u @ble_device_cbk.c(810),INFO" ID="0xea561955" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble call bs_ble_read_rssi_cbk_proc fail: ret = %u @ble_device_cbk.c(814),INFO" ID="0xea561975" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble call bs_ble_conn_param_update_cbk fail: memlloc fail! @ble_device_cbk.c(822),ERROR" ID="0xea5619b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble call bs_ble_conn_param_update_cbk_proc fail: ret = %u @ble_device_cbk.c(831),INFO" ID="0xea5619fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble call bs_ble_set_data_length_cbk_proc fail: ret = %u @ble_device_cbk.c(842),INFO" ID="0xea561a55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble recovery paired info, alloc device id fail: reach max. @ble_device_cbk.c(880),ERROR" ID="0xea561b82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble recovery paired info, add remote device fail. @ble_device_cbk.c(893),ERROR" ID="0xea561bea" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble recovery one paired info success: dev_id = %u, addr_type = %u addr = %02x:*:*:*:*:%02x @ble_device_cbk.c(907),INFO" ID="0xea561c5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble recovery paired info, malloc fail! @ble_device_cbk.c(916),ERROR" ID="0xea561ca2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble recovery paired info, get paired info fail: ret = 0x%x @ble_device_cbk.c(924),ERROR" ID="0xea561ce2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble recovery %u-th paired dev info fail! @ble_device_cbk.c(930),ERROR" ID="0xea561d12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble recovery paired info end, recovered num = %u. @ble_device_cbk.c(936),INFO" ID="0xea561d45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble power on status success @ble_device_cbk.c(948),INFO" ID="0xea561da5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble power on status fail! @ble_device_cbk.c(950),ERROR" ID="0xea561db2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble power on status from btsrv: %d @ble_device_cbk.c(963),INFO" ID="0xea561e1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble enable %d @ble_device_cbk.c(969),INFO" ID="0xea561e4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble disable %d @ble_device_cbk.c(988),INFO" ID="0xea561ee5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble acl link switch state %d @ble_device_cbk.c(1017),INFO" ID="0xea561fcd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TWS] bs_ble_link_sync_up_cbk error status:0x%x @ble_device_cbk.c(1030),ERROR" ID="0xea562032" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TWS] ble_send_data_to_peer fail, ret=0x%x  @ble_device_cbk.c(1039),ERROR" ID="0xea56207a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BLE]spp write result:0x%x @ble_device_cbk.c(1044),INFO" ID="0xea5620a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="tws_ble_acl_start_switch failed %d @ble_device_cbk.c(1069),ERROR" ID="0xea56216a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="tws_ble_acl_switch_param_set failed %d @ble_device_cbk.c(1079),ERROR" ID="0xea5621ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS] BLE is not connected @ble_device_cbk.c(1094),ERROR" ID="0xea562232" />
+			</MSG_LOG>

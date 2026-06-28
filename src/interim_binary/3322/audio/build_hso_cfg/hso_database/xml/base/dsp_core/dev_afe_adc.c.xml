@@ -1,0 +1,36 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(67),INFO" ID="0x9876021d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_adc_init Failed, Error Code: [0x%08X] @dev_afe_adc.c(70),ERROR" ID="0x98760232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(74),INFO" ID="0x98760255" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(80),INFO" ID="0x98760285" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(82),INFO" ID="0x98760295" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(94),INFO" ID="0x987602f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_adc_get_chan_sel Failed, Error Code: [0x%08X] @dev_afe_adc.c(100),ERROR" ID="0x98760322" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_adc_open Failed, Error Code: [0x%08X] @dev_afe_adc.c(106),ERROR" ID="0x98760352" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(118),INFO" ID="0x987603b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(127),INFO" ID="0x987603fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @dev_afe_adc.c(130),ERROR" ID="0x98760412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_adc_close Failed, Error Code: [0x%08X] @dev_afe_adc.c(136),ERROR" ID="0x98760442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(140),INFO" ID="0x98760465" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(149),INFO" ID="0x987604ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @dev_afe_adc.c(153),ERROR" ID="0x987604ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_adc_set_enable Failed, Error Code: [0x%08X] @dev_afe_adc.c(159),ERROR" ID="0x987604fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(163),INFO" ID="0x9876051d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(171),INFO" ID="0x9876055d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @dev_afe_adc.c(175),ERROR" ID="0x9876057a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_adc_set_pcm_attr Failed, Error Code: [0x%08X] @dev_afe_adc.c(181),ERROR" ID="0x987605aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(185),INFO" ID="0x987605cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(194),INFO" ID="0x98760615" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @dev_afe_adc.c(198),ERROR" ID="0x98760632" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_adc_set_gain Failed, Error Code: [0x%08X] @dev_afe_adc.c(205),ERROR" ID="0x9876066a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(213),INFO" ID="0x987606ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(222),INFO" ID="0x987606f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @dev_afe_adc.c(226),ERROR" ID="0x98760712" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(233),INFO" ID="0x9876074d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(254),INFO" ID="0x987607f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @dev_afe_adc.c(258),ERROR" ID="0x98760812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_adc_set_vol_cfg Failed, Error Code: [0x%08X] @dev_afe_adc.c(264),ERROR" ID="0x98760842" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(274),INFO" ID="0x98760895" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @dev_afe_adc.c(283),INFO" ID="0x987608dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @dev_afe_adc.c(287),ERROR" ID="0x987608fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @dev_afe_adc.c(301),INFO" ID="0x9876096d" />
+			</MSG_LOG>

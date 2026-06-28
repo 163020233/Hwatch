@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[offload][bgtp]audio data len exceed, data_len=%d! @a2dp_offload_src.c(102),WARNING" ID="0x8b880333" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[offload][bgtp]tx_buff_node copy fail! @a2dp_offload_src.c(115),WARNING" ID="0x8b88039b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[offload][bgtp]acl_msg malloc fail! @a2dp_offload_src.c(145),WARNING" ID="0x8b88048b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[offload][bgtp]em_alloc_classic_offload_acl_pri_tx_buff fail. @a2dp_offload_src.c(181),WARNING" ID="0x8b8805ab" />
+			</MSG_LOG>

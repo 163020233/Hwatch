@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[classic][afh]apply_map:en 16bit|con_hdl=0x%x,map=0x%08X-%08X-%04X. @lm_classic_acl_srv_afh.c(105),INFO" ID="0x89ea034d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_send_lmp_set_afh_msg, env_ptr is null @lm_classic_acl_srv_afh.c(146),ERROR" ID="0x89ea0492" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]find lmp_set_afh in lmp_tx_queue, refresh:instant:0x%x, chnl_map:0x%08X-%08X-%04X. @lm_classic_acl_srv_afh.c(161),INFO" ID="0x89ea050d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[afh] instant_prog: con_hdl %d, instant 0x%x, master 0x%x, clk off 0x%x @lm_classic_acl_srv_afh.c(269),INFO" ID="0x89ea086d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lmp_set_afh:instant 0x%x @lm_classic_acl_srv_afh.c(328),INFO" ID="0x89ea0a45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]new_chnl_map copy ret=%d @lm_classic_acl_srv_afh.c(338),WARNING" ID="0x89ea0a93" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lmp_set_afh:good chnl(%d) less than 20 @lm_classic_acl_srv_afh.c(343),INFO" ID="0x89ea0abd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[lm_classic]afh local feature not support.con_hdl=0x%x @lm_classic_acl_srv_afh.c(392),INFO" ID="0x89ea0c45" />
+			</MSG_LOG>

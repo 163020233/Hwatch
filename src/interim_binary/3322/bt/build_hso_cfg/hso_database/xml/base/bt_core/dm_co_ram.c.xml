@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="g_device_flag.sle_status %d @dm_co_ram.c(271),INFO" ID="0x8b18087d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]dm_co_bd_addr_zi_init, status=0x%x @dm_co_ram.c(426),ERROR" ID="0x8b180d52" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][chnl_scan] hci set param. switch=%u, intv=%u @dm_co_ram.c(480),INFO" ID="0x8b180f05" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dm_co_hci_videt_act:evt is null @dm_co_ram.c(509),ERROR" ID="0x8b180fea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] fsm_msg_alloc fail. @dm_co_ram.c(534),INFO" ID="0x8b1810b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BTC_TWS-&gt;g_freq_offset_cnt = 0 @dm_co_ram.c(551),INFO" ID="0x8b18113d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BTC_TWS-&gt;frequency_offset = 0x%x @dm_co_ram.c(556),INFO" ID="0x8b181165" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BTC_TWS-&gt;g_freq_offset_cnt = 0 @dm_co_ram.c(587),INFO" ID="0x8b18125d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BTC_TWS-&gt;frequency_offset = 0x%x @dm_co_ram.c(593),INFO" ID="0x8b18128d" />
+			</MSG_LOG>

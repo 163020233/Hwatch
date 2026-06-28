@@ -1,0 +1,286 @@
+/*
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2026-2026. All rights reserved.
+ * Description: Function of bf20a6.c
+ * Author: AuthorNameMagicTag
+ * Create: 2026-03-3
+ */
+
+#include "mpi_cis_ext.h"
+#include "dvp_cam_comm.h"
+#include "i2c.h"
+#include "pinctrl.h"
+#include "gpio.h"
+
+// yuv422 640 * 480 dvp sdr
+static const sensor_reg bf20a6_init_yuv422_dvp_sdr[] = {
+    {0xf2, 0x01},
+    {0x12, 0x20},
+    {0x3a, 0x00},
+    {0xe1, 0x92},
+    {0xe3, 0x02},
+    {0xe0, 0x00},
+    {0x2a, 0x98},
+    {0x0e, 0x47},
+    {0x0f, 0x60},
+    {0x10, 0x57},
+    {0x11, 0x60},
+    {0x30, 0x61},
+    {0x62, 0xcd},
+    {0x63, 0x1a},
+    {0x64, 0x38},
+    {0x65, 0x52},
+    {0x66, 0x68},
+    {0x67, 0xc2},
+    {0x68, 0xa7},
+    {0x69, 0xab},
+    {0x6a, 0xad},
+    {0x6b, 0xa9},
+    {0x6c, 0xc4},
+    {0x6d, 0xc5},
+    {0x6e, 0x18},
+    {0xc0, 0x20},
+    {0xc1, 0x24},
+    {0xc2, 0x29},
+    {0xc3, 0x25},
+    {0xc4, 0x28},
+    {0xc5, 0x2a},
+    {0xc6, 0x41},
+    {0xca, 0x23},
+    {0xcd, 0x34},
+    {0xce, 0x32},
+    {0xcf, 0x35},
+    {0xd0, 0x6c},
+    {0xd1, 0x6e},
+    {0xd2, 0xcb},
+    {0xe2, 0x09},
+    {0xe4, 0x73},
+    {0xe5, 0x22},
+    {0xe6, 0x24},
+    {0xe7, 0x64},
+    {0xe8, 0xa2},
+    {0x4a, 0x00},
+    {0x00, 0x03},
+    {0x1f, 0x02},
+    {0x22, 0x02},
+    {0x0c, 0x31},
+    {0x00, 0x00},
+    {0x60, 0x81},
+    {0x61, 0x81},
+    {0xa0, 0x08},
+    {0x01, 0x1a},
+    {0x01, 0x1a},
+    {0x01, 0x1a},
+    {0x02, 0x15},
+    {0x02, 0x15},
+    {0x02, 0x15},
+    {0x13, 0x08},
+    {0x8a, 0x96},
+    {0x8b, 0x06},
+    {0x87, 0x18},
+    {0x34, 0x48},
+    {0x35, 0x40},
+    {0x36, 0x40},
+    {0x71, 0x44},
+    {0x72, 0x48},
+    {0x74, 0xa2},
+    {0x75, 0xa9},
+    {0x78, 0x12},
+    {0x79, 0xa0},
+    {0x7a, 0x94},
+    {0x7c, 0x97},
+    {0x40, 0x30},
+    {0x41, 0x30},
+    {0x42, 0x28},
+    {0x43, 0x1f},
+    {0x44, 0x1c},
+    {0x45, 0x16},
+    {0x46, 0x13},
+    {0x47, 0x10},
+    {0x48, 0x0d},
+    {0x49, 0x0c},
+    {0x4b, 0x0a},
+    {0x4c, 0x0b},
+    {0x4e, 0x09},
+    {0x4f, 0x08},
+    {0x50, 0x08},
+    {0x5f, 0x29},
+    {0x23, 0x33},
+    {0xa1, 0x10},
+    {0xa2, 0x0d},
+    {0xa3, 0x30},
+    {0xa4, 0x06},
+    {0xa5, 0x22},
+    {0xa6, 0x56},
+    {0xa7, 0x18},
+    {0xa8, 0x1a},
+    {0xa9, 0x12},
+    {0xaa, 0x12},
+    {0xab, 0x16},
+    {0xac, 0xb1},
+    {0xba, 0x12},
+    {0xbb, 0x12},
+    {0xad, 0x12},
+    {0xae, 0x56},
+    {0xaf, 0x0a},
+    {0x3b, 0x30},
+    {0x3c, 0x12},
+    {0x3d, 0x22},
+    {0x3e, 0x3f},
+    {0x3f, 0x28},
+    {0xb8, 0xc3},
+    {0xb9, 0xa3},
+    {0x39, 0x47},
+    {0x26, 0x13},
+    {0x27, 0x16},
+    {0x28, 0x14},
+    {0x29, 0x18},
+    {0xee, 0x0d},
+    {0x13, 0x05},
+    {0x24, 0x3c},
+    {0x81, 0x20},
+    {0x82, 0x40},
+    {0x83, 0x30},
+    {0x84, 0x58},
+    {0x85, 0x30},
+    {0x92, 0x08},
+    {0x86, 0xa0},
+    {0x8a, 0x96},
+    {0x91, 0xff},
+    {0x94, 0x62},
+    {0x9a, 0x18},
+    {0xf0, 0x4e},
+    {0x51, 0x17},
+    {0x52, 0x03},
+    {0x53, 0x5f},
+    {0x54, 0x47},
+    {0x55, 0x66},
+    {0x56, 0x0f},
+    {0x7e, 0x14},
+    {0x57, 0x36},
+    {0x58, 0x2a},
+    {0x59, 0xaa},
+    {0x5a, 0xa8},
+    {0x5b, 0x43},
+    {0x5c, 0x10},
+    {0x5d, 0x00},
+    {0x7d, 0x36},
+    {0x5e, 0x10},
+    {0xd6, 0x88},
+    {0xd5, 0x20},
+    {0xb0, 0x84},
+    {0xb5, 0x08},
+    {0xb1, 0xc8},
+    {0xb2, 0xc0},
+    {0xb3, 0xd0},
+    {0xb4, 0xb0},
+    {0x32, 0x00},
+    {0xa0, 0x09},
+    {0x00, 0x03},
+    {0x0b, 0x02}
+};
+#define bf20A6_INIT_REGS_COUNT \
+    (sizeof(bf20a6_init_yuv422_dvp_sdr) / sizeof(bf20a6_init_yuv422_dvp_sdr[0]))
+
+// 传感器实例配置
+static sensor_config_t bf20A6_config = {.name = "bf20A6",
+    .i2c_cfg =
+        {
+            .bus_id = I2C_BUS_0,  // I2C_BUS
+            .baudrate = 400000,   // 400000 I2C_BAUDRATE
+            .addr = 0x6e          // I2C_ADDR
+        },
+    .pwdn_gpio = S_AGPIO14,
+    .init_regs = bf20a6_init_yuv422_dvp_sdr,
+    .init_regs_count = bf20A6_INIT_REGS_COUNT};
+
+static sensor_config_t *current_sensor = &bf20A6_config;
+
+static void bf20A6_power(uint8_t on)
+{
+    pin_t pwdn_pin = current_sensor->pwdn_gpio;
+    uapi_pin_set_ie(pwdn_pin, 1);
+    uapi_pin_set_mode(pwdn_pin, PIN_MODE_0);
+    uapi_gpio_set_dir(pwdn_pin, GPIO_DIRECTION_OUTPUT);
+
+    pin_t ldo_1V8_ctrl_pin = S_AGPIO28;
+    uapi_pin_set_ie(ldo_1V8_ctrl_pin, 1);
+    uapi_pin_set_mode(ldo_1V8_ctrl_pin, PIN_MODE_0);
+    uapi_gpio_set_dir(ldo_1V8_ctrl_pin, GPIO_DIRECTION_OUTPUT);
+
+    pin_t ldo_2V8_ctrl_pin = S_AGPIO12;
+    uapi_pin_set_ie(ldo_2V8_ctrl_pin, 1);
+    uapi_pin_set_mode(ldo_2V8_ctrl_pin, PIN_MODE_0);
+    uapi_gpio_set_dir(ldo_2V8_ctrl_pin, GPIO_DIRECTION_OUTPUT);
+
+    osal_msleep(10); /* 10 ms */
+    if (on > 0) {
+        uapi_gpio_set_val(pwdn_pin, GPIO_LEVEL_HIGH);
+        osal_msleep(5); /* 5 ms */
+        //  1v8、上电  mclk 上电
+        uapi_gpio_set_val(ldo_1V8_ctrl_pin, GPIO_LEVEL_HIGH);
+        osal_msleep(1); /* 1 ms */
+        //  2v8、上电
+        uapi_gpio_set_val(ldo_2V8_ctrl_pin, GPIO_LEVEL_HIGH);
+        osal_msleep(10); /* 10 ms */
+
+        uapi_gpio_set_val(pwdn_pin, GPIO_LEVEL_LOW);
+        osal_msleep(2); /* 2 ms */
+    } else {
+        //  mclk下电 手册要求先下mclk 10us后 下2v8,再下1v8，客户板 1v8和mclk绑定 无法实现。可以评估下。
+        //  2v8下电
+        uapi_gpio_set_val(ldo_2V8_ctrl_pin, GPIO_LEVEL_LOW);
+        //  1v8下电
+        uapi_gpio_set_val(ldo_1V8_ctrl_pin, GPIO_LEVEL_LOW);
+    }
+
+    printf("Power  sensor: %s %d\n", current_sensor->name, on);
+    return;
+}
+
+static void bf20A6_init(void)
+{
+    bf20A6_power(true);
+    if (uapi_i2c_master_init(current_sensor->i2c_cfg.bus_id, current_sensor->i2c_cfg.baudrate, 0) != 0) {
+        printf("Init i2c fail\n");
+        return;
+    }
+
+    i2c_data_t data = {};
+    unsigned int reg_num = current_sensor->init_regs_count;
+    const sensor_reg *regs = current_sensor->init_regs;
+    if (regs == NULL) {
+        printf("init_regs null\n");
+        return;
+    }
+
+    data.send_len = sizeof(sensor_reg);
+    for (unsigned int i = 0; i < reg_num; i++) {
+        data.send_buf = (uint8_t *)&regs[i];
+        if (uapi_i2c_master_write(current_sensor->i2c_cfg.bus_id, current_sensor->i2c_cfg.addr, &data) != 0) {
+            printf("write i2c fail\n");
+            return;
+        }
+    }
+
+    printf("Sensor %s initialized successfully\n", current_sensor->name);
+}
+
+static void bf20A6_deinit(void)
+{
+    if (uapi_i2c_deinit(current_sensor->i2c_cfg.bus_id) != 0) {
+        printf("deinit i2c fail\n");
+        return;
+    }
+    bf20A6_power(false);
+}
+
+static ext_dvp_sns_obj bf20A6_ops = {
+    .pfn_cmos_sensor_init = bf20A6_init,
+    .pfn_cmos_sensor_exit = bf20A6_deinit,
+    .pfn_get_sensor_features = NULL,
+};
+
+ext_dvp_sns_obj *ext_mpi_get_bf20a6_obj(void)
+{
+    return &bf20A6_ops;
+}

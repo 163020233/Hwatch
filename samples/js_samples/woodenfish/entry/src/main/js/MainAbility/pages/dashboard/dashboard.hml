@@ -1,0 +1,4 @@
+<div class="container" on:swipe="swipeExit">
+    <text class="buttons" @click="manualMode"> {{ $t('strings.manual_mode_text') }}</text>
+    <text class="buttons" @click="autoMode"> {{ $t('strings.auto_mode_text') }} </text>
+</div>

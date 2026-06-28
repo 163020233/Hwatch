@@ -1,0 +1,390 @@
+set(COMPONENT_NAME "dsoftbus")
+
+add_definitions(-DSOFTBUS_LITEOS_M)
+add_definitions(-D__STDC_FORMAT_MACROS)
+add_definitions(-DAUTH_SERVER_DEFINES)
+add_definitions(-DDISC_SERVER_DEFINES)
+add_definitions(-DTRANS_SDK_DEFINES)
+add_definitions(-DOPENSSL_NO_FILENAMES)
+
+set(OHOS_HILOG_LITE_SOURCE_DIR ${ROOT_DIR}/ohos/base/hiviewdfx/hilog_lite)
+set(OHOS_HUKS_SOURCE_DIR ${ROOT_DIR}/ohos/base/security/huks)
+set(OHOS_DEVICE_AUTH_SOURCE_DIR ${ROOT_DIR}/ohos/base/security/device_auth)
+set(OHOS_INIT_SOURCE_DIR ${ROOT_DIR}/ohos/base/startup/init)
+set(OHOS_CJSON_SOURCE_DIR ${ROOT_DIR}/ohos/third_party/cJSON)
+set(OHOS_DSOFTBUS_SOURCE_DIR ${ROOT_DIR}/ohos/foundation/communication/dsoftbus)
+set(OHOS_BLUETOOTH_SOURCE_DIR ${ROOT_DIR}/ohos/foundation/communication/bluetooth)
+
+
+set(PUBLIC_HEADER
+)
+
+set(PRIVATE_HEADER
+    ${OHOS_HILOG_LITE_SOURCE_DIR}/interfaces/native/kits/hilog_lite
+    ${OHOS_HILOG_LITE_SOURCE_DIR}/interfaces/native/kits
+    ${OHOS_HUKS_SOURCE_DIR}/interfaces/inner_api/huks_standard/main/include
+    ${OHOS_DEVICE_AUTH_SOURCE_DIR}/interfaces/innerkits
+    ${OHOS_DEVICE_AUTH_SOURCE_DIR}/services/common/inc
+    ${OHOS_DEVICE_AUTH_SOURCE_DIR}/hals/inc/common
+    ${OHOS_INIT_SOURCE_DIR}/interfaces/innerkits/include/syspara
+    ${OHOS_CJSON_SOURCE_DIR}
+    ${OHOS_BLUETOOTH_SOURCE_DIR}/interfaces/inner_api/include
+    ${OHOS_BLUETOOTH_SOURCE_DIR}/interfaces/inner_api/include/c_header
+    ${OHOS_DEVICE_AUTH_SOURCE_DIR}/interfaces/inner_api
+
+    #adapter
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/default_config/spec_config
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/include/OS_adapter_define/linux
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/bus_center/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/broadcast/adapter/ble/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/broadcast/adapter/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/broadcast/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/wifi/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/hdi/include
+
+    #components
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/components/nstackx/nstackx_congestion/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/components/nstackx/nstackx_util/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/components/nstackx/nstackx_ctrl/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/components/nstackx/nstackx_core/dfile/interface
+
+    #core
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/bus_center/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/huks/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/transmission/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/authentication/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/br/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hidumper_adapter/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/interface/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/security/permission/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/frame/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/frame/mini/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/service/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/utils/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/authentication/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/authentication/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/decision_db/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/local_ledger/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/distributed_ledger/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_buscenter/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/disc_mgr/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_builder/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/heartbeat/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/lane_qos/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/time_sync/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/lane_manager/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/ipc/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/monitor/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/meta_node/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/decision_center/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/manager
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/src
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/p2p/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/p2p/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/br/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/tcp/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/coap/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/wifi_direct_cpp
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/qos/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/manager/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/ipc/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/session/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/auth/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/manager/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/udp_negotiation/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/udp_negotiation/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/manager/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/dispatcher/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/softbus_ble/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/share_ble/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/virtual_link_ble/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/approach_ble/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/coap/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/coap/nstackx_coap/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ipc/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/event_manager/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/broadcast/scheduler/interface
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/broadcast/scheduler/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/broadcast/common/include
+
+    #interfaces
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/interfaces/kits
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/interfaces/kits/bus_center
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/interfaces/kits/discovery
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/interfaces/kits/transport
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/interfaces/kits/common
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/interfaces/inner_kits/transport
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/interfaces/inner_kits/lnn
+
+    #sdk
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/bus_center/manager/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/manager/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/ipc/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/cpp/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/cpp/src
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/proxy/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/udp/file/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/udp/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/qos/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/auth/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/udp/stream/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/statistics/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/discovery/manager/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/discovery/ipc/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/discovery/service/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/bus_center/ipc/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/bus_center/service/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/frame/common/include
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/frame/mini/include
+    ${OHOS_DIR}/commonlibrary/utils_lite/include
+)
+
+set(SOURCES
+    #adapter
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/dfx/softbus_adapter_hisysevent_mini.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/dfx/softbus_adapter_hitrace_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/kernel/liteos_m/softbus_adapter_file.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/kernel/liteos_m/softbus_adapter_mem.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/kernel/liteos_m/softbus_adapter_timer.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/kernel/posix/softbus_adapter_socket.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/kernel/posix/softbus_adapter_thread.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/range/softbus_adapter_range.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/default_config/spec_config/softbus_config_adapter.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/mbedtls/softbus_adapter_crypto.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/mbedtls/softbus_aes_encrypt_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/wifi/common/softbus_wifi_api_adapter_virtual.c
+
+    #core
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/authentication/src/virtual/auth_interface_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/authentication/src/virtual/auth_tcp_connection_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/authentication/src/virtual/auth_meta_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/authentication/src/virtual/auth_meta_ptk_proc_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/authentication/src/virtual/auth_hichain_system_ability_monitor_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/authentication/src/virtual/auth_device_common_key_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/bus_center/src/bus_center_adapter.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/bus_center/src/lnn_deviceinfo_to_profile_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/transmission/src/data_bus_native_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/authentication/src/lnn_extdata_config_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/huks/src/softbus_rsa_encrypt_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/disc_mgr/src/lnn_discovery_interface.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/disc_mgr/src/lnn_discovery_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/lane_manager/src/lnn_lane.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/common/src/lnn_lane_hub_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/time_sync/src/lnn_time_sync_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/heartbeat/src/lnn_heartbeat_ctrl_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/heartbeat/src/lnn_ble_lpdevice_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/lane_hub/lane_qos/lnn_lane_qos_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_net_builder_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_cipherkey_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_ptk_info_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_data_cloud_sync_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_buscenter/src/lnn_network_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_buscenter/src/lnn_bt_network_impl.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_device_info.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_feature_capability.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_huks_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_net_capability.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_net_ledger.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_node_info.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/local_ledger/src/lnn_local_net_ledger.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/distributed_ledger/src/lnn_distributed_net_ledger_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/distributed_ledger/src/lnn_meta_node_ledger_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_ledger/decision_db/src/lnn_decision_db_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/monitor/src/lnn_event_monitor_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/utils/src/lnn_async_callback_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/utils/src/lnn_common_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/utils/src/lnn_connection_addr_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/utils/src/lnn_map.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/utils/src/lnn_compress_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/utils/src/lnn_network_id.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/decision_center/src/lnn_decision_center_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/service/src/bus_center_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/service/src/bus_center_event.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/service/src/bus_center_decision_center.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/ipc/mini/lnn_bus_center_ipc.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/meta_node/src/lnn_meta_node_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/adapter/bus_center/src/lnn_link_finder_virtul.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/disc_mgr/src/lnn_coap_adapter_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_device_info_recovery_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/src/softbus_conn_ble_client.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/src/softbus_conn_ble_connection.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/src/softbus_conn_ble_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/src/softbus_conn_ble_send_queue.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/src/softbus_conn_ble_server.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/src/softbus_conn_ble_trans.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/src/softbus_conn_ble_direct_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/ble/src/ble_protocol_interface_factory.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/ble/softbus_adapter_ble_gatt_client.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/ble/softbus_adapter_ble_gatt_server.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/common/adapter_bt_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/common/softbus_adapter_bt_common.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/broadcast/adapter/ble/src/softbus_ble_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/broadcast/manager/src/softbus_broadcast_mgr.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_bc_mgr.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_buscenter_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_disc_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_trans_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_interface_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/broadcast/adapter/ble/src/softbus_ble_gatt.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/br/src/softbus_conn_br_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/tcp/src/softbus_tcp_connect_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/manager/softbus_conn_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/manager/softbus_conn_flow_control.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/adapter/common/net/bluetooth/ble/softbus_adapter_ble_conflict_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/coap/src/conn_coap_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/dispatcher/src/disc_ble_dispatcher.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/softbus_ble/src/disc_ble_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/softbus_ble/src/disc_ble.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/virtual_link_ble/src/disc_virtual_link_ble_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/share_ble/src/disc_share_ble_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ble/approach_ble/src/disc_approach_ble_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/coap/interface/disc_coap_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/coap/nstackx_coap/src/disc_coap_capability.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/event_manager/src/disc_event_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/manager/src/disc_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/manager/src/softbus_disc_server.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/discovery/ipc/mini/disc_client_proxy.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/common/src/trans_lane_pending_ctl.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/common/src/trans_channel_limit.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/common/src/trans_channel_common.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_callback.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_control.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_listener.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_message.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_network.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_session.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_transceiver.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_pipeline.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_callback.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_listener.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_sessionconn.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_json.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_p2p_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/udp_negotiation/src/trans_udp_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/udp_negotiation/src/trans_udp_channel_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/qos/softbus_qos_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/auth/src/trans_auth_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/auth/src/trans_auth_message.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/manager/src/trans_auth_negotiation.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/manager/src/trans_channel_callback.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/manager/src/trans_channel_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/manager/src/trans_lane_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/manager/src/trans_link_listener.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/session/src/trans_session_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/session/src/trans_session_service.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/trans_channel/common/src/trans_qos_info.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/ipc/mini/trans_client_proxy.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/session/src/softbus_scenario_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/security/permission/mini/softbus_permission.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/security/permission/common/permission_entry.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/security/permission/standard/access_control_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/broadcast/scheduler/src/broadcast_scheduler.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/frame/common/src/softbus_server_frame.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/frame/mini/src/softbus_server_stub.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/bitmap/softbus_bitmap.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/network/softbus_network_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/json_utils/softbus_json_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/message_handler/message_handler.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/queue/softbus_queue.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/security/sequence_verification/softbus_sequence_verification.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/softbus_property/softbus_feature_config.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/utils/softbus_utils.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_bus_center.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_common.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_connreporter.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_discreporter.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_transreporter.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/common/src/softbus_base_listener.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/common/src/softbus_conn_common.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/common/src/softbus_datahead_transform.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/common/src/softbus_socket.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/common/src/softbus_tcp_socket.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/connection/wifi_direct_cpp/wifi_direct_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/common/src/softbus_message_open_channel.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/transmission/common/src/trans_pending_pkt.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_nstack_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/anonymize/src/anonymizer.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/core/common/dfx/event/src/softbus_event_virtual.c
+
+    #sdk
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/bus_center/service/src/client_bus_center.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/bus_center/ipc/mini/bus_center_server_proxy.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/bus_center/manager/src/client_bus_center_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/discovery/service/src/client_disc_service.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/discovery/ipc/mini/disc_server_proxy.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/discovery/manager/src/client_disc_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/frame/common/src/softbus_client_event_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/frame/common/src/softbus_client_frame_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/frame/mini/src/softbus_client_stub.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/ipc/mini/trans_server_proxy.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/src/client_trans_session_callback.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/src/client_trans_session_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/src/client_trans_message_service.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/src/client_trans_session_service.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/src/client_trans_socket_service.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/cpp/src/session_set_timer_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/session/src/client_trans_socket_option.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/auth/src/client_trans_auth_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/statistics/src/client_trans_statistics.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/proxy/src/client_trans_proxy_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/proxy/src/client_trans_pending.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/proxy/src/client_trans_proxy_file_manager_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/src/client_trans_tcp_direct_callback.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/src/client_trans_tcp_direct_listener.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/src/client_trans_tcp_direct_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/src/client_trans_tcp_direct_message.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/udp/common/src/client_trans_udp_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/udp/file/src/client_trans_file_virtual.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/qos/src/client_qos_manager.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/manager/src/client_trans_channel_callback.c
+    ${OHOS_DSOFTBUS_SOURCE_DIR}/sdk/transmission/trans_channel/manager/src/client_trans_channel_manager.c
+
+)
+
+set(COMPONENT_PUBLIC_CCFLAGS
+)
+
+set(COMPONENT_CCFLAGS
+    -Wno-error
+)
+
+set(WHOLE_LINK
+    true
+)
+
+set(MAIN_COMPONENT
+    false
+)
+
+set(PRIVATE_DEFINES
+    "-DDEFAULT_STORAGE_PATH=\"/user/data\""
+    SUPPORT_BLE_ADAPTER
+)
+
+set(PUBLIC_DEFINES
+)
+
+build_component()

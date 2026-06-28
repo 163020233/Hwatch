@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="sle config scan ctrl seek speed: clear config! @ssf_config_scan.c(104),INFO" ID="0xefb40345" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle config scan ctrl seek speed faild: invalid mode_id (%u)! @ssf_config_scan.c(108),ERROR" ID="0xefb40362" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset scan param: repeated mode id, update value! @ssf_config_scan.c(226),DBG" ID="0xefb40716" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle add preset seek param faild: reach max num[%u]! @ssf_config_scan.c(234),ERROR" ID="0xefb40752" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset seek param faild: mem alloc fail @ssf_config_scan.c(239),ERROR" ID="0xefb4077a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset seek param faild: memcopy fail @ssf_config_scan.c(244),ERROR" ID="0xefb407a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset seek param faild: invalid input! @ssf_config_scan.c(254),ERROR" ID="0xefb407f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle add preset seek param faild: invalid mode_id (%u)! @ssf_config_scan.c(260),ERROR" ID="0xefb40822" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle rmv preset seek param faild: no match! @ssf_config_scan.c(284),ERROR" ID="0xefb408e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle rmv preset seek param faild: invalid input! @ssf_config_scan.c(295),ERROR" ID="0xefb4093a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle qry preset seek param faild: no match! @ssf_config_scan.c(318),ERROR" ID="0xefb409f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle qry preset seek param faild: memcpy fail, ret = %d! @ssf_config_scan.c(326),ERROR" ID="0xefb40a32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle qry preset seek param faild: invalid input! @ssf_config_scan.c(335),ERROR" ID="0xefb40a7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle lst preset seek param faild: empty! @ssf_config_scan.c(355),ERROR" ID="0xefb40b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle lst preset seek param faild: input ptr null! @ssf_config_scan.c(365),ERROR" ID="0xefb40b6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle operate preset seek param type invalid! @ssf_config_scan.c(390),ERROR" ID="0xefb40c32" />
+			</MSG_LOG>

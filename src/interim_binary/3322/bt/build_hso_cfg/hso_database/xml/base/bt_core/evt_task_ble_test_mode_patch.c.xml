@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="enter evt_task_ble_test_mode_tx_create_patch @evt_task_ble_test_mode_patch.c(34),INFO" ID="0x8b1c0115" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt task create test mode env fail! @evt_task_ble_test_mode_patch.c(39),INFO" ID="0x8b1c013d" />
+			</MSG_LOG>

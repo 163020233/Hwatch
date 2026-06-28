@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] lm_gle_adv_hci_set_data_act, adv_handle:%d, adv_data_length %d @lm_gle_adv_act.c(260),INFO" ID="0x88fc0825" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] lm_gle_adv_hci_set_rsp_data_act, adv_handle:%d, rsp_data_length %d @lm_gle_adv_act.c(290),INFO" ID="0x88fc0915" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp] lm_gle_adv_standby_hci_enable_act, adv_handle:%d, enable:%d, duration:%d, max_adv_evt:%d @lm_gle_adv_act.c(308),INFO" ID="0x88fc09a5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp] lm_gle_adv_advertising_hci_enable_act, adv_handle:%d, enable:%d, duration:%d, max_adv_evt:%d @lm_gle_adv_act.c(351),INFO" ID="0x88fc0afd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_gle_adv_connect_req_received, clkn:0x%x, interval:%d, clock:0x%x, us_offset:%d @lm_gle_adv_act.c(415),INFO" ID="0x88fc0cfd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_reset]stop adv complete(adv_handle=0x%x) @lm_gle_adv_act.c(520),INFO" ID="0x88fc1045" />
+			</MSG_LOG>

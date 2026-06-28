@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="pbap_pce_connection_ev_cbk() event=%d @sapi_br_pts_pbap.c(74),INFO" ID="0xede00255" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap set phone book req: param folder is NULL! @sapi_br_pts_pbap.c(122),ERROR" ID="0xede003d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap set phone book req: param folder is '..', but malloc fail! @sapi_br_pts_pbap.c(127),ERROR" ID="0xede003fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap set phone book req: param folder not null, but malloc fail! @sapi_br_pts_pbap.c(137),ERROR" ID="0xede0044a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_write_file_func! @sapi_br_pts_pbap.c(151),INFO" ID="0xede004bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_status_info_cbk! @sapi_br_pts_pbap.c(159),INFO" ID="0xede004fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt_pbap_pull_obj_ev_cfm event=%d @sapi_br_pts_pbap.c(202),INFO" ID="0xede00655" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi_pbap_pull_card_list() memcpy path error! @sapi_br_pts_pbap.c(220),INFO" ID="0xede006e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi_pbap_pull_card_list() memcpy search_val error! @sapi_br_pts_pbap.c(227),INFO" ID="0xede0071d" />
+			</MSG_LOG>

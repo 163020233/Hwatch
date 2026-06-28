@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][vapc] client register fail, param null! @saf_vap_client.c(37),ERROR" ID="0xe9d4012a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vapc] client already register! @saf_vap_client.c(41),ERROR" ID="0xe9d4014a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vapc] vap client ivat fail!:%u @saf_vap_client.c(46),ERROR" ID="0xe9d40172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vapc] client not register! @saf_vap_client.c(57),ERROR" ID="0xe9d401ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vapc] read property value, state unregistered @saf_vap_client.c(77),ERROR" ID="0xe9d4026a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vapc] write property value, state unregistered @saf_vap_client.c(89),ERROR" ID="0xe9d402ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vapc] cp operation: handle: %d, op: %d @saf_vap_client.c(94),INFO" ID="0xe9d402f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vapc] set voice assistant, param err state = %d @saf_vap_client.c(109),ERROR" ID="0xe9d4036a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vapc] btsrv_msg handle, msg id: %x @saf_vap_client.c(136),INFO" ID="0xe9d40445" />
+			</MSG_LOG>

@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[info]data set:nse=%d,txbn=%d, rxbn=%d, txft=%d @dm_ble_ram.c(94),INFO" ID="0x8b7602f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[info]data set:rxft=%d,txphy=%d, rxphy=%d @dm_ble_ram.c(96),INFO" ID="0x8b760305" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[info]data set:pkt_len_s2m=%d, pkt_max_size_m2s=%d, pkt_max_size_s2m=%d, pkt_len_m2s=%d @dm_ble_ram.c(99),INFO" ID="0x8b76031d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[info]data set:txphy_polar=%d, rxphy_polar=%d @dm_ble_ram.c(101),INFO" ID="0x8b76032d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[info]data set:nse=%d,txbn=%d, rxbn=%d, txft=%d @dm_ble_ram.c(140),INFO" ID="0x8b760465" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[info]data set:rxft=%d,txphy=%d, rxphy=%d @dm_ble_ram.c(142),INFO" ID="0x8b760475" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[info]data set:pkt_len_s2m=%d, pkt_max_size_m2s=%d, pkt_max_size_s2m=%d, pkt_len_m2s=%d @dm_ble_ram.c(145),INFO" ID="0x8b76048d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[info]data set:trx_offset=%d, subtime=%d, tx_frame=%d, rx_frame=%d @dm_ble_ram.c(147),INFO" ID="0x8b76049d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[info]data set:tx_pilot_ratio=%d, rx_pilot_ratio=%d, mcs=%d @dm_ble_ram.c(149),INFO" ID="0x8b7604ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ble_reset]acl disconnect start(conhdl=%d) @dm_ble_ram.c(219),INFO" ID="0x8b7606dd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ble_reset]stop adv(adv_handle=0x%x, is_legacy=%d) @dm_ble_ram.c(237),INFO" ID="0x8b76076d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ble_reset]stop scan start @dm_ble_ram.c(245),INFO" ID="0x8b7607ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ble_reset]stop initiate start @dm_ble_ram.c(259),INFO" ID="0x8b76081d" />
+			</MSG_LOG>

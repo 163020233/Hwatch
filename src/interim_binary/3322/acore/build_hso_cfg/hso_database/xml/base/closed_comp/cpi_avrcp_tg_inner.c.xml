@@ -1,0 +1,24 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="avrcp connect is disconnected. @cpi_avrcp_tg_inner.c(53),ERROR" ID="0xee6201aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memnew error. @cpi_avrcp_tg_inner.c(58),ERROR" ID="0xee6201d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy error. @cpi_avrcp_tg_inner.c(62),ERROR" ID="0xee6201f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp connect is disconnected. @cpi_avrcp_tg_inner.c(75),ERROR" ID="0xee62025a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(448),ERROR" ID="0xee620e02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(484),ERROR" ID="0xee620f22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(606),ERROR" ID="0xee6212f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(643),ERROR" ID="0xee62141a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(683),ERROR" ID="0xee62155a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(722),ERROR" ID="0xee621692" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(763),ERROR" ID="0xee6217da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(777),ERROR" ID="0xee62184a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(791),ERROR" ID="0xee6218ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(806),ERROR" ID="0xee621932" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(821),ERROR" ID="0xee6219aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(836),ERROR" ID="0xee621a22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(852),ERROR" ID="0xee621aa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(871),ERROR" ID="0xee621b3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(890),ERROR" ID="0xee621bd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(906),ERROR" ID="0xee621c52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(923),ERROR" ID="0xee621cda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(940),ERROR" ID="0xee621d62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_tg_inner.c(951),ERROR" ID="0xee621dba" />
+			</MSG_LOG>

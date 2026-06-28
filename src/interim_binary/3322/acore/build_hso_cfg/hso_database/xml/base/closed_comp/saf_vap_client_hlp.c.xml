@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][vapc] read voice assistant state proc err, malloc fail! @saf_vap_client_hlp.c(46),ERROR" ID="0xe9d20172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vapc] cmd result proc err, malloc fail! @saf_vap_client_hlp.c(68),ERROR" ID="0xe9d20222" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vapc] inst id map is null @saf_vap_client_hlp.c(147),INFO" ID="0xe9d2049d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vapc] build vas inst err, ret = %d @saf_vap_client_hlp.c(173),ERROR" ID="0xe9d2056a" />
+			</MSG_LOG>

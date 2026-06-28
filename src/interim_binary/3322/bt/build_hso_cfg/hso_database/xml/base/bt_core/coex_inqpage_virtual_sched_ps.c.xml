@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][coex]coex_ps_start_cbk null @coex_inqpage_virtual_sched_ps.c(65),INFO" ID="0x8b58020d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][coex]evt_task_classic_coex_ps_create_es_task fail, evt task start fail! @coex_inqpage_virtual_sched_ps.c(174),WARNING" ID="0x8b580573" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][coex]evt_task_classic_coex_ps_create, create fail, env_ptr is NULL! @coex_inqpage_virtual_sched_ps.c(185),WARNING" ID="0x8b5805cb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][coex]evt_task_classic_coex_ps_end, env_ptr-&gt;ee is NULL! @coex_inqpage_virtual_sched_ps.c(227),WARNING" ID="0x8b58071b" />
+			</MSG_LOG>

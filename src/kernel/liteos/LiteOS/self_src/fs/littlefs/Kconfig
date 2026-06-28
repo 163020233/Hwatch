@@ -1,0 +1,6 @@
+config LOSCFG_FS_LITTLEFS
+    bool "Enable LITTLEFS"
+    default y
+    depends on LOSCFG_FS_VFS && LOSCFG_DRIVERS_MTD_SPI_NOR
+    help
+      Answer Y to enable LiteOS support littlefs filesystem.

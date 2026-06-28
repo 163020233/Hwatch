@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bs br] set scan mode=0x%x  @br_device_discover.c(19),INFO" ID="0xea48009d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] start discovery proc, type:%u, ret:0x%08X @br_device_discover.c(72),INFO" ID="0xea480245" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] stop discovery proc, type:%u, ret:0x%08X @br_device_discover.c(99),INFO" ID="0xea48031d" />
+			</MSG_LOG>

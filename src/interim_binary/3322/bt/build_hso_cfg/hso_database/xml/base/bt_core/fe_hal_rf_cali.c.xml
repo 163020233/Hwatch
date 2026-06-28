@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lpf_bw_reg_init band not support @fe_hal_rf_cali.c(107),ERROR" ID="0x8a46035a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[DEBUG]fe_rf_cali_analog_rx_dc, bit_idx%d reg_val0x%x avg_i is %d avg_q is %d @fe_hal_rf_cali.c(168),INFO" ID="0x8a460545" />
+			</MSG_LOG>

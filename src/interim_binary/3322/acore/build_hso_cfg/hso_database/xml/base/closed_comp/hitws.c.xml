@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][HITWS_CHANGE_DATAPATH_CFM]handle Error @hitws.c(77),INFO" ID="0xec1a026d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS]hitws change datapath cfm handler 123 @hitws.c(92),INFO" ID="0xec1a02e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HITWS][HITWS_CHANGE_DATAPATH_CFM]type=%d, condition=%d @hitws.c(112),INFO" ID="0xec1a0385" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS]hitws change datapath @hitws.c(224),INFO" ID="0xec1a0705" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][CHANGE_DATAPATH_FOR_SILENCE]GET STREAMID FAILED @hitws.c(242),WARNING" ID="0xec1a0793" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][HITWS_ISO_RECOVERY_CFM]RESULT=%x @hitws.c(284),INFO" ID="0xec1a08e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HITWS][HITWS_ISO_RECOVERY]RECOVERY_TYPE=%d, VALUE=%d @hitws.c(297),INFO" ID="0xec1a094d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][GET_ACTIVE_ADDR]active addr is null @hitws.c(342),INFO" ID="0xec1a0ab5" />
+			</MSG_LOG>

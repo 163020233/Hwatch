@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_iob_send_label_report_evt:iob_desc is null @lm_gle_acb_srv_set_iob_labels.c(104),ERROR" ID="0x8b920342" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="lm_gle_acb_check_label_ind_param, invalid params, iog_id: %d, iob_id: %d, tx_adapt_flag: %d, rx_adapt_flag: %d, label_cnt: %d @lm_gle_acb_srv_set_iob_labels.c(159),WARNING" ID="0x8b9204fb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_acb_check_label_ind_param: acb is null: acb_hdl=%d @lm_gle_acb_srv_set_iob_labels.c(164),ERROR" ID="0x8b920522" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_acb_check_label_ind_param, invalid iog_id, iog_hci_id: %d, iog_id: %d @lm_gle_acb_srv_set_iob_labels.c(182),WARNING" ID="0x8b9205b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_acb_check_label_ind_param, iob_desc already exists: iob_hdl=%d @lm_gle_acb_srv_set_iob_labels.c(189),WARNING" ID="0x8b9205eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]receive err param @lm_gle_acb_srv_set_iob_labels.c(205),ERROR" ID="0x8b92066a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_gle_llcp_iob_label_ind_act:ret=%d, length=%d, ind_length=%d @lm_gle_acb_srv_set_iob_labels.c(221),ERROR" ID="0x8b9206ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]iob labels send ind :srv desc is null @lm_gle_acb_srv_set_iob_labels.c(338),ERROR" ID="0x8b920a92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]iob labels send ind: iob desc is null @lm_gle_acb_srv_set_iob_labels.c(346),ERROR" ID="0x8b920ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]iob labels send ind: pdu alloc null @lm_gle_acb_srv_set_iob_labels.c(354),ERROR" ID="0x8b920b12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_acb_creat_set_iob_labels_srv_fsm srv_desc creat fail @lm_gle_acb_srv_set_iob_labels.c(403),ERROR" ID="0x8b920c9a" />
+			</MSG_LOG>

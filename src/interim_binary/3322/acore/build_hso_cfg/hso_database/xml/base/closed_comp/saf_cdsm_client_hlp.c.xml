@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] key info decode, malloc fail! @saf_cdsm_client_hlp.c(45),ERROR" ID="0xe9f6016a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] secret decode, malloc fail! @saf_cdsm_client_hlp.c(70),ERROR" ID="0xe9f60232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] member count decode, malloc fail! @saf_cdsm_client_hlp.c(88),ERROR" ID="0xe9f602c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] role decode, malloc fail! @saf_cdsm_client_hlp.c(106),ERROR" ID="0xe9f60352" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] discovery mode decode, malloc fail! @saf_cdsm_client_hlp.c(124),ERROR" ID="0xe9f603e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] member address decode, malloc fail! @saf_cdsm_client_hlp.c(217),ERROR" ID="0xe9f606ca" />
+			</MSG_LOG>

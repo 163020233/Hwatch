@@ -1,0 +1,129 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+import("../lib.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    group("liteos_libc") {
+        deps = [":posix"]
+    }
+
+    kernel_module("posix") {
+        sources = [
+                    "time/timer.c",
+                    "pthread/pthread_attr.c",
+                ]
+        
+        # add dir sche / misc env
+        sources += [
+            "sched/sched.c",
+            "misc/getentropy.c", "misc/misc.c",  "misc/syslog.c", "misc/stub.c",
+            "env/getenv.c",
+        ]
+
+        # add dir mq/nonisolated  / pthread/nonisolated  /
+        sources += [
+            "mq/nonisolated/mqueue.c",
+            "pthread/nonisolated/pthread.c", "pthread/nonisolated/pthread_cond.c",
+            "pthread/nonisolated/pthread_mutex.c", "pthread/nonisolated/semaphore.c",
+            "ldso/dynlink.c",
+        ]
+        sources += LIBC_PRNG_SRC + LIBC_LINUX_SRC + LIBC_THREAD_SRC
+        sources -= [
+            "misc/getentropy.c"
+        ]
+
+        include_dirs = [
+            "$LITEOSTOPDIR/compat",
+            "$LITEOSTOPDIR/lib/liteos_libc/pthread",
+            "$LITEOSTOPDIR/lib/liteos_libc/mq",
+            "$LITEOSTOPDIR/lib/liteos_libc/errno",
+            "$LITEOSTOPDIR/lib/liteos_libc/tzdst",
+            "$LITEOSTOPDIR/lib/liteos_libc/lock",
+            "$LITEOSTOPDIR/lib/liteos_libc/init",
+            "$LIBC_DIR_PATH/src/include",
+            "$LIBC_DIR_PATH/src/internal",
+            "$LIBC_DIR_PATH/src/time",
+        ]
+
+        configs += [
+            ":private",
+        ]
+    }
+} else {
+    static_library("libposix") {
+        import("../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+            ]
+        cflags_cc = cflags
+        asmflags = cflags
+
+        sources = [
+            "sched/sched.c",
+            "misc/misc.c",
+            "misc/syslog.c",
+            "misc/stub.c",
+            "env/getenv.c",
+            "time/timer.c",
+            "pthread/pthread_attr.c",
+        ]
+        if (defined(LOSCFG_COMPAT_POSIX)) {
+            sources += [
+                "pthread/isolated/pthread_mutex.c",
+                "pthread/isolated/pthread.c",
+                "pthread/isolated/semaphore.c",
+            ]
+        }
+        if (defined(LOSCFG_COMPAT_POSIX_CONDVAR)) {
+            sources += [
+                "pthread/isolated/pthread_cond.c",
+            ]
+        }
+        if (defined(LOSCFG_COMPAT_POSIX_MQUEUE)) {
+            sources += [
+                "mq/isolated/mqueue.c",
+            ]
+        }
+        sources += LIBC_PRNG_SRC + LIBC_LINUX_SRC + LIBC_THREAD_SRC
+
+        include_dirs = [
+            "$LITEOSTOPDIR/compat",
+            "$LITEOSTOPDIR/lib/liteos_libc/pthread",
+            "$LITEOSTOPDIR/lib/liteos_libc/mq",
+            "$LITEOSTOPDIR/lib/liteos_libc/errno",
+            "$LITEOSTOPDIR/lib/liteos_libc/tzdst",
+            "$LITEOSTOPDIR/lib/liteos_libc/lock",
+            "$LITEOSTOPDIR/lib/liteos_libc/init",
+            "$LIBC_DIR_PATH/src/include",
+            "$LIBC_DIR_PATH/src/internal",
+            "$LIBC_DIR_PATH/src/time",
+        ]
+        include_dirs += LITEOS_GN_USTATIC_INCLUDE
+        configs += [
+            ":private",
+        ]
+    }
+}
+
+config("private") {
+    cflags = []
+    if (!defined(LOSCFG_COMPILER_ICCARM)) {
+        cflags += [
+            "-Wno-parentheses",
+            "-Wno-strict-prototypes",
+            "-Wno-float-equal",
+            "-Wno-switch-default",
+            "-Wno-shadow",
+            "-Wno-sign-compare",
+        ]
+    }
+}

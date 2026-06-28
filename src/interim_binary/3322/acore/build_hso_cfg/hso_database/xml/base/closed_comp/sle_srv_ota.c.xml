@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ota service] sle ota receive data cbk in @sle_srv_ota.c(40),INFO" ID="0xe9160145" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ota service] ota receive data cbk is NULL @sle_srv_ota.c(50),ERROR" ID="0xe9160192" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ota service] ota receive data, data_len:%x @sle_srv_ota.c(54),INFO" ID="0xe91601b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ota service] ota data ack param error @sle_srv_ota.c(62),ERROR" ID="0xe91601f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ota service] ota send data, data_len:%x @sle_srv_ota.c(71),INFO" ID="0xe916023d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ota service] ota data ack failed @sle_srv_ota.c(74),ERROR" ID="0xe9160252" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ota server] sle ota add service fail, ret:%x @sle_srv_ota.c(93),ERROR" ID="0xe91602ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ota server] sle property mem fail @sle_srv_ota.c(109),ERROR" ID="0xe916036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ota server] sle property mem cpy fail @sle_srv_ota.c(115),ERROR" ID="0xe916039a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ota server] sle ota add property fail, ret:%x @sle_srv_ota.c(120),ERROR" ID="0xe91603c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ota server] sle ota add descriptor fail, ret:%x @sle_srv_ota.c(134),ERROR" ID="0xe9160432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ota server] sle uuid add service in @sle_srv_ota.c(146),INFO" ID="0xe9160495" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ota server] sle ota add service, server_id:%x, service_handle:%x, property_handle:%x @sle_srv_ota.c(157),INFO" ID="0xe91604ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ota server] sle ota add service fail, ret:%x @sle_srv_ota.c(160),ERROR" ID="0xe9160502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ota server] sle ota add service out @sle_srv_ota.c(163),INFO" ID="0xe916051d" />
+			</MSG_LOG>

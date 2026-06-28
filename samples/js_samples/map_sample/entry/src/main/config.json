@@ -1,0 +1,62 @@
+{
+  "app": {
+    "bundleName": "com.vendor.map_sample",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "deviceType": [
+      "liteWearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "name": ".MainAbility",
+        "srcLanguage": "js",
+        "srcPath": "MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:MainAbility_desc",
+        "label": "$string:MainAbility_label",
+        "type": "page"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/battery/battery",
+          "pages/brightness/brightness",
+          "pages/getdeviceinfo/getdeviceinfo",
+          "pages/map/map",
+          "pages/pickerfontfamily/pickerfontfamily",
+          "pages/sensor/sensor",
+          "pages/textfontfamily/textfontfamily",
+          "pages/vibrator/vibrator",
+          "pages/calculator/calculator",
+          "pages/network/network",
+	        "pages/canvas/canvas_draw/canvas_draw",
+          "pages/canvas/canvas_drawimage/canvas_drawimage",
+          "pages/filereadrawfile/filereadrawfile",
+          "pages/initroutertopage/index",
+          "pages/listitemadapter/index",
+          "pages/arcListSample/arcListSample",
+          "pages/scrollview/scrollview",
+          "pages/timerGlobal/index",
+          "pages/filewritesubarray/index",
+          "pages/imageAnimator/imageAnimator",
+          "pages/marqueeSample/marqueeSample",
+          "pages/text/index"
+        ],
+        "name": ".MainAbility"
+      }
+    ]
+  }
+}

@@ -1,0 +1,179 @@
+menu "Lib"
+
+config LOSCFG_LIB_LIBSEC
+    bool "Enable LibSec"
+    default y
+    help
+      Answer Y to enable LiteOS support secure c.
+
+config LOSCFG_LIB_LIBC
+    bool "Enable Libc"
+    default y
+    depends on !LOSCFG_ARCH_XTENSA
+    help
+      Answer Y to enable LiteOS support libc.
+
+config LOSCFG_LIB_LIBC_MEM_POOL
+      bool "Enable libc independent memory pool"
+      default n
+      depends on LOSCFG_LIB_LIBC
+      help
+        Answer Y to enable LiteOS support memory multi-pool alloc separate
+
+config LOSCFG_LIB_LIBC_COMPAT_WIDTH64
+    bool "libc 64-bit compatibility"
+    default n
+    depends on LOSCFG_LIB_LIBC
+
+menuconfig LOSCFG_COMPAT_POSIX
+    bool "Enable Posix"
+    default y
+    depends on LOSCFG_LIB_LIBC
+    select LOSCFG_TASK_JOINABLE
+    select LOSCFG_KERNEL_MEM_ALLOC
+    select LOSCFG_BASE_IPC_MUX
+    select LOSCFG_BASE_IPC_SEM
+    select LOSCFG_BASE_IPC_EVENT
+    select LOSCFG_BASE_CORE_SWTMR
+    select LOSCFG_BASE_IPC_QUEUE
+    select LOSCFG_QUEUE_DYNAMIC_ALLOCATION
+    select LOSCFG_TASK_STACK_DYNAMIC_ALLOCATION
+    help
+      Answer Y to enable LiteOS support posix interface.
+
+config LOSCFG_COMPAT_POSIX_MQUEUE
+    bool "Enable Posix Mqueue"
+    default n
+    depends on LOSCFG_BOX && LOSCFG_COMPAT_POSIX
+
+if LOSCFG_COMPAT_POSIX_MQUEUE
+config LOSCFG_BASE_IPC_MQUEUE_LIMIT
+    int "Max MQueue Number In Kernel"
+    default 0
+    depends on LOSCFG_COMPAT_POSIX_MQUEUE
+    help
+      This represents the maximum number of message queue in OS kernel, instead of box.
+
+config LOSCFG_BASE_IPC_MQUEUE_OPEN_LIMIT
+    int "Max MQueue Open Limit In Kernel"
+    default 0
+    depends on LOSCFG_COMPAT_POSIX_MQUEUE
+    help
+      This represents the maximum open num of message queue in OS kernel, instead of box.
+endif # LOSCFG_COMPAT_POSIX_MQUEUE
+
+config LOSCFG_COMPAT_POSIX_CONDVAR
+    bool "Enable Posix CondVar"
+    default n
+    depends on LOSCFG_BOX && LOSCFG_COMPAT_POSIX
+    select LOSCFG_BASE_IPC_CONDVAR
+
+if LOSCFG_COMPAT_POSIX_CONDVAR
+config LOSCFG_BASE_IPC_CONDVAR
+    bool "Enable Condition Variable"
+    default n
+    depends on LOSCFG_COMPAT_POSIX_CONDVAR
+    select LOSCFG_BASE_IPC_EVENT
+
+config LOSCFG_BASE_IPC_COND_LIMIT
+    int "Max CondVar Number In Kernel"
+    default 0
+    depends on LOSCFG_BASE_IPC_CONDVAR
+    help
+      This represents the maximum number of condition variable in OS kernel, instead of box.
+
+config LOSCFG_COND_PERM_MODE
+    int  "CondVar Permission Managing Mode"
+    default 1
+    depends on LOSCFG_BASE_IPC_PERM && LOSCFG_BASE_IPC_CONDVAR
+    help
+      0 for public mode, 1 for private mode and 2 for managing mode.
+endif # LOSCFG_COMPAT_POSIX_CONDVAR
+
+config LOSCFG_COMPAT_POSIX_THREAD_LOCALE
+    bool "Enable Posix thread private locale"
+    default n
+    depends on LOSCFG_COMPAT_POSIX
+
+config LOSCFG_COMPAT_POSIX_THREAD_KERNEL_MODE_CALL
+    bool "Enable Posix thread kernel mode call"
+    default n
+    depends on LOSCFG_BOX && LOSCFG_COMPAT_POSIX
+
+config LOSCFG_LIB_VENDORNAME
+    string "User-defined nodename for uname"
+    default "vendor"
+    depends on LOSCFG_COMPAT_POSIX
+    help
+      Config nodename for uname api, default is "vendor".
+
+config LOSCFG_LIB_LIBM
+    bool "Enable Math"
+    default y
+    depends on LOSCFG_LIB_LIBC
+    help
+      Answer Y to enable LiteOS support math function.
+
+config LOSCFG_LIB_LIBMAT
+    bool "Enable lib matrix"
+    default n
+    help
+      Answer Y to enable LiteOS support matrix operation.
+
+config LOSCFG_LIB_FORMAT
+    bool "Enable Format"
+    default y
+    depends on LOSCFG_LIB_LIBC
+    select LOSCFG_LIB_LIBM
+    help
+      Answer Y to enable LiteOS support format function.
+
+config LOSCFG_LIBC_TRIM_TIME
+    bool "Enable trim time"
+    default n
+    depends on LOSCFG_LIB_LIBC
+    help
+      Answer Y to enable LiteOS support trim time.
+ 
+config LOSCFG_LIBC_TRIM_LOCALE
+    bool "Enable trim src locale"
+    default n
+    depends on LOSCFG_LIB_LIBC
+    help
+      Answer Y to enable LiteOS support trim LOCALE.
+
+config LOSCFG_LIB_STDIO
+    bool "Enable Stdio"
+    default y
+    depends on LOSCFG_LIB_LIBC && LOSCFG_FS_VFS
+    select LOSCFG_LIB_FORMAT
+    select LOSCFG_COMPAT_POSIX
+    select LOSCFG_LIB_LIBM
+    help
+      Answer Y to enable LiteOS support I/O function.
+
+config LOSCFG_LIBC_TRIM_REMOVE
+    bool "Enable remove"
+    default n
+    depends on LOSCFG_LIB_STDIO
+    help
+      Answer Y to enable LiteOS support trim remove.
+
+config LOSCFG_SUPPORT_LONG_DOUBLE
+    bool "Support Long Double Float Type"
+    default y
+    depends on LOSCFG_LIB_STDIO || LOSCFG_LIB_LIBM || LOSCFG_COMPAT_POSIX || LOSCFG_LIB_FORMAT
+    help
+      Answer Y to enable LiteOS support long double float type.
+
+config LOSCFG_LIB_ZLIB
+    bool "Enable Zlib"
+    default y
+    depends on !LOSCFG_ARCH_XTENSA
+    select LOSCFG_LIB_LIBC
+    select LOSCFG_LIB_LIBM
+    help
+      Answer Y to enable LiteOS support compress file library.
+
+endmenu
+

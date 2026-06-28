@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Legacy Pair] lm_classic_acl_srv_legacy_pair_fail with reason 0x%02X @lm_classic_acl_srv_legacy_pair_ram.c(38),INFO" ID="0x8af40135" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Legacy Pair] Link Key ready, preparing post authentication. @lm_classic_acl_srv_legacy_pair_ram.c(64),INFO" ID="0x8af40205" />
+			</MSG_LOG>

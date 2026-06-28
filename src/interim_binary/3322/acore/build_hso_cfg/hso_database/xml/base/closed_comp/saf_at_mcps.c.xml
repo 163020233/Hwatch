@@ -1,0 +1,20 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[mcps] enter saf_at_play_req_callback @saf_at_mcps.c(130),ERROR" ID="0xe9820412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[mcps] enter saf_at_stop_req_callback @saf_at_mcps.c(136),ERROR" ID="0xe9820442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[mcps] enter saf_at_pause_req_callback @saf_at_mcps.c(142),ERROR" ID="0xe9820472" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[mcps] enter saf_at_fast_forward_req_callback @saf_at_mcps.c(148),ERROR" ID="0xe98204a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[mcps] enter saf_at_fast_rewind_req_callback @saf_at_mcps.c(154),ERROR" ID="0xe98204d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[mcps] enter saf_at_move_previous_req_callback @saf_at_mcps.c(160),ERROR" ID="0xe9820502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[mcps] enter saf_at_move_next_req_callback @saf_at_mcps.c(166),ERROR" ID="0xe9820532" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps add inst fail, ret: 0x%x @saf_at_mcps.c(219),ERROR" ID="0xe98206da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps rsp inst name fail, ret: 0x%x @saf_at_mcps.c(235),ERROR" ID="0xe982075a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps report basic info fail, ret: 0x%x @saf_at_mcps.c(258),ERROR" ID="0xe9820812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps rsp playback position fail, ret: 0x%x @saf_at_mcps.c(271),ERROR" ID="0xe982087a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] saf mcps report playback speed param err @saf_at_mcps.c(281),ERROR" ID="0xe98208ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps rsp playback speed fail, ret: 0x%x @saf_at_mcps.c(288),ERROR" ID="0xe9820902" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps report seeking speed fail, ret: 0x%x @saf_at_mcps.c(301),ERROR" ID="0xe982096a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps rsp feature support fail, ret: 0x%x @saf_at_mcps.c(317),ERROR" ID="0xe98209ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps rsp media id fail, ret: 0x%x @saf_at_mcps.c(329),ERROR" ID="0xe9820a4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] saf mcps report media state param err @saf_at_mcps.c(339),ERROR" ID="0xe9820a9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps report media state fail, ret: 0x%x @saf_at_mcps.c(346),ERROR" ID="0xe9820ad2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcps register server fail, ret: 0x%x @saf_at_mcps.c(373),ERROR" ID="0xe9820baa" />
+			</MSG_LOG>

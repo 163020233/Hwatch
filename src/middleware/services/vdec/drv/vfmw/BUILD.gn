@@ -1,0 +1,157 @@
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+import("//build/ohos.gni")
+import("../../../../../build/gn/config.gni")
+
+CHIP_VER="hi1a21"
+SCD_VER="v3r3"
+VDH_VER="v2r4"
+
+VFMW_SRC_DIR="vfmw_v7.0"
+CORE_DIR="${VFMW_SRC_DIR}/core"
+COM_DIR="${CORE_DIR}/common"
+DPS_DIR="${CORE_DIR}/dps"
+STM_DIR="${CORE_DIR}/stream"
+SYN_DIR="${CORE_DIR}/syntax"
+DEC_DIR="${CORE_DIR}/decode"
+STD_DIR="${CORE_DIR}/syntax/protocol"
+SCD_DIR="${CORE_DIR}/stream/hal/${SCD_VER}"
+VDH_DIR="${CORE_DIR}/decode/hal/${VDH_VER}"
+MST_DIR="${VFMW_SRC_DIR}/master"
+OSL_DIR="${VFMW_SRC_DIR}/osal"
+PDT_DIR="${VFMW_SRC_DIR}/product/${CHIP_VER}"
+# TEST_DIR="${VFMW_SRC_DIR}/testcode"
+
+ohos_source_set("drv_vfmw") {
+    sources = [
+        "${OSL_DIR}/vfmw_osal.c",
+        "${OSL_DIR}/liteos/liteos_mem.c",
+        "${OSL_DIR}/liteos/liteos_osal.c",
+        "${OSL_DIR}/liteos/liteos_proc.c",
+        "${COM_DIR}/dbg.c",
+        "${COM_DIR}/event.c",
+        "${COM_DIR}/fsp.c",
+        "${COM_DIR}/vctrl.c",
+        "${COM_DIR}/voque.c",
+        "${STM_DIR}/stm_intf.c",
+        "${STM_DIR}/stm_ctrl.c",
+        "${STM_DIR}/stm_dev.c",
+        "${STM_DIR}/stm_thread.c",
+        "${STM_DIR}/stm_chan.c",
+        "${STM_DIR}/stm_raw.c",
+        "${STM_DIR}/stm_seg.c",
+        "${SCD_DIR}/scd_hal.c",
+        "${VDH_DIR}/dec_hal.c",
+        "${VDH_DIR}/vdh_h264.c",
+        "${SYN_DIR}/syn_intf.c",
+        "${SYN_DIR}/syn_ctrl.c",
+        "${SYN_DIR}/syn_parse.c",
+        "${SYN_DIR}/syn_ops.c",
+        "${STD_DIR}/syn_bs.c",
+        "${STD_DIR}/h264.c",
+        "${DEC_DIR}/dec_intf.c",
+        "${DEC_DIR}/dec_ctrl.c",
+        "${DEC_DIR}/dec_thread.c",
+        "${DEC_DIR}/dec_chn.c",
+        "${DEC_DIR}/dec_dev.c",
+        "${DEC_DIR}/dec_ref.c",
+        "${DEC_DIR}/dec_post.c",
+        "${DPS_DIR}/dps.c",
+        "${DPS_DIR}/dps_ops.c",
+        "${DPS_DIR}/dps_h264.c",
+        "${MST_DIR}/vfmw_intf.c",
+        "${MST_DIR}/vfmw_adpt.c",
+        "${MST_DIR}/vfmw_img.c",
+        "${MST_DIR}/local/local.c",
+        "${MST_DIR}/module/stream/stream.c",
+        "${MST_DIR}/module/vpp/vpp.c",
+        "${MST_DIR}/module/pts/pts.c",
+        "${MST_DIR}/module/pts/frd.c",
+        "${MST_DIR}/module/userdec/userdec.c",
+        "${PDT_DIR}/pdt_master.c",
+        "${PDT_DIR}/pdt_com.c",
+    ]
+
+    if(defined (vdec_proc_support)) {
+        sources += [
+          "${STM_DIR}/stm_log.c",
+          "${SYN_DIR}/syn_log.c",
+          "${DEC_DIR}/dec_log.c",
+          "${DPS_DIR}/dps_log.c",
+          "${COM_DIR}/voque_log.c",
+          "${COM_DIR}/vctrl_log.c",
+          "${COM_DIR}/fsp_log.c",
+          "${MST_DIR}/local/local_proc.c",
+          "${MST_DIR}/module/stream/stream_log.c",
+          "${MST_DIR}/module/vpp/vpp_log.c",
+          "${MST_DIR}/vfmw_adpt_proc.c",
+        ]
+    }
+
+    configs =
+      [ "${sdk_cfg_path}:sdk_public_configs" ]
+
+    configs += [":private"]
+
+    cflags = [
+        "-Werror=out-of-line-declaration",
+        "-Werror=uninitialized",
+        "-Werror=int-conversion",
+        "-Werror=enum-conversion",
+        "-Werror=long-long",
+        "-Werror=unused-variable",
+        "-Werror=unused-value",
+        "-Werror=unused-function",
+        "-Werror=unused-but-set-variable",
+        "-Werror=sign-compare",
+        "-Werror=unused-parameter",
+        "-Werror=tautological-compare",
+        "-Werror=bad-function-cast",
+        "-Werror=incompatible-pointer-types",
+        "-Werror=implicit-function-declaration",
+    ]
+}
+
+config("private") {
+    include_dirs = [
+        "../../api/include",
+        "${VFMW_SRC_DIR}",
+        "${VFMW_SRC_DIR}/include",
+        "${VFMW_SRC_DIR}/master",
+        "${VFMW_SRC_DIR}/master/local",
+        "${VFMW_SRC_DIR}/master/module/pts",
+        "${VFMW_SRC_DIR}/master/module/stream",
+        "${VFMW_SRC_DIR}/master/module/vpp",
+        "${VFMW_SRC_DIR}/master/module/crc",
+        "${VFMW_SRC_DIR}/master/module/userdec",
+        "${VFMW_SRC_DIR}/osal",
+        "${VFMW_SRC_DIR}/osal/liteos",
+        "${VFMW_SRC_DIR}/core/dps",
+        "${VFMW_SRC_DIR}/core/stream",
+        "${VFMW_SRC_DIR}/core/syntax",
+        "${VFMW_SRC_DIR}/core/decode",
+        "${VFMW_SRC_DIR}/core/syntax/protocol",
+        "${VFMW_SRC_DIR}/product/${CHIP_VER}",
+        "${VFMW_SRC_DIR}/product/${CHIP_VER}/HD_FULL",
+        "${VFMW_SRC_DIR}/core/stream/hal/${SCD_VER}",
+        "${VFMW_SRC_DIR}/core/decode/hal/${VDH_VER}",
+        "${VFMW_SRC_DIR}/core/common",
+        "${VFMW_SRC_DIR}/product",
+    ]
+
+    defines = [
+        "VDEC_PROC_SUPPORT",
+        "EXT_VDEC_MJPEG_SUPPORT",
+        "VFMW_MAX_CHAN_NUM=3"
+    ]
+}

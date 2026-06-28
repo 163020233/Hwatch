@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][micps] method req, data too small! @saf_gcp_server_hlp.c(110),ERROR" ID="0xea120372" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcps] method req, data is null! @saf_gcp_server_hlp.c(127),ERROR" ID="0xea1203fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcps] call cmd not support, opcode = %u @saf_gcp_server_hlp.c(142),ERROR" ID="0xea120472" />
+			</MSG_LOG>

@@ -1,0 +1,20 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc discovery service cbk param null @gle_sample_ssap_client.c(38),ERROR" ID="0xe8e20132" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[disc_srv_rsp]start_hdl:[0x%02x], end_hdl:[0x%02x] @gle_sample_ssap_client.c(42),INFO" ID="0xe8e20155" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="uuid:[0x%02x][0x%02x] @gle_sample_ssap_client.c(45),INFO" ID="0xe8e2016d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="uuid[%u]:[0x%02x] @gle_sample_ssap_client.c(50),INFO" ID="0xe8e20195" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ignore exited srv hdl:[%#x] @gle_sample_ssap_client.c(59),WARNING" ID="0xe8e201db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="disc_srv_rsp node crete fail @gle_sample_ssap_client.c(64),ERROR" ID="0xe8e20202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy disc_srv_rsp fail @gle_sample_ssap_client.c(69),ERROR" ID="0xe8e2022a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc discovery service cbk success @gle_sample_ssap_client.c(73),INFO" ID="0xe8e2024d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc discovery character cbk param null @gle_sample_ssap_client.c(81),ERROR" ID="0xe8e2028a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ignore exited character hdl:[%#x] @gle_sample_ssap_client.c(104),WARNING" ID="0xe8e20343" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="disc_character_rsp node crete fail @gle_sample_ssap_client.c(110),ERROR" ID="0xe8e20372" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy disc_character_rsp fail @gle_sample_ssap_client.c(115),ERROR" ID="0xe8e2039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc discovery character cbk success @gle_sample_ssap_client.c(119),INFO" ID="0xe8e203bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc discovery character cbk param null @gle_sample_ssap_client.c(128),ERROR" ID="0xe8e20402" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc discovery services complete cbk success @gle_sample_ssap_client.c(149),INFO" ID="0xe8e204ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create item value fail @gle_sample_ssap_client.c(164),ERROR" ID="0xe8e20522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="value_item memcpy failed @gle_sample_ssap_client.c(170),ERROR" ID="0xe8e20552" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ack_result[%u] = %u @gle_sample_ssap_client.c(239),INFO" ID="0xe8e2077d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sample ssapc value handle cbk param null @gle_sample_ssap_client.c(353),ERROR" ID="0xe8e20b0a" />
+			</MSG_LOG>

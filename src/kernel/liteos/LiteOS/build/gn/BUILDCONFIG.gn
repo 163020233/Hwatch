@@ -1,0 +1,56 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+# enable ccache if ccache installed.
+declare_args() {
+    LITEOSTOPDIR = "//self_src"
+    RTOSLITETOPDIR = "//"
+    safety_kernel = false
+    IS_INSTALL = false
+    IS_COMMERCIAL = false
+    PRODUCT_BUILD = false
+}
+
+compile_prefix = ""
+toolchain_cmd_suffix = ""
+
+import("kconfig.gni")
+
+if (defined(LOSCFG_COMPILER_ICCARM)) {
+    import("//build/gn/compiler/iccarm/iccarm.gni")
+} else if(defined(LOSCFG_COMPILER_CLANG)) {
+    import("//build/gn/compiler/clang/clang.gni")
+}
+
+set_defaults("executable") {
+  configs = os_default_compiler_configs
+}
+
+set_defaults("static_library") {
+    configs = os_default_compiler_configs
+}
+
+set_defaults("shared_library") {
+    configs = os_default_compiler_configs
+}
+
+set_defaults("rust_library") {
+    configs = os_default_compiler_configs
+}
+
+set_defaults("rust_proc_macro") {
+    configs = os_default_compiler_configs
+}
+
+set_defaults("source_set") {
+    configs = os_default_compiler_configs
+}
+
+if (defined(LOSCFG_COMPILER_ICCARM)) {
+    set_default_toolchain("//build/gn/compiler:iccarm")
+} else if(defined(LOSCFG_COMPILER_CLANG)) {
+    set_default_toolchain("//build/gn/compiler:clang")
+}
+

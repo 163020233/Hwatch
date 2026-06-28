@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_imb_param_update_complete_check, img_desc is NULL, img_id=%d. @lm_gle_imb_autorate.c(42),ERROR" ID="0x8ba60152" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[autorate]lm_gle_imb_param_update_complete_check, all node completed, img_id=%d. @lm_gle_imb_autorate.c(58),INFO" ID="0x8ba601d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_send_imb_param_update_cmp, imb_desc is null, imb_conhdl=%d. @lm_gle_imb_autorate.c(67),ERROR" ID="0x8ba6021a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_send_imb_param_update_cmp, event is null, imb_conhdl=%d. @lm_gle_imb_autorate.c(76),ERROR" ID="0x8ba60262" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] lm_gle_imb_check_param_update_ind_param, label_id %d is invalid. @lm_gle_imb_autorate.c(110),ERROR" ID="0x8ba60372" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[autorate]lm_gle_imb_param_update_instant_prog_cbk, img_conhdl: %d @lm_gle_imb_autorate.c(155),INFO" ID="0x8ba604dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BGTP] lm_gle_imb_param_update_instant_prog_cbk img_desc is NULL @lm_gle_imb_autorate.c(160),ERROR" ID="0x8ba60502" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_imb_param_update_add_instant_prog, imb_desc is NULL, imb_conhdl=%d. @lm_gle_imb_autorate.c(191),ERROR" ID="0x8ba605fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR]lm_gle_imb_param_update_add_instant_prog, img_desc is NULL, imb_conhdl=%d, img_id=%d. @lm_gle_imb_autorate.c(201),ERROR" ID="0x8ba6064a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[autorate]lm_gle_imb_param_update_add_instant_prog, img_id=%d, img_conhdl=%d, instant_clk=%u. @lm_gle_imb_autorate.c(211),INFO" ID="0x8ba6069d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_llcp_imb_param_update_ind_act, acb_desc is null, acb_conhdl=%d. @lm_gle_imb_autorate.c(231),ERROR" ID="0x8ba6073a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ERROR]lm_gle_llcp_imb_param_update_ind_act, imb_desc is NULL, acb_conhdl=%d, img_id=%d, iob_id=%d. @lm_gle_imb_autorate.c(243),ERROR" ID="0x8ba6079a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR]lm_gle_llcp_imb_param_update_ind_act, cmd is disallowed, acb_conhdl=%d, imb_conhdl=%d @lm_gle_imb_autorate.c(253),ERROR" ID="0x8ba607ea" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[autorate]lm_gle_llcp_imb_param_update_ind_act, imb_conhdl=%d, update_instant=%u, label_id=%d. @lm_gle_imb_autorate.c(258),INFO" ID="0x8ba60815" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ERROR]lm_gle_llcp_imb_param_update_ind_act, p_img_env is NULL,acb_conhdl=%d,img_id=%d, imb_id=%d. @lm_gle_imb_autorate.c(263),ERROR" ID="0x8ba6083a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_llcp_imb_param_update_ind_act:instant passed, last_timestamp: %d, update_isntant: %d @lm_gle_imb_autorate.c(270),WARNING" ID="0x8ba60873" />
+			</MSG_LOG>

@@ -1,0 +1,438 @@
+/******************************************************************************
+ * @brief    LDS file setting the memory and code locations
+ * Copyright (c) 2025 HiSilicon (Shanghai) Technologies Co., Ltd.
+******************************************************************************/
+
+#include "memory_config_common.h"
+
+OUTPUT_ARCH(riscv)
+ENTRY(reset_vector)
+
+#define KEEP_SORT_TEXT(lib) KEEP(SORT(lib)(.text .text* .rodata .rodata* .srodata .srodata*))
+#define KEEP_SORT_DATA(lib) KEEP(SORT(lib)(.data*))
+#define KEEP_SORT_BSS(lib) KEEP(SORT(lib)(.bss*))
+
+#define SORT_TEXT(lib) SORT(lib)(.text .text* .rodata .rodata* .srodata .srodata*)
+#define SORT_DATA(lib) SORT(lib)(.data*)
+#define SORT_BSS(lib) SORT(lib)(.bss*)
+
+/* FLASH sector size is 2K */
+/* make this table consistent with the configuration given by the security core */
+MEMORY
+{
+    BOOTUP_RAM                    : ORIGIN = APP_VECTORS_ORIGIN,            LENGTH = APP_VECTORS_LENGTH
+    BOOTUP_LOAD                   : ORIGIN = RECOVERY_VECTORS_LOAD_ORIGIN,       LENGTH = APP_VECTORS_LENGTH
+
+    FLASH_PROGRAM                 : ORIGIN = RECOVERY_PROGRAM_ORIGIN,            LENGTH = RECOVERY_PROGRAM_LENGTH
+
+    ITCM                          : ORIGIN = APP_RAMTEXT_ORIGIN,            LENGTH = APP_RAMTEXT_LENGTH
+    DTCM                          : ORIGIN = REE_DTCM_ORIGIN,               LENGTH = REE_DTCM_LENGTH
+
+    PSRAM_HEAP_MEM                : ORIGIN = PSRAM_HEAP_ADDR,               LENGTH = PSRAM_HEAP_LENGTH
+    PSRAM_NPU_HEAP                : ORIGIN = PSRAM_NPU_APP_HEAP_START,      LENGTH = PSRAM_NPU_APP_HEAP_LENGTH
+
+    PRESERVE_SHARE_MEM            : ORIGIN = PRESERVED_REGION_ORIGIN,       LENGTH = PRESERVED_REGION_LENGTH
+    CPUTRACE_RAM                  : ORIGIN = MCPU_TRACE_MEM_REGION_START,   LENGTH = CPU_TRACE_MEM_REGION_LENGTH
+}
+
+SECTIONS
+{
+    /* Vectors */
+    . = 0;
+    startup :
+    {
+        KEEP (*(.text.entry))
+        KEEP (*(.text.low_power_entry))
+    } > BOOTUP_RAM AT > BOOTUP_LOAD
+}
+
+SECTIONS
+{
+    .plt_ramtext :  ALIGN(8)
+    {
+        /* Main code */
+        __ramtext_begin__ = .;
+        __ramtext_load__ = LOADADDR(.plt_ramtext);
+        . = ALIGN(8);
+        /* base lib */
+        *libc.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libcmsis.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libdriverbase.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libinit.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libinterrupt.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *liblinux.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libposix.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libm.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libtargets.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libsec.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libcsysdeps.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libsegger*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libclang_rt.builtins-riscv32.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libbase.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libriscv.a:*.o* (*.text *.text* .rodata .rodata* .srodata .srodata*)
+        *liblitekey.a:*.o* (*.text *.text* .rodata .rodata* .srodata .srodata*)
+        /* gui algorithm */
+        *libgfx_rm.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* driver code */
+        *driver/sfc*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/i2c*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/cpu_trace*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/spi*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/dma*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/uart*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/watchdog*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/timer*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/tcxo*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/systick*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/pmp*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/porting*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/pmu*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/clocks*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/boot*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/arch*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/config*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* drivers/hal */
+        *hal/i2c*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/sfc_v2*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/spi*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/dma*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/uart*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/pinmux*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/pmp*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/psram_v2*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/gpio*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/cpu_trace_v2*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/efuse*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/watchdog*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/rtc_unified*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/ipc*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/timer*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/tcxo*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/systick*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/reboot*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/reg_config*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/calendar*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* usb */
+        *lib/libusb*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *test_usb/libtest_usb_3322.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* Kernel */
+        *kernel/osal*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *kernel/non_os*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* utils */
+        *utils/pm*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *utils/dfx*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* middleware/chips */
+        *middleware/chips/3322/pm*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *middleware/chips/3322/dfx*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *middleware/chips/3322/exception*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *middleware/chips/3322/update*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *middleware/chips/3322/nv*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* startup code */
+        *application/3322/3322*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        *(.plt.itcm.text)
+        *(.plt.itcm.rodata)
+
+        . = ALIGN(8);
+        __init_array_start = .;
+        KEEP(*(.ctors .init_array*))
+        __init_array_end = .;
+        __fini_array_start = .;
+        KEEP(*(.dtors .fini_array*))
+        __fini_array_end = .;
+        . = ALIGN(8);
+    }  > ITCM AT > FLASH_PROGRAM
+
+    .sysintcall.init : ALIGN(8)
+    {
+        . = ALIGN(8);
+        __sysinitcall_start =  ABSOLUTE(.);
+        __sysinitcall0_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level0_*)))
+
+        __sysinitcall1_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level1_*)))
+
+        __sysinitcall2_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level2_*)))
+
+        __sysinitcall3_start =  ABSOLUTE(.);
+        KEEP(SORT(*libinit.a:los_init.c.o*)(.sysinitcall_level3_s0.init))
+        KEEP(SORT(*libbase.a:los_task.c.o*)(.sysinitcall_level3_s0.init))
+        KEEP(SORT(*libtargets.a:os_adapt.c.o*)(.sysinitcall_level3_s1.init))
+        KEEP(SORT(*libinit.a:los_init.c.o*)(.sysinitcall_level3_s1.init))
+        KEEP(SORT(*libbase.a:los_hwi.c.o*)(.sysinitcall_level3_s1.init))
+        KEEP(*(SORT(.sysinitcall_level3_s2.init)))
+        KEEP(*(SORT(.sysinitcall_level3_s3.init)))
+        KEEP(*(SORT(.sysinitcall_level3_s4.init)))
+
+        __sysinitcall4_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level4_*)))
+
+        __sysinitcall5_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level5_*)))
+
+        __sysinitcall6_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level6_*)))
+
+        __sysinitcall7_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level7_*)))
+        __sysinitcall_end =  ABSOLUTE(.);
+        . = ALIGN(8);
+        KEEP(SORT(*libvfs.a:fs_mount.c.o*)(.liteos.table.fsmap.begin))
+        KEEP(SORT(*libfat.a:fatfs.c.o*)(.liteos.table.fsmap.data))
+        KEEP(SORT(*libyaffs2.a:vfs_yaffs2.c.o*)(.liteos.table.fsmap.data))
+        KEEP(*( SORT (.liteos.table.*)));
+    } > ITCM AT > FLASH_PROGRAM
+
+    .initcall.init : ALIGN(8)
+    {
+        . = ALIGN(8);
+        __initcall0_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall0.init)))
+        __initcall0_end = ABSOLUTE(.);
+
+        __initcall1_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall1.init)))
+        __initcall1_end = ABSOLUTE(.);
+
+        __initcall2_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall2.init)))
+        __initcall2_end = ABSOLUTE(.);
+
+        __initcall3_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall3.init)))
+        __initcall3_end = ABSOLUTE(.);
+
+        __initcall4_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall4.init)))
+        __initcall4_end = ABSOLUTE(.);
+
+        __initcall5_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall5.init)))
+        __initcall5_end = ABSOLUTE(.);
+
+        __initcall6_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall6.init)))
+        __initcall6_end = ABSOLUTE(.);
+
+        __initcall7_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall7.init)))
+        __initcall7_end = ABSOLUTE(.);
+
+        . = ALIGN(8);
+    } > ITCM AT > FLASH_PROGRAM
+}
+
+__ramtext_end__ = .;
+__ramtext_size__ = __ramtext_end__ - __ramtext_begin__;
+
+SECTIONS
+{
+    /* Code and const data */
+    .text : ALIGN(8)
+    {
+        FILL(0xFF)
+        . = ALIGN(8);
+        /* TODO: add close component code here begin */
+        /* new liteos libs config */
+        SORT(*libcpup.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libyaffs2.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* TODO: add close component code here end */
+        *(.ramtext)
+        *(.text)
+        *(.text*)
+        *(.rodata)
+        *(.rodata*)
+        *(.flashtext)
+        *(.flashtext*)
+        . = ALIGN(8);
+    } > FLASH_PROGRAM
+
+    g_ram_begin = ORIGIN(DTCM);
+    g_ram_size = LENGTH(DTCM);
+
+    /* Stack in DTCM at lowest addresses */
+    .stacks (APP_USER_STACK_BASEADDR + TEE_DTCM_LENGTH) (NOLOAD): ALIGN(16)
+    {
+         __int_stack_start = .;
+        g_system_stack_begin = .;
+        . += APP_USER_STACK_LEN;
+        . = ALIGN(16);
+        __stack_top__ = .;
+        . += APP_IRQ_STACK_LEN;
+        . = ALIGN(16);
+        __irq_stack_top__ = .;
+        . += APP_EXCP_STACK_LEN;
+        . = ALIGN(16);
+        __irq_stack_end__ = .;
+        __excp_stack_top__ = .;
+        . += APP_NMI_STACK_LEN;
+        . = ALIGN(16);
+        __nmi_stack_top__ = .;
+        g_system_stack_end = .;
+        __int_stack_end = .;
+    } > DTCM
+    g_system_stack_size = g_system_stack_end - g_system_stack_begin;
+    g_stack_system = g_system_stack_size;
+    __exc_stack_top = __excp_stack_top__;
+    __nmi_stack_top = __nmi_stack_top__;
+
+    /* Initialised data */
+    .data : ALIGN(8)
+    {
+        __data_begin__ = .;
+        __data_load__ = LOADADDR(.data);
+        . = ALIGN(8);
+
+        SORT(*libbase.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libc.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libcmsis.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libcsysdeps.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdriverbase.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libinit.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libinterrupt.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*liblinux.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libm.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libposix.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libsec:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libtargets.a:*.o*) (.sdata .sdata* .data .data*)
+
+        SORT(*libsegger*.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_host_sdk.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_host_3322_service.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_host_3322_sample.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_test_audio_manager_wrapper.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhmf_demuxer.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplugin_demuxer_hmf.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplugin_demuxer_mjpeg.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplugin_protocol_https.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libgfx_rm.a:*.o*) (.sdata .sdata* .data .data*)
+
+        SORT(*lib/libusb*.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*test_usb/libtest_usb_3322.a:*.o*) (.sdata .sdata* .data .data*)
+
+        *(.plt.dtcm.data)
+         _gp_ = . + 0x800;
+        *(.data)
+        *(.data*)
+        *(.got)
+        *(.got*)
+        *(.igot)
+        *(.igot*)
+        *(.sdata)
+        *(.sdata*)
+        __data_end__ = .;
+        . = ALIGN(8);
+    } > DTCM AT > FLASH_PROGRAM
+
+    __data_size__ = __data_end__ - __data_begin__;
+    __global_pointer$ = _gp_;
+
+    /* Uninitialised data */
+    .bss (NOLOAD): ALIGN(8)
+    {
+        . = ALIGN(8);
+        __bss_start = .;
+        __bss_begin__ = .;
+        /* TODO: add close component code here begin */
+
+        SORT(*libbase.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libc.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcmsis.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcsysdeps.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdriverbase.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libinit.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libinterrupt.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*liblinux.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libm.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libposix.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libsec:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libtargets.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        SORT(*libsegger*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_host_sdk.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_host_3322_service.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_host_3322_sample.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_test_audio_manager_wrapper.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhmf_demuxer.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplugin_demuxer_hmf.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplugin_demuxer_mjpeg.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplugin_protocol_https.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libgfx_rm.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        SORT(*lib/libusb*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON) 
+        SORT(*test_usb/libtest_usb_3322.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        /* TODO: add close component code here end */
+        *(.plt.dtcm.bss)
+        *(.bss)
+        *(.bss*)
+        *(.sbss)
+        *(.sbss*)
+        *(COMMON)
+        . = ALIGN(8);
+        __eh_frame_start = ABSOLUTE(.);
+        __eh_frame_end = ABSOLUTE(.);
+        __bss_end__ = . ;
+    } > DTCM
+    __bss_size__ = __bss_end__ - __bss_begin__;
+
+    .startup_table (NOLOAD): ALIGN(4)
+    {
+        . = ALIGN(4);
+        __startup_table_begin__ = .;
+        *(STARTUP_TABLE)
+        . = ALIGN(4);
+        __startup_table_end__ = .;
+    } > DTCM
+
+    .heap (NOLOAD): ALIGN(8)
+    {
+        . = ALIGN(8);
+        __heap_start = .;
+        g_intheap_begin = ABSOLUTE(.);
+        g_intheap_size = (ORIGIN(DTCM) + LENGTH(DTCM)) - g_intheap_begin;
+    } > DTCM
+
+    /* psram heap */
+    .extend_heap (NOLOAD): ALIGN(8)
+    {
+        . = ALIGN(8);
+        __extend_heap_start = .;
+        g_extend_heap_begin = ABSOLUTE(.);
+        g_extend_heap_size = ABSOLUTE(PSRAM_HEAP_LENGTH);
+    } > PSRAM_HEAP_MEM
+
+    /* npu psram mempool */
+    .psram_npu_heap (NOLOAD):
+    {
+        . = ALIGN(8);
+        __psram_heap_start = .;
+        g_psram_heap_begin = ABSOLUTE(.);
+        g_psram_heap_size = (ORIGIN(PSRAM_NPU_HEAP) + LENGTH(PSRAM_NPU_HEAP)) - g_psram_heap_begin;
+    } > PSRAM_NPU_HEAP
+
+    /* Like Uninitialised data, but we don't want to 0 it. Stores backtrace among other things. */
+    .preserve (NOLOAD): ALIGN(8)
+    {
+        . = ALIGN(8);
+        KEEP(*(preserve))
+    } > PRESERVE_SHARE_MEM
+
+    .cputrace_mem (NOLOAD):
+    {
+        . = ALIGN(8);
+        KEEP(*(cputrace_mem))
+    } > CPUTRACE_RAM
+}
+
+/* Check Flash total size */
+// ASSERT(((FOTA_FLASH_REGION_START + FOTA_FLASH_REGION_LENGTH) <= FLASH_MAX_END), "The used norflash size exceeds the maximum!");

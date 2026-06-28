@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_classic_acl_delete_desc con_hdl:%d, role:%d, lm_ltaddr:%d, con_info_ltadd:%d @lm_classic_acl_ram.c(53),WARNING" ID="0x8b4a01ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_same_bd_addr_acl_is_existed! @lm_classic_acl_ram.c(132),WARNING" ID="0x8b4a0423" />
+			</MSG_LOG>

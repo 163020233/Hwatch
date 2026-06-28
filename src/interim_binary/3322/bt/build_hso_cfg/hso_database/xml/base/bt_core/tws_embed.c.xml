@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]mear unsniff  @tws_embed.c(72),INFO" ID="0x8b1a0245" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] evt_task_classic_acl_init_sed tws_id_store_init_reg @tws_embed.c(96),INFO" ID="0x8b1a0305" />
+			</MSG_LOG>

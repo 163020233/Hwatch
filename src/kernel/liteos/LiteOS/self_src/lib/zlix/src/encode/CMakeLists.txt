@@ -1,0 +1,7 @@
+add_library_ex(zlix_deflate.c)
+add_library_ex(zlix_encode.c)
+add_library_ex(zlix_huffman.c)
+add_library_ex(zlix_lz77_strategy.c)
+add_library_ex(zlix_special_strategy.c)
+add_library_ex(zlix_static_huffman.c)
+add_library_ex(zlix_store.c)

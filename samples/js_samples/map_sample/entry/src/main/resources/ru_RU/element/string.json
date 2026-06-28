@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "описание модуля"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "описание"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "Карта поставщиков"
+    }
+  ]
+}

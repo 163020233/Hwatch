@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[T%x][TIMEOUT][JITWS][HANDOVER_FAIL]WAIT FINISH REQ, TIME=%u @jitws_handover.c(59),WARNING" ID="0xec0201db" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[T%x][TIMEOUT][JITWS][HANDOVER_FAIL]WAIT FINISH RSP, TIME=%u @jitws_handover.c(91),WARNING" ID="0xec0202db" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[JITWS][COLLECT_HANDOVER_DATA]SERVICE_DATA_LEN=%u, CREDIT_LEN=%u, AT_CMD_LEN=%u, RFCOMM_CREDIT_LEN=%u @jitws_handover.c(272),INFO" ID="0xec020885" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][HANDOVER_FAIL_SEND_START_REQ] @jitws_handover.c(291),WARNING" ID="0xec02091b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER_FAIL]Finish cmd cbk for old master, ERROR_CODE=0x%x @jitws_handover.c(335),WARNING" ID="0xec020a7b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER_TIME]This handover use TIME=%u ms @jitws_handover.c(347),INFO" ID="0xec020add" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER_FAIL_FINISH_CMD]RESULT=0x%x @jitws_handover.c(396),WARNING" ID="0xec020c63" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER_FAIL_START_CMD]RESULT=0x%x @jitws_handover.c(460),WARNING" ID="0xec020e63" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER_FAIL_PREPARE_FINISH_CMD]RESULT=0x%x @jitws_handover.c(501),WARNING" ID="0xec020fab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER_FAIL_PREPARE_CMD]RESULT=0x%x @jitws_handover.c(530),WARNING" ID="0xec021093" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][PARSE_HANDOVER_DATA]stack_avrcp_len=%u @jitws_handover.c(608),INFO" ID="0xec021305" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[JITWS][PARSE_HANDOVER_DATA]SERVICE_DATA_LEN=%u, CREDIT_LEN=%u, AT_CMD_LEN=%u, RFCOMM_CREDIT_LEN=%u @jitws_handover.c(614),INFO" ID="0xec021335" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER_FAIL_EXIT_MOBILE_SNIFF]RESULT=0x%x @jitws_handover.c(626),WARNING" ID="0xec021393" />
+			</MSG_LOG>

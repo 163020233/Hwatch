@@ -1,0 +1,29 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="gle sapi ssaps add server new error @sapi_gle_ssap_server.c(89),ERROR" ID="0xed9602ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle ahib ssaps add server memcpy_s error @sapi_gle_ssap_server.c(93),ERROR" ID="0xed9602ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sapi ssaps del server new error @sapi_gle_ssap_server.c(112),ERROR" ID="0xed960382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle ahib ssaps del server memcpy_s error @sapi_gle_ssap_server.c(116),ERROR" ID="0xed9603a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps add server failed @sapi_gle_ssap_server.c(142),ERROR" ID="0xed960472" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps add property desc not support @sapi_gle_ssap_server.c(192),ERROR" ID="0xed960602" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps start service enter @sapi_gle_ssap_server.c(221),INFO" ID="0xed9606ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps reg tree param null @sapi_gle_ssap_server.c(225),ERROR" ID="0xed96070a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps reg tree send msg failed @sapi_gle_ssap_server.c(233),ERROR" ID="0xed96074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps update item value param null @sapi_gle_ssap_server.c(257),ERROR" ID="0xed96080a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="property_value mem new failed @sapi_gle_ssap_server.c(262),ERROR" ID="0xed960832" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="property_value mem cpy failed @sapi_gle_ssap_server.c(267),ERROR" ID="0xed96085a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle ssaps update item value by uuid param null @sapi_gle_ssap_server.c(302),ERROR" ID="0xed960972" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="property_value mem new failed @sapi_gle_ssap_server.c(307),ERROR" ID="0xed96099a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="property_value mem cpy failed @sapi_gle_ssap_server.c(312),ERROR" ID="0xed9609c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps find hdl by uuid param null @sapi_gle_ssap_server.c(336),ERROR" ID="0xed960a82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="find_handl mem new failed @sapi_gle_ssap_server.c(341),ERROR" ID="0xed960aaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="target uuid mem cpy failed @sapi_gle_ssap_server.c(352),ERROR" ID="0xed960b02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps mtu param null @sapi_gle_ssap_server.c(371),ERROR" ID="0xed960b9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sssaps mtu mem new failed @sapi_gle_ssap_server.c(376),ERROR" ID="0xed960bc2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssap mtu size:%d @sapi_gle_ssap_server.c(381),ERROR" ID="0xed960bea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps find hdl by uuid param null @sapi_gle_ssap_server.c(398),ERROR" ID="0xed960c72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="send_rsp mem new failed @sapi_gle_ssap_server.c(403),ERROR" ID="0xed960c9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="send_rsp mem mem cpy failed @sapi_gle_ssap_server.c(409),ERROR" ID="0xed960cca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps send method response param null @sapi_gle_ssap_server.c(434),ERROR" ID="0xed960d92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="send_method_rsp mem new failed @sapi_gle_ssap_server.c(439),ERROR" ID="0xed960dba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="send_method_rsp mem mem cpy failed @sapi_gle_ssap_server.c(445),ERROR" ID="0xed960dea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="set silent data trans state mem new failed @sapi_gle_ssap_server.c(466),ERROR" ID="0xed960e92" />
+			</MSG_LOG>

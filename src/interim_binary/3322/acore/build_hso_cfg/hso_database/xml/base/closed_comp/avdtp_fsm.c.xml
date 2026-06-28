@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP]bt_offload_add_a2dp_stream_info NULL handle! @avdtp_fsm.c(40),ERROR" ID="0xebaa0142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP]avdtpc connect req avdtp sep selector @avdtp_fsm.c(168),INFO" ID="0xebaa0545" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AVDTP][L2CAP_IND] ADDR=%02x:%02x:**:**:**:%02x, CID=0x%x @avdtp_fsm.c(195),INFO" ID="0xebaa061d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[AVDTP][L2CAP_IND]Obj has been exist, STATUS=0x%x, ADDR=%02x:%02x:**:**:**:%02x, CID=0x%x @avdtp_fsm.c(226),WARNING" ID="0xebaa0713" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[AVDTP][CONN_COMPLETE] LOCAL_CID=0x%x, RESULT=0x%x @avdtp_fsm.c(285),INFO" ID="0xebaa08ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP]avdtpc connect complete avdtp stream done @avdtp_fsm.c(350),INFO" ID="0xebaa0af5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP]avdtpc disconnect req streamStatus=%d @avdtp_fsm.c(371),INFO" ID="0xebaa0b9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP][L2CAP_DISC_IND]Delete REMOTE @avdtp_fsm.c(404),INFO" ID="0xebaa0ca5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP][L2CAP_DISC_IND]Delete STREAM @avdtp_fsm.c(414),INFO" ID="0xebaa0cf5" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[AVDTP][L2CAP_DISC_IND]Can't find obj for ADDR=%02x:%02x:**:**:**:%02x, CID=0x%x, REASON=0x%x @avdtp_fsm.c(422),INFO" ID="0xebaa0d35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP]abort streamStatus=%d @avdtp_fsm.c(442),INFO" ID="0xebaa0dd5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[T%x][TIMEOUT] WAIT FOR AVDTP OPEN FAIL @avdtp_fsm.c(560),WARNING" ID="0xebaa1183" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[T%x][TIMEOUT] SIGNAL_ID=0x%x @avdtp_fsm.c(563),WARNING" ID="0xebaa119b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP][RTX_EXPIRED] SIGNAL_ID=0x%x @avdtp_fsm.c(589),WARNING" ID="0xebaa126b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP][RTX_EXPIRED] Remote doesn't support AVDTP_DELAY_REPORT @avdtp_fsm.c(631),WARNING" ID="0xebaa13bb" />
+			</MSG_LOG>

@@ -1,0 +1,28 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[test mode]evt_task_gle_test_mode_tx_set_env, duration=%d, intv=%d @evt_task_gle_test_mode.c(171),INFO" ID="0x88ee055d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_test_mode_tx alloc mem fail! @evt_task_gle_test_mode.c(221),WARNING" ID="0x88ee06eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_test_mode_tx alloc mem fail! @evt_task_gle_test_mode.c(238),WARNING" ID="0x88ee0773" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="payload type exceed : 0x%x! @evt_task_gle_test_mode.c(250),WARNING" ID="0x88ee07d3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_test_mode alloc txpd or txnode fail! @evt_task_gle_test_mode.c(378),WARNING" ID="0x88ee0bd3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[test mode]ble_gle_txlen=%d, tx_rate =%d, tx_polar_r=%d, tx_pilot_ratio=%d @evt_task_gle_test_mode.c(414),INFO" ID="0x88ee0cf5" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[test mode]txllid=%d, txdataid=%d, txdatagrp=%d, txmif =%d data_ptr=0x%x @evt_task_gle_test_mode.c(416),INFO" ID="0x88ee0d05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hopping env_ptr-&gt;tx_freq %d @evt_task_gle_test_mode.c(493),INFO" ID="0x88ee0f6d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[test mode]ble_format=%d, ble_ch_idx=%d, ble_sed_txphy_bw =%d, gle_tx_frame_format=%d @evt_task_gle_test_mode.c(536),INFO" ID="0x88ee10c5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[test mode]ble_tx_lenext=%d, gle_tx_gfsk_polar_en=%d, gle_sed_tx_polar_r =%d @evt_task_gle_test_mode.c(538),INFO" ID="0x88ee10d5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[test mode]ble_format=%d, ble_ch_idx=%d, ble_sed_txphy_bw =%d, gle_rx_frame_format=%d @evt_task_gle_test_mode.c(653),INFO" ID="0x88ee146d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[test mode]ble_rx_lenext=%d, gle_rx_gfsk_polar_en=%d, gle_sed_rx_polar_r =%d @evt_task_gle_test_mode.c(655),INFO" ID="0x88ee147d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="env_ptr == NULL, create env @evt_task_gle_test_mode.c(759),INFO" ID="0x88ee17bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt task create test mode env fail! @evt_task_gle_test_mode.c(762),INFO" ID="0x88ee17d5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP]gle test mode tx insert elt fail, ts=0x%x, clock=0x%x @evt_task_gle_test_mode.c(1015),WARNING" ID="0x88ee1fbb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP]gle test mode rx insert elt fail, ts=0x%x, clock=0x%x @evt_task_gle_test_mode.c(1056),WARNING" ID="0x88ee2103" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP]gle test mode idle insert elt fail, ts=0x%x, clock=0x%x @evt_task_gle_test_mode.c(1074),WARNING" ID="0x88ee2193" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BGTP]gle test mode rx restart fail @evt_task_gle_test_mode.c(1093),WARNING" ID="0x88ee222b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BGTP]rx recv no ok, restart and open big window! @evt_task_gle_test_mode.c(1097),INFO" ID="0x88ee224d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="rx end, prog_num == 0 @evt_task_gle_test_mode.c(1117),INFO" ID="0x88ee22ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tx end. prog_num == 0 @evt_task_gle_test_mode.c(1136),INFO" ID="0x88ee2385" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="rx end prog_num != 0, mac_gle_udc_ctl_gle_udcmas_abort_setf @evt_task_gle_test_mode.c(1176),INFO" ID="0x88ee24c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_test_mode_tx_hopping less than GLE_58G_START_CHNL @evt_task_gle_test_mode.c(1244),INFO" ID="0x88ee26e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle_test_mode_ptr-&gt;tx_hopping is %d @evt_task_gle_test_mode.c(1248),INFO" ID="0x88ee2705" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_test_mode_hopping_cfg: Input sed is NULL @evt_task_gle_test_mode.c(1254),ERROR" ID="0x88ee2732" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="llchmap_start %d, llchmap_offset %d @evt_task_gle_test_mode.c(1264),INFO" ID="0x88ee2785" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_gle_test_mode_hopping_cfg:ble_sed_txphy_bw=0x%x&#65292;hopping_type is %d  @evt_task_gle_test_mode.c(1277),ERROR" ID="0x88ee27ea" />
+			</MSG_LOG>

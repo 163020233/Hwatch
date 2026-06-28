@@ -1,0 +1,16 @@
+config LOSCFG_PLATFORM
+    string
+    default "hiwing"          if LOSCFG_PLATFORM_HIWING
+choice
+    prompt "Board"
+    default LOSCFG_PLATFORM_HIWING
+
+config LOSCFG_PLATFORM_HIWING
+    bool "hiwing"
+    depends on LOSCFG_FAMILY_TEST
+    select LOSCFG_PLATFORM_HISI_RISCV
+    select LOSCFG_ARCH_RISCV_RV32F
+    select LOSCFG_USING_BOARD_LD
+    select LOSCFG_DRIVERS_UART_LITEOS
+
+endchoice

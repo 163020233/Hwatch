@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[HCI]CURRENT_LINK_MODE=0x%x, ACL data Will be pend! @hci_link_br.c(239),INFO" ID="0xebd6077d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI][CONN_COMPLETE] LINK_STATUS=0x%x, EVENT_STATUS=0x%x, CONN_HDL=0x%x @hci_link_br.c(517),INFO" ID="0xebd6102d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HCI][CONN_REQUEST] LINK_TYPE=0x%x, REMOTE_ADDR=%02x:%02x:**:**:**:%02x @hci_link_br.c(589),INFO" ID="0xebd6126d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI][REMOVE_LINK] REF_COUNT=%u, STATUS=%u @hci_link_br.c(678),INFO" ID="0xebd61535" />
+			</MSG_LOG>

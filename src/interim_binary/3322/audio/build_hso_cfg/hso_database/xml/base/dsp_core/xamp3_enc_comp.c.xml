@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xamp3_enc_comp.c(42),ERROR" ID="0x991e0152" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;bit_depth = %u @xamp3_enc_comp.c(47),ERROR" ID="0x991e017a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xamp3_enc_comp.c(52),ERROR" ID="0x991e01a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]audio_osal_calloc instance failed! @xamp3_enc_comp.c(134),ERROR" ID="0x991e0432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]mp3_enc_init failed! @xamp3_enc_comp.c(159),ERROR" ID="0x991e04fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]encoder failed! @xamp3_enc_comp.c(220),ERROR" ID="0x991e06e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]copy data to out buf failed! @xamp3_enc_comp.c(227),ERROR" ID="0x991e071a" />
+			</MSG_LOG>

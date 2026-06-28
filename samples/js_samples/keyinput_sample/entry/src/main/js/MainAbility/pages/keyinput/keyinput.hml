@@ -1,0 +1,5 @@
+<div class="container" onswipe="swipe">
+    <text class="title">
+        register KeyListener & RotateListener
+    </text>
+</div>

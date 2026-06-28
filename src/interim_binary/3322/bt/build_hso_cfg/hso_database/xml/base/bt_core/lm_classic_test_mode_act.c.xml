@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="lm_bt_test_mode_rx_param_check:freq_idx=%d, module_type=%d, code_type=%d @lm_classic_test_mode_act.c(29),WARNING" ID="0x89f400eb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_bt_test_mode_rx_param_check::freq[%d] @lm_classic_test_mode_act.c(32),ERROR" ID="0x89f40102" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_bt_test_mode_tx_param_check::freq[%d]payload_type[%d] @lm_classic_test_mode_act.c(42),ERROR" ID="0x89f40152" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bt_test_mode_rx_set_env_param::code_type[%d]module_type[%d]freq_idx[%d]rf_chain_mask[%d] @lm_classic_test_mode_act.c(65),WARNING" ID="0x89f4020b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bt_hci_rx_test_enable_act::LM_BT_STATE_TEST_MODE_IDLE con_hdl=0x%x status=0x%x  @lm_classic_test_mode_act.c(76),INFO" ID="0x89f40265" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt_hci_rx_test_enable_act:: failed status=%d @lm_classic_test_mode_act.c(78),ERROR" ID="0x89f40272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt_hci_rx_test_enable_act::evt_task_bt_test_mode_tx_create::failed @lm_classic_test_mode_act.c(86),ERROR" ID="0x89f402b2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_bt_test_mode_tx_set_env, duration=%d, intv=%d chnnl=%d @lm_classic_test_mode_act.c(125),INFO" ID="0x89f403ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bt_hci_tx_test_enable_act:: LM_BT_STATE_TEST_MODE_IDLE L3 con_hdl=0x%x opcode=0x%x @lm_classic_test_mode_act.c(137),INFO" ID="0x89f4044d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt_hci_tx_test_enable_act:: failed status=%d @lm_classic_test_mode_act.c(139),ERROR" ID="0x89f4045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt_hci_tx_test_enable_act::evt_task_bt_test_mode_tx_create::failed @lm_classic_test_mode_act.c(146),ERROR" ID="0x89f40492" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt_hci_tx_test_enable_act::status=%d @lm_classic_test_mode_act.c(163),INFO" ID="0x89f4051d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_bt_test_mode_evt_task_end:L3 con_hdl 0x%x @lm_classic_test_mode_act.c(174),INFO" ID="0x89f40575" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt_hci_test_end_act:LM_BT_STATE_TEST_MODE_BUSY end @lm_classic_test_mode_act.c(188),WARNING" ID="0x89f405e3" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="bt_test_mode_stopping_act: LM_BT_STATE_TEST_MODE_STOPPING trx_type = %d,num packets=%d,pow=%d END @lm_classic_test_mode_act.c(222),WARNING" ID="0x89f406f3" />
+			</MSG_LOG>

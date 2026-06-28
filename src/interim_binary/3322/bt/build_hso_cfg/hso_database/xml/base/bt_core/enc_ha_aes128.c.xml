@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_pre_process_aes128_task memcpy key error! @enc_ha_aes128.c(47),ERROR" ID="0x89ba017a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_pre_process_aes128_task memcpy text error! @enc_ha_aes128.c(51),ERROR" ID="0x89ba019a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_post_process_aes128_task memcpy hash error! @enc_ha_aes128.c(69),ERROR" ID="0x89ba022a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[WARNING] encrypt_trigger_aes128 can only process 128bit-block, key length %d, text length %d @enc_ha_aes128.c(111),WARNING" ID="0x89ba037b" />
+			</MSG_LOG>

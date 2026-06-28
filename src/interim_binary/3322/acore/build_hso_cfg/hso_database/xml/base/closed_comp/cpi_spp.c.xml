@@ -1,0 +1,63 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="CPI_SPP_EVT_CONNECTED hdl=0x%x @cpi_spp.c(60),INFO" ID="0xee7a01e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="CPI_SPP_EVT_DISCONNECTED hdl=0x%x @cpi_spp.c(64),INFO" ID="0xee7a0205" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="CPI_SPP_EVT_CONN_REQ hdl=0x%x @cpi_spp.c(71),INFO" ID="0xee7a023d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="CPI_SPP_EVT_FC_ON hdl=0x%x @cpi_spp.c(75),INFO" ID="0xee7a025d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unknown msg hdl=0x%x @cpi_spp.c(78),ERROR" ID="0xee7a0272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SPP] service start fail @cpi_spp.c(111),ERROR" ID="0xee7a037a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SPP]start spp client start svr_chnl:%d port:%d @cpi_spp.c(145),INFO" ID="0xee7a048d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SPP]start spp client fail @cpi_spp.c(149),WARNING" ID="0xee7a04ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="No spp connection to the peer address exists. @cpi_spp.c(172),INFO" ID="0xee7a0565" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp server delete but connected @cpi_spp.c(198),INFO" ID="0xee7a0635" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp server delete success port: %d @cpi_spp.c(204),INFO" ID="0xee7a0665" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp client delete but connected @cpi_spp.c(213),INFO" ID="0xee7a06ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp client delete connected: %d @cpi_spp.c(215),INFO" ID="0xee7a06bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp init done. @cpi_spp.c(226),ERROR" ID="0xee7a0712" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memnew error. @cpi_spp.c(233),ERROR" ID="0xee7a074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memset error. @cpi_spp.c(237),ERROR" ID="0xee7a076a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp deinit done. @cpi_spp.c(249),ERROR" ID="0xee7a07ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="recv spp connected event, but not exist server or client @cpi_spp.c(288),ERROR" ID="0xee7a0902" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp client stop fail port: %d @cpi_spp.c(312),INFO" ID="0xee7a09c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="recv spp disconnected event, but not exist server or client @cpi_spp.c(319),ERROR" ID="0xee7a09fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="recv spp connect req but server not exist @cpi_spp.c(327),ERROR" ID="0xee7a0a3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="recv spp data, but not exist valid server or client @cpi_spp.c(356),ERROR" ID="0xee7a0b22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memnew fail. @cpi_spp.c(364),ERROR" ID="0xee7a0b62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memcpy fail. @cpi_spp.c(368),ERROR" ID="0xee7a0b82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memnew fail. @cpi_spp.c(393),ERROR" ID="0xee7a0c4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memcpy fail. @cpi_spp.c(397),ERROR" ID="0xee7a0c6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memnew fail. @cpi_spp.c(420),ERROR" ID="0xee7a0d22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memcpy fail. @cpi_spp.c(424),ERROR" ID="0xee7a0d42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memnew fail. @cpi_spp.c(431),ERROR" ID="0xee7a0d7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memcpy fail. @cpi_spp.c(435),ERROR" ID="0xee7a0d9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @cpi_spp.c(474),ERROR" ID="0xee7a0ed2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp cbk is exist, app_uid=%d @cpi_spp.c(551),ERROR" ID="0xee7a113a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memnew fail. @cpi_spp.c(556),ERROR" ID="0xee7a1162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp memcpy fail. @cpi_spp.c(562),ERROR" ID="0xee7a1192" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp service is not init. @cpi_spp.c(622),ERROR" ID="0xee7a1372" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="params socket_para invalid. @cpi_spp.c(627),ERROR" ID="0xee7a139a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="params name len invalid. @cpi_spp.c(634),ERROR" ID="0xee7a13d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uuid is invalid @cpi_spp.c(640),ERROR" ID="0xee7a1402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="server not exist. port %d @cpi_spp.c(661),ERROR" ID="0xee7a14aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp server delete fail port: %d @cpi_spp.c(670),ERROR" ID="0xee7a14f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="socket_type invalid @cpi_spp.c(681),ERROR" ID="0xee7a154a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uuid is invalid @cpi_spp.c(687),ERROR" ID="0xee7a157a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp get remote servce status:0x%x @cpi_spp.c(703),INFO" ID="0xee7a15fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp srart connect fail ret:0x%x @cpi_spp.c(711),INFO" ID="0xee7a163d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp server is not exist. @cpi_spp.c(733),ERROR" ID="0xee7a16ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp client is not exist. @cpi_spp.c(743),ERROR" ID="0xee7a173a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp write param invalid @cpi_spp.c(776),ERROR" ID="0xee7a1842" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="server is null. port 0x%04x @cpi_spp.c(786),ERROR" ID="0xee7a1892" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="server not connected. port 0x%04x @cpi_spp.c(790),ERROR" ID="0xee7a18b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="client is null. port 0x%04x @cpi_spp.c(797),ERROR" ID="0xee7a18ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="client not connected. port 0x%04x @cpi_spp.c(801),ERROR" ID="0xee7a190a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="spp write fail port: %x dataLen: %d writeRet: %d writeLen: %d @cpi_spp.c(811),WARNING" ID="0xee7a195b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp server is not exist. @cpi_spp.c(819),ERROR" ID="0xee7a199a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp service send conn rsp fail @cpi_spp.c(825),ERROR" ID="0xee7a19ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp is not init. @cpi_spp.c(834),WARNING" ID="0xee7a1a13" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp is not init. @cpi_spp.c(849),WARNING" ID="0xee7a1a8b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp is not init. @cpi_spp.c(864),WARNING" ID="0xee7a1b03" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp is not init. @cpi_spp.c(879),WARNING" ID="0xee7a1b7b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp is not init. @cpi_spp.c(894),WARNING" ID="0xee7a1bf3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp is not init. @cpi_spp.c(909),WARNING" ID="0xee7a1c6b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp is not init. @cpi_spp.c(924),WARNING" ID="0xee7a1ce3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp is not init. @cpi_spp.c(939),WARNING" ID="0xee7a1d5b" />
+			</MSG_LOG>

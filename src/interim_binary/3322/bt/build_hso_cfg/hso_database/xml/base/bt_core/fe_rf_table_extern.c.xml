@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[NV]bt_get_cali_item_by_band::band=%d @fe_rf_table_extern.c(112),ERROR" ID="0x8bee0382" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[NV]fe_get_nv_cali_item_by_band::band[%d]get the cali switch is %d @fe_rf_table_extern.c(121),INFO" ID="0x8bee03cd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="fe_check_cali_mask::band[%d] nv mask[%x] not match allowed mask[%x] @fe_rf_table_extern.c(134),WARNING" ID="0x8bee0433" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[txpwr]comp_num larger than power level @fe_rf_table_extern.c(212),ERROR" ID="0x8bee06a2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="fe_rftable_normal_txpwr_comp:band=%d pwr_cmp=0x%x, em_addr=0x%x @fe_rf_table_extern.c(221),INFO" ID="0x8bee06ed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="fe_rftable_txpwr_ctrl:band=%d pwr_ctrl=0x%x em_addr=0x%x @fe_rf_table_extern.c(256),INFO" ID="0x8bee0805" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="fe_rftable_tx_pa_en_ctrl:band=%d pa_en_ctrl=0x%x em_addr=0x%x @fe_rf_table_extern.c(271),INFO" ID="0x8bee087d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="fe_rftable_tx_pwr_comp:band=%d cmp_val=0x%x em_addr=0x%x @fe_rf_table_extern.c(286),INFO" ID="0x8bee08f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bt_productline_txpwr_cmp::band[%d] pwr_cmp[%d] @fe_rf_table_extern.c(396),INFO" ID="0x8bee0c65" />
+			</MSG_LOG>

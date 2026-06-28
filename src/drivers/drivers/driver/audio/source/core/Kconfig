@@ -1,0 +1,8 @@
+menu "Audio Core Config"
+
+source "core/aoe/Kconfig"
+source "core/aie/Kconfig"
+source "core/component/Kconfig"
+source "core/hal/Kconfig"
+
+endmenu

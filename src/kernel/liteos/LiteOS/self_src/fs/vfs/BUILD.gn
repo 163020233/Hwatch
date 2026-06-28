@@ -1,0 +1,259 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+NUTTX_VFS_PATH = "../../../$open_source_path/incubator-nuttx/liteos/fs/vfs"
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("vfs") {
+        sources = [
+            #operation
+            "operation/fs_chattr.c",
+            "operation/fs_check.c",
+            "operation/fs_fallocate.c",
+            "operation/fs_fallocate64.c",
+            "operation/fs_getlabel.c",
+            "operation/fs_init.c",
+            "operation/fs_mount.c",
+            "operation/fs_umount2.c",
+            "operation/fs_other.c",
+            "operation/fs_poll.c",
+            "operation/fs_utime.c",
+            "operation/fs_virstatfs.c",
+            "operation/fs_writev.c",
+            "operation/fullpath.c",
+            "operation/vfs_private.c",
+
+            #vfs_cmd
+            "vfs_cmd/dd_shellcmd.c",
+            "vfs_cmd/vfs_shellcmd.c",
+
+            #$NUTTX_VFS_PATH/operation
+            "$NUTTX_VFS_PATH/operation/fs_dir.c",
+            "$NUTTX_VFS_PATH/operation/fs_close.c",
+            "$NUTTX_VFS_PATH/operation/fs_dup.c",
+            "$NUTTX_VFS_PATH/operation/fs_fcntl.c",
+            "$NUTTX_VFS_PATH/operation/fs_initialize.c",
+            "$NUTTX_VFS_PATH/operation/fs_lseek.c",
+            "$NUTTX_VFS_PATH/operation/fs_mkdir.c",
+            "$NUTTX_VFS_PATH/operation/fs_pread.c",
+            "$NUTTX_VFS_PATH/operation/fs_pwrite.c",
+            "$NUTTX_VFS_PATH/operation/fs_read.c",
+            "$NUTTX_VFS_PATH/operation/fs_rename.c",
+            "$NUTTX_VFS_PATH/operation/fs_stat.c",
+            "$NUTTX_VFS_PATH/operation/fs_truncate.c",
+            "$NUTTX_VFS_PATH/operation/fs_unlink.c",
+            "$NUTTX_VFS_PATH/operation/fs_dup2.c",
+            "$NUTTX_VFS_PATH/operation/fs_fsync.c",
+            "$NUTTX_VFS_PATH/operation/fs_ioctl.c",
+            "$NUTTX_VFS_PATH/operation/fs_lseek64.c",
+            "$NUTTX_VFS_PATH/operation/fs_open.c",
+            "$NUTTX_VFS_PATH/operation/fs_pread64.c",
+            "$NUTTX_VFS_PATH/operation/fs_pwrite64.c",
+            "$NUTTX_VFS_PATH/operation/fs_readv.c",
+            "$NUTTX_VFS_PATH/operation/fs_rmdir.c",
+            "$NUTTX_VFS_PATH/operation/fs_statfs.c",
+            "$NUTTX_VFS_PATH/operation/fs_truncate64.c",
+            "$NUTTX_VFS_PATH/operation/fs_write.c",
+
+            #$NUTTX_VFS_PATH/inode
+            "$NUTTX_VFS_PATH/inode/fs_files.c",
+            "$NUTTX_VFS_PATH/inode/fs_foreachinode.c",
+            "$NUTTX_VFS_PATH/inode/fs_inode.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodeaddref.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodefind.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodefree.c",
+            "$NUTTX_VFS_PATH/inode/fs_inoderelease.c",
+            "$NUTTX_VFS_PATH/inode/fs_inoderemove.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodereserve.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodesearch.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodegetpath.c",
+
+            #$NUTTX_VFS_PATH/dirent
+            "$NUTTX_VFS_PATH/dirent/fs_closedir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_opendir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_readdir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_rewinddir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_seekdir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_telldir.c",
+
+            #$NUTTX_VFS_PATH/mount
+            "$NUTTX_VFS_PATH/mount/fs_umount.c",
+            "$NUTTX_VFS_PATH/mount/fs_foreachmountpoint.c",
+
+            #$NUTTX_VFS_PATH/driver
+            "$NUTTX_VFS_PATH/driver/fs_blockproxy.c",
+            "$NUTTX_VFS_PATH/driver/fs_closeblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_findblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_findmtddriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_openblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_registerblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_registerdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_unregisterblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_unregisterdriver.c",
+        ]
+
+        if (!defined(LOSCFG_COMPILER_ICCARM)) {
+            if (defined(LOSCFG_COMPAT_LINUX)) {
+                #$NUTTX_VFS_PATH/poll
+                sources += ["$NUTTX_VFS_PATH/poll/fs_select.c"]
+            }
+        }
+
+        if (!defined(LOSCFG_COMPAT_LINUX)) {
+            sources -= ["operation/fs_poll.c"]
+        }
+
+        if (!defined(LOSCFG_FS_VFS_BLOCK_DEVICE)) {
+            sources -= ["$NUTTX_VFS_PATH/driver/fs_blockproxy.c"]
+        }
+
+        defines = ["__INCLUDE_STDINT_H"]
+        if (defined(LOSCFG_COMPILER_ICCARM)) {
+            cflags = ["--diag_suppress=Pe546,Pe029"]
+        }
+        configs += [
+            ":private"
+        ]
+    }
+} else {
+    static_library("libvfs") {
+        import("../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        sources = [
+            #operation
+            "operation/fs_chattr.c",
+            "operation/fs_check.c",
+            "operation/fs_fallocate.c",
+            "operation/fs_fallocate64.c",
+            "operation/fs_getlabel.c",
+            "operation/fs_init.c",
+            "operation/fs_mount.c",
+            "operation/fs_umount2.c",
+            "operation/fs_other.c",
+            "operation/fs_poll.c",
+            "operation/fs_utime.c",
+            "operation/fs_virstatfs.c",
+            "operation/fs_writev.c",
+            "operation/fullpath.c",
+            "operation/vfs_private.c",
+
+            #vfs_cmd
+            "vfs_cmd/dd_shellcmd.c",
+            "vfs_cmd/vfs_shellcmd.c",
+
+            #$NUTTX_VFS_PATH/operation
+            "$NUTTX_VFS_PATH/operation/fs_dir.c",
+            "$NUTTX_VFS_PATH/operation/fs_close.c",
+            "$NUTTX_VFS_PATH/operation/fs_dup.c",
+            "$NUTTX_VFS_PATH/operation/fs_fcntl.c",
+            "$NUTTX_VFS_PATH/operation/fs_initialize.c",
+            "$NUTTX_VFS_PATH/operation/fs_lseek.c",
+            "$NUTTX_VFS_PATH/operation/fs_mkdir.c",
+            "$NUTTX_VFS_PATH/operation/fs_pread.c",
+            "$NUTTX_VFS_PATH/operation/fs_pwrite.c",
+            "$NUTTX_VFS_PATH/operation/fs_read.c",
+            "$NUTTX_VFS_PATH/operation/fs_rename.c",
+            "$NUTTX_VFS_PATH/operation/fs_stat.c",
+            "$NUTTX_VFS_PATH/operation/fs_truncate.c",
+            "$NUTTX_VFS_PATH/operation/fs_unlink.c",
+            "$NUTTX_VFS_PATH/operation/fs_dup2.c",
+            "$NUTTX_VFS_PATH/operation/fs_fsync.c",
+            "$NUTTX_VFS_PATH/operation/fs_ioctl.c",
+            "$NUTTX_VFS_PATH/operation/fs_lseek64.c",
+            "$NUTTX_VFS_PATH/operation/fs_open.c",
+            "$NUTTX_VFS_PATH/operation/fs_pread64.c",
+            "$NUTTX_VFS_PATH/operation/fs_pwrite64.c",
+            "$NUTTX_VFS_PATH/operation/fs_readv.c",
+            "$NUTTX_VFS_PATH/operation/fs_rmdir.c",
+            "$NUTTX_VFS_PATH/operation/fs_statfs.c",
+            "$NUTTX_VFS_PATH/operation/fs_truncate64.c",
+            "$NUTTX_VFS_PATH/operation/fs_write.c",
+
+            #$NUTTX_VFS_PATH/inode
+            "$NUTTX_VFS_PATH/inode/fs_files.c",
+            "$NUTTX_VFS_PATH/inode/fs_foreachinode.c",
+            "$NUTTX_VFS_PATH/inode/fs_inode.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodeaddref.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodefind.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodefree.c",
+            "$NUTTX_VFS_PATH/inode/fs_inoderelease.c",
+            "$NUTTX_VFS_PATH/inode/fs_inoderemove.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodereserve.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodesearch.c",
+            "$NUTTX_VFS_PATH/inode/fs_inodegetpath.c",
+
+            #$NUTTX_VFS_PATH/dirent
+            "$NUTTX_VFS_PATH/dirent/fs_closedir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_opendir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_readdir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_rewinddir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_seekdir.c",
+            "$NUTTX_VFS_PATH/dirent/fs_telldir.c",
+
+            #$NUTTX_VFS_PATH/mount
+            "$NUTTX_VFS_PATH/mount/fs_umount.c",
+            "$NUTTX_VFS_PATH/mount/fs_foreachmountpoint.c",
+
+            #$NUTTX_VFS_PATH/driver
+            "$NUTTX_VFS_PATH/driver/fs_blockproxy.c",
+            "$NUTTX_VFS_PATH/driver/fs_closeblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_findblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_findmtddriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_openblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_registerblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_registerdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_unregisterblockdriver.c",
+            "$NUTTX_VFS_PATH/driver/fs_unregisterdriver.c",
+        ]
+
+        if (!defined(LOSCFG_COMPILER_ICCARM)) {
+            if (defined(LOSCFG_COMPAT_LINUX)) {
+                #$NUTTX_VFS_PATH/poll
+                sources += ["$NUTTX_VFS_PATH/poll/fs_select.c"]
+            }
+        }
+
+        if (!defined(LOSCFG_COMPAT_LINUX)) {
+            sources -= ["operation/fs_poll.c"]
+        }
+
+        if (!defined(LOSCFG_FS_VFS_BLOCK_DEVICE)) {
+            sources -= ["$NUTTX_VFS_PATH/driver/fs_blockproxy.c"]
+        }
+
+        defines = ["__INCLUDE_STDINT_H"]
+        if (defined(LOSCFG_COMPILER_ICCARM)) {
+            cflags = ["--diag_suppress=Pe546,Pe029"]
+        }
+        include_dirs = LITEOS_GN_KSTATIC_INCLUDE
+        configs += [
+            ":private"
+        ]
+    }
+}
+
+config("private") {
+    include_dirs = [
+        "$LITEOSTOPDIR/fs/vfs/include",
+        "$LITEOSTOPDIR/fs/compat",
+        "$NUTTX_VFS_PATH/include",
+        "$LITEOSTOPDIR/compat/nuttx/include/nuttx",
+        "$LITEOSTOPDIR/kernel_lite/extended/include",
+        "$LITEOSTOPDIR/fs/vfs/include/disk",
+        "$LITEOSTOPDIR/fs/vfs/include/multi_partition",
+        "$RTOSLITETOPDIR/$open_source_path/musl/include"
+    ]
+}

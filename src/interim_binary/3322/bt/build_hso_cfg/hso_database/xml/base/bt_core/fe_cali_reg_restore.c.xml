@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[CALI] fe_cali_reg_restore_for_lowpower. rf_addr_offset=0x%X, save[0x%X] != curr[0x%X] @fe_cali_reg_restore.c(83),INFO" ID="0x8c38029d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[CALI] fe_cali_reg_restore_for_lowpower. modem_addr_offset=0x%X, save[0x%X] != curr[0x%X] @fe_cali_reg_restore.c(97),INFO" ID="0x8c38030d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[CALI] fe_cali_reg_restore_for_lowpower. pll_addr_offset=0x%X, save[0x%X] != curr[0x%X] @fe_cali_reg_restore.c(111),INFO" ID="0x8c38037d" />
+			</MSG_LOG>

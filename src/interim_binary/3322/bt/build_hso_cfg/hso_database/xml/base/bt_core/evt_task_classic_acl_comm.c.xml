@@ -1,0 +1,21 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]enable_tx_flow: con_hdl %d, tx_flow 0x%x @evt_task_classic_acl_comm.c(92),INFO" ID="0x894602e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]disable_tx_flow: con_hdl %d, txflow 0x%x @evt_task_classic_acl_comm.c(104),INFO" ID="0x89460345" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]set_lsto: con_hdl %d, lsto 0x%x @evt_task_classic_acl_comm.c(135),INFO" ID="0x8946043d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_ACL]enc_tx_check: con_hdl %d, opcode 0x%x, ext_opcode 0x%x @evt_task_classic_acl_comm.c(326),INFO" ID="0x89460a35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_init_common_env_ptr, env_ptr is null @evt_task_classic_acl_comm.c(753),ERROR" ID="0x8946178a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]acl_init: con_hdl %d, role 0x%x, last_sync_ts 0x%x, clk_off 0x%x @evt_task_classic_acl_comm.c(821),INFO" ID="0x894619ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_start, env_ptr is null @evt_task_classic_acl_comm.c(884),ERROR" ID="0x89461ba2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_ACL]start: es_insert_fail! con_hdl %d, timestamp 0x%x, limit 0x%x @evt_task_classic_acl_comm.c(912),ERROR" ID="0x89461c82" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]aes_rx_bypass: con_hdl %d, rx_ccmcnt 0x%x, then set 0x01 @evt_task_classic_acl_comm.c(934),INFO" ID="0x89461d35" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]aes_tx_bypass: con_hdl %d, last_tx_seqn 0x%x, bt_acl_lasttxseqn 0x%x, done %d @evt_task_classic_acl_comm.c(949),INFO" ID="0x89461dad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_ACL]rx_sync: con_hdl %d, old_clk_off=0x%x, old_delay_p=0x%x @evt_task_classic_acl_comm.c(1011),WARNING" ID="0x89461f9b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]frm_prog_disable: con_hdl %d, dis_reason 0x%x, last_sync_ts 0x%x, clock 0x%x @evt_task_classic_acl_comm.c(1245),INFO" ID="0x894626ed" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][bt_acl_int]abnormal cbk: con_hdl %d, timestamp 0x%x, time info 0x%x, diag info 0x%x @evt_task_classic_acl_comm.c(1309),WARNING" ID="0x894628eb" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][bt_acl_int]abnormal cbk diag: diag conf 0x%08x, value 0x%08x, abnormal count %d @evt_task_classic_acl_comm.c(1311),WARNING" ID="0x894628fb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]rx statistics: con_hdl: %d, 200 pkts, error %d, syncerr %d, seqn|mic|hec 0x%08x @evt_task_classic_acl_comm.c(1378),INFO" ID="0x89462b15" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_ACL]lm_switch_cmp after RSW FAIL, con_hdl %d, rsw_fail_clk=%d, curr_clock=%d @evt_task_classic_acl_comm.c(1400),WARNING" ID="0x89462bc3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]set_rx_bypass_flag: rx_ccmcnt 0x%x @evt_task_classic_acl_comm.c(1466),INFO" ID="0x89462dd5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]check_mic_err: con_hdl %d, rx_ccmcnt 0x%x @evt_task_classic_acl_comm.c(1502),INFO" ID="0x89462ef5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_stop_timeout, env_ptr is null @evt_task_classic_acl_comm.c(1537),ERROR" ID="0x8946300a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT ACL] evt_task_classic_acl_stop_timeout con_hdl %d, to %d @evt_task_classic_acl_comm.c(1547),INFO" ID="0x8946305d" />
+			</MSG_LOG>

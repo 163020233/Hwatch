@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="get link qos state failed, conn id is invalid. @sle_srv_trans_data.c(79),ERROR" ID="0xe8d8027a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="get link qos state failed, conn id %u is busy. @sle_srv_trans_data.c(90),ERROR" ID="0xe8d802d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="sle_recv_port_data port error, src_port = %u, dst_port = %u. @sle_srv_trans_data.c(104),ERROR" ID="0xe8d80342" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="pm_recv_td_data_cbk failed, length:%u @sle_srv_trans_data.c(124),ERROR" ID="0xe8d803e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pm_recv_td_data_cbk memcpy failed. @sle_srv_trans_data.c(128),ERROR" ID="0xe8d80402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @sle_srv_trans_data.c(147),INFO" ID="0xe8d8049d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle trans data manager init failed. @sle_srv_trans_data.c(162),ERROR" ID="0xe8d80512" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create port node alloc failed @sle_srv_trans_data.c(183),ERROR" ID="0xe8d805ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="stack gle send port data memcpy fail. @sle_srv_trans_data.c(231),ERROR" ID="0xe8d8073a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle send connectionless data = %u failed @sle_srv_trans_data.c(238),ERROR" ID="0xe8d80772" />
+			</MSG_LOG>

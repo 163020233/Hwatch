@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_wait.c(20),INFO" ID="0xa04e00a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_wait.c(26),INFO" ID="0xa04e00d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="EventInit fail! ret=%#x. @osal_wait.c(32),INFO" ID="0xa04e0105" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_wait.c(51),INFO" ID="0xa04e019d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_wait.c(80),INFO" ID="0xa04e0285" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_wait.c(129),INFO" ID="0xa04e040d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_wait.c(145),INFO" ID="0xa04e048d" />
+			</MSG_LOG>

@@ -1,0 +1,30 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_ble_acl_disc_without_terminate last_sync_timestamp(0x%x) reason(%d) @evt_task_ble_acl.c(229),INFO" ID="0x8858072d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_ACL] free empty_packet con_hdl 0x%x @evt_task_ble_acl.c(267),INFO" ID="0x8858085d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ICO]ico_need_send_stop_cmp: del cohdl=%d @evt_task_ble_acl.c(306),INFO" ID="0x88580995" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] sed_index 0x%x, llcp opcode 0x%x filter by enc @evt_task_ble_acl.c(623),INFO" ID="0x8858137d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[MIC ERROR] evt_task_ble_acl_recv_llcp recieve llcp 0x%02x during encryption change @evt_task_ble_acl.c(741),WARNING" ID="0x8858172b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgle]ble_acl_recv_llcp: opcode 0x%x, dst_fsm_id 0x%x @evt_task_ble_acl.c(752),INFO" ID="0x88581785" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP]evt_task_ble_acl_set_mic_trx_filter con_hdl 0x%x, tx 0x%x, rx 0x%x @evt_task_ble_acl.c(764),INFO" ID="0x885817e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_ble_acl_recv_llcp_isr memcpy fail! @evt_task_ble_acl.c(848),ERROR" ID="0x88581a82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TX SEG] acl tx buff is not enough! @evt_task_ble_acl.c(996),WARNING" ID="0x88581f23" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TX SEG] acl tx sd is not enough! @evt_task_ble_acl.c(1088),WARNING" ID="0x88582203" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_ACL] evt_task_ble_acl_add_empty_packet_to_prog con_hdl 0x%x @evt_task_ble_acl.c(1184),INFO" ID="0x88582505" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACL][RX]MSG_ALLOC_FAILED! @evt_task_ble_acl.c(1385),ERROR" ID="0x88582b4a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP]evt_task_ble_acl_recv_data_isr sed_id(%d) rxstat(0x%x) @evt_task_ble_acl.c(1411),INFO" ID="0x88582c1d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]evt_task_ble_acl_save_sync_time_info sed_index(%d)es_sn(%d) evt_counter(%d) @evt_task_ble_acl.c(1442),INFO" ID="0x88582d15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_ble_acl_save_sync_time_info establish sed_index(%d) @evt_task_ble_acl.c(1446),INFO" ID="0x88582d35" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]evt_task_ble_acl_init sed_index(%d), timestamp(0x%x)us_offset(%d)rx_win(%d) @evt_task_ble_acl.c(1557),INFO" ID="0x885830ad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]evt_task_ble_acl_config_es sed_index 0x%x, interval %d, anchor point 0x%x, delay %d @evt_task_ble_acl.c(1592),INFO" ID="0x885831c5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP]evt_task_ble_acl_config_es winoffset %d, win_size %d, current clk 0x%x @evt_task_ble_acl.c(1594),INFO" ID="0x885831d5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]evt_task_ble_acl_create_es_task sed_index 0x%x, interval %d, anchor point 0x%x, delay %d @evt_task_ble_acl.c(1628),INFO" ID="0x885832e5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP]evt_task_ble_acl_create_es_task winoffset %d, win_size %d, current clk 0x%x @evt_task_ble_acl.c(1630),INFO" ID="0x885832f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP]evt_task_ble_acl_create env exist, sed_index %d @evt_task_ble_acl.c(1644),ERROR" ID="0x88583362" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]evt_task_ble_acl_set_timeout:instant refresh sup_TO, con_hdl=0x%x to=%d last_sync_ts=0x%x cur_clk=0x%x @evt_task_ble_acl.c(1799),INFO" ID="0x8858383d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_ble_acl_update_active_tx_octets tx_phy %d, active_tx_octets %d @evt_task_ble_acl.c(1881),INFO" ID="0x88583acd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]evt_task_ble_acl_update_effective_data_length tx_octets(%d)tx_time(%d)rx_octets(%d)rx_time(%d) @evt_task_ble_acl.c(1901),INFO" ID="0x88583b6d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP]evt_task_ble_acl_update_active_tx_octets_before_len_req tx_octets %d, active_tx_octets %d @evt_task_ble_acl.c(1965),INFO" ID="0x88583d6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]:evt or evt-&gt;conn_env is null @evt_task_ble_acl.c(2074),INFO" ID="0x885840d5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_ble_acl_sched_next_per_time, roll_back=%d, current_ts=%d, ts=%d @evt_task_ble_acl.c(2193),INFO" ID="0x8858448d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_ble_acl_sched_next_per_time, nb_roll_back=%d, last_sync_counter=%d @evt_task_ble_acl.c(2198),INFO" ID="0x885844b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[WARN]ble_acl_elt_insert,dur_min[%d],ts[%d],asap_limit[%d],mode[%d] @evt_task_ble_acl.c(2242),INFO" ID="0x88584615" />
+			</MSG_LOG>

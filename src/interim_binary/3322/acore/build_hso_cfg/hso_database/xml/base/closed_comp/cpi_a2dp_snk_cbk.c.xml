@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @cpi_a2dp_snk_cbk.c(129),ERROR" ID="0xee6a040a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_snk_cbk.c(138),ERROR" ID="0xee6a0452" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_a2dp_snk_cbk.c(142),ERROR" ID="0xee6a0472" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_snk_cbk.c(166),ERROR" ID="0xee6a0532" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_a2dp_snk_cbk.c(170),ERROR" ID="0xee6a0552" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_snk_cbk.c(191),ERROR" ID="0xee6a05fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_a2dp_snk_cbk.c(195),ERROR" ID="0xee6a061a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_snk_cbk.c(223),ERROR" ID="0xee6a06fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_a2dp_snk_cbk.c(227),ERROR" ID="0xee6a071a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_a2dp_snk_cbk.c(232),ERROR" ID="0xee6a0742" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp snk cbk is exist,app_id=%d @cpi_a2dp_snk_cbk.c(273),ERROR" ID="0xee6a088a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_a2dp_snk_cbk.c(278),ERROR" ID="0xee6a08b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_a2dp_snk_cbk.c(283),ERROR" ID="0xee6a08da" />
+			</MSG_LOG>

@@ -1,0 +1,46 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] remove service instance inst_id:0x%x item_count:0x%x @ssf_ssaps.c(61),INFO" ID="0xefa601ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] create service instance inst_id:0x%x item_count:0x%x @ssf_ssaps.c(85),INFO" ID="0xefa602ad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] append service instance succ inst_id:0x%x item_count:0x%x @ssf_ssaps.c(104),INFO" ID="0xefa60345" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] add service fail server_id:0x%x  @ssf_ssaps.c(186),ERROR" ID="0xefa605d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] add property fail server_id:0x%x  @ssf_ssaps.c(207),ERROR" ID="0xefa6067a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] add descriptor fail server_id:0x%x  @ssf_ssaps.c(223),ERROR" ID="0xefa606fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] add method fail server_id:0x%x  @ssf_ssaps.c(244),ERROR" ID="0xefa607a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] add event fail server_id:0x%x  @ssf_ssaps.c(265),ERROR" ID="0xefa6084a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] add service proc fail server_id:0x%x  @ssf_ssaps.c(277),ERROR" ID="0xefa608aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] add item proc fail server_id:0x%x  @ssf_ssaps.c(297),ERROR" ID="0xefa6094a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] unregister server error, server_id:0x%x ret:0x%x @ssf_ssaps.c(309),ERROR" ID="0xefa609aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] send response fail device_id:0x%x invalid @ssf_ssaps.c(334),ERROR" ID="0xefa60a72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] send method response fail ret:0x%x @ssf_ssaps.c(340),ERROR" ID="0xefa60aa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] send method response fail device_id:0x%x invalid @ssf_ssaps.c(350),ERROR" ID="0xefa60af2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] send method response fail ret:0x%x @ssf_ssaps.c(356),ERROR" ID="0xefa60b22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] notify indicate fail device_id:0x%x invalid @ssf_ssaps.c(366),ERROR" ID="0xefa60b72" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] notify indicate fail can't used inst_id:0x%x item_id:0x%x to find handle @ssf_ssaps.c(374),ERROR" ID="0xefa60bb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] notify indicate fail ret:0x%x @ssf_ssaps.c(385),ERROR" ID="0xefa60c0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] event notify indicate fail device_id:0x%x invalid @ssf_ssaps.c(395),ERROR" ID="0xefa60c5a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] event notify indicate fail can't used inst_id:0x%x item_id:0x%x to find handle @ssf_ssaps.c(403),ERROR" ID="0xefa60c9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] event notify indicate fail ret:0x%x @ssf_ssaps.c(414),ERROR" ID="0xefa60cf2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] set info fail ret:0x%x @ssf_ssaps.c(426),ERROR" ID="0xefa60d52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] register server fail, param is null @ssf_ssaps.c(433),ERROR" ID="0xefa60d8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] register server error, ret:0x%x @ssf_ssaps.c(438),ERROR" ID="0xefa60db2" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSAP][S] register server, app_uuid:0x%x:0x%x:...:0x%x:0x%x server_id:0x%x @ssf_ssaps.c(442),INFO" ID="0xefa60dd5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] init fail, param is null @ssf_ssaps.c(453),ERROR" ID="0xefa60e2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] init ssap server, create instance fail @ssf_ssaps.c(458),ERROR" ID="0xefa60e52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] init ssap server, service add fail ret:0x%x @ssf_ssaps.c(464),ERROR" ID="0xefa60e82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] init ssap server, register func fail ret:0x%x @ssf_ssaps.c(470),ERROR" ID="0xefa60eb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] init ssap server, register method func fail ret:0x%x @ssf_ssaps.c(477),ERROR" ID="0xefa60eea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] init ssap server, start service fail ret:0x%x @ssf_ssaps.c(483),ERROR" ID="0xefa60f1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] init ssap server, append service inst fail ret:0x%x @ssf_ssaps.c(489),ERROR" ID="0xefa60f4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] init ssap server success inst_id:0x%x @ssf_ssaps.c(495),INFO" ID="0xefa60f7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] send response fail, param is null @ssf_ssaps.c(503),ERROR" ID="0xefa60fba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] send response malloc fail @ssf_ssaps.c(508),ERROR" ID="0xefa60fe2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] send response simple msg fail ret:0x%x @ssf_ssaps.c(522),ERROR" ID="0xefa61052" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] send method response fail, param is null @ssf_ssaps.c(531),ERROR" ID="0xefa6109a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] send method response malloc fail @ssf_ssaps.c(537),ERROR" ID="0xefa610ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] send method response simple msg fail ret:0x%x @ssf_ssaps.c(550),ERROR" ID="0xefa61132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] notify indicate fail, param is null @ssf_ssaps.c(559),ERROR" ID="0xefa6117a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] notify indicate malloc fail @ssf_ssaps.c(564),ERROR" ID="0xefa611a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] notify indicate simple msg fail ret:0x%x @ssf_ssaps.c(579),ERROR" ID="0xefa6121a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] event notify indicate fail, param is null @ssf_ssaps.c(588),ERROR" ID="0xefa61262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] event notify indicate malloc fail @ssf_ssaps.c(594),ERROR" ID="0xefa61292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] event notify indicate simple msg fail ret:0x%x @ssf_ssaps.c(609),ERROR" ID="0xefa6130a" />
+			</MSG_LOG>

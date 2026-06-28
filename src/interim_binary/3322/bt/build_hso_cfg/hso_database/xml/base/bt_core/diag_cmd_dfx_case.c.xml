@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="test_error_log. p1 = %d @diag_cmd_dfx_case.c(82),ERROR" ID="0xa0960292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="test_error_log1. p1 = %x @diag_cmd_dfx_case.c(83),ERROR" ID="0xa096029a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="test_warning_log p1 = %d @diag_cmd_dfx_case.c(84),WARNING" ID="0xa09602a3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="test_warning_log1 p1 = %d @diag_cmd_dfx_case.c(85),WARNING" ID="0xa09602ab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="test_info_log p1 = 0x%x @diag_cmd_dfx_case.c(86),INFO" ID="0xa09602b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="test_info_log1 p1 = 0x%x @diag_cmd_dfx_case.c(87),INFO" ID="0xa09602bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="test_debug_log p1 = %d @diag_cmd_dfx_case.c(88),DBG" ID="0xa09602c6" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="test_debug_log1 p1 = %d @diag_cmd_dfx_case.c(89),DBG" ID="0xa09602ce" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="test_transmit_host_call_back result = 0x%x usr_data = 0x%x @diag_cmd_dfx_case.c(216),ERROR" ID="0xa09606c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="test_transmit_device_call_back result = 0x%x usr_data = 0x%x @diag_cmd_dfx_case.c(224),ERROR" ID="0xa0960702" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="test_transmit_start_call_back channel_id = 0x%x usr_data = 0x%x @diag_cmd_dfx_case.c(232),ERROR" ID="0xa0960742" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="uapi_transmit_host_start ret = 0x%x @diag_cmd_dfx_case.c(260),ERROR" ID="0xa0960822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="uapi_transmit_host_stop. ret = 0x%x @diag_cmd_dfx_case.c(267),ERROR" ID="0xa096085a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="uapi_transmit_device_stop.  ret = 0x%x @diag_cmd_dfx_case.c(270),ERROR" ID="0xa0960872" />
+			</MSG_LOG>

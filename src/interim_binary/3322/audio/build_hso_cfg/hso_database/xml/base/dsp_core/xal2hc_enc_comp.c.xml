@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_enc_set_scatch_buffer Failed, Error Code: [0x%08X] @xal2hc_enc_comp.c(144),ERROR" ID="0x991a0482" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ha_l2hc_enc_set_version Failed, Error Code: [0x%08X] @xal2hc_enc_comp.c(170),ERROR" ID="0x991a0552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_enc_get_work_buffer_size Failed, Error Code: [0x%08X] @xal2hc_enc_comp.c(267),ERROR" ID="0x991a085a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_enc_set_work_buffer Failed, Error Code: [0x%08X] @xal2hc_enc_comp.c(281),ERROR" ID="0x991a08ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_enc_init Failed, Error Code: [0x%08X] @xal2hc_enc_comp.c(336),ERROR" ID="0x991a0a82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ha_l2hc_enc_init_set_work_buffer Failed, Error Code: [0x%08X] @xal2hc_enc_comp.c(342),ERROR" ID="0x991a0ab2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_enc_set_param Failed, Error Code: [0x%08X] @xal2hc_enc_comp.c(349),ERROR" ID="0x991a0aea" />
+			</MSG_LOG>

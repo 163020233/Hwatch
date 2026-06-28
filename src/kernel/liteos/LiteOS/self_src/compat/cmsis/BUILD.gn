@@ -1,0 +1,56 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("cmsis") {
+        include_dirs = ["$LITEOSTOPDIR/compat"]
+
+        sources = [
+            "kernel/cmsis_v1_liteos_kernel.c",
+            "kernel/cmsis_v2_liteos_kernel.c",
+            "user/cmsis_v1_liteos_user.c",
+            "user/cmsis_v2_liteos_user.c",
+        ]
+    }
+} else {
+    import("../../../build/gn/libstatic.gni")
+    static_library("libcmsis_user") {
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        configs += [
+            "$LITEOSTOPDIR/arch_s/riscv:public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        include_dirs = LITEOS_GN_USTATIC_INCLUDE
+        sources = [
+            "user/cmsis_v1_liteos_user.c",
+            "user/cmsis_v2_liteos_user.c",
+        ]
+    }
+
+    static_library("libcmsis_kernel") {
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        configs += [
+            "$LITEOSTOPDIR/arch_s/riscv:public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        include_dirs = LITEOS_GN_KSTATIC_INCLUDE
+        sources = [
+            "kernel/cmsis_v1_liteos_kernel.c",
+            "kernel/cmsis_v2_liteos_kernel.c",
+        ]
+    }
+}

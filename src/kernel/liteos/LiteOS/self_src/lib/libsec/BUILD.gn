@@ -1,0 +1,146 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+import("../../../build/gn/libstatic.gni")
+import("$root_out_dir/liteos_kconfig.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("sec") {
+        LIBC_SEC_DIR_PATH = "../../../platform/huawei_secure_c"
+        sources = [
+            "$LIBC_SEC_DIR_PATH/src/memcpy_s.c",
+            "$LIBC_SEC_DIR_PATH/src/memmove_s.c",
+            "$LIBC_SEC_DIR_PATH/src/memset_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strcpy_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strncpy_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strcat_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strncat_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strtok_s.c",
+            "$LIBC_SEC_DIR_PATH/src/snprintf_s.c",
+            "$LIBC_SEC_DIR_PATH/src/vsnprintf_s.c",
+            "$LIBC_SEC_DIR_PATH/src/secureprintoutput_a.c",
+        ]
+        if (defined(LOSCFG_LIB_FORMAT)) {
+            sources += [
+                "$LIBC_SEC_DIR_PATH/src/fscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/scanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/secureinput_w.c",
+                "$LIBC_SEC_DIR_PATH/src/swscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vsscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vwscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcsncat_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wmemcpy_s.c",
+                "$LIBC_SEC_DIR_PATH/src/fwscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/securecutil.c",
+                "$LIBC_SEC_DIR_PATH/src/sprintf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vfscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vswprintf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcscat_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcsncpy_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wmemmove_s.c",
+                "$LIBC_SEC_DIR_PATH/src/gets_s.c",
+                "$LIBC_SEC_DIR_PATH/src/secureinput_a.c",
+                "$LIBC_SEC_DIR_PATH/src/secureprintoutput_w.c",
+                "$LIBC_SEC_DIR_PATH/src/sscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/swprintf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vfwscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vsprintf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vswscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcscpy_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcstok_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wscanf_s.c",
+            ]
+        }
+        configs += [
+            ":private",
+        ]
+    }
+} else {
+    static_library("libsec") {
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+            ]
+        cflags_cc = cflags
+        asmflags = cflags
+
+        include_dirs = LITEOS_GN_KSTATIC_INCLUDE
+
+        LIBC_SEC_DIR_PATH = "../../../platform/huawei_secure_c"
+        sources = [
+            "$LIBC_SEC_DIR_PATH/src/memcpy_s.c",
+            "$LIBC_SEC_DIR_PATH/src/memmove_s.c",
+            "$LIBC_SEC_DIR_PATH/src/memset_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strcpy_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strncpy_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strcat_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strncat_s.c",
+            "$LIBC_SEC_DIR_PATH/src/strtok_s.c",
+            "$LIBC_SEC_DIR_PATH/src/snprintf_s.c",
+            "$LIBC_SEC_DIR_PATH/src/vsnprintf_s.c",
+            "$LIBC_SEC_DIR_PATH/src/secureprintoutput_a.c",
+        ]
+        if (defined(LOSCFG_LIB_FORMAT)) {
+            sources += [
+                "$LIBC_SEC_DIR_PATH/src/fscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/scanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/secureinput_w.c",
+                "$LIBC_SEC_DIR_PATH/src/swscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vsscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vwscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcsncat_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wmemcpy_s.c",
+                "$LIBC_SEC_DIR_PATH/src/fwscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/securecutil.c",
+                "$LIBC_SEC_DIR_PATH/src/sprintf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vfscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vswprintf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcscat_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcsncpy_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wmemmove_s.c",
+                "$LIBC_SEC_DIR_PATH/src/gets_s.c",
+                "$LIBC_SEC_DIR_PATH/src/secureinput_a.c",
+                "$LIBC_SEC_DIR_PATH/src/secureprintoutput_w.c",
+                "$LIBC_SEC_DIR_PATH/src/sscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/swprintf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vfwscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vsprintf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/vswscanf_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcscpy_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wcstok_s.c",
+                "$LIBC_SEC_DIR_PATH/src/wscanf_s.c",
+            ]
+        }
+        configs += [
+            ":private",
+            ":public",
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+    }
+}
+
+config("public") {
+    if (!defined(LOSCFG_LIB_FORMAT)) {
+        defines = [
+            "SECUREC_HAVE_WCTOMB=0",
+            "SECUREC_ENABLE_SPRINTF_FLOAT=0",
+        ]
+    }
+}
+config("private") {
+    cflags = []
+    defines = []
+    if (defined(LOSCFG_KERNEL_LMS)) {
+        if (!defined(LOSCFG_COMPILER_ICCARM)) {
+            import("${RTOSLITETOPDIR}/build/gn/lmsconfig.gni")
+            cflags += LMS_COPTS
+            defines += LMS_CMACRO
+        }
+    }
+}

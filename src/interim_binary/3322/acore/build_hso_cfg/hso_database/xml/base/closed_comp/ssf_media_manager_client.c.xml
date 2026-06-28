@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[SSF][MEDIA] enter media state. conn_id=%u, inst_id=%u, media_state=%u,status=%u @ssf_media_manager_client.c(33),INFO" ID="0xef92010d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][MEDIA] can not find device_id: %u, obj_num: %u by conn_id %u @ssf_media_manager_client.c(40),ERROR" ID="0xef920142" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MEDIA] unknown state %u @ssf_media_manager_client.c(63),ERROR" ID="0xef9201fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MEDIA] set media state failed. device_id: %u @ssf_media_manager_client.c(67),ERROR" ID="0xef92021a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][MEDIA] enter cp operation result. %u, %u, %u, result: %u, %u @ssf_media_manager_client.c(78),INFO" ID="0xef920275" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][MEDIA] saf_mcpc_read_media_state. conn_id=%u, inst_id=%u @ssf_media_manager_client.c(98),INFO" ID="0xef920315" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][MEDIA] Opt Request: obj = %u, opt_type = %u @ssf_media_manager_client.c(144),DBG" ID="0xef920486" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][MEDIA] Opt Request: can not find obj %u, err %u, device_num: %u @ssf_media_manager_client.c(150),ERROR" ID="0xef9204b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][MEDIA] Opt Request: conn_id %u, media_inst %u @ssf_media_manager_client.c(162),DBG" ID="0xef920516" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MEDIA] bs_sle_media_operate_request.Invalid opt_type @ssf_media_manager_client.c(175),ERROR" ID="0xef92057a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MEDIA] bs_sle_media_operate_request.malloc failed @ssf_media_manager_client.c(180),ERROR" ID="0xef9205a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][MEDIA] get device list failed %u, %u @ssf_media_manager_client.c(196),ERROR" ID="0xef920622" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MEDIA] get media state failed %u @ssf_media_manager_client.c(203),ERROR" ID="0xef92065a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][MEDIA] media_state %u, opt_type %u @ssf_media_manager_client.c(216),INFO" ID="0xef9206c5" />
+			</MSG_LOG>

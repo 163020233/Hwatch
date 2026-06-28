@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][role switch] create role switch idle fsm fail @lm_classic_acl_srv_role_switch_fsm.c(54),WARNING" ID="0x8a1201b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][role switch] create role switch desc fail @lm_classic_acl_srv_role_switch_fsm.c(60),WARNING" ID="0x8a1201e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][role switch] create role switch wait encryption stop fsm fail @lm_classic_acl_srv_role_switch_fsm.c(91),WARNING" ID="0x8a1202db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][role switch] create role switch desc fail @lm_classic_acl_srv_role_switch_fsm.c(97),WARNING" ID="0x8a12030b" />
+			</MSG_LOG>

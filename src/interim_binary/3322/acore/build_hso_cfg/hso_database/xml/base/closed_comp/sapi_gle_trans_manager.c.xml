@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="stack gle send data new fail. @sapi_gle_trans_manager.c(33),ERROR" ID="0xed8e010a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="stack gle send data new fail. @sapi_gle_trans_manager.c(44),INFO" ID="0xed8e0165" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="stack gle send data memcpy fail. @sapi_gle_trans_manager.c(51),INFO" ID="0xed8e019d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tcid_connect_req mem new failed @sapi_gle_trans_manager.c(77),ERROR" ID="0xed8e026a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle tm_signal_tcid_disconnect_req]param null @sapi_gle_trans_manager.c(100),ERROR" ID="0xed8e0322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tcid_reconfig_req mem new failed @sapi_gle_trans_manager.c(125),ERROR" ID="0xed8e03ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tcid_connect_rsp mem new failed @sapi_gle_trans_manager.c(151),ERROR" ID="0xed8e04ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="msg_id:%u not exist @sapi_gle_trans_manager.c(178),ERROR" ID="0xed8e0592" />
+			</MSG_LOG>

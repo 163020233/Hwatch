@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP]avdtp set configuration ind local_seid:%d set INUSE @avdtp_sep_ram.c(148),INFO" ID="0xeba804a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP][AVDTP_SUSPEND] STREAM_STATUS=%u @avdtp_sep_ram.c(233),WARNING" ID="0xeba8074b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVDTP][AVDTP_START] STREAM_STATUS=%u @avdtp_sep_ram.c(276),WARNING" ID="0xeba808a3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[AVDTP]stream size invalid: rtp_header_len: %u, data_len: %u @avdtp_sep_ram.c(480),ERROR" ID="0xeba80f02" />
+			</MSG_LOG>

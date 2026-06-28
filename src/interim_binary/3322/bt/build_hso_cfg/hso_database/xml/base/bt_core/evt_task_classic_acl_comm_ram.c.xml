@@ -1,0 +1,42 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]init_tx_desc: con_hdl:%d, TXNODE_ALLOC_FAILED! @evt_task_classic_acl_comm_ram.c(174),ERROR" ID="0x8b020572" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]prog_lmp_tx: lmp_desc is NULL, con_hdl %d @evt_task_classic_acl_comm_ram.c(282),WARNING" ID="0x8b0208d3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]tx_ack: con_hdl %d, data_type=%d @evt_task_classic_acl_comm_ram.c(437),ERROR" ID="0x8b020daa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL] tx done 0, con_hdl %d, type %d, buf_ptr 0x%x, hw_sw_index 0x%x @evt_task_classic_acl_comm_ram.c(444),WARNING" ID="0x8b020de3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL] tx done 0, con_hdl %d, length %d, type %d, hw_sw_index 0x%x @evt_task_classic_acl_comm_ram.c(500),WARNING" ID="0x8b020fa3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_send_flush_occurred_evt, env_ptr is null @evt_task_classic_acl_comm_ram.c(565),ERROR" ID="0x8b0211aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]evt_task_classic_acl_send_flush_occurred_evt, flush occurred con_hdl=%d @evt_task_classic_acl_comm_ram.c(569),INFO" ID="0x8b0211cd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]retrans_stat: con_hdl %d, retrans times:%d, cur_clock:0x%x, acl_state:%d @evt_task_classic_acl_comm_ram.c(780),INFO" ID="0x8b021865" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]fsm_create: env exist, con_hdl %d @evt_task_classic_acl_comm_ram.c(863),ERROR" ID="0x8b021afa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]check_timeout: con_hdl %d, ts 0x%x, last_sync_ts 0x%x, lsto 0x%x @evt_task_classic_acl_comm_ram.c(917),INFO" ID="0x8b021cad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[cancel_cbk] evt_task_classic_acl_cancel_cbk default @evt_task_classic_acl_comm_ram.c(987),INFO" ID="0x8b021edd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_rx_sync2, env_ptr is null @evt_task_classic_acl_comm_ram.c(1078),ERROR" ID="0x8b0221b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]mode_normal_resched acl lsto stop: con_hdl %d @evt_task_classic_acl_comm_ram.c(1392),WARNING" ID="0x8b022b83" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]retrans_stat:con_hdl %d, retrans times:%d, cur_clock:0x%x, acl_state:%d @evt_task_classic_acl_comm_ram.c(1415),WARNING" ID="0x8b022c3b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]mode_normal_resched last_sync_clk_off(0x%x)clk_off(0x%x)win_size(%d)anchor(0x%x) @evt_task_classic_acl_comm_ram.c(1429),WARNING" ID="0x8b022cab" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]start_cbk: con_hdl %d, flags 0x%x @evt_task_classic_acl_comm_ram.c(1582),WARNING" ID="0x8b023173" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]evt_cbk_end: rxpd wrong, con_hdl %d, sw_ind %d, offset sw 0x%x, hw 0x%x @evt_task_classic_acl_comm_ram.c(1677),WARNING" ID="0x8b02346b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]evt_cbk: con_hdl %d, nb_prog == 0 @evt_task_classic_acl_comm_ram.c(1695),ERROR" ID="0x8b0234fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]abnormal_cbk: con_hdl %d, nb_prog == 0 @evt_task_classic_acl_comm_ram.c(1766),ERROR" ID="0x8b023732" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ACL]slot_cbk: resched acl, con_hdl @evt_task_classic_acl_comm_ram.c(1807),WARNING" ID="0x8b02387b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_PCL]high_power_control, link=%d, is_sco=%d, power level=%d, cur_rssi=%d @evt_task_classic_acl_comm_ram.c(1872),INFO" ID="0x8b023a85" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_ACL]rx_pwr_ctrl_process, link %d, is_sco %d, power level %d @evt_task_classic_acl_comm_ram.c(1913),INFO" ID="0x8b023bcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ACL]recv_lmp_isr resume get @evt_task_classic_acl_comm_ram.c(1959),INFO" ID="0x8b023d3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ACL]resume ltaddr wrong @evt_task_classic_acl_comm_ram.c(1966),INFO" ID="0x8b023d75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ACL]resume discard ignore @evt_task_classic_acl_comm_ram.c(1973),INFO" ID="0x8b023dad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ACL]resume msg send @evt_task_classic_acl_comm_ram.c(1980),INFO" ID="0x8b023de5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_update_auth_pld_timer, env_ptr is null @evt_task_classic_acl_comm_ram.c(2099),ERROR" ID="0x8b02419a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_enc_remove_resume_lmp, env_ptr is null @evt_task_classic_acl_comm_ram.c(2114),ERROR" ID="0x8b024212" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]enc_remove_resume_lmp:: con_hdl:%u, waitack:%u @evt_task_classic_acl_comm_ram.c(2120),INFO" ID="0x8b024245" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]enc_remove_resume_lmp::not retrans, idx:%u, waitack:%u, txdone:%u, sw:%d @evt_task_classic_acl_comm_ram.c(2131),INFO" ID="0x8b02429d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]enc_remove_resume_lmp:: con_hdl:%u, not lmp continue @evt_task_classic_acl_comm_ram.c(2136),WARNING" ID="0x8b0242c3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]enc_remove_resume_lmp:: con_hdl:%u, opcode:0x%x, ext_opcode:0x%x, hw:%d @evt_task_classic_acl_comm_ram.c(2151),INFO" ID="0x8b02433d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]recv_acl_data_isr: MSG_ALLOC_FAILED! con_hdl %d, rx_length %d @evt_task_classic_acl_comm_ram.c(2188),ERROR" ID="0x8b024462" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]process_rx_content_isr: rxbuffer full! con_hdl:%d @evt_task_classic_acl_comm_ram.c(2233),ERROR" ID="0x8b0245ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]process_rx_desc_isr: conhdl %d, rx_status 0x%x @evt_task_classic_acl_comm_ram.c(2271),INFO" ID="0x8b0246fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]process_rx_desc_isr: con_hdl %d, rx_status HEC_WRONG @evt_task_classic_acl_comm_ram.c(2342),INFO" ID="0x8b024935" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] acl rx isr tws_rx_unpack_save @evt_task_classic_acl_comm_ram.c(2369),INFO" ID="0x8b024a0d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PCL]recv_data_isr, link %d, power level %d @evt_task_classic_acl_comm_ram.c(2421),INFO" ID="0x8b024bad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_get_detach_timeout, env_ptr is null @evt_task_classic_acl_comm_ram.c(2444),ERROR" ID="0x8b024c62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_get_detach_timeout, env_ptr is null @evt_task_classic_acl_comm_ram.c(2471),ERROR" ID="0x8b024d3a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ACL]env_deinit: sed_id %d, sed_type 0x%x @evt_task_classic_acl_comm_ram.c(2511),INFO" ID="0x8b024e7d" />
+			</MSG_LOG>

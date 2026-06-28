@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp] nullptr error. link_id=%d. @evt_task_classic_dsp_interface.c(62),ERROR" ID="0x8a7c01f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[tog]sco first tog clock=0x%x @evt_task_classic_dsp_interface.c(91),INFO" ID="0x8a7c02dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]sco not support coding_format=%d @evt_task_classic_dsp_interface.c(138),WARNING" ID="0x8a7c0453" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]sco send dsp voice info. interval=%d,coding_format=%d,sample_rate=%d. @evt_task_classic_dsp_interface.c(143),INFO" ID="0x8a7c047d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]evt_task_classic_send_dsp_music_info. cmd_id=%d, toggle_len=%d, packet_data_length=%d. @evt_task_classic_dsp_interface.c(161),INFO" ID="0x8a7c050d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp] error length:%d. @evt_task_classic_dsp_interface.c(177),ERROR" ID="0x8a7c058a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_classic_get_audio_from_dsp invalid g_sco_link_id @evt_task_classic_dsp_interface.c(198),INFO" ID="0x8a7c0635" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dts_uapi_adp_acquire failed. @evt_task_classic_dsp_interface.c(204),INFO" ID="0x8a7c0665" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tog]ld_sco_get_rx_embuffer double sco drop data @evt_task_classic_dsp_interface.c(263),INFO" ID="0x8a7c083d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]invalid sco link id=%d @evt_task_classic_dsp_interface.c(313),WARNING" ID="0x8a7c09cb" />
+			</MSG_LOG>

@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[HP] highpower_test_mode_switch, mode=%d, type=%d, link_id=%d, en=%d @high_power.c(120),INFO" ID="0x8bf603c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HP] highpower_test_mode_switch, en=%d, but suspended! @high_power.c(123),WARNING" ID="0x8bf603db" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[COM][BT_PCL]highpower_link_set_allow_switch, mode=%d, type=%d, link_id=%d, en=%d @high_power.c(174),INFO" ID="0x8bf60575" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[COM][BT_PCL]highpower_link_set_allow_switch: MSG_CLASSIC_ACL_PCL_AUTO_DEC_IND @high_power.c(189),INFO" ID="0x8bf605ed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[COM][BT_PCL]highpower_link_get_allow_switch, mode=%d, type=%d, link_id=%d @high_power.c(200),INFO" ID="0x8bf60645" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[COM][BT_PCL]highpower_link_set_active_switch, mode=%d, type=%d, link_id=%d, en=%d @high_power.c(209),INFO" ID="0x8bf6068d" />
+			</MSG_LOG>

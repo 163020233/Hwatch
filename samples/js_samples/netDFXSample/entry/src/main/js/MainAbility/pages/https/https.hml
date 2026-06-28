@@ -1,0 +1,121 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Get128B">
+            <text class="todo-title">Get128B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Get400B">
+            <text class="todo-title">Get400B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Get1KB">
+            <text class="todo-title">Get1KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Get4KB">
+            <text class="todo-title">Get4KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Get16KB">
+            <text class="todo-title">Get16KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Get64KB">
+            <text class="todo-title">Get64KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Put128B">
+            <text class="todo-title">Put128B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Put400B">
+            <text class="todo-title">Put400B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Put1KB">
+            <text class="todo-title">Put1KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Put4KB">
+            <text class="todo-title">Put4KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Put16KB">
+            <text class="todo-title">Put16KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Put64KB">
+            <text class="todo-title">Put64KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Post128B">
+            <text class="todo-title">Post128B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Post400B">
+            <text class="todo-title">Post400B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Post1KB">
+            <text class="todo-title">Post1KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Post4KB">
+            <text class="todo-title">Post4KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Post16KB">
+            <text class="todo-title">Post16KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Post64KB">
+            <text class="todo-title">Post64KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Stream128B">
+            <text class="todo-title">Stream128B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Stream400B">
+            <text class="todo-title">Stream400B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Stream1KB">
+            <text class="todo-title">Stream1KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Stream4KB">
+            <text class="todo-title">Stream4KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Stream16KB">
+            <text class="todo-title">Stream16KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Stream64KB">
+            <text class="todo-title">Stream64KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Download128B">
+            <text class="todo-title">Download128B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Upload128B">
+            <text class="todo-title">Upload128B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Download400B">
+            <text class="todo-title">Download400B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Upload400B">
+            <text class="todo-title">Upload400B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Download1KB">
+            <text class="todo-title">Download1KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Upload1KB">
+            <text class="todo-title">Upload1KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Download4KB">
+            <text class="todo-title">Download4KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Upload4KB">
+            <text class="todo-title">Upload4KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Download16KB">
+            <text class="todo-title">Download16KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Upload16KB">
+            <text class="todo-title">Upload16KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Download64KB">
+            <text class="todo-title">Download64KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Upload64KB">
+            <text class="todo-title">Upload64KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="replaceWebsockets">
+            <text class="todo-title">websockets</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="replaceHttp">
+            <text class="todo-title">http</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="replaceWebsocket">
+            <text class="todo-title">websocket</text>
+        </list-item>
+    </list>
+</div>

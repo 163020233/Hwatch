@@ -1,0 +1,91 @@
+#===============================================================================
+# @brief    cmake make file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd.. 2023. All rights reserved.
+#===============================================================================
+set(AUTO_DEF_FILE_ID FALSE)
+if(${CHIP} MATCHES "bs20|bs21|bs21e|bs21a|bs22|bs26|bs27a")
+    set(BTH_ONETRACK TRUE)
+elseif(${CHIP} MATCHES "ws63")
+    set(BTH_ONETRACK TRUE)
+else()
+    set(BTH_ONETRACK FALSE)
+endif()
+
+# 通过定义cmake变量和宏适配没有Kconfig项目
+include(KconfigAdapter.cmake)
+
+if(${CHIP} MATCHES "3322|socmn2|sw22")
+    if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bg_common" AND
+        IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bt" AND
+        IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/gle")
+        add_subdirectory_if_exist(bg_common)
+        add_subdirectory_if_exist(bt)
+        add_subdirectory_if_exist(gle)
+        add_subdirectory_if_exist(private/gle)
+    else()
+        include(${ROOT_DIR}/build/config/target_config/${_CHIP}/cmake/bth_L2.cmake)
+    endif()
+else()
+    add_subdirectory_if_exist(bg_common)
+    add_subdirectory_if_exist(bt)
+    add_subdirectory_if_exist(gle)
+    add_subdirectory_if_exist(private/gle)
+endif()
+
+add_subdirectory_if_exist(external)
+
+if(${CHIP} MATCHES "sw39|1a71e")
+    if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/sle_audio/CMakeLists.txt)
+        add_subdirectory(sle_audio)
+    else() # 有sle_host权限，但没有sle_audio权限时编译库文件
+        set(COMPONENT_NAME "bth_saf")
+        set(LIBS ${BIN_DIR}/${CHIP}/libs/bluetooth/sleh/${TARGET_COMMAND}/libbth_saf.a)
+        set(WHOLE_LINK true)
+        build_component()
+        install_sdk(${BIN_DIR}/${CHIP}/libs/bluetooth/sleh/${TARGET_COMMAND} "*.a")
+    endif()
+elseif(${CHIP} MATCHES "sw21|socmn2|sw22|3322")
+    if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/sle_audio/CMakeLists.txt)
+        add_subdirectory(sle_audio)
+    else() # 有sle_host权限，但没有sle_audio权限时编译库文件
+        set(COMPONENT_NAME "bth_saf")
+        set(LIBS ${BIN_DIR}/${CHIP}/libs/bluetooth/bth/${TARGET_COMMAND}/libbth_saf.a)
+        set(WHOLE_LINK true)
+        build_component()
+        install_sdk(${BIN_DIR}/${CHIP}/libs/bluetooth/bth/${TARGET_COMMAND} "*.a")
+    endif()
+endif()
+
+if(${CHIP} MATCHES "sw39|1a71e")
+    if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/private/sle_audio/CMakeLists.txt)
+        add_subdirectory_if_exist(private/sle_audio)
+    else() # 有sle_host权限，但没有private/sle_audio权限时编译库文件
+        set(COMPONENT_NAME "bth_saf_private")
+        set(LIBS ${BIN_DIR}/${CHIP}/libs/bluetooth/sleh/${TARGET_COMMAND}/libbth_saf_private.a)
+        set(WHOLE_LINK true)
+        build_component()
+        install_sdk(${BIN_DIR}/${CHIP}/libs/bluetooth/sleh/${TARGET_COMMAND} "*.a")
+    endif()
+elseif(${CHIP} MATCHES "sw21|socmn2|sw22|3322")
+    if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/private/sle_audio/CMakeLists.txt)
+        add_subdirectory_if_exist(private/sle_audio)
+    else() # 有sle_host权限，但没有private/sle_audio权限时编译库文件
+        set(COMPONENT_NAME "bth_saf_private")
+        set(LIBS ${BIN_DIR}/${CHIP}/libs/bluetooth/bth/${TARGET_COMMAND}/libbth_saf_private.a)
+        set(WHOLE_LINK true)
+        build_component()
+        install_sdk(${BIN_DIR}/${CHIP}/libs/bluetooth/bth/${TARGET_COMMAND} "*.a")
+    endif()
+endif()
+
+add_subdirectory_if_exist(include)
+if(${CHIP} MATCHES "3322|socmn2")
+    if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/service/CMakeLists.txt)
+        add_subdirectory_if_exist(service)
+    elseif (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/service/sle_service/CMakeLists.txt)
+        add_subdirectory_if_exist(service/sle_service)
+        include(${ROOT_DIR}/build/config/target_config/${_CHIP}/cmake/bth_L3_sle_service.cmake)
+    else()
+        include(${ROOT_DIR}/build/config/target_config/${_CHIP}/cmake/bth_L3.cmake)
+    endif()
+endif()

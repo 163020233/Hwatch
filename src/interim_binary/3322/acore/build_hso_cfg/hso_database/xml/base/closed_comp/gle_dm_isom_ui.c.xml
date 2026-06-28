@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[ISO] gle iso create group group_id:%u conn_type:%u conn_role:%u member_num:%u @gle_dm_isom_ui.c(150),INFO" ID="0xee1204b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] gle iso create group group_node:0x%x @gle_dm_isom_ui.c(176),INFO" ID="0xee120585" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] gle iso add member fail, group_node:0x%x @gle_dm_isom_ui.c(184),INFO" ID="0xee1205c5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] gle iso add member member_hdl:%u, conn_id:%u member_cnt:%u @gle_dm_isom_ui.c(189),INFO" ID="0xee1205ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] gle iso add member group_node:0x%x, member_node:0x%x @gle_dm_isom_ui.c(196),INFO" ID="0xee120625" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] gle iso update group node fail, group_node invalid @gle_dm_isom_ui.c(204),INFO" ID="0xee120665" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] clear member_node with group_node:0x%x member_hdl:0x%x member_cnt:0x%x @gle_dm_isom_ui.c(253),INFO" ID="0xee1207ed" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] err clear iso info with conn_id, group_info:0x%x, conn_id:0x%x, conn_role:0x%x, group_id:0x%x, member_id:0x%x, member_hdl:0x%x, @gle_dm_isom_ui.c(286),ERROR" ID="0xee1208f2" />
+			</MSG_LOG>

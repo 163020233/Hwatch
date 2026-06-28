@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] client register fail, callback is null! @saf_cdsm_client.c(50),ERROR" ID="0xe9f40192" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] client already register! @saf_cdsm_client.c(54),ERROR" ID="0xe9f401b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsmc] cdsm client init fail!:%u @saf_cdsm_client.c(59),ERROR" ID="0xe9f401da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] client not register! @saf_cdsm_client.c(73),ERROR" ID="0xe9f4024a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] read property value, state unregistered @saf_cdsm_client.c(96),ERROR" ID="0xe9f40302" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsmc] client not register! @saf_cdsm_client.c(167),ERROR" ID="0xe9f4053a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][cdsmc] btsrv_msg handle, msg id: %x @saf_cdsm_client.c(235),INFO" ID="0xe9f4075d" />
+			</MSG_LOG>

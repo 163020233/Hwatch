@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[HCI]hci link remove send pendding data, slot = %u, sending_num = %u @hci_link.c(107),INFO" ID="0xead4035d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci create link error @hci_link.c(167),ERROR" ID="0xead4053a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]bt_onetrack not support HCI_OPS_HOST_NUMBER_OF_COMPLETED_PACKETS @hci_link.c(383),WARNING" ID="0xead40bfb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HCI][DISC_COMPLETE] STATUS=0x%x, REASON=0x%x, CONN_HANDLE=0x%x, LINK_TYPE=0x%x @hci_link.c(701),INFO" ID="0xead415ed" />
+			</MSG_LOG>

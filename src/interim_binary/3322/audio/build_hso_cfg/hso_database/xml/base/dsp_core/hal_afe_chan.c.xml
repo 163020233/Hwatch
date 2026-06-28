@@ -1,0 +1,56 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[hifi]rate=%u, srcdn_mode=0x%x @hal_afe_chan.c(156),INFO" ID="0x989804e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]rate=%u, srcdn_en=0x%x @hal_afe_chan.c(168),INFO" ID="0x98980545" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]rate=%u, fs_sel=0x%x @hal_afe_chan.c(250),INFO" ID="0x989807d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]din_sel = %u @hal_afe_chan.c(269),INFO" ID="0x9898086d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]dsp_freq_hz=%u, irq_opera_cost=%u. @hal_afe_chan.c(371),INFO" ID="0x98980b9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]toggle stopped or timeout. @hal_afe_chan.c(422),INFO" ID="0x98980d35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]timeout!!! @hal_afe_chan.c(427),ERROR" ID="0x98980d5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]double_ear_sync not start. @hal_afe_chan.c(460),INFO" ID="0x98980e65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]toggle_clk_cnt less than %u(us)!!! @hal_afe_chan.c(467),ERROR" ID="0x98980e9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]fs_sel not 16k or 32k. @hal_afe_chan.c(558),INFO" ID="0x98981175" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]wait wr aempty fail, fifo_aempty_th:%d!!! @hal_afe_chan.c(583),ERROR" ID="0x9898123a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]mic_fifo_id:%u, fs_sel:%u!!! @hal_afe_chan.c(601),ERROR" ID="0x989812ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]irq_set ccount:%u. @hal_afe_chan.c(611),INFO" ID="0x9898131d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]total ccount:%u. @hal_afe_chan.c(612),INFO" ID="0x98981325" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(844),INFO" ID="0x98981a65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]chan_sel = 0x%08X @hal_afe_chan.c(846),INFO" ID="0x98981a75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ch_sel_msk = 0x%08X @hal_afe_chan.c(859),INFO" ID="0x98981add" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(870),INFO" ID="0x98981b35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call afe_get_pga_gain Failed, Error Code: [0x%08X] @hal_afe_chan.c(874),ERROR" ID="0x98981b52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][set dn_pga_gain] pga_id out of range [0-%d] @hal_afe_chan.c(989),INFO" ID="0x98981eed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call afe_get_pga_gain Failed, Error Code: [0x%08X] @hal_afe_chan.c(995),ERROR" ID="0x98981f1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][set dout_mixer_gain] pga_id out of range [0-%d] @hal_afe_chan.c(1031),INFO" ID="0x9898203d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][set dout_mixer_gain] pga_id out of range [0-%d] @hal_afe_chan.c(1036),INFO" ID="0x98982065" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call afe_get_pga_gain Failed, Error Code: [0x%08X] @hal_afe_chan.c(1042),ERROR" ID="0x98982092" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1077),INFO" ID="0x989821ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @hal_afe_chan.c(1083),INFO" ID="0x989821dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1099),INFO" ID="0x9898225d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @hal_afe_chan.c(1107),INFO" ID="0x9898229d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1112),INFO" ID="0x989822c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @hal_afe_chan.c(1118),INFO" ID="0x989822f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1148),INFO" ID="0x989823e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]pilot sdm tx regs cfged @hal_afe_chan.c(1154),INFO" ID="0x98982415" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1159),INFO" ID="0x9898243d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]codec&amp;pilot sdm regs cfged @hal_afe_chan.c(1166),INFO" ID="0x98982475" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1358),INFO" ID="0x98982a75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @hal_afe_chan.c(1364),INFO" ID="0x98982aa5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1372),INFO" ID="0x98982ae5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_sys_init Failed, Error Code: [0x%08X] @hal_afe_chan.c(1381),ERROR" ID="0x98982b2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1402),INFO" ID="0x98982bd5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]rx_type = %u @hal_afe_chan.c(1425),ERROR" ID="0x98982c8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]channels = %u @hal_afe_chan.c(1426),ERROR" ID="0x98982c92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]channels = 0x%08X @hal_afe_chan.c(1430),INFO" ID="0x98982cb5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]*chan_sel = 0x%08X @hal_afe_chan.c(1448),INFO" ID="0x98982d45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1481),INFO" ID="0x98982e4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1522),INFO" ID="0x98982f95" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_common_init Failed, Error Code: [0x%08X] @hal_afe_chan.c(1526),ERROR" ID="0x98982fb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]tst_cdc_sdm_up_cfg @hal_afe_chan.c(1534),INFO" ID="0x98982ff5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1607),INFO" ID="0x9898323d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_common_init Failed, Error Code: [0x%08X] @hal_afe_chan.c(1611),ERROR" ID="0x9898325a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1674),INFO" ID="0x98983455" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_common_init Failed, Error Code: [0x%08X] @hal_afe_chan.c(1678),ERROR" ID="0x98983472" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ao_port = 0x%08X @hal_afe_chan.c(1767),ERROR" ID="0x9898373a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1795),INFO" ID="0x9898381d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_afe_common_init Failed, Error Code: [0x%08X] @hal_afe_chan.c(1799),ERROR" ID="0x9898383a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_chan.c(1847),INFO" ID="0x989839bd" />
+			</MSG_LOG>

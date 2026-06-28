@@ -1,0 +1,37 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+#===============================================================================
+config DRIVER_SUPPORT_LITEOS
+    bool
+    prompt "Use LiteOS"
+    default y
+    help
+        This option means support LiteOS.
+
+if DRIVER_SUPPORT_LITEOS
+    osource "kernel/liteos/Kconfig"
+endif
+
+menu "osal"
+    comment "Config osal."
+    osource "kernel/osal/Kconfig"
+endmenu
+
+menu "nonos"
+    comment "Config nonos."
+    osource "kernel/non_os/Kconfig"
+endmenu
+
+config DRIVER_SUPPORT_SELITEOS
+    bool
+    prompt "Use SELiteOS"
+    default n
+    help
+        This option means support SELiteOS.
+
+if DRIVER_SUPPORT_SELITEOS
+menu "seliteos"
+    osource "kernel/seliteos/Kconfig"
+endmenu
+endif

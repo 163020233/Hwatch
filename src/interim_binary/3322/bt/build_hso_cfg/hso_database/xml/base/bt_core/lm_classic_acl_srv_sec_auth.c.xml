@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_sec_auth_h4_done memcpy error! @lm_classic_acl_srv_sec_auth.c(55),ERROR" ID="0x89e601ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_sec_auth_h5_done memcpy error! @lm_classic_acl_srv_sec_auth.c(87),ERROR" ID="0x89e602ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_sec_auth_init_auth_act:: get_stored_link_key @lm_classic_acl_srv_sec_auth.c(144),INFO" ID="0x89e60485" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_sec_auth_resp_auth_act:: get_stroed_link_key @lm_classic_acl_srv_sec_auth.c(171),INFO" ID="0x89e6055d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AUT]lm_classic_acl_sec_auth_rx_au_rand_denial_act:: error_code:[0x%x] @lm_classic_acl_srv_sec_auth.c(265),INFO" ID="0x89e6084d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_sec_auth_rx_au_rand_denial_act:: peripheral try to solve collison @lm_classic_acl_srv_sec_auth.c(268),INFO" ID="0x89e60865" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_sec_auth_exchanged_au_rand_act:: peripheral try to solve collison @lm_classic_acl_srv_sec_auth.c(307),INFO" ID="0x89e6099d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_sec_auth_solve_collison_act @lm_classic_acl_srv_sec_auth.c(342),INFO" ID="0x89e60ab5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_sec_auth_central_wait_h4_act :: peer central faster sres! @lm_classic_acl_srv_sec_auth.c(474),INFO" ID="0x89e60ed5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_sec_auth_central_wait_h5_act :: peer central faster sres! @lm_classic_acl_srv_sec_auth.c(522),INFO" ID="0x89e61055" />
+			</MSG_LOG>

@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_sys_standby_hci_create_c_frame_act, create fail @lm_gle_c_frame_act.c(64),INFO" ID="0x8bcc0205" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] lm_gle_sys_standby_hci_create_c_frame_act, create success syshdl:0x%x role:%d @lm_gle_c_frame_act.c(68),INFO" ID="0x8bcc0225" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_gle_sys_standby_hci_set_param_act intv(%d)clock_offset(%d)txpwr(%d)hw_sw_prio(0x%x) @lm_gle_c_frame_act.c(91),INFO" ID="0x8bcc02dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_sys_standby_hci_set_param_act duration(%d)skip(%d)format_phy_pilot_mcs(0x%x) @lm_gle_c_frame_act.c(94),INFO" ID="0x8bcc02f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] lm_gle_c_frame_standby_hci_enable_act, handle:%d, enable:%d @lm_gle_c_frame_act.c(116),INFO" ID="0x8bcc03a5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp] lm_gle_sys_ready_hci_enable_act, handle:%d, enable:%d, duration:%d, intv:%d @lm_gle_c_frame_act.c(162),INFO" ID="0x8bcc0515" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_sys_working_start_received_act, t start succ @lm_gle_c_frame_act.c(175),INFO" ID="0x8bcc057d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_sys_ready_start_received_act, t start fail @lm_gle_c_frame_act.c(189),INFO" ID="0x8bcc05ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_sys_ready_start_received_act, t start succ @lm_gle_c_frame_act.c(192),INFO" ID="0x8bcc0605" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_sys_ready_start_received_act, enter @lm_gle_c_frame_act.c(196),INFO" ID="0x8bcc0625" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] lm_gle_sys_working_hci_enable_act, sys_handle:%d, enable:%d @lm_gle_c_frame_act.c(228),INFO" ID="0x8bcc0725" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_sys_working_hci_enable_act, c_frame enabled already @lm_gle_c_frame_act.c(230),INFO" ID="0x8bcc0735" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] lm_gle_sys_standby_hci_set_ae_scan_enable_act, enable:%d, policy:%d @lm_gle_c_frame_act.c(302),INFO" ID="0x8bcc0975" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp] lm_gle_sys_standby_hci_set_ae_scan_enable_act,addr_type(%d)addr %02x:*:*:*:%02x:%02x) @lm_gle_c_frame_act.c(305),INFO" ID="0x8bcc098d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp] lm_gle_sys_standby_hci_set_ae_enable_act, enable:%d, status:%d, adv_hdl:%d @lm_gle_c_frame_act.c(331),INFO" ID="0x8bcc0a5d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] lm_gle_sys_hci_set_prio_act, prio set ok, sw:%d, hw:%d @lm_gle_c_frame_act.c(425),INFO" ID="0x8bcc0d4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_sys_idle_hci_set_prio_act, child node is null! @lm_gle_c_frame_act.c(432),WARNING" ID="0x8bcc0d83" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] lm_gle_sys_hci_set_prio_act, child prio set ok, sw:%d, hw:%d @lm_gle_c_frame_act.c(439),INFO" ID="0x8bcc0dbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_reset_disable_c_frame_act, resource not found @lm_gle_c_frame_act.c(469),WARNING" ID="0x8bcc0eab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_reset_disable_c_frame_act, disable c frame @lm_gle_c_frame_act.c(472),INFO" ID="0x8bcc0ec5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_reset_c_frame_pardon_act, c frame is stopping, invalid command ! @lm_gle_c_frame_act.c(507),WARNING" ID="0x8bcc0fdb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]clk past(%d), calc new group_start_time:0x%x @lm_gle_c_frame_act.c(636),INFO" ID="0x8bcc13e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_hci_c_frame_start_acb_end_act, env is null! @lm_gle_c_frame_act.c(701),WARNING" ID="0x8bcc15eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_hci_c_frame_start_acb_req_act, acb start @lm_gle_c_frame_act.c(726),WARNING" ID="0x8bcc16b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_gle_hci_c_frame_cancel_acb_act, env is null! @lm_gle_c_frame_act.c(743),WARNING" ID="0x8bcc173b" />
+			</MSG_LOG>

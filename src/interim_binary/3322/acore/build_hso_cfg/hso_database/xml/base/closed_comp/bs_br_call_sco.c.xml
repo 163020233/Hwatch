@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="br call sco param error @bs_br_call_sco.c(50),ERROR" ID="0xee860192" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br call sco connect error, result:0x%x hfp_role:%d @bs_br_call_sco.c(63),ERROR" ID="0xee8601fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call sco get addr is NULL, dev_id:%d @bs_br_call_sco.c(73),ERROR" ID="0xee86024a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call sco param error, dev_id:%d @bs_br_call_sco.c(79),ERROR" ID="0xee86027a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call sco malloc error @bs_br_call_sco.c(85),ERROR" ID="0xee8602aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call sco param error @bs_br_call_sco.c(106),ERROR" ID="0xee860352" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br call sco disconnect error, result:0x%x hfp_role:%d @bs_br_call_sco.c(120),ERROR" ID="0xee8603c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call sco get addr is NULL, dev_id:%d @bs_br_call_sco.c(129),ERROR" ID="0xee86040a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call sco param error, dev_id:%d @bs_br_call_sco.c(135),ERROR" ID="0xee86043a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call sco malloc error @bs_br_call_sco.c(141),ERROR" ID="0xee86046a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br call sco reply error, result:0x%x is_accept:%d @bs_br_call_sco.c(161),ERROR" ID="0xee86050a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call sco get addr is NULL, dev_id:%d @bs_br_call_sco.c(171),ERROR" ID="0xee86055a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call sco param error, dev_id:%d @bs_br_call_sco.c(177),ERROR" ID="0xee86058a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call sco malloc error @bs_br_call_sco.c(183),ERROR" ID="0xee8605ba" />
+			</MSG_LOG>

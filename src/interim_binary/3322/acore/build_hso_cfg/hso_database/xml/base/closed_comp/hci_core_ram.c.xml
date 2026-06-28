@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[GAP]hci command error new memcpy failed, len=%d @hci_core_ram.c(181),ERROR" ID="0xeba205aa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[T%x][TIMEOUT] OPCODE=0x%x, TIMER=0x%x @hci_core_ram.c(1212),WARNING" ID="0xeba225e3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[TIMEOUT] OPCODE=0x%x, TIMER=0x%x @hci_core_ram.c(1215),WARNING" ID="0xeba225fb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[MEMCPY_FAILED]RecvDataBuff Memcpy fail @hci_core_ram.c(1465),ERROR" ID="0xeba22dca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[MEMCPY_FAILED]RecvDataBuff Memcpy fail @hci_core_ram.c(1484),ERROR" ID="0xeba22e62" />
+			</MSG_LOG>

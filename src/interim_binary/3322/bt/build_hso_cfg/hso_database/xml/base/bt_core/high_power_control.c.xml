@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[COM][BT_PCL]set_inc_highpower_mode, set_power_level %d @high_power_control.c(58),INFO" ID="0x8bf401d5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[COM][BT_PCL]set_inc_highpower_mode, con_hdl %d, set_power_level %d is not allowed @high_power_control.c(63),INFO" ID="0x8bf401fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[COM][BT_PCL]high_power_ctrl_set_dec_highpower_mode, set_power_level %d @high_power_control.c(78),INFO" ID="0x8bf40275" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]high_power_ctrl_link_set_active_mode: POWER fail!, cur_power_level = %d @high_power_control.c(98),ERROR" ID="0x8bf40312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[COM][BT_PCL]power_control_sync_sed_txpwr sed power level:bt-&gt;%d @high_power_control.c(188),INFO" ID="0x8bf405e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[COM][BT_PCL]power_control_sync_sed_txpwr sed power level:ble-&gt;%d @high_power_control.c(194),INFO" ID="0x8bf40615" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[COM][BT_PCL]power_control_sync_sed_txpwr, the current type is not supported/vaild. @high_power_control.c(197),INFO" ID="0x8bf4062d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[COM][BT_PCL]high_power_ctrl_link_set_test_mode: type=%d link=%d, pwr=%d @high_power_control.c(218),INFO" ID="0x8bf406d5" />
+			</MSG_LOG>

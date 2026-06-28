@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_delete_iog_desc iog_conhdl=%d @lm_gle_iog_fsm.c(56),INFO" ID="0x8b9601c5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_gle_iog_create_desc, iog_conhdl: %d, iog_hci_id: %d, idx: %d @lm_gle_iog_fsm.c(114),INFO" ID="0x8b960395" />
+			</MSG_LOG>

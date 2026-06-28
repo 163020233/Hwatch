@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]update_scenario: error:0x%x @evt_task_classic_acl_test_mode_ram.c(82),ERROR" ID="0x8b720292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]update_scenario:0x%x @evt_task_classic_acl_test_mode_ram.c(86),WARNING" ID="0x8b7202b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]test_mode_enter: wait other task finish, prog_task_num=%d @evt_task_classic_acl_test_mode_ram.c(103),WARNING" ID="0x8b72033b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]test_mode_enter: packet_type error 0x%x @evt_task_classic_acl_test_mode_ram.c(131),ERROR" ID="0x8b72041a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_TESTMODE]test_mode_enter: testmode en, link_type=0x%x, hopping_mode=0x%x @evt_task_classic_acl_test_mode_ram.c(139),WARNING" ID="0x8b72045b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]test_mode_enter: test buffer is NULL! @evt_task_classic_acl_test_mode_ram.c(141),ERROR" ID="0x8b72046a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_test_mode_start_act, env_ptr is null @evt_task_classic_acl_test_mode_ram.c(166),ERROR" ID="0x8b720532" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]test_mode_update: env is NULL! @evt_task_classic_acl_test_mode_ram.c(210),ERROR" ID="0x8b720692" />
+			</MSG_LOG>

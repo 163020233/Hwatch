@@ -1,0 +1,42 @@
+# Copyright (c) 2020-2021 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//test/xts/tools/lite/build/suite_lite.gni")
+
+# ohos begin
+# file_hal, Code normalization, LiteWearable product customization exemption xts
+xts_utils_file_hal_path = ""
+
+declare_args() {
+  xts_utils_file_hal_path = "//test/xts/acts/commonlibrary_lite/file_hal"
+}
+# ohos end
+
+hctest_suite("ActsUtilsFileTest") {
+  suite_name = "acts"
+  # ohos begin
+  # file_hal, Code normalization, LiteWearable product customization exemption xts
+  sources = [
+    "${xts_utils_file_hal_path}/src/utils_file_func_test.c",
+    "${xts_utils_file_hal_path}/src/utils_file_reli_test.c",
+  ]
+
+  include_dirs = [
+    "${xts_utils_file_hal_path}/src",
+    "//commonlibrary/utils_lite/include",
+  ]
+  # ohos end
+  if (board_toolchain_type != "iccarm") {
+    cflags = [ "-Wno-error" ]
+  }
+}

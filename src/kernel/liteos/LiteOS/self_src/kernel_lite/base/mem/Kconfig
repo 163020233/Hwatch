@@ -1,0 +1,121 @@
+menu "Memory Management"
+
+config LOSCFG_KERNEL_MEM_ALLOC
+    bool "Dynamic Memory Management"
+    default y
+
+if LOSCFG_KERNEL_MEM_ALLOC
+choice
+    prompt "Dynamic Memory Management Algorithm"
+    default LOSCFG_KERNEL_MEM_BESTFIT
+
+config LOSCFG_KERNEL_MEM_BESTFIT
+    bool "bestfit"
+    help
+      This option will change mem type as bestfit
+
+config LOSCFG_KERNEL_MEM_BESTFIT_LITTLE
+    bool "bestfit_little"
+    help
+      This option will change mem type as bestfit little
+endchoice
+
+config LOSCFG_KERNEL_MEM_SLAB_EXTENTION
+    bool "Enable Mem SLAB Extension"
+    default n
+    depends on LOSCFG_KERNEL_MEM_ALLOC
+
+config LOSCFG_KERNEL_MEM_SLAB_AUTO_EXPANSION_MODE
+    bool "Enable Mem SLAB Auto Expansion Mode"
+    default n
+    depends on LOSCFG_KERNEL_MEM_SLAB_EXTENTION
+
+config LOSCFG_MEM_TASK_STAT
+    bool "Enable Memory Task Usage Statistics"
+    default y
+    depends on LOSCFG_KERNEL_MEM_ALLOC
+    help
+      Answer Y to enable LiteOS support memory task statistics
+
+config LOSCFG_MEM_DFX_SHOW_CALLER_RA
+    bool "Enable Show where MemAlloc function is called"
+    default n
+    depends on LOSCFG_MEM_TASK_STAT
+    help
+      Answer Y to enable showing where MemAlloc and MemFree function is called
+      Help detect memory leaks and memory double free
+
+config LOSCFG_MEMFRAG_DFX_SHOW_INFO
+    bool "Enable Show where MEMFRAG function is called"
+    default n
+    help
+      Answer Y to enable Print memory fragmentation information
+
+config LOSCFG_MEM_DFX_DOUBLE_FREE_CHECK
+    bool "Enable check mem double free check by record function called address"
+    default n
+    depends on LOSCFG_KERNEL_MEM_ALLOC
+    help
+      Answer Y to enable showing where MemFree function is called
+      Help detect memory double free
+
+config LOSCFG_MEM_MUL_MODULE
+    bool "Enable Memory module statistics"
+    default n
+    depends on LOSCFG_KERNEL_MEM_BESTFIT
+    help
+      Answer Y to enable LiteOS support memory statistics depend on different module
+
+config LOSCFG_MEM_MODULE_MAX
+    int "Max Memory Module Number"
+    default 32
+    range 8 1024
+    depends on LOSCFG_MEM_MUL_MODULE
+    help
+      This represents the maximum number of Memory Module
+
+config LOSCFG_MEM_MUL_POOL
+    bool "Enable Memory multi-pool control"
+    default n
+    depends on LOSCFG_KERNEL_MEM_BESTFIT || LOSCFG_KERNEL_MEM_BESTFIT_LITTLE
+    help
+      Answer Y to enable LiteOS support memory multi-pool control
+
+config LOSCFG_MAX_POOL_NUM
+    int "Maximum Number of Memory Pools"
+    default 8
+    range 2 32
+    help
+      The free command can display the number of memory pools
+
+config LOSCFG_MEM_MUL_POOL_ALLOC
+      bool "Enable Memory multi-pool alloc"
+      default n
+      depends on LOSCFG_MEM_MUL_POOL && LOSCFG_KERNEL_MEM_BESTFIT && !LOSCFG_EXC_INTERACTION
+      help
+        Answer Y to enable LiteOS support memory multi-pool alloc
+endif
+
+config LOSCFG_KERNEL_MEMBOX
+    bool "Membox Management"
+    default y
+
+choice
+    prompt "Membox Management Algorithm"
+    default LOSCFG_KERNEL_MEMBOX_STATIC
+    depends on LOSCFG_KERNEL_MEMBOX
+
+config LOSCFG_KERNEL_MEMBOX_STATIC
+    bool "static memory"
+    help
+      This option will change membox implemented with input memory
+
+config LOSCFG_KERNEL_MEMBOX_DYNAMIC
+    bool "dynamic memory"
+    depends on LOSCFG_KERNEL_MEM_ALLOC
+    help
+      This option will change membox implemented with dynamic allocated memory
+
+endchoice
+
+endmenu

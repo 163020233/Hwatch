@@ -1,0 +1,17 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2026-2026. All rights reserved.
+#===============================================================================
+config PSA_SERVICE_SUPPORT
+    bool
+    prompt "PSA service support"
+    default y
+    help
+        This option means support PSA service.
+    depends on DRIVER_SUPPORT_SELITEOS
+
+if PSA_SERVICE_SUPPORT
+menu "psa service"
+    osource "kernel/seliteos/kernel/service/psa/Kconfig"
+endmenu
+endif

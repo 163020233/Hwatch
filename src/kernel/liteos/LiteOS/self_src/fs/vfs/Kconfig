@@ -1,0 +1,45 @@
+config LOSCFG_FS_VFS
+    bool "Enable VFS"
+    default y
+    select LOSCFG_FS_COMPAT_NUTTX
+    help
+      Answer Y to enable LiteOS support virtual filesystem.
+
+config LOSCFG_FS_EXC_OPERATION
+    bool
+    default n
+    depends on LOSCFG_FS_VFS && LOSCFG_FS_FAT
+    help
+      Answer Y to enable LiteOS support file or directory operations in exception context.
+
+config LOSCFG_FS_VFS_BLOCK_DEVICE
+    bool "Enable Block DEVICE"
+    default n
+    depends on LOSCFG_FS_VFS
+    select LOSCFG_DRIVER_DISK
+    help
+      Answer Y to enable LiteOS support read/open/seek/write block device.
+
+config LOSCFG_FS_FAT_FTL
+    bool "Enable Flash Translation Layer"
+    default n
+    depends on LOSCFG_DRIVERS_MTD && LOSCFG_FS_VFS
+    select LOSCFG_DRIVER_DISK
+    select LOSCFG_COMPAT_LINUX_CRC32
+    help
+      Answer Y to enable LiteOS flash translation layer.
+
+config LOSCFG_FS_FAT_FTL_COMPRESS
+    bool "Enable FTL Data Compress"
+    default y
+    depends on LOSCFG_FS_FAT_FTL
+    select LOSCFG_LIB_ZLIB
+    help
+      Answer Y to enable FTL support data compress on nor flash.
+
+config LOSCFG_FS_VFS_PERM
+    bool "Enable VFS Permission"
+    depends on LOSCFG_FS_VFS && LOSCFG_SAFETY_KERNEL
+    default n
+    help
+      This option is used to enable vfs permission.

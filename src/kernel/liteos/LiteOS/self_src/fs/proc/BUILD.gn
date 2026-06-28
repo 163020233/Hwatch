@@ -1,0 +1,57 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("proc") {
+        include_dirs = [
+            "$LITEOSTOPDIR//fs/proc/include"
+        ]
+
+        sources = [
+            "os_adapt/proc_init.c",
+            "os_adapt/vfs_proc.c",
+            "src/proc_shellcmd.c",
+            "src/seq_file.c",
+            "../../../open_source/freebsd/liteos/fs/proc/src/pseudofs.c",
+        ]
+        configs += [":private"]
+    }
+} else {
+    static_library("libproc") {
+        import("../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        include_dirs = [
+            "$LITEOSTOPDIR//fs/proc/include"
+        ]
+        include_dirs += LITEOS_GN_KSTATIC_INCLUDE
+        sources = [
+            "os_adapt/proc_init.c",
+            "os_adapt/vfs_proc.c",
+            "src/proc_shellcmd.c",
+            "src/seq_file.c",
+            "../../../open_source/freebsd/liteos/fs/proc/src/pseudofs.c",
+        ]
+        configs += [":private"]
+    }
+}
+config("private") {
+    cflags = []
+    if (!defined(LOSCFG_COMPILER_ICCARM)) {
+        cflags += [
+            "-Wno-sign-compare",
+        ]
+    }
+}

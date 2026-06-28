@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf apec register client fail, ret: 0x%x @saf_at_apec.c(72),ERROR" ID="0xe98a0242" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf apec discover fail, ret: 0x%x @saf_at_apec.c(84),ERROR" ID="0xe98a02a2" />
+			</MSG_LOG>

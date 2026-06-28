@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]local_name_get_fail @lm_classic_acl_srv_name_act.c(51),INFO" ID="0x8a2a019d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_msg_rem_name_req_act: create name_srv_fsm fail @lm_classic_acl_srv_name_act.c(109),INFO" ID="0x8a2a036d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_name_req_create_srv_act: during feature exchange  @lm_classic_acl_srv_name_act.c(149),INFO" ID="0x8a2a04ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_name_req_create_srv_act: existed name_srv_fsm @lm_classic_acl_srv_name_act.c(156),INFO" ID="0x8a2a04e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_rem_name_req_cancel_cmd_act: temp_con_cancel @lm_classic_acl_srv_name_act.c(189),INFO" ID="0x8a2a05ed" />
+			</MSG_LOG>

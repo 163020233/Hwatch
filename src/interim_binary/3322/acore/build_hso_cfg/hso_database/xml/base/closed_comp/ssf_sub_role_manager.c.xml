@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[SSF][MANAGER] sub role switch failed, func_id=%d, err=%d @ssf_sub_role_manager.c(38),ERROR" ID="0xefb00132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MANAGER] register sub role callback invalid param @ssf_sub_role_manager.c(78),ERROR" ID="0xefb00272" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MANAGER] unregister sub role callback. func_id: %u @ssf_sub_role_manager.c(93),INFO" ID="0xefb002ed" />
+			</MSG_LOG>

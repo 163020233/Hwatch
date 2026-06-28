@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;bit_depth = %u @xapcm_dec_comp.c(153),ERROR" ID="0x992404ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xapcm_dec_comp.c(162),ERROR" ID="0x99240512" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xapcm_dec_comp.c(168),ERROR" ID="0x99240542" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][adec][pcm dec] private data = %p %u @xapcm_dec_comp.c(191),WARNING" ID="0x992405fb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][adec][pcm dec] input bit depth: %u, output bit depth: %u @xapcm_dec_comp.c(203),WARNING" ID="0x9924065b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call pcm_dec_bit_depth_convert Failed, Error Code: [0x%08X] @xapcm_dec_comp.c(406),ERROR" ID="0x99240cb2" />
+			</MSG_LOG>

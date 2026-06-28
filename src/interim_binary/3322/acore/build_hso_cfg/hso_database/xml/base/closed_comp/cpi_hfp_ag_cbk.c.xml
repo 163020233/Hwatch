@@ -1,0 +1,87 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @cpi_hfp_ag_cbk.c(96),WARNING" ID="0xee780303" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag server start confirm, hfp_server_hdl:%p. @cpi_hfp_ag_cbk.c(108),INFO" ID="0xee780365" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(117),ERROR" ID="0xee7803aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(121),ERROR" ID="0xee7803ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(128),ERROR" ID="0xee780402" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(137),ERROR" ID="0xee78044a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(141),ERROR" ID="0xee78046a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(148),ERROR" ID="0xee7804a2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="connect confirm not found connection node, hdl:%p addr:0x%02x:*:*:*:%02x:%02x. @cpi_hfp_ag_cbk.c(162),ERROR" ID="0xee780512" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="connect indication malloc fail. @cpi_hfp_ag_cbk.c(179),ERROR" ID="0xee78059a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="connect indication memcpy fail. @cpi_hfp_ag_cbk.c(184),ERROR" ID="0xee7805c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="HFP AG disconnect complete reason:%d @cpi_hfp_ag_cbk.c(198),INFO" ID="0xee780635" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp ag disable device fail, addr is not present. @cpi_hfp_ag_cbk.c(201),ERROR" ID="0xee78064a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Connection node not found handle: %p @cpi_hfp_ag_cbk.c(215),INFO" ID="0xee7806bd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="Connection node not found Addr:0x%02x:*:*:*:%02x:%02x! @cpi_hfp_ag_cbk.c(219),ERROR" ID="0xee7806da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Connection node not found handle: %p @cpi_hfp_ag_cbk.c(236),INFO" ID="0xee780765" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp ag disable device fail, addr is not present. @cpi_hfp_ag_cbk.c(239),ERROR" ID="0xee78077a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(255),ERROR" ID="0xee7807fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(259),ERROR" ID="0xee78081a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(266),ERROR" ID="0xee780852" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="state: 0x%x sco_hdl: 0x%x @cpi_hfp_ag_cbk.c(279),INFO" ID="0xee7808bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(282),ERROR" ID="0xee7808d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(286),ERROR" ID="0xee7808f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(293),ERROR" ID="0xee78092a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Invalid arg, param:%p len: %d! @cpi_hfp_ag_cbk.c(301),ERROR" ID="0xee78096a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="pre sco connection not found node, hdl:%p addr:0x%02x:*:*:*:%02x:%02x. @cpi_hfp_ag_cbk.c(310),ERROR" ID="0xee7809b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Invalid arg, param:%p len err: %d! @cpi_hfp_ag_cbk.c(328),ERROR" ID="0xee780a42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="audio connection established not found node, hdl:%p. @cpi_hfp_ag_cbk.c(333),ERROR" ID="0xee780a6a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Invalid arg, param:%p len err: %d! @cpi_hfp_ag_cbk.c(343),ERROR" ID="0xee780aba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="audio conn released, sco_hdl = %x. @cpi_hfp_ag_cbk.c(351),INFO" ID="0xee780afd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sco disconnect complete. @cpi_hfp_ag_cbk.c(359),INFO" ID="0xee780b3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(371),ERROR" ID="0xee780b9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(375),ERROR" ID="0xee780bba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(382),ERROR" ID="0xee780bf2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="micvol: %d @cpi_hfp_ag_cbk.c(390),INFO" ID="0xee780c35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spkvol: %d @cpi_hfp_ag_cbk.c(401),INFO" ID="0xee780c8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="codec: %d @cpi_hfp_ag_cbk.c(412),INFO" ID="0xee780ce5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dial req, phone_len: %d @cpi_hfp_ag_cbk.c(422),INFO" ID="0xee780d35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="addr mem alloc fail. @cpi_hfp_ag_cbk.c(429),ERROR" ID="0xee780d6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="addr mem copy fail. @cpi_hfp_ag_cbk.c(433),ERROR" ID="0xee780d8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="number mem alloc fail. @cpi_hfp_ag_cbk.c(439),ERROR" ID="0xee780dba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="addr mem copy fail. @cpi_hfp_ag_cbk.c(444),ERROR" ID="0xee780de2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(452),ERROR" ID="0xee780e22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lastnum dial req. @cpi_hfp_ag_cbk.c(462),INFO" ID="0xee780e75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(469),ERROR" ID="0xee780eaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(473),ERROR" ID="0xee780eca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(480),ERROR" ID="0xee780f02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="answer call req, type=%d @cpi_hfp_ag_cbk.c(488),INFO" ID="0xee780f45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(495),ERROR" ID="0xee780f7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(499),ERROR" ID="0xee780f9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(506),ERROR" ID="0xee780fd2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="cancel call req, type=%d @cpi_hfp_ag_cbk.c(514),INFO" ID="0xee781015" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(521),ERROR" ID="0xee78104a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(525),ERROR" ID="0xee78106a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(532),ERROR" ID="0xee7810a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dtmf req, code=%d @cpi_hfp_ag_cbk.c(540),INFO" ID="0xee7810e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(547),ERROR" ID="0xee78111a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(551),ERROR" ID="0xee78113a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(558),ERROR" ID="0xee781172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="subscriber number req. @cpi_hfp_ag_cbk.c(567),INFO" ID="0xee7811bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(574),ERROR" ID="0xee7811f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(578),ERROR" ID="0xee781212" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(585),ERROR" ID="0xee78124a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="current calls req. @cpi_hfp_ag_cbk.c(594),INFO" ID="0xee781295" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(601),ERROR" ID="0xee7812ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(605),ERROR" ID="0xee7812ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(612),ERROR" ID="0xee781322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="current indicator req. @cpi_hfp_ag_cbk.c(640),INFO" ID="0xee781405" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(659),ERROR" ID="0xee78149a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(663),ERROR" ID="0xee7814ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(670),ERROR" ID="0xee7814f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="network operator format req. @cpi_hfp_ag_cbk.c(679),INFO" ID="0xee78153d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(686),ERROR" ID="0xee781572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(690),ERROR" ID="0xee781592" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(697),ERROR" ID="0xee7815ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="network operator req. @cpi_hfp_ag_cbk.c(706),INFO" ID="0xee781615" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(713),ERROR" ID="0xee78164a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(717),ERROR" ID="0xee78166a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @cpi_hfp_ag_cbk.c(724),ERROR" ID="0xee7816a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="voice recognition actived req. @cpi_hfp_ag_cbk.c(733),INFO" ID="0xee7816ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="voice recognition deactived req. @cpi_hfp_ag_cbk.c(745),INFO" ID="0xee78174d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Invalid arg, param:%p len err: %d! @cpi_hfp_ag_cbk.c(756),ERROR" ID="0xee7817a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Invalid arg, param:%p len err: %d! @cpi_hfp_ag_cbk.c(772),ERROR" ID="0xee781822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp ag event=0x%x. @cpi_hfp_ag_cbk.c(815),INFO" ID="0xee78197d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_ag_cbk.c(853),ERROR" ID="0xee781aaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem copy fail. @cpi_hfp_ag_cbk.c(869),ERROR" ID="0xee781b2a" />
+			</MSG_LOG>

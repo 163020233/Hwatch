@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GAP][LOGN_STACK_GAP_DIS_REGISTER] RegisterDIService success. @gap_hlp_br.c(1608),INFO" ID="0xeb863245" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP][LOGN_STACK_GAP_DIS_REGISTER] RegisterDIService failed. @gap_hlp_br.c(1611),WARNING" ID="0xeb86325b" />
+			</MSG_LOG>

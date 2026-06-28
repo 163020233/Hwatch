@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]create_desc, env_ptr is NULL @evt_task_classic_iscan.c(43),WARNING" ID="0x8988015b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]create_desc, fsm register fail! @evt_task_classic_iscan.c(52),WARNING" ID="0x898801a3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_ISCAN]iscan_stop: evt_status:%d, LR:0x%x @evt_task_classic_iscan.c(266),INFO" ID="0x89880855" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_ISCAN]task_restart, es_insert_elt fail! @evt_task_classic_iscan.c(373),WARNING" ID="0x89880bab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ISCAN]idle_event_int: remaining_slot:%d @evt_task_classic_iscan.c(414),INFO" ID="0x89880cf5" />
+			</MSG_LOG>

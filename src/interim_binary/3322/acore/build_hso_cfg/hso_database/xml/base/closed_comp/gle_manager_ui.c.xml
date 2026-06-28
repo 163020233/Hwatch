@@ -1,0 +1,23 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[gle manger enable] gle already initialized @gle_manager_ui.c(62),INFO" ID="0xed5a01f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle adapter init fail %d @gle_manager_ui.c(69),ERROR" ID="0xed5a022a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle manger enable]enter @gle_manager_ui.c(107),INFO" ID="0xed5a035d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle cmd enable] fsm send error @gle_manager_ui.c(115),ERROR" ID="0xed5a039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle cmd reset]  error @gle_manager_ui.c(126),ERROR" ID="0xed5a03f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle cmd reset]create handle fail @gle_manager_ui.c(132),ERROR" ID="0xed5a0422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle manger enable]  error @gle_manager_ui.c(139),ERROR" ID="0xed5a045a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle manger enable]result = 0x%02x @gle_manager_ui.c(145),ERROR" ID="0xed5a048a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle manger disable] enter reset @gle_manager_ui.c(167),INFO" ID="0xed5a053d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle cmd disable]  error @gle_manager_ui.c(177),INFO" ID="0xed5a058d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle cmd reset]  error @gle_manager_ui.c(186),INFO" ID="0xed5a05d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle adapter deinit fail @gle_manager_ui.c(202),ERROR" ID="0xed5a0652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle manger disable] done @gle_manager_ui.c(215),INFO" ID="0xed5a06bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle ind cbks table new fail @gle_manager_ui.c(297),ERROR" ID="0xed5a094a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle manager exter_cbks will be overlaped @gle_manager_ui.c(305),WARNING" ID="0xed5a098b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle manager exter_cbks mem new failed @gle_manager_ui.c(310),ERROR" ID="0xed5a09b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle manager exter_cbks memcpy failed @gle_manager_ui.c(315),ERROR" ID="0xed5a09da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle execute command cmd_node is NULL @gle_manager_ui.c(334),ERROR" ID="0xed5a0a72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="cmd_node-&gt;param alloc fail @gle_manager_ui.c(347),ERROR" ID="0xed5a0ada" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle general cmd evt proc] param err. @gle_manager_ui.c(400),ERROR" ID="0xed5a0c82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle general cmd evt proc] find node error, module id(%u). @gle_manager_ui.c(406),ERROR" ID="0xed5a0cb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle gerneral cmd evt dispatch func new fail @gle_manager_ui.c(427),ERROR" ID="0xed5a0d5a" />
+			</MSG_LOG>

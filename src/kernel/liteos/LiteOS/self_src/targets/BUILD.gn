@@ -1,0 +1,61 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../build/gn/config.gni")
+
+group("targets") {
+    deps = ["$LOSCFG_PLATFORM:$LOSCFG_PLATFORM"]
+}
+
+config("public") {
+    include_dirs = ["$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/include"]
+
+    if (defined(LOSCFG_SAFETY_KERNEL) && defined(LOSCFG_SAFETY_KERNEL)) {
+        include_dirs += [
+            "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/box/boxes_cfg",
+            "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/box/usrdrvlib",
+        ]
+    }
+    if (defined(LOSCFG_LIB_LIBC)) {
+        include_dirs += [
+            "$LITEOSTOPDIR/lib/liteos_libc/time",
+        ]
+    }
+    configs = [
+        "$LOSCFG_PLATFORM:${LOSCFG_PLATFORM}_public"
+    ]
+}
+
+config("board_config") {
+    cflags = []
+    cflags_c = []
+    cflags_cc = []
+    asmflags = []
+    ldflags = []
+    include_dirs = []
+    defines = []
+
+    if (defined(board_cflags)) {
+        cflags += board_cflags
+    }
+    if (defined(board_c_cflags)) {
+        cflags_c += board_c_cflags
+    }
+    if (defined(board_cxx_flags)) {
+        cflags_cc += board_cxx_flags
+    }
+    if (defined(board_asmflags)) {
+        asmflags += board_asmflags
+    }
+    if (defined(board_ld_flags)) {
+        ldflags += board_ld_flags
+    }
+    if (defined(board_include_dirs)) {
+        include_dirs += board_include_dirs
+    }
+    if (defined(board_macro_defines)) {
+        defines += board_macro_defines
+    }
+}

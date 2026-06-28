@@ -1,0 +1,28 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+
+kernel_module("dynload") {
+    sources = [
+        "src/dynload_shellcmd.c",
+        "src/los_ld_commlib.c",
+        "src/los_ld_dllib.c",
+        "src/los_ld_elflib.c",
+        "src/los_ld_initlib.c",
+        "src/los_ld_modulelib.c",
+        "src/los_ld_symlib.c",
+    ]
+
+    configs += [
+        ":private",
+    ]
+}
+
+config("private") {
+    include_dirs = [
+        "$LITEOSTOPDIR/kernel_lite/extended/dynload/include",
+    ]
+}

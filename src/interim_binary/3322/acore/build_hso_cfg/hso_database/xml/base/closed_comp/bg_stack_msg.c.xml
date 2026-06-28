@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BG_MSG] desc environment init fall @bg_stack_msg.c(76),ERROR" ID="0xee000262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgh msg environment init: memory set fail] @bg_stack_msg.c(80),ERROR" ID="0xee000282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BG_MSG] desc environment deinit fall @bg_stack_msg.c(94),ERROR" ID="0xee0002f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BG_MSG] register msg desc error:, desc_id:%d @bg_stack_msg.c(111),ERROR" ID="0xee00037a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BG_MSG] unregister msg desc error:, desc_id:%d @bg_stack_msg.c(122),ERROR" ID="0xee0003d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BG_MSG] handle msg evn null: msg_type:%d @bg_stack_msg.c(183),ERROR" ID="0xee0005ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BG_MSG] bgh msg is null @bg_stack_msg.c(193),ERROR" ID="0xee00060a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BG_MSG] handle msg desc null: msg_type:%d @bg_stack_msg.c(207),ERROR" ID="0xee00067a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BG_MSG] task is off: msg_type:%d, msg_id:%d @bg_stack_msg.c(236),ERROR" ID="0xee000762" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BG_MSG] msg exceeds upper limit: msg_type:%d, msg_id:%d @bg_stack_msg.c(241),ERROR" ID="0xee00078a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BG_MSG] send msg desc null: dest_module_id:%d, msg_type:%d, msg_id:%d  @bg_stack_msg.c(249),ERROR" ID="0xee0007ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BG_MSG] failed to allocate memory for message @bg_stack_msg.c(254),ERROR" ID="0xee0007f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BG_MSG] get msg count error: msg_type: %d @bg_stack_msg.c(315),ERROR" ID="0xee0009da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BG_MSG] get msg count error @bg_stack_msg.c(324),ERROR" ID="0xee000a22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BG_MSG] get msg count error @bg_stack_msg.c(339),ERROR" ID="0xee000a9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BG_MSG] get msg size error: ,msg_type:%d @bg_stack_msg.c(360),ERROR" ID="0xee000b42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BG_MSG] get desc status error:, desc_id:%d @bg_stack_msg.c(369),ERROR" ID="0xee000b8a" />
+			</MSG_LOG>

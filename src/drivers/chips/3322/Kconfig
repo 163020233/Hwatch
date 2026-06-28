@@ -1,0 +1,19 @@
+
+config ENABLE_RC_CALIBRATION
+    bool
+    prompt "enable rc32k calibration"
+    default n
+
+config DRIVER_SUPPORT_PWM_AON
+    bool
+    prompt "PWM_AON"
+    default n
+    help
+        This option means support PWM AON.
+
+if DRIVER_SUPPORT_PWM_AON
+menu "PWM AON Configuration"
+    comment "Config PWM AON"
+    osource "drivers/chips/3322/pwm_aon/Kconfig"
+endmenu
+endif

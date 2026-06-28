@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_key_deriv_initiator_check_done memcpy error! @lm_classic_acl_srv_ssp_key_deriv.c(53),ERROR" ID="0x89d201aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_key_deriv_responder_check_done memcpy error! @lm_classic_acl_srv_ssp_key_deriv.c(153),ERROR" ID="0x89d204ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_key_deriv_link_key_done memcpy error! @lm_classic_acl_srv_ssp_key_deriv.c(179),ERROR" ID="0x89d2059a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] Pair Succeed! Generating Link Key. @lm_classic_acl_srv_ssp_key_deriv.c(195),INFO" ID="0x89d2061d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_key_deriv_testify_initiator_check Mismatched! Pair Failed! @lm_classic_acl_srv_ssp_key_deriv.c(253),WARNING" ID="0x89d207eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_key_deriv_record_initiator_check srv_desc-&gt;param is NULL @lm_classic_acl_srv_ssp_key_deriv.c(272),WARNING" ID="0x89d20883" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_key_deriv_negative_testify_act Remote Refused! Pair Failed! @lm_classic_acl_srv_ssp_key_deriv.c(326),WARNING" ID="0x89d20a33" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] All process finished successfully, notifying Link Key. @lm_classic_acl_srv_ssp_key_deriv.c(401),INFO" ID="0x89d20c8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] Link Key ready, preparing post authentication. @lm_classic_acl_srv_ssp_key_deriv.c(437),INFO" ID="0x89d20dad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_key_deriv_h4_done memcpy error! @lm_classic_acl_srv_ssp_key_deriv.c(483),ERROR" ID="0x89d20f1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_key_deriv_h5_done memcpy error! @lm_classic_acl_srv_ssp_key_deriv.c(516),ERROR" ID="0x89d21022" />
+			</MSG_LOG>

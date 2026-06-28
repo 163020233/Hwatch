@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]evt_task_ble_initiate_create_desc, env_ptr is NULL @evt_task_ble_initiate_ram.c(36),WARNING" ID="0x8b200123" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]evt_task_ble_initiate_create_desc, time_info is NULL @evt_task_ble_initiate_ram.c(41),WARNING" ID="0x8b20014b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]start_patch, env_ptr create fail! @evt_task_ble_initiate_ram.c(65),ERROR" ID="0x8b20020a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]start_patch, es_create_elt fail! @evt_task_ble_initiate_ram.c(72),ERROR" ID="0x8b200242" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_INIT]start_patch, interval=%d, window=%d, aux_sed_id=%d @evt_task_ble_initiate_ram.c(81),INFO" ID="0x8b20028d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]start_patch, es_insert_elt fail! @evt_task_ble_initiate_ram.c(99),ERROR" ID="0x8b20031a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_INIT]start_patch, start_ts:0x%x, curr_ts:0x%x @evt_task_ble_initiate_ram.c(113),INFO" ID="0x8b20038d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_INIT]statis: curr_time=0x%x, total_time=%d, total_window=%d, start_cbk_cnt=%d @evt_task_ble_initiate_ram.c(137),INFO" ID="0x8b20044d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_INIT]statis: cancel_cbk_cnt=%d, evt_cbk_cnt=%d, abort_cbk_cnt=%d, abnormal_cbk_cnt=%d @evt_task_ble_initiate_ram.c(140),INFO" ID="0x8b200465" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]evt_task_ble_initiate_task_end_ram nullptr  @evt_task_ble_initiate_ram.c(179),INFO" ID="0x8b20059d" />
+			</MSG_LOG>

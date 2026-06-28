@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg7" NAME="[autorate] sed_idx=%d, trxdir=%d, t2g_format=%d, t2g_pdu_len=%d, t2g_phy=%d, mcs=%d, nse=%d @evt_task_gle_imb_autorate.c(57),INFO" ID="0x8ba401cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[autorate]evt_task_gle_imb_notify_ack_recv, imb_conhdl: %d @evt_task_gle_imb_autorate.c(181),INFO" ID="0x8ba405ad" />
+			</MSG_LOG>

@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="p is null or code_info is null. @cpi_a2dp_common_cbk.c(51),ERROR" ID="0xee6c019a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy error. @cpi_a2dp_common_cbk.c(56),ERROR" ID="0xee6c01c2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[LHDC] vendor:0x%x codec:0x%04x sample_rate:0x%02x. @cpi_a2dp_common_cbk.c(188),INFO" ID="0xee6c05e5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[LHDC] byte7:0x%2x byte8:0x%02x byte9:0x%02x byte10:0x%02x. @cpi_a2dp_common_cbk.c(190),INFO" ID="0xee6c05f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is not connected. @cpi_a2dp_common_cbk.c(216),ERROR" ID="0xee6c06c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp_snk codec type %d not support. @cpi_a2dp_common_cbk.c(251),ERROR" ID="0xee6c07da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="a2dp_audio: rpt stream state stream_hdl %p state %d local_role %d @cpi_a2dp_common_cbk.c(265),ERROR" ID="0xee6c084a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp connect is already exist. @cpi_a2dp_common_cbk.c(279),ERROR" ID="0xee6c08ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk list_new error. @cpi_a2dp_common_cbk.c(286),ERROR" ID="0xee6c08f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk memcpy error. @cpi_a2dp_common_cbk.c(291),ERROR" ID="0xee6c091a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp is not connected. @cpi_a2dp_common_cbk.c(318),ERROR" ID="0xee6c09f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp is already disconnected. @cpi_a2dp_common_cbk.c(348),ERROR" ID="0xee6c0ae2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy error. @cpi_a2dp_common_cbk.c(355),ERROR" ID="0xee6c0b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp is not connected. @cpi_a2dp_common_cbk.c(381),ERROR" ID="0xee6c0bea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="a2dp sep seid=%d sep_type=%d. @cpi_a2dp_common_cbk.c(405),INFO" ID="0xee6c0cad" />
+			</MSG_LOG>

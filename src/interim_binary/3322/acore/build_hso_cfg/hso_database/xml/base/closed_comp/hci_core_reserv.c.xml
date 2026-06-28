@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="le ext connect reserve address_resolution_enable=%d @hci_core_reserv.c(452),INFO" ID="0xed240e25" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI][C--&gt;H] ACTION=RECV_EVENT, CODE=0x%02x, LEN=%d, HANDLE=0x%x @hci_core_reserv.c(499),INFO" ID="0xed240f9d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI][C--&gt;H] ACTION=RECV_EVENT, CODE=0x%02x, LEN=%d @hci_core_reserv.c(502),INFO" ID="0xed240fb5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI][C--&gt;H] ACTION=RECV_CMD_COMPLETE_EVENT, CODE=0x0E, OPCODE=0x%04x, OGF=0x%x, OCF=0x%x @hci_core_reserv.c(509),INFO" ID="0xed240fed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI][C--&gt;H] ACTION=RECV_CMD_STATUS_EVENT, CODE=0x0F, STATUS=0x%x, OPCODE=0x%04x @hci_core_reserv.c(513),INFO" ID="0xed24100d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] ACTION=RECV_LE_META_EVENT, CODE=0x3E, SUB_EVENT_CODE=0x%x @hci_core_reserv.c(516),INFO" ID="0xed241025" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI][C--&gt;H] ACTION=RECV_OTHER_EVENT,CODE=0x%02x, LEN=%d @hci_core_reserv.c(520),INFO" ID="0xed241045" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] ACTION=RECV_ACL_DATA, LEN=%u @hci_core_reserv.c(531),INFO" ID="0xed24109d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HCI][C--&gt;H] %02x %02x %02x %02x @hci_core_reserv.c(538),INFO" ID="0xed2410d5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI][C--&gt;H] %02x %02x %02x @hci_core_reserv.c(542),INFO" ID="0xed2410f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI][C--&gt;H] %02x %02x @hci_core_reserv.c(545),INFO" ID="0xed24110d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] %02x @hci_core_reserv.c(547),INFO" ID="0xed24111d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][SEND_ACL_DATA] SLOT=%u, the num=0 has been exhaust @hci_core_reserv.c(578),INFO" ID="0xed241215" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci link data error! @hci_core_reserv.c(640),ERROR" ID="0xed241402" />
+			</MSG_LOG>

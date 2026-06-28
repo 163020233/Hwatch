@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_atomic.c(18),INFO" ID="0xa0260095" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_atomic.c(28),INFO" ID="0xa02600e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_atomic.c(38),INFO" ID="0xa0260135" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_atomic.c(48),INFO" ID="0xa0260185" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_atomic.c(58),INFO" ID="0xa02601d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_atomic.c(68),INFO" ID="0xa0260225" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_atomic.c(78),INFO" ID="0xa0260275" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_atomic.c(98),INFO" ID="0xa0260315" />
+			</MSG_LOG>

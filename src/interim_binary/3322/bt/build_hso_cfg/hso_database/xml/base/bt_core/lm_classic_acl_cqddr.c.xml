@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][cqddr]con_hdl:%d, cqddr_mask_br:0x%x @lm_classic_acl_cqddr.c(147),INFO" ID="0x8a5c049d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][cqddr]con_hdl:%d, cqddr_mask_edr:0x%x @lm_classic_acl_cqddr.c(171),INFO" ID="0x8a5c055d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][cqddr]send lmp_pref_rate:0x%x @lm_classic_acl_cqddr.c(212),INFO" ID="0x8a5c06a5" />
+			</MSG_LOG>

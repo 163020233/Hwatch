@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="ble hci factory cbk param error @btsrv_ble_hci.c(109),ERROR" ID="0xe882036a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ble hci evt proc] module_id(%d) invalid. cmd/evt(%d) @btsrv_ble_hci.c(135),ERROR" ID="0xe882043a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] failed to register bcore callback. @btsrv_ble_hci.c(145),ERROR" ID="0xe882048a" />
+			</MSG_LOG>

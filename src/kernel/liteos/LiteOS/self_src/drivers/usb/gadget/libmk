@@ -1,0 +1,27 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+include $(RTOSLITETOPDIR)/config.mk
+
+MODULE_NAME := usb_device
+
+ifeq ($(LOSCFG_DRIVERS_USB_UVC_GADGET_ISOC), y)
+USB_UVC_MODE := uvc_isoc
+else
+USB_UVC_MODE := uvc_bulk
+endif
+
+ARFLAGS = cr
+
+all:
+	mkdir -p $(OUT)/lib
+	cp -rf ../$(LITEOS_CPU_TYPE)/$(USB_UVC_MODE)/*.a $(OUT)/lib
+
+clean:
+	rm -rf $(OUT)/lib/libusb_device.a
+
+.PHONY: all clean
+
+include $(MODULE)

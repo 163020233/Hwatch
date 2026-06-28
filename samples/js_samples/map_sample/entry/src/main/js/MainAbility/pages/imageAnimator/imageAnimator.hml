@@ -1,0 +1,12 @@
+<div class="container">
+    <image-animator style="width: 100px;height: 100px;background-color: green;"
+                    images="{{ images }}"
+                    duration="1s"
+                    ref="animator1"
+                    fixedsize="true"></image-animator>
+    <image-animator style="width: 100px;height: 100px;background-color: blue;"
+                    images="{{ images }}"
+                    duration="1s"
+                    ref="animato2"
+                    fixedsize="false"></image-animator>
+</div>

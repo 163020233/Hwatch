@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_CQDDR]cqddr_rx: con_hdl %d, total_errs %d, cur_rate_idx %d, pref_rate_idx %d, rate_down @evt_task_classic_acl_cqddr.c(154),INFO" ID="0x89f804d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_CQDDR]cqddr_rx: clear stat, con_hdl %d @evt_task_classic_acl_cqddr.c(157),INFO" ID="0x89f804ed" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_CQDDR]con_hdl:%d, total_errs:%d, cur_rate_idx:%d, pref_rate_idx:%d, rate_up! @evt_task_classic_acl_cqddr.c(171),INFO" ID="0x89f8055d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_CQDDR]clear stat, con_hdl:%d @evt_task_classic_acl_cqddr.c(174),INFO" ID="0x89f80575" />
+			</MSG_LOG>

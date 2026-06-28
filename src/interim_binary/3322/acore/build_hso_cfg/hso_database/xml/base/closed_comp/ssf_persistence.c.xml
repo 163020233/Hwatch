@@ -1,0 +1,27 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PERSISTENCE] malloc in persistence config failed @ssf_persistence.c(42),ERROR" ID="0xefa00152" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][PERSISTENCE] write to nv. index: %u, type: %u, pdl_num: %u, device_num: %u, obj: %u @ssf_persistence.c(57),INFO" ID="0xefa001cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PERSISTENCE] add obj. obj_id: %u @ssf_persistence.c(81),INFO" ID="0xefa0028d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PERSISTENCE] add obj. index: %u, obj_id: %u @ssf_persistence.c(105),INFO" ID="0xefa0034d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PERSISTENCE] add obj. index: %u @ssf_persistence.c(111),INFO" ID="0xefa0037d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PERSISTENCE] update auth data. index: %u, obj: %u @ssf_persistence.c(132),INFO" ID="0xefa00425" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PERSISTENCE] ssf_set_device_name memcpy_s failed @ssf_persistence.c(150),ERROR" ID="0xefa004b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PERSISTENCE] set_device_name failed @ssf_persistence.c(165),ERROR" ID="0xefa0052a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PERSISTENCE] update call spk volume data. index: %u, obj: %u @ssf_persistence.c(183),INFO" ID="0xefa005bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PERSISTENCE] update media volume data. index: %u, obj: %u @ssf_persistence.c(200),INFO" ID="0xefa00645" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PERSISTENCE] malloc in persistence config failed @ssf_persistence.c(212),ERROR" ID="0xefa006a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PERSISTENCE] report clear all pdl data. @ssf_persistence.c(220),INFO" ID="0xefa006e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PERSISTENCE] clear all pdl data. @ssf_persistence.c(228),INFO" ID="0xefa00725" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][PERSISTENCE] delete device[%d] addr[%02x][%02x] channel[%02x] @ssf_persistence.c(263),INFO" ID="0xefa0083d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][PERSISTENCE] new device[%d] addr[%02x][%02x] @ssf_persistence.c(280),INFO" ID="0xefa008c5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PERSISTENCE] updata obj device num[%d] err[%d]. @ssf_persistence.c(294),ERROR" ID="0xefa00932" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PERSISTENCE] no record obj[%d]. @ssf_persistence.c(306),ERROR" ID="0xefa00992" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][PERSISTENCE] update_obj[%u] device num[%d] index[%d] @ssf_persistence.c(309),INFO" ID="0xefa009ad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PERSISTENCE] updata check device in obj[%d] err[%x]. @ssf_persistence.c(313),ERROR" ID="0xefa009ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PERSISTENCE] updata append new device in obj[%d] err[%x]. @ssf_persistence.c(319),ERROR" ID="0xefa009fa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][PERSISTENCE] addr[%02x][%02x] channel[%x] @ssf_persistence.c(335),INFO" ID="0xefa00a7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PERSISTENCE] register callback failed. func is null. @ssf_persistence.c(375),ERROR" ID="0xefa00bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PERSISTENCE] recover link key is null @ssf_persistence.c(396),INFO" ID="0xefa00c65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PERSISTENCE] write to svc. pdl_cnt: %u @ssf_persistence.c(426),INFO" ID="0xefa00d55" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][PERSISTENCE] single obj. device_num: %u, addr1: %02x:%02x, addr2: %02x:%02x @ssf_persistence.c(433),INFO" ID="0xefa00d8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PERSISTENCE] actual no data to recover. @ssf_persistence.c(447),ERROR" ID="0xefa00dfa" />
+			</MSG_LOG>

@@ -1,0 +1,9 @@
+{
+  "strings": {
+    "hello": "こんにちは",
+    "world": "世界の",
+    "search_bar": "検索バー",
+    "send": "送信する",
+    "placeholder": "検索内容を入力"
+  }
+}

@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ERROR][CLASSIC]lm_classic_lmp_ext_feats_req_act pg_nb %d @lm_classic_acl_srv_feat_act.c(130),ERROR" ID="0x8a280412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR][CLASSIC]lm_classic_lmp_ext_feats_rsp_act pg_nb %d @lm_classic_acl_srv_feat_act.c(217),ERROR" ID="0x8a2806ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_hci_rd_rem_supp_feats_create_srv_act: existed feats_srv_fsm @lm_classic_acl_srv_feat_act.c(300),WARNING" ID="0x8a280963" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_hci_rd_rem_supp_feats_create_srv_act: create feats_srv_fsm failed @lm_classic_acl_srv_feat_act.c(315),WARNING" ID="0x8a2809db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_hci_rd_rem_ext_feats_create_srv_act: existed feats_srv_fsm @lm_classic_acl_srv_feat_act.c(353),WARNING" ID="0x8a280b0b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_hci_rd_rem_ext_feats_create_srv_act: create feats_srv_fsm failed @lm_classic_acl_srv_feat_act.c(370),WARNING" ID="0x8a280b93" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_lmp_feats_rsp_act: not existed feats_srv_fsm @lm_classic_acl_srv_feat_act.c(404),WARNING" ID="0x8a280ca3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_hci_rd_rem_ext_feats_pre_act: extended feats not support or page_nb error @lm_classic_acl_srv_feat_act.c(467),WARNING" ID="0x8a280e9b" />
+			</MSG_LOG>

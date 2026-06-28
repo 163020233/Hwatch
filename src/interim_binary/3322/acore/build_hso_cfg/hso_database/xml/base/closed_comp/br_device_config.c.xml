@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bs br] config local type error 0x%04x @br_device_config.c(64),ERROR" ID="0xea420202" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] config connect type error 0x%04x @br_device_config.c(102),ERROR" ID="0xea420332" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] config profile type error 0x%04x @br_device_config.c(124),ERROR" ID="0xea4203e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] config type error 0x%04x @br_device_config.c(156),ERROR" ID="0xea4204e2" />
+			</MSG_LOG>

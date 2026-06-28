@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]lm_ble_initiate_check_create_con_params,interval=%d,window=%d,policy=%d,peer_addr_type=%d @lm_ble_legacy_initiate_act.c(42),INFO" ID="0x883e0155" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]lm_ble_initiate_check_create_con_params,interval_min=%d,interval_max=%d,latency=%d,timeout=%d @lm_ble_legacy_initiate_act.c(45),INFO" ID="0x883e016d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][initiate]lm_ble_initiate_off_check_ext_con_params, invalid con params! @lm_ble_legacy_initiate_act.c(56),WARNING" ID="0x883e01c3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][initiate]Address type is static private but no static private address is available! @lm_ble_legacy_initiate_act.c(61),WARNING" ID="0x883e01eb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[LM][BLE_INIT]lm_ble_initiate_off_hci_create_con_act, address 0x%x:0x%x:0x%x:0x%x:xx:xx @lm_ble_legacy_initiate_act.c(120),INFO" ID="0x883e03c5" />
+			</MSG_LOG>

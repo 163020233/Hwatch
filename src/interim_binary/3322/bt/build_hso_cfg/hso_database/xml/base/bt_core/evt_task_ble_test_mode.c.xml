@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][TEST]elt_create: ES_MEM_ALLOC_FAIL! @evt_task_ble_test_mode.c(268),ERROR" ID="0x88660862" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][TEST]elt_create: ES_MEM_ALLOC_FAIL! @evt_task_ble_test_mode.c(300),ERROR" ID="0x88660962" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="payload type exceed : 0x%x! @evt_task_ble_test_mode.c(451),ERROR" ID="0x88660e1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble_test_mode_tx alloc mem fail! @evt_task_ble_test_mode.c(472),ERROR" ID="0x88660ec2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble_test_mode_tx alloc mem fail! @evt_task_ble_test_mode.c(496),ERROR" ID="0x88660f82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="payload type exceed : 0x%x! @evt_task_ble_test_mode.c(510),ERROR" ID="0x88660ff2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble_test_mode alloc txpd or txnode fail! @evt_task_ble_test_mode.c(551),ERROR" ID="0x8866113a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[test mode txpd cfg]ble_txphce(lenext)_txlen = %d, ble_txtype = %d, txpd ptr = 0x%x, buf_ptr = %d @evt_task_ble_test_mode.c(586),INFO" ID="0x88661255" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[CTE_INFO]ble_tx_supp_flag = %d, ble_txphce_txsp = %d, ble_tx_supp_type = %d, ble_tx_supp_time = %d @evt_task_ble_test_mode.c(596),INFO" ID="0x886612a5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[test mode cte sed cfg]cte_type = %d, cte_len = %d, ble_antcntnum = %d, env_ptr-&gt;tx_freq = %d @evt_task_ble_test_mode.c(628),INFO" ID="0x886613a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_task_ble_test_mode_tx_set_sed_add::sed-&gt;ble_tx_ant_req=0x%x @evt_task_ble_test_mode.c(690),INFO" ID="0x88661595" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_ble_test_mode_rx_set_sed_add::sed-&gt;ble_rx_ant_req=0x%x rx_fem_mode=0x%x @evt_task_ble_test_mode.c(705),INFO" ID="0x8866160d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_ble_test_mode_tx_set_sed txpwr = %d, txphy = %d, tx_freq = %d, env_ptr-&gt;tx_freq = %d @evt_task_ble_test_mode.c(789),INFO" ID="0x886618ad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_ble_test_mode_tx_set_sed real tx sed phy = %d, sed addr = 0x%x @evt_task_ble_test_mode.c(791),INFO" ID="0x886618bd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_ble_test_mode_tx_set_sed UHD tx priv mode %d, polar %d, polar rate %d, pilot ratio %d @evt_task_ble_test_mode.c(793),INFO" ID="0x886618cd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[test mode rx sed cfg]sed-&gt;ble_sed_rxphy_bw = %d, ble_ch_idx = %d, env_ptr-&gt;rx_freq = %d @evt_task_ble_test_mode.c(890),INFO" ID="0x88661bd5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_ble_test_mode_rx_set_sed UHD rx priv mode %d, polar %d, polar rate %d, pilot ratio %d @evt_task_ble_test_mode.c(892),INFO" ID="0x88661be5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="env_ptr == NULL, create env @evt_task_ble_test_mode.c(1010),INFO" ID="0x88661f95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt task create test mode env fail! @evt_task_ble_test_mode.c(1013),INFO" ID="0x88661fad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_ble_test_mode_rx_start start ok @evt_task_ble_test_mode.c(1203),INFO" ID="0x8866259d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="rx end, prog_num == 0 @evt_task_ble_test_mode.c(1245),INFO" ID="0x886626ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tx end. prog_num == 0 @evt_task_ble_test_mode.c(1263),INFO" ID="0x8866277d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="rx end prog_num != 0, macc_comm_le_cntl_comm_le_rftest_abort_setf @evt_task_ble_test_mode.c(1298),INFO" ID="0x88662895" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble_hci_le_test_end_act @evt_task_ble_test_mode.c(1303),INFO" ID="0x886628bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="prog_num != 0, macc_comm_le_cntl_comm_le_rftest_abort_setf @evt_task_ble_test_mode.c(1319),INFO" ID="0x8866293d" />
+			</MSG_LOG>

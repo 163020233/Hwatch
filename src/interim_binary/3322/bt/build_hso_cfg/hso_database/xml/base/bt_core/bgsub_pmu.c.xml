@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="em_reg_trans_init::em size not enough, (0x%x) &gt; (0x%x) @bgsub_pmu.c(207),ERROR" ID="0x8bb2067a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="em_reg_wr buff is NULL @bgsub_pmu.c(219),ERROR" ID="0x8bb206da" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]em_reg_trans_init g_reg_only_restore_num(0x%x) g_only_restore_block_size(0x%x), em_trans_restore_ptr(0x%x), mem_start_restore(0x%x) @bgsub_pmu.c(260),INFO" ID="0x8bb20825" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]em_reg_trans_init g_reg_item_num(0x%x) g_ctrl_block_size(0x%x)  em_trans_ptr(0x%x) mem_start(0x%x) @bgsub_pmu.c(268),INFO" ID="0x8bb20865" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bg_reg_trans_fail @bgsub_pmu.c(284),ERROR" ID="0x8bb208e2" />
+			</MSG_LOG>

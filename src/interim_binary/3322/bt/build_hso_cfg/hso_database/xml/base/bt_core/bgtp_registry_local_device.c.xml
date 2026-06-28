@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[BGTP][REGISTRY]read fail, status:%d, key_type:%d, sed_id:%d, LR:0x%x @bgtp_registry_local_device.c(54),ERROR" ID="0x8a4c01b2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP][REGISTRY]write fail, status:%d, key_type:%d, sed_id:%d, LR:0x%x @bgtp_registry_local_device.c(75),ERROR" ID="0x8a4c025a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP][REGISTRY]write fail, status:%d, sed_id:%d, key_value:%d, LR:0x%x @bgtp_registry_local_device.c(85),ERROR" ID="0x8a4c02aa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP][REGISTRY]write succ, sed_id:%d, key_type:%d, key_value:%d @bgtp_registry_local_device.c(95),WARNING" ID="0x8a4c02fb" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP][REGISTRY]write fail, key already used, key_type:%d, sed_id:%d, LR:0x%x @bgtp_registry_local_device.c(100),INFO" ID="0x8a4c0325" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP][REGISTRY]delete fail, status:%d, key_type:%d, sed_id:%d, LR:0x%x @bgtp_registry_local_device.c(112),ERROR" ID="0x8a4c0382" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP][REGISTRY]delete succ, sed_id:%d, key_type:%d @bgtp_registry_local_device.c(122),WARNING" ID="0x8a4c03d3" />
+			</MSG_LOG>

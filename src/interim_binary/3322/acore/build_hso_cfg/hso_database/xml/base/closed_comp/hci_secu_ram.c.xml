@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="hci security complete node is NULL. @hci_secu_ram.c(125),ERROR" ID="0xebc403ea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI][AUTH_FAIL] STATUS=PIN_OR_KEY_MISSING, REMOTE_ADDR=%02x:**:**:**:**:%02x @hci_secu_ram.c(145),WARNING" ID="0xebc4048b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI][ERROR] addr = **:**:**:**:%02x:%02x, remote not found  @hci_secu_ram.c(279),ERROR" ID="0xebc408ba" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI][ERROR] addr = **:**:**:**:%02x:%02x, memcpy free ret %d @hci_secu_ram.c(288),ERROR" ID="0xebc40902" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI][SAVE_LINK_KEY] LOCAL_MASK=0x%x, REMOTE_SEC_MASK=0x%x @hci_secu_ram.c(445),INFO" ID="0xebc40ded" />
+			</MSG_LOG>

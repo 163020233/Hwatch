@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="black list lmp_esco_nego_big_desco_back_match i(%d) @lm_classic_sco_ram.c(150),WARNING" ID="0x8b0004b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_sco_aes_daycounter_init, acl_env_ptr is null @lm_classic_sco_ram.c(189),ERROR" ID="0x8b0005ea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_sco_start, daycount_init=%d, msb=%d @lm_classic_sco_ram.c(207),INFO" ID="0x8b00067d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_sco_start acl_link_id=%d, sco_link_id=%d, sco_type=%d, lt_addr=%d @lm_classic_sco_ram.c(246),INFO" ID="0x8b0007b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_sco_start timing_flags=%d, data_path=%d, retx_att_nb=%d, codec_type=%d @lm_classic_sco_ram.c(248),INFO" ID="0x8b0007c5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_sco_start txbuf_ptr0=0x%x, txbuf_ptr1=0x%x, rxbuf_ptr0=0x%x, rxbuf_ptr1=0x%x @lm_classic_sco_ram.c(373),INFO" ID="0x8b000bad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_sco_start esco_ctrl_addr=0x%x @lm_classic_sco_ram.c(374),INFO" ID="0x8b000bb5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sco]lm_classic_hci_vendor_tws_sync_sco_conn_evt, con_hdl=%d @lm_classic_sco_ram.c(592),INFO" ID="0x8b001285" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_sco_start esco_tog=%d, pcm_tog=%d, ap=%d, clkoff=%d @lm_classic_sco_ram.c(666),INFO" ID="0x8b0014d5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_classic_sco_get_offset_clkn:offset = %d, interval = %d, offset_n = %d @lm_classic_sco_ram.c(1042),INFO" ID="0x8b002095" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_classic_sco_get_offset_clkn:clkoff = 0x%x, clock_n = 0x%x, flags = %d @lm_classic_sco_ram.c(1043),INFO" ID="0x8b00209d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_sco_get_offset, sco_env_ptr is null @lm_classic_sco_ram.c(1065),ERROR" ID="0x8b00214a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_sco_host_accept_check, acl_env_ptr is null @lm_classic_sco_ram.c(2377),ERROR" ID="0x8b004a4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] lm_sco_modify create evt task fail @lm_classic_sco_ram.c(2788),WARNING" ID="0x8b005723" />
+			</MSG_LOG>

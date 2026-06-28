@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]hci_gle_cmd_reject: opcode = 0x%x, err_code = 0x%x @hci_gle_comm.c(668),INFO" ID="0x8a5014e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]hci_get_cmd_table nullptr. opcode=0x%x, err_code=0x%x @hci_gle_comm.c(686),INFO" ID="0x8a501575" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]hci_gle_send_hw_err: error code(0x%x) @hci_gle_comm.c(724),WARNING" ID="0x8a5016a3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR]hci_icb_data_alloc cannot find sed type! conhdl: %d, length: %d @hci_gle_comm.c(752),ERROR" ID="0x8a501782" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR]hci_gle_icb_received cannot find sed type!conhdl: %d,payload_len: %d @hci_gle_comm.c(776),ERROR" ID="0x8a501842" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]hci_gle_pack_evt get unknown evt_code(0x%x) @hci_gle_comm.c(854),WARNING" ID="0x8a501ab3" />
+			</MSG_LOG>

@@ -1,0 +1,21 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_gle_c_frame_check_mcs, mcs(0x%x) invalid! @evt_task_gle_c_frame.c(195),WARNING" ID="0x8bd4061b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_c_frame_check_mcs, tx_format(0x%x) or mcs(0x%x) invalid! @evt_task_gle_c_frame.c(204),WARNING" ID="0x8bd40663" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_c_frame_check_mcs, tx_pilot_ratio(0x%x) or tx_polar_r(0x%x) invalid! @evt_task_gle_c_frame.c(215),WARNING" ID="0x8bd406bb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_c_frame_set_em_tx_buff_data, remain_length:%d, total_ctr_length:%d @evt_task_gle_c_frame.c(415),INFO" ID="0x8bd40cfd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_c_frame_set_em_tx_buff_data, data update data_length:%d, flag:%d @evt_task_gle_c_frame.c(433),INFO" ID="0x8bd40d8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_c_frame_create, env_ptr exists! @evt_task_gle_c_frame.c(505),INFO" ID="0x8bd40fcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_c_frame_create, fsm_register fail! @evt_task_gle_c_frame.c(524),WARNING" ID="0x8bd41063" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_set_c_frame_en, init_txnode fail! @evt_task_gle_c_frame.c(532),INFO" ID="0x8bd410a5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][c_frame]evt_task_gle_c_frame_create_es_task, start_ts(0x%x)timestamp(0x%x)cur_clk(0x%x)&quot; &quot;interval(0x%x) @evt_task_gle_c_frame.c(718),WARNING" ID="0x8bd41673" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][c_frame]insert_fail, try again timestamp(0x%x) @evt_task_gle_c_frame.c(729),WARNING" ID="0x8bd416cb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_set_c_frame_en, evt task start fail! @evt_task_gle_c_frame.c(772),WARNING" ID="0x8bd41823" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_c_frame_set_adv_info, get env fail! @evt_task_gle_c_frame.c(1028),WARNING" ID="0x8bd42023" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_c_frame_get_scan_info, sync adv clock(0x%x)delay(%d)c off(%d)first c ts(0x%x) @evt_task_gle_c_frame.c(1103),WARNING" ID="0x8bd4227b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][c_frame]evt_task_gle_c_frame_refresh_clock, ts:0x%x, delay:%d, G_TS:0X%x, clock:0x%x @evt_task_gle_c_frame.c(1203),WARNING" ID="0x8bd4259b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]offset calu, acb_offset:0x%x, acb_ts:0x%x, cur:0x%x, g_acb_ts:0x%x @evt_task_gle_c_frame.c(1383),INFO" ID="0x8bd42b3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_c_frame_start_acb_slave_process, env get wrong! @evt_task_gle_c_frame.c(1404),WARNING" ID="0x8bd42be3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_c_frame_start_acb_slave_process, invalid acb param! @evt_task_gle_c_frame.c(1412),WARNING" ID="0x8bd42c23" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_c_frame_prepare_acb_master_process, offset_req fail! @evt_task_gle_c_frame.c(1480),INFO" ID="0x8bd42e45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acb_pack]evt_task_gle_c_frame_pack_acb_ind malloc failed. @evt_task_gle_c_frame.c(1553),INFO" ID="0x8bd4308d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][acb_pack]tx ind add, acb anchor 0x%x, offset 0x%x, c anchor 0x%x @evt_task_gle_c_frame.c(1591),INFO" ID="0x8bd431bd" />
+			</MSG_LOG>

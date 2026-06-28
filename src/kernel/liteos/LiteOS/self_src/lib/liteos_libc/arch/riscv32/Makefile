@@ -1,0 +1,13 @@
+include $(RTOSLITETOPDIR)/config.mk
+
+MODULE_NAME := csysdeps
+
+LOCAL_INCLUDE :=
+
+LOCAL_SRCS := memset.S strcmp.S setjmp.S memcpy.S
+
+LOCAL_ASFLAGS := $(AS_OBJS_LIBC_FLAGS)
+
+LOCAL_FLAGS := $(LOCAL_INCLUDE) $(LITEOS_GCOV_OPTS) $(LITEOS_NON_SECURE_LOCAL_OPTS)
+
+include $(MODULE_LIBC)

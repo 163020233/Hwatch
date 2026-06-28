@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf common register client fail, ret: 0x%x @saf_at_common.c(85),ERROR" ID="0xe97202aa" />
+			</MSG_LOG>

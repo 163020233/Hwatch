@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_bt_send_evt_msg_without_log]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(85),ERROR" ID="0x8a4a02aa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_ble_send_evt_msg_without_log]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(104),ERROR" ID="0x8a4a0342" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_gle_send_evt_msg_without_log]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(123),ERROR" ID="0x8a4a03da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[pub_if][hci_comm_send_evt_msg] evt_filtered:src_id=0x%x, msg_id=0x%x, hci_fsm_id=0x%x @pub_if.c(142),INFO" ID="0x8a4a0475" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_comm_send_evt_msg]error hci type! src_id=0x%x, msg_id=0x%x, hci_fsm_id=0x%x, LR=0x%x @pub_if.c(152),ERROR" ID="0x8a4a04c2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[pub_if][hci_bt_send_evt_msg] evt_filtered:src_id=0x%x, msg_id=0x%x, sed_id=0x%x @pub_if.c(165),INFO" ID="0x8a4a052d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_bt_send_evt_msg]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(174),ERROR" ID="0x8a4a0572" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_ble_send_evt_msg]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(193),ERROR" ID="0x8a4a060a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_gle_send_evt_msg]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(212),ERROR" ID="0x8a4a06a2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_bt_rx_acl_data]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(232),ERROR" ID="0x8a4a0742" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_ble_rx_acl_data]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(251),ERROR" ID="0x8a4a07da" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_ble_rx_iso_data]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(270),ERROR" ID="0x8a4a0872" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_gle_rx_acb_data]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(289),ERROR" ID="0x8a4a090a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[pub_if][hci_gle_rx_icb_data]src_id=0x%x, msg_id=0x%x, sed_id=0x%x, LR=0x%x @pub_if.c(308),ERROR" ID="0x8a4a09a2" />
+			</MSG_LOG>

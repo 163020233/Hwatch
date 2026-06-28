@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]evt_task_gle_conn_req_check:connected addr 0x%x:0x%x:xx:xx:xx:0x%x exists @evt_task_gle_adv_isr.c(70),WARNING" ID="0x88fe0233" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_conn_req_check, addr_type not match: own_addr_type:%d, rxadd:%d @evt_task_gle_adv_isr.c(78),WARNING" ID="0x88fe0273" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]evt_task_gle_conn_req_check, targeta addr not match: 0x%x:0x%x:xx:xx:xx:0x%x @evt_task_gle_adv_isr.c(86),WARNING" ID="0x88fe02b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgle][gle_adv]evt_task_gle_adv_prim_tx_evt_handle, es_insert err @evt_task_gle_adv_isr.c(322),INFO" ID="0x88fe0a15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgle][gle_adv]evt_task_gle_adv_aux_tx_evt_handle, es_insert err @evt_task_gle_adv_isr.c(374),INFO" ID="0x88fe0bb5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][gle_adv]evt_task_gle_adv_pack_con_ind, clkn=0x%x, con_intv=%d, delay=%d, offset=%d @evt_task_gle_adv_isr.c(417),INFO" ID="0x88fe0d0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgle][gle_adv]evt_task_gle_adv_aux_tx_evt_handle, es_insert err @evt_task_gle_adv_isr.c(474),INFO" ID="0x88fe0ed5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_adv_gt_nego fail, adv_capa_ind=%d, init_capa_ind=%d @evt_task_gle_adv_isr.c(703),WARNING" ID="0x88fe15fb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_adv_rx_handle, pdu_type=%d, adv_mode=%d @evt_task_gle_adv_isr.c(782),INFO" ID="0x88fe1875" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_adv_rx_handle:receive an unexcepted req @evt_task_gle_adv_isr.c(787),WARNING" ID="0x88fe189b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_gle_adv_rx_handle, invalid pdu_type:%d @evt_task_gle_adv_isr.c(800),WARNING" ID="0x88fe1903" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_adv] nb_prog=%d @evt_task_gle_adv_isr.c(816),WARNING" ID="0x88fe1983" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgle][gle_adv]evt_task_gle_adv_aux_tx_evt_handle, es_insert err @evt_task_gle_adv_isr.c(847),INFO" ID="0x88fe1a7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_adv]evt_task_gle_adv_rx_cbk, status=0x%x @evt_task_gle_adv_isr.c(866),INFO" ID="0x88fe1b15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_adv] nb_prog=%d @evt_task_gle_adv_isr.c(887),WARNING" ID="0x88fe1bbb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][gle_adv]gle_adv_abnormal_cbk, timestamp=0x%x, current time=0x%x, state=%d, task_id=0x%x @evt_task_gle_adv_isr.c(892),INFO" ID="0x88fe1be5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_adv]evt_task_gle_adv_cancel_cbk state=%d @evt_task_gle_adv_isr.c(1006),INFO" ID="0x88fe1f75" />
+			</MSG_LOG>

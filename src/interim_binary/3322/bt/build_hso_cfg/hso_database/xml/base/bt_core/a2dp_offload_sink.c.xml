@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[offload][bgtp]dts_a2dp_proc_first_pkt malloc err. len %u @a2dp_offload_sink.c(56),ERROR" ID="0x8b8601c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[offload][bgtp]dts_a2dp_proc_first_pkt data_len err. total_len %u, pkt_len %u @a2dp_offload_sink.c(60),ERROR" ID="0x8b8601e2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[offload][bgtp]cur recv data buff len exceed.total %u,curr %u,recv %u @a2dp_offload_sink.c(77),ERROR" ID="0x8b86026a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[offload][bgtp]buffer overflow detected. buf_size %u, max_allowed %u, data_length %u @a2dp_offload_sink.c(105),WARNING" ID="0x8b86034b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][bgtp]dts_a2dp_send_audio_data malloc err. buf_size %u @a2dp_offload_sink.c(111),WARNING" ID="0x8b86037b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][bgtp]a2dp_uapi_ipc_send_audio_data , status %u @a2dp_offload_sink.c(137),WARNING" ID="0x8b86044b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[offload][bgtp]audio data too short, data_len %u, L2CAP_HEADER %u @a2dp_offload_sink.c(149),WARNING" ID="0x8b8604ab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][bgtp]audio data invalid, data_size %d @a2dp_offload_sink.c(164),WARNING" ID="0x8b860523" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][bgtp]packet counter= %d, notify bth! @a2dp_offload_sink.c(195),INFO" ID="0x8b86061d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[offload][bgtp]a2dp_audio_pkt_check null data pointer @a2dp_offload_sink.c(258),WARNING" ID="0x8b860813" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[offload][bgtp]a2dp_audio_pkt_check size too small. size %u, min_required %u @a2dp_offload_sink.c(265),WARNING" ID="0x8b86084b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[offload][bgtp]dts_a2dp_check_packet_time_seq fail. packing_flag %d. pb_flag 0x%02x @a2dp_offload_sink.c(283),INFO" ID="0x8b8608dd" />
+			</MSG_LOG>

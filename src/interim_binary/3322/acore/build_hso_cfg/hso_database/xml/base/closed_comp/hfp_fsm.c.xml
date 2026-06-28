@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[HFP]hfpc rfcomm connect complete enter @hfp_fsm.c(169),INFO" ID="0xebdc054d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HFP]hfpc rfcomm connect complete REMOTE=%02x:%02x:**:**:**:%02x, connection_number=%d @hfp_fsm.c(188),INFO" ID="0xebdc05e5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HFP][RFCOMM_DISC_COMPLETE] CONN_HANDLE=0x%x, REMOTE=%02x:%02x:**:**:**:%02x @hfp_fsm.c(222),INFO" ID="0xebdc06f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP][SCO_RSP] malloc fail. @hfp_fsm.c(421),ERROR" ID="0xebdc0d2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP][SCO_RSP] malloc fail. @hfp_fsm.c(426),ERROR" ID="0xebdc0d52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HFP][SCO_RSP] addr copy fail. @hfp_fsm.c(431),ERROR" ID="0xebdc0d7a" />
+			</MSG_LOG>

@@ -1,0 +1,24 @@
+<div class="container" onswipe="onswipe">
+    <picker-view type="text" range="{{ data }}" ref="pickerview"
+                 style="height : 100%; width : 25%;" on:click="fun_pickerview">
+    </picker-view>
+    <list style="width : 25%; height : 100%;" ref="list" on:click="fun_list">
+        <list-item style="width : 100%; height : 100%;" for="{{ todolist }}">
+            <text style="width : 100%; height : 100%; background-color : gray; text-align : center;
+                    text-align-vertical : top; color : #d9d;">{{ $item.title }}</text>
+        </list-item>
+    </list>
+    <swiper style="height : 100%; width : 25%; justify-content : center;" ref="swiper" on:click="fun_swiper">
+        <div class="swiper-item primary-item">
+            <text>1</text>
+        </div>
+        <div class="swiper-item warning-item">
+            <text>2</text>
+        </div>
+        <div class="swiper-item success-item">
+            <text>3</text>
+        </div>
+    </swiper>
+    <slider style="height : 100%; width : 25%; background-color : red;" ref="slider" on:click="fun_slider"></slider>
+</div>
+

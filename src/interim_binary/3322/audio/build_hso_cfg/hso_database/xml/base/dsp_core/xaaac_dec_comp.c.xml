@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @xaaac_dec_comp.c(131),ERROR" ID="0x990c041a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi]calloc i = %u mem_array failed, buf_type = %d size = %u. @xaaac_dec_comp.c(176),INFO" ID="0x990c0585" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]calloc xa_process_handle failed, size = %u. @xaaac_dec_comp.c(233),INFO" ID="0x990c074d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]alloc xa_aac_init buf_size fail @xaaac_dec_comp.c(252),ERROR" ID="0x990c07e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]xa_aacdec_process_frame exe_done status err @xaaac_dec_comp.c(668),ERROR" ID="0x990c14e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ha_aac_dec_restart ret = %x  @xaaac_dec_comp.c(690),ERROR" ID="0x990c1592" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xaaac_dec_comp.c(712),ERROR" ID="0x990c1642" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xaaac_dec_comp.c(717),ERROR" ID="0x990c166a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]audio_object_type = %u @xaaac_dec_comp.c(739),ERROR" ID="0x990c171a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]alloc ha_aac_dec_init aac_state fail @xaaac_dec_comp.c(778),ERROR" ID="0x990c1852" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call xa_aac_init Failed, Error Code: [0x%08X] @xaaac_dec_comp.c(794),ERROR" ID="0x990c18d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]param-&gt;scratch_buf_size = %u @xaaac_dec_comp.c(895),ERROR" ID="0x990c1bfa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]out-&gt;pcm_out_buf_size = %u @xaaac_dec_comp.c(1027),ERROR" ID="0x990c201a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call check_continuous_sync Failed, Error Code: [0x%08X] @xaaac_dec_comp.c(1044),ERROR" ID="0x990c20a2" />
+			</MSG_LOG>

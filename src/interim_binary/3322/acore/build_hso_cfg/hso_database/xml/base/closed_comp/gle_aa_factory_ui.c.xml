@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="gle aa rf rx start @gle_aa_factory_ui.c(53),INFO" ID="0xed7e01ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle aa rf tx|rx end @gle_aa_factory_ui.c(63),INFO" ID="0xed7e01fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle aa rf reset @gle_aa_factory_ui.c(73),INFO" ID="0xed7e024d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle factory rf tx start malloc fail @gle_aa_factory_ui.c(89),INFO" ID="0xed7e02cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle factory rf tx start status(%d) @gle_aa_factory_ui.c(99),INFO" ID="0xed7e031d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle factory rf rx start malloc fail @gle_aa_factory_ui.c(109),INFO" ID="0xed7e036d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle factory rf rx start status(%d) @gle_aa_factory_ui.c(119),INFO" ID="0xed7e03bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle factory rf tx|rx malloc fail @gle_aa_factory_ui.c(130),INFO" ID="0xed7e0415" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle factory rf tx|rx memcpy fail @gle_aa_factory_ui.c(139),INFO" ID="0xed7e045d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle factory rf tx|rx end status(%#x) @gle_aa_factory_ui.c(143),INFO" ID="0xed7e047d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle factory rf reset malloc fail @gle_aa_factory_ui.c(153),INFO" ID="0xed7e04cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle factory rf reset status(%#x) @gle_aa_factory_ui.c(164),INFO" ID="0xed7e0525" />
+			</MSG_LOG>

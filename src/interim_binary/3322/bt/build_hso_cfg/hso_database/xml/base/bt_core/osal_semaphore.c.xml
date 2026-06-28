@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="osal_sem_init caller is:0x%x @osal_semaphore.c(21),INFO" ID="0xa04400ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="val=%d parameter invalid! @osal_semaphore.c(24),INFO" ID="0xa04400c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SemCreate fail! ret=%#x. @osal_semaphore.c(30),INFO" ID="0xa04400f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sem_binary_sem_init:0x%x @osal_semaphore.c(38),INFO" ID="0xa0440135" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="val=%d param invalid! @osal_semaphore.c(41),INFO" ID="0xa044014d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BinarySemCreate fail! ret=%#x. @osal_semaphore.c(47),INFO" ID="0xa044017d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sem_destroy:0x%x @osal_semaphore.c(55),INFO" ID="0xa04401bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_semaphore.c(58),INFO" ID="0xa04401d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SemDelete fail! ret=%#x. @osal_semaphore.c(63),INFO" ID="0xa04401fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_semaphore.c(70),INFO" ID="0xa0440235" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LOS_ERRNO_SEM_TIMEOUT! @osal_semaphore.c(75),INFO" ID="0xa044025d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SemPend fail! ret=%#x. @osal_semaphore.c(77),INFO" ID="0xa044026d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_semaphore.c(85),INFO" ID="0xa04402ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ERRNO_SEM_TIMEOUT! @osal_semaphore.c(92),INFO" ID="0xa04402e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SemPend fail! ret=%#x. @osal_semaphore.c(94),INFO" ID="0xa04402f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_semaphore.c(102),INFO" ID="0xa0440335" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SemPend fail! ret=%#x. @osal_semaphore.c(108),INFO" ID="0xa0440365" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_semaphore.c(116),INFO" ID="0xa04403a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LOS_ERRNO_SEM_PEND_IN_LOCK! @osal_semaphore.c(122),INFO" ID="0xa04403d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_semaphore.c(134),INFO" ID="0xa0440435" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SemPost fail! ret=%#x. @osal_semaphore.c(140),INFO" ID="0xa0440465" />
+			</MSG_LOG>

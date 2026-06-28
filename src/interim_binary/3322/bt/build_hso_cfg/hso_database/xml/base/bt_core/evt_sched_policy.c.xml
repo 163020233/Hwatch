@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[warning]lm_classic_sco_sched_add warning! @evt_sched_policy.c(656),WARNING" ID="0x8a201483" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[warning]lm_classic_sco_sched_remove warning! @evt_sched_policy.c(667),WARNING" ID="0x8a2014db" />
+			</MSG_LOG>

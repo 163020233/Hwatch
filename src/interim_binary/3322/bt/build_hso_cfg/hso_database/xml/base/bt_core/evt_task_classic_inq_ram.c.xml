@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]create_desc fail, env_ptr is NULL! @evt_task_classic_inq_ram.c(155),WARNING" ID="0x8b1204db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]inq_create: ES_MEM_ALLOC_FAIL! @evt_task_classic_inq_ram.c(166),ERROR" ID="0x8b120532" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_INQ]inq_create: con_hdl %d, inq_start_time:0x%x, inq_mode:0x%x, tx_pwr:0x%x @evt_task_classic_inq_ram.c(182),INFO" ID="0x8b1205b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_INQ]end_process: con_hdl %d, fhs|rep cnt 0x%x, evt_state %d, timestamp 0x%x @evt_task_classic_inq_ram.c(205),INFO" ID="0x8b12066d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="L2][BT_INQ]inq_sched: env_ptr is null @evt_task_classic_inq_ram.c(252),ERROR" ID="0x8b1207e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="L2][BT_INQ]inq_sched: es_insert_fail! @evt_task_classic_inq_ram.c(299),ERROR" ID="0x8b12095a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]start_cbk: es_elt mismatch @evt_task_classic_inq_ram.c(313),WARNING" ID="0x8b1209cb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bt_reset]stop inq complete @evt_task_classic_inq_ram.c(340),INFO" ID="0x8b120aa5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_classic_inq_ending_event_int buf_idx(%d)rxpdcnt(%d) @evt_task_classic_inq_ram.c(364),INFO" ID="0x8b120b65" />
+			</MSG_LOG>

@@ -1,0 +1,28 @@
+/*
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2012-2019. All rights reserved.
+ * Description: decoder
+ * Author: AuthorNameMagicTag
+ * Create: 2012-04-22
+ */
+
+#ifndef __STREAM_LOG_H__
+#define __STREAM_LOG_H__
+
+#include "vfmw.h"
+#include "vfmw_proc.h"
+
+#ifdef __cplusplus
+#if __cplusplus
+extern "C" {
+#endif
+#endif
+
+td_s32 stream_log_read(td_void *buf, td_s32 len, td_s32 *used);
+td_s32 stream_log_write(cmd_str_ptr buffer, td_u32 count);
+
+#ifdef __cplusplus
+#if __cplusplus
+}
+#endif
+#endif
+#endif

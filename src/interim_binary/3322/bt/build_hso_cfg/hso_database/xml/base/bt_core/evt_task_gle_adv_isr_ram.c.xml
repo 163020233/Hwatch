@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[bgle][gle_adv]prim_tx_evt_handle_ram, insert err, ts=0x%x, task_id=0x%x, curr_ts=0x%x @evt_task_gle_adv_isr_ram.c(62),INFO" ID="0x8bdc01f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgle][gle_adv]aux_tx_evt_handle_ram, insert err, ts=0x%x, task_id=0x%x, curr_ts=0x%x @evt_task_gle_adv_isr_ram.c(95),INFO" ID="0x8bdc02fd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgle][gle_adv]req_rx_evt_handle_ram, insert err, ts=0x%x, task_id=0x%x, curr_ts=0x%x @evt_task_gle_adv_isr_ram.c(149),INFO" ID="0x8bdc04ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_adv] nb_prog=%d @evt_task_gle_adv_isr_ram.c(268),WARNING" ID="0x8bdc0863" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgle][gle_adv]evt_task_gle_adv_aux_tx_evt_handle, es_insert err @evt_task_gle_adv_isr_ram.c(301),INFO" ID="0x8bdc096d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_adv] nb_prog=%d @evt_task_gle_adv_isr_ram.c(325),WARNING" ID="0x8bdc0a2b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][gle_adv]gle_adv_abnormal_cbk, timestamp=0x%x, current time=0x%x, state=%d, task_id=0x%x @evt_task_gle_adv_isr_ram.c(330),INFO" ID="0x8bdc0a55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_adv]evt_task_gle_adv_cancel_cbk state=%d @evt_task_gle_adv_isr_ram.c(398),INFO" ID="0x8bdc0c75" />
+			</MSG_LOG>

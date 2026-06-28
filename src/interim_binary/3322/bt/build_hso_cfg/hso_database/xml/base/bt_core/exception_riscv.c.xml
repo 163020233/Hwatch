@@ -1,0 +1,54 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="Instruction address misaligned @exception_riscv.c(183),INFO" ID="0xa02205bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="*******dump call stack begin : fp = 0x%x******* @exception_riscv.c(402),INFO" ID="0xa0220c95" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="call stack %d -- ra = 0x%x    fp = 0x%x @exception_riscv.c(404),INFO" ID="0xa0220ca5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="*******dump call stack end******* @exception_riscv.c(406),INFO" ID="0xa0220cb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="*******backtrace begin******* @exception_riscv.c(408),INFO" ID="0xa0220cc5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="traceback %d -- sp addr= 0x%x    sp content= 0x%x @exception_riscv.c(411),INFO" ID="0xa0220cdd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="*******backtrace end******* @exception_riscv.c(413),INFO" ID="0xa0220ced" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="**************Exception Information**************  @exception_riscv.c(419),INFO" ID="0xa0220d1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="task_name  = %s @exception_riscv.c(420),INFO" ID="0xa0220d25" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="thrd_pid   = 0x%x @exception_riscv.c(421),INFO" ID="0xa0220d2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="type       = 0x%x @exception_riscv.c(422),INFO" ID="0xa0220d35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="nest_cnt   = 0x%x @exception_riscv.c(423),INFO" ID="0xa0220d3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="phase      = %s @exception_riscv.c(425),INFO" ID="0xa0220d4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="phase      = 0x%x @exception_riscv.c(427),INFO" ID="0xa0220d5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ccause     = 0x%x @exception_riscv.c(429),INFO" ID="0xa0220d6d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="mcause     = 0x%x @exception_riscv.c(430),INFO" ID="0xa0220d75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="mtval      = 0x%x @exception_riscv.c(431),INFO" ID="0xa0220d7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gp         = 0x%x @exception_riscv.c(432),INFO" ID="0xa0220d85" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="mstatus    = 0x%x @exception_riscv.c(433),INFO" ID="0xa0220d8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="mepc       = 0x%x @exception_riscv.c(434),INFO" ID="0xa0220d95" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ra         = 0x%x @exception_riscv.c(435),INFO" ID="0xa0220d9d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sp         = 0x%x @exception_riscv.c(436),INFO" ID="0xa0220da5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="tp         = 0x%x @exception_riscv.c(437),INFO" ID="0xa0220dad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="t0         = 0x%x @exception_riscv.c(438),INFO" ID="0xa0220db5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="t1         = 0x%x @exception_riscv.c(439),INFO" ID="0xa0220dbd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="t2         = 0x%x @exception_riscv.c(440),INFO" ID="0xa0220dc5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s0         = 0x%x @exception_riscv.c(441),INFO" ID="0xa0220dcd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s1         = 0x%x @exception_riscv.c(442),INFO" ID="0xa0220dd5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a0         = 0x%x @exception_riscv.c(443),INFO" ID="0xa0220ddd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a1         = 0x%x @exception_riscv.c(444),INFO" ID="0xa0220de5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2         = 0x%x @exception_riscv.c(445),INFO" ID="0xa0220ded" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a3         = 0x%x @exception_riscv.c(446),INFO" ID="0xa0220df5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a4         = 0x%x @exception_riscv.c(447),INFO" ID="0xa0220dfd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a5         = 0x%x @exception_riscv.c(448),INFO" ID="0xa0220e05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a6         = 0x%x @exception_riscv.c(449),INFO" ID="0xa0220e0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a7         = 0x%x @exception_riscv.c(450),INFO" ID="0xa0220e15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s2         = 0x%x @exception_riscv.c(451),INFO" ID="0xa0220e1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s3         = 0x%x @exception_riscv.c(452),INFO" ID="0xa0220e25" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s4         = 0x%x @exception_riscv.c(453),INFO" ID="0xa0220e2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s5         = 0x%x @exception_riscv.c(454),INFO" ID="0xa0220e35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s6         = 0x%x @exception_riscv.c(455),INFO" ID="0xa0220e3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s7         = 0x%x @exception_riscv.c(456),INFO" ID="0xa0220e45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s8         = 0x%x @exception_riscv.c(457),INFO" ID="0xa0220e4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s9         = 0x%x @exception_riscv.c(458),INFO" ID="0xa0220e55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s10        = 0x%x @exception_riscv.c(459),INFO" ID="0xa0220e5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="s11        = 0x%x @exception_riscv.c(460),INFO" ID="0xa0220e65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="t3         = 0x%x @exception_riscv.c(461),INFO" ID="0xa0220e6d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="t4         = 0x%x @exception_riscv.c(462),INFO" ID="0xa0220e75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="t5         = 0x%x @exception_riscv.c(463),INFO" ID="0xa0220e7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="t6         = 0x%x @exception_riscv.c(464),INFO" ID="0xa0220e85" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="**************Exception Information end**************  @exception_riscv.c(467),INFO" ID="0xa0220e9d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="fp = %x @exception_riscv.c(515),INFO" ID="0xa022101d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="not find vaild fp. @exception_riscv.c(517),INFO" ID="0xa022102d" />
+			</MSG_LOG>

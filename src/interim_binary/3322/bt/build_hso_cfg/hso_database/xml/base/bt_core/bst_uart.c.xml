@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="bst_uart dma error ret %x @bst_uart.c(182),INFO" ID="0xa09205b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bst_uart dma error @bst_uart.c(188),INFO" ID="0xa09205e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bst_uart dma error @bst_uart.c(199),INFO" ID="0xa092063d" />
+			</MSG_LOG>

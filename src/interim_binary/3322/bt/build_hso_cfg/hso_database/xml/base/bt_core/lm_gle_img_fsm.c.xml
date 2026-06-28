@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_img_connect_ind_act img_desc is NULL for img_id=%d @lm_gle_img_fsm.c(108),ERROR" ID="0x8b3c0362" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMB] lm_gle_img_connect_ind_act imb_desc NULL, img_id %d, imb_id %d, acb_conhdl 0x%x @lm_gle_img_fsm.c(121),ERROR" ID="0x8b3c03ca" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] lm_gle_img_connect_ind_v2_act img_desc NULL, img_id %d, imb_id %d, acb_conhdl 0x%x @lm_gle_img_fsm.c(145),ERROR" ID="0x8b3c048a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMB] lm_gle_img_connect_ind_act imb_desc NULL, img_id %d, imb_id %d, acb_conhdl 0x%x @lm_gle_img_fsm.c(154),ERROR" ID="0x8b3c04d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_img_label_ind_act img_desc is NULL for img_id=%d @lm_gle_img_fsm.c(176),ERROR" ID="0x8b3c0582" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_img_label_ind_act, imb is active, img_id %d, imb_id %d, acb_conhdl 0x%x, imb_fsm_state %x @lm_gle_img_fsm.c(192),ERROR" ID="0x8b3c0602" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMB] lm_gle_img_label_ind_act imb_desc NULL, img_id %d, imb_id %d, acb_conhdl 0x%x @lm_gle_img_fsm.c(199),ERROR" ID="0x8b3c063a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_img_hci_vendor_mass_data_rpt_act, p_env_img is NULL @lm_gle_img_fsm.c(283),INFO" ID="0x8b3c08dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_img_hci_vendor_read_rssi_act, p_env_img is NULL @lm_gle_img_fsm.c(320),INFO" ID="0x8b3c0a05" />
+			</MSG_LOG>

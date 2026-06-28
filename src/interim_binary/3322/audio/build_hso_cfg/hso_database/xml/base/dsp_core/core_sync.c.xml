@@ -1,0 +1,112 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call circ_buf_write Failed, Error Code: [0x%08X] @core_sync.c(346),ERROR" ID="0x98680ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]proc is null @core_sync.c(356),ERROR" ID="0x98680b22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call circ_buf_write Failed, Error Code: [0x%08X] @core_sync.c(401),ERROR" ID="0x98680c8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call circ_buf_read Failed, Error Code: [0x%08X] @core_sync.c(418),ERROR" ID="0x98680d12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] read pcm packet error! @core_sync.c(430),ERROR" ID="0x98680d72" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][delay] max_packet_delay: %u | max_pcm_delay: %u| min_packet_delay: %u | min_pcm_delay: %u @core_sync.c(464),WARNING" ID="0x98680e83" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync] toggle_cnt: %u |stop_toggle_cnt: %u |start_toggle_ts: %u @core_sync.c(509),WARNING" ID="0x98680feb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] proc restart event @core_sync.c(535),WARNING" ID="0x986810bb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sio_restart_edma Failed, Error Code: [0x%08X] @core_sync.c(541),ERROR" ID="0x986810ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sync] set audio scene: %u @core_sync.c(579),WARNING" ID="0x9868121b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] audio scene: bt music stop @core_sync.c(634),WARNING" ID="0x986813d3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] audio scene: bt voip stop @core_sync.c(636),WARNING" ID="0x986813e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] audio scene: sle voip stop @core_sync.c(638),WARNING" ID="0x986813f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] audio scene: sle music src stop @core_sync.c(640),WARNING" ID="0x98681403" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] audio scene: sle music sink stop @core_sync.c(642),WARNING" ID="0x98681413" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] audio scene: bt music start, adec sample_rate: %u |codec_id: %d @core_sync.c(692),WARNING" ID="0x986815a3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] audio scene: bt voip start, adec sample_rate: %u |codec_id: %d @core_sync.c(696),WARNING" ID="0x986815c3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] audio scene: sle voip start, adec sample_rate: %u |codec_id: %d @core_sync.c(700),WARNING" ID="0x986815e3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] audio scene: sle music src start, adec sample_rate: %u |codec_id: %d @core_sync.c(704),WARNING" ID="0x98681603" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] audio scene: sle music sink start, adec sample_rate: %u |codec_id: %d @core_sync.c(708),WARNING" ID="0x98681623" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adec_get_sync_info Failed, Error Code: [0x%08X] @core_sync.c(789),ERROR" ID="0x986818aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aip_start Failed, Error Code: [0x%08X] @core_sync.c(824),ERROR" ID="0x986819c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync][tone sync failed]toggle_count set: %u, toggle_count current: %u @core_sync.c(831),ERROR" ID="0x986819fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]tone_player = 0x%08X @core_sync.c(837),ERROR" ID="0x98681a2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_set_ao_volume Failed, Error Code: [0x%08X] @core_sync.c(862),ERROR" ID="0x98681af2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][volume] toggle_count expired, gain: [%d, %d], toggle_cnt: %u &gt;= %u @core_sync.c(869),ERROR" ID="0x98681b2a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][volume] gain: [%d, %d], toggle_cnt: %u -&gt; %u @core_sync.c(875),WARNING" ID="0x98681b5b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call circ_buf_write Failed, Error Code: [0x%08X] @core_sync.c(888),ERROR" ID="0x98681bc2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync][volume sync failed] toggle_count set: %u, toggle_count current: %u @core_sync.c(943),ERROR" ID="0x98681d7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_set_ao_volume Failed, Error Code: [0x%08X] @core_sync.c(954),ERROR" ID="0x98681dd2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync][tone sync failed] toggle_count player: %u, toggle_count current: %u @core_sync.c(977),WARNING" ID="0x98681e8b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aip_start Failed, Error Code: [0x%08X] @core_sync.c(982),ERROR" ID="0x98681eb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] sync_ts_state = SYNC_USE_NULL_TS @core_sync.c(998),WARNING" ID="0x98681f33" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]stream-&gt;size: %u, ctx-&gt;current_data_packet.length: %u @core_sync.c(1014),ERROR" ID="0x98681fb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sync] release fail, sn :%u @core_sync.c(1028),ERROR" ID="0x98682022" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi]length: %u, es_size: %u, left_samples: %u, out_samples: %u @core_sync.c(1034),ERROR" ID="0x98682052" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync][dec_fail] sn: %d |ts: %d |ret: 0x%x @core_sync.c(1066),ERROR" ID="0x98682152" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_release_stream Failed, Error Code: [0x%08X] @core_sync.c(1147),ERROR" ID="0x986823da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call circ_buf_peak Failed, Error Code: [0x%08X] @core_sync.c(1159),ERROR" ID="0x9868243a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] ES overflow, drop %u frames, last_sn: %u, last_ts: %u, expected_ts: %u @core_sync.c(1201),WARNING" ID="0x9868258b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] ES underflow, move expected_ts: %u -&gt; %u, underrun: %u, last_ts: %u @core_sync.c(1232),INFO" ID="0x98682685" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] reach expected_ts: %u, last_ts: %u @core_sync.c(1257),WARNING" ID="0x9868274b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] reach enough data, expected_ts: %u, last_ts: %u @core_sync.c(1269),WARNING" ID="0x986827ab" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] add to expected_ts, ts: %u, expected_ts: %u @core_sync.c(1321),WARNING" ID="0x9868294b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] drop pkt seq_num: %u |ts: %u |expected_ts: %u |pkt_cnt: %u @core_sync.c(1331),INFO" ID="0x9868299d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync][dec_fail] sn: %d |ts: %d |ret: 0x%x @core_sync.c(1393),ERROR" ID="0x98682b8a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] first packet ts: %u, expected_ts: %u @core_sync.c(1441),WARNING" ID="0x98682d0b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] SN discontinuous: %d --&gt; %d |last_ts: %u |ts: %u @core_sync.c(1571),ERROR" ID="0x9868311a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] ts reset, last_sn: %u |last_ts: %u |sn: %u |ts: %u @core_sync.c(1578),WARNING" ID="0x98683153" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call circ_buf_write Failed, Error Code: [0x%08X] @core_sync.c(1583),ERROR" ID="0x9868317a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync] frame_num change: %u --&gt; %u, ctx-&gt;pkt_cnt: %u @core_sync.c(1608),ERROR" ID="0x98683242" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]stream-&gt;size = %u @core_sync.c(1647),ERROR" ID="0x9868337a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]frame_num = %u @core_sync.c(1648),ERROR" ID="0x98683382" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync] frame_num change: %u --&gt; %u, ctx-&gt;pkt_cnt: %u @core_sync.c(1699),ERROR" ID="0x9868351a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] ts reset, last_sn: %u |last_ts: %u |sn: %u |ts: %u @core_sync.c(1758),WARNING" ID="0x986836f3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] use original ts, last_sn: %u |last_ts: %u |sn: %u |ts: %u @core_sync.c(1769),WARNING" ID="0x9868374b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] use sn cal ts, last_sn: %u |last_ts: %u |sn: %u |ts: %u @core_sync.c(1776),WARNING" ID="0x98683783" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] data packet overflow! @core_sync.c(1795),ERROR" ID="0x9868381a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync] stream size invalid, %u |sn: %u @core_sync.c(1828),ERROR" ID="0x98683922" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] toggle_interval: %u |audio_delay: %u |toggle_count: %u |dma_count: %u @core_sync.c(1893),WARNING" ID="0x98683b2b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ctx-&gt;edma_ch = %u @core_sync.c(1900),WARNING" ID="0x98683b63" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sio_set_edma_peroid_size Failed, Error Code: [0x%08X] @core_sync.c(1921),ERROR" ID="0x98683c0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sync] tws_scene: %u @core_sync.c(1932),WARNING" ID="0x98683c63" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sync] unsupport scene: %u @core_sync.c(1944),WARNING" ID="0x98683cc3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] start sn did not set! @core_sync.c(1959),ERROR" ID="0x98683d3a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync] drop sn: %u |target start sn: %u |frame_num: %u @core_sync.c(1965),WARNING" ID="0x98683d6b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync] current sn: %u |target start sn: %u |frame_num: %u @core_sync.c(1970),WARNING" ID="0x98683d93" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sync][slave] slave_toggle_count_max: %u @core_sync.c(2096),ERROR" ID="0x98684182" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][GET_RENDER_REQ] toggle_cnt: %u |toggle_ts: %u |last_sn: %u |last_ts: %u @core_sync.c(2149),WARNING" ID="0x9868432b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][4t1r] toggle_cnt: %u |dma_count:%u |pre_tog_clk: %u |toggle_clk_delta: %d @core_sync.c(2205),WARNING" ID="0x986844eb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][bt_voip] toggle_cnt: %u |dma_count:%u |pre_tog_clk: %u |toggle_clk_delta: %d @core_sync.c(2238),WARNING" ID="0x986845f3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][dual][master] toggle_cnt: %u |toggle_timestamp: %u |toggle_clk_delta: %d |underrun: %u @core_sync.c(2252),WARNING" ID="0x98684663" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][master] toggle_cnt: %u |toggle_timestamp: %u |toggle_clk_delta: %d |underrun: %u @core_sync.c(2280),WARNING" ID="0x98684743" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync] [slave] got start sync cmd when playing @core_sync.c(2315),ERROR" ID="0x9868485a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ts_info-&gt;delay_toggle_cnt = %u @core_sync.c(2321),ERROR" ID="0x9868488a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync][msg master] binaural begin, toggle_cnt: %u |toggle_ts: %u |delay_toggle_cnt: %u @core_sync.c(2339),WARNING" ID="0x9868491b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ts_info-&gt;delay_toggle_cnt = %u @core_sync.c(2351),ERROR" ID="0x9868497a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][msg master] single to binaural, toggle_cnt: %u |toggle_ts: %u |delay_toggle_cnt: %u |expected_ts: %u @core_sync.c(2371),WARNING" ID="0x98684a1b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][slave] master_toggle_cnt: %u |master_toggle_ts: %u |slave_toggle_cnt: %u |slave_toggle_ts: %u @core_sync.c(2514),ERROR" ID="0x98684e92" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync][slave] toggle_cnt: %u |master_toggle_ts: %u |slave_toggle_ts: %u |ts_diff: %d @core_sync.c(2534),WARNING" ID="0x98684f33" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync][slave] toggle_clk_delta: %d |underrun: %u @core_sync.c(2538),WARNING" ID="0x98684f53" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync] dsp toggle start: tog_start |audio scene: %u | tog_clk: %u |pkt_cnt: %u @core_sync.c(2560),WARNING" ID="0x98685003" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync][xrun] dma_count: %u |continuous_underrun: %u @core_sync.c(2665),WARNING" ID="0x9868534b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync] [BMIC_TX] dma_clk: %u |tog_clk: %u |delta_clk: %u @core_sync.c(2716),ERROR" ID="0x986854e2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] [BMIC_TX] dma_clk: %u |tog_clk: %u |delta_clk: %u |adjust_samples: %u(add) @core_sync.c(2726),WARNING" ID="0x98685533" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] [BMIC_TX] dma_clk: %u |tog_clk: %u |delta_clk: %u |adjust_samples: %d(drop) @core_sync.c(2734),WARNING" ID="0x98685573" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync] [BMIC_TX] dma_clk: %u |tog_clk: %u |delta_clk: %u @core_sync.c(2761),ERROR" ID="0x9868564a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] [BMIC_RX] dma_clk: %u |tog_clk: %u |delta_clk: %u |adjust_samples: %u(drop) @core_sync.c(2771),WARNING" ID="0x9868569b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][sync] [BMIC_RX] dma_clk: %u |tog_clk: %u |delta_clk: %u |adjust_samples: %u(add) @core_sync.c(2778),WARNING" ID="0x986856d3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sio_edma_reg_sync_process Failed, Error Code: [0x%08X] @core_sync.c(2949),ERROR" ID="0x98685c2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ao_port = 0x%08X @core_sync.c(2970),ERROR" ID="0x98685cd2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ctx-&gt;ao_attr.handle = 0x%08X @core_sync.c(2976),ERROR" ID="0x98685d02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_ao_get_edma_ch Failed, Error Code: [0x%08X] @core_sync.c(2982),ERROR" ID="0x98685d32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sync_ao_get_attr Failed, Error Code: [0x%08X] @core_sync.c(2998),ERROR" ID="0x98685db2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sio_edma_reg_sync_process Failed, Error Code: [0x%08X] @core_sync.c(3004),ERROR" ID="0x98685de2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync]port busy! sync port:0x%x|init port:0x%x @core_sync.c(3031),ERROR" ID="0x98685eba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_pcm_unify Failed, Error Code: [0x%08X] @core_sync.c(3094),ERROR" ID="0x986860b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_write Failed, Error Code: [0x%08X] @core_sync.c(3100),ERROR" ID="0x986860e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]deinit ao port %d |ctx ao port %d @core_sync.c(3112),ERROR" ID="0x98686142" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sync][tone] sync tone stop, underrun: %d |dma cnt: %d |frame cnt: %d @core_sync.c(3123),WARNING" ID="0x9868619b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sync][tone] continuous_underrun: %d |dma cnt: %d @core_sync.c(3137),ERROR" ID="0x9868620a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sync][tone] dma start @core_sync.c(3143),WARNING" ID="0x9868623b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ao_port = 0x%08X @core_sync.c(3161),ERROR" ID="0x986862ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_ao_get_edma_ch Failed, Error Code: [0x%08X] @core_sync.c(3167),ERROR" ID="0x986862fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sio_edma_reg_sync_process Failed, Error Code: [0x%08X] @core_sync.c(3173),ERROR" ID="0x9868632a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sync][tone] init ao, port: 0x%x @core_sync.c(3181),WARNING" ID="0x9868636b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sio_edma_reg_sync_process Failed, Error Code: [0x%08X] @core_sync.c(3214),ERROR" ID="0x98686472" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ai_port = 0x%08X @core_sync.c(3235),ERROR" ID="0x9868651a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_ai_get_edma_ch Failed, Error Code: [0x%08X] @core_sync.c(3241),ERROR" ID="0x9868654a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sync_ai_get_edma Failed, Error Code: [0x%08X] @core_sync.c(3266),ERROR" ID="0x98686612" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sio_edma_reg_sync_process Failed, Error Code: [0x%08X] @core_sync.c(3272),ERROR" ID="0x98686642" />
+			</MSG_LOG>

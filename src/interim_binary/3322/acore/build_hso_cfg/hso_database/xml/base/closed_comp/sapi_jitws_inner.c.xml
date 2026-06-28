@@ -1,0 +1,32 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[JITWS]jitws handle para sync end operation=%d @sapi_jitws_inner.c(91),INFO" ID="0xebea02dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][HandleParaSyncEnd] buf len invalid @sapi_jitws_inner.c(93),ERROR" ID="0xebea02ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER][EVENT_BT_KPI_MEDIA_HO_TIME]upload_time=%d @sapi_jitws_inner.c(157),INFO" ID="0xebea04ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER][EVENT_BT_KPI_CALL_HO_TIME]upload_time=%d @sapi_jitws_inner.c(159),INFO" ID="0xebea04fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER][EVENT_BT_KPI_IDLE_HO_TIME]upload_time=%d @sapi_jitws_inner.c(161),INFO" ID="0xebea050d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER_FAIL_REMOTE_SLAVE_EAR]ERROR_CODE=0x%x @sapi_jitws_inner.c(217),WARNING" ID="0xebea06cb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HANDOVER_FAIL_REMOTE_MASTER_EAR]REMOTE_RESULT=0x%x @sapi_jitws_inner.c(274),WARNING" ID="0xebea0893" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][STOP_JOINT_RECV] buf len invalid @sapi_jitws_inner.c(293),ERROR" ID="0xebea092a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS] JITWS Handle Master Joint Stop @sapi_jitws_inner.c(298),INFO" ID="0xebea0955" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PAUSE_JOINT_RECV] buf len invalid @sapi_jitws_inner.c(308),ERROR" ID="0xebea09a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWSM][START_JOINT_BEGIN] slave set sco_end_pause_joint true  @sapi_jitws_inner.c(318),INFO" ID="0xebea09f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][START_JOINT_RECV] buf len invalid @sapi_jitws_inner.c(321),ERROR" ID="0xebea0a0a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[JITWS][START_JOINT] addr:0x%02x:%02x:**:**:**:%02x one_to_two_flag:%u. @sapi_jitws_inner.c(334),INFO" ID="0xebea0a75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][RECV_BTC_PRIV_FAIL]invalid len = %u @sapi_jitws_inner.c(384),WARNING" ID="0xebea0c03" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][JOINT_TIMER_END]TIME=%ld, SLAVE_START_RESULT=%d @sapi_jitws_inner.c(398),INFO" ID="0xebea0c75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][START_JOINT_TIME]USE TIME=%u ms @sapi_jitws_inner.c(405),INFO" ID="0xebea0cad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][EVENT_BT_KPI_HFP_JITWS_TIME]jitws_time=%u ms @sapi_jitws_inner.c(408),INFO" ID="0xebea0cc5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][EVENT_BT_KPI_HFP_JITWS_TIME]jitws_time=%u ms @sapi_jitws_inner.c(411),INFO" ID="0xebea0cdd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][SLAVE_PAUSE_FINISH]TIME=%ld, SLAVE_PAUSE_RESULT=%d @sapi_jitws_inner.c(433),INFO" ID="0xebea0d8d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][SLAVE_STOP_FINISH]time=%ld, SLAVE_STOP_RESULT=%d @sapi_jitws_inner.c(445),INFO" ID="0xebea0ded" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][START_TOGGLE_ACCORD_DELAY]toggle param is NULL @sapi_jitws_inner.c(524),INFO" ID="0xebea1065" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS][START_TOGGLE_ACCORD_DELAY]connect_handle=0x%x, toggle_interval=%d, toggle_delay=%d @sapi_jitws_inner.c(536),INFO" ID="0xebea10c5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][PRIV_STATUS_FAIL]cmd status command_opcode=0x%x, status=0x%x @sapi_jitws_inner.c(642),WARNING" ID="0xebea1413" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][SyncBthData]slave donot handle transfer @sapi_jitws_inner.c(662),INFO" ID="0xebea14b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][SyncBthData]master only handle transfer @sapi_jitws_inner.c(667),INFO" ID="0xebea14dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][SyncBthData] enter @sapi_jitws_inner.c(671),INFO" ID="0xebea14fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HCI_OPS_START_MUSIC_TOGGLE_ONLY]toggle_cnt=%d @sapi_jitws_inner.c(745),INFO" ID="0xebea174d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HCI_OPS_GET_MUSIC_TOGGLE_AND_CLK]audio_delay=%d @sapi_jitws_inner.c(755),INFO" ID="0xebea179d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][HCI_OPS_SWITCH_MUSIC_STAT][CBK]result=%d @sapi_jitws_inner.c(764),INFO" ID="0xebea17e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][HCI_OPS_SWITCH_MUSIC_STAT]memcpy fail @sapi_jitws_inner.c(776),INFO" ID="0xebea1845" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS][HCI_OPS_SWITCH_MUSIC_STAT]enable=%d array_cnt=%d report_interval=0x%x @sapi_jitws_inner.c(780),INFO" ID="0xebea1865" />
+			</MSG_LOG>

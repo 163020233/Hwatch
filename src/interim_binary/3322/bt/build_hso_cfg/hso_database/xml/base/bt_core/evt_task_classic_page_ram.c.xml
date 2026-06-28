@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_PAGE]page_statis: con_hdl %d, step %d, pkt_is_received %d, exec_time 0x%x @evt_task_classic_page_ram.c(91),INFO" ID="0x8b0802dd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_PAGE]page_statis: start_cbk_cnt %d, evt_cbk_cnt %d, abnormal_cbk_cnt=%d, cancel_cbk_cnt=%d @evt_task_classic_page_ram.c(94),INFO" ID="0x8b0802f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PAGE]create_fsm: fsm_register failed, con_hdl %d @evt_task_classic_page_ram.c(150),WARNING" ID="0x8b0804b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PAGE]create_fsm: page init failed, con_hdl %d @evt_task_classic_page_ram.c(158),WARNING" ID="0x8b0804f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PAGE]isr_cbk: es_elt mismatch @evt_task_classic_page_ram.c(211),WARNING" ID="0x8b08069b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_PAGE]page_end: con_hdl %d, inq_start_time:0x%x, inq_end_time:0x%x @evt_task_classic_page_ram.c(293),WARNING" ID="0x8b08092b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PAGE]page_end: con_hdl %d, inq es_insert_elt failed @evt_task_classic_page_ram.c(302),WARNING" ID="0x8b080973" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PAGE]evt_task_page_end: evt_state(%d)clk(0x%x) @evt_task_classic_page_ram.c(306),WARNING" ID="0x8b080993" />
+			</MSG_LOG>

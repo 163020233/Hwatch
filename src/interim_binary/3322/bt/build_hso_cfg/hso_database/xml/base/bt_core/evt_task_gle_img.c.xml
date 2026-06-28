@@ -1,0 +1,35 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[L2][ENV DUMMY]alloc fail size %d, env type %d @evt_task_gle_img.c(116),WARNING" ID="0x8c1403a3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][ENV DUMMY]free fail ptr 0x%x @evt_task_gle_img.c(146),WARNING" ID="0x8c140493" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]pld_cnt_config imb ptr null, idx %d, sed_idx %d @evt_task_gle_img.c(190),ERROR" ID="0x8c1405f2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_IMB]img_pldcnt_update sed_idx %d, evt_cnt %u, rxpldcnt %d, pldcnt %u @evt_task_gle_img.c(219),WARNING" ID="0x8c1406db" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMG]img_pldcnt_rollback sed_idx %d, rxpldcnt 0x%x, pldcnt 0x%x @evt_task_gle_img.c(231),WARNING" ID="0x8c14073b" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[L2][GLE_IMB]sed_llchmap_log, con_hdl %d, master_clk 0x%08X, txpwr %d, 5g_trx_en %d, bgle_freq_sel %d, ble_fh_en %d @evt_task_gle_img.c(250),INFO" ID="0x8c1407d5" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[L2][GLE_IMB]sed_llchmap_log, mac_id %d, ble_tx_modulator_sel %d, tx_ant %d, rx_ant %d, ble_ang_est_en %d, lna_sat_en 0x%04X @evt_task_gle_img.c(252),DBG" ID="0x8c1407e6" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][GLE_IMB]sed_llchmap_log, gle_fh_alg_sel %d, freq_start_idx %d, llchmap[0-4] 0x%04X 0x%04X 0x%04X 0x%04X 0x%04X @evt_task_gle_img.c(255),INFO" ID="0x8c1407fd" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][GLE_IMB]sed_llchmap_log, llchmap_ext[0-6] 0x%04X 0x%04X 0x%04X 0x%04X 0x%04X 0x%04X 0x%06X @evt_task_gle_img.c(258),INFO" ID="0x8c140815" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][IMG]evt_task_gle_img_update_map, not support freq_band %d @evt_task_gle_img.c(275),INFO" ID="0x8c14089d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]evt_task_img_5p8g_chnlmap_sed_config, idx %d, sed_idx %d @evt_task_gle_img.c(296),ERROR" ID="0x8c140942" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]evt_task_img_2p4g_chnlmap_sed_config, idx %d, sed_idx %d @evt_task_gle_img.c(315),ERROR" ID="0x8c1409da" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]evt_task_gle_imb_update_freq_band, idx %d, sed_idx %d @evt_task_gle_img.c(345),ERROR" ID="0x8c140aca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]syncp_found: first sync subevt idx: %d, syncp ts %d @evt_task_gle_img.c(448),INFO" ID="0x8c140e05" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]first sync subevt idx: %d, syncp ts %d @evt_task_gle_img.c(476),INFO" ID="0x8c140ee5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]syncp ts %d fcnt %d @evt_task_gle_img.c(481),DBG" ID="0x8c140f0e" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][IMG]evt_task_img_cancel_cbk con_hdl 0x%x, timestamp 0x%08x, cur_clk 0x%08x, cur_priority %d @evt_task_gle_img.c(529),WARNING" ID="0x8c14108b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]cbk=abort, timestamp %d eeq_priority %d @evt_task_gle_img.c(552),INFO" ID="0x8c141145" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]cbk=abnormal, timestamp %d eeq_priority %d @evt_task_gle_img.c(571),INFO" ID="0x8c1411dd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][IMG]isr_cbk: isr_pos %d, img_hdl %d, timestamp 0x%x, diag_info 0x%x @evt_task_gle_img.c(603),INFO" ID="0x8c1412dd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]img_instant_passed evt_cnt %d, skip_cnt %d @evt_task_gle_img.c(721),WARNING" ID="0x8c14168b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IMB_L2]evt_task_gle_img_create_intv_node, img_sed_idx: %d @evt_task_gle_img.c(743),INFO" ID="0x8c14173d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_imb_create_es_task, INTV node alloc fail! @evt_task_gle_img.c(763),ERROR" ID="0x8c1417da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="IMG INTV OFFSET=%d @evt_task_gle_img.c(770),INFO" ID="0x8c141815" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][IMG]img alloc fail @evt_task_gle_img.c(781),WARNING" ID="0x8c14186b" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][IMG PARAM]img_id=%d, img_sed_idx=%d, role=%d[0:G, 1:T], nse=%d, g2t_pid=0x%x, g2t_pdu_len=%d, g2t_sdu_len=%d @evt_task_gle_img.c(827),INFO" ID="0x8c1419dd" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][IMG PARAM]g2t_sdu_intv_us=%d, g2t_phy=%d, g2t_bn=%d, g2t_ft=%d, g2t_mcs=%d, g2t_format=%d, g2t_pilot_ratio=%d @evt_task_gle_img.c(831),INFO" ID="0x8c1419fd" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][IMG PARAM]remote_sca=%d, imb_intv=%d, sub_intv=%d, imb_nb=%d, clkoff=%d, anchor_ts=%d, anchor_fcnt=%d @evt_task_gle_img.c(835),INFO" ID="0x8c141a1d" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[L2][IMG PARAM]g_anchor_ts=%d, syncp_ts=%d, evt_cnt=%d. mac_id=%d, crc_type 0x%x, crc_init 0x%x @evt_task_gle_img.c(838),INFO" ID="0x8c141a35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][img]evt_task_env_img_deinit:img_sed_idx %d @evt_task_gle_img.c(847),INFO" ID="0x8c141a7d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][IMG]img_recovery_sched img_sed_idx %d, imb_sed_idx %d, g2t_pldcnt %d, start_g2t_pldcnt %d @evt_task_gle_img.c(895),INFO" ID="0x8c141bfd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]img_recovery_sched tx_num %d, trx_done %d @evt_task_gle_img.c(916),INFO" ID="0x8c141ca5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][IMG]L2_gle_img_reset @evt_task_gle_img.c(995),INFO" ID="0x8c141f1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][IMG]L2_gle_img_reset end @evt_task_gle_img.c(1005),INFO" ID="0x8c141f6d" />
+			</MSG_LOG>

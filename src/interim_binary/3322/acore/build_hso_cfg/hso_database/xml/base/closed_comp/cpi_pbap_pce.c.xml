@@ -1,0 +1,34 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="pbap connect addr error! @cpi_pbap_pce.c(39),ERROR" ID="0xee7e013a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap is not connected! @cpi_pbap_pce.c(84),ERROR" ID="0xee7e02a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(99),ERROR" ID="0xee7e031a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(104),ERROR" ID="0xee7e0342" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(118),ERROR" ID="0xee7e03b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap is not connected. @cpi_pbap_pce.c(130),ERROR" ID="0xee7e0412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap invalid param. @cpi_pbap_pce.c(134),ERROR" ID="0xee7e0432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap pull is busy! @cpi_pbap_pce.c(140),WARNING" ID="0xee7e0463" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(146),ERROR" ID="0xee7e0492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap context memcpy_s failed. @cpi_pbap_pce.c(163),ERROR" ID="0xee7e051a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(202),ERROR" ID="0xee7e0652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(207),ERROR" ID="0xee7e067a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap is not connected. @cpi_pbap_pce.c(239),ERROR" ID="0xee7e077a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap pull vcard listing invalid param. @cpi_pbap_pce.c(243),ERROR" ID="0xee7e079a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="invalid search value len! @cpi_pbap_pce.c(248),ERROR" ID="0xee7e07c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="g_pbap_pull_param is busy! @cpi_pbap_pce.c(254),WARNING" ID="0xee7e07f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(293),ERROR" ID="0xee7e092a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(299),ERROR" ID="0xee7e095a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(305),ERROR" ID="0xee7e098a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(315),ERROR" ID="0xee7e09da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap is not connected. @cpi_pbap_pce.c(325),ERROR" ID="0xee7e0a2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap invalid param. @cpi_pbap_pce.c(329),ERROR" ID="0xee7e0a4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="g_pbap_pull_param is busy! @cpi_pbap_pce.c(335),ERROR" ID="0xee7e0a7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(341),ERROR" ID="0xee7e0aaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap_context memcpy_s failed. @cpi_pbap_pce.c(354),ERROR" ID="0xee7e0b12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap is not connected. @cpi_pbap_pce.c(375),ERROR" ID="0xee7e0bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(386),ERROR" ID="0xee7e0c12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap memnew fail. @cpi_pbap_pce.c(396),ERROR" ID="0xee7e0c62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="init g_pbap_pce_lock fail! @cpi_pbap_pce.c(411),ERROR" ID="0xee7e0cda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap init done. @cpi_pbap_pce.c(414),ERROR" ID="0xee7e0cf2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pbap deinit done. @cpi_pbap_pce.c(425),ERROR" ID="0xee7e0d4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="reset g_pbap_conn_inst @cpi_pbap_pce.c(433),ERROR" ID="0xee7e0d8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="free g_pbap_pull_param @cpi_pbap_pce.c(438),ERROR" ID="0xee7e0db2" />
+			</MSG_LOG>

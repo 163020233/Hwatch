@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle read remote device rssi fail! ret = %#x  @sle_at_dfx.c(84),ERROR" ID="0xe92e02a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle read remote device rssi fail! ret = %#x  @sle_at_dfx.c(109),ERROR" ID="0xe92e036a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle read remote device rssi fail! ret = %#x  @sle_at_dfx.c(136),ERROR" ID="0xe92e0442" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle c frame get slot info fail! ret = %d  @sle_at_dfx.c(151),ERROR" ID="0xe92e04ba" />
+			</MSG_LOG>

@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xasbc_dec_comp.c(185),ERROR" ID="0x992805ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;bit_depth = %u @xasbc_dec_comp.c(189),ERROR" ID="0x992805ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xasbc_dec_comp.c(193),ERROR" ID="0x9928060a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xasbc_dec_comp.c(199),ERROR" ID="0x9928063a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xasbc_dec_comp.c(207),ERROR" ID="0x9928067a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;bit_depth = %u @xasbc_dec_comp.c(212),ERROR" ID="0x992806a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;private_data_size = %u @xasbc_dec_comp.c(232),ERROR" ID="0x99280742" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]private_param-&gt;private_attr_size = %u @xasbc_dec_comp.c(238),ERROR" ID="0x99280772" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]alloc sbc decoder fail @xasbc_dec_comp.c(251),ERROR" ID="0x992807da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_sbc_decoder_reset Failed, Error Code: [0x%08X] @xasbc_dec_comp.c(260),ERROR" ID="0x99280822" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]alloc st_plc fail @xasbc_dec_comp.c(270),ERROR" ID="0x99280872" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]a_out-&gt;pcm_out_buf_size = %u @xasbc_dec_comp.c(320),ERROR" ID="0x99280a02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ha_sbc_dec_process_crc_check_err Failed, Error Code: [0x%08X] @xasbc_dec_comp.c(465),ERROR" ID="0x99280e8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_sbc_decodeframe Failed, Error Code: [0x%08X] @xasbc_dec_comp.c(471),ERROR" ID="0x99280eba" />
+			</MSG_LOG>

@@ -1,0 +1,74 @@
+menu "Audio API Config"
+
+menu "Audio Dump Config"
+config DUMP_SUPPORT
+    bool "enable dump"
+    default n
+    help
+        enable dump in MPI
+
+config HOOK_DATA_SUPPORT
+    bool "dsp hook data support"
+    default n
+    depends on DUMP_SUPPORT
+    help
+        enable data hook in audio dsp
+
+config HOOK_MIX_DATA_IN_SEA_SUPPORT
+    bool "dsp hook mix data in sea support"
+    default n
+    depends on HOOK_DATA_SUPPORT
+    help
+        enable sea mix data hook in audio dsp
+
+config AI_DUMP_SUPPORT
+    bool "ai dump support"
+    default n
+    depends on DUMP_SUPPORT
+    help
+        enable ai dump in MPI
+
+config SEA_DUMP_SUPPORT
+    bool "sea dump support"
+    default n
+    depends on DUMP_SUPPORT
+    help
+        enable sea dump in MPI
+
+config ADEC_DUMP_SUPPORT
+    bool "adec dump support"
+    default n
+    depends on DUMP_SUPPORT
+    help
+        enable adec dump in MPI
+
+config AENC_DUMP_SUPPORT
+    bool "aenc dump support"
+    default n
+    depends on DUMP_SUPPORT
+    help
+        enable aenc dump in MPI
+
+config TRACK_DUMP_SUPPORT
+    bool "track dump support"
+    default n
+    depends on DUMP_SUPPORT
+    help
+        enable track dump in MPI
+
+config AO_DUMP_SUPPORT
+    bool "ao dump support"
+    default n
+    depends on DUMP_SUPPORT
+    help
+        enable ao dump in MPI
+
+config DPM_DUMP_SUPPORT
+    bool "dpm dump support"
+    default n
+    depends on DUMP_SUPPORT
+    help
+        enable dpm dump in MPI
+
+endmenu ## "Audio Dump Config"
+endmenu ## "Audio API Config"

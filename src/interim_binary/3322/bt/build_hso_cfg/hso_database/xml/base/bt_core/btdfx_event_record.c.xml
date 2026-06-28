@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][btdfx] dts_malloc nullptr. event=%u, param_len=%u @btdfx_event_record.c(31),INFO" ID="0x8c3600fd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][btdfx] memcpy_s err. event=%u, param_len=%u @btdfx_event_record.c(36),INFO" ID="0x8c360125" />
+			</MSG_LOG>

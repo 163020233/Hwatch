@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][c_frame]set_child_node_group_param: sed_id %d, group_num %d, group_start_time 0x%x @evt_task_gle_c_frame_child_node.c(35),INFO" ID="0x8bd2011d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][c_frame]delete child_node, srv_id %d, list_size %d @evt_task_gle_c_frame_child_node.c(132),INFO" ID="0x8bd20425" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][c_frame]delete child_node, offset %d, srv_mode %d, srv_id %d @evt_task_gle_c_frame_child_node.c(155),INFO" ID="0x8bd204dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][c_frame]add child_node, offset %d, srv_mode %d, srv_id %d @evt_task_gle_c_frame_child_node.c(166),INFO" ID="0x8bd20535" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgle][c_frame]evt_task_gle_c_frame_child_node_create_es_elt! @evt_task_gle_c_frame_child_node.c(244),WARNING" ID="0x8bd207a3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][c_frame]child_node_calc_central_timestamp, ts 0x%x, delay 0x%x, clk_off 0x%x, rx_win 0x%x @evt_task_gle_c_frame_child_node.c(297),WARNING" ID="0x8bd2094b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][c_frame]child_node_calc_peripheral_timestamp, ts 0x%x, delay 0x%x, clk_off 0x%x, rx_win 0x%x @evt_task_gle_c_frame_child_node.c(333),WARNING" ID="0x8bd20a6b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][c_frame]child_node_calc_peripheral_timestamp child_node_env_ptr is NULL, sed_id 0x%x @evt_task_gle_c_frame_child_node.c(344),WARNING" ID="0x8bd20ac3" />
+			</MSG_LOG>

@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_open Failed, Error Code: [0x%08X] @core_msg_aenc.c(41),ERROR" ID="0x984a014a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_close Failed, Error Code: [0x%08X] @core_msg_aenc.c(55),ERROR" ID="0x984a01ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_start Failed, Error Code: [0x%08X] @core_msg_aenc.c(69),ERROR" ID="0x984a022a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_stop Failed, Error Code: [0x%08X] @core_msg_aenc.c(83),ERROR" ID="0x984a029a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_get_attr Failed, Error Code: [0x%08X] @core_msg_aenc.c(100),ERROR" ID="0x984a0322" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_msg_aenc.c(109),ERROR" ID="0x984a036a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_set_attr Failed, Error Code: [0x%08X] @core_msg_aenc.c(142),ERROR" ID="0x984a0472" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_set_bypass Failed, Error Code: [0x%08X] @core_msg_aenc.c(164),ERROR" ID="0x984a0522" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_open Failed, Error Code: [0x%08X] @core_msg_aenc.c(181),ERROR" ID="0x984a05aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_get_proc_info Failed, Error Code: [0x%08X] @core_msg_aenc.c(206),ERROR" ID="0x984a0672" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_get_lib_type Failed, Error Code: [0x%08X] @core_msg_aenc.c(223),ERROR" ID="0x984a06fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_aenc_set_param Failed, Error Code: [0x%08X] @core_msg_aenc.c(240),ERROR" ID="0x984a0782" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_data-&gt;cmd = %u @core_msg_aenc.c(267),ERROR" ID="0x984a085a" />
+			</MSG_LOG>

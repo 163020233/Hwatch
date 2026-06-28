@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_SCAN]es_create_elt fail! @evt_task_gle_scan.c(107),ERROR" ID="0x88c8035a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_SCAN]aux_elt create fail! @evt_task_gle_scan.c(113),ERROR" ID="0x88c8038a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_SCAN]req_tx_elt create fail! @evt_task_gle_scan.c(118),ERROR" ID="0x88c803b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_SCAN]rsp_rx_elt create fail! @evt_task_gle_scan.c(123),ERROR" ID="0x88c803da" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_SCAN]statis: curr_time=0x%x, total_time=%d, total_window=%d, start_cbk_cnt=%d @evt_task_gle_scan.c(219),INFO" ID="0x88c806dd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_SCAN]statis: cancel_cbk_cnt=%d, evt_cbk_cnt=%d, abort_cbk_cnt=%d, abnormal_cbk_cnt=%d @evt_task_gle_scan.c(222),INFO" ID="0x88c806f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_scan_start, start fail, env_ptr is NULL! @evt_task_gle_scan.c(585),WARNING" ID="0x88c8124b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_SCAN]start_patch, es_create_elt fail! @evt_task_gle_scan.c(593),ERROR" ID="0x88c8128a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_scan_set_txpd fail! @evt_task_gle_scan.c(606),ERROR" ID="0x88c812f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_scan_start, es_elt_insert fail! @evt_task_gle_scan.c(626),WARNING" ID="0x88c81393" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_scan_fsm_start, switch to idle! @evt_task_gle_scan.c(650),INFO" ID="0x88c81455" />
+			</MSG_LOG>

@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="dts_ble_read_halfslot_rounded_clock timeout, pmu_cur_state = %u @dts_mac_reg.c(33),ERROR" ID="0x8bbe010a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dts_ble_read_slot_rounded_clock timeout @dts_mac_reg.c(62),ERROR" ID="0x8bbe01f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dts_ble_read_cur_clock timeout @dts_mac_reg.c(82),ERROR" ID="0x8bbe0292" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dts_ble_read_finecntclock timeout @dts_mac_reg.c(102),ERROR" ID="0x8bbe0332" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dts_ble_read_cur_clk_and_finecnt timeout @dts_mac_reg.c(132),ERROR" ID="0x8bbe0422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dts_gle_read_cur_clock timeout @dts_mac_reg.c(152),ERROR" ID="0x8bbe04c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dts_gle_read_finecntclock timeout @dts_mac_reg.c(172),ERROR" ID="0x8bbe0562" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dts_gle_read_cur_clk_and_finecnt timeout @dts_mac_reg.c(187),ERROR" ID="0x8bbe05da" />
+			</MSG_LOG>

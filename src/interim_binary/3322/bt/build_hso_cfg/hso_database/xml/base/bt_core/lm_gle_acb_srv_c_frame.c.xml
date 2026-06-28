@@ -1,0 +1,23 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_update_g_role_invite_info, c_frame sync_g_clk_p 0x%x sync_clk_p 0x%x sync_delay_p0x%x @lm_gle_acb_srv_c_frame.c(61),INFO" ID="0x8bc401ed" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_gle_update_g_role_invite_info, c_frame_ts 0x%x acb_ts 0x%x offset 0x%x cur_clk 0x%x @lm_gle_acb_srv_c_frame.c(65),INFO" ID="0x8bc4020d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_update_t_role_invite_info, c_frame sync_g_clk_p 0x%x sync_clk_p 0x%x sync_delay_p0x%x @lm_gle_acb_srv_c_frame.c(99),INFO" ID="0x8bc4031d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_gle_update_t_role_invite_info, c_frame_ts 0x%x acb_ts 0x%x offset 0x%x cur_clk 0x%x @lm_gle_acb_srv_c_frame.c(103),INFO" ID="0x8bc4033d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_update_t_role_invite_info, acb sync_g_clk_p 0x%x sync_clk_p 0x%x sync_delay_p 0x%x @lm_gle_acb_srv_c_frame.c(105),INFO" ID="0x8bc4034d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]c_frame_env_ptr is NULL @lm_gle_acb_srv_c_frame.c(113),INFO" ID="0x8bc4038d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]memcpy_s for tx_pid failed @lm_gle_acb_srv_c_frame.c(130),INFO" ID="0x8bc40415" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]memcpy_s for tx_crc_init failed @lm_gle_acb_srv_c_frame.c(140),INFO" ID="0x8bc40465" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_invite_c_frame_req_check_param, invalid sys_hdl 0x%x @lm_gle_acb_srv_c_frame.c(220),INFO" ID="0x8bc406e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_invite_c_frame_req_check_param, invalid sys_hdl 0x%x @lm_gle_acb_srv_c_frame.c(225),INFO" ID="0x8bc4070d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_invite_c_frame_req_check_param, state invalid 0x%x @lm_gle_acb_srv_c_frame.c(231),INFO" ID="0x8bc4073d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_handle_g_role_invited_info, c_frame sync_g_clk_p 0x%x sync_clk_p 0x%x sync_delay_p0x%x @lm_gle_acb_srv_c_frame.c(319),INFO" ID="0x8bc409fd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_handle_t_role_invited_info, c_frame c_frame_anchor 0x%x start_timestamp 0x%xparam-&gt;c_frame_ts 0x%x @lm_gle_acb_srv_c_frame.c(321),INFO" ID="0x8bc40a0d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_handle_t_role_invited_info, c_frame sync_g_clk_p 0x%x sync_clk_p 0x%x sync_delay_p0x%x @lm_gle_acb_srv_c_frame.c(367),INFO" ID="0x8bc40b7d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_handle_t_role_invited_info, c_frame c_frame_anchor 0x%x start_timestamp 0x%xparam-&gt;c_frame_ts 0x%x @lm_gle_acb_srv_c_frame.c(372),INFO" ID="0x8bc40ba5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_invite_c_frame_check_param, param-&gt;tx_format(0x%x) or param-&gt;tx_phy(0x%x)or param-&gt;tx_pilot_ratio(0x%x) invalid! @lm_gle_acb_srv_c_frame.c(397),WARNING" ID="0x8bc40c6b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_gle_invite_c_frame_check_param, param-&gt;tx_format(0x%x) or param-&gt;tx_pilot_ratio(0x%x) invalid! @lm_gle_acb_srv_c_frame.c(403),WARNING" ID="0x8bc40c9b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_invite_c_frame_check_param, param-&gt;c_interval(0x%x) invalid @lm_gle_acb_srv_c_frame.c(408),WARNING" ID="0x8bc40cc3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_invite_c_frame_check_param, param-&gt;freq_num(0x%x) invalid! @lm_gle_acb_srv_c_frame.c(412),WARNING" ID="0x8bc40ce3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_llcp_invite_c_frame_req_act, param invalid @lm_gle_acb_srv_c_frame.c(434),INFO" ID="0x8bc40d95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_llcp_invite_c_frame_req_act, sys_desc NUL @lm_gle_acb_srv_c_frame.c(440),INFO" ID="0x8bc40dc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_llcp_invite_c_frame_req_act, sys_desc NUL @lm_gle_acb_srv_c_frame.c(448),INFO" ID="0x8bc40e05" />
+			</MSG_LOG>

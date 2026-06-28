@@ -1,0 +1,180 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] reg client callback, cbks is NULL! @ssf_as_client.c(129),ERROR" ID="0xef84040a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] reg client callback, appid is repeated! @ssf_as_client.c(133),ERROR" ID="0xef84042a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] unreg client callback, appid unregister! @ssf_as_client.c(148),ERROR" ID="0xef8404a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] get device id in micpc %u failed. conn_id: %u @ssf_as_client.c(180),ERROR" ID="0xef8405a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] get obj in micpc %u failed. conn_id: %u @ssf_as_client.c(187),ERROR" ID="0xef8405da" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] get group in micpc %u failed. conn_id: %u @ssf_as_client.c(195),ERROR" ID="0xef84061a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS] deal with data_path type: %u, conn_id: %u, err: %u @ssf_as_client.c(215),INFO" ID="0xef8406bd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS] deal with data_path failed. type: %u, conn_id: %u, err: %u @ssf_as_client.c(218),ERROR" ID="0xef8406d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] begin to apec discover! @ssf_as_client.c(227),INFO" ID="0xef84071d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] exc in dev pairing, disc fail! @ssf_as_client.c(230),ERROR" ID="0xef840732" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] apec discover complete fail, ret %d @ssf_as_client.c(238),ERROR" ID="0xef840772" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] apec discover source fail, ret %d @ssf_as_client.c(257),ERROR" ID="0xef84080a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] apec discover capability is null, use default. @ssf_as_client.c(260),INFO" ID="0xef840825" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] apec discover sink fail, ret %d @ssf_as_client.c(267),ERROR" ID="0xef84085a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][AS] phy update status err group id [%d], conn type [%d], member id [%d] conn id [%d] label id [%d] @ssf_as_client.c(291),ERROR" ID="0xef84091a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][AS] sle_iso_phy_update_cbk group id [%d], conn type [%d], member id [%d] conn id [%d] label id [%d] @ssf_as_client.c(298),INFO" ID="0xef840955" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] init client, reg client fail! ret %u @ssf_as_client.c(310),ERROR" ID="0xef8409b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] init client, reg iso cbks fail! ret %u @ssf_as_client.c(324),ERROR" ID="0xef840a22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] init client, reg apec client fail! ret %u @ssf_as_client.c(333),ERROR" ID="0xef840a6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] config device ep not enough @ssf_as_client.c(416),ERROR" ID="0xef840d02" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] updating ep state, ep_id %d, to state %d @ssf_as_client.c(472),INFO" ID="0xef840ec5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] sle_as_config_device, device_id %d @ssf_as_client.c(481),INFO" ID="0xef840f0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] create stream, invalid device id! @ssf_as_client.c(483),ERROR" ID="0xef840f1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] create stream, get conn id fail! @ssf_as_client.c(498),ERROR" ID="0xef840f92" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] assemble config param. conn_id: %u, ep_id: %u @ssf_as_client.c(510),DBG" ID="0xef840ff6" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] create stream, config stream fail! ret %u @ssf_as_client.c(517),ERROR" ID="0xef84102a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get device id list fail! @ssf_as_client.c(591),ERROR" ID="0xef84127a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] create stream, invalid stream type! @ssf_as_client.c(625),ERROR" ID="0xef84138a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] create stream, update conn type fail! @ssf_as_client.c(630),ERROR" ID="0xef8413b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get device id list fail! @ssf_as_client.c(637),ERROR" ID="0xef8413ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] create stream, config device fail! @ssf_as_client.c(647),ERROR" ID="0xef84143a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS] audio stream not steady, push into que stream_type: std %u vend %u, sle_obj %i @ssf_as_client.c(660),INFO" ID="0xef8414a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] start stream, cbk list is 0! @ssf_as_client.c(671),ERROR" ID="0xef8414fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] create stream, prev connected device entered stopping procees! @ssf_as_client.c(675),ERROR" ID="0xef84151a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get device id list fail! @ssf_as_client.c(682),ERROR" ID="0xef841552" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] start stream, get conn id fail! @ssf_as_client.c(689),ERROR" ID="0xef84158a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] device_id wrong, get ep info fail! @ssf_as_client.c(695),ERROR" ID="0xef8415ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] start stream, ep state not config! @ssf_as_client.c(703),ERROR" ID="0xef8415fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] start stream with ep_inst_id %u @ssf_as_client.c(708),DBG" ID="0xef841626" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] start stream fail, ret = %u @ssf_as_client.c(712),ERROR" ID="0xef841642" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] stop stream, cbk list is 0! @ssf_as_client.c(723),ERROR" ID="0xef84169a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] stop stream, get device id list fail! @ssf_as_client.c(732),ERROR" ID="0xef8416e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] device_id wrong, get ep info fail! @ssf_as_client.c(739),ERROR" ID="0xef84171a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] stop stream, get conn id fail! @ssf_as_client.c(745),ERROR" ID="0xef84174a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] stop stream fail, ret = %u @ssf_as_client.c(759),ERROR" ID="0xef8417ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] release stream, cbk list is 0! @ssf_as_client.c(770),ERROR" ID="0xef841812" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get device id list fail! @ssf_as_client.c(777),ERROR" ID="0xef84184a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] device_id wrong, get ep info fail! @ssf_as_client.c(784),ERROR" ID="0xef841882" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] stop stream, get conn id fail! @ssf_as_client.c(791),ERROR" ID="0xef8418ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] release stream, release stream fail! @ssf_as_client.c(804),ERROR" ID="0xef841922" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] report audio cap, get obj list fail! @ssf_as_client.c(833),ERROR" ID="0xef841a0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] report audio cap, get obj list fail! @ssf_as_client.c(866),ERROR" ID="0xef841b12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get ep info fail! @ssf_as_client.c(886),ERROR" ID="0xef841bb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] ep_info_list overflow! @ssf_as_client.c(890),ERROR" ID="0xef841bd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] sle_as_asmc_source_discovery_process get obj err! @ssf_as_client.c(910),ERROR" ID="0xef841c72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] discovery fail, due to callback cbk list error! @ssf_as_client.c(929),ERROR" ID="0xef841d0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get invalid device id! @ssf_as_client.c(934),ERROR" ID="0xef841d32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] asmc discovery result error! @ssf_as_client.c(938),ERROR" ID="0xef841d52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] client set device ep info fail! @ssf_as_client.c(942),ERROR" ID="0xef841d72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get ep info fail! @ssf_as_client.c(999),ERROR" ID="0xef841f3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] get stream type fail! ep_inst_id=%u @ssf_as_client.c(1007),ERROR" ID="0xef841f7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] device: %u handle opcode config, new member_param fail. @ssf_as_client.c(1079),ERROR" ID="0xef8421ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] sle_as_set_iso_param failed! invalid conn_type:%u! @ssf_as_client.c(1087),ERROR" ID="0xef8421fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode config, set group param fail! @ssf_as_client.c(1098),ERROR" ID="0xef842252" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] device: %u init grp get device num fail. ret: %u @ssf_as_client.c(1112),ERROR" ID="0xef8422c2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS] update as group info. device: %u, groud_id: %u, member_num: %u @ssf_as_client.c(1121),INFO" ID="0xef84230d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] sle_as_set_group_param fail!, err:%u @ssf_as_client.c(1124),ERROR" ID="0xef842322" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] group id is not zero device[%d] @ssf_as_client.c(1133),ERROR" ID="0xef84236a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] device: %u init grp get device num fail. ret: %u @ssf_as_client.c(1141),ERROR" ID="0xef8423aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] device: %u handle opcode config, new member_ids fail. @ssf_as_client.c(1151),ERROR" ID="0xef8423fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] sle_as_init_group_and_set_group_param_inner fail!, err:%u @ssf_as_client.c(1156),ERROR" ID="0xef842422" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] sle_update_obj_as_group_info fail!, err:%u @ssf_as_client.c(1162),ERROR" ID="0xef842452" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] device: %u prev config, no need to config again @ssf_as_client.c(1170),INFO" ID="0xef842495" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] handle opcode config, enable stream fail! ret: %u @ssf_as_client.c(1178),ERROR" ID="0xef8424d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode config, results is NULL! @ssf_as_client.c(1189),ERROR" ID="0xef84252a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] config, get obj list fail. conn_id: %u, ret: %u @ssf_as_client.c(1197),ERROR" ID="0xef84256a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] get ep info fail. device_id: %u, ret: %u @ssf_as_client.c(1213),ERROR" ID="0xef8425ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] prev config obj: %u, no need to config again @ssf_as_client.c(1221),INFO" ID="0xef84262d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] obj: %u handle opcode config, device not all ready @ssf_as_client.c(1229),ERROR" ID="0xef84266a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS] obj: %u device: %u init group and set group param fail. ret: %u @ssf_as_client.c(1235),ERROR" ID="0xef84269a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode enable, get conn id fail! @ssf_as_client.c(1256),ERROR" ID="0xef842742" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode enable, set device state fail! @ssf_as_client.c(1263),ERROR" ID="0xef84277a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode enable, not all device ready! @ssf_as_client.c(1282),ERROR" ID="0xef842812" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode enable, get group info fail! @ssf_as_client.c(1288),ERROR" ID="0xef842842" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode enable, get device ids fail! @ssf_as_client.c(1311),ERROR" ID="0xef8428fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] start member label delivery fail! obj: %u, ret: %d @ssf_as_client.c(1320),ERROR" ID="0xef842942" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode enable, results is NULL! @ssf_as_client.c(1327),ERROR" ID="0xef84297a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] sle_as_handle_opcode_enable received, ep_num %d, conn_id %d @ssf_as_client.c(1332),INFO" ID="0xef8429a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode enable, get obj list fail! @ssf_as_client.c(1337),ERROR" ID="0xef8429ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] handle opcode enable failed, result: %u @ssf_as_client.c(1343),ERROR" ID="0xef8429fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] set_data_path_for_member enter. @ssf_as_client.c(1354),INFO" ID="0xef842a55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode config, get conn id fail! @ssf_as_client.c(1362),ERROR" ID="0xef842a92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get member info fail! @ssf_as_client.c(1370),ERROR" ID="0xef842ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode enable, set output data path fail! @ssf_as_client.c(1379),ERROR" ID="0xef842b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode enable, set input data path fail! @ssf_as_client.c(1389),ERROR" ID="0xef842b6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get ep info fail! @ssf_as_client.c(1404),ERROR" ID="0xef842be2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][AS] ep info epid:%d, direction:%d, stream type:%d, %d @ssf_as_client.c(1414),DBG" ID="0xef842c36" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] is sink: %d, is source: %d @ssf_as_client.c(1423),DBG" ID="0xef842c7e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] set member datapath, set datapath fail! @ssf_as_client.c(1427),ERROR" ID="0xef842c9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get group info fail! @ssf_as_client.c(1439),ERROR" ID="0xef842cfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get device ids by obj fail! @ssf_as_client.c(1447),ERROR" ID="0xef842d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode start, set device state fail! @ssf_as_client.c(1460),ERROR" ID="0xef842da2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode start, results is NULL! @ssf_as_client.c(1471),ERROR" ID="0xef842dfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode start, get obj list fail! @ssf_as_client.c(1479),ERROR" ID="0xef842e3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get ep info fail! @ssf_as_client.c(1495),ERROR" ID="0xef842eba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode start, device not all ready! @ssf_as_client.c(1502),ERROR" ID="0xef842ef2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode start, set every member data path fail! @ssf_as_client.c(1507),ERROR" ID="0xef842f1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode stop, get conn id fail! @ssf_as_client.c(1519),ERROR" ID="0xef842f7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get ep info fail! @ssf_as_client.c(1528),ERROR" ID="0xef842fc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get member info fail! @ssf_as_client.c(1545),ERROR" ID="0xef84304a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode stop, results is NULL! @ssf_as_client.c(1565),ERROR" ID="0xef8430ea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] sle_as_handle_opcode_stop. conn_id: %u, ep_num: %d @ssf_as_client.c(1569),INFO" ID="0xef84310d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] handle opcode stop, get obj list fail! conn_id=%u @ssf_as_client.c(1573),ERROR" ID="0xef84312a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get ep info fail! @ssf_as_client.c(1585),ERROR" ID="0xef84318a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode stop, get group info fail! @ssf_as_client.c(1597),ERROR" ID="0xef8431ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get ep info fail! @ssf_as_client.c(1602),ERROR" ID="0xef843212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode release, get device ids by obj fail! @ssf_as_client.c(1620),ERROR" ID="0xef8432a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] some ep has not been set to INIT state @ssf_as_client.c(1624),INFO" ID="0xef8432c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] handle opcode release, get conn id fail! ret: %u @ssf_as_client.c(1632),ERROR" ID="0xef843302" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode release, results is NULL! @ssf_as_client.c(1648),ERROR" ID="0xef843382" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] sle_as_handle_opcode_release received, ep_num %d @ssf_as_client.c(1651),INFO" ID="0xef84339d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle opcode release, get obj list fail! @ssf_as_client.c(1658),ERROR" ID="0xef8433d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get ep info fail! @ssf_as_client.c(1672),ERROR" ID="0xef843442" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] iso set group param cbk, get ep info fail! ret:0x%x ep_info:0x%x @ssf_as_client.c(1733),ERROR" ID="0xef84362a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso set group param cbk, get conn id fail! @ssf_as_client.c(1740),ERROR" ID="0xef843662" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso set group param cbk, invalid sle obj! @ssf_as_client.c(1769),ERROR" ID="0xef84374a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso set group param cbk, get device ids by obj fail! @ssf_as_client.c(1776),ERROR" ID="0xef843782" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] iso set group param cbk, get ep info fail! device_id=%u @ssf_as_client.c(1788),ERROR" ID="0xef8437e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] enable stream with inst_id: %u @ssf_as_client.c(1801),DBG" ID="0xef84384e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso set group param cbk, enable stream fail! @ssf_as_client.c(1805),ERROR" ID="0xef84386a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso create connection, get device ids by obj fail! @ssf_as_client.c(1818),ERROR" ID="0xef8438d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso label report cbk, get conn id fail! @ssf_as_client.c(1826),ERROR" ID="0xef843912" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso label report cbk, create member connection fail! @ssf_as_client.c(1838),ERROR" ID="0xef843972" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso label report cbk, param invalid! @ssf_as_client.c(1849),ERROR" ID="0xef8439ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso label report cbk, invalid sle obj! @ssf_as_client.c(1854),ERROR" ID="0xef8439f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] get ep info fail! conn_id:%u @ssf_as_client.c(1861),ERROR" ID="0xef843a2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso label report cbk, device not ready! @ssf_as_client.c(1882),ERROR" ID="0xef843ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle set data path fail, get conn id fail! @ssf_as_client.c(1894),ERROR" ID="0xef843b32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] get ep info fail! device_id=%u @ssf_as_client.c(1899),ERROR" ID="0xef843b5a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] handle set data path reporting succ, get ep info fail! device_id=%u, err=%u @ssf_as_client.c(1925),ERROR" ID="0xef843c2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] handle set data path reporting succ, get conn id fail! err: %u @ssf_as_client.c(1932),ERROR" ID="0xef843c62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="handle_set_data_path_success received! status is %d @ssf_as_client.c(1950),INFO" ID="0xef843cf5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle set data path reporting, get device ids by obj fail! @ssf_as_client.c(1962),ERROR" ID="0xef843d52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso set datapath cbk, invalid param! @ssf_as_client.c(2009),ERROR" ID="0xef843eca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle remove data path failure, invalid sle obj! @ssf_as_client.c(2024),ERROR" ID="0xef843f42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle remove data path failure, invalid device id! @ssf_as_client.c(2029),ERROR" ID="0xef843f6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle remove data path failure, get conn id fail! @ssf_as_client.c(2035),ERROR" ID="0xef843f9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle remove data path failure, get ep info fail! @ssf_as_client.c(2041),ERROR" ID="0xef843fca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle remove data path success, invalid obj id! @ssf_as_client.c(2067),ERROR" ID="0xef84409a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle remove data path success, get conn id fail! @ssf_as_client.c(2073),ERROR" ID="0xef8440ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle remove data path success, get ep info fail! @ssf_as_client.c(2079),ERROR" ID="0xef8440fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] handle remove data path success, get stream type fail! @ssf_as_client.c(2086),ERROR" ID="0xef844132" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="sle_stop_audio reporting to ux. vendor_type is: %u, standard_type is : %u. @ssf_as_client.c(2096),ERROR" ID="0xef844182" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso remove data path cbk, invalid obj id! @ssf_as_client.c(2115),ERROR" ID="0xef84421a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] iso remove data path cbk, invalid param! group_id: %d, conn_type: %d @ssf_as_client.c(2123),ERROR" ID="0xef84425a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso remove data path cbk, invalid device id! @ssf_as_client.c(2128),ERROR" ID="0xef844282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso remove data path cbk, get conn id fail! @ssf_as_client.c(2134),ERROR" ID="0xef8442b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso remove data path cbk, get ep info fail! @ssf_as_client.c(2140),ERROR" ID="0xef8442e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get link channel id fail! @ssf_as_client.c(2161),ERROR" ID="0xef84438a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] device switch in, get stream type fail! @ssf_as_client.c(2177),ERROR" ID="0xef84440a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] start audio stream fail! @ssf_as_client.c(2182),ERROR" ID="0xef844432" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] iso connected, conn_type: %d @ssf_as_client.c(2190),INFO" ID="0xef844475" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso connect state changed cbk, get ep info fail! @ssf_as_client.c(2197),ERROR" ID="0xef8444aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] report bond change, channel: %d, member_hdl: %d @ssf_as_client.c(2247),INFO" ID="0xef84463d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get stream type fail, no ep in AS_ENABLE_FINISH_STATE! @ssf_as_client.c(2256),ERROR" ID="0xef844682" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] report bond change to ux, bond num: %d @ssf_as_client.c(2269),INFO" ID="0xef8446ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] reset member info cnt, invalid member info! device_id: %d @ssf_as_client.c(2286),ERROR" ID="0xef844772" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso connect state changed cbk, get ep info fail! @ssf_as_client.c(2301),ERROR" ID="0xef8447ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso connect state changed cbk, get group info fail! @ssf_as_client.c(2307),ERROR" ID="0xef84481a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso disconnect cbk, remove group fail! @ssf_as_client.c(2320),ERROR" ID="0xef844882" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle_as_iso_connect_state_changed_cbk received! %d  @ssf_as_client.c(2328),INFO" ID="0xef8448c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso connect state changed cbk, invalid param! @ssf_as_client.c(2330),ERROR" ID="0xef8448d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] sle_as_remove_group_cbk, get group info fail! @ssf_as_client.c(2346),ERROR" ID="0xef844952" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso remove group cbk received @ssf_as_client.c(2355),INFO" ID="0xef84499d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso remove group cbk, remove group fail! @ssf_as_client.c(2357),ERROR" ID="0xef8449aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] iso remove group cbk, invalid obj id! @ssf_as_client.c(2362),ERROR" ID="0xef8449d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] one switch binaural, get obj list by device fail! @ssf_as_client.c(2376),ERROR" ID="0xef844a42" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] second ear create audio stream failed. obj_id: %d, ret: %d @ssf_as_client.c(2392),ERROR" ID="0xef844ac2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] sle_device_switch_in_during_as_process not meet the condition! obj_id: %d. @ssf_as_client.c(2397),INFO" ID="0xef844aed" />
+			</MSG_LOG>

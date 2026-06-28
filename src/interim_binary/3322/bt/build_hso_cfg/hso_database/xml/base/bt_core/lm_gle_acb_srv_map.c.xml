@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="lm_gle_acb_set_map map(0x%08x %08x %04x)instant(0x%x) @lm_gle_acb_srv_map.c(135),INFO" ID="0x8908043d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_req_map_upd_act: instant=%d, pre_instant_clk=%d @lm_gle_acb_srv_map.c(370),INFO" ID="0x89080b95" />
+			</MSG_LOG>

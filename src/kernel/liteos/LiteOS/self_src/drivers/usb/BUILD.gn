@@ -1,0 +1,59 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+kernel_module("usb") {
+    sources = []
+    include_dirs = []
+    usb_dir = "${LITEOSTOPDIR}/drivers/usb"
+    if (defined(LOSCFG_DRIVERS_USB_DWC_DRIVER)) {
+        include_dirs += [
+            "adapt_liteos/",
+            "adapt_liteos/implementation",
+            "adapt_liteos/kal/include",
+            "${usb_dir}/",
+            "../../../self_src/compat/nuttx/include",
+            "../../../$open_source_path/incubator-nuttx/liteos/drivers/usb"
+            ]
+        sources += [
+            "${usb_dir}/adapt_liteos/implementation/usb_init.c",
+            "implementation/usb_version.c",
+            "implementation/_intr_ref.c",
+            "implementation/usb_dma_cache.c",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_COMPOSITE_GADGET)) {
+        include_dirs += [
+            "gadget/",
+        ]
+        sources += [
+            "gadget/composite_open.c",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_CAMERA_GADGET)) {
+        sources += [
+            "gadget/f_uvc_open.c",
+            "gadget/usbd_video_ioctl_open.c",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_MASS_STORAGE_GADGET)) {
+        sources += [
+            "../../../$open_source_path/freebsd/liteos/drivers/usb/gadget/f_mass_storage_open.c",
+            "gadget/f_mass_storage_ram_open.c",
+        ]
+
+        if (defined(LOSCFG_DRIVERS_USB_MASS_STORAGE_EXT_SER_FUNC)) {
+            sources += [
+                "gadget/f_mass_ser.c"
+            ]
+        }
+
+        include_dirs += ["../../../$open_source_path/freebsd/liteos/drivers/usb/"]
+    }
+}

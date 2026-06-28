@@ -1,0 +1,30 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi][module] sys_cps_idle_proc: sys_inst handle: 0x%08X @core_sys.c(74),WARNING" ID="0x986a0253" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(141),INFO" ID="0x986a046d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(143),INFO" ID="0x986a047d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_cps_init Failed, Error Code: [0x%08X] @core_sys.c(149),ERROR" ID="0x986a04aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(172),INFO" ID="0x986a0565" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(181),INFO" ID="0x986a05ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(183),INFO" ID="0x986a05bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_cps_deinit Failed, Error Code: [0x%08X] @core_sys.c(195),ERROR" ID="0x986a061a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(203),INFO" ID="0x986a065d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(209),INFO" ID="0x986a068d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(210),INFO" ID="0x986a0695" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(216),INFO" ID="0x986a06c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(217),INFO" ID="0x986a06cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(235),INFO" ID="0x986a075d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(254),INFO" ID="0x986a07f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(265),INFO" ID="0x986a084d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(268),INFO" ID="0x986a0865" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(275),INFO" ID="0x986a089d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(278),INFO" ID="0x986a08b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(391),INFO" ID="0x986a0c3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call set_dsp_freq Failed, Error Code: [0x%08X] @core_sys.c(394),ERROR" ID="0x986a0c52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(400),INFO" ID="0x986a0c85" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(409),INFO" ID="0x986a0ccd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call overlay_get_section_attr Failed, Error Code: [0x%08X] @core_sys.c(413),ERROR" ID="0x986a0cea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(420),INFO" ID="0x986a0d25" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sys.c(427),INFO" ID="0x986a0d5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]log_level = %u @core_sys.c(432),ERROR" ID="0x986a0d82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(433),INFO" ID="0x986a0d8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sys.c(441),INFO" ID="0x986a0dcd" />
+			</MSG_LOG>

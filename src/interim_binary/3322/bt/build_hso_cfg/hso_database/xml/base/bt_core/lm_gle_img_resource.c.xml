@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[IMB] lm_gle_imb_create_desc: Alloc con_hdl failed, img_id %d, imb_id %d @lm_gle_img_resource.c(194),ERROR" ID="0x8b3a0612" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMB] lm_gle_imb_create_desc: Alloc imb_desc failed, img_id %d, imb_id %d, con_hdl 0x%x @lm_gle_img_resource.c(205),ERROR" ID="0x8b3a066a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_imb_create_desc: img_id %d, imb_id %d, con_hdl 0x%x, index %d @lm_gle_img_resource.c(232),INFO" ID="0x8b3a0745" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_imb_create_desc: No imb_desc position, img_id %d, imb_id %d, con_hdl 0x%x, img_desc 0x%x @lm_gle_img_resource.c(239),ERROR" ID="0x8b3a077a" />
+			</MSG_LOG>

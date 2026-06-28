@@ -1,0 +1,18 @@
+menu "Lib"
+
+config OS_OPTION_ZLIX
+  bool "Whether support zlix module or not"
+  default n
+
+config OS_OPTION_NEWLIB_ADAPT
+	bool "Whether support newlib adapt or not"
+	default n
+
+config OS_OPTION_OTA
+  bool "Whether support ota or not"
+  select OS_OPTION_ZLIX
+  default n
+  help
+    This enables ota
+
+endmenu

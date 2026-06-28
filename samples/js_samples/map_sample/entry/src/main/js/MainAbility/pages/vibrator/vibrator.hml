@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="user_container" style="height : 60px; flex-direction : column; background-color : rebeccapurple; font-size: 50px;">
+        <text class="text" onclick="replaceHomefoPage">
+            BACK
+        </text>
+    </div>
+</div>

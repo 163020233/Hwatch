@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[error] ECC memmove error 0x%X, ecc result might be wrong @ecc_p256.c(501),ERROR" ID="0x88ec0faa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[error] ECC memmove error 0x%X, ecc result might be wrong @ecc_p256.c(538),ERROR" ID="0x88ec10d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[error] ECC memmove error 0x%X, ecc result might be wrong @ecc_p256.c(549),ERROR" ID="0x88ec112a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[error] ECC memmove error 0x%X, ecc result might be wrong @ecc_p256.c(607),ERROR" ID="0x88ec12fa" />
+			</MSG_LOG>

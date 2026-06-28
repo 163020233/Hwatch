@@ -1,0 +1,21 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="vcpc read effective time support fail, ret:%d @saf_at_vcp.c(278),ERROR" ID="0xe98608b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcpc read volume info fail, ret:%d @saf_at_vcp.c(288),ERROR" ID="0xe9860902" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcpc read audio stream volume info fail, ret:%d @saf_at_vcp.c(299),ERROR" ID="0xe986095a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcpc set mute state fail, ret:%d @saf_at_vcp.c(317),ERROR" ID="0xe98609ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcpc set volume updown fail, ret:%d @saf_at_vcp.c(328),ERROR" ID="0xe9860a42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcpc set volume value fail, ret:%d @saf_at_vcp.c(346),ERROR" ID="0xe9860ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="vcpc set audio stream volume value malloc error. @saf_at_vcp.c(362),ERROR" ID="0xe9860b52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] [asm] set codec string to data error! @saf_at_vcp.c(368),ERROR" ID="0xe9860b82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcpc set audio stream volume value fail, ret:%d @saf_at_vcp.c(375),ERROR" ID="0xe9860bba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcpc register cbks fail, ret:%d @saf_at_vcp.c(394),ERROR" ID="0xe9860c52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcpc unregister cbks fail, ret:%d @saf_at_vcp.c(405),ERROR" ID="0xe9860caa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcps mute state synchronize request fail, ret:%d @saf_at_vcp.c(418),ERROR" ID="0xe9860d12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcps volume value synchronize request fail, ret:%d @saf_at_vcp.c(433),ERROR" ID="0xe9860d8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcps report volume info fail, ret:%d @saf_at_vcp.c(453),ERROR" ID="0xe9860e2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcps start service fail, ret:%d @saf_at_vcp.c(464),ERROR" ID="0xe9860e82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcps config volume info fail, ret:%d @saf_at_vcp.c(475),ERROR" ID="0xe9860eda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcps set time support fail, ret:%d @saf_at_vcp.c(485),ERROR" ID="0xe9860f2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="vcps report audio stream volume info string to data error! @saf_at_vcp.c(508),ERROR" ID="0xe9860fe2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcps report audio stream volume info fail, ret:%d @saf_at_vcp.c(515),ERROR" ID="0xe986101a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vcps register cbks fail, ret:%d @saf_at_vcp.c(531),ERROR" ID="0xe986109a" />
+			</MSG_LOG>

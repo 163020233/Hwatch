@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="a2dp_src service is connected. @cpi_a2dp_src.c(42),ERROR" ID="0xee680152" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp src codec type is not support. @cpi_a2dp_src.c(58),ERROR" ID="0xee6801d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_src service is connected. @cpi_a2dp_src.c(64),ERROR" ID="0xee680202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_src service is connected. @cpi_a2dp_src.c(78),ERROR" ID="0xee680272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_src service is not connected. @cpi_a2dp_src.c(92),ERROR" ID="0xee6802e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp src codec type is not support. @cpi_a2dp_src.c(107),ERROR" ID="0xee68035a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_src service is not connected. @cpi_a2dp_src.c(113),ERROR" ID="0xee68038a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp src stream state is not open/suspend,state=%d. @cpi_a2dp_src.c(119),ERROR" ID="0xee6803ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_src service is not connected. @cpi_a2dp_src.c(133),ERROR" ID="0xee68042a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp src stream state is not open/start/suspend/start_req,state=%d. @cpi_a2dp_src.c(141),ERROR" ID="0xee68046a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_src service is not connected. @cpi_a2dp_src.c(156),ERROR" ID="0xee6804e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp src stream state is not start,state=%d. @cpi_a2dp_src.c(161),ERROR" ID="0xee68050a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_src service is not connected. @cpi_a2dp_src.c(181),ERROR" ID="0xee6805aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp_src stream state is not start_req,state=%d. @cpi_a2dp_src.c(186),ERROR" ID="0xee6805d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_src service is not connected. @cpi_a2dp_src.c(201),ERROR" ID="0xee68064a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp_src stream state is not start_req,state=%d. @cpi_a2dp_src.c(206),ERROR" ID="0xee680672" />
+			</MSG_LOG>

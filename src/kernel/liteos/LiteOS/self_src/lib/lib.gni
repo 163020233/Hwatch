@@ -1,0 +1,356 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+# dir errno
+LIBC_DIR_PATH = "$RTOSLITETOPDIR/open_source/musl"
+LIBC_ERRNO_SRC = [ "$LIBC_DIR_PATH/src/errno/strerror.c" ]
+
+# dir string
+LIBC_STRING_SRC = [
+  "$LIBC_DIR_PATH/src/string/bcmp.c",
+  "$LIBC_DIR_PATH/src/string/bcopy.c",
+  "$LIBC_DIR_PATH/src/string/bzero.c",
+  "$LIBC_DIR_PATH/src/string/memchr.c",
+  "$LIBC_DIR_PATH/src/string/memcmp.c",
+  "$LIBC_DIR_PATH/src/string/memcpy.c",
+  "$LIBC_DIR_PATH/src/string/memmove.c",
+  "$LIBC_DIR_PATH/src/string/memrchr.c",
+  "$LIBC_DIR_PATH/src/string/memset.c",
+  "$LIBC_DIR_PATH/src/string/stpcpy.c",
+  "$LIBC_DIR_PATH/src/string/stpncpy.c",
+  "$LIBC_DIR_PATH/src/string/strcasecmp.c",
+  "$LIBC_DIR_PATH/src/string/strcasestr.c",
+  "$LIBC_DIR_PATH/src/string/strcat.c",
+  "$LIBC_DIR_PATH/src/string/strchrnul.c",
+  "$LIBC_DIR_PATH/src/string/strcmp.c",
+  "$LIBC_DIR_PATH/src/string/strcpy.c",
+  "$LIBC_DIR_PATH/src/string/strcspn.c",
+  "$LIBC_DIR_PATH/src/string/strdup.c",
+  "$LIBC_DIR_PATH/src/string/strerror_r.c",
+  "$LIBC_DIR_PATH/src/string/strlcpy.c",
+  "$LIBC_DIR_PATH/src/string/strlen.c",
+  "$LIBC_DIR_PATH/src/string/strncasecmp.c",
+  "$LIBC_DIR_PATH/src/string/strncat.c",
+  "$LIBC_DIR_PATH/src/string/strncmp.c",
+  "$LIBC_DIR_PATH/src/string/strncpy.c",
+  "$LIBC_DIR_PATH/src/string/strnlen.c",
+  "$LIBC_DIR_PATH/src/string/strpbrk.c",
+  "$LIBC_DIR_PATH/src/string/strrchr.c",
+  "$LIBC_DIR_PATH/src/string/strsep.c",
+  "$LIBC_DIR_PATH/src/string/strspn.c",
+  "$LIBC_DIR_PATH/src/string/strstr.c",
+  "$LIBC_DIR_PATH/src/string/strtok.c",
+  "$LIBC_DIR_PATH/src/string/strtok_r.c",
+  "$LIBC_DIR_PATH/src/string/wcschr.c",
+  "$LIBC_DIR_PATH/src/string/wcscmp.c",
+  "$LIBC_DIR_PATH/src/string/wcslen.c",
+  "$LIBC_DIR_PATH/src/string/wcsncmp.c",
+  "$LIBC_DIR_PATH/src/string/wcsncpy.c",
+  "$LIBC_DIR_PATH/src/string/wcsnlen.c",
+  "$LIBC_DIR_PATH/src/string/wcsstr.c",
+  "$LIBC_DIR_PATH/src/string/wmemchr.c",
+  "$LIBC_DIR_PATH/src/string/wmemcmp.c",
+  "$LIBC_DIR_PATH/src/string/wmemcpy.c",
+  "$LIBC_DIR_PATH/src/string/wmemmove.c",
+  "$LIBC_DIR_PATH/src/string/wmemset.c",
+]
+
+if (defined(LOSCFG_COMPILER_ICCARM)) {
+  LIBC_STRING_SRC += [
+    "$LIBC_DIR_PATH/src/stdio/vasprintf.c",
+    "$LIBC_DIR_PATH/src/stdio/asprintf.c",
+    ]
+} else {
+    LIBC_STRING_SRC += ["$LIBC_DIR_PATH/src/string/strchr.c"]
+}
+
+# dir stdlib
+LIBC_STDLIB_SRC = [
+  "$LIBC_DIR_PATH/src/stdlib/abs.c",
+  "$LIBC_DIR_PATH/src/stdlib/atof.c",
+  "$LIBC_DIR_PATH/src/stdlib/atoi.c",
+  "$LIBC_DIR_PATH/src/stdlib/atol.c",
+  "$LIBC_DIR_PATH/src/stdlib/atoll.c",
+  "$LIBC_DIR_PATH/src/stdlib/bsearch.c",
+  "$LIBC_DIR_PATH/src/stdlib/labs.c",
+  "$LIBC_DIR_PATH/src/stdlib/llabs.c",
+  "$LIBC_DIR_PATH/src/stdlib/qsort.c",
+  "$LIBC_DIR_PATH/src/stdlib/strtod.c",
+  "$LIBC_DIR_PATH/src/stdlib/strtol.c",
+  "$LIBC_DIR_PATH/src/stdlib/wcstol.c",
+  "$LIBC_DIR_PATH/src/stdlib/qsort_nr.c",
+]
+
+# dir internal
+LIBC_INTERNAL_SRC = [
+  "$LIBC_DIR_PATH/src/internal/floatscan.c",
+  "$LIBC_DIR_PATH/src/internal/intscan.c",
+  "$LIBC_DIR_PATH/src/internal/shgetc.c",
+  "$LIBC_DIR_PATH/src/internal/syscall_ret.c",
+]
+
+# dir time
+LIBC_TIME_SRC = [
+  "$LIBC_DIR_PATH/src/time/__month_to_secs.c",
+  "$LIBC_DIR_PATH/src/time/__secs_to_tm.c",
+  "$LIBC_DIR_PATH/src/time/__tm_to_secs.c",
+  "$LIBC_DIR_PATH/src/time/__year_to_secs.c",
+  "$LIBC_DIR_PATH/src/time/asctime.c",
+  "$LIBC_DIR_PATH/src/time/asctime_r.c",
+  "$LIBC_DIR_PATH/src/time/ctime.c",
+  "$LIBC_DIR_PATH/src/time/ctime_r.c",
+  "$LIBC_DIR_PATH/src/time/gmtime.c",
+  "$LIBC_DIR_PATH/src/time/gmtime_r.c",
+  "$LIBC_DIR_PATH/src/time/localtime.c",
+  "$LIBC_DIR_PATH/src/time/strftime.c",
+  "$LIBC_DIR_PATH/src/time/strptime.c",
+  "$LIBC_DIR_PATH/src/time/time.c",
+  "$LIBC_DIR_PATH/src/time/wcsftime.c",
+  "$LIBC_DIR_PATH/src/time/difftime.c",
+]
+
+# dir misc
+LIBC_MISC_SRC = []
+if (defined(LOSCFG_LIB_STDIO)) {
+  LIBC_MISC_SRC += [ "$LIBC_DIR_PATH/src/misc/getopt.c" ]
+}
+
+# dir locale
+LIBC_LOCALE_SRC = [
+  "$LIBC_DIR_PATH/src/locale/__lctrans.c",
+  "$LIBC_DIR_PATH/src/locale/c_locale.c",
+  "$LIBC_DIR_PATH/src/locale/langinfo.c",
+  "$LIBC_DIR_PATH/src/locale/strcoll.c",
+  "$LIBC_DIR_PATH/src/locale/strxfrm.c",
+  "$LIBC_DIR_PATH/src/locale/wcscoll.c",
+  "$LIBC_DIR_PATH/src/locale/wcsxfrm.c",
+  "$LIBC_DIR_PATH/src/locale/strtod_l.c",
+  "$LIBC_DIR_PATH/src/locale/localeconv.c",
+  "$LIBC_DIR_PATH/src/locale/newlocale.c",
+  "$LIBC_DIR_PATH/src/locale/freelocale.c",
+]
+
+# dir ctype
+LIBC_CTYPE_SRC = [
+  "$LIBC_DIR_PATH/src/ctype/__ctype_get_mb_cur_max.c",
+  "$LIBC_DIR_PATH/src/ctype/isalnum.c",
+  "$LIBC_DIR_PATH/src/ctype/isalpha.c",
+  "$LIBC_DIR_PATH/src/ctype/isascii.c",
+  "$LIBC_DIR_PATH/src/ctype/isblank.c",
+  "$LIBC_DIR_PATH/src/ctype/iscntrl.c",
+  "$LIBC_DIR_PATH/src/ctype/isdigit.c",
+  "$LIBC_DIR_PATH/src/ctype/isgraph.c",
+  "$LIBC_DIR_PATH/src/ctype/islower.c",
+  "$LIBC_DIR_PATH/src/ctype/isprint.c",
+  "$LIBC_DIR_PATH/src/ctype/ispunct.c",
+  "$LIBC_DIR_PATH/src/ctype/isspace.c",
+  "$LIBC_DIR_PATH/src/ctype/isupper.c",
+  "$LIBC_DIR_PATH/src/ctype/iswalnum.c",
+  "$LIBC_DIR_PATH/src/ctype/iswalpha.c",
+  "$LIBC_DIR_PATH/src/ctype/iswblank.c",
+  "$LIBC_DIR_PATH/src/ctype/iswcntrl.c",
+  "$LIBC_DIR_PATH/src/ctype/iswctype.c",
+  "$LIBC_DIR_PATH/src/ctype/iswdigit.c",
+  "$LIBC_DIR_PATH/src/ctype/iswgraph.c",
+  "$LIBC_DIR_PATH/src/ctype/iswlower.c",
+  "$LIBC_DIR_PATH/src/ctype/iswprint.c",
+  "$LIBC_DIR_PATH/src/ctype/iswpunct.c",
+  "$LIBC_DIR_PATH/src/ctype/iswspace.c",
+  "$LIBC_DIR_PATH/src/ctype/iswupper.c",
+  "$LIBC_DIR_PATH/src/ctype/iswxdigit.c",
+  "$LIBC_DIR_PATH/src/ctype/isxdigit.c",
+  "$LIBC_DIR_PATH/src/ctype/toascii.c",
+  "$LIBC_DIR_PATH/src/ctype/tolower.c",
+  "$LIBC_DIR_PATH/src/ctype/toupper.c",
+  "$LIBC_DIR_PATH/src/ctype/towctrans.c",
+]
+
+# dir temp
+LIBC_TEMP_SRC = [
+  "$LIBC_DIR_PATH/src/temp/__randname.c",
+  "$LIBC_DIR_PATH/src/temp/mkostemps.c",
+  "$LIBC_DIR_PATH/src/temp/mkstemp.c",
+  "$LIBC_DIR_PATH/src/temp/mkstemps.c",
+]
+
+# dir fcntl
+LIBC_FCNTL_SRC = [ "$LIBC_DIR_PATH/src/fcntl/creat.c" ]
+
+# dir signal
+LIBC_SIGNAL_SRC = [
+  "$LIBC_DIR_PATH/src/signal/sigrtmax.c",
+  "$LIBC_DIR_PATH/src/signal/sigrtmin.c",
+]
+
+# dir network
+LIBC_NETWORK_SRC = [ "$LIBC_DIR_PATH/src/network/dn_comp.c" ]
+
+# dir unistd
+LIBC_UNISTD_SRC = []
+if (!defined(LOSCFG_COMPILER_ICCARM)) {
+  LIBC_UNISTD_SRC += ["$LIBC_DIR_PATH/src/unistd/_exit.c"]
+}
+
+# dir complex
+LIBC_COMPLEX_SRC = [ "$LIBC_DIR_PATH/src/complex/cabs.c" ]
+
+# dir stdio
+LIBC_STDIO_SRC = [
+  "$LIBC_DIR_PATH/src/stdio/__fdopen.c",
+  "$LIBC_DIR_PATH/src/stdio/__fmodeflags.c",
+  "$LIBC_DIR_PATH/src/stdio/__lockfile.c",
+  "$LIBC_DIR_PATH/src/stdio/__overflow.c",
+  "$LIBC_DIR_PATH/src/stdio/__stdio_close.c",
+  "$LIBC_DIR_PATH/src/stdio/__stdio_read.c",
+  "$LIBC_DIR_PATH/src/stdio/__stdio_seek.c",
+  "$LIBC_DIR_PATH/src/stdio/__stdio_write.c",
+  "$LIBC_DIR_PATH/src/stdio/__stdout_write.c",
+  "$LIBC_DIR_PATH/src/stdio/__toread.c",
+  "$LIBC_DIR_PATH/src/stdio/__towrite.c",
+  "$LIBC_DIR_PATH/src/stdio/__uflow.c",
+  "$LIBC_DIR_PATH/src/stdio/asprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/clearerr.c",
+  "$LIBC_DIR_PATH/src/stdio/fclose.c",
+  "$LIBC_DIR_PATH/src/stdio/feof.c",
+  "$LIBC_DIR_PATH/src/stdio/ferror.c",
+  "$LIBC_DIR_PATH/src/stdio/fflush.c",
+  "$LIBC_DIR_PATH/src/stdio/fgetc.c",
+  "$LIBC_DIR_PATH/src/stdio/fgetpos.c",
+  "$LIBC_DIR_PATH/src/stdio/fgets.c",
+  "$LIBC_DIR_PATH/src/stdio/fgetwc.c",
+  "$LIBC_DIR_PATH/src/stdio/fileno.c",
+  "$LIBC_DIR_PATH/src/stdio/fopen.c",
+  "$LIBC_DIR_PATH/src/stdio/fprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/fputc.c",
+  "$LIBC_DIR_PATH/src/stdio/fputs.c",
+  "$LIBC_DIR_PATH/src/stdio/fputwc.c",
+  "$LIBC_DIR_PATH/src/stdio/fread.c",
+  "$LIBC_DIR_PATH/src/stdio/freopen.c",
+  "$LIBC_DIR_PATH/src/stdio/fscanf.c",
+  "$LIBC_DIR_PATH/src/stdio/fseek.c",
+  "$LIBC_DIR_PATH/src/stdio/fsetpos.c",
+  "$LIBC_DIR_PATH/src/stdio/ftell.c",
+  "$LIBC_DIR_PATH/src/stdio/fwide.c",
+  "$LIBC_DIR_PATH/src/stdio/fwrite.c",
+  "$LIBC_DIR_PATH/src/stdio/getc.c",
+  "$LIBC_DIR_PATH/src/stdio/getchar.c",
+  "$LIBC_DIR_PATH/src/stdio/gets.c",
+  "$LIBC_DIR_PATH/src/stdio/getwc.c",
+  "$LIBC_DIR_PATH/src/stdio/ofl.c",
+  "$LIBC_DIR_PATH/src/stdio/ofl_add.c",
+  "$LIBC_DIR_PATH/src/stdio/perror.c",
+  "$LIBC_DIR_PATH/src/stdio/printf.c",
+  "$LIBC_DIR_PATH/src/stdio/putc.c",
+  "$LIBC_DIR_PATH/src/stdio/putchar.c",
+  "$LIBC_DIR_PATH/src/stdio/puts.c",
+  "$LIBC_DIR_PATH/src/stdio/putw.c",
+  "$LIBC_DIR_PATH/src/stdio/putwc.c",
+  "$LIBC_DIR_PATH/src/stdio/remove.c",
+  "$LIBC_DIR_PATH/src/stdio/rewind.c",
+  "$LIBC_DIR_PATH/src/stdio/scanf.c",
+  "$LIBC_DIR_PATH/src/stdio/setbuf.c",
+  "$LIBC_DIR_PATH/src/stdio/setbuffer.c",
+  "$LIBC_DIR_PATH/src/stdio/setvbuf.c",
+  "$LIBC_DIR_PATH/src/stdio/snprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/sprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/sscanf.c",
+  "$LIBC_DIR_PATH/src/stdio/stderr.c",
+  "$LIBC_DIR_PATH/src/stdio/stdin.c",
+  "$LIBC_DIR_PATH/src/stdio/stdout.c",
+  "$LIBC_DIR_PATH/src/stdio/swprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/tmpnam.c",
+  "$LIBC_DIR_PATH/src/stdio/ungetc.c",
+  "$LIBC_DIR_PATH/src/stdio/ungetwc.c",
+  "$LIBC_DIR_PATH/src/stdio/vasprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vfprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vfscanf.c",
+  "$LIBC_DIR_PATH/src/stdio/vfwprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vfwscanf.c",
+  "$LIBC_DIR_PATH/src/stdio/vprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vscanf.c",
+  "$LIBC_DIR_PATH/src/stdio/vsnprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vsprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vsscanf.c",
+  "$LIBC_DIR_PATH/src/stdio/vswprintf.c",
+]
+LIBC_FORMAT_SRC = [
+  "$LIBC_DIR_PATH/src/stdio/sprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/asprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/snprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vsprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vasprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vsnprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/vfprintf.c",
+  "$LIBC_DIR_PATH/src/stdio/sscanf.c",
+  "$LIBC_DIR_PATH/src/stdio/vsscanf.c",
+  "$LIBC_DIR_PATH/src/stdio/vfscanf.c",
+]
+LIBC_STDIO_BASE = [
+  "$LIBC_DIR_PATH/src/stdio/__uflow.c",
+  "$LIBC_DIR_PATH/src/stdio/__toread.c",
+  "$LIBC_DIR_PATH/src/stdio/__towrite.c",
+  "$LIBC_DIR_PATH/src/stdio/fwrite.c",
+  "$LIBC_DIR_PATH/src/stdio/printf.c",
+]
+LIBC_STDIO_SRC -= LIBC_FORMAT_SRC
+LIBC_STDIO_SRC -= LIBC_STDIO_BASE
+
+# dir exit
+LIBC_EXIT_SRC = []
+if (defined(LOSCFG_LIB_STDIO)) {
+  LIBC_EXIT_SRC += [ "$LIBC_DIR_PATH/src/exit/assert.c" ]
+}
+
+# dir prng
+LIBC_PRNG_SRC = ["$LIBC_DIR_PATH/src/prng/rand.c",]
+
+# There are differences between cmake and cmake.
+LIBC_PRNG_SRC += [
+  "$LIBC_DIR_PATH/src/prng/__rand48_step.c",
+  "$LIBC_DIR_PATH/src/prng/__seed48.c",
+  "$LIBC_DIR_PATH/src/prng/lrand48.c",
+
+  "$LIBC_DIR_PATH/src/prng/random.c",
+  "$LIBC_DIR_PATH/src/prng/seed48.c",
+  "$LIBC_DIR_PATH/src/prng/srand48.c",
+]
+
+
+# dir multibyte
+LIBC_MULTIBYTE_SRC = [
+  "$LIBC_DIR_PATH/src/multibyte/btowc.c",
+  "$LIBC_DIR_PATH/src/multibyte/c32rtomb.c",
+  "$LIBC_DIR_PATH/src/multibyte/internal.c",
+  "$LIBC_DIR_PATH/src/multibyte/mblen.c",
+  "$LIBC_DIR_PATH/src/multibyte/mbrlen.c",
+  "$LIBC_DIR_PATH/src/multibyte/mbrtoc32.c",
+  "$LIBC_DIR_PATH/src/multibyte/mbrtowc.c",
+  "$LIBC_DIR_PATH/src/multibyte/mbsinit.c",
+  "$LIBC_DIR_PATH/src/multibyte/mbsnrtowcs.c",
+  "$LIBC_DIR_PATH/src/multibyte/mbsrtowcs.c",
+  "$LIBC_DIR_PATH/src/multibyte/mbstowcs.c",
+  "$LIBC_DIR_PATH/src/multibyte/mbtowc.c",
+  "$LIBC_DIR_PATH/src/multibyte/wcrtomb.c",
+  "$LIBC_DIR_PATH/src/multibyte/wcsnrtombs.c",
+  "$LIBC_DIR_PATH/src/multibyte/wcsrtombs.c",
+  "$LIBC_DIR_PATH/src/multibyte/wctob.c",
+  "$LIBC_DIR_PATH/src/multibyte/wctomb.c",
+]
+
+# dir linux
+LIBC_LINUX_SRC = [ "$LIBC_DIR_PATH/src/linux/stime.c" ]
+
+# dir legacy
+LIBC_LEGACY_SRC = [ "$LIBC_DIR_PATH/src/legacy/getpagesize.c" ]
+if (defined(LOSCFG_LIB_STDIO)) {
+  LIBC_LEGACY_SRC += [ "$LIBC_DIR_PATH/src/legacy/err.c" ]
+}
+
+# dir thread
+LIBC_THREAD_SRC = [
+  "$LIBC_DIR_PATH/src/thread/pthread_getspecific.c",
+  "$LIBC_DIR_PATH/src/thread/pthread_key_create.c",
+  "$LIBC_DIR_PATH/src/thread/pthread_setspecific.c",
+]

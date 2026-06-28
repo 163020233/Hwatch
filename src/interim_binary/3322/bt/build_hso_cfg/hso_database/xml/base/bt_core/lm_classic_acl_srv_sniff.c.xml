@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L3][BT_SNIFF] Remove sniff interval node con_hdl %d @lm_classic_acl_srv_sniff.c(107),INFO" ID="0x89fe035d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_sniff_create_srv failed @lm_classic_acl_srv_sniff.c(181),WARNING" ID="0x89fe05ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_sniff_local_trans_mode sniff trans failed @lm_classic_acl_srv_sniff.c(250),WARNING" ID="0x89fe07d3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_add_sniff_hl get offset failed @lm_classic_acl_srv_sniff.c(306),WARNING" ID="0x89fe0993" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_add_sniff_peer get offset failed @lm_classic_acl_srv_sniff.c(355),WARNING" ID="0x89fe0b1b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_loc_sniff add sniff failed @lm_classic_acl_srv_sniff.c(382),WARNING" ID="0x89fe0bf3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_rem_nego_trans_mode sniff trans failed @lm_classic_acl_srv_sniff.c(417),WARNING" ID="0x89fe0d0b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_rem_trans_mode sniff trans failed @lm_classic_acl_srv_sniff.c(453),WARNING" ID="0x89fe0e2b" />
+			</MSG_LOG>

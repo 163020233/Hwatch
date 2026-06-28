@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="bnep connect ind. @bnep_fsm.c(90),INFO" ID="0xedbe02d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep connect cfm @bnep_fsm.c(98),INFO" ID="0xedbe0315" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep connect complete @bnep_fsm.c(102),INFO" ID="0xedbe0335" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep disconnect complete @bnep_fsm.c(106),INFO" ID="0xedbe0355" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memset error @bnep_fsm.c(123),ERROR" ID="0xedbe03da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bnep remote-&gt;status=%d @bnep_fsm.c(230),INFO" ID="0xedbe0735" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bnep remote is null, in-&gt;result=%d, in-&gt;side=%d @bnep_fsm.c(247),ERROR" ID="0xedbe07ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep setup conn mem_new fail. @bnep_fsm.c(268),ERROR" ID="0xedbe0862" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep remote is null @bnep_fsm.c(288),ERROR" ID="0xedbe0902" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep trans is null @bnep_fsm.c(376),ERROR" ID="0xedbe0bc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep remote is null or status is not right. @bnep_fsm.c(449),ERROR" ID="0xedbe0e0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep remote is null @bnep_fsm.c(465),ERROR" ID="0xedbe0e8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep remote is null or status is not right @bnep_fsm.c(482),ERROR" ID="0xedbe0f12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep remote is null or status is not right @bnep_fsm.c(505),ERROR" ID="0xedbe0fca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bnep control_type=%d, cid=0x%x @bnep_fsm.c(525),INFO" ID="0xedbe106d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep setup is null @bnep_fsm.c(570),ERROR" ID="0xedbe11d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bnep remote status is wrong, status=%d @bnep_fsm.c(680),ERROR" ID="0xedbe1542" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bnep count is wrong, count=%d @bnep_fsm.c(685),ERROR" ID="0xedbe156a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bnep remote status is wrong, status=%d @bnep_fsm.c(770),ERROR" ID="0xedbe1812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bnep count is wrong, count=%d @bnep_fsm.c(775),ERROR" ID="0xedbe183a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep setup connect is not done. @bnep_fsm.c(911),ERROR" ID="0xedbe1c7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep ethernet msg is blank. @bnep_fsm.c(915),ERROR" ID="0xedbe1c9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep header_len is 0. @bnep_fsm.c(921),ERROR" ID="0xedbe1cca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep ethernet header is 0. @bnep_fsm.c(961),INFO" ID="0xedbe1e0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bnep cid=0x%x @bnep_fsm.c(1031),ERROR" ID="0xedbe203a" />
+			</MSG_LOG>

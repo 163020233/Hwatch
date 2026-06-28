@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="gle acore get smp keys param err! @gle_service_database_smp.c(52),ERROR" ID="0xe8ea01a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle acore smp keys memcmp err, data all zero! @gle_service_database_smp.c(68),WARNING" ID="0xe8ea0223" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gle acore smp keys found, id_index 0x%x peer_addr %02x:**:**:**:%02x:%02x @gle_service_database_smp.c(75),WARNING" ID="0xe8ea025b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle acore smp keys memcmp err, addr not match! @gle_service_database_smp.c(77),WARNING" ID="0xe8ea026b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle acore get smp keys memcpy err! @gle_service_database_smp.c(84),ERROR" ID="0xe8ea02a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle acore save smp keys param err! @gle_service_database_smp.c(99),ERROR" ID="0xe8ea031a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore memset smp key err! @gle_service_database_smp.c(138),ERROR" ID="0xe8ea0452" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="sle get bonded device input:%d less than act:%d! @gle_service_database_smp.c(165),ERROR" ID="0xe8ea052a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle acore get bonded device memcpy err! @gle_service_database_smp.c(172),ERROR" ID="0xe8ea0562" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gle acore save sm key write_index:0x%02x peer_addr %02x:**:**:**:%02x:%02x @gle_service_database_smp.c(211),WARNING" ID="0xe8ea069b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle acore save sm full, write_index:%02x! @gle_service_database_smp.c(246),INFO" ID="0xe8ea07b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle acore save sm key write_index:0x%02x! @gle_service_database_smp.c(263),INFO" ID="0xe8ea083d" />
+			</MSG_LOG>
