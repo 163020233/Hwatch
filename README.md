@@ -47,19 +47,19 @@
 
 ## 快速入门
 
-### 环境搭建
+### 环境搭建（开发者首次接触 HiDiTing 解决方案，推荐通过 WSL_DOCKER 开发环境串通 Hello World 以实现快速入门）
 
-HiDiTingV100解决方案提供了完整的开发环境快速入门指南，用于指导开发者完成代码下载与编译、工具获取、镜像烧写以及Hello World调试全流程：
+HiDiTing解决方案提供了完整的开发环境快速入门指南，用于指导开发者完成代码下载与编译、工具获取、镜像烧写以及Hello World调试全流程：
 
-| 开发环境 | 支持平台 | 文档链接 |
-| :------: | :------: | :------: |
-| WSL_DOCKER | Linux | [使用指南](docs/docs-zh_CN/HiDiTingV100/get-started/HiDiTingV100%20开发环境快速入门/HiDiTingV100%20WSL_DOCKER环境使用指南/HiDiTingV100%20WSL_DOCKER环境使用指南.md) |
-| HiSpark Studio for VS Code | Windows | [使用指南](docs/docs-zh_CN/HiDiTingV100/get-started/HiDiTingV100%20开发环境快速入门/HiDiTingV100%20HiSpark%20Studio%20for%20VS%20Code使用指南/HiDiTingV100%20HiSpark%20Studio%20for%20VS%20Code开发环境使用指南.md) |
-| 一站式CLI | Linux / Windows | [使用指南](docs/docs-zh_CN/HiDiTingV100/get-started/HiDiTingV100%20开发环境快速入门/HiDiTingV100%20一站式CLI开发环境使用指南/HiDiTingV100%20一站式CLI开发环境使用指南.md) |
+| 开发环境 | 支持平台 | 说明 | 文档链接 |
+| :------: | :------: | :------: | :------: |
+| WSL_DOCKER | Linux | Windows PC 快速搭建Linux开发环境 | [使用指南](docs/docs-zh_CN/HiDiTingV100/get-started/HiDiTingV100%20开发环境快速入门/HiDiTingV100%20WSL_DOCKER环境使用指南/HiDiTingV100%20WSL_DOCKER环境使用指南.md) |
+| HiSpark Studio for VS Code | Windows | VS Code IDE插件 | [使用指南](docs/docs-zh_CN/HiDiTingV100/get-started/HiDiTingV100%20开发环境快速入门/HiDiTingV100%20HiSpark%20Studio%20for%20VS%20Code使用指南/HiDiTingV100%20HiSpark%20Studio%20for%20VS%20Code开发环境使用指南.md) |
+| 一站式CLI | Linux / Windows | CLI命令行 | [使用指南](docs/docs-zh_CN/HiDiTingV100/get-started/HiDiTingV100%20开发环境快速入门/HiDiTingV100%20一站式CLI开发环境使用指南/HiDiTingV100%20一站式CLI开发环境使用指南.md) |
 
 ## 软件资料
 
-### 开发指南
+### 进阶指南
 
 如需进一步进行Native/Native-js应用或外设驱动开发，请参考HiDiTing开发文档，快速入口如下：
 
