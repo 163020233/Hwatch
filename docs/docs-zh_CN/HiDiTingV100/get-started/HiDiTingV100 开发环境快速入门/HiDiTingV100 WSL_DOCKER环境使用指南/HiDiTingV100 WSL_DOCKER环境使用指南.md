@@ -129,9 +129,7 @@
 
     git clone https://gitcode.com/HiSpark/hispark-docker.git
 
- 按照界面提示，首次执行git clone命令时，需要输入gitcode账号和令牌信息，按照提示输入即可。如下图：
-
-<img src="./figures/git_config.png" style="max-width:700px;height:auto;">
+ 按照界面提示，首次执行git clone命令时，需要输入gitcode账号和令牌信息，按照提示输入即可。
 
 - *如果每次克隆都需要输入凭证信息，请检查`git config --global credential.helper store`是否有执行*
 
