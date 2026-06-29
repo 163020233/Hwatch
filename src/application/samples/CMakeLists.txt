@@ -7,7 +7,7 @@ set(COMPONENT_NAME "samples")
 set(SOURCES
 )
 
-set(PUBLIC_HEADER ${CMAKE_SOURCE_DIR}/middleware/utils/app_init
+set(PUBLIC_HEADER ${ROOT_DIR}/middleware/utils/app_init
 )
 
 if(DEFINED CONFIG_ENABLE_BT_SAMPLE OR "CONFIG_ENABLE_BT_SAMPLE" IN_LIST DEFINES)
