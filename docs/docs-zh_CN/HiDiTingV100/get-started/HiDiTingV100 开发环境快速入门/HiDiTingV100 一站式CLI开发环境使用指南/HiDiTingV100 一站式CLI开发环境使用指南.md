@@ -18,7 +18,7 @@
 
 ---
 
-**方式一（推荐）：一键自举**
+**方式一（推荐）：一键安装**
 
 一行命令完成 uv 安装、fbb-cli 安装和 `fbb setup`：
 
@@ -60,23 +60,8 @@ curl -fsSL https://dl.hispark.hisilicon.com/bootstrap.sh | sh
 **Windows（PowerShell）：**
 
 ```powershell
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+irm https://astral.sh/uv/install.ps1 | iex
 ```
-
-> **⚠️ Windows 执行策略**
->
-> 若执行安装脚本时报错 *PowerShell requires an execution policy in [Unrestricted, RemoteSigned, Bypass]*，需先在 PowerShell 中运行以下命令开放脚本执行权限，选择 **[Y] 是** 确认：
->
-> ```powershell
-> Set-ExecutionPolicy RemoteSigned -scope CurrentUser
-> ```
-
-> **⚠️ 应用程序控制策略阻止**
->
-> 安装或后续运行过程中，若出现「此应用已被你的组织的应用程序控制策略阻止」等提示，可尝试临时关闭杀毒软件实时防护后重试；若由企业安全策略统一管控，需联系 IT 管理员将 `~/.hs-fbb/` 目录加入白名单。
-
-> **💡 提示**：安装完成后需**重新打开一个新终端窗口**，再执行 `uv --version` 验证安装是否成功。
-
 
 **Linux：**
 
@@ -160,7 +145,7 @@ fbb setup
 通过 Git 克隆 SDK 仓库到本地：
 
 ```bash
-git clone https://gitcode.com/HiSpark/hs-fbb.git
+git clone https://gitcode.com/HiSpark/hs-fbb_inner.git
 ```
 
 > **📌 首次克隆需要登录**：首次下载时会提示输入 GitCode 的用户名和密码，按提示输入账号信息即可。
@@ -174,14 +159,14 @@ git clone https://gitcode.com/HiSpark/hs-fbb.git
 进入 SDK 目录，初始化并下载编译器子模块：
 
 ```bash
-cd hs-fbb
+cd hs-fbb_inner
 git submodule init
 git submodule update --remote
 ```
 
 **Windows 必须执行：修复工具链符号链接**
 
-Git 在 Windows 上克隆工具链时，符号链接会以纯文本文件形式保存，直接编译会报"此版本不适合在当前 Windows 版本运行"。工具链下载完成后需在 SDK 根目录（`hs-fbb`）执行以下命令修复：
+Git 在 Windows 上克隆工具链时，符号链接会以纯文本文件形式保存，直接编译会报"此版本不适合在当前 Windows 版本运行"。工具链下载完成后需在 SDK 根目录（`hs-fbb_inner`）执行以下命令修复：
 
 > **📌 提示**：建议在**命令提示符（cmd）或 PowerShell** 中执行以下命令，不要在 Git Bash 中执行，否则路径解析可能出错。
 
@@ -212,7 +197,7 @@ SDK 下载完成后，导出 `FBB_SDK_DIR` 环境变量，指向 SDK 的 `src` �
 **Windows（PowerShell）：**
 
 ```powershell
-$env:FBB_SDK_DIR = "<实际路径>\hs-fbb\src"
+$env:FBB_SDK_DIR = "<实际路径>\hs-fbb_inner\src"
 ```
 
 > **📌 注意**：请将 `<实际路径>` 替换为 SDK 实际所在目录，路径不能包含空格或中文字符。
@@ -222,7 +207,7 @@ $env:FBB_SDK_DIR = "<实际路径>\hs-fbb\src"
 **Linux：**
 
 ```bash
-export FBB_SDK_DIR="<实际路径>/hs-fbb/src"
+export FBB_SDK_DIR="<实际路径>/hs-fbb_inner/src"
 ```
 
 > **📌 注意**：请将 `<实际路径>` 替换为 SDK 实际所在目录；`~` 在双引号内不会展开，请使用 `$HOME` 替代 `~`。
