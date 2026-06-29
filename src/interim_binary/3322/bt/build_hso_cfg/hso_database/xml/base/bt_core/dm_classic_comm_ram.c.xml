@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="dm_classic_get_local_feats memcpy failed @dm_classic_comm_ram.c(280),ERROR" ID="0x8aee08c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]dm_classic_ltaddr_alloc:ltaddr:%d, bitmap:0x%0x @dm_classic_comm_ram.c(320),INFO" ID="0x8aee0a05" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]dm_classic_ltaddr[%d]_free:freed ltaddr:%d, bitmap:0x%0x @dm_classic_comm_ram.c(333),INFO" ID="0x8aee0a6d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="dm_classic_set_afh_host_chnl_class memcpy_s failed(%d), len=%u @dm_classic_comm_ram.c(450),ERROR" ID="0x8aee0e12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bt_reset]acl disconnect start(conhdl=%d) @dm_classic_comm_ram.c(571),INFO" ID="0x8aee11dd" />
+			</MSG_LOG>

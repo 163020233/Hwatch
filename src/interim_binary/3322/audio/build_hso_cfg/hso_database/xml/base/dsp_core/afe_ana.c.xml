@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[hifi][W]addr=0x%x, value=0x%x. @afe_ana.c(24),INFO" ID="0x980600c5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][R]addr=0x%x, value=0x%x. @afe_ana.c(31),INFO" ID="0x980600fd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][W]addr=0x%x, start=%u, end=%u, content=0x%x. @afe_ana.c(39),INFO" ID="0x9806013d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]ana default init. @afe_ana.c(203),INFO" ID="0x9806065d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]rutune fail, use default code. @afe_ana.c(471),INFO" ID="0x98060ebd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi]rutune done:%d, tx code:%x, adc code:%x, lpadc code:%x. @afe_ana.c(480),WARNING" ID="0x98060f03" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]invalid adc_ch(%d). @afe_ana.c(589),INFO" ID="0x9806126d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]invalid adc_ch(%d). @afe_ana.c(607),INFO" ID="0x980612fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]invalid adc_ch(%d). @afe_ana.c(638),INFO" ID="0x980613f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]invalid lpadc_ch(%d). @afe_ana.c(690),INFO" ID="0x98061595" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]invalid lpadc_ch(%d). @afe_ana.c(701),INFO" ID="0x980615ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @afe_ana.c(929),INFO" ID="0x98061d0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]invalid dac_ch(%d). @afe_ana.c(931),INFO" ID="0x98061d1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]invalid dac_ch(%d). @afe_ana.c(950),INFO" ID="0x98061db5" />
+			</MSG_LOG>

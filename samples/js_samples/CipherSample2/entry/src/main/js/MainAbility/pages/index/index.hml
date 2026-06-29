@@ -1,0 +1,25 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="MD5">
+            <text class="todo-title">MD5</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="TRNG">
+            <text class="todo-title">TRNG</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="BASE64DEC">
+            <text class="todo-title">BASE64DEC</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="BASE64ENC">
+            <text class="todo-title">BASE64ENC</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="HMACSHA256">
+            <text class="todo-title">HMACSHA256</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="HMACSHA256FromByte">
+            <text class="todo-title">HMACSHA256FromByte</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="NvTest">
+            <text class="todo-title">NvTest</text>
+        </list-item>
+    </list>
+</div>

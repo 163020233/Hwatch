@@ -1,0 +1,395 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("config.gni")
+
+config("liteos_common_opts") {
+    ldflags = [
+    ]
+    defines = [
+        "__LITEOS__",
+        "__RTOS_LITE__",
+        "SECUREC_IN_KERNEL=0",
+        "_ALL_SOURCE"
+    ]
+
+    if (defined(LOSCFG_COMPILER_HIMIX_32) || defined(LOSCFG_COMPILER_HIMIX210_64) || defined(LOSCFG_COMPILER_HCC_64) || defined(LOSCFG_COMPILER_GCC_64)) {
+        defines += ["__COMPILER_HUAWEILITEOS__"]
+    }
+    if (!defined(LOSCFG_DEBUG_VERSION)) {
+        defines += ["NDEBUG"]
+    }
+    if (defined(LOSCFG_NULL_ADDRESS_PROTECT)) {
+        defines += ["LOSCFG_NULL_ADDRESS_PROTECT"]
+    }
+
+    if (defined(LOSCFG_COMPILER_ICCARM)) {
+        common_opts = [
+            "--char_is_unsigned",
+            "--warnings_affect_exit_code",
+            "--enable_restrict",
+        ]
+
+        if(defined(LOSCFG_CC_STACKPROTECTOR)){
+            common_opts += [
+                "--stack_protection",
+                "--param ssp-buffer-size=4"
+            ]
+        } else if(defined(LOSCFG_CC_STACKPROTECTOR_STRONG)){
+            common_opts += [
+                "--stack_protection"
+            ]
+        } else if(defined(LOSCFG_CC_STACKPROTECTOR_ALL)) {
+            common_opts += [
+                "--stack_protection"
+            ]
+        }
+
+        if (defined(LOSCFG_LASLR_GOT)) {
+            common_opts += ["-fpie"]
+            ldflags += [
+                "-fpie",
+                "-z",
+                "now"
+            ]
+        } else if (defined(LOSCFG_LASLR_GSPR)) {
+            ldflags += ["--emit-relocs"]
+        }
+
+        copts_base = common_opts
+        cxxopts_base = []
+        cxxopts_base += [
+
+        ]
+        cxxopts_base += common_opts
+        cflags = copts_base
+        cflags_cc = cxxopts_base
+    }
+}
+
+config("liteos_config") {
+    configs = [
+        "$RTOSLITETOPDIR/build/gn:liteos_common_opts",
+    ]
+}
+
+config("modules_public") {
+    configs = [
+        "$LITEOSTOPDIR/$rtos_lite_kernel_path:public",
+        "$LITEOSTOPDIR/compat:public",
+        "$LITEOSTOPDIR/fs:public",
+        "$LITEOSTOPDIR/lib:public",
+        "$LITEOSTOPDIR/drivers:public",
+        "$LITEOSTOPDIR/targets:public",
+        "$LITEOSTOPDIR/$arch_path:public",
+        "$RTOSLITETOPDIR/build/gn/compiler/$toolchain_type:kconfig_config"
+    ]
+
+    if (defined(LOSCFG_TEST)) {
+        configs += ["$LITEOSTOPDIR/$test_path:public"]
+    }
+
+    if(defined(LOSCFG_COMPILER_ICCARM)) {
+        cflags_cc = ["--enable_restrict"]
+    }
+}
+
+if (defined(LOSCFG_COMPILER_CLANG)) {
+    config("clang_priority_includes") {
+        cflags_cc = [
+                "-I${board_toolchain_path}/../riscv32-elf/include/c++/v1",
+                "-I${board_toolchain_path}/../riscv32-elf/include/c++/v1/ext",
+                "-I${board_toolchain_path}/../lib/clang/15.0.4/include",
+            ]
+    }
+}
+
+group("modules") {
+    deps = [
+        "$LITEOSTOPDIR/$rtos_lite_kernel_path:$rtos_lite_kernel_path",
+        "$LITEOSTOPDIR/$arch_path:$arch_path",
+        "$LITEOSTOPDIR/fs:fs",
+        "$LITEOSTOPDIR/compat:compat",
+        "$LITEOSTOPDIR/drivers:drivers"
+    ]
+    if (!defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["$LITEOSTOPDIR/lib:lib"]
+    }
+    if (defined(LOSCFG_TEST) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["$LITEOSTOPDIR/$test_path:$test_path"]
+    }
+    if (!defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["$LITEOSTOPDIR/targets:targets"]
+    }
+}
+
+static_library("libkernel") {
+  deps = [ ":modules" ]
+  complete_static_lib = true
+}
+
+if (IS_INSTALL && IS_COMMERCIAL) {
+    static_library("vs_server") {
+        configs += [
+            ":modules_public",
+            ":liteos_config",
+        ]
+        if (defined(LOSCFG_SAFETY_KERNEL)) {
+            ldflags = [ "--Map=vs_server.map" ]
+            if (has_dynload_gsymbol == true) {
+                ldflags += [rebase_path("$kconfig_out_dir/los_dynload_gsymbol.o")]
+            }
+        } else {
+            if (defined(LOSCFG_COMPILER_ICCARM)) {
+                ldflags = [ "--map=vs_server.map" ]
+            } else {
+                ldflags = [ "--Map=vs_server.map" ]
+            }
+            if (has_dynload_gsymbol == true) {
+                ldflags += [rebase_path("$kconfig_out_dir/los_dynload_gsymbol.o")]
+            }
+        }
+        output_dir = target_out_dir
+        deps = [ ":libkernel" ]
+        deps +=[
+            "$LITEOSTOPDIR/$rtos_lite_kernel_path/usr:libusr",
+            "$LITEOSTOPDIR/$rtos_lite_kernel_path/base:libbase",
+            "$LITEOSTOPDIR/$rtos_lite_kernel_path/init:libinit",
+            "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libdrvbox",
+            "$LITEOSTOPDIR/arch_s/riscv/syscalls:libsyscalls",
+            "$LITEOSTOPDIR/arch_s/riscv:libriscv",
+            "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libusrdrvlib",
+            "$LITEOSTOPDIR/lib/libc:libc",
+            "$LITEOSTOPDIR/lib/libsec:libsec",
+            "$LITEOSTOPDIR/compat/osal/oh_mini:oh_mini",
+        ]
+        if (defined(LOSCFG_COMPAT_CMSIS)) {
+            deps +=[
+                "$LITEOSTOPDIR/compat/cmsis:libcmsis_user",
+                "$LITEOSTOPDIR/compat/cmsis:libcmsis_kernel",
+            ]
+        }
+        if (defined(LOSCFG_COMPAT_POSIX)) {
+            deps +=[
+                "$LITEOSTOPDIR/lib/liteos_libc:libposix",
+            ]
+        }
+        if (defined(LOSCFG_LIB_LIBM)) {
+            deps +=[
+                "$LITEOSTOPDIR/lib/libm:libm",
+            ]
+        }
+        if (defined(LOSCFG_KERNEL_CPPSUPPORT)) {
+            deps +=[
+                "$LITEOSTOPDIR/$rtos_lite_kernel_path/extended/cppsupport:libcppsupport",
+            ]
+        }
+        if (defined(LOSCFG_FS_FAT)) {
+            deps +=[
+                "$LITEOSTOPDIR/fs/fat:libfat",
+            ]
+        }
+        if (defined(LOSCFG_FS_VFS)) {
+            deps +=[
+                "$LITEOSTOPDIR/fs/vfs:libvfs",
+            ]
+            if (defined(LOSCFG_COMPAT_LINUX)) {
+                deps +=[
+                    "$LITEOSTOPDIR/fs/vfs/multi_partition:libmulti_partition",
+                ]
+            }
+        }
+        if (defined(LOSCFG_FS_FAT_CACHE)) {
+            deps +=[
+                "$LITEOSTOPDIR/fs/vfs/bcache:libbcache",
+            ]
+        }
+        if (defined(LOSCFG_FS_VFS_BLOCK_DEVICE)) {
+            deps +=[
+                "$LITEOSTOPDIR/fs/vfs/bch:libbch",
+            ]
+        }
+
+        if (defined(LOSCFG_DRIVER_DISK)) {
+            deps +=[
+                "$LITEOSTOPDIR/fs/vfs/disk:libdisk",
+            ]
+        }
+        if (defined(LOSCFG_FS_PROC)) {
+            deps +=[
+                "$LITEOSTOPDIR/fs/proc:libproc",
+            ]
+        }
+
+        if (!defined(LOSCFG_INTERRUPT_VENDOR)) {
+            deps +=[
+                "$LITEOSTOPDIR/drivers/interrupt:libinterrupt",
+            ]
+        }
+
+        if (defined(LOSCFG_DRIVERS_BASE)) {
+            deps += [
+                "$LITEOSTOPDIR/drivers/base:libdriverbase",
+            ]
+        }
+
+        if (defined(LOSCFG_COMPAT_LINUX)) {
+            deps += [
+                "$LITEOSTOPDIR/compat/linux:liblinux",
+            ]
+        }
+
+        if (defined(LOSCFG_FS_COMPAT_NUTTX)) {
+            deps += [
+                "$LITEOSTOPDIR/fs/compat:libcompat",
+            ]
+        }
+    }
+} else {
+    executable("vs_server") {
+        configs += [
+            ":modules_public",
+            ":liteos_config",
+        ]
+        if (defined(LOSCFG_SAFETY_KERNEL)) {
+            ldflags = [ "--Map=vs_server.map" ]
+            if (has_dynload_gsymbol == true) {
+                ldflags += [rebase_path("$kconfig_out_dir/los_dynload_gsymbol.o")]
+            }
+        } else {
+            if (defined(LOSCFG_COMPILER_ICCARM)) {
+                ldflags = [ "--map=vs_server.map" ]
+            } else {
+                ldflags = [ "--Map=vs_server.map" ]
+            }
+            if (has_dynload_gsymbol == true) {
+                ldflags += [rebase_path("$kconfig_out_dir/los_dynload_gsymbol.o")]
+            }
+        }
+        output_dir = target_out_dir
+        deps = [ ":libkernel" ]
+
+        if (defined(LOSCFG_SAFETY_KERNEL)) {
+            deps +=[
+                "$LITEOSTOPDIR/$rtos_lite_kernel_path/usr:libusr",
+                "$LITEOSTOPDIR/$rtos_lite_kernel_path/base:libbase",
+                "$LITEOSTOPDIR/$rtos_lite_kernel_path/init:libinit",
+                "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libdrvbox",
+                "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libtargets",
+                "$LITEOSTOPDIR/arch_s/riscv/syscalls:libsyscalls",
+                "$LITEOSTOPDIR/arch_s/riscv:libriscv",
+                "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libusrdrvlib",
+                "$LITEOSTOPDIR/lib/libc:libc",
+                "$LITEOSTOPDIR/lib/libsec:libsec",
+                "$LITEOSTOPDIR/compat/osal/oh_mini:oh_mini",
+            ]
+            if (defined(LOSCFG_KERNEL_DYNLOAD)) {
+                deps += [
+                    "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libdynkernel",
+                ]
+            }
+            if (defined(LOSCFG_COMPAT_CMSIS)) {
+                deps +=[
+                    "$LITEOSTOPDIR/compat/cmsis:libcmsis_user",
+                    "$LITEOSTOPDIR/compat/cmsis:libcmsis_kernel",
+                ]
+            }
+            if (defined(LOSCFG_COMPAT_POSIX)) {
+                deps +=[
+                    "$LITEOSTOPDIR/lib/liteos_libc:libposix",
+                ]
+            }
+            if (defined(LOSCFG_LIB_LIBM)) {
+                deps +=[
+                    "$LITEOSTOPDIR/lib/libm:libm",
+                ]
+            }
+            if (defined(LOSCFG_KERNEL_CPPSUPPORT)) {
+                deps +=[
+                    "$LITEOSTOPDIR/$rtos_lite_kernel_path/extended/cppsupport:libcppsupport",
+                ]
+            }
+            if (defined(LOSCFG_FS_FAT)) {
+                deps +=[
+                    "$LITEOSTOPDIR/fs/fat:libfat",
+                ]
+            }
+            if (defined(LOSCFG_FS_VFS)) {
+                deps +=[
+                    "$LITEOSTOPDIR/fs/vfs:libvfs",
+                ]
+                if (defined(LOSCFG_COMPAT_LINUX)) {
+                    deps +=[
+                        "$LITEOSTOPDIR/fs/vfs/multi_partition:libmulti_partition",
+                    ]
+                }
+            }
+            if (defined(LOSCFG_FS_FAT_CACHE)) {
+                deps +=[
+                    "$LITEOSTOPDIR/fs/vfs/bcache:libbcache",
+                ]
+            }
+            if (defined(LOSCFG_FS_VFS_BLOCK_DEVICE)) {
+                deps +=[
+                    "$LITEOSTOPDIR/fs/vfs/bch:libbch",
+                ]
+            }
+
+            if (defined(LOSCFG_DRIVER_DISK)) {
+                deps +=[
+                    "$LITEOSTOPDIR/fs/vfs/disk:libdisk",
+                ]
+            }
+            if (defined(LOSCFG_FS_PROC)) {
+                deps +=[
+                    "$LITEOSTOPDIR/fs/proc:libproc",
+                ]
+            }
+            if (defined(LOSCFG_DRIVERS_MMC)) {
+                deps +=[
+                    "$LITEOSTOPDIR/drivers/mmc:libmmc",
+                ]
+            }
+
+            if (!defined(LOSCFG_INTERRUPT_VENDOR)) {
+                deps +=[
+                    "$LITEOSTOPDIR/drivers/interrupt:libinterrupt",
+                ]
+            }
+
+            if (defined(LOSCFG_DRIVERS_BASE)) {
+                deps += [
+                    "$LITEOSTOPDIR/drivers/base:libdriverbase",
+                ]
+            }
+
+            if (defined(LOSCFG_COMPAT_LINUX)) {
+                deps += [
+                    "$LITEOSTOPDIR/compat/linux:liblinux",
+                ]
+            }
+
+            if (defined(LOSCFG_FS_COMPAT_NUTTX)) {
+                deps += [
+                    "$LITEOSTOPDIR/fs/compat:libcompat",
+                ]
+            }
+
+            if (defined(LOSCFG_TEST)) {
+                deps += [
+                    "$LITEOSTOPDIR/test_s:libtest_s",
+                    "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libboxatest",
+                    "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libboxbtest",
+                    "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libdrvboxtest",
+                ]
+            } else {
+                deps += [
+                    "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libtboxA",
+                    "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM:libtboxB",
+                ]
+            }
+        }
+    }
+}

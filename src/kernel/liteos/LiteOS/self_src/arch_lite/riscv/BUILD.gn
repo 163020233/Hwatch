@@ -1,0 +1,155 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+kernel_module("riscv") {
+    include_dirs = [
+        "$LITEOSTOPDIR/kernel_lite/base/include",
+        "$LITEOSTOPDIR/kernel_lite/extended/include",
+        "$LITEOSTOPDIR/kernel_lite/extended/dynload/include",
+        "$LITEOSTOPDIR/$open_source_path/musl/include",
+    ]
+
+    if (defined(LOSCFG_PERF_HW_PMU)) {
+        include_dirs += [
+            "$LITEOSTOPDIR/kernel_lite/extended/perf"
+        ]
+    }
+
+    sources = [
+        "src/cache.c",
+        "src/canary.c",
+        "src/fault.c",
+        "src/task.c",
+        "src/stack.S",
+    ]
+    if (defined(LOSCFG_LASLR)) {
+        sources += [
+            "src/aslr/aslr_vector.S",
+            "src/aslr/aslr.c",
+            "src/aslr/symbol.S",
+        ]
+    }
+    if (defined(LOSCFG_FPB_ENABLE)) {
+        sources += ["src/fpb.c"]
+    }
+    if (defined(LOSCFG_APC_ENABLE)) {
+        sources += ["src/pmp.c"]
+    }
+    if (defined(LOSCFG_PERF_HW_PMU)) {
+        sources += ["src/pmu.c"]
+    }
+    if (defined(LOSCFG_KERNEL_DYNLOAD)) {
+        sources += ["src/dynload.c"]
+    }
+    if (defined(LOSCFG_ARCH_VECTOR_ENABLE)) {
+        sources += ["src/vpu.S"]
+    }
+    if (defined(LOSCFG_RISCV_COMPILER_OPTIONS_LCMP_GEN)) {
+        sources += [
+            "src/intrinsics/dispatch.c",
+            "src/intrinsics/reset.c",
+            "src/intrinsics/trap.c",
+        ]
+    } else {
+        sources += [
+            "src/exception.S",
+            "src/dispatch.S",
+            "src/reset_vector.S",
+            "src/trap.S"
+        ]
+    }
+
+    if (!defined(LOSCFG_ARCH_INTERRUPT_TAKEOVER)) {
+        sources -= [
+            "src/exception.S",
+            "src/fault.c"
+        ]
+    }
+    if (defined(LOSCFG_USING_BOARD_RESET_VECTOR)) {
+        sources -= [
+            "src/reset_vector.S",
+            "src/stack.S"
+        ]
+    }
+
+    if (defined(LOSCFG_KERNEL_DEEPSLEEP)) {
+        sources += ["src/runstop.S"]
+    }
+}
+
+config("public") {
+    RISCV_MARCH = ""
+    if (defined(LOSCFG_ARCH_RISCV_RV32IMC)) {
+        RISCV_MARCH += "rv32im"
+    }
+    if (defined(LOSCFG_ARCH_FPU_ENABLE)) {
+        RISCV_MARCH += "f"
+    }
+    if (defined(LOSCFG_ARCH_FPU_DOUBLE)) {
+        RISCV_MARCH += "d"
+    }
+    if (defined(LOSCFG_ARCH_RISCV_RV32IMC)) {
+        RISCV_MARCH += "c"
+    }
+    if (defined(LOSCFG_ARCH_RISCV_ISA_B0p92)) {
+        RISCV_MARCH += "b0p92"
+    } else if(defined(LOSCFG_ARCH_RISCV_ISA_B1p0)){
+        RISCV_MARCH += "b"
+    }
+    if (defined(LOSCFG_ARCH_VECTOR_ENABLE)) {
+    RISCV_MARCH += "v"
+    }
+    LCMP_MARCH_EXTENSIONS = []
+    if (defined(LOSCFG_LCMP_CUSTOM_INST16_EXTENSIONS)) {
+        LCMP_MARCH_EXTENSIONS += ["xlinxma"]
+    }
+    if (defined(LOSCFG_LCMP_CUSTOM_INST16_SUB_EXTENSIONS)) {
+        LCMP_MARCH_EXTENSIONS += ["xlinxmb"]
+    }
+    if (defined(LOSCFG_LCMP_CUSTOM_INST32_EXTENSIONS)) {
+        LCMP_MARCH_EXTENSIONS += ["xlinxmc"]
+    }
+    if (defined(LOSCFG_LCMP_CUSTOM_INST48_EXTENSIONS)) {
+        LCMP_MARCH_EXTENSIONS += ["xlinxmd"]
+    }
+    if (defined(LOSCFG_ARCH_RISCV_TES)) {
+        LCMP_MARCH_EXTENSIONS += ["xlinxme"]
+    }
+    # 使用字符串操作来连接列表
+    LCMP_MARCH_EXTENSIONS_LIST = ""
+    foreach(item, LCMP_MARCH_EXTENSIONS) {
+    if (LCMP_MARCH_EXTENSIONS_LIST != "") {
+        LCMP_MARCH_EXTENSIONS_LIST += "_"
+    }
+    LCMP_MARCH_EXTENSIONS_LIST += item
+    }
+
+    if (defined(LOSCFG_COMPILER_RISCV_CLANG_MUSL) && defined(LOSCFG_ARCH_LINXCORE_131)) {
+        RISCV_MARCH += "_xhimideer"
+    } else {
+        RISCV_MARCH += LCMP_MARCH_EXTENSIONS_LIST
+    }
+
+    RISCV_MABI = ""
+    if (defined(LOSCFG_ARCH_RISCV_RV32IMC)) {
+        RISCV_MABI += "ilp32"
+    }
+
+    if (defined(LOSCFG_ARCH_FPU_DOUBLE)) {
+        RISCV_MABI += "d"
+    } else if(defined(LOSCFG_ARCH_FPU_ENABLE)) {
+        RISCV_MABI += "f"
+    }
+
+    cflags = [
+        "--target=riscv32",
+        "-march=${RISCV_MARCH}",
+        "-mabi=${RISCV_MABI}",
+    ]
+    cflags_cc = cflags
+    asmflags = cflags
+}

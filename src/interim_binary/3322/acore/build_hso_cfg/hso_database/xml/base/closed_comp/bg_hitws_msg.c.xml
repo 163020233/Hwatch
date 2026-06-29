@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] hitws msg_id:%u exceeds the upper limit @bg_hitws_msg.c(41),ERROR" ID="0xee46014a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] hitws msg_handler for msg_id:%u is null @bg_hitws_msg.c(47),ERROR" ID="0xee46017a" />
+			</MSG_LOG>

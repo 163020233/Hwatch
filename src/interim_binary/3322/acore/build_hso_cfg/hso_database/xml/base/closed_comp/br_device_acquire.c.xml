@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bs br] acquire remote type error 0x%04x @br_device_acquire.c(57),ERROR" ID="0xea4401ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] acquire type error 0x%04x @br_device_acquire.c(71),ERROR" ID="0xea44023a" />
+			</MSG_LOG>

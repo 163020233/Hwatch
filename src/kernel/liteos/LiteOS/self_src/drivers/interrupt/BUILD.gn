@@ -1,0 +1,109 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("interrupt") {
+        sources = []
+        if (defined(LOSCFG_ARM_GIC_V2)) {
+            sources += ["arm_gic_v2.c"]
+        }
+
+        if (defined(LOSCFG_ARM_GIC_V3)) {
+            sources += ["arm_gic_v3.c"]
+        }
+
+        if (defined(LOSCFG_ARCH_ARM_AARCH64)) {
+            sources += ["arm_gic_v3_el3.S"]
+        }
+
+        if (defined(LOSCFG_CORTEX_M_NVIC)) {
+            sources += ["arm_nvic.c"]
+        }
+
+        if (defined(LOSCFG_RISCV_HIMIDEERV200_PLIC)) {
+            sources += ["riscv_himideerv200_plic.c"]
+        }
+
+        if (defined(LOSCFG_RISCV_LCMP_CLIC)) {
+            sources += ["riscv_lcmp_clic.c"]
+        }
+
+        if (defined(LOSCFG_XEA3_INT_CONTROLLER)) {
+            sources += ["xtensa_xea3.c"]
+        }
+
+        if (defined(LOSCFG_XEA2_INT_CONTROLLER)) {
+            sources += ["xtensa_xea2.c"]
+        }
+
+        if (defined(LOSCFG_ARM_V5_VIC)) {
+            sources += ["mono_vic.c"]
+        }
+
+        if (defined(LOSCFG_LINGLONG_IC)) {
+            sources += ["linglong_ic.c"]
+        }
+    }
+} else {
+    static_library("libinterrupt") {
+        import("../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        sources = []
+
+        include_dirs = LITEOS_GN_KSTATIC_INCLUDE
+
+        if (defined(LOSCFG_ARM_GIC_V2)) {
+            sources += ["arm_gic_v2.c"]
+        }
+
+        if (defined(LOSCFG_ARM_GIC_V3)) {
+            sources += ["arm_gic_v3.c"]
+        }
+
+        if (defined(LOSCFG_ARCH_ARM_AARCH64)) {
+            sources += ["arm_gic_v3_el3.S"]
+        }
+
+        if (defined(LOSCFG_CORTEX_M_NVIC)) {
+            sources += ["arm_nvic.c"]
+        }
+
+        if (defined(LOSCFG_RISCV_HIMIDEERV200_PLIC)) {
+            sources += ["riscv_himideerv200_plic.c"]
+        }
+
+        if (defined(LOSCFG_RISCV_LCMP_CLIC)) {
+            sources += ["riscv_lcmp_clic.c"]
+        }
+
+        if (defined(LOSCFG_XEA3_INT_CONTROLLER)) {
+            sources += ["xtensa_xea3.c"]
+        }
+
+        if (defined(LOSCFG_XEA2_INT_CONTROLLER)) {
+            sources += ["xtensa_xea2.c"]
+        }
+
+        if (defined(LOSCFG_ARM_V5_VIC)) {
+            sources += ["mono_vic.c"]
+        }
+
+        if (defined(LOSCFG_LINGLONG_IC)) {
+            sources += ["linglong_ic.c"]
+        }
+    }
+}
+

@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]mear unsniff  @lm_classic_acl_srv_sniff_act.c(60),INFO" ID="0x8a3801e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]lm_classic_acl_hci_sniff_mode_request_pre_act, command disallowed acl_desc linkpolicy = %d @lm_classic_acl_srv_sniff_act.c(197),INFO" ID="0x8a38062d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][sniff]lm_classic_acl_hci_sniff_mode_request_pre_act, command disallowed! sniff_initiated = %d, acl_link_mode = %d @lm_classic_acl_srv_sniff_act.c(221),INFO" ID="0x8a3806ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][sniff_sub]lm_classic_acl_priv_sniff_sub_ssr_nego_act, acl_link_mode:%d @lm_classic_acl_srv_sniff_act.c(281),INFO" ID="0x8a3808cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sniff_sub]lm_classic_acl_hci_sniff_sub_request_pre_act, acl_desc is null @lm_classic_acl_srv_sniff_act.c(321),WARNING" ID="0x8a380a0b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][sniff_sub]hci sniff subrating input: Maximum_Latency:%d, Minimum_Remote_Timeout:%d, Minimum_Local_Timeout:%d @lm_classic_acl_srv_sniff_act.c(331),INFO" ID="0x8a380a5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][sniff_sub]lm_classic_acl_hci_sniff_sub_request_pre_act, acl_link_mode:%d @lm_classic_acl_srv_sniff_act.c(346),INFO" ID="0x8a380ad5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][sniff]lm_classic_acl_hci_sniff_sub_request_pre_act, command disallowed! sniff_initiated = %d, acl_link_mode = %d @lm_classic_acl_srv_sniff_act.c(367),INFO" ID="0x8a380b7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_lmp_sniff_req_act lmp sniff req conflicting! @lm_classic_acl_srv_sniff_act.c(441),INFO" ID="0x8a380dcd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][sniff_sub]lmp ssr req input: Max_Sniff_Subrate:%d, Min_Sniff_Mode_Timeout:%d, Sniff_Subrating_Instant:0x%x @lm_classic_acl_srv_sniff_act.c(634),INFO" ID="0x8a3813d5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][sniff_sub]lmp ssr res input: Max_Sniff_Subrate:%d, Min_Sniff_Mode_Timeout:%d, Sniff_Subrating_Instant:0x%x @lm_classic_acl_srv_sniff_act.c(686),INFO" ID="0x8a381575" />
+			</MSG_LOG>

@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to addr error! @sle_at_sm.c(240),ERROR" ID="0xe9300782" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle pair remote device fail! ret = %#x  @sle_at_sm.c(246),ERROR" ID="0xe93007b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to addr error! @sle_at_sm.c(259),ERROR" ID="0xe930081a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle remove pair remote device fail! ret = %#x  @sle_at_sm.c(265),ERROR" ID="0xe930084a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle remove pair remote device fail! ret = %#x  @sle_at_sm.c(279),ERROR" ID="0xe93008ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle remove pair remote device fail! ret = %#x  @sle_at_sm.c(295),ERROR" ID="0xe930093a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle get bonded device fail! ret = %#x  @sle_at_sm.c(317),ERROR" ID="0xe93009ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to addr error! @sle_at_sm.c(338),ERROR" ID="0xe9300a92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle get pair state fail! ret = %#x  @sle_at_sm.c(345),ERROR" ID="0xe9300aca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle remove all pairs fail! ret = %#x  @sle_at_sm.c(358),ERROR" ID="0xe9300b32" />
+			</MSG_LOG>

@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg6" NAME="[IMB] tnode param init, label_id %d, format %d, interval %u, sub_intv %d, t_ifs %d, t_efs %d @lm_gle_imb_label.c(76),INFO" ID="0x8ba80265" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_imb_cal_tnode_mcs: label_id=%d, mcs=%d, max_tx_time_t=%d, time=%d @lm_gle_imb_label.c(100),INFO" ID="0x8ba80325" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMB] lm_gle_imb_cal_tnode_mcs: invalid mcs, label_id=%d, max_tx_time_offset_t %d, t_efs %d @lm_gle_imb_label.c(106),INFO" ID="0x8ba80355" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_gle_tnode_imb_label_param_init img_id %d, imb_id %d, conhdl %d, label_cnt %d @lm_gle_imb_label.c(158),INFO" ID="0x8ba804f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_iob_send_label_report_evt:imb_desc is null @lm_gle_imb_label.c(185),ERROR" ID="0x8ba805ca" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_imb_label_select label id NOT SUPPORT! img_id %d, imb_id %d, label_id %d, label_cnt %d @lm_gle_imb_label.c(238),ERROR" ID="0x8ba80772" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_imb_label_select img_id %d, imb_id %d, label_id %d, label_cnt %d @lm_gle_imb_label.c(243),INFO" ID="0x8ba8079d" />
+			</MSG_LOG>

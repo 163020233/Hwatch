@@ -1,0 +1,29 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[GLE TM][CREATE UNIDIR FRAME] buf offset shorter than head_len, off: %u, len: %u @gle_tm_data_reserv.c(90),ERROR" ID="0xed4202d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][CREATE TX_NODE]create frame param alloc failed @gle_tm_data_reserv.c(125),ERROR" ID="0xed4203ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][CREATE TX_NODE]create frag frame failed @gle_tm_data_reserv.c(130),ERROR" ID="0xed420412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][CREATE TX_NODE]create queue node alloc failed @gle_tm_data_reserv.c(136),ERROR" ID="0xed420442" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][CREATE TX_NODE]copy the PDU failed, pkt_seq: %u @gle_tm_data_reserv.c(154),ERROR" ID="0xed4204d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][DATA SEND HANDLE] queue has been full, tx_queue.size = %u @gle_tm_data_reserv.c(174),ERROR" ID="0xed420572" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][DATA SEND HANDLE] data is over mtu, data_len = %u @gle_tm_data_reserv.c(179),ERROR" ID="0xed42059a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE TM][DATA SEND HANDLE] queue is full, tx_queue.size = %u, data-&gt;seq = %u @gle_tm_data_reserv.c(190),ERROR" ID="0xed4205f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][data send] bth list node new failed, data is abandoned. @gle_tm_data_reserv.c(272),ERROR" ID="0xed420882" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][data send] TCID 0x%04x is not ready, data in queue. @gle_tm_data_reserv.c(279),INFO" ID="0xed4208bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][data send] Invalid local TCID 0x%04x, transmission channel has not been established. @gle_tm_data_reserv.c(285),WARNING" ID="0xed4208eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM] Not support dynamic tcid. @gle_tm_data_reserv.c(289),ERROR" ID="0xed42090a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE TM][data send] Data send successfully. LCID: 0x%04x, local TCID: 0x%04x. @gle_tm_data_reserv.c(307),INFO" ID="0xed42099d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][data send] Can not find logic link by LCID 0x%04x. @gle_tm_data_reserv.c(341),WARNING" ID="0xed420aab" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE TM][data recv] Data receive failed. Wrong length, expect len: %d, actual len: %u. @gle_tm_data_reserv.c(366),WARNING" ID="0xed420b73" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE TM][data recv] Data receive failed. Wrong length, expect len: %d, actual len: %u. @gle_tm_data_reserv.c(423),WARNING" ID="0xed420d3b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][PARSE RSP FRAME] crc init error, crc_init: %u @gle_tm_data_reserv.c(454),ERROR" ID="0xed420e32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][PARSE RSP FRAME] pkt data len check error. @gle_tm_data_reserv.c(458),ERROR" ID="0xed420e52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][PARSE RSP FRAME] pkt crc check error. @gle_tm_data_reserv.c(474),ERROR" ID="0xed420ed2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][PARSE UNIDIR FRAME] crc init error, crc_init: %u @gle_tm_data_reserv.c(493),ERROR" ID="0xed420f6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][PARSE UNIDIR FRAME] pkt data len check error. @gle_tm_data_reserv.c(497),ERROR" ID="0xed420f8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][PARSE UNIDIR FRAME] pkt crc check error, crc_off: %u @gle_tm_data_reserv.c(520),ERROR" ID="0xed421042" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][PARSE BIDIR FRAME] crc init error, crc_init: %u @gle_tm_data_reserv.c(546),ERROR" ID="0xed421112" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][PARSE BIDIR FRAME] pkt data len check error. @gle_tm_data_reserv.c(551),ERROR" ID="0xed42113a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][PARSE BIDIR FRAME] pkt crc check error. @gle_tm_data_reserv.c(579),ERROR" ID="0xed42121a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][data recv] Data receive failed. Can not find logic link by LCID: 0x%04x @gle_tm_data_reserv.c(672),WARNING" ID="0xed421503" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][data recv] Data receive failed. Invalid TCID: 0x%04x. @gle_tm_data_reserv.c(697),WARNING" ID="0xed4215cb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][data recv] tcid trans mode is invalid value @gle_tm_data_reserv.c(718),ERROR" ID="0xed421672" />
+			</MSG_LOG>

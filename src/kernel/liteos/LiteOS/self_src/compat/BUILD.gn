@@ -1,0 +1,41 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../build/gn/config.gni")
+
+group("compat") {
+    deps = []
+    if (defined(LOSCFG_COMPAT_CMSIS) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["cmsis"]
+    }
+    if (defined(LOSCFG_COMPAT_LINUX) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["linux"]
+    }
+
+    if (!defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["osal/oh_mini"]
+    }
+}
+
+config("public") {
+    include_dirs = []
+
+    if (defined(LOSCFG_COMPAT_CMSIS)) {
+        include_dirs += [
+            "$LITEOSTOPDIR/compat/cmsis",
+            "$RTOSLITETOPDIR/$open_source_path/CMSIS/CMSIS/RTOS2/Include",
+            "$RTOSLITETOPDIR/$open_source_path/CMSIS/CMSIS/Core/Include",
+        ]
+    }
+
+    if (defined(LOSCFG_COMPAT_LINUX)) {
+        include_dirs += [
+            "$LITEOSTOPDIR/compat/linux/include",
+            "$RTOSLITETOPDIR/$open_source_path/freebsd/liteos/compat/linux/include",
+        ]
+    }
+
+    include_dirs += ["$LITEOSTOPDIR/compat/nuttx/include"]
+}

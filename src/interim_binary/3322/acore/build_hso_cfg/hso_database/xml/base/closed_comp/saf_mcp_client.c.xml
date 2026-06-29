@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] client register fail, callback is null! @saf_mcp_client.c(52),ERROR" ID="0xe9e401a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] client already register! @saf_mcp_client.c(56),ERROR" ID="0xe9e401c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcpc] mcp client init fail!:%u @saf_mcp_client.c(61),ERROR" ID="0xe9e401ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] client not register! @saf_mcp_client.c(75),ERROR" ID="0xe9e4025a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] read property value, state unregistered @saf_mcp_client.c(98),ERROR" ID="0xe9e40312" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcpc] write cp, state unregistered @saf_mcp_client.c(113),ERROR" ID="0xe9e4038a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][mcpc] cp operation, handle: %d, op: %d @saf_mcp_client.c(118),INFO" ID="0xe9e403b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcpc] btsrv_msg handle, msg id: %x @saf_mcp_client.c(330),INFO" ID="0xe9e40a55" />
+			</MSG_LOG>

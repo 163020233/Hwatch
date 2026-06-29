@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CDSM] rand gen failed, ret: 0x%x @ssf_cdsm_server.c(68),ERROR" ID="0xefc00222" />
+			</MSG_LOG>

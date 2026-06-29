@@ -1,0 +1,153 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("linux") {
+        include_dirs = ["${LITEOSTOPDIR}/lib/libc/tzcode"]
+
+        sources = []
+        if (defined(LOSCFG_COMPAT_LINUX_RBTREE)) {
+            sources += [
+                "src/rbtree.c"
+            ]
+        }
+
+        if (!defined(LOSCFG_COMPILER_ICCARM)) {
+            sources += [
+                "src/adp.c",
+                "src/time.c",
+                "src/module.c"
+            ]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_PENDLIST)) {
+            sources += ["src/common/pendlist.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_TIMER)) {
+            sources += ["src/timer.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_HRTIMER)) {
+            sources += ["src/hrtimer.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_IRQ)) {
+            sources += ["src/interrupt.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_SEMAPHORE)) {
+            sources += ["src/semaphore.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_COMPLETION)) {
+            sources += ["src/completion.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_WAITQUEUE)) {
+            sources += ["src/wait.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_WORKQUEUE)) {
+            sources += ["src/workqueue.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_DRIVER_BASE)) {
+            sources += ["src/driver.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_WAKELOCK)) {
+            sources += ["src/wakelock.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_RW_SEMAPHORE)) {
+            sources += ["src/rwsem.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_CRC32)) {
+            sources += ["src/crc32.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_MTD_LIST)) {
+            sources += ["src/mtd_list.c"]
+        }
+
+        if (!defined(LOSCFG_COMPILER_ICCARM)) {
+            if (defined(LOSCFG_COMPAT_LINUX_RBTREE)) {
+                cflags = [ "-fno-strict-aliasing" ]
+                cflags_cc = [ "-fno-strict-aliasing" ]
+            }
+        }
+    }
+} else {
+    import("../../../build/gn/libstatic.gni")
+    static_library("liblinux") {
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        include_dirs = LITEOS_GN_KSTATIC_INCLUDE
+        include_dirs += [
+            "${LITEOSTOPDIR}/lib/libc/tzcode",
+            "${LITEOSTOPDIR}/drivers/base/include"
+        ]
+
+        sources = []
+        if (defined(LOSCFG_COMPAT_LINUX_RBTREE)) {
+            sources += [
+                "src/rbtree.c"
+            ]
+        }
+
+        if (!defined(LOSCFG_COMPILER_ICCARM)) {
+            sources += [
+                "src/adp.c",
+                "src/time.c",
+                "src/module.c"
+            ]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_PENDLIST)) {
+            sources += ["src/common/pendlist.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_TIMER)) {
+            sources += ["src/timer.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_HRTIMER)) {
+            sources += ["src/hrtimer.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_IRQ)) {
+            sources += ["src/interrupt.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_SEMAPHORE)) {
+            sources += ["src/semaphore.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_COMPLETION)) {
+            sources += ["src/completion.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_WAITQUEUE)) {
+            sources += ["src/wait.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_WORKQUEUE)) {
+            sources += ["src/workqueue.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_DRIVER_BASE)) {
+            sources += ["src/driver.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_WAKELOCK)) {
+            sources += ["src/wakelock.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_RW_SEMAPHORE)) {
+            sources += ["src/rwsem.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_CRC32)) {
+            sources += ["src/crc32.c"]
+        }
+        if (defined(LOSCFG_COMPAT_LINUX_MTD_LIST)) {
+            sources += ["src/mtd_list.c"]
+        }
+
+        if (!defined(LOSCFG_COMPILER_ICCARM)) {
+            if (defined(LOSCFG_COMPAT_LINUX_RBTREE)) {
+                cflags += [ "-fno-strict-aliasing" ]
+                cflags_cc += [ "-fno-strict-aliasing" ]
+            }
+        }
+    }
+}

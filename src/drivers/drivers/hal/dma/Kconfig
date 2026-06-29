@@ -1,0 +1,93 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2022. All rights reserved.
+#===============================================================================
+config DMA_USING_V100
+    bool
+    prompt "Using DMA V100."
+    default y
+    depends on DRIVER_SUPPORT_DMA
+
+config DMA_USING_V120
+    bool
+    prompt "Using DMA V120."
+    default y
+    depends on DRIVER_SUPPORT_DMA
+
+config DMA_USING_V151
+    bool
+    prompt "Using DMA V151."
+    default n
+    depends on DRIVER_SUPPORT_DMA
+
+config DMA_SUPPORT_FIXED_CH
+    bool
+    prompt "Fixed DMA channel."
+    default n
+    depends on DMA_USING_V151
+
+config DMA_TRANSFER_LOCK_BUS
+    bool
+    prompt "DMA transfer lock bus."
+    default n
+    depends on DMA_USING_V151
+
+config DMA_USING_V151_V0
+    int
+    prompt "DMA transfer version 1.0."
+    default 0
+    depends on DMA_USING_V151
+
+config DMA_USING_V151_V6
+    int
+    prompt "DMA transfer version 6.0. Supports non-aligned transmission, with a maximum transfer length of 16383 bytes."
+    default 6
+    depends on DMA_USING_V151
+
+config DMA_USING_V151_V7
+    int
+    prompt "DMA transfer version 7.0. Supports a maximum of 10 transmission channels."
+    default 7
+    depends on DMA_USING_V151
+
+config DMA_USING_V151_VID
+    int
+    prompt "DMA transfer version set."
+    default 0
+    depends on DMA_USING_V151
+
+config DMA_SUPPORT_SMDMA
+    bool
+    prompt "DMA support SMDMA."
+    default n
+    depends on DRIVER_SUPPORT_DMA && (DMA_USING_V100 || DMA_USING_V151)
+
+config SUPPORT_DATA_CACHE
+    bool
+    prompt "DMA support DATA CACHE."
+    default n
+    depends on DRIVER_SUPPORT_DMA
+
+config DMA_LLI_NODE_FIX_MEM
+    bool
+    prompt "DMA lli node using static memory."
+    default n
+    depends on DRIVER_SUPPORT_DMA
+
+config DMA_LLI_NODE_MAX
+    int
+    prompt "DMA lli node max count."
+    default 4
+    depends on DMA_LLI_NODE_FIX_MEM
+
+config DMA_MEMORY_TRANS_PROT
+    bool
+    prompt "channel The DMA channel."
+    default n
+    depends on DRIVER_SUPPORT_DMA
+
+config DMA_MAPPED_MEM
+    bool
+    prompt "support MAPPED MEM."
+    default n
+    depends on DRIVER_SUPPORT_DMA

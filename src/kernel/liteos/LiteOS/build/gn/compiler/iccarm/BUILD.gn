@@ -1,0 +1,44 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+config("iccarm_language_c") {
+  cflags_c = [ "--vla" ]
+}
+
+config("iccarm_language_cpp") {
+  cflags_cc = [ "--c++" ]
+}
+
+config("iccarm_common") {
+  cflags = [ "--warnings_are_errors" ]
+  cflags_cc = cflags
+}
+
+config("iccarm_opt") {
+  cflags = [ "-Ohz" ]
+  cflags_cc = cflags
+}
+
+config("iccarm_stack_protector") {
+  cflags = []
+  cflags_cc = cflags
+}
+
+config("iccarm_default_sp_options") {
+    configs = [ ":iccarm_stack_protector" ]
+}
+
+config("kconfig_config") {
+    cflags = [
+        "--preinclude",
+        "$LITEOS_MENUCONFIG_H",
+        "--diag_suppress","Pa183",
+        ]
+    cflags_cc = cflags
+    asmflags = [
+      "-P",
+      "$LITEOS_MENUCONFIG_H"
+    ]
+}

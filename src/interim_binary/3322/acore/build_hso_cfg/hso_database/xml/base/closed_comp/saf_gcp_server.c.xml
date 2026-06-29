@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcps] register server callback point is null! @saf_gcp_server.c(46),ERROR" ID="0xea140172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcps] server already register! @saf_gcp_server.c(51),ERROR" ID="0xea14019a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcps] server register failed! ret = %u @saf_gcp_server.c(57),ERROR" ID="0xea1401ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcps] group init failed! ret = %u @saf_gcp_server.c(62),ERROR" ID="0xea1401f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcps] server not register! @saf_gcp_server.c(79),ERROR" ID="0xea14027a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcps] server not register! @saf_gcp_server.c(99),ERROR" ID="0xea14031a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcps] param_err, inst null! @saf_gcp_server.c(128),ERROR" ID="0xea140402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcps] notify property proc fail, ret = %u @saf_gcp_server.c(138),ERROR" ID="0xea140452" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcps] inst not found, inst id: %u @saf_gcp_server.c(150),ERROR" ID="0xea1404b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcps] inst not found, inst id: %u @saf_gcp_server.c(166),ERROR" ID="0xea140532" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcps] inst not found, inst id: %u @saf_gcp_server.c(182),ERROR" ID="0xea1405b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcps] server not register! @saf_gcp_server.c(197),ERROR" ID="0xea14062a" />
+			</MSG_LOG>

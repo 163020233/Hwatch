@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[INFO]:Change log level failed, message is %d @log.c(367),INFO" ID="0xa0120b7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[INFO]:Change log level to %d @log.c(374),INFO" ID="0xa0120bb5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[INFO]:Change log level to %d @log.c(389),INFO" ID="0xa0120c2d" />
+			</MSG_LOG>

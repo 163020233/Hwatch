@@ -1,0 +1,28 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_SNIFF]sniff_start_cbk: env_ptr is NULL, con_hdl %d @evt_task_classic_acl_sniff_ram.c(64),WARNING" ID="0x8b0e0203" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_SNIFF]sniff_start_cbk: con_hdl %d, flags:0x%x @evt_task_classic_acl_sniff_ram.c(70),WARNING" ID="0x8b0e0233" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF]sniff_start_cbk: con_hdl %d, intv|cur_prio 0x%08x, last_sync_ts 0x%x, prog_ts 0x%x @evt_task_classic_acl_sniff_ram.c(112),INFO" ID="0x8b0e0385" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_sniff_evt_cbk, env_ptr is null @evt_task_classic_acl_sniff_ram.c(134),ERROR" ID="0x8b0e0432" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_SNIFF]evt_cbk: con_hdl %d, nb_prog == 0 @evt_task_classic_acl_sniff_ram.c(143),ERROR" ID="0x8b0e047a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF]sniff_evt_cbk: con_hdl %d, sniff_par.anchor_point 0x%0x, last_sync_ts 0x%x, acl_anchor_point 0x%x @evt_task_classic_acl_sniff_ram.c(173),INFO" ID="0x8b0e056d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_sniff_exit, env_ptr is null @evt_task_classic_acl_sniff_ram.c(220),ERROR" ID="0x8b0e06e2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_SNIFF]sniff_exit: con_hdl %d, last_sync_delay_p 0x%x, clk_off 0x%x @evt_task_classic_acl_sniff_ram.c(238),INFO" ID="0x8b0e0775" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_SNIFF]sniff_trans_sched: con_hdl %d state already set end @evt_task_classic_acl_sniff_ram.c(269),WARNING" ID="0x8b0e086b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_SNIFF]sniff_trans_sched: con_hdl %d, flags:0x%x @evt_task_classic_acl_sniff_ram.c(284),WARNING" ID="0x8b0e08e3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF]sniff_trans_sched: insert acl failed, con_hdl %d, timestamp 0x%x, cur_ts 0x%x, sniff_ts 0x%x @evt_task_classic_acl_sniff_ram.c(304),WARNING" ID="0x8b0e0983" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF]sniff_trans_sched: insert sniff failed, con_hdl %d, timestamp 0x%x, cur_ts 0x%x, asap %d @evt_task_classic_acl_sniff_ram.c(327),WARNING" ID="0x8b0e0a3b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_sniff_trans, env_ptr is null @evt_task_classic_acl_sniff_ram.c(343),ERROR" ID="0x8b0e0aba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT SNIFF_SUB] evt_task_classic_acl_ssr_reset @evt_task_classic_acl_sniff_ram.c(352),INFO" ID="0x8b0e0b05" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_sniff_trans, env_ptr is null @evt_task_classic_acl_sniff_ram.c(361),ERROR" ID="0x8b0e0b4a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT SNIFF] acl_sniff_trans: conhdl %d, current mode %d, offset %d, intv %d @evt_task_classic_acl_sniff_ram.c(367),INFO" ID="0x8b0e0b7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_SNIFF]sniff_sched: con_hdl %d state already set end @evt_task_classic_acl_sniff_ram.c(517),WARNING" ID="0x8b0e102b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF]sniff_sched retry: con_hdl %d, anchor=0x%x, cur_ts 0x%x,  prio=%d @evt_task_classic_acl_sniff_ram.c(572),WARNING" ID="0x8b0e11e3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF]sniff_sched disconnect: con_hdl %d, lastsync 0x%x, cur_ts 0x%x, lsto 0x%x @evt_task_classic_acl_sniff_ram.c(585),WARNING" ID="0x8b0e124b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_sniff_cancel_cbk, env_ptr is null @evt_task_classic_acl_sniff_ram.c(596),ERROR" ID="0x8b0e12a2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_SNIFF]cancel_cbk: con_hdl 0x%x, timestamp 0x%x, prio %d @evt_task_classic_acl_sniff_ram.c(603),WARNING" ID="0x8b0e12db" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_SNIFF]param_init: get es_elt NULL! con_hdl %d @evt_task_classic_acl_sniff_ram.c(634),ERROR" ID="0x8b0e13d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_sniff_enter, env_ptr is null @evt_task_classic_acl_sniff_ram.c(676),ERROR" ID="0x8b0e1522" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_SNIFF]sniff_enter: con_hdl %d, clk_off 0x%x, last_sync_clk_off 0x%x @evt_task_classic_acl_sniff_ram.c(682),WARNING" ID="0x8b0e1553" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF]sniff_enter: con_hdl %d, anchor_point 0x%x, d_sniff %d, t_sniff %d @evt_task_classic_acl_sniff_ram.c(725),INFO" ID="0x8b0e16ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_acl_ssr_set, env_ptr is null @evt_task_classic_acl_sniff_ram.c(735),ERROR" ID="0x8b0e16fa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SNIFF_SUB]evt_task_classic_acl_ssr_set: sub_rate %d, to %d, instant 0x%x, t_sniff %d @evt_task_classic_acl_sniff_ram.c(742),INFO" ID="0x8b0e1735" />
+			</MSG_LOG>

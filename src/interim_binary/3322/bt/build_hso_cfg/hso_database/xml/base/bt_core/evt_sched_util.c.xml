@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[es]es priority error. idx=%u @evt_sched_util.c(139),ERROR" ID="0x8874045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ea_get_next_noasap_elt_timestamp:ea wait list is big! @evt_sched_util.c(177),ERROR" ID="0x8874058a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ES] es_debug_record_event_print: current index=%u, caller=%u, print at=%d @evt_sched_util.c(257),WARNING" ID="0x8874080b" />
+			</MSG_LOG>

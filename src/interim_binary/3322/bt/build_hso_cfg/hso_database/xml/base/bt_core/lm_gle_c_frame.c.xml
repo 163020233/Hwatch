@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_gle_c_frame_fsm_exception_hci, dst_id(0x%x)msg_id(0x%x) @lm_gle_c_frame.c(70),WARNING" ID="0x8bca0233" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_gle_set_c_frame_param_check_g, invalid duration 0x%x, interval 0x%x @lm_gle_c_frame.c(259),INFO" ID="0x8bca081d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_gle_set_c_frame_param_check_g, param-&gt;intv(0x%x)offset(0x%x) invalid! @lm_gle_c_frame.c(264),WARNING" ID="0x8bca0843" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_set_c_frame_param_check_g, param-&gt;frame_format(0x%x) or param-&gt;phy(0x%x)or param-&gt;pilot(0x%x) invalid! @lm_gle_c_frame.c(270),WARNING" ID="0x8bca0873" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_gle_set_c_frame_param_check_g, param-&gt;frame_format(0x%x) or param-&gt;pilot(0x%x)invalid! @lm_gle_c_frame.c(276),WARNING" ID="0x8bca08a3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_set_c_frame_param_check_g, status(0x%x) invalid! @lm_gle_c_frame.c(281),WARNING" ID="0x8bca08cb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_set_c_frame_param_check, param-&gt;txpwr(0x%x) invalid! @lm_gle_c_frame.c(300),WARNING" ID="0x8bca0963" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_gle_set_c_frame_child_node_check_param, param-&gt;frame_format(0x%x) or param-&gt;phy(0x%x)or param-&gt;pilot(0x%x) invalid! @lm_gle_c_frame.c(499),WARNING" ID="0x8bca0f9b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]lm_gle_set_c_frame_child_node_check_param, param-&gt;frame_format(0x%x) or param-&gt;pilot(0x%x)invalid! @lm_gle_c_frame.c(505),WARNING" ID="0x8bca0fcb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_set_c_frame_child_node_check_param, status(0x%x) invalid! @lm_gle_c_frame.c(517),WARNING" ID="0x8bca102b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_set_c_frame_child_node_check_param, offset(0x%x) invalid! @lm_gle_c_frame.c(523),WARNING" ID="0x8bca105b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_set_c_frame_child_node_check_param, invalid srv_id 0x%x @lm_gle_c_frame.c(529),INFO" ID="0x8bca108d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_set_c_frame_child_node_check_param, invalid sed_type 0x%x @lm_gle_c_frame.c(536),INFO" ID="0x8bca10c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_invite_c_frame_create, sys_desc NUL @lm_gle_c_frame.c(598),INFO" ID="0x8bca12b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_invite_c_frame_create, create fail @lm_gle_c_frame.c(608),WARNING" ID="0x8bca1303" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_invite_c_frame_start, c_frame start fail @lm_gle_c_frame.c(623),WARNING" ID="0x8bca137b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_invite_c_frame_start, c_frame start succ @lm_gle_c_frame.c(627),WARNING" ID="0x8bca139b" />
+			</MSG_LOG>

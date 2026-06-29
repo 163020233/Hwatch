@@ -1,0 +1,109 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_output_event_callback Failed, Error Code: [0x%08X] @core_sea.c(222),ERROR" ID="0x986206f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_output_event_callback Failed, Error Code: [0x%08X] @core_sea.c(246),ERROR" ID="0x986207b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]event = %d @core_sea.c(346),INFO" ID="0x98620ad5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mode = %u @core_sea.c(442),ERROR" ID="0x98620dd2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]eng_ind.type = 0x%08X @core_sea.c(454),ERROR" ID="0x98620e32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]eng_ind.lib_id = %u @core_sea.c(459),ERROR" ID="0x98620e5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]eng_ind.type = 0x%08X @core_sea.c(474),ERROR" ID="0x98620ed2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]eng_ind.lib_id = %u @core_sea.c(479),ERROR" ID="0x98620efa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]All lib_id of afe and aai are null. @core_sea.c(510),ERROR" ID="0x98620ff2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pcm-&gt;samples_per_frame = %u @core_sea.c(542),ERROR" ID="0x986210f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pcm-&gt;sample_rate = %u @core_sea.c(543),ERROR" ID="0x986210fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]entry = %p,  Null Pointer! @core_sea.c(579),ERROR" ID="0x9862121a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call create Failed, Error Code: [0x%08X] @core_sea.c(595),ERROR" ID="0x9862129a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call get_eng_attr Failed, Error Code: [0x%08X] @core_sea.c(607),INFO" ID="0x986212fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_get_module Failed, Error Code: [0x%08X] @core_sea.c(782),ERROR" ID="0x98621872" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sea = 0x%08X @core_sea.c(783),INFO" ID="0x9862187d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sea attach input connector, sea handle: 0x%08X @core_sea.c(802),WARNING" ID="0x98621913" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sea detach input connector, sea handle: 0x%08X @core_sea.c(817),WARNING" ID="0x9862198b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sea detach output connector, sea handle: 0x%08X @core_sea.c(831),WARNING" ID="0x986219fb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sea attach output connector, sea handle: 0x%08X @core_sea.c(852),WARNING" ID="0x98621aa3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_init Failed, Error Code: [0x%08X] @core_sea.c(914),ERROR" ID="0x98621c92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_deinit Failed, Error Code: [0x%08X] @core_sea.c(936),ERROR" ID="0x98621d42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(958),INFO" ID="0x98621df5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_sea.c(969),ERROR" ID="0x98621e4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call get_eng_caps Failed, Error Code: [0x%08X] @core_sea.c(977),ERROR" ID="0x98621e8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(982),INFO" ID="0x98621eb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(991),INFO" ID="0x98621efd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call get_def_pcm_attr Failed, Error Code: [0x%08X] @core_sea.c(1003),ERROR" ID="0x98621f5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1007),INFO" ID="0x98621f7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1017),INFO" ID="0x98621fcd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_alloc Failed, Error Code: [0x%08X] @core_sea.c(1029),ERROR" ID="0x9862202a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_create Failed, Error Code: [0x%08X] @core_sea.c(1037),ERROR" ID="0x9862206a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_set_input_stream Failed, Error Code: [0x%08X] @core_sea.c(1046),ERROR" ID="0x986220b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sea] create handle: 0x%08X @core_sea.c(1067),WARNING" ID="0x9862215b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1068),INFO" ID="0x98622165" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sea] destroy handle: 0x%08X @core_sea.c(1077),WARNING" ID="0x986221ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1080),INFO" ID="0x986221c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sea] cps: @core_sea.c(1083),WARNING" ID="0x986221db" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ret = %d @core_sea.c(1096),ERROR" ID="0x98622242" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_destroy Failed, Error Code: [0x%08X] @core_sea.c(1103),ERROR" ID="0x9862227a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1115),INFO" ID="0x986222dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1124),INFO" ID="0x98622325" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1129),INFO" ID="0x9862234d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sea] start handle: 0x%08X @core_sea.c(1137),WARNING" ID="0x9862238b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1140),INFO" ID="0x986223a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_set_enable Failed, Error Code: [0x%08X] @core_sea.c(1144),ERROR" ID="0x986223c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1150),INFO" ID="0x986223f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sea] stop handle: 0x%08X @core_sea.c(1158),WARNING" ID="0x98622433" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1161),INFO" ID="0x9862244d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_set_enable Failed, Error Code: [0x%08X] @core_sea.c(1176),ERROR" ID="0x986224c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1182),INFO" ID="0x986224f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1191),INFO" ID="0x9862253d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1193),INFO" ID="0x9862254d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1203),INFO" ID="0x9862259d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1217),INFO" ID="0x9862260d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1228),INFO" ID="0x98622665" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_set_attr Failed, Error Code: [0x%08X] @core_sea.c(1248),ERROR" ID="0x98622702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1253),INFO" ID="0x9862272d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1262),INFO" ID="0x98622775" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1265),INFO" ID="0x9862278d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1278),INFO" ID="0x986227f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sea][get_param] size: %u |afe_type: 0x%02x @core_sea.c(1283),ERROR" ID="0x9862281a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sea] get_param cmd_id: 0x%x |size: %u |afe_type: 0x%x @core_sea.c(1294),WARNING" ID="0x98622873" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1300),INFO" ID="0x986228a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1312),INFO" ID="0x98622905" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sea][set_param] size: %u |afe_type: 0x%02x @core_sea.c(1317),ERROR" ID="0x9862292a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sea] set_param cmd_id: 0x%x |size: %u |afe_type: 0x%x @core_sea.c(1328),WARNING" ID="0x98622983" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_update_eng_attr Failed, Error Code: [0x%08X] @core_sea.c(1336),ERROR" ID="0x986229c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1340),INFO" ID="0x986229e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_set_input_pcm Failed, Error Code: [0x%08X] @core_sea.c(1352),ERROR" ID="0x98622a42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]sea check in_pcm failed @core_sea.c(1369),ERROR" ID="0x98622aca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]sea check ref_pcm failed @core_sea.c(1375),ERROR" ID="0x98622afa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]sea check out_pcm[SEA_OUTPUT_ASR_SRC] failed @core_sea.c(1381),ERROR" ID="0x98622b2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]sea check out_pcm[SEA_OUTPUT_KWS_SRC] failed @core_sea.c(1387),ERROR" ID="0x98622b5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1400),INFO" ID="0x98622bc5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_sea.c(1404),ERROR" ID="0x98622be2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_sea_check_pcm_attr Failed, Error Code: [0x%08X] @core_sea.c(1410),ERROR" ID="0x98622c12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_set_pcm Failed, Error Code: [0x%08X] @core_sea.c(1416),ERROR" ID="0x98622c42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_set_input_stream Failed, Error Code: [0x%08X] @core_sea.c(1422),ERROR" ID="0x98622c72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1432),INFO" ID="0x98622cc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1442),INFO" ID="0x98622d15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1452),INFO" ID="0x98622d65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1465),INFO" ID="0x98622dcd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_set_input_stream Failed, Error Code: [0x%08X] @core_sea.c(1481),ERROR" ID="0x98622e4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_set_input_pcm Failed, Error Code: [0x%08X] @core_sea.c(1487),ERROR" ID="0x98622e7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1491),INFO" ID="0x98622e9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1501),INFO" ID="0x98622eed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]data_port_id = %u @core_sea.c(1513),ERROR" ID="0x98622f4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1527),INFO" ID="0x98622fbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1559),INFO" ID="0x986230bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_get_items Failed, Error Code: [0x%08X] @core_sea.c(1565),ERROR" ID="0x986230ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1570),INFO" ID="0x98623115" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1580),INFO" ID="0x98623165" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_entry_get_items Failed, Error Code: [0x%08X] @core_sea.c(1585),ERROR" ID="0x9862318a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1589),INFO" ID="0x986231ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1598),INFO" ID="0x986231f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1601),INFO" ID="0x9862320d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1610),INFO" ID="0x98623255" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1613),INFO" ID="0x9862326d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1622),INFO" ID="0x986232b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1624),INFO" ID="0x986232c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_sea.c(1634),INFO" ID="0x98623315" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_sea.c(1642),INFO" ID="0x98623355" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sea][send_frame] bits_buffer: 0x%08x |bits_bytes: %u |frame_pms: %u @core_sea.c(1657),ERROR" ID="0x986233ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_get_buffer_info Failed, Error Code: [0x%08X] @core_sea.c(1689),ERROR" ID="0x986234ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sea_get_proc_info Failed, Error Code: [0x%08X] @core_sea.c(1736),ERROR" ID="0x98623642" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]load_type = %u @core_sea.c(1750),ERROR" ID="0x986236b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]load_type = %u @core_sea.c(1762),ERROR" ID="0x98623712" />
+			</MSG_LOG>

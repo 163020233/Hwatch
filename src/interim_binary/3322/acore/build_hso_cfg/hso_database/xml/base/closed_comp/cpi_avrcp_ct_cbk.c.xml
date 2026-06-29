@@ -1,0 +1,27 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="not supported capability id %d @cpi_avrcp_ct_cbk.c(92),ERROR" ID="0xee6402e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="msg is null @cpi_avrcp_ct_cbk.c(232),ERROR" ID="0xee640742" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct memnew fail @cpi_avrcp_ct_cbk.c(241),ERROR" ID="0xee64078a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct memnew fail. @cpi_avrcp_ct_cbk.c(247),ERROR" ID="0xee6407ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct memnew fail @cpi_avrcp_ct_cbk.c(270),ERROR" ID="0xee640872" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[AVRCP][CT]capability id: %d count %d @cpi_avrcp_ct_cbk.c(275),ERROR" ID="0xee64089a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct memnew fail @cpi_avrcp_ct_cbk.c(280),ERROR" ID="0xee6408c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_ct_cbk.c(304),ERROR" ID="0xee640982" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_ct_cbk.c(311),ERROR" ID="0xee6409ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="avrcp ct notify rsp event_id:0x%x rsp_code:%d @cpi_avrcp_ct_cbk.c(330),INFO" ID="0xee640a55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="AVRCP event not support, event_id:0x%x  @cpi_avrcp_ct_cbk.c(367),ERROR" ID="0xee640b7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_ct_cbk.c(378),ERROR" ID="0xee640bd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_ct_cbk.c(384),ERROR" ID="0xee640c02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_ct_cbk.c(413),ERROR" ID="0xee640cea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_ct_cbk.c(432),ERROR" ID="0xee640d82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_ct_cbk.c(438),ERROR" ID="0xee640db2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_ct_cbk.c(457),ERROR" ID="0xee640e4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct element attr num is 0. @cpi_avrcp_ct_cbk.c(464),ERROR" ID="0xee640e82" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="avrcp ct set absolute volume rsp: addr %02x:%02x:xx:xx:%02x:%02x  @cpi_avrcp_ct_cbk.c(483),INFO" ID="0xee640f1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="avrcp ct set absolute volume rsp: val:0x%x  @cpi_avrcp_ct_cbk.c(484),INFO" ID="0xee640f25" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="avrcp get status rsp len is error,len:%d. @cpi_avrcp_ct_cbk.c(490),ERROR" ID="0xee640f52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_ct_cbk.c(496),ERROR" ID="0xee640f82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp connect is not exist @cpi_avrcp_ct_cbk.c(516),ERROR" ID="0xee641022" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="avrcp ct cmd rsp is not implemented or rejected,pdu_id=0x%x. @cpi_avrcp_ct_cbk.c(524),ERROR" ID="0xee641062" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct rsp not implemented @cpi_avrcp_ct_cbk.c(552),ERROR" ID="0xee641142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_ct_cbk.c(580),ERROR" ID="0xee641222" />
+			</MSG_LOG>

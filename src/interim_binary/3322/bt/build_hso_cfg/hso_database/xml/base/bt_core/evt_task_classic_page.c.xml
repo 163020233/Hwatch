@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_PAGE]page_end: con_hdl %d, inq_start_time:0x%x, inq_end_time:0x%x @evt_task_classic_page.c(94),WARNING" ID="0x896002f3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PAGE]page_end: con_hdl %d, inq es_insert_elt failed @evt_task_classic_page.c(103),WARNING" ID="0x8960033b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PAGE]em_init: TXNODE_ALLOC_FAILED! con_hdl %d @evt_task_classic_page.c(317),ERROR" ID="0x896009ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PAGE]em_init: truncated page mode, set con_hdl=%d , Txdescptr = 0!!! @evt_task_classic_page.c(328),INFO" ID="0x89600a45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PAGE]page_init: ES_MEM_ALLOC_FAIL! con_hdl %d @evt_task_classic_page.c(441),ERROR" ID="0x89600dca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PAGE]page_init: evt start failed, con_hdl:%d @evt_task_classic_page.c(458),WARNING" ID="0x89600e53" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PAGE]page_init: page start con_hdl %d, timestamp 0x%x @evt_task_classic_page.c(466),WARNING" ID="0x89600e93" />
+			</MSG_LOG>

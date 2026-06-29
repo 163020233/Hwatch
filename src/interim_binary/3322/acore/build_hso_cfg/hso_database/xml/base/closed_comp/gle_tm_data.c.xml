@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="tm recv data cbk buf null. @gle_tm_data.c(51),INFO" ID="0xed40019d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm recv data cbk buf len error. @gle_tm_data.c(56),INFO" ID="0xed4001c5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="tm recv data cbk ev_code = 0x%x, buf-&gt;len = %u, buf-&gt;off = %u @gle_tm_data.c(61),INFO" ID="0xed4001ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm recv data cbk bg_pkt_buff new fail @gle_tm_data.c(65),INFO" ID="0xed40020d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm recv data cbk buff_stru new fail. @gle_tm_data.c(73),ERROR" ID="0xed40024a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm recv data cbk pkt buf data memcpy fail. @gle_tm_data.c(80),ERROR" ID="0xed400282" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ev_code = 0x%x not support @gle_tm_data.c(88),INFO" ID="0xed4002c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mesh_cbks null error @gle_tm_data.c(101),ERROR" ID="0xed40032a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mesh_data mem new failed @gle_tm_data.c(115),ERROR" ID="0xed40039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mesh_data mem cpy failed @gle_tm_data.c(124),ERROR" ID="0xed4003e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ev_code = %d not support @gle_tm_data.c(140),INFO" ID="0xed400465" />
+			</MSG_LOG>

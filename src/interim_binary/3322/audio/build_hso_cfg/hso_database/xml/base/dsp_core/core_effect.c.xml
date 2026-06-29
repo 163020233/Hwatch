@@ -1,0 +1,49 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(93),INFO" ID="0x983802ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(112),INFO" ID="0x98380385" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call hal_ai_port_close Failed, Error Code: [0x%08X] @core_effect.c(122),ERROR" ID="0x983803d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(153),INFO" ID="0x983804cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]g_iv_instance.ai_port = %u @core_effect.c(159),ERROR" ID="0x983804fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(186),INFO" ID="0x983805d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(242),INFO" ID="0x98380795" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ops = %p @core_effect.c(244),ERROR" ID="0x983807a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(250),INFO" ID="0x983807d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @core_effect.c(287),ERROR" ID="0x983808fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @core_effect.c(293),ERROR" ID="0x9838092a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(305),INFO" ID="0x9838098d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(322),INFO" ID="0x98380a15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(330),INFO" ID="0x98380a55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_set_def_pcm_attr Failed, Error Code: [0x%08X] @core_effect.c(337),ERROR" ID="0x98380a8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call get_input_pcm_attr Failed, Error Code: [0x%08X] @core_effect.c(344),ERROR" ID="0x98380ac2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call get_config Failed, Error Code: [0x%08X] @core_effect.c(353),ERROR" ID="0x98380b0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(358),INFO" ID="0x98380b35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(367),INFO" ID="0x98380b7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_create_iv_channel Failed, Error Code: [0x%08X] @core_effect.c(375),ERROR" ID="0x98380bba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call create Failed, Error Code: [0x%08X] @core_effect.c(384),ERROR" ID="0x98380c02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(395),INFO" ID="0x98380c5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(401),INFO" ID="0x98380c8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call set_enable Failed, Error Code: [0x%08X] @core_effect.c(409),ERROR" ID="0x98380cca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(414),INFO" ID="0x98380cf5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(423),INFO" ID="0x98380d3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_effect.c(434),ERROR" ID="0x98380d92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_config_effect Failed, Error Code: [0x%08X] @core_effect.c(440),ERROR" ID="0x98380dc2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_create_effect Failed, Error Code: [0x%08X] @core_effect.c(446),ERROR" ID="0x98380df2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_start_effect Failed, Error Code: [0x%08X] @core_effect.c(452),ERROR" ID="0x98380e22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_destroy Failed, Error Code: [0x%08X] @core_effect.c(462),ERROR" ID="0x98380e72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(469),INFO" ID="0x98380ead" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(478),INFO" ID="0x98380ef5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(485),INFO" ID="0x98380f2d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(495),INFO" ID="0x98380f7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(502),INFO" ID="0x98380fb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(512),INFO" ID="0x98381005" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(519),INFO" ID="0x9838103d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_effect.c(529),INFO" ID="0x9838108d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_effect.c(536),INFO" ID="0x983810c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @core_effect.c(549),ERROR" ID="0x9838112a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call aef_get_iv_frame Failed, Error Code: [0x%08X] @core_effect.c(556),ERROR" ID="0x98381162" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @core_effect.c(563),ERROR" ID="0x9838119a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]in_frame-&gt;channels = %u @core_effect.c(582),ERROR" ID="0x98381232" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_pcm_unify Failed, Error Code: [0x%08X] @core_effect.c(588),ERROR" ID="0x98381262" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call smartpa_iv_data_proc Failed, Error Code: [0x%08X] @core_effect.c(595),ERROR" ID="0x9838129a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call proc_frame Failed, Error Code: [0x%08X] @core_effect.c(607),ERROR" ID="0x983812fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_pcm_unify Failed, Error Code: [0x%08X] @core_effect.c(619),ERROR" ID="0x9838135a" />
+			</MSG_LOG>

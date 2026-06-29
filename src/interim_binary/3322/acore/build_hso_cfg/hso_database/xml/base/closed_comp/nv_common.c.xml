@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ACore] bt set reserved fail, errcode: 0x%x @nv_common.c(40),ERROR" ID="0xe8320142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] bt set reserved config succ. @nv_common.c(43),INFO" ID="0xe832015d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] bt read nv reserv fail, errcode: 0x%x @nv_common.c(58),ERROR" ID="0xe83201d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] bt read nv reserv succ, real_len:%d. @nv_common.c(61),INFO" ID="0xe83201ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] bt read nv config fail, errcode: 0x%x @nv_common.c(95),ERROR" ID="0xe83202fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] bt read nv config succ, real_len:%d. @nv_common.c(98),INFO" ID="0xe8320315" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] bt set nv config fail, errcode: 0x%x @nv_common.c(118),ERROR" ID="0xe83203b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] bt set nv config succ. @nv_common.c(122),INFO" ID="0xe83203d5" />
+			</MSG_LOG>

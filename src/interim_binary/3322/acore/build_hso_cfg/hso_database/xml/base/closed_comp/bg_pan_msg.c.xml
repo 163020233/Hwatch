@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] pan msg_id:%u exceeds the upper limit @bg_pan_msg.c(39),ERROR" ID="0xee32013a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] pan msg_handler for msg_id:%u is null @bg_pan_msg.c(45),ERROR" ID="0xee32016a" />
+			</MSG_LOG>

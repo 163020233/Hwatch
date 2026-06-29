@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_SCO]set_ctrl: esco daycounter rolls over 0, con_hdl %d, daycounter=%d @evt_task_classic_sco.c(125),WARNING" ID="0x899403eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_sco_update_anchor, acl_env_ptr is null @evt_task_classic_sco.c(259),ERROR" ID="0x8994081a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_sco_is_sco_packet, sco_env_ptr is null @evt_task_classic_sco.c(391),ERROR" ID="0x89940c3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_sco_task_end_process, env_ptr is null @evt_task_classic_sco.c(449),ERROR" ID="0x89940e0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_sco_update_daycounter, sco_env_ptr is null @evt_task_classic_sco.c(523),ERROR" ID="0x8994105a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_SCO]update_daycounter: esco daycounter rolls over 0, sco_link_id=%d, daycounter=%d @evt_task_classic_sco.c(535),WARNING" ID="0x899410bb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SCO]statics: total=1000, rx_ok=%d, rx_err=%d, rx_cancel=%d, tx_ok|retrans=0x%x @evt_task_classic_sco.c(614),INFO" ID="0x89941335" />
+			</MSG_LOG>

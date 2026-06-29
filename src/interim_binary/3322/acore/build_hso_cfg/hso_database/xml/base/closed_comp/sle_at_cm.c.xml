@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="sle_read_rssi_v2_callback rssi_v2 NULL @sle_at_cm.c(316),ERROR" ID="0xe92e09e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle_get_audio_quality_callback audio_quality NULL @sle_at_cm.c(345),ERROR" ID="0xe92e0aca" />
+			</MSG_LOG>

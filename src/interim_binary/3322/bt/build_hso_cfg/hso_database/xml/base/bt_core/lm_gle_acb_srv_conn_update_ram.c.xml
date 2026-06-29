@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SLE_COEX] lm_gle_coex_acb_intv_update_game_act @lm_gle_acb_srv_conn_update_ram.c(66),INFO" ID="0x8b600215" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SLE_COEX] lm_gle_coex_acb_intv_update, con_hdl=%d, cur_update_flag=%d, last_update_flag=%d @lm_gle_acb_srv_conn_update_ram.c(85),INFO" ID="0x8b6002ad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SLE_COEX]COEX lm_gle_conn_upd_end_process con_hdl=%d,intv=%d @lm_gle_acb_srv_conn_update_ram.c(177),INFO" ID="0x8b60058d" />
+			</MSG_LOG>

@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_task.c(25),INFO" ID="0xa04a00cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_task.c(31),INFO" ID="0xa04a00fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="TaskCreate fail! ret=%#x. @osal_task.c(59),INFO" ID="0xa04a01dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_task.c(74),INFO" ID="0xa04a0255" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_task.c(80),INFO" ID="0xa04a0285" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="TaskCreate fail! ret=%#x. @osal_task.c(107),INFO" ID="0xa04a035d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_task.c(117),INFO" ID="0xa04a03ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_task.c(123),INFO" ID="0xa04a03dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="TaskCreate fail! ret=%#x. @osal_task.c(144),INFO" ID="0xa04a0485" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_task.c(154),INFO" ID="0xa04a04d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="TaskPriSet fail! ret=%#x. @osal_task.c(159),INFO" ID="0xa04a04fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_task.c(168),INFO" ID="0xa04a0545" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_task.c(177),INFO" ID="0xa04a058d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR LOG]: Scheduling policy not supported. @osal_task.c(185),INFO" ID="0xa04a05cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_task.c(215),INFO" ID="0xa04a06bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="TaskDelete fail! ret=%#x. @osal_task.c(226),INFO" ID="0xa04a0715" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_task.c(239),INFO" ID="0xa04a077d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="TaskSuspend fail! ret=%#x. @osal_task.c(246),INFO" ID="0xa04a07b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_task.c(255),INFO" ID="0xa04a07fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="TaskResume fail! ret=%#x. @osal_task.c(262),INFO" ID="0xa04a0835" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CurTaskIDGet fail! @osal_task.c(314),INFO" ID="0xa04a09d5" />
+			</MSG_LOG>

@@ -1,0 +1,32 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[sle_passkey_entry]failed, conn(%d) not exist. @sle_srv_sm.c(41),ERROR" ID="0xe8c6014a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_passkey_entry]failed, conn(%d) not connected. @sle_srv_sm.c(47),ERROR" ID="0xe8c6017a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_passkey_entry]failed,passkey invalid:%u. @sle_srv_sm.c(53),ERROR" ID="0xe8c601aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[sle_passkey_entry]failed,stack proc fail. @sle_srv_sm.c(59),ERROR" ID="0xe8c601da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle set pair request], conn(%d). @sle_srv_sm.c(75),ERROR" ID="0xe8c6025a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle set pair request]failed, conn(%d) not connected. @sle_srv_sm.c(80),ERROR" ID="0xe8c60282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[sle set pair request]failed, stack proc fail. @sle_srv_sm.c(86),ERROR" ID="0xe8c602b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle number compare entry], conn(%d). @sle_srv_sm.c(105),ERROR" ID="0xe8c6034a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle number compare entry]failed, conn(%d) not exist. @sle_srv_sm.c(109),ERROR" ID="0xe8c6036a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle number compare entry]failed, conn(%d) not connected. @sle_srv_sm.c(115),ERROR" ID="0xe8c6039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[sle number compare entry]failed,stack proc fail. @sle_srv_sm.c(121),ERROR" ID="0xe8c603ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle sm,unhandled msg id 0x%x @sle_srv_sm.c(207),INFO" ID="0xe8c6067d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle pair request alloc failed, length:%d @sle_srv_sm.c(219),ERROR" ID="0xe8c606da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle pair request memcpy failed. @sle_srv_sm.c(224),ERROR" ID="0xe8c60702" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle pair request conn id(%d) invalid. @sle_srv_sm.c(232),ERROR" ID="0xe8c60742" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle pair request send bt_service msg failed. ret %d @sle_srv_sm.c(244),ERROR" ID="0xe8c607a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle remove pair complete conn id(%u) invalid, maybe in disconnected state. @sle_srv_sm.c(259),ERROR" ID="0xe8c6081a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="sle remove pair conn id(%u) pair status:%#x. @sle_srv_sm.c(264),INFO" ID="0xe8c60845" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="pair remove alloc failed, length:%u @sle_srv_sm.c(270),ERROR" ID="0xe8c60872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pair remove alloc memcpy failed. @sle_srv_sm.c(275),ERROR" ID="0xe8c6089a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Pair remove] send bt_service msg failed. ret %#x @sle_srv_sm.c(286),ERROR" ID="0xe8c608f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="conn authentication complete alloc failed, length:%u @sle_srv_sm.c(301),ERROR" ID="0xe8c6096a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="conn authentication complete memcpy failed. @sle_srv_sm.c(314),ERROR" ID="0xe8c609d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="conn authentication complete memcpy failed. @sle_srv_sm.c(331),ERROR" ID="0xe8c60a5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="conn authentication complete send bt_service msg failed. ret %#x @sle_srv_sm.c(341),ERROR" ID="0xe8c60aaa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="conn encrypt complete alloc failed, length:%u @sle_srv_sm.c(357),ERROR" ID="0xe8c60b2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="conn encrypt complete memcpy failed. @sle_srv_sm.c(362),ERROR" ID="0xe8c60b52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="conn encrypt complete send bt_service msg failed. ret %#x @sle_srv_sm.c(373),ERROR" ID="0xe8c60baa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="conn recover pair info alloc failed, length:%u @sle_srv_sm.c(387),ERROR" ID="0xe8c60c1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="conn recover pair info memcpy failed. @sle_srv_sm.c(392),ERROR" ID="0xe8c60c42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle security manager init failed. @sle_srv_sm.c(422),ERROR" ID="0xe8c60d32" />
+			</MSG_LOG>

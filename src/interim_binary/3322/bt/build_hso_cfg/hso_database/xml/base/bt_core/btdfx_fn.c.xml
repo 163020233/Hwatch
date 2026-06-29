@@ -1,0 +1,54 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="dfx_bt_reset failed @btdfx_fn.c(111),ERROR" ID="0x889c037a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="dfx_bt_reset:param0=%d, mac_sel=%d @btdfx_fn.c(117),INFO" ID="0x889c03ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]bt_reset_for_setting_mac enter @btdfx_fn.c(121),INFO" ID="0x889c03cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dfx_bt_reset:invalid_mac_set=%d @btdfx_fn.c(124),INFO" ID="0x889c03e5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[INFO][DFX]dfx_bt_debug_cmd_callback:start_tx,chnnl=%d freq=%d, mode=%d @btdfx_fn.c(156),INFO" ID="0x889c04e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[INFO][DFX]dfx_bt_debug_cmd_callback:stop_tx @btdfx_fn.c(168),INFO" ID="0x889c0545" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[INFO][DFX]dfx_bt_debug_cmd_callback:start_rx :chnnl=%d freq=%d @btdfx_fn.c(181),INFO" ID="0x889c05ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[INFO][DFX]dfx_bt_debug_cmd_callback:stop_rx @btdfx_fn.c(196),INFO" ID="0x889c0625" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="dfx_sp_samp, clkn=0x%x, sp_intv=%d, enable_mode=%d @btdfx_fn.c(349),INFO" ID="0x889c0aed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="c_trim code write succ: XO_CORE_CTRIM_MAN = 0x%x @btdfx_fn.c(357),INFO" ID="0x889c0b2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="c_trim code XO_CORE_CTRIM_MAN = 0x%x @btdfx_fn.c(364),INFO" ID="0x889c0b65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dfx_es_reduce flag = %d @btdfx_fn.c(377),INFO" ID="0x889c0bcd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dfx_es_debug flag = %d @btdfx_fn.c(389),INFO" ID="0x889c0c2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[memory dump start] type=%d @btdfx_fn.c(403),INFO" ID="0x889c0c9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[memory dump end] @btdfx_fn.c(414),INFO" ID="0x889c0cf5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]BTC_MIPS_SWITCH=%d @btdfx_fn.c(426),INFO" ID="0x889c0d55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[dfx] reg_addr invalid. @btdfx_fn.c(436),INFO" ID="0x889c0da5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[dfx] reg_value invalid. @btdfx_fn.c(443),INFO" ID="0x889c0ddd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[dfx] set reg ok. 0x%08X = 0x%X. @btdfx_fn.c(447),INFO" ID="0x889c0dfd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[dfx] read reg. 0x%08X = 0x%X. @btdfx_fn.c(449),INFO" ID="0x889c0e0d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[dfx] dfx_bt_set_slem. %d.%d. @btdfx_fn.c(463),INFO" ID="0x889c0e7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[dfx] slem_intv_rate=%d. @btdfx_fn.c(469),INFO" ID="0x889c0ead" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[dfx] slem_prog_limit=%d. @btdfx_fn.c(473),INFO" ID="0x889c0ecd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[dfx] slem_iq_print_num=%d. @btdfx_fn.c(477),INFO" ID="0x889c0eed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][dfx role switch] con_hdl:%x @btdfx_fn.c(504),INFO" ID="0x889c0fc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][dfx role switch] malloc err @btdfx_fn.c(507),INFO" ID="0x889c0fdd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dfx_low_latency_auto_trans en = %d @btdfx_fn.c(527),INFO" ID="0x889c107d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[INFO][DFX]dfx_bt_debug_cmd:pcm_print en = %d @btdfx_fn.c(540),INFO" ID="0x889c10e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="toggle dfx command send slotcnt time = %d @btdfx_fn.c(574),INFO" ID="0x889c11f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="toggle dfx command send finecnt time = %d @btdfx_fn.c(575),INFO" ID="0x889c11fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="toggle dfx command send interval = %d @btdfx_fn.c(581),INFO" ID="0x889c122d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="toggle dfx_bt_debug_tog_test_en,tog0 g_goal = %d, g_ctrl = %d @btdfx_fn.c(591),INFO" ID="0x889c127d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="toggle dfx command. tog_index=%d, status=%d @btdfx_fn.c(605),INFO" ID="0x889c12ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="toggle dfx toggle command error @btdfx_fn.c(624),INFO" ID="0x889c1385" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[INFO][DFX]dfx_bt_debug_setbtpwr, 20dbm, link_id=%d, pwr_level=%d @btdfx_fn.c(688),INFO" ID="0x889c1585" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[INFO][DFX]dfx_bt_debug_setbtpwr, 20dbm, link_id=%d, pwr_level=%d @btdfx_fn.c(692),INFO" ID="0x889c15a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[INFO][DFX]dfx_ble_debug_setbtpwr, 20dbm, con_hdl=%d, pwr_level=%d @btdfx_fn.c(711),INFO" ID="0x889c163d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[INFO][DFX]dfx_ble_debug_setbtpwr, 20dbm, con_hdl=%d, pwr_level=%d @btdfx_fn.c(715),INFO" ID="0x889c165d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dfx_bt_offline_mode:reg_ctl[%d] @btdfx_fn.c(728),INFO" ID="0x889c16c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dfx_config_sample::param_count error,param_count=%d @btdfx_fn.c(815),ERROR" ID="0x889c197a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="dfx_config_sample:diag_sample_sel=%d memory_len=%d bank_mem=%d @btdfx_fn.c(833),INFO" ID="0x889c1a0d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="dfx_config_sample:test_mode=%d bb_diag_sel=%d modem_diag=0x%x mac_diag=0x%x @btdfx_fn.c(835),INFO" ID="0x889c1a1d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] dfx wr_scan_enable enable=%d, test_mode=%d @btdfx_fn.c(845),INFO" ID="0x889c1a6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][dfx wr scan enable] malloc err @btdfx_fn.c(861),INFO" ID="0x889c1aed" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AutoSniff] dfx_autosniff_test. crtl_type=%u. param:%u.%u.%u. @btdfx_fn.c(920),INFO" ID="0x889c1cc5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AutoSniff] dfx_autosniff_test. crtl_type=%u. param:%#x.%#x.%#x. @btdfx_fn.c(925),INFO" ID="0x889c1ced" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AutoSniff] dfx_autosniff_test @btdfx_fn.c(955),INFO" ID="0x889c1ddd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dfx_high_power_enable: high power enable all link @btdfx_fn.c(964),INFO" ID="0x889c1e25" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dfx_high_power_disable: high power disable all link. @btdfx_fn.c(971),INFO" ID="0x889c1e5d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[dfx]dfx_bt_lowpower_ctrl. type=%u, value=%u. @btdfx_fn.c(984),INFO" ID="0x889c1ec5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[dfx]dfx_bt_lowpower_ctrl. switch:%u @btdfx_fn.c(995),INFO" ID="0x889c1f1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[dfx]dfx_bt_lowpower_ctrl. em_pwroff_used_state=%#X. @btdfx_fn.c(1004),INFO" ID="0x889c1f65" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[dfx]dfx_bt_lowpower_ctrl. log_level:%u-&gt;%u @btdfx_fn.c(1010),INFO" ID="0x889c1f95" />
+			</MSG_LOG>

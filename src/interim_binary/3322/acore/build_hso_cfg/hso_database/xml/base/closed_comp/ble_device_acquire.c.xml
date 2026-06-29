@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bs ble] acquire local type error 0x%04x @ble_device_acquire.c(39),ERROR" ID="0xea54013a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs ble] acquire type error 0x%04x @ble_device_acquire.c(56),ERROR" ID="0xea5401c2" />
+			</MSG_LOG>

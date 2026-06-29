@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] hfp msg_id:%u exceeds the upper limit @bg_hfp_msg.c(114),ERROR" ID="0xee3a0392" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] hfp msg_handler for msg_id:%u is null @bg_hfp_msg.c(120),ERROR" ID="0xee3a03c2" />
+			</MSG_LOG>

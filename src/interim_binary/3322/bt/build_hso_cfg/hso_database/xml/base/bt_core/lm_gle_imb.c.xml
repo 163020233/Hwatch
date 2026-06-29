@@ -1,0 +1,37 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[IMG] max_sdu_t2g %d, bn_g2t %d, bn_t2g %d, nse %d @lm_gle_imb.c(246),INFO" ID="0x892607b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMG] check mcs failed, role %d, tx_format %d, mcs %d. @lm_gle_imb.c(280),ERROR" ID="0x892608c2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMG] max_sdu_t2g %d, bn_g2t %d, bn_t2g %d, nse %d @lm_gle_imb.c(318),INFO" ID="0x892609f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IMG] check phy failed, label_id=%d. @lm_gle_imb.c(324),ERROR" ID="0x89260a22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IMG] check mcs failed, label_id=%d. @lm_gle_imb.c(331),ERROR" ID="0x89260a5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L3][GLE_IMB] check pdu_len failed, label_id=%d. @lm_gle_imb.c(337),ERROR" ID="0x89260a8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[IMG] check part1 param failed. @lm_gle_imb.c(370),ERROR" ID="0x89260b92" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[IMG] set v2 img_id %d, imb_id %d, imb_cnt %d, interval %d, ft_g2t %d, ft_t2g %d @lm_gle_imb.c(423),INFO" ID="0x89260d3d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMB] Not find imb desc img_id %d, img_conhdl %d, imb_index %d @lm_gle_imb.c(462),ERROR" ID="0x89260e72" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[IMB] index %d, label %d: conhdl 0x%x, offset g %d, offset t %d, t_ifs %d, t_efs %d @lm_gle_imb.c(511),INFO" ID="0x89260ffd" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[IMB] sub interval %d, max_pdu_g2t 0x%x, max_pdu_t2g 0x%x, phy g2t %d, phy t2g %d @lm_gle_imb.c(514),INFO" ID="0x89261015" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[IMG] set v1 param, img_id %d, imb_id %d, imb_cnt %d, interval %d, , nse %d, bn_g2t %d, bn_t2g %d @lm_gle_imb.c(597),INFO" ID="0x892612ad" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[IMG] set v1 max_sdt_g2t %d, max_sdu_t2g %d, max_pdu_g2t %d, max_pdu_t2g %d, mcs_g2t %d, mcs_t2g %d @lm_gle_imb.c(600),INFO" ID="0x892612c5" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[IMG] v2 label_cnt %d, label_id %d, nse %d, bn_g2t %d, bn_t2g %d, t_index %d @lm_gle_imb.c(667),INFO" ID="0x892614dd" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[IMG] set v2 format_g2t %d, format_t2g %d, phy_g2t %d, phy_t2g %d, pilot_g2t %d, pilot_t2g %d @lm_gle_imb.c(671),INFO" ID="0x892614fd" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[IMG] set v2 max_sdu_g2t %d, max_sdu_t2g %d, max_pdu_g2t %d, max_pdu_t2g %d, mcs_g2t %d, mcs_t2g %d @lm_gle_imb.c(675),INFO" ID="0x8926151d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IMG] Alloc con_hdl failed, img_id %d @lm_gle_imb.c(698),ERROR" ID="0x892615d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IMG] Alloc img desc failed, img_id %d @lm_gle_imb.c(706),ERROR" ID="0x89261612" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMG] lm_gle_img_create_desc img_id %d, con_hdl 0x%x, role %d, img_desc 0x%x @lm_gle_imb.c(724),INFO" ID="0x892616a5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMG] IMB sed type wrong, img_id %d, imb_id %d, conhdl %d, sed type 0x%x @lm_gle_imb.c(742),WARNING" ID="0x89261733" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[IMG] lm_gle_img_setup img_id %d, imb_cnt %d @lm_gle_imb.c(757),INFO" ID="0x892617ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_img_setup_test_v2, img_desc is NULL for img_id=%d @lm_gle_imb.c(820),ERROR" ID="0x892619a2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMG] lm_gle_img_setup_test_v2 imb cnt NOT MATCH! img_id %d, imb_cnt %d, param cnt %d @lm_gle_imb.c(827),ERROR" ID="0x892619da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMG] lm_gle_hci_set_img_parameter_test status %d, img_id %d, imb_cnt %d @lm_gle_imb.c(863),INFO" ID="0x89261afd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMG] lm_gle_hci_set_img_parameter_test status %d, img_id %d, imb_cnt %d @lm_gle_imb.c(882),INFO" ID="0x89261b95" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMB] lm_gle_hci_create_imb_v2_act img_id %d, label_id %d, imb_cnt %d @lm_gle_imb.c(1076),INFO" ID="0x892621a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L3][GLE_FREQ_BAND]lm_img_freq_band_sed_init, img_env is NULL, img_conhdl %d @lm_gle_imb.c(1246),WARNING" ID="0x892626f3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L3][IMG]lm_img_freq_band_sed_init, not support freq_band %d @lm_gle_imb.c(1256),INFO" ID="0x89262745" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMG] lm_gle_destroy_img_desc img_id %d, img_conhdl 0x%x, t_num %d @lm_gle_imb.c(1366),INFO" ID="0x89262ab5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_imb_established_evt_send, imb_handle %d, acb_handle %d, status %d, img_id|imb_id 0x%x @lm_gle_imb.c(1626),INFO" ID="0x892632d5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_imb_established_evt_send, imb_handle %d, acb_handle %d, status %d, img_id|imb_id 0x%x @lm_gle_imb.c(1673),INFO" ID="0x8926344d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_img_disc_active_imb_act: img desc NULL, imb_conhdl %d, reason %d @lm_gle_imb.c(1844),ERROR" ID="0x892639a2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMG] lm_gle_img_disc_active_imb_act, img_id %d, imb_conhdl %d, reason %d @lm_gle_imb.c(1851),INFO" ID="0x892639dd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[IMG]acb related imb, reason %d, fsmid=0x%x @lm_gle_imb.c(2149),INFO" ID="0x8926432d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_hci_set_imb_labels_act: param check status = %x @lm_gle_imb.c(2314),INFO" ID="0x89264855" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_reset]imb disconnect(conhdl=%d) @lm_gle_imb.c(2389),INFO" ID="0x89264aad" />
+			</MSG_LOG>

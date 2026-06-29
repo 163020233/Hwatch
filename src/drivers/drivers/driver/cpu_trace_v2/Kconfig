@@ -1,0 +1,19 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2024-2024. All rights reserved.
+#===============================================================================
+config CPUTRACE_V2
+    bool
+    prompt "CPU TRACE V2 version."
+    default n
+    depends on DRIVER_SUPPORT_CPUTRACEV2
+config CPU_TRACE_MEM_REGION_LENGTH
+    int
+    prompt "Maximum memory size for CPU trace. Unit: byte."
+    default 0x2100
+    depends on DRIVER_SUPPORT_CPUTRACEV2
+config CPU_TRACE_SUPPORT_LPM
+    bool
+    prompt "CPUTRACE Support low power mode, enter sleep."
+    default n
+    depends on DRIVER_SUPPORT_CPUTRACEV2

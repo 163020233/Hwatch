@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ble_reset]stop acl complete(conhdl=0x%x) @lm_ble_acl_disc.c(44),INFO" ID="0x88320165" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] lm_ble_llcp_terminate_act con_hdl(0x%x)terminate_reason(%d) @lm_ble_acl_disc.c(241),INFO" ID="0x8832078d" />
+			</MSG_LOG>

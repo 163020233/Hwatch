@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] encode audio stream volume, malloc err @saf_vcp_server_hlp.c(75),ERROR" ID="0xe9bc025a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] set mute state fail, req change counter=%u, volume change counter=%u @saf_vcp_server_hlp.c(94),ERROR" ID="0xe9bc02f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] set mute state fail, current state=%u , op = %u not support @saf_vcp_server_hlp.c(100),ERROR" ID="0xe9bc0322" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] set value fail, param len=%u @saf_vcp_server_hlp.c(129),ERROR" ID="0xe9bc040a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] set value fail, req change counter=%u, volume change counter=%u @saf_vcp_server_hlp.c(137),ERROR" ID="0xe9bc044a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] set value and unmute fail, param len=%u @saf_vcp_server_hlp.c(161),ERROR" ID="0xe9bc050a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] set value and unmute fail, req change counter=%u, volume change counter=%u @saf_vcp_server_hlp.c(169),ERROR" ID="0xe9bc054a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] set value and unmute fail, current state=%u , op = %u not support @saf_vcp_server_hlp.c(174),ERROR" ID="0xe9bc0572" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] set volume value fail, req change counter=%u, volume change counter=%u @saf_vcp_server_hlp.c(201),ERROR" ID="0xe9bc064a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][vcps] req param error, op_code:%u, ep_num:%d, ep_list count:%d. @saf_vcp_server_hlp.c(239),ERROR" ID="0xe9bc077a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] set audio stream volume error, malloc fail. @saf_vcp_server_hlp.c(245),ERROR" ID="0xe9bc07aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] node not exist, id:%d. @saf_vcp_server_hlp.c(254),ERROR" ID="0xe9bc07f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcps] set audio stream volume value fail, req change counter=%u, volume change counter=%u @saf_vcp_server_hlp.c(263),ERROR" ID="0xe9bc083a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] set audio stream volume, schedule_up err! ret=%u @saf_vcp_server_hlp.c(272),ERROR" ID="0xe9bc0882" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] call cmd not support, opcode = %u @saf_vcp_server_hlp.c(308),ERROR" ID="0xe9bc09a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcps] cp req, op: %u @saf_vcp_server_hlp.c(321),INFO" ID="0xe9bc0a0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcps] method req, data too small! @saf_vcp_server_hlp.c(323),ERROR" ID="0xe9bc0a1a" />
+			</MSG_LOG>

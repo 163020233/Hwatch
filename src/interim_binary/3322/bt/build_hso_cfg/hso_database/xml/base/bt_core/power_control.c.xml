@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[DTS][PWR_CTL]bind_acl_ico_link, acl link %d, ico link %d @power_control.c(151),INFO" ID="0x8bf804bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DTS][PWR_CTL]bind_acl_ico_link, acl_con_hdl %d already binded! @power_control.c(153),WARNING" ID="0x8bf804cb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DTS][PWR_CTL]bind_acl_ico_link, no space for acl_con_hdl %d! @power_control.c(166),WARNING" ID="0x8bf80533" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DTS][PWR_CTL]unbind_acl_link, acl link %d @power_control.c(174),INFO" ID="0x8bf80575" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DTS][PWR_CTL]unbind_acl_ico_link, acl link %d, ico link %d @power_control.c(189),INFO" ID="0x8bf805ed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[DTS][PWR_CTL]unbind_acl_ico_link, acl_con_hdl %d bind to ico_con_hdl %d, not %d! @power_control.c(192),WARNING" ID="0x8bf80603" />
+			</MSG_LOG>

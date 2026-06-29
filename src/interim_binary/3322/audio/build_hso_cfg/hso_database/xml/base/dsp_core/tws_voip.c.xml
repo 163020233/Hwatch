@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[hifi][tws_voip][uplink] send_data_count: %u |cur_data_size: %u |total_data_size: %u @tws_voip.c(93),WARNING" ID="0x990402eb" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][tws_voip][dnlink] send_data_count: %u |cur_data_size: %u |total_data_size: %u @tws_voip.c(102),WARNING" ID="0x99040333" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] dump invalid msbc header, size = %u @tws_voip.c(161),ERROR" ID="0x9904050a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_voip] dnlink save header failed @tws_voip.c(167),ERROR" ID="0x9904053a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] invalid stream size = %u @tws_voip.c(185),ERROR" ID="0x990405ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_voip] dnlink save data failed @tws_voip.c(200),ERROR" ID="0x99040642" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] dnlink overrun, stream size: %d @tws_voip.c(215),ERROR" ID="0x990406ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] dnlink overrun, stream size: %u @tws_voip.c(233),ERROR" ID="0x9904074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_voip] dnlink adp has already registered @tws_voip.c(258),ERROR" ID="0x99040812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] register dnlink adp, handle: 0x%x @tws_voip.c(267),WARNING" ID="0x9904085b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_voip] uplink adp has already registered @tws_voip.c(272),ERROR" ID="0x99040882" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] register uplink adp, handle: 0x%x @tws_voip.c(280),WARNING" ID="0x990408c3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][tws_voip] unregister invalid dl_adp handle: 0x%x |the registered adp handle: 0x%x @tws_voip.c(297),ERROR" ID="0x9904094a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] unregister dnlink adp, handle: 0x%x @tws_voip.c(303),WARNING" ID="0x9904097b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][tws_voip] unregister invalid ul_adp handle: 0x%x |the registered adp handle: 0x%x @tws_voip.c(316),ERROR" ID="0x990409e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] unregister uplink adp, handle: 0x%x @tws_voip.c(321),WARNING" ID="0x99040a0b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_voip] dnlink adp is NULL! @tws_voip.c(368),ERROR" ID="0x99040b82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_voip] uplink adp is NULL! @tws_voip.c(387),ERROR" ID="0x99040c1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] uplink packet_length is %u @tws_voip.c(392),WARNING" ID="0x99040c43" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_voip] dnlink adp is NULL! @tws_voip.c(403),ERROR" ID="0x99040c9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_voip] uplink adp is NULL! @tws_voip.c(427),ERROR" ID="0x99040d5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_voip] packet length is zero! @tws_voip.c(438),ERROR" ID="0x99040db2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_acquire_stream Failed, Error Code: [0x%08X] @tws_voip.c(455),ERROR" ID="0x99040e3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_to_btc_voip_data_ind Failed, Error Code: [0x%08X] @tws_voip.c(462),ERROR" ID="0x99040e72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_release_stream Failed, Error Code: [0x%08X] @tws_voip.c(472),ERROR" ID="0x99040ec2" />
+			</MSG_LOG>

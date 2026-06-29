@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[L2CAP] security cbk, psm=%u, result=%u @l2cap_sec.c(75),WARNING" ID="0xebc0025b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2CAP] security cbk, cidnode-&gt;status=%u, local_cid=%u @l2cap_sec.c(89),WARNING" ID="0xebc002cb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2CAP][DELETE_CID] RESULT=0x%x, STATUS=0x%x, PSM=0x%x, LOCAL_CID=0x%x @l2cap_sec.c(129),WARNING" ID="0xebc0040b" />
+			</MSG_LOG>

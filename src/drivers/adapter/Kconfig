@@ -1,0 +1,17 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2022. All rights reserved.
+#===============================================================================
+config ADAPTER_OHOS
+    bool
+    prompt "OHOS"
+    default n
+    help
+        This option means support OHOS.
+
+if ADAPTER_OHOS
+menu "OHOS Configuration"
+    comment "Config OHOS"
+    osource "drivers/adapter/ohos/Kconfig"
+endmenu
+endif

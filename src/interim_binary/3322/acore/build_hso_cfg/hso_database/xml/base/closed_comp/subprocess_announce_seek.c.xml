@@ -1,0 +1,40 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="subprocess set announce ext param alloc failed, length:%d @subprocess_announce_seek.c(98),ERROR" ID="0xefa20312" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="subprocess announce fsm info is null @subprocess_announce_seek.c(147),ERROR" ID="0xefa2049a" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[%d]subprocess announce id %d fsm state id:%d, state:%d, cur state:%d -&gt; wish state:%d @subprocess_announce_seek.c(153),WARNING" ID="0xefa204cb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="announce no need this state id %d! @subprocess_announce_seek.c(162),ERROR" ID="0xefa20512" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="announce %d start fail! @subprocess_announce_seek.c(181),ERROR" ID="0xefa205aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="announce %d stop fail! @subprocess_announce_seek.c(192),ERROR" ID="0xefa20602" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="announce %d stop fail! @subprocess_announce_seek.c(209),ERROR" ID="0xefa2068a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess announce start callback, announce not exist, announce_id:%d @subprocess_announce_seek.c(226),ERROR" ID="0xefa20712" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess announce disable callback, announce not exist, announce_id:%d @subprocess_announce_seek.c(260),ERROR" ID="0xefa20822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess announce terminal callback, announce not exist, announce_id:%d @subprocess_announce_seek.c(284),ERROR" ID="0xefa208e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="set announce param pointer is null. @subprocess_announce_seek.c(299),ERROR" ID="0xefa2095a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess set announce param, announce not exist, announce_id:%d @subprocess_announce_seek.c(305),ERROR" ID="0xefa2098a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="announce param is same, no need update. @subprocess_announce_seek.c(309),WARNING" ID="0xefa209ab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess get announce param, announce not exist, announce_id:%d @subprocess_announce_seek.c(327),ERROR" ID="0xefa20a3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="set announce data pointer is null. @subprocess_announce_seek.c(402),ERROR" ID="0xefa20c92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess set announce data, announce not exist, announce_id:%d @subprocess_announce_seek.c(408),ERROR" ID="0xefa20cc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="announce data is same, no need update. @subprocess_announce_seek.c(412),WARNING" ID="0xefa20ce3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess restart announce, announce not exist, announce_id:%d @subprocess_announce_seek.c(431),ERROR" ID="0xefa20d7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess restart announce, announce param not set, announce_id:%d @subprocess_announce_seek.c(436),ERROR" ID="0xefa20da2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess stop announce, announce not exist, announce_id:%d @subprocess_announce_seek.c(448),ERROR" ID="0xefa20e02" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[%d]subprocess seek fsm state id:%d, state:%d, cur state:%d -&gt; wish state:%d @subprocess_announce_seek.c(460),WARNING" ID="0xefa20e63" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="seek no need this state id %d! @subprocess_announce_seek.c(469),ERROR" ID="0xefa20eaa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess delete filter err:%0x @subprocess_announce_seek.c(479),ERROR" ID="0xefa20efa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess enable filter err:%0x @subprocess_announce_seek.c(484),ERROR" ID="0xefa20f22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="start sle seek fail @subprocess_announce_seek.c(503),ERROR" ID="0xefa20fba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="stop sle seek fail @subprocess_announce_seek.c(511),ERROR" ID="0xefa20ffa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="stop sle seek fail @subprocess_announce_seek.c(525),ERROR" ID="0xefa2106a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[start seek cbk] cur state:%d -&gt; wish state:%d, status:%d @subprocess_announce_seek.c(551),ERROR" ID="0xefa2113a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[disable seek cbk] cur state:%d -&gt; wish state:%d, status:%d @subprocess_announce_seek.c(570),ERROR" ID="0xefa211d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="subprocess add filter:%d type:%d ret:%0x @subprocess_announce_seek.c(610),INFO" ID="0xefa21315" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="subprocess add adv filter status:0x%x filter_type:%d num_left:%d @subprocess_announce_seek.c(617),INFO" ID="0xefa2134d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="subprocess switch adv filter status:0x%x switch_type:%d num_left:%d @subprocess_announce_seek.c(623),INFO" ID="0xefa2137d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="seek param is NULL. @subprocess_announce_seek.c(780),ERROR" ID="0xefa21862" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="seek param is same, no need update. @subprocess_announce_seek.c(784),WARNING" ID="0xefa21883" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess seek filter is same, type = %u @subprocess_announce_seek.c(821),INFO" ID="0xefa219ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="subprocess seek filter is full. @subprocess_announce_seek.c(834),ERROR" ID="0xefa21a12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess copy filter fail. ret:%0x @subprocess_announce_seek.c(839),ERROR" ID="0xefa21a3a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="subprocess filter switch:%d err:%0x @subprocess_announce_seek.c(874),ERROR" ID="0xefa21b52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="subprocess init adv filter err:%0x @subprocess_announce_seek.c(913),ERROR" ID="0xefa21c8a" />
+			</MSG_LOG>

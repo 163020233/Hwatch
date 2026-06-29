@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BREDR] read nv linkkeys fail, errcode: 0x%x @bt_database_smp_br.c(43),ERROR" ID="0xe830015a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BREDR] read nv linkkeys succ, real_len:%d. @bt_database_smp_br.c(46),INFO" ID="0xe8300175" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BREDR] read nv get addr: %02x:**:**:**:%02x:%02x @bt_database_smp_br.c(51),INFO" ID="0xe830019d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BREDR] read nv get name: %c%c%c%c. @bt_database_smp_br.c(53),INFO" ID="0xe83001ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br_store_paired_dev, br_device is NULL. @bt_database_smp_br.c(61),INFO" ID="0xe83001ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br_store_paired_dev @bt_database_smp_br.c(64),INFO" ID="0xe8300205" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br_store_paired_dev, write_index: %d. @bt_database_smp_br.c(83),INFO" ID="0xe830029d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br_store_paired_dev, write_index: %d. @bt_database_smp_br.c(93),INFO" ID="0xe83002ed" />
+			</MSG_LOG>

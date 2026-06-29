@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[HITWS][ISO_ENABLE_EVENT]STATUS=0x%x, ISO_HANDLE=0x%x, STREAM_ID=%d, CHANNEL_ID=%d @hitws_hci_le.c(107),INFO" ID="0xec12035d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[HITWS][HITWS_DISABLE_ISO_EVT]STATUS=0x%x, ACL_HANDLE=0x%x, ISO_HANDLE=0x%x, STREAM_ID=%d, CHANNEL_ID=%d @hitws_hci_le.c(129),INFO" ID="0xec12040d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][ISO_REMOVE_DATAPATH]ISO_HANDLE=0x%x @hitws_hci_le.c(138),INFO" ID="0xec120455" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HITWS][HCI_LE_SUBRATE_IND_CMD_EVT]conn_handle=0x%x, subrate=0x%x, latency=0x%x @hitws_hci_le.c(169),INFO" ID="0xec12054d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HITWS][HITWS_SET_TOG_START_CBK]STATUS=0x%x, ISO_HANDLE=0x%x, ACL_HANDLE=0x%x @hitws_hci_le.c(269),INFO" ID="0xec12086d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HITWS][HITWS_DISABLE_ISO]ISO_HANDLE=0x%x, REASON=0x%x @hitws_hci_le.c(316),INFO" ID="0xec1209e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HITWS][HITWS_DISABLE_ISO_EVT]REMOVE CMD @hitws_hci_le.c(327),INFO" ID="0xec120a3d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HDAP]hitws get iso buffer cbk buffer_num=%d, buffer_size=%d @hitws_hci_le.c(351),INFO" ID="0xec120afd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HDAP]hitws get iso buffer cbk buffer_size=%d @hitws_hci_le.c(361),INFO" ID="0xec120b4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HITWS][HCI_CODEC]receive from BTC status=%d @hitws_hci_le.c(383),INFO" ID="0xec120bfd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HITWS][HCI_CODEC]send to BTC sample_rate=%d, codec_id=%d @hitws_hci_le.c(414),INFO" ID="0xec120cf5" />
+			</MSG_LOG>

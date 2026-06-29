@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_ble_hci_le_set_path_loss_reporting_enable_act, rep_to=%d @lm_ble_acl_srv_pwr_ctrl.c(246),INFO" ID="0x882c07b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L3][BLE_PCL]send_pwr_ctrl_req_pdu, send LL_PWR_CTRL_REQ, phy %d, delta %d, tx_power %d @lm_ble_acl_srv_pwr_ctrl.c(452),INFO" ID="0x882c0e25" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L3][BLE_ACL]pwr_ctrl_ind_act, con_hdl %d, avg_rssi %d @lm_ble_acl_srv_pwr_ctrl.c(509),INFO" ID="0x882c0fed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] lm_ble_acl_pwr_ctrl_ind_act, delta=%d, rssi_avg_cnt=%d, rssi_acc=%d @lm_ble_acl_srv_pwr_ctrl.c(521),INFO" ID="0x882c104d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L3][BLE_PCL]send_pwr_ctrl_rsp_pdu, send LL_PWR_CTRL_RSP, limit %d, delta %d, apr %d, txpower %d @lm_ble_acl_srv_pwr_ctrl.c(654),INFO" ID="0x882c1475" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L3][BLE_PCL]pwr_ctrl_req_process, received LL_PWR_CTRL_REQ, phy %d, delta %d, tx_power %d @lm_ble_acl_srv_pwr_ctrl.c(770),INFO" ID="0x882c1815" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L3][BLE_PCL]send_pwr_chg_ind_pdu, send LL_PWR_CHANGE_IND, phy %d, limit %d, delta %d, tx_pwr %d @lm_ble_acl_srv_pwr_ctrl.c(856),INFO" ID="0x882c1ac5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L3][BLE_PCL]pwr_ctrl_rsp_act, received LL_PWR_CTRL_RSP, limit %d, delta %d, apr %d, txpower %d @lm_ble_acl_srv_pwr_ctrl.c(902),INFO" ID="0x882c1c35" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L3][BLE_PCL]pwr_chg_ind_act, received LL_PWR_CHANGE_IND, phy %d, limit %d, delta %d, tx_pwr %d @lm_ble_acl_srv_pwr_ctrl.c(942),INFO" ID="0x882c1d75" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L3][BLE_PCL]monotonic_pwr_ctrl_ind_act, delta=%d, rssi_avg_cnt=%d, rssi_acc=%d @lm_ble_acl_srv_pwr_ctrl.c(1009),INFO" ID="0x882c1f8d" />
+			</MSG_LOG>

@@ -1,0 +1,37 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="ble hci factory cbk param error @btsrv_hci_factory.c(57),ERROR" ID="0xe8a201ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ble factory evt proc] type invalid. cmd/evt(%d) @btsrv_hci_factory.c(65),ERROR" ID="0xe8a2020a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ble factory evt proc] malloc fail. cmd/evt(%d) @btsrv_hci_factory.c(71),ERROR" ID="0xe8a2023a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ble factory evt proc] type invalid. cmd/evt(%d) @btsrv_hci_factory.c(107),ERROR" ID="0xe8a2035a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ble factory evt proc] send bt_service msg error ret %d evt %d @btsrv_hci_factory.c(113),ERROR" ID="0xe8a2038a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @btsrv_hci_factory.c(223),ERROR" ID="0xe8a206fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble is not enable. @btsrv_hci_factory.c(231),ERROR" ID="0xe8a2073a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf tx start param malloc error @btsrv_hci_factory.c(243),ERROR" ID="0xe8a2079a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf tx start general param memcpy error @btsrv_hci_factory.c(252),ERROR" ID="0xe8a207e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf tx start fail  @btsrv_hci_factory.c(259),ERROR" ID="0xe8a2081a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble is not enable. @btsrv_hci_factory.c(268),ERROR" ID="0xe8a20862" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf tx start param malloc error @btsrv_hci_factory.c(275),ERROR" ID="0xe8a2089a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf tx v2 start general param memcpy error @btsrv_hci_factory.c(283),ERROR" ID="0xe8a208da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf tx v2 start fail  @btsrv_hci_factory.c(290),ERROR" ID="0xe8a20912" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble is not enable. @btsrv_hci_factory.c(299),ERROR" ID="0xe8a2095a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf rx start param malloc error @btsrv_hci_factory.c(310),ERROR" ID="0xe8a209b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf rx start general param memcpy error @btsrv_hci_factory.c(319),ERROR" ID="0xe8a209fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf rx start fail  @btsrv_hci_factory.c(326),ERROR" ID="0xe8a20a32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble is not enable. @btsrv_hci_factory.c(335),ERROR" ID="0xe8a20a7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf trx end fail  @btsrv_hci_factory.c(344),ERROR" ID="0xe8a20ac2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble is not enable. @btsrv_hci_factory.c(353),ERROR" ID="0xe8a20b0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf reset fail  @btsrv_hci_factory.c(362),ERROR" ID="0xe8a20b52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble is not enable. @btsrv_hci_factory.c(371),ERROR" ID="0xe8a20b9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf cali nv fail  @btsrv_hci_factory.c(380),ERROR" ID="0xe8a20be2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble is not enable. @btsrv_hci_factory.c(389),ERROR" ID="0xe8a20c2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf single tone start param malloc error @btsrv_hci_factory.c(399),ERROR" ID="0xe8a20c7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf single tone start param memcpy error @btsrv_hci_factory.c(408),ERROR" ID="0xe8a20cc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf single tone fail  @btsrv_hci_factory.c(416),ERROR" ID="0xe8a20d02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble is not enable. @btsrv_hci_factory.c(425),ERROR" ID="0xe8a20d4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf single tone start param malloc error @btsrv_hci_factory.c(437),ERROR" ID="0xe8a20daa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf single tone start param memcpy error @btsrv_hci_factory.c(446),ERROR" ID="0xe8a20df2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory rf single tone fail  @btsrv_hci_factory.c(454),ERROR" ID="0xe8a20e32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble is not enable. @btsrv_hci_factory.c(484),ERROR" ID="0xe8a20f22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory vendor productline start param malloc error @btsrv_hci_factory.c(493),ERROR" ID="0xe8a20f6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory vendor productline cmd general param memcpy error @btsrv_hci_factory.c(503),ERROR" ID="0xe8a20fba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble factory vendor productline cmd tone fail  @btsrv_hci_factory.c(510),ERROR" ID="0xe8a20ff2" />
+			</MSG_LOG>

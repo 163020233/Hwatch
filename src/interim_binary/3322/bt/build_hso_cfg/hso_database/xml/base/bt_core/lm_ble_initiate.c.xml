@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][initiate]lm_ble_initiate_set_acl_con_info, clock=0x%x, us_offset=0x0x%x, chsel=%d @lm_ble_initiate.c(231),INFO" ID="0x883c073d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[LM][BLE_INIT]lm_ble_initiating_recv_data, start_acl_fsm fail! pdu_type:%d @lm_ble_initiate.c(278),WARNING" ID="0x883c08b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[LM][BLE_INIT]stop initiate complete @lm_ble_initiate.c(337),INFO" ID="0x883c0a8d" />
+			</MSG_LOG>

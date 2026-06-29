@@ -1,0 +1,66 @@
+<swiper class="swiper_ctn" loop="false" on:change="swiperChange" on:swipe="swipeEvent">
+
+<!--  left page  -->
+    <stack class="container">
+        <image-animator images="{{ rains }}" ref="animator" duration="500ms" class="full"/>
+        <div class="container">
+            <div class='location_cnt'>
+                <image class="location_img" src="/common/images/location.png"/>
+                <text class="location_text">{{ $t('strings.location_text') }}</text>
+            </div>
+
+            <div class="temperature_ctn">
+                <text class="temperature_text">13°</text>
+            </div>
+
+            <div class="weather_ctn">
+                <image-animator images="{{ images }}" ref="animator" duration="1000ms" class="weather_img"/>
+                <text class="weather_text">16° / 3° {{$t('strings.weather_text')}}</text>
+                <text class="air_text">{{$t('strings.air_text')}} 64</text>
+            </div>
+
+            <div class="notice_ctn">
+                <marquee class="notice_text">{{$t('strings.notice_text')}}</marquee>
+            </div>
+
+            <div class="indicator_ctn">
+                <image class="indicator_img" src="/common/images/circle_point.png"/>
+                <image class="indicator_img" style="margin-left : 10px;" src="/common/images/add.png"/>
+            </div>
+
+        <!--        <image class="arrow_down" src="/common/images/arrow_down.png"></image>-->
+        </div>
+        <canvas class="canvas" ref="home"></canvas>
+    </stack>
+
+<!--  right page  -->
+    <stack class="next_ctn">
+        <div class="full">
+            <div class="edge_ctn" style="margin-left : 32px;">
+                <text class="gray_text">{{ $t('strings.yesterday_text') }}</text>
+                <image class="right_weather_img" src="/common/images/A100_012.png"></image>
+                <text class="gray_text">16°</text>
+                <text class="gray_text" style="margin-top : 50px;">5°</text>
+                <image class="weather_img" src="/common/images/A100_014.png"></image>
+                <text class="air_text" style="width : 70px; margin-top : 10px; background-color : #34825a;">{{ $t('strings.yesterday_air_text') }}</text>
+            </div>
+            <div class="center_ctn">
+                <text class="white_text">{{ $t('strings.today_text') }}</text>
+                <image class="right_weather_img" src="/common/images/A100_012.png"></image>
+                <text class="white_text">16°</text>
+                <text class="white_text" style="margin-top : 50px;">2°</text>
+                <image class="weather_img" src="/common/images/A100_014.png"></image>
+                <text class="air_text" style="width : 70px; margin-top : 10px;">{{ $t('strings.today_air_text') }}</text>
+            </div>
+            <div class="edge_ctn" style="margin-right : 32px;">
+                <text class="white_text">{{ $t('strings.tomorrow_text') }}</text>
+                <image class="right_weather_img" src="/common/images/A100_014.png"></image>
+                <text class="white_text">18°</text>
+                <text class="white_text" style="margin-top : 50px;">6°</text>
+                <image class="weather_img" src="/common/images/A100_018.png"></image>
+                <text class="air_text" style="width : 70px; margin-top : 10px;">{{ $t('strings.tomorrow_air_text') }}</text>
+            </div>
+        </div>
+        <canvas class="canvas" ref="next"></canvas>
+    </stack>
+</swiper>

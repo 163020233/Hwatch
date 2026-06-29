@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc read inst name fail, ret: 0x%x @saf_at_mcpc.c(328),ERROR" ID="0xe9840a42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc read basic info fail, ret: 0x%x @saf_at_mcpc.c(339),ERROR" ID="0xe9840a9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc read playback position fail, ret: 0x%x @saf_at_mcpc.c(351),ERROR" ID="0xe9840afa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc read playback speed fail, ret: 0x%x @saf_at_mcpc.c(363),ERROR" ID="0xe9840b5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc read seeking speed fail, ret: 0x%x @saf_at_mcpc.c(375),ERROR" ID="0xe9840bba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc read feature supported fail, ret: 0x%x @saf_at_mcpc.c(387),ERROR" ID="0xe9840c1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc read playback state fail, ret: 0x%x @saf_at_mcpc.c(399),ERROR" ID="0xe9840c7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc read media id fail, ret: 0x%x @saf_at_mcpc.c(411),ERROR" ID="0xe9840cda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc play fail, ret: 0x%x @saf_at_mcpc.c(422),ERROR" ID="0xe9840d32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc stop fail, ret: 0x%x @saf_at_mcpc.c(433),ERROR" ID="0xe9840d8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc pause fail, ret: 0x%x @saf_at_mcpc.c(444),ERROR" ID="0xe9840de2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc fast forward fail, ret: 0x%x @saf_at_mcpc.c(455),ERROR" ID="0xe9840e3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc fast rewind fail, ret: 0x%x @saf_at_mcpc.c(466),ERROR" ID="0xe9840e92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc move previous media fail, ret: 0x%x @saf_at_mcpc.c(478),ERROR" ID="0xe9840ef2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc move next media fail, ret: 0x%x @saf_at_mcpc.c(490),ERROR" ID="0xe9840f52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc unregister client fail, ret: 0x%x @saf_at_mcpc.c(501),ERROR" ID="0xe9840faa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf mcpc register client fail, ret: 0x%x @saf_at_mcpc.c(523),ERROR" ID="0xe984105a" />
+			</MSG_LOG>

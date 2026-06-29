@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[BGTP][COEX]coex_trigger_mcm, switch_num[%d]need_switch[%d]cur_ant_used[0x%x]mac_id[%d] @coex_btstate_act.c(172),INFO" ID="0x8b540565" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[COEX]coex_classic_low_latency=%d @coex_btstate_act.c(401),INFO" ID="0x8b540c8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[COEX]coex_classic_party_mode=%d @coex_btstate_act.c(408),INFO" ID="0x8b540cc5" />
+			</MSG_LOG>

@@ -1,0 +1,11 @@
+{
+  "strings": {
+    "hello": "Hello",
+    "world": "World",
+    "start_text": "'Woodenfish\n is starting...'",
+    "logo_text": "Wooden Fish",
+    "manual_mode_text": "Manual Mode",
+    "auto_mode_text": "Auto Mode",
+    "pause_resume_text": "Press to pause/resume"
+  }
+}

@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_test_mode_hopping_cfg: Input sed is NULL @evt_task_gle_test_mode_patch.c(45),ERROR" ID="0x8c2c016a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_test_mode_hopping_cfg: not support freq sel @evt_task_gle_test_mode_patch.c(49),ERROR" ID="0x8c2c018a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_test_mode_hopping_cfg:ble_sed_txphy_bw=0x%x, hopping_type is %d  @evt_task_gle_test_mode_patch.c(72),ERROR" ID="0x8c2c0242" />
+			</MSG_LOG>

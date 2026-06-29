@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="hfps_hf_directly_at_sent_func_set input NULL! @hfp_hf_ram.c(29),ERROR" ID="0xec4200ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BRSF][HFP_CODEC]BRSF_CodecNeg=%d @hfp_hf_ram.c(293),WARNING" ID="0xec42092b" />
+			</MSG_LOG>

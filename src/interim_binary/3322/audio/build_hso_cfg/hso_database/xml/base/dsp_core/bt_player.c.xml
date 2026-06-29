@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[hifi][dsp][bt_player start failed] aip is not used, aip: 0x%08X, toggle_valid: %d, scene: %d @bt_player.c(45),ERROR" ID="0x9816016a" />
+			</MSG_LOG>

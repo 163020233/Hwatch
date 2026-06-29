@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] report gain info proc err, malloc fail! @saf_gcp_client_hlp.c(39),ERROR" ID="0xea0a013a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] report gain info proc err, malloc fail! @saf_gcp_client_hlp.c(54),ERROR" ID="0xea0a01b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gcpc] cp rsp, data len err, data_len = %u @saf_gcp_client_hlp.c(66),ERROR" ID="0xea0a0212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] cp rsp, op check err! @saf_gcp_client_hlp.c(72),ERROR" ID="0xea0a0242" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] report gain info proc err, malloc fail! @saf_gcp_client_hlp.c(78),ERROR" ID="0xea0a0272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] inst id map is null @saf_gcp_client_hlp.c(150),INFO" ID="0xea0a04b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcpc] build gcs inst err, ret = %d @saf_gcp_client_hlp.c(194),ERROR" ID="0xea0a0612" />
+			</MSG_LOG>

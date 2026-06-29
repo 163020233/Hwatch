@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asmc] register client fail:0x%x @saf_at_asmc.c(210),ERROR" ID="0xe9760692" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asmc] unregister client fail:0x%x @saf_at_asmc.c(220),ERROR" ID="0xe97606e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asmc] discover fail:0x%x @saf_at_asmc.c(231),ERROR" ID="0xe976073a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] [asm] set codec string to data error! @saf_at_asmc.c(249),ERROR" ID="0xe97607ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] [asm] set codec string to data error! @saf_at_asmc.c(290),ERROR" ID="0xe9760912" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] [asm] set update bitrate string to data error! @saf_at_asmc.c(319),ERROR" ID="0xe97609fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] [asm] set config param string to data error! @saf_at_asmc.c(333),ERROR" ID="0xe9760a6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asmc] config stream fail:0x%x @saf_at_asmc.c(367),ERROR" ID="0xe9760b7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asmc] update bitrate fail:0x%x @saf_at_asmc.c(405),ERROR" ID="0xe9760caa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asmc] enable stream fail:0x%x @saf_at_asmc.c(419),ERROR" ID="0xe9760d1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asmc] start stream fail:0x%x @saf_at_asmc.c(432),ERROR" ID="0xe9760d82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asmc] stop stream fail:0x%x @saf_at_asmc.c(445),ERROR" ID="0xe9760dea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asmc] release stream fail:0x%x @saf_at_asmc.c(464),ERROR" ID="0xe9760e82" />
+			</MSG_LOG>

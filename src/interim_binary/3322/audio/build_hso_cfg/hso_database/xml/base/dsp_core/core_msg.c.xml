@@ -1,0 +1,63 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg = 0x%08X @core_msg.c(109),INFO" ID="0x9850036d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][audio] msg time out cnt: %u @core_msg.c(148),ERROR" ID="0x985004a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @core_msg.c(233),ERROR" ID="0x9850074a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @core_msg.c(256),ERROR" ID="0x98500802" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi]current msg: module: %u, cmd: %u, handle: 0x%08X @core_msg.c(300),ERROR" ID="0x98500962" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_osal_malloc Failed, Error Code: [0x%08X] @core_msg.c(303),ERROR" ID="0x9850097a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]rd_pos = %u @core_msg.c(310),ERROR" ID="0x985009b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]size = %u @core_msg.c(311),ERROR" ID="0x985009ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]rd_pos = %u @core_msg.c(320),ERROR" ID="0x98500a02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]size = %u @core_msg.c(321),ERROR" ID="0x98500a0a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi]msg buf: idx: %u, module: %u, cmd: %u, handle: 0x%08X @core_msg.c(329),ERROR" ID="0x98500a4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_size = %u @core_msg.c(354),ERROR" ID="0x98500b12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]read_pos = %u @core_msg.c(359),ERROR" ID="0x98500b3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]write_pos = %u @core_msg.c(360),ERROR" ID="0x98500b42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_size = %u @core_msg.c(361),ERROR" ID="0x98500b4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_size = %u @core_msg.c(398),ERROR" ID="0x98500c72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_crc = %u @core_msg.c(405),ERROR" ID="0x98500caa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_msg.c(448),INFO" ID="0x98500e05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_alloc Failed, Error Code: [0x%08X] @core_msg.c(454),ERROR" ID="0x98500e32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_attach Failed, Error Code: [0x%08X] @core_msg.c(460),ERROR" ID="0x98500e62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(468),INFO" ID="0x98500ea5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_msg.c(477),INFO" ID="0x98500eed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_get_id Failed, Error Code: [0x%08X] @core_msg.c(485),ERROR" ID="0x98500f2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_detach Failed, Error Code: [0x%08X] @core_msg.c(491),ERROR" ID="0x98500f5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_free Failed, Error Code: [0x%08X] @core_msg.c(497),ERROR" ID="0x98500f8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(505),INFO" ID="0x98500fcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_msg.c(514),INFO" ID="0x98501015" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_get_id Failed, Error Code: [0x%08X] @core_msg.c(518),ERROR" ID="0x98501032" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_attach Failed, Error Code: [0x%08X] @core_msg.c(524),ERROR" ID="0x98501062" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(530),INFO" ID="0x98501095" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_msg.c(539),INFO" ID="0x985010dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_get_id Failed, Error Code: [0x%08X] @core_msg.c(543),ERROR" ID="0x985010fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_shrb_detach Failed, Error Code: [0x%08X] @core_msg.c(549),ERROR" ID="0x9850112a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(556),INFO" ID="0x98501165" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_msg.c(564),INFO" ID="0x985011a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(567),INFO" ID="0x985011bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_init Failed, Error Code: [0x%08X] @core_msg.c(573),ERROR" ID="0x985011ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(580),INFO" ID="0x98501225" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_msg.c(588),INFO" ID="0x98501265" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(590),INFO" ID="0x98501275" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(595),INFO" ID="0x9850129d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_deinit Failed, Error Code: [0x%08X] @core_msg.c(601),ERROR" ID="0x985012ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(607),INFO" ID="0x985012fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_msg.c(617),INFO" ID="0x9850134d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_alloc Failed, Error Code: [0x%08X] @core_msg.c(628),ERROR" ID="0x985013a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_inst-&gt;qid.u32 = 0x%08X @core_msg.c(635),INFO" ID="0x985013dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_fifo_alloc_shrb Failed, Error Code: [0x%08X] @core_msg.c(640),ERROR" ID="0x98501402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_inst-&gt;shrb_buf.data_buf = 0x%08X @core_msg.c(644),INFO" ID="0x98501425" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_fifo_attach_shrb Failed, Error Code: [0x%08X] @core_msg.c(648),ERROR" ID="0x98501442" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_inst-&gt;shrb_buf.data_buf = 0x%08X @core_msg.c(652),INFO" ID="0x98501465" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(657),INFO" ID="0x9850148d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_msg.c(665),INFO" ID="0x985014cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_fifo_free_shrb Failed, Error Code: [0x%08X] @core_msg.c(670),ERROR" ID="0x985014f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_fifo_detach_shrb Failed, Error Code: [0x%08X] @core_msg.c(677),ERROR" ID="0x9850152a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_free Failed, Error Code: [0x%08X] @core_msg.c(687),ERROR" ID="0x9850157a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_msg.c(691),INFO" ID="0x9850159d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_fifo_init Failed, Error Code: [0x%08X] @core_msg.c(751),ERROR" ID="0x9850177a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_fifo_create Failed, Error Code: [0x%08X] @core_msg.c(762),ERROR" ID="0x985017d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_fifo_destroy Failed, Error Code: [0x%08X] @core_msg.c(783),ERROR" ID="0x9850187a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][msg_retry] trigger int again! @core_msg.c(867),ERROR" ID="0x98501b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][msg_retry] ipc error panic! @core_msg.c(875),ERROR" ID="0x98501b5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ret = 0x%08X @core_msg.c(917),ERROR" ID="0x98501caa" />
+			</MSG_LOG>

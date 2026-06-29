@@ -1,0 +1,26 @@
+#===============================================================================
+# @brief    cmake make file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+#===============================================================================
+add_subdirectory_if_exist(pm_dev)
+add_subdirectory_if_exist(pm_fsm)
+add_subdirectory_if_exist(pm_veto)
+add_subdirectory_if_exist(pm_sleep)
+add_subdirectory_if_exist(pm_dfx)
+add_subdirectory_if_exist(pm_core)
+add_subdirectory_if_exist(pm_dvfs)
+
+set(COMPONENT_NAME "pm")
+
+set(PUBLIC_HEADER
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+set(SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/pm_common.c
+)
+
+set(WHOLE_LINK
+    true
+)
+build_component()

@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="dm_classic_find_stored_link_key find %d repeated stored link keys! @dm_classic_key_mgr.c(149),WARNING" ID="0x8a2404ab" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="dm_classic_count_stored_link_key count %d stored link keys, excceeded maximum(%d)! @dm_classic_key_mgr.c(171),WARNING" ID="0x8a24055b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="dm_classic_read_stored_link_key_addr start from %d, already excceed stored number %d @dm_classic_key_mgr.c(190),WARNING" ID="0x8a2405f3" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="dm_classic_read_stored_link_key_addr try read %d from %d, excceed stored number %d @dm_classic_key_mgr.c(201),WARNING" ID="0x8a24064b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dm_classic_generate_oob_p192_public_key_done memcpy private key error! @dm_classic_key_mgr.c(393),ERROR" ID="0x8a240c4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dm_classic_generate_oob_p192_public_key_done memcpy public key X error! @dm_classic_key_mgr.c(401),ERROR" ID="0x8a240c8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dm_classic_generate_oob_p192_public_key_done memcpy public key Y error! @dm_classic_key_mgr.c(408),ERROR" ID="0x8a240cc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dm_classic_generate_oob_p256_public_key_done memcpy private key error! @dm_classic_key_mgr.c(423),ERROR" ID="0x8a240d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dm_classic_generate_oob_p256_public_key_done memcpy public key X error! @dm_classic_key_mgr.c(431),ERROR" ID="0x8a240d7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dm_classic_generate_oob_p256_public_key_done memcpy public key Y error! @dm_classic_key_mgr.c(438),ERROR" ID="0x8a240db2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dm_classic_generate_oob_p192_commitment_done memcpy error! @dm_classic_key_mgr.c(490),ERROR" ID="0x8a240f52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dm_classic_generate_oob_p256_commitment_done memcpy error! @dm_classic_key_mgr.c(507),ERROR" ID="0x8a240fda" />
+			</MSG_LOG>

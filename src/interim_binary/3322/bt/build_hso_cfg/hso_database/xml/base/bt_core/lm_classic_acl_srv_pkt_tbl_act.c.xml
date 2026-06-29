@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="lmp_classic_lmp_pkt_type_tbl_req_collision, accept peer ptt_req:%d @lm_classic_acl_srv_pkt_tbl_act.c(92),INFO" ID="0x8a3202e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][acl]hci_chg_pkt_tbl:acl_packet_type = 0x%x, param-&gt;pkt_type=0x%x @lm_classic_acl_srv_pkt_tbl_act.c(162),INFO" ID="0x8a320515" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][acl]hci_chg_pkt_tbl:acl_packet_type = 0x%x, param-&gt;pkt_type=0x%x @lm_classic_acl_srv_pkt_tbl_act.c(203),INFO" ID="0x8a32065d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]HCI_CONNECTION_PACKET_TYPE_CHANGED event-&gt;pkt_type = 0x%x @lm_classic_acl_srv_pkt_tbl_act.c(234),INFO" ID="0x8a320755" />
+			</MSG_LOG>

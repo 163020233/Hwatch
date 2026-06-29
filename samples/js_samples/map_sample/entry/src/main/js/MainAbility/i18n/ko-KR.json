@@ -1,0 +1,9 @@
+{
+  "strings": {
+    "hello": "안녕하세요",
+    "world": "세계",
+    "search_bar": "검색 표시줄",
+    "send": "보내기",
+    "placeholder": "검색 내용 입력"
+  }
+}

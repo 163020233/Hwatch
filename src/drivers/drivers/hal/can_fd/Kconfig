@@ -1,0 +1,38 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2022. All rights reserved.
+#===============================================================================
+config STANDARD_CAN_FILTER_NUM
+    int
+    prompt "Maximum number of standard CAN filter."
+    range 0 128
+    default 27
+    depends on CAN_USE_V1_DRIVER
+
+config EXTENDED_CAN_FILTER_NUM
+    int
+    prompt "Maximum number of extend CAN filter."
+    range 0 64
+    default 27
+    depends on CAN_USE_V1_DRIVER
+
+config CAN_TX_BUFFER_SIZE
+    int
+    prompt "Tx FIFO maximum size."
+    range 0 32
+    default 0
+    depends on CAN_USE_V1_DRIVER
+
+config CAN_RX_FIFO0_SIZE
+    int
+    prompt "Rx FIFO 0 maximum size."
+    range 0 64
+    default 0
+    depends on CAN_USE_V1_DRIVER
+
+config CAN_RX_FIFO1_SIZE
+    int
+    prompt "Rx FIFO 1 maximum size."
+    range 0 64
+    default 0
+    depends on CAN_USE_V1_DRIVER

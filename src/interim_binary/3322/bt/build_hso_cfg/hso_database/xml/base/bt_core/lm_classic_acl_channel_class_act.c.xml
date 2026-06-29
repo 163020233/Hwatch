@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_handle_chnl_class_req_act: role is invalid! @lm_classic_acl_channel_class_act.c(78),WARNING" ID="0x8a420273" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_handle_chnl_class_req_act: interval invalid! @lm_classic_acl_channel_class_act.c(90),WARNING" ID="0x8a4202d3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]lm_classic_acl_send_chnl_class:param nb_good_chnl = %d @lm_classic_acl_channel_class_act.c(173),INFO" ID="0x8a42056d" />
+			</MSG_LOG>

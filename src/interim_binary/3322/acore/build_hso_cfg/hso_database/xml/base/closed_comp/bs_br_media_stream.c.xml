@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="br a2dp error, result:0x%x a2dp_role:%d @bs_br_media_stream.c(130),ERROR" ID="0xee9a0412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_stream.c(139),ERROR" ID="0xee9a045a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media a2dp is connected, dev_id:%d @bs_br_media_stream.c(145),ERROR" ID="0xee9a048a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_stream.c(151),ERROR" ID="0xee9a04ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br a2dp error, result:0x%x a2dp_role:%d @bs_br_media_stream.c(177),ERROR" ID="0xee9a058a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_stream.c(186),ERROR" ID="0xee9a05d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media param error, dev_id:%d @bs_br_media_stream.c(192),ERROR" ID="0xee9a0602" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_stream.c(198),ERROR" ID="0xee9a0632" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media param error. @bs_br_media_stream.c(219),ERROR" ID="0xee9a06da" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br meida stream start error, result:0x%x a2dp_role:%d @bs_br_media_stream.c(231),ERROR" ID="0xee9a073a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_stream.c(240),ERROR" ID="0xee9a0782" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media param error, dev_id:%d @bs_br_media_stream.c(246),ERROR" ID="0xee9a07b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_stream.c(252),ERROR" ID="0xee9a07e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media param error. @bs_br_media_stream.c(273),ERROR" ID="0xee9a088a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br meida stream stop error, result:0x%x a2dp_role:%d @bs_br_media_stream.c(285),ERROR" ID="0xee9a08ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_stream.c(294),ERROR" ID="0xee9a0932" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media param error, dev_id:%d @bs_br_media_stream.c(300),ERROR" ID="0xee9a0962" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_stream.c(306),ERROR" ID="0xee9a0992" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media param error. @bs_br_media_stream.c(327),ERROR" ID="0xee9a0a3a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br meida stream stop error, result:0x%x a2dp_role:%d @bs_br_media_stream.c(343),ERROR" ID="0xee9a0aba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_stream.c(352),ERROR" ID="0xee9a0b02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media param error, dev_id:%d @bs_br_media_stream.c(358),ERROR" ID="0xee9a0b32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_stream.c(364),ERROR" ID="0xee9a0b62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media stream init done @bs_br_media_stream.c(381),ERROR" ID="0xee9a0bea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media stream deinit done @bs_br_media_stream.c(393),ERROR" ID="0xee9a0c4a" />
+			</MSG_LOG>

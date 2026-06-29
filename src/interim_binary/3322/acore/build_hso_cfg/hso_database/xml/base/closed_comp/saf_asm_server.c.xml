@@ -1,0 +1,94 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] ep removed, ep_id=%u dir=%u @saf_asm_server.c(163),INFO" ID="0xe9a2051d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] cp req, new cache err! conn_id = %u @saf_asm_server.c(179),ERROR" ID="0xe9a2059a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] cp req, memset_s err! conn_id = %u @saf_asm_server.c(184),ERROR" ID="0xe9a205c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] session req, data is null! conn_id = %u opcode = %u @saf_asm_server.c(203),ERROR" ID="0xe9a2065a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asms] session req, opcode not match! conn_id = %u cache_op = %u opcode = %u @saf_asm_server.c(209),ERROR" ID="0xe9a2068a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] confirm rsp, need confirm, ep = %u op = %u @saf_asm_server.c(265),INFO" ID="0xe9a2084d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] confirm rsp, formate err send rsp, ep = %u op = %u @saf_asm_server.c(272),INFO" ID="0xe9a20885" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] encode ep rsp error! @saf_asm_server.c(473),INFO" ID="0xe9a20ecd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] cp rsp, op: %u @saf_asm_server.c(492),INFO" ID="0xe9a20f65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] confirm rsp, malloc err! @saf_asm_server.c(497),ERROR" ID="0xe9a20f8a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asms] confirm rsp, notify err send rsp, ret = %u conn_id = %u op = %u @saf_asm_server.c(517),ERROR" ID="0xe9a2102a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] set ep config data err, configured bit wrong! @saf_asm_server.c(573),ERROR" ID="0xe9a211ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] new session ep, ep_id = %u @saf_asm_server.c(585),INFO" ID="0xe9a2124d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] check session ep, session ep not find! @saf_asm_server.c(599),ERROR" ID="0xe9a212ba" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asms] check session ep, state err! op=%u epid=%u state=%u @saf_asm_server.c(606),ERROR" ID="0xe9a212f2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asms] cp rsp, op: %u, ep_id: %u, err_code: %u @saf_asm_server.c(619),INFO" ID="0xe9a2135d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] send rsp err, malloc err! @saf_asm_server.c(624),ERROR" ID="0xe9a21382" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] send rsp err! ret=%u @saf_asm_server.c(633),ERROR" ID="0xe9a213ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] add ep property err! ret=%u @saf_asm_server.c(681),ERROR" ID="0xe9a2154a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] read req, schedule_down err! conn_id = %u @saf_asm_server.c(697),ERROR" ID="0xe9a215ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] cp req, schedule_down err! conn_id = %u @saf_asm_server.c(708),ERROR" ID="0xe9a21622" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] start asm, add asm service err! ret=%u @saf_asm_server.c(722),ERROR" ID="0xe9a21692" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] start asm, add cp method err! ret=%u @saf_asm_server.c(728),ERROR" ID="0xe9a216c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] start asm, add change evt err! ret=%u @saf_asm_server.c(734),ERROR" ID="0xe9a216f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] start asm, add ep property err! ret=%u @saf_asm_server.c(742),ERROR" ID="0xe9a21732" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] start asm, register service callbacks err! ret=%u @saf_asm_server.c(754),ERROR" ID="0xe9a21792" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] start asm, start service err! ret=%u @saf_asm_server.c(761),ERROR" ID="0xe9a217ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] server already register! @saf_asm_server.c(773),ERROR" ID="0xe9a2182a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] server register cbks err! ret = %u @saf_asm_server.c(779),ERROR" ID="0xe9a2185a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] server id map init failed! ret = %u @saf_asm_server.c(785),ERROR" ID="0xe9a2188a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] server register failed! ret = %u @saf_asm_server.c(791),ERROR" ID="0xe9a218ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] server registered! @saf_asm_server.c(797),INFO" ID="0xe9a218ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] server not register! @saf_asm_server.c(804),ERROR" ID="0xe9a21922" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] server unregistered! @saf_asm_server.c(811),INFO" ID="0xe9a2195d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] create ep, param is null! @saf_asm_server.c(817),ERROR" ID="0xe9a2198a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asms] create ep, param err! attribute_id=%u direction=%u port=%u @saf_asm_server.c(825),ERROR" ID="0xe9a219ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] create ep, server state err! state=%u @saf_asm_server.c(831),ERROR" ID="0xe9a219fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] create ep, alloc ep id failed! @saf_asm_server.c(837),ERROR" ID="0xe9a21a2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] create ep, new ep failed! @saf_asm_server.c(842),ERROR" ID="0xe9a21a52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] start, server state err! state=%u @saf_asm_server.c(858),ERROR" ID="0xe9a21ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] start, server ep list is empty! @saf_asm_server.c(862),ERROR" ID="0xe9a21af2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] start, start sam service err! ret=%u @saf_asm_server.c(868),ERROR" ID="0xe9a21b22" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] response, get req err! op = %u ep_inst_id = %u @saf_asm_server.c(899),ERROR" ID="0xe9a21c1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] set codec data, memcpy_s codec data err @saf_asm_server.c(945),ERROR" ID="0xe9a21d8a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] user rsp, op: %u ep_num: %u @saf_asm_server.c(961),ERROR" ID="0xe9a21e0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] config response, malloc data err! @saf_asm_server.c(988),ERROR" ID="0xe9a21ee2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] config response fail, ret: 0x%0x @saf_asm_server.c(997),ERROR" ID="0xe9a21f2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] config response, malloc err! @saf_asm_server.c(1069),ERROR" ID="0xe9a2216a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] config response, malloc err! @saf_asm_server.c(1083),ERROR" ID="0xe9a221da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] set codec data fail, ret: 0x%0x @saf_asm_server.c(1167),ERROR" ID="0xe9a2247a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] evt notify, malloc err! opcode=%u @saf_asm_server.c(1181),ERROR" ID="0xe9a224ea" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asms] evt notify, notify err, ret = %u conn_id = %u evt = %u @saf_asm_server.c(1195),ERROR" ID="0xe9a2255a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] evt notify, malloc err! opcode=%u @saf_asm_server.c(1263),ERROR" ID="0xe9a2277a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asms] evt notify, notify err, ret = %u conn_id = %u evt = %u @saf_asm_server.c(1279),ERROR" ID="0xe9a227fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] update bitrate, param err! @saf_asm_server.c(1334),ERROR" ID="0xe9a229b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms]read ep rsp err, err:0x%x @saf_asm_server.c(1361),ERROR" ID="0xe9a22a8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms]read ep err, status:0x%x @saf_asm_server.c(1409),ERROR" ID="0xe9a22c0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] read ep, ep not find! handle = %u @saf_asm_server.c(1415),ERROR" ID="0xe9a22c3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] read ep, session state err! conn_id = %u @saf_asm_server.c(1421),ERROR" ID="0xe9a22c6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms]read ep, session ep err! conn_id:%u @saf_asm_server.c(1426),ERROR" ID="0xe9a22c92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] read ep, malloc err! handle = %u @saf_asm_server.c(1436),ERROR" ID="0xe9a22ce2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] cp req, num_eps err! num_eps = %u @saf_asm_server.c(1453),ERROR" ID="0xe9a22d6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] cp req, op err! op = %u @saf_asm_server.c(1458),ERROR" ID="0xe9a22d92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] config req, config step err! @saf_asm_server.c(1468),ERROR" ID="0xe9a22de2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] config req, config step err! @saf_asm_server.c(1477),ERROR" ID="0xe9a22e2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] config req, config step err! @saf_asm_server.c(1485),ERROR" ID="0xe9a22e6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] decode config data, len=%u @saf_asm_server.c(1497),INFO" ID="0xe9a22ecd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] decode config data err, len too small! %u @saf_asm_server.c(1500),ERROR" ID="0xe9a22ee2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] decode config data err, type=%u err=%u @saf_asm_server.c(1511),ERROR" ID="0xe9a22f3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] config req, data too small! len= %u @saf_asm_server.c(1525),ERROR" ID="0xe9a22faa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] config req, data too small! ep_id=%u len=%u @saf_asm_server.c(1532),ERROR" ID="0xe9a22fe2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] config req, ep null! ep_id = %u @saf_asm_server.c(1539),ERROR" ID="0xe9a2301a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] config req, new ep err! ep_id = %u @saf_asm_server.c(1544),ERROR" ID="0xe9a23042" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] config req,state err! epid = %u state = %u @saf_asm_server.c(1549),ERROR" ID="0xe9a2306a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] config req, new err! ep_id = %u @saf_asm_server.c(1554),ERROR" ID="0xe9a23092" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] release req, data too small! len= %u @saf_asm_server.c(1582),ERROR" ID="0xe9a23172" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] release req, ep null! ep_id = %u @saf_asm_server.c(1589),ERROR" ID="0xe9a231aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] release req, new ep err! ep_id = %u @saf_asm_server.c(1595),ERROR" ID="0xe9a231da" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] release req,state err! epid = %u state = %u @saf_asm_server.c(1601),ERROR" ID="0xe9a2320a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] release req, new err! ep_id = %u @saf_asm_server.c(1609),ERROR" ID="0xe9a2324a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] update bitrate req, data too small! len= %u @saf_asm_server.c(1626),ERROR" ID="0xe9a232d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] update bitrate req, ep null! ep_id = %u @saf_asm_server.c(1634),ERROR" ID="0xe9a23312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] update bitrate req, new ep err! ep_id = %u @saf_asm_server.c(1640),ERROR" ID="0xe9a23342" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] update bitrate req,state err! epid = %u state = %u @saf_asm_server.c(1646),ERROR" ID="0xe9a23372" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] update bitrate req, new err! ep_id = %u @saf_asm_server.c(1654),ERROR" ID="0xe9a233b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asms] update bitrate req, memcpy_s bitrate data err @saf_asm_server.c(1661),ERROR" ID="0xe9a233ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] enable req, ep not find! ep_id = %u @saf_asm_server.c(1688),ERROR" ID="0xe9a234c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] cp req, other op is processing! conn_id = %u @saf_asm_server.c(1706),ERROR" ID="0xe9a23552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] cp req, data too small! len = %u @saf_asm_server.c(1717),ERROR" ID="0xe9a235aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asms] cp req, op: %u, ep_num: %u @saf_asm_server.c(1730),INFO" ID="0xe9a23615" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] cp req, ep req too small! len= %u @saf_asm_server.c(1747),ERROR" ID="0xe9a2369a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asms] ep req, op: %u, ep_id: %u ret: 0x%X @saf_asm_server.c(1755),INFO" ID="0xe9a236dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asms] confirm config, config data is null! ep_id = %u @saf_asm_server.c(1773),ERROR" ID="0xe9a2376a" />
+			</MSG_LOG>

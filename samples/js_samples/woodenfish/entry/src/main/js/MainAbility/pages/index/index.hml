@@ -1,0 +1,5 @@
+<div class="container" on:swipe="swipeExit">
+    <text class="title">
+        {{ $t('strings.start_text') }}
+    </text>
+</div>

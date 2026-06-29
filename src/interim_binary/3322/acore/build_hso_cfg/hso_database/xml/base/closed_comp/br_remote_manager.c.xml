@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BS_BR_RMT_MGR] reference count, dev node is NULL @br_remote_manager.c(165),INFO" ID="0xea50052d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_RMT_MGR] dereference error, ref count is zero, dev id %d @br_remote_manager.c(174),INFO" ID="0xea500575" />
+			</MSG_LOG>

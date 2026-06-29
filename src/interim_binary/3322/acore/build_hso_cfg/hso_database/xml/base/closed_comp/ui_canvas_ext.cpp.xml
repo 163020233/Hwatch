@@ -1,0 +1,23 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="Already beginned a path without setting path data. @ui_canvas_ext.cpp(44),ERROR" ID="0xcad60162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Previous path has been initialized but has not called DrawPath. @ui_canvas_ext.cpp(48),ERROR" ID="0xcad60182" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="cmd or data is nullptr. @ui_canvas_ext.cpp(66),WARNING" ID="0xcad60213" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Need to call BeginPath prior to calling this method. @ui_canvas_ext.cpp(71),ERROR" ID="0xcad6023a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc buffer for path failed. @ui_canvas_ext.cpp(77),ERROR" ID="0xcad6026a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy path data failed. @ui_canvas_ext.cpp(84),ERROR" ID="0xcad602a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="can only set matrix after beginning any path. @ui_canvas_ext.cpp(96),ERROR" ID="0xcad60302" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Index out of range. @ui_canvas_ext.cpp(104),ERROR" ID="0xcad60342" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="invalid parameters points(%p), pointNum(%u). @ui_canvas_ext.cpp(149),ERROR" ID="0xcad604aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="invalid parameters points(%p), pointNum(%u). @ui_canvas_ext.cpp(169),ERROR" ID="0xcad6054a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Image is invalid! @ui_canvas_ext.cpp(277),ERROR" ID="0xcad608aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="cache is invalid! @ui_canvas_ext.cpp(297),ERROR" ID="0xcad6094a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="realpath fail:  %s @ui_canvas_ext.cpp(324),ERROR" ID="0xcad60a22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new svgdata obj failed @ui_canvas_ext.cpp(339),ERROR" ID="0xcad60a9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="OverlayOpacity Failed!!! @ui_canvas_ext.cpp(367),ERROR" ID="0xcad60b7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="can only set matrix after beginning any path. @ui_canvas_ext.cpp(454),ERROR" ID="0xcad60e32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="index error @ui_canvas_ext.cpp(458),ERROR" ID="0xcad60e52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc fail. @ui_canvas_ext.cpp(512),ERROR" ID="0xcad61002" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read data fail. @ui_canvas_ext.cpp(516),ERROR" ID="0xcad61022" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc path fail. @ui_canvas_ext.cpp(537),ERROR" ID="0xcad610ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s path fail. @ui_canvas_ext.cpp(542),ERROR" ID="0xcad610f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="open %s fail @ui_canvas_ext.cpp(559),ERROR" ID="0xcad6117a" />
+			</MSG_LOG>

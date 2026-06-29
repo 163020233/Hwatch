@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_get_default_attr Failed, Error Code: [0x%08X] @core_msg_track.c(42),ERROR" ID="0x98580152" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_create Failed, Error Code: [0x%08X] @core_msg_track.c(59),ERROR" ID="0x985801da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_destroy Failed, Error Code: [0x%08X] @core_msg_track.c(73),ERROR" ID="0x9858024a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_get_state Failed, Error Code: [0x%08X] @core_msg_track.c(88),ERROR" ID="0x985802c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_set_state Failed, Error Code: [0x%08X] @core_msg_track.c(105),ERROR" ID="0x9858034a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_get_attr Failed, Error Code: [0x%08X] @core_msg_track.c(120),ERROR" ID="0x985803c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_set_attr Failed, Error Code: [0x%08X] @core_msg_track.c(135),ERROR" ID="0x9858043a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_get_volume Failed, Error Code: [0x%08X] @core_msg_track.c(150),ERROR" ID="0x985804b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_set_volume Failed, Error Code: [0x%08X] @core_msg_track.c(167),ERROR" ID="0x9858053a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_get_mute Failed, Error Code: [0x%08X] @core_msg_track.c(182),ERROR" ID="0x985805b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_set_mute Failed, Error Code: [0x%08X] @core_msg_track.c(204),ERROR" ID="0x98580662" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_set_bypass Failed, Error Code: [0x%08X] @core_msg_track.c(221),ERROR" ID="0x985806ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_get_delay Failed, Error Code: [0x%08X] @core_msg_track.c(236),ERROR" ID="0x98580762" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_open Failed, Error Code: [0x%08X] @core_msg_track.c(253),ERROR" ID="0x985807ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_get_energy Failed, Error Code: [0x%08X] @core_msg_track.c(278),ERROR" ID="0x985808b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_get_speed Failed, Error Code: [0x%08X] @core_msg_track.c(293),ERROR" ID="0x9858092a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_track_set_speed Failed, Error Code: [0x%08X] @core_msg_track.c(310),ERROR" ID="0x985809b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg_data-&gt;cmd = %u @core_msg_track.c(343),ERROR" ID="0x98580aba" />
+			</MSG_LOG>

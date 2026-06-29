@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMG]img link supervision timeout,img_sed_idx:%d: syncp %d, cur_ts %d @evt_task_gle_img_sch.c(80),WARNING" ID="0x8c0c0283" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][IMG]img link supervision timeout,img_sed_idx:%d, imb_sed_idx %d, syncp %d, cur_ts %d @evt_task_gle_img_sch.c(98),WARNING" ID="0x8c0c0313" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][img]evt_task_img_set_alarm fail timestamp: 0x%x cur_gle_clk: 0x%x @evt_task_gle_img_sch.c(182),ERROR" ID="0x8c0c05b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][img]evt_task_img_set_alarm timestamp: 0x%x cur_gle_clk: 0x%x @evt_task_gle_img_sch.c(186),INFO" ID="0x8c0c05d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][img]img_sed_idx %d, imb active 0, sched stop @evt_task_gle_img_sch.c(196),INFO" ID="0x8c0c0625" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][img]img_sed_idx %d, imb active 0, sched stop @evt_task_gle_img_sch.c(214),INFO" ID="0x8c0c06b5" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[L2][IMG]img pldcnt %d, sed nesen %d, sn %d, txmin %d, rxmin %d @evt_task_gle_img_sch.c(246),DBG" ID="0x8c0c07b6" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[L2][IMG]imb pldcnt %d, sed nesen %d, sn %d, txmin %d, rxmin %d @evt_task_gle_img_sch.c(258),DBG" ID="0x8c0c0816" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[L2][IMG]img_sched_next sed_idx %d:evt_cnt %d, timestamp %d, fcnt %d, cur_ts: %d, sync_win %d @evt_task_gle_img_sch.c(377),INFO" ID="0x8c0c0bcd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][IMG]evt_task_imb_trx_make_attempt, evt_cnt %d, sed_pld_cnt %u, max_pld_cnt %u, trxdir %d @evt_task_gle_img_sch.c(450),INFO" ID="0x8c0c0e15" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]pld_cnt_config imb ptr null, idx %d, sed_idx %d @evt_task_gle_img_sch.c(509),ERROR" ID="0x8c0c0fea" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][IMG]evt_task_img_calc_ts, ble_rem_subevtnum %d, cur_gle_clk %d, img_es_elt-&gt;timestamp %d, ts_diff_slot %d @evt_task_gle_img_sch.c(584),INFO" ID="0x8c0c1245" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]evt_task_img_calc_ts, *sub_evt_idx %d is not allowed, p_env_img-&gt;nse %d @evt_task_gle_img_sch.c(588),WARNING" ID="0x8c0c1263" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]evt_task_img_update_ts, timestamp %d, sub_evt_idx %d @evt_task_gle_img_sch.c(607),INFO" ID="0x8c0c12fd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_IMG]evt_task_img_reinsert, status %d, sub_evt_idx %d, cur_gle_clk %x, timestamp %x @evt_task_gle_img_sch.c(627),INFO" ID="0x8c0c139d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]evt_task_img_reinsert, failed. sub_evt_idx %d, cur_priority %d @evt_task_gle_img_sch.c(656),INFO" ID="0x8c0c1485" />
+			</MSG_LOG>

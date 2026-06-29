@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_event.c(19),INFO" ID="0xa034009d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_event.c(24),INFO" ID="0xa03400c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="EventInit fail! ret=%#x. @osal_event.c(31),INFO" ID="0xa03400fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="param invalid! mask=%#x. @osal_event.c(39),INFO" ID="0xa034013d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="EventWrite fail! ret=%#x. @osal_event.c(44),INFO" ID="0xa0340165" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="param invalid! mask=%#x. @osal_event.c(53),INFO" ID="0xa03401ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="EventRead fail! ret=%#x. mask=%#x. mode=%#x @osal_event.c(59),INFO" ID="0xa03401dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_event.c(67),INFO" ID="0xa034021d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="EventClear fail! ret=%#x. @osal_event.c(72),INFO" ID="0xa0340245" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_event.c(81),INFO" ID="0xa034028d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="EventDestroy fail! ret=%#x. @osal_event.c(88),INFO" ID="0xa03402c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_event.c(97),INFO" ID="0xa034030d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="EventPoll fail! ret=%#x. @osal_event.c(102),INFO" ID="0xa0340335" />
+			</MSG_LOG>

@@ -1,0 +1,21 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+kernel_module("init") {
+    include_dirs = [
+        "$LITEOSTOPDIR/kernel_lite/extended/dynload/include",
+        "$LITEOSTOPDIR/kernel_lite/extended/include",
+    ]
+
+    sources = []
+    if (defined(LOSCFG_KERNEL_MIN)) {
+        sources += ["los_init.c"]
+    }
+    if (defined(LOSCFG_LASLR) && !defined(LOSCFG_LASLR_EXTERNAL_RELOC)) {
+        sources += ["los_aslr.c"]
+    }
+}

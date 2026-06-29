@@ -1,0 +1,48 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="bt period adv terminate sync: %d @sapi_ble_gap.c(67),ERROR" ID="0xedce021a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt period adv create sync: %d @sapi_ble_gap.c(82),ERROR" ID="0xedce0292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt set period advertising: %d @sapi_ble_gap.c(99),ERROR" ID="0xedce031a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt dis period advertising: %d @sapi_ble_gap.c(113),ERROR" ID="0xedce038a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt set period adv list: %d @sapi_ble_gap.c(128),ERROR" ID="0xedce0402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble remove ble white list fail: %d @sapi_ble_gap.c(220),ERROR" ID="0xedce06e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general get white list white_addr_count = %d @sapi_ble_gap.c(236),INFO" ID="0xedce0765" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble general get white list: 0x%x:**:**:**:0x%x:0x%x @sapi_ble_gap.c(242),INFO" ID="0xedce0795" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BCore] ble general malloc fail @sapi_ble_gap.c(248),ERROR" ID="0xedce07c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BCore] ble general get white list result memcpy fail @sapi_ble_gap.c(255),ERROR" ID="0xedce07fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt general connect white list memcpy_s fail @sapi_ble_gap.c(277),ERROR" ID="0xedce08aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gap create connection whitelist start @sapi_ble_gap.c(284),INFO" ID="0xedce08e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt general connect white list fail ret=%d @sapi_ble_gap.c(301),ERROR" ID="0xedce096a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt mpc set resolve addr: %d @sapi_ble_gap.c(311),ERROR" ID="0xedce09ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt mpc set local addr = %d @sapi_ble_gap.c(324),ERROR" ID="0xedce0a22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt mpc get local addr failed @sapi_ble_gap.c(335),ERROR" ID="0xedce0a7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt mpc set local name = %d @sapi_ble_gap.c(347),ERROR" ID="0xedce0ada" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt mpc set extern adv: %d @sapi_ble_gap.c(624),ERROR" ID="0xedce1382" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt mpc dis extern scan: %d @sapi_ble_gap.c(683),ERROR" ID="0xedce155a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble general set phy hdl:%x all:%x rx:%x tx:%x. @sapi_ble_gap.c(701),INFO" ID="0xedce15ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] ble general set len memcpy fail. @sapi_ble_gap.c(729),INFO" ID="0xedce16cd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble general set len hdl:%x max_oct:%x max_tm:%x @sapi_ble_gap.c(733),INFO" ID="0xedce16ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] ble find acl link fail. @sapi_ble_gap.c(738),INFO" ID="0xedce1715" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt set scan filter data memcpy fail data len: %d @sapi_ble_gap.c(808),ERROR" ID="0xedce1942" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt set scan filter data param is all 0 @sapi_ble_gap.c(814),ERROR" ID="0xedce1972" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi ble set extern scan: %d @sapi_ble_gap.c(840),ERROR" ID="0xedce1a42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble general : ble general remove smp key new fail %d @sapi_ble_gap.c(869),ERROR" ID="0xedce1b2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : ble general remove smp key mamcpy fail @sapi_ble_gap.c(874),ERROR" ID="0xedce1b52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[error] sapi ble read rssi param error  @sapi_ble_gap.c(913),ERROR" ID="0xedce1c8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : ble general connect memcpy fail @sapi_ble_gap.c(942),ERROR" ID="0xedce1d72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general : ble general disconnect, memcpy fail @sapi_ble_gap.c(966),ERROR" ID="0xedce1e32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[error] sapi ble set sec param error  @sapi_ble_gap.c(981),ERROR" ID="0xedce1eaa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble general set sec params bondable &amp; io_capability 0x%02x%02x @sapi_ble_gap.c(991),INFO" ID="0xedce1efd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general set sec params set bondable failed @sapi_ble_gap.c(996),INFO" ID="0xedce1f25" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general set sec params set io capability failed @sapi_ble_gap.c(1003),INFO" ID="0xedce1f5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble set privacy, can use privacy %d @sapi_ble_gap.c(1015),INFO" ID="0xedce1fbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble general set sec params failed @sapi_ble_gap.c(1017),INFO" ID="0xedce1fcd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble general set sec params ok! g_config_smp_lesc = %u, g_config_smp_mode = %u @sapi_ble_gap.c(1021),INFO" ID="0xedce1fed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[error] sapi set user passkey tk error  @sapi_ble_gap.c(1028),ERROR" ID="0xedce2022" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[error] sapi generate local oob data error  @sapi_ble_gap.c(1044),ERROR" ID="0xedce20a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]gap le set oobtk value memcpy failed @sapi_ble_gap.c(1091),ERROR" ID="0xedce221a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[error] sapi set remote oob data error  @sapi_ble_gap.c(1111),ERROR" ID="0xedce22ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BLE]switch_start cbk result is %u @sapi_ble_gap.c(1155),INFO" ID="0xedce241d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BLE]switch param_set cbk result is %u @sapi_ble_gap.c(1166),INFO" ID="0xedce2475" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BLE]gap_ble_set_channel_scan_switch_cbk cbk result is %u @sapi_ble_gap.c(1211),INFO" ID="0xedce25dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BLE]sapi_ble_set_channel_scan_switch input NULL! @sapi_ble_gap.c(1217),INFO" ID="0xedce260d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BLE]sapi_ble_set_channel_scan_switch switch is %u, period is %u @sapi_ble_gap.c(1221),INFO" ID="0xedce262d" />
+			</MSG_LOG>

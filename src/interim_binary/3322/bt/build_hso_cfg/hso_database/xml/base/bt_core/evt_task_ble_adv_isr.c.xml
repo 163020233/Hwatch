@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]evt_task_ble_adv_end_isr_rx_handle:sed_id(%d)ble_aclrxdesccnt(%d)rx_counter(%d) @evt_task_ble_adv_isr.c(48),WARNING" ID="0x88e40183" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]evt_task_ble_adv_end_isr_rx_handle rx remained:sed_id(%d)ble_aclrxdesccnt(%d)rx_counter(%d) @evt_task_ble_adv_isr.c(56),WARNING" ID="0x88e401c3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv]evt_task_ble_adv_end_isr_rx_handle: receive a scan req @evt_task_ble_adv_isr.c(67),INFO" ID="0x88e4021d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv]evt_task_ble_adv_clear_mac_flag, adv_txpd is NULL! @evt_task_ble_adv_isr.c(85),WARNING" ID="0x88e402ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv]evt_task_ble_adv_clear_mac_flag, scanrsp_txpd is NULL! @evt_task_ble_adv_isr.c(97),WARNING" ID="0x88e4030b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][adv]evt_task_ble_adv_recv_isr: receive a conn req, req_rx_type(%d) @evt_task_ble_adv_isr.c(129),INFO" ID="0x88e4040d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv]evt_task_ble_adv_recv_isr: aux_con_req with same addr, abort aux_con_rsp tx @evt_task_ble_adv_isr.c(141),INFO" ID="0x88e4046d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][adv]evt_task_ble_adv_recv_isr: rxtype err : %d @evt_task_ble_adv_isr.c(145),WARNING" ID="0x88e4048b" />
+			</MSG_LOG>

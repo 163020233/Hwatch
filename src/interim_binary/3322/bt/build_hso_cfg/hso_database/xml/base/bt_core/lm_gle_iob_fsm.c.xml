@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_iob_fsm_create_srv fsm_id(0x%x) @lm_gle_iob_fsm.c(161),INFO" ID="0x8854050d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_iob_fsm_delete_srv srv_fsm_id=0x%x @lm_gle_iob_fsm.c(196),INFO" ID="0x88540625" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_iob_fsm_delete_srv srv_fsm_id=0x%x @lm_gle_iob_fsm.c(299),INFO" ID="0x8854095d" />
+			</MSG_LOG>

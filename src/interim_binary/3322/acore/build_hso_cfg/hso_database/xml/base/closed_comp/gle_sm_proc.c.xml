@@ -1,0 +1,124 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] new sm sdu failed @gle_sm_proc.c(68),ERROR" ID="0xed4c0222" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] new sm sdu failed @gle_sm_proc.c(76),ERROR" ID="0xed4c0262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] new sm packet failed @gle_sm_proc.c(95),ERROR" ID="0xed4c02fa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[GLE SM] algorithm negotiate: %d %d %d %d @gle_sm_proc.c(164),INFO" ID="0xed4c0525" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Warning]:send sle pair msg not support! @gle_sm_proc.c(283),INFO" ID="0xed4c08dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] gle sm cmd fail pdu send malloc buff fail. @gle_sm_proc.c(291),ERROR" ID="0xed4c091a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] fail pdu send, reason: 0x%02x. @gle_sm_proc.c(295),INFO" ID="0xed4c093d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] recv fail pdu, reason: 0x%02x. @gle_sm_proc.c(304),INFO" ID="0xed4c0985" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pair fail disconnect malloc fail @gle_sm_proc.c(327),ERROR" ID="0xed4c0a3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] pair failed,reason:0x%02x. @gle_sm_proc.c(344),INFO" ID="0xed4c0ac5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm start pairing malloc buff fail. @gle_sm_proc.c(352),ERROR" ID="0xed4c0b02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm start pairing mem copy failed. @gle_sm_proc.c(358),ERROR" ID="0xed4c0b32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm timer link restart. @gle_sm_proc.c(361),INFO" ID="0xed4c0b4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] sm pair fail, error code:0x%x @gle_sm_proc.c(369),ERROR" ID="0xed4c0b8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] fail pdu send, fail_code: 0x%02x. @gle_sm_proc.c(375),INFO" ID="0xed4c0bbd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] pairing start, role: 0x%x. @gle_sm_proc.c(386),INFO" ID="0xed4c0c15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm start pairing. @gle_sm_proc.c(401),INFO" ID="0xed4c0c8d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE SM] sapi start pairing failed, cannot find link, addr: %02x:%02x:**:**:**:%02x. @gle_sm_proc.c(418),ERROR" ID="0xed4c0d12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] logic link has not been established. @gle_sm_proc.c(421),WARNING" ID="0xed4c0d2b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] sm link has been encrypted, handle: 0x%04x. @gle_sm_proc.c(439),WARNING" ID="0xed4c0dbb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] sm link invalid status:%x. @gle_sm_proc.c(442),ERROR" ID="0xed4c0dd2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE SM] io_ability: %u, oob_flag %u, psk_flag: %u @gle_sm_proc.c(471),INFO" ID="0xed4c0ebd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing request. @gle_sm_proc.c(477),INFO" ID="0xed4c0eed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing request malloc buff fail. @gle_sm_proc.c(480),ERROR" ID="0xed4c0f02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing response. @gle_sm_proc.c(494),INFO" ID="0xed4c0f75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing response malloc buff fail. @gle_sm_proc.c(497),ERROR" ID="0xed4c0f8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] sm pairing confirm, authentication method: %d. @gle_sm_proc.c(511),INFO" ID="0xed4c0ffd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing confirm malloc buff fail. @gle_sm_proc.c(514),ERROR" ID="0xed4c1012" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] pairing confirm memcpy fail. @gle_sm_proc.c(525),ERROR" ID="0xed4c106a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing initial information. @gle_sm_proc.c(538),INFO" ID="0xed4c10d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm pairing initial information malloc buff fail. @gle_sm_proc.c(541),ERROR" ID="0xed4c10ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] pairing initial information memcpy fail. @gle_sm_proc.c(548),ERROR" ID="0xed4c1122" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] pairing start recv, link status[0x%x] ignore pair msg  @gle_sm_proc.c(569),INFO" ID="0xed4c11cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] gle sm set pair request fail, get sm link null @gle_sm_proc.c(596),ERROR" ID="0xed4c12a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] gle set pair request result fail, sm_link wait: 0x%x @gle_sm_proc.c(601),ERROR" ID="0xed4c12ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] gle set pair request result, user confirm: 0x%x @gle_sm_proc.c(605),INFO" ID="0xed4c12ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] pairing request recv fail, input NULL. @gle_sm_proc.c(620),ERROR" ID="0xed4c1362" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] pairing request recv fail, ret: %#x. @gle_sm_proc.c(634),ERROR" ID="0xed4c13d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] gle sm pairing request, sm_link wait: 0x%x @gle_sm_proc.c(640),ERROR" ID="0xed4c1402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] pairing response recv fail, reason: 0x%x @gle_sm_proc.c(669),WARNING" ID="0xed4c14eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM]  pairing_cfm_recv public check error  @gle_sm_proc.c(688),WARNING" ID="0xed4c1583" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] pairing confirm recv fail, result: 0x%x. @gle_sm_proc.c(702),WARNING" ID="0xed4c15f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] pairing confirm recv memcpy fail. @gle_sm_proc.c(712),ERROR" ID="0xed4c1642" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM]  pairing_init_info_recv public check error  @gle_sm_proc.c(728),WARNING" ID="0xed4c16c3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] pairing initial information recv memcpy fail. @gle_sm_proc.c(735),ERROR" ID="0xed4c16fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] link key general fail, errcode: 0x%x @gle_sm_proc.c(802),ERROR" ID="0xed4c1912" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] link key general malloc buff fail. @gle_sm_proc.c(814),ERROR" ID="0xed4c1972" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] DHKey confirm code general fail, errcode: 0x%x @gle_sm_proc.c(821),ERROR" ID="0xed4c19aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] gle sm timer link restart. @gle_sm_proc.c(826),INFO" ID="0xed4c19d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] authentication sdu new failed. @gle_sm_proc.c(841),ERROR" ID="0xed4c1a4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] authentication pdu send memcpy failed @gle_sm_proc.c(863),ERROR" ID="0xed4c1afa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] authentication pdu send, opcode 0x%04x. @gle_sm_proc.c(871),INFO" ID="0xed4c1b3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm timer link restart. @gle_sm_proc.c(1017),INFO" ID="0xed4c1fcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm auth by passkey fail,g node mem alloc fail @gle_sm_proc.c(1044),INFO" ID="0xed4c20a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey generate confirm code fail. @gle_sm_proc.c(1058),ERROR" ID="0xed4c2112" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm g node send confirm code ra fail. @gle_sm_proc.c(1066),ERROR" ID="0xed4c2152" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm timer link restart. @gle_sm_proc.c(1073),INFO" ID="0xed4c218d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey parse cfm_code rb fail: input sm_link NULL! @gle_sm_proc.c(1091),ERROR" ID="0xed4c221a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey parse cfm_code rb fail: input recv NULL! @gle_sm_proc.c(1095),ERROR" ID="0xed4c223a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey parse cfm code rb memcpy fail. @gle_sm_proc.c(1106),ERROR" ID="0xed4c2292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle sm passkey parse cfm code rb auth len: %d. @gle_sm_proc.c(1115),ERROR" ID="0xed4c22da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey generate confirm code fail. @gle_sm_proc.c(1122),ERROR" ID="0xed4c2312" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey parse cfm code rb memcmp fail. @gle_sm_proc.c(1129),ERROR" ID="0xed4c234a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm timer link restart. @gle_sm_proc.c(1170),INFO" ID="0xed4c2495" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM]:gle sm T node mem alloc fail. @gle_sm_proc.c(1195),ERROR" ID="0xed4c255a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM]:T node generate confirm code fail:%u. @gle_sm_proc.c(1208),ERROR" ID="0xed4c25c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm timer link restart. @gle_sm_proc.c(1212),INFO" ID="0xed4c25e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="T Node alloc cfm failed. @gle_sm_proc.c(1231),ERROR" ID="0xed4c267a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="T Node save G Node cfm code failed. @gle_sm_proc.c(1236),ERROR" ID="0xed4c26a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle_sm_generate_confirm_code failed, 0x%x. @gle_sm_proc.c(1254),ERROR" ID="0xed4c2732" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle_sm_generate_confirm_code failed, 0x%x. @gle_sm_proc.c(1260),ERROR" ID="0xed4c2762" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_sm_generate_confirm_code sm_link-&gt;g_node.confirm null. @gle_sm_proc.c(1264),ERROR" ID="0xed4c2782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_sm_generate_confirm_code memcmp failed. @gle_sm_proc.c(1270),ERROR" ID="0xed4c27b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_sm_t_node_send_confirm_code_rb failed. @gle_sm_proc.c(1276),ERROR" ID="0xed4c27e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey parse cfm code ra memcpy failed. @gle_sm_proc.c(1299),ERROR" ID="0xed4c289a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="T Node io ability:%u. @gle_sm_proc.c(1305),ERROR" ID="0xed4c28ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle sm passkey parse cfm code ra failed, auth_len: %d. @gle_sm_proc.c(1318),ERROR" ID="0xed4c2932" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey generate confirm code G node failed. @gle_sm_proc.c(1325),ERROR" ID="0xed4c296a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey parse cfm code ra memcmp failed. @gle_sm_proc.c(1332),ERROR" ID="0xed4c29a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm t node send confirm code rb failed. @gle_sm_proc.c(1339),ERROR" ID="0xed4c29da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm_g_node auth by number compare, g node mem alloc fail @gle_sm_proc.c(1363),INFO" ID="0xed4c2a9d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM]:T node generate confirm code fail:0x%x. @gle_sm_proc.c(1413),ERROR" ID="0xed4c2c2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] confirm code new failed @gle_sm_proc.c(1445),ERROR" ID="0xed4c2d2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] confirm number generate failed, reason: 0x%x. @gle_sm_proc.c(1453),ERROR" ID="0xed4c2d6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] confirm node malloc fail @gle_sm_proc.c(1488),ERROR" ID="0xed4c2e82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] confirm number generate fail reason:0x%x @gle_sm_proc.c(1512),ERROR" ID="0xed4c2f42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] authentication recv number compare memcpy failed @gle_sm_proc.c(1529),ERROR" ID="0xed4c2fca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm_link pair is NULL @gle_sm_proc.c(1540),ERROR" ID="0xed4c3022" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] authentication recv no entry memcpy failed @gle_sm_proc.c(1707),ERROR" ID="0xed4c355a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] G DHKey authenticode malloc failed. @gle_sm_proc.c(1738),ERROR" ID="0xed4c3652" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] G DHKey rsp key generate failed:%u @gle_sm_proc.c(1745),ERROR" ID="0xed4c368a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] G DHKey confirm key generate failed:%u @gle_sm_proc.c(1765),ERROR" ID="0xed4c372a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE SM] G DHKey authenticode inconsistent,link:0x%04x,cmp:%d @gle_sm_proc.c(1773),ERROR" ID="0xed4c376a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm g_node_dhkey_auth_code recv wait user confirm @gle_sm_proc.c(1779),INFO" ID="0xed4c379d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm g_node dhkey auth_code dhkey_send fail @gle_sm_proc.c(1785),ERROR" ID="0xed4c37ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] T DHKey confirm key generate failed:%u @gle_sm_proc.c(1803),ERROR" ID="0xed4c385a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE SM] G DHKey authenticode inconsistent,link:0x%04x,cmp:%d @gle_sm_proc.c(1811),ERROR" ID="0xed4c389a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE SM]recv check status fail,data_index:%#x,status:%#x,sw to:%#x @gle_sm_proc.c(1878),ERROR" ID="0xed4c3ab2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM]data_index:%#x not support now @gle_sm_proc.c(1892),ERROR" ID="0xed4c3b22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm data recv core proc fail: input NULL! @gle_sm_proc.c(1906),ERROR" ID="0xed4c3b92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM]:data recv fail,link invalid,handle=0x%04x @gle_sm_proc.c(1913),ERROR" ID="0xed4c3bca" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE SM]:recv data,lcid=0x%04x,data_index=0x%04x,len=%u @gle_sm_proc.c(1918),INFO" ID="0xed4c3bf5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM]:recv wrong packet,len invalid. @gle_sm_proc.c(1921),ERROR" ID="0xed4c3c0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM]:not wait msg,sm_link-&gt;wait=0x%04x @gle_sm_proc.c(1940),ERROR" ID="0xed4c3ca2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM]data_index:%#x not in list @gle_sm_proc.c(1957),ERROR" ID="0xed4c3d2a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[GLE SM] recovery key, idx: %u, addr: %02x:**:**:**:%02x:%02x. @gle_sm_proc.c(2046),INFO" ID="0xed4c3ff5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] sm link is new. @gle_sm_proc.c(2050),INFO" ID="0xed4c4015" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] recover key malloc fail. @gle_sm_proc.c(2053),ERROR" ID="0xed4c402a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] recover key addr memcpy fail. @gle_sm_proc.c(2059),ERROR" ID="0xed4c405a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] recover key link_key memcpy fail. @gle_sm_proc.c(2067),ERROR" ID="0xed4c409a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE SM] recover key, crypt %d, key_deriv %d, integr_chk %d. @gle_sm_proc.c(2077),INFO" ID="0xed4c40ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey entry fail,get sm link null @gle_sm_proc.c(2092),ERROR" ID="0xed4c4162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey entry fail,mem alloc fail @gle_sm_proc.c(2100),ERROR" ID="0xed4c41a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] gle sm number compare entry @gle_sm_proc.c(2126),ERROR" ID="0xed4c4272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm number compare entry fail,get sm link null @gle_sm_proc.c(2130),ERROR" ID="0xed4c4292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle sm number compare entry fail, not user confirm, status:0x%x @gle_sm_proc.c(2136),ERROR" ID="0xed4c42c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle sm number compare entry, user reject, confirm value:0x%x @gle_sm_proc.c(2142),ERROR" ID="0xed4c42f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm passkey entry fail,mem alloc fail @gle_sm_proc.c(2149),ERROR" ID="0xed4c432a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm proc number compare entry already confirm @gle_sm_proc.c(2160),ERROR" ID="0xed4c4382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm proc_number_compare_entry gle_sm_t_node_dhkey_send fail @gle_sm_proc.c(2168),ERROR" ID="0xed4c43c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle sm proc_number_compare_entry wait gnode dhkey confirm @gle_sm_proc.c(2172),INFO" ID="0xed4c43e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] gle sm calculating new imb security key, secu_info:0x%x @gle_sm_proc.c(2195),INFO" ID="0xed4c449d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] gle sm cmd fail pdu send malloc buff fail. @gle_sm_proc.c(2228),ERROR" ID="0xed4c45a2" />
+			</MSG_LOG>

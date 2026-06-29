@@ -1,0 +1,400 @@
+#include "base_datatype_def.txt"
+
+typedef struct {
+
+} tool_null_stru;
+
+typedef struct {
+    char str[1];
+} tool_str;
+
+typedef struct {
+    uint32_t cmd_id;
+    uint32_t interval;
+} diag_metrics_interval_t;
+
+typedef struct {
+    uint32_t timestamp;
+    uint32_t evtcode;
+} hcd_evtcode_t;
+typedef struct {
+    uint32_t ra;
+    uint32_t fp;
+} exc_stack_info_t;
+typedef struct {
+    uint32_t timestamp;
+    int rssi;
+} hcd_rssi_t;
+typedef struct {
+    uint32_t timestamp;
+    uint8_t level;
+} diag_log_level_t;
+typedef struct {
+    uint32_t timestamp;
+    uint32_t total;
+    uint32_t used;
+    uint32_t free;
+    uint32_t free_node_num;
+    uint32_t used_node_num;
+    uint32_t max_free_node_size;
+    uint32_t peek_size;
+} hcd_mdm_mem_info_t;
+typedef struct {
+    uint32_t timestamp;
+    uint32_t total;
+    uint32_t used;
+    uint32_t free;
+} hcd_storage_info_t;
+typedef struct {
+    uint32_t timestamp;
+    uint32_t window_sec;     // Time window in seconds
+    uint32_t tx_bps;         // Average upload bit rate
+    uint32_t rx_bps;         // Average download bit rate
+    uint64_t tx_bytes_total; // Total upload bytes since startup/reset
+    uint64_t rx_bytes_total; // Total download bytes since startup/reset
+} hcd_spp_rate_t;
+typedef struct stack_frame_t {
+    uint32_t stacked_r0;
+    uint32_t stacked_r1;
+    uint32_t stacked_r2;
+    uint32_t stacked_r3;
+    uint32_t stacked_r12;
+    uint32_t stacked_lr;
+    uint32_t stacked_pc;
+    uint32_t stacked_psr;
+} exception_stack_frame_t;
+typedef struct excep_info_t {
+    uint32_t sp;
+    uint32_t sp_bottom;
+    uint32_t exp_task_id;
+    uint32_t task_array;
+    uint32_t task_max_num;
+} exception_info_t;
+typedef enum panic_id {
+    // No panic
+    PANIC_NONE = 0,
+    PANIC_ARM_CORE = 1,
+    PANIC_HAL = 2,
+    PANIC_DSP = 3,
+    PANIC_IRMALLOC_FAIL = 4,
+    PANIC_UART = 5,
+    PANIC_IFLASH = 6,
+    PANIC_ADC = 7,
+    PANIC_WATCHDOG = 8,
+    PANIC_LOG = 9,
+    PANIC_DMA = 10,
+    PANIC_ASSERT = 11,
+    PANIC_REBOOT = 12,
+    PANIC_UPDATEPKG = 13,
+    PANIC_I2C = 14,
+    PANIC_SPI = 15,
+    PANIC_RPC = 22,
+    PANIC_MEM_MONITOR = 23,
+
+    // Someone calling abort() / exit()
+    PANIC_EXIT = 24,
+
+    // RTOS related panics
+    PANIC_TASK_CREATE_FAILED = 25,
+
+    PANIC_MEMCPY_BUFFER_OVERLAP = 26,
+    PANIC_XIP = 27,
+    PANIC_BTC_MALLOC_FAIL = 28,
+    PANIC_LOW_POWER = 29,
+    PANIC_SYSTEM_STATUS = 30,
+    PANIC_BTC_INT_ERR = 31,
+    PANIC_LPC_WKUP_FAIL = 32,
+    PANIC_CLOCKS_GLB_ERR = 33,
+    PANIC_PMU_CMU = 34,
+    PANIC_PMU_LDO = 35,
+    PANIC_CHIP_WDT_FRST = 36,
+    PANIC_NON_OS = 37,
+    PANIC_LPC_VETO = 38,
+    PANIC_TIMER = 39,
+    PANIC_LPC = 40,
+    PANIC_RTC = 41,
+    PANIC_MEMORY = 42,
+    PANIC_CPU_HIFI = 43,
+    PANIC_EXCEPTION_TEST = 44,
+    PANIC_KV = 45,
+    PANIC_EFLASH = 46,
+    PANIC_LIB = 47,
+    PANIC_CODELOADER = 48,
+    PANIC_CRITICLA = 49,
+    PANIC_IPC = 50,
+    PANIC_INT = 51,
+    PANIC_OS = 52,
+    PANIC_LPC_WAKEUP_TIME = 53,
+    PANIC_BTC_BT_FRM_DISMATCH1 = 54,
+    PANIC_BTC_BT_FRM_DISMATCH2 = 55,
+    PANIC_BTC_BLE_FRM_DISMATCH = 56,
+    PANIC_BTC_WAKEUP_TO = 57,
+    PANIC_BTH_MEMORY = 58,
+    PANIC_MPU_CONFIG_ERR = 59,
+    PANIC_GPU = 60,
+    PANIC_SDIO_DEVICE = 61,
+    PANIC_IR = 62,
+    PANIC_BTC_CMD_NUM_ZERO = 63,
+    PANIC_CAP = 64,
+    PANIC_EPMU = 65,
+    PANIC_BTS_WRITE_PROPERTY_FAIL = 66,
+    PANIC_MMC_HOST = 67,
+    PANIC_BTC_OSCEN_TO = 68,
+    PANIC_RGB888 = 70,
+    PANIC_AP_COMMU = 71,
+    PANIC_CPU_CLOCKS = 72,
+    PANIC_CLOCKS_SWITCH = 73,
+    PANIC_PMU = 74,
+    PANIC_LOG_DUMP = 75,
+    PANIC_COUL = 76,
+    PANIC_DSP0_POWER = 77,
+    PANIC_DSP1_POWER = 78,
+    PANIC_BT_DEBUG = 79,
+    PANIC_PIN_NULL = 80,
+    PANIC_UNITTEST = 98,
+    PANIC_TESTSUIT = 99,
+    PANIC_DSS_MIPI_ERR = 100,
+    PANIC_GNSS_DFR_ERR = 101
+} panic_id_t;
+typedef struct {
+    panic_id_t origin;
+    uint32_t code;
+    uint32_t timestamp_ms;
+    uint32_t caller;
+} panic_desc_t;
+typedef enum {
+    REBOOT_CAUSE_UNKNOWN = 0x0000,                 // !< Used as a default for the reboot_reset_reason variable
+    REBOOT_CAUSE_BT_RESET_UNKNOWN = 0x8000,  // !< REBOOT_CAUSE_BT_RESET_UNKNOWN
+    REBOOT_CAUSE_BT_SYSRESETREQ = 0x8001,
+    REBOOT_CAUSE_BT_WATCHDOG = 0x8002,
+    REBOOT_CAUSE_BT_STANDARD_CHIP_WATCHDOG = 0x8004,
+    REBOOT_CAUSE_BT_UPDATER_CHIP_WATCHDOG = 0x8005,
+    REBOOT_CAUSE_BT_RPC_TIMEOUT = 0x8006,
+    REBOOT_CAUSE_BT_HARDFAULT = 0x8007,
+    REBOOT_CAUSE_BT_NNMIFAULT = 0x8008,
+    REBOOT_CAUSE_BT_UNKNOWN_ISR = 0x8009,
+    REBOOT_CAUSE_BT_PANIC = 0x800a,
+    REBOOT_CAUSE_BT_STD_WDT_FRST = 0x800b,         /* force reboot */
+    REBOOT_CAUSE_BT_STD_CHIP_WDT_FRST = 0x800c,    /* force reboot */
+    REBOOT_CAUSE_BT_XIP_HARDFAULT = 0x800d,
+    REBOOT_CAUSE_BT_SSB_EXCEPTION_REBOOT = 0x800e,
+    REBOOT_CAUSE_BT_BUCK1_PROTECT_FRST = 0x8010,   /* buck1 protect */
+    REBOOT_CAUSE_BT_BUCK2_PROTECT_FRST = 0x8020,   /* buck2 protect */
+
+    REBOOT_CAUSE_BT_MONITOR_REBOOT_REQ = 0x8100,   // !< Start of custom reset reasons
+    REBOOT_CAUSE_BT_REGIONS_UPDATED = 0x8101,
+    REBOOT_CAUSE_BT_FOTA_UPGRADE = 0x8102,
+    REBOOT_CAUSE_BT_END = 0x8103,
+
+    REBOOT_CAUSE_GNSS_GLOBAL = 0x7000,
+    REBOOT_CAUSE_GNSS_NMI = 0x7001,        // !< watchdog is nmi interrupt
+    REBOOT_CAUSE_GNSS_HARDFAULT = 0x7002,
+    REBOOT_CAUSE_GNSS_PANIC = 0x7003,
+    REBOOT_CAUSE_GNSS_END = 0x7004,
+
+    REBOOT_CAUSE_PROTOCOL_GLOBAL = 0x4000,
+    REBOOT_CAUSE_PROTOCOL_SYSRESETREQ = 0x4001,
+    REBOOT_CAUSE_PROTOCOL_WATCHDOG = 0x4002,
+    REBOOT_CAUSE_PROTOCOL_AXI_LOCK = 0x4003,
+    REBOOT_CAUSE_PROTOCOL_AXI_LOCK_TO_BT = 0x4004,
+    REBOOT_CAUSE_PROTOCOL_WDT_FRST = 0x4005,             /* force reboot */
+    REBOOT_CAUSE_PROTOCOL1_WATCHDOG = 0x4006,
+    REBOOT_CAUSE_PROTOCOL_ADDR_MON = 0x4007,
+    REBOOT_CAUSE_PROTOCOL1_ADDR_MON = 0x4008,
+    REBOOT_CAUSE_PROTOCOL_RPC_TIMEOUT = 0x4100,          // !< Start of custom reset reasons
+    REBOOT_CAUSE_PROTOCOL_END = 0x4101,
+
+    REBOOT_CAUSE_APPLICATION_GLOBAL = 0x2000,
+    REBOOT_CAUSE_APPLICATION_SYSRESETREQ = 0x2001,
+    REBOOT_CAUSE_APPLICATION_WATCHDOG = 0x2002,
+    REBOOT_CAUSE_APPLICATION_PANIC = 0x2003,
+    REBOOT_CAUSE_APPLICATION_HARDFAULT = 0x2004,
+    REBOOT_CAUSE_APPLICATION_NNMIFAULT = 0x2005,
+    REBOOT_CAUSE_APPLICATION_UNKNOWN_ISR = 0x2006,
+    REBOOT_CAUSE_APPLICATION_WDT_FRST = 0x2007,          /* force reboot */
+    REBOOT_CAUSE_APPLICATION_CHIP_WDT = 0x2008,
+    REBOOT_CAUSE_APPLICATION_XIP_CTRL = 0x2009,
+    REBOOT_CAUSE_APPLICATION_XIP_CACHE = 0x200a,
+    REBOOT_CAUSE_APPLICATION_MDMA = 0x200b,
+    REBOOT_CAUSE_APPLICATION_SMDMA = 0x200c,
+    REBOOT_CAUSE_APPLICATION_STD_CHIP_WDT_FRST = 0x200d,
+    REBOOT_CAUSE_APPLICATION_STD_BT_WDT_FRST = 0x200e,
+    REBOOT_CAUSE_APPLICATION_STD_ULP_WDT_FRST = 0x200f,
+
+    REBOOT_CAUSE_UPG_COMPLETION = 0x2040, // !< Start of custom reset reasons
+    REBOOT_CAUSE_MON_MEM_ALMOST_EMPTY = 0x2041,
+    REBOOT_CAUSE_APPLICATION_SECOND_FAULT = 0x2042,
+
+    REBOOT_CAUSE_APPLICATION_RPC_TIMEOUT = 0x2100,       // !< Start of custom reset reasons
+
+    REBOOT_CAUSE_POWER_ON = 0xF0F0,
+} reboot_cause_t;
+typedef struct {
+    uint32_t timestamp;
+    char version[36];                                           /* 软件版本 */
+    uint8_t sn[16];                                               /* 设备标示 */
+    char hardware_model[16];                                    /* 硬件版本 */
+    char type[16];                                              /* 软件类型(可选，主要用于多mcu的情况) */
+    reboot_cause_t reboot_cause;                                /* 重启原因 */
+    uint16_t reboot_count;                                      /* 总重启次数 */
+    uint16_t exception_reboot_count;                            /* 异常重启次数 */
+} hcd_diag_device_info_t;
+typedef struct {
+    uint32_t timestamp;
+    uint8_t cpup;
+} diag_cpup_info_t;
+typedef struct {
+    uint32_t timestamp;
+    uint8_t battery_health;
+} diag_battery_info_t;
+typedef struct {
+    uint32_t mstatus;
+    uint32_t mepc;
+    uint32_t tp;    /* X4 */
+    uint32_t sp;    /* X2 */
+
+    uint32_t s11;   /* X27 */
+    uint32_t s10;   /* X26 */
+    uint32_t s9;    /* X25 */
+    uint32_t s8;    /* X24 */
+    uint32_t s7;    /* X23 */
+    uint32_t s6;    /* X22 */
+    uint32_t s5;    /* X21 */
+    uint32_t s4;    /* X20 */
+    uint32_t s3;    /* X19 */
+    uint32_t s2;    /* X18 */
+
+    uint32_t s1;    /* X9 */
+    uint32_t s0;    /* X8 */
+
+    uint32_t t6;    /* X31 */
+    uint32_t t5;    /* X30 */
+    uint32_t t4;    /* X29 */
+    uint32_t t3;    /* X28 */
+
+    uint32_t a7;    /* X17 */
+    uint32_t a6;    /* X16 */
+    uint32_t a5;    /* X15 */
+    uint32_t a4;    /* X14 */
+    uint32_t a3;    /* X13 */
+    uint32_t a2;    /* X12 */
+    uint32_t a1;    /* X11 */
+    uint32_t a0;    /* X10 */
+
+    uint32_t t2;    /* X7 */
+    uint32_t t1;    /* X6 */
+    uint32_t t0;    /* X5 */
+
+    uint32_t ra;    /* X1 */
+} task_context_t;
+
+typedef struct {
+    uint32_t ccause;
+    uint32_t mcause;
+    uint32_t mtval;
+    uint32_t gp;
+    task_context_t task_context;
+} exc_context_t;
+
+typedef struct excep_info_t {
+    uint32_t sp;
+    uint32_t sp_bottom;
+    uint32_t exp_task_id;
+    uint32_t task_array;
+    uint32_t task_max_num;
+} exception_info_t;
+
+#pragma pack(4)
+typedef struct {
+    uint32_t timestamp;
+    exc_context_t exc_context;
+    exception_info_t exception_info;                // 52
+    panic_desc_t last_panic;                        // 12
+    uint32_t entry_sleep_time[2];  // The size of the array is 2, which stores the high and low bits of sleep time.
+    uint32_t rtc_delay_count[2];  // The size of the array is 2, which stores the high and low bits of rtc delay count.
+    uint32_t excepted_delay_time;
+    uint32_t exception_time_s;
+    uint32_t reserved[3];                             // The size of the reserved array n is 3, total 12 bytes.
+    reboot_cause_t cpu_utils_reset_cause;             // 4
+    bool update_reset_cause_on_boot;                // 4
+    uint32_t fault_reason;                     // 4
+    uint32_t fault_address;                    // 4
+    uint32_t intid;                                   // error int num
+    uint32_t magic;                             // exception flag
+    uint32_t reboot_status;
+    uint32_t reboot_count;       // reboot count since coldboot
+    uint32_t ep_reboot_count;    // exception reboot count continuously
+    uint32_t enable_sha_check;   // total size until here: 172 Byte
+} hcd_preserve_data_t;
+#pragma pack()
+typedef struct {
+    uint32_t timestamp;
+    char task_name[16];
+    uint32_t task_id;
+    uint32_t task_stack_size;
+    uint32_t system_mem_addr;
+    char phase[22];
+    uint16_t type;
+    uint32_t fault_addr;
+    uint32_t int_num_or_task_id;
+    uint32_t r0;
+    uint32_t r1;
+    uint32_t r2;
+    uint32_t r3;
+    uint32_t r4;
+    uint32_t r5;
+    uint32_t r6;
+    uint32_t r7;
+    uint32_t r8;
+    uint32_t r9;
+    uint32_t r10;
+    uint32_t r11;
+    uint32_t r12;
+    uint32_t pri_mask;
+    uint32_t sp;
+    uint32_t lr;
+    uint32_t pc;
+    uint32_t xpsr;
+    uint32_t psp;
+    uint32_t pri_mask_scb;
+    uint32_t fault_mask;
+    uint32_t base_pri;
+    uint32_t control;
+    uint32_t scb_icsr;
+    uint32_t scb_scr;
+    uint32_t scb_shcsr;
+    uint32_t scb_cfsr;
+    uint32_t scb_hfsr;
+    uint32_t scb_dfsr;
+    uint32_t scb_mmfar;
+    uint32_t scb_bfsr;
+    uint32_t scb_afsr;
+    uint32_t reg0;
+    uint32_t reg1;
+    uint32_t reg2;
+    uint32_t reg3;
+    uint32_t stack_size;
+    exc_stack_info_t stack[0];
+} hcd_exc_info_save_t;
+
+typedef struct {
+    uint32_t op_id;
+    uint32_t level;
+} diag_logctrl_cmd_t;
+
+typedef struct __attribute__ ((__packed__)) {
+    uint8_t head_flag;
+    uint8_t data_len;
+    uint16_t event_id;       /* info0, info1 */
+    uint8_t event_info;      /* info2 */
+    uint8_t core : 3;
+    uint8_t left_right : 1;
+    uint8_t reserved : 1;
+    uint8_t role : 1;
+    uint8_t chr_up_type : 2;
+    uint16_t version;
+    uint64_t time_stamp : 38;
+    uint64_t psn : 25;
+    uint64_t time_not_sync_flag : 1;
+    uint8_t data[0];
+} system_event_s_t, system_error_s_t;

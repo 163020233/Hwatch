@@ -1,0 +1,13 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+
+kernel_module("cppsupport") {
+    sources = ["los_cppsupport.c"]
+    include_dirs = [
+        "${LITEOSTOPDIR}/kernel_lite/extended/include",
+    ]
+}

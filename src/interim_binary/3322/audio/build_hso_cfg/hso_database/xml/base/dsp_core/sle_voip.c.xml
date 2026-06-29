@@ -1,0 +1,30 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sle_voip] downlink adp has already registered @sle_voip.c(52),ERROR" ID="0x98ec01a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_voip] register downlink adp, handle: 0x%x @sle_voip.c(63),WARNING" ID="0x98ec01fb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sle_voip] uplink adp has already registered @sle_voip.c(68),ERROR" ID="0x98ec0222" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_voip] register uplink adp, handle: 0x%x @sle_voip.c(79),WARNING" ID="0x98ec027b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sle_voip] unregister invalid dl_adp handle: 0x%x |the registered adp handle: 0x%x @sle_voip.c(96),ERROR" ID="0x98ec0302" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_voip] unregister downlink adp, handle: 0x%x @sle_voip.c(101),WARNING" ID="0x98ec032b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sle_voip] unregister invalid ul_adp handle: 0x%x |the registered adp handle: 0x%x @sle_voip.c(111),ERROR" ID="0x98ec037a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_voip] unregister uplink adp, handle: 0x%x @sle_voip.c(116),WARNING" ID="0x98ec03a3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sle_voip] uplink adp is NULL! @sle_voip.c(160),ERROR" ID="0x98ec0502" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_voip] uplink packet_length is %u @sle_voip.c(165),WARNING" ID="0x98ec052b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sle_voip][downlink] send_data_count: %u |cur_data_size: %u |total_data_size: %u @sle_voip.c(179),WARNING" ID="0x98ec059b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][sle_voip][uplink] send_data_count: %u |cur_data_size: %u |total_data_size: %u @sle_voip.c(194),WARNING" ID="0x98ec0613" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] downlink overrun, stream size: %u @sle_voip.c(218),ERROR" ID="0x98ec06d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_voip] downlink overrun, stream size: %u @sle_voip.c(224),ERROR" ID="0x98ec0702" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_voip] downlink overrun, stream1 size: %u @sle_voip.c(262),ERROR" ID="0x98ec0832" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_voip] downlink overrun, stream2 size: %u @sle_voip.c(268),ERROR" ID="0x98ec0862" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sle_voip] downlink adp is NULL! @sle_voip.c(281),ERROR" ID="0x98ec08ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_voip] invalid stream size: %u @sle_voip.c(291),ERROR" ID="0x98ec091a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sle_voip] invalid stream head: 0x%x, dl_frame_size: %u @sle_voip.c(298),ERROR" ID="0x98ec0952" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_acquire_stream Failed, Error Code: [0x%08X] @sle_voip.c(328),ERROR" ID="0x98ec0a42" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sle_voip] uplink buffer overrun, aggregated frame size: %u, current frame size: %u @sle_voip.c(335),ERROR" ID="0x98ec0a7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @sle_voip.c(342),ERROR" ID="0x98ec0ab2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_release_stream Failed, Error Code: [0x%08X] @sle_voip.c(350),ERROR" ID="0x98ec0af2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call msg_to_btc_voip_data_ind Failed, Error Code: [0x%08X] @sle_voip.c(357),ERROR" ID="0x98ec0b2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_query_busy Failed, Error Code: [0x%08X] @sle_voip.c(372),ERROR" ID="0x98ec0ba2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][sle_voip] uplink underrun, data_size: %u |ul_frame_size: %u @sle_voip.c(378),ERROR" ID="0x98ec0bd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][sle_voip] ul_adp is NULL! @sle_voip.c(393),ERROR" ID="0x98ec0c4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][sle_voip] ul_frame_size: %u @sle_voip.c(407),WARNING" ID="0x98ec0cbb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call sle_voip_ul_proc_aggregated_frame Failed, Error Code: [0x%08X] @sle_voip.c(415),ERROR" ID="0x98ec0cfa" />
+			</MSG_LOG>

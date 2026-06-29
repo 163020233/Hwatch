@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_acb_create_iob_srv_fsm srv_desc creat fail @lm_gle_acb_srv_iob.c(55),ERROR" ID="0x8b9001ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_acb_check_iob_con_param_v2: iog desc is null @lm_gle_acb_srv_iob.c(338),INFO" ID="0x8b900a95" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_acb_check_iob_con_param_v2: iog_id=%d, iob_id=%d @lm_gle_acb_srv_iob.c(344),INFO" ID="0x8b900ac5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_acb_check_iob_con_param_v2: INVALID IOB id @lm_gle_acb_srv_iob.c(352),INFO" ID="0x8b900b05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_acb_check_iob_con_param_v2: labelid=%d @lm_gle_acb_srv_iob.c(359),INFO" ID="0x8b900b3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_acb_check_iob_con_param_v2: iob_state=%d @lm_gle_acb_srv_iob.c(366),INFO" ID="0x8b900b75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]setup err @lm_gle_acb_srv_iob.c(512),ERROR" ID="0x8b901002" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_iob_tnode_update_param_save iob_env is NULL for iob_conhdl=%d @lm_gle_acb_srv_iob.c(570),ERROR" ID="0x8b9011d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR]lm_gle_llcp_iob_param_update_act, iob_desc is NULL,acb_conhdl=%d, iob_id=%d @lm_gle_acb_srv_iob.c(618),ERROR" ID="0x8b901352" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR]lm_gle_llcp_iob_param_update_act, cmd is disallowed,acb_conhdl=%d, iob_id=%d @lm_gle_acb_srv_iob.c(627),ERROR" ID="0x8b90139a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[autorate]lm_gle_llcp_iob_param_update_act, iob_conhdl=%d, update_instant=%u, label_id=%d. @lm_gle_acb_srv_iob.c(632),INFO" ID="0x8b9013c5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_llcp_iob_param_update_act iob_env is NULL,acb_conhdl=%d, iob_id=%d @lm_gle_acb_srv_iob.c(636),ERROR" ID="0x8b9013e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_llcp_iob_param_update_act:instant passed, last_timestamp: %d, update_isntant: %d @lm_gle_acb_srv_iob.c(644),WARNING" ID="0x8b901423" />
+			</MSG_LOG>

@@ -1,0 +1,25 @@
+#===============================================================================
+# @brief    cmake file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2022. All rights reserved.
+#===============================================================================
+add_subdirectory_if_exist(bth_libs)
+add_subdirectory_if_exist(exception)
+add_subdirectory_if_exist(dfx)
+add_subdirectory_if_exist(pm)
+add_subdirectory_if_exist(partition)
+add_subdirectory_if_exist(update)
+add_subdirectory_if_exist(bst_uart)
+add_subdirectory_if_exist(at_adapter)
+add_subdirectory_if_exist(at_wear_cmd_3322)
+add_subdirectory_if_exist(cpu_load)
+add_subdirectory_if_exist(nv)
+add_subdirectory_if_exist(ws53_host)
+add_subdirectory_if_exist(include)
+add_subdirectory_if_exist(gnss)
+add_subdirectory_if_exist(dhry)
+add_subdirectory_if_exist(data_select)
+add_subdirectory_if_exist(feature_protect)
+add_subdirectory_if_exist(chr)
+add_subdirectory_if_exist(temperature)
+add_subdirectory_if_exist(fs)
+add_subdirectory_if_exist(modem_service)

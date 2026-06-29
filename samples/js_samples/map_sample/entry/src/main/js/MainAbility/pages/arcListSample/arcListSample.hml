@@ -1,0 +1,17 @@
+<stack class="container">
+    <arclist
+        class="app-list"
+        value="300"
+        scrollbar="true"
+        ref="arcList"
+        onscrollend="scrollEnd"
+    >
+        <arclist-item class="app-item" for="{{appList}}">
+            <image class="app-ico" src="{{$item.src}}"> </image>
+            <text class="app-title" >{{$item.value}}</text>
+        </arclist-item>
+    </arclist>
+    <input type="button" style="height: 40px;width: 150px; left: 50px; top: 350px;" value="scrollTo" onclick="clickscrollTo" />
+    <input type="button" style="height: 40px;width: 200px; left: 210px; top: 350px;" value="scrollToEnd" onclick="clickscrollToEnd"/>
+    <input type="button" style="height: 40px;width: 100px; left: 150px; top: 400px;" value="scroll" onclick="clickscroll"/>
+</stack>

@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_ACL]retrans_stat: con_hdl %d, role:%d, retrans times:%d, cur_clock:0x%x @evt_task_ble_acl_ram.c(86),INFO" ID="0x8aae02b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_ble_acl_update_param_with_instant sed_index(%d)timestamp(0x%x)us_offset(%d)rx_win(%d) @evt_task_ble_acl_ram.c(175),INFO" ID="0x8aae057d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]evt_task_ble_creat_related_ico_env ico connenv not free last! conhdl 0x%x @evt_task_ble_acl_ram.c(206),ERROR" ID="0x8aae0672" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]evt_task_ble_creat_related_ico_env ico connenv alloc fail! conhdl 0x%x @evt_task_ble_acl_ram.c(211),ERROR" ID="0x8aae069a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACL][RX]MSG_ALLOC_FAILED! @evt_task_ble_acl_ram.c(260),ERROR" ID="0x8aae0822" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_ACL]rx pkt free: con_hdl %d, rxlinklbl %d, cur_rxpd_idx %d @evt_task_ble_acl_ram.c(290),ERROR" ID="0x8aae0912" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_ACL]rx pkt free: con_hdl %d, rxlinklbl %d, cur_rxpd_idx %d @evt_task_ble_acl_ram.c(301),ERROR" ID="0x8aae096a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]ACL RX DATA MIC ERROR! @evt_task_ble_acl_ram.c(343),WARNING" ID="0x8aae0abb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lld_acl_sched_skip_cnt, acl hdl=%d, dur=%d,interval %d skip_cnt=%d @evt_task_ble_acl_ram.c(393),INFO" ID="0x8aae0c4d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_ble_acl_restart_central_mode, conhdl=%d, next_event_counter=%d, ts=%d, duration_min=%d @evt_task_ble_acl_ram.c(417),INFO" ID="0x8aae0d0d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_ACL]check_time_out, con_hdl %d, next_time 0x%x, last_sync_ts 0x%x, con_to 0x%x @evt_task_ble_acl_ram.c(750),INFO" ID="0x8aae1775" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BLE_ACL]ble_acl_check_time_out cur_time = %d, last_sync_timestamp = %d, con_to 0x%x @evt_task_ble_acl_ram.c(758),INFO" ID="0x8aae17b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BLE_ACL]ble acl 0x3e disc ble_btcntrxsync0=%x, ble_btcntrxsync1=%x, ble_fcntrxsync=%d @evt_task_ble_acl_ram.c(766),INFO" ID="0x8aae17f5" />
+			</MSG_LOG>

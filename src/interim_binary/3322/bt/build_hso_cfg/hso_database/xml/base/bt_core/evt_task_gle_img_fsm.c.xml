@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][IMG]img fsm todo  @evt_task_gle_img_fsm.c(68),ERROR" ID="0x8c100222" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][IMG]img fsm todo  @evt_task_gle_img_fsm.c(74),ERROR" ID="0x8c100252" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMB]imb_disc_to_lm sed_idx %d:, reason 0x%x @evt_task_gle_img_fsm.c(80),INFO" ID="0x8c100285" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][img]evt_task_img_deinit: img_sed_idx %d, active 0x%x, exit 0x%x, pending 0x%x @evt_task_gle_img_fsm.c(102),INFO" ID="0x8c100335" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_gle_img_task_imb_exit, imb_sed_idx %d: dis reason %d @evt_task_gle_img_fsm.c(151),INFO" ID="0x8c1004bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_task_gle_img_task_imb_exit, env_ptr is null,imb idx %d @evt_task_gle_img_fsm.c(154),ERROR" ID="0x8c1004d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_gle_img_task_imb_exit status err, active 0x%x, exit 0x%x, pending exit 0x%x @evt_task_gle_img_fsm.c(164),WARNING" ID="0x8c100523" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[autorate] chnl_conhdl %d chnl_rssi %d, missed_rate %d err_packet_rate %d @evt_task_gle_img_fsm.c(230),INFO" ID="0x8c100735" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[autorate] sed_idx %d avg_rssi %d, missed_rate %d err_packet_rate %d tx_count %d event-&gt;tx_flushed %d rx_loss_max_cont_pkt %d @evt_task_gle_img_fsm.c(245),INFO" ID="0x8c1007ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][GLE_IMB_PCL]high_power_control, imb_link %d, pwrlev %d freq_band %d @evt_task_gle_img_fsm.c(294),INFO" ID="0x8c100935" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][IMG]img_fsm_init register fail, img_sed_idx %d @evt_task_gle_img_fsm.c(342),ERROR" ID="0x8c100ab2" />
+			</MSG_LOG>

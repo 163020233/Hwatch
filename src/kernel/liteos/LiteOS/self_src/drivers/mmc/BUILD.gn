@@ -1,0 +1,101 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+mmc_freebsd_include_path = "${RTOSLITETOPDIR}/$open_source_path/freebsd/liteos/drivers/mmc"
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    kernel_module("mmc") {
+        sources = []
+        if (defined(LOSCFG_PLATFORM_SW21_APP) || defined(LOSCFG_PLATFORM_SW21_APP_SE)) {
+            MMC_FREEBSD_SRC = "../../../open_source/freebsd/liteos/drivers/mmc"
+            sources += [
+                "host/hci.c",
+                "host/sdhci/adma2.c",
+                "host/sdhci/sdhci_runstop.c",
+                "host/sdhci/tune/sdhci_tune.c",
+                "host/sdhci/sw21app/mmc_sdhci.c",
+                "core/block.c",
+                "core/sdio.c",
+                "$MMC_FREEBSD_SRC/core/mmc_adapt.c",
+                "$MMC_FREEBSD_SRC/core/mmc_sdv3.c",
+                "$MMC_FREEBSD_SRC/core/mmc_subr.c",
+                "$MMC_FREEBSD_SRC/core/mmc.c",
+                "$MMC_FREEBSD_SRC/core/mmcsd.c",
+                "$MMC_FREEBSD_SRC/core/sdio_func.c",
+                "$MMC_FREEBSD_SRC/core/sdio_ops.c",
+                "$MMC_FREEBSD_SRC/host/sdhci/sdhci_init.c",
+                "$MMC_FREEBSD_SRC/host/sdhci/sdhci.c",
+            ]
+        }
+        if (defined(LOSCFG_FS_PROC)) {
+            sources += [
+                "proc/proc.c"
+            ]
+        }
+        configs += [
+            ":private",
+        ]
+    }
+} else {
+    static_library("libmmc") {
+        import("../../../build/gn/libstatic.gni")
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+        cflags = [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+        ]
+        cflags_cc = cflags
+        asmflags = cflags
+        sources = []
+        if (defined(LOSCFG_PLATFORM_SW21_APP) || defined(LOSCFG_PLATFORM_SW21_APP_SE)) {
+            MMC_FREEBSD_SRC = "../../../open_source/freebsd/liteos/drivers/mmc"
+            sources += [
+                "host/hci.c",
+                "host/sdhci/adma2.c",
+                "host/sdhci/sdhci_runstop.c",
+                "host/sdhci/tune/sdhci_tune.c",
+                "host/sdhci/sw21app/mmc_sdhci.c",
+                "core/block.c",
+                "core/sdio.c",
+                "$MMC_FREEBSD_SRC/core/mmc_adapt.c",
+                "$MMC_FREEBSD_SRC/core/mmc_sdv3.c",
+                "$MMC_FREEBSD_SRC/core/mmc_subr.c",
+                "$MMC_FREEBSD_SRC/core/mmc.c",
+                "$MMC_FREEBSD_SRC/core/mmcsd.c",
+                "$MMC_FREEBSD_SRC/core/sdio_func.c",
+                "$MMC_FREEBSD_SRC/core/sdio_ops.c",
+                "$MMC_FREEBSD_SRC/host/sdhci/sdhci_init.c",
+                "$MMC_FREEBSD_SRC/host/sdhci/sdhci.c",
+            ]
+        }
+        if (defined(LOSCFG_FS_PROC)) {
+            sources += [
+                "proc/proc.c"
+            ]
+        }
+        include_dirs = LITEOS_GN_KSTATIC_INCLUDE
+        configs += [
+            ":private",
+        ]
+    }
+}
+config("private") {
+    include_dirs = [
+        "${mmc_freebsd_include_path}/core",
+        "${mmc_freebsd_include_path}/host",
+        "${mmc_freebsd_include_path}/host/sdhci",
+        "$LITEOSTOPDIR/drivers/mmc/core",
+        "$LITEOSTOPDIR/drivers/mmc/host",
+        "$LITEOSTOPDIR/drivers/mmc/host/sdhci",
+        "$LITEOSTOPDIR/drivers/mmc/proc",
+        "$LITEOSTOPDIR/drivers/mmc/adapt_liteos",
+        "$LITEOSTOPDIR/drivers/mmc/include",
+    ]
+    defines = ["LOSCFG_MMCSD_SG_SUPPORT"]
+}

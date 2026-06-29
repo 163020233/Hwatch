@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[AUT]send_hci_auth_cmp :: status[%u], con_cmp[%u], change_link_key[%u], enc_mode[%u] @lm_classic_acl_srv_auth_ram.c(32),INFO" ID="0x8af80105" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AUT]lm_classic_acl_legacy_auth_check_denial_act:: code:0x%x @lm_classic_acl_srv_auth_ram.c(124),INFO" ID="0x8af803e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AUT]lm_classic_acl_sec_auth_rx_au_rand_denial_act:: error_code:[0x%x] @lm_classic_acl_srv_auth_ram.c(154),INFO" ID="0x8af804d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_sec_auth_rx_au_rand_denial_act:: peripheral try to solve collison @lm_classic_acl_srv_auth_ram.c(157),INFO" ID="0x8af804ed" />
+			</MSG_LOG>

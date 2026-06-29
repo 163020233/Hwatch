@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bs br] save conn order master:%d num:%d @br_device_connect.c(92),INFO" ID="0xea4602e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] [%d] dev_id:%d @br_device_connect.c(95),INFO" ID="0xea4602fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] cant connect, is_master:%d conn_max is 0 @br_device_connect.c(335),INFO" ID="0xea460a7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] cant connect, is_master:%d filter mode @br_device_connect.c(341),INFO" ID="0xea460aad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bs br] cant connect, is_master:%d uplimit:%d conn_count:%d @br_device_connect.c(349),INFO" ID="0xea460aed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] get reconn devs reach max num %u, input num %u @br_device_connect.c(367),WARNING" ID="0xea460b7b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] reconn dev_id:%d dev_reconn_count:%d @br_device_connect.c(414),INFO" ID="0xea460cf5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br]reconn timeout, schedule fail:0x%08X @br_device_connect.c(471),ERROR" ID="0xea460eba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] start reconn timer, interval:%d @br_device_connect.c(479),INFO" ID="0xea460efd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] reconn process, dev num:%d @br_device_connect.c(557),INFO" ID="0xea46116d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br]reconn process, schedule fail:0x%08X @br_device_connect.c(586),ERROR" ID="0xea461252" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] accept connect proc, remote not found dev_id:%d @br_device_connect.c(648),ERROR" ID="0xea461442" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] accept connect proc, dev_id:%d ret:0x%08X @br_device_connect.c(653),INFO" ID="0xea46146d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bs br] disconn proc, remote not found dev_id:%d @br_device_connect.c(671),ERROR" ID="0xea4614fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bs br] disconn proc, dev_id:%d ret:0x%08X @br_device_connect.c(675),INFO" ID="0xea46151d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bs br] get remote device info fail @br_device_connect.c(698),INFO" ID="0xea4615d5" />
+			</MSG_LOG>

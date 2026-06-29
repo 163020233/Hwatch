@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="br set bondable failed @sapi_br_gap_tmp.c(29),INFO" ID="0xedd800ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br set bondable failed, params invalid @sapi_br_gap_tmp.c(32),INFO" ID="0xedd80105" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br set security failed @sapi_br_gap_tmp.c(46),INFO" ID="0xedd80175" />
+			</MSG_LOG>

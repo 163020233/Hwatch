@@ -1,0 +1,34 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="ssapc malloc structure_list lock fail @sle_srv_ssap_client_multi_cb.c(63),ERROR" ID="0xe8cc01fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc_multi_client_node_check inner node-&gt;conn_id:%d, conn_id:%0d @sle_srv_ssap_client_multi_cb.c(83),INFO" ID="0xe8cc029d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc_multi_client_node_check node found @sle_srv_ssap_client_multi_cb.c(87),ERROR" ID="0xe8cc02ba" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc multi client service cbk new client_id:%02x, start hdl:%02x, end_hdl:%02x @sle_srv_ssap_client_multi_cb.c(127),INFO" ID="0xe8cc03fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="multi client service cbk reg fail,param err @sle_srv_ssap_client_multi_cb.c(139),ERROR" ID="0xe8cc045a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc register multi callbacks client_id(%d), connid(%d) status error. @sle_srv_ssap_client_multi_cb.c(148),ERROR" ID="0xe8cc04a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc register multi callbacks client_id(%d), connid(%d) service not found. @sle_srv_ssap_client_multi_cb.c(155),ERROR" ID="0xe8cc04da" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc multi client service cbk conn_id:%d, client_id:%d @sle_srv_ssap_client_multi_cb.c(160),INFO" ID="0xe8cc0505" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc register multi callbacks client_id(%d), connid(%d) conn node not found. @sle_srv_ssap_client_multi_cb.c(180),ERROR" ID="0xe8cc05a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssapc register multi callbacks client_id(%d), connid(%d) conn memcpy fail. @sle_srv_ssap_client_multi_cb.c(187),ERROR" ID="0xe8cc05da" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ssaoc multi client service cbk reg conn_id:%d, client_id:%d, start hdl:%02x, end_hdl:%02x @sle_srv_ssap_client_multi_cb.c(198),INFO" ID="0xe8cc0635" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ssapc multi client service cbk update client_id:%02x, start hdl:%02x, end_hdl:%02x @sle_srv_ssap_client_multi_cb.c(221),INFO" ID="0xe8cc06ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="multi client unservice cbk reg fail, param err @sle_srv_ssap_client_multi_cb.c(240),ERROR" ID="0xe8cc0782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="multi client unservice cbk reg ok @sle_srv_ssap_client_multi_cb.c(260),INFO" ID="0xe8cc0825" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle_ssapc_notification_multi_cbk conn_id:%02x, property handle:%02x @sle_srv_ssap_client_multi_cb.c(277),INFO" ID="0xe8cc08ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gle_ssapc_notification_multi_cbk start_handle:0x%02x, end_handle:0x%02x, conn_id:%d @sle_srv_ssap_client_multi_cb.c(288),INFO" ID="0xe8cc0905" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gle_ssapc_notification_multi_cbk cbk_list call, conn_id:%02x, start_handle:0x%02x, end_handle:0x%02x, property handle:%02x @sle_srv_ssap_client_multi_cb.c(305),INFO" ID="0xe8cc098d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle_ssapc_notification_multi_cbk call cbk_list client_id:%d @sle_srv_ssap_client_multi_cb.c(310),INFO" ID="0xe8cc09b5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle_ssapc_indication_multi_cbk conn_id:%02x, property handle:%02x @sle_srv_ssap_client_multi_cb.c(326),INFO" ID="0xe8cc0a35" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gle_ssapc_indication_multi_cbk start_handle:0x%02x, end_handle:0x%02x, conn_id:%d @sle_srv_ssap_client_multi_cb.c(335),INFO" ID="0xe8cc0a7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle_ssapc_indication_multi_cbk call cbk_list client_id:%d @sle_srv_ssap_client_multi_cb.c(352),INFO" ID="0xe8cc0b05" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gle_ssapc_read_multi_cbk client_id:%d, conn_id:%d, property handle:0x%02x, type:0x%x @sle_srv_ssap_client_multi_cb.c(369),INFO" ID="0xe8cc0b8d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gle_ssapc_read_multi_cbk start_handle:0x%02x, end_handle:0x%02x, conn_id:%d @sle_srv_ssap_client_multi_cb.c(378),INFO" ID="0xe8cc0bd5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle_ssapc_read_multi_cbk call cbk_list client_id:%d, client_id:0x%02x @sle_srv_ssap_client_multi_cb.c(395),INFO" ID="0xe8cc0c5d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gle_ssapc_write_multi_cbk client_id:%d, conn_id:%d, property handle:0x%02x, propertytype:0x%x @sle_srv_ssap_client_multi_cb.c(416),INFO" ID="0xe8cc0d05" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gle_ssapc_write_multi_cbk start_handle:0x%02x, end_handle:0x%02x, conn_id:%d @sle_srv_ssap_client_multi_cb.c(425),INFO" ID="0xe8cc0d4d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle_ssapc_write_multi_cbk call cbk_list client_id:%d, client_id:0x%02x @sle_srv_ssap_client_multi_cb.c(442),INFO" ID="0xe8cc0dd5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gle_ssapc_call_method_cfm_multi_cbk client_id:%d, conn_id:%d, method handle:0x%02x @sle_srv_ssap_client_multi_cb.c(462),INFO" ID="0xe8cc0e75" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gle_ssapc_call_method_cfm_multi_cbk start_handle:0x%02x, end_handle:0x%02x, conn_id:%d @sle_srv_ssap_client_multi_cb.c(471),INFO" ID="0xe8cc0ebd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle_ssapc_call_method_cfm_multi_cbk call cbk_list client_id:%d, client_id:0x%02x @sle_srv_ssap_client_multi_cb.c(488),INFO" ID="0xe8cc0f45" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gle_ssapc_read_by_uuid_complete_multi_cbk client_id:%d, conn_id:%d, start_hdl:0x%02x, end_hdl:0x%02x @sle_srv_ssap_client_multi_cb.c(509),INFO" ID="0xe8cc0fed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gle_ssapc_read_by_uuid_complete_multi_cbk start_handle:0x%02x, end_handle:0x%02x, conn_id:%d @sle_srv_ssap_client_multi_cb.c(518),INFO" ID="0xe8cc1035" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gle_ssapc_read_by_uuid_complete_multi_cbk call cbk_list client_id:%d, client_id:0x%02x @sle_srv_ssap_client_multi_cb.c(536),INFO" ID="0xe8cc10c5" />
+			</MSG_LOG>

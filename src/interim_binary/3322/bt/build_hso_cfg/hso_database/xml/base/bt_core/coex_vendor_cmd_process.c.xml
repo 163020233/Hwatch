@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[COEX]lm_coex_hci_vendor_notify_a2dp_autorate_act:a2dp=0x%x,code_type=0x%x,abr_state=0x%x,bitrate=%d @coex_vendor_cmd_process.c(72),INFO" ID="0x8b5a0245" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[COEX]lm_coex_hci_vendor_notify_low_latency_act conhdl 0x%x, enable 0x%x @coex_vendor_cmd_process.c(103),INFO" ID="0x8b5a033d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[COEX]lm_coex_hci_vendor_notify_a2dp_cmd_act conhdl 0x%x, lvl = 0x%x @coex_vendor_cmd_process.c(144),INFO" ID="0x8b5a0485" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[COEX]lm_coex_hci_vendor_notify_obex_cmd_act conhdl 0x%x, enable = 0x%x @coex_vendor_cmd_process.c(167),INFO" ID="0x8b5a053d" />
+			</MSG_LOG>

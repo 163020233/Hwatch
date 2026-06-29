@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[ERR][CHR_UPDATE]err_id = 0x%x, err_id_high = 0x%x,err_id_low = 0x%x @bgtp_chr.c(22),ERROR" ID="0x8a8a00b2" />
+			</MSG_LOG>

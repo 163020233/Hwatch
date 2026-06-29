@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]set_scan_enable_act, scan_enable=%d, filter_duplicates=%d @lm_gle_scan_act_ram.c(40),INFO" ID="0x8bd80145" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]hci_set_scan_enable_act, scan_enable=%d, filter_duplicates=%d @lm_gle_scan_act_ram.c(72),INFO" ID="0x8bd80245" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_scan_off_hci_set_scan_data_act_ram, scan_data_len:%d @lm_gle_scan_act_ram.c(136),INFO" ID="0x8bd80445" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_scanning_hci_set_scan_data_act_ram, scan_data_len:%d @lm_gle_scan_act_ram.c(160),INFO" ID="0x8bd80505" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_set_scan_enable, scan evt task env exists, start task fsm! @lm_gle_scan_act_ram.c(183),INFO" ID="0x8bd805bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_set_scan_enable, switch to scanning state @lm_gle_scan_act_ram.c(201),INFO" ID="0x8bd8064d" />
+			</MSG_LOG>

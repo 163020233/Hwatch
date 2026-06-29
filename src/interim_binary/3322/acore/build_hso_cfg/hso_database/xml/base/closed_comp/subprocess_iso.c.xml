@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="subprocess set data path group_id:%d, status:%d, direction:%d, conn_id:%d @subprocess_iso.c(294),INFO" ID="0xefaa0935" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="subprocess remove iso group fail group_id:%d, ret:0x%x @subprocess_iso.c(428),ERROR" ID="0xefaa0d62" />
+			</MSG_LOG>

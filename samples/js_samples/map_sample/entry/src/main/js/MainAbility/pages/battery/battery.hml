@@ -1,0 +1,8 @@
+<div class="container">
+    <list class="todo-wrapper" on:click="replaceHomefoPage">
+        <list-item class="todo-item">
+            <text class="todo-title">charging {{charging}}</text>
+            <text class="todo-title">batterylevel {{level}}</text>
+        </list-item>
+    </list>
+</div>

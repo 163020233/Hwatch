@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[bgtp] lm_gle_adv_standby_hci_enable_act, adv_handle:%d, enable:%d, duration:%d, max_adv_evt:%d @lm_gle_adv_act_ram.c(45),INFO" ID="0x8bda016d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp] lm_gle_adv_advertising_hci_enable_act, adv_handle:%d, enable:%d, duration:%d, max_adv_evt:%d @lm_gle_adv_act_ram.c(97),INFO" ID="0x8bda030d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_gle_adv_connect_req_received, clock:0x%x, interval:%d, clkn:0x%x, us_offset:%d @lm_gle_adv_act_ram.c(148),INFO" ID="0x8bda04a5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp] lm_gle_adv_hci_enable_act, adv_handle:%d, enable:%d, duration:%d, max_adv_evt:%d @lm_gle_adv_act_ram.c(225),INFO" ID="0x8bda070d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp] lm_gle_adv_delay_conn reopen!, duration:%d, max_ext_adv_evt:%d @lm_gle_adv_act_ram.c(262),INFO" ID="0x8bda0835" />
+			</MSG_LOG>

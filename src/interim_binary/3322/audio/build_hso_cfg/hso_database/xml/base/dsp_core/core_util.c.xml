@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sample_rate = %u @core_util.c(46),ERROR" ID="0x98700172" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sample_rate = %d @core_util.c(53),ERROR" ID="0x987001aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]bit_depth = %u @core_util.c(76),ERROR" ID="0x98700262" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]channel = %u @core_util.c(98),ERROR" ID="0x98700312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]port = 0x%08X @core_util.c(134),ERROR" ID="0x98700432" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]val = %d @core_util.c(141),ERROR" ID="0x9870046a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]i2s_mode = 0x%08X @core_util.c(154),ERROR" ID="0x987004d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]i2s_mclk = 0x%08X @core_util.c(164),ERROR" ID="0x98700522" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]i2s_bclk = 0x%08X @core_util.c(193),ERROR" ID="0x9870060a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]i2s_bit_depth = 0x%08X @core_util.c(215),ERROR" ID="0x987006ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]i2s_channel = 0x%08X @core_util.c(236),ERROR" ID="0x98700762" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]i2s_pcm_delay = 0x%08X @core_util.c(259),ERROR" ID="0x9870081a" />
+			</MSG_LOG>

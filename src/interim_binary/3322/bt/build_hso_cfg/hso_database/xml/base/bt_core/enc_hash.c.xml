@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="encrypt_set_hash_task attempt to set invalid hash algorithm %d @enc_hash.c(66),WARNING" ID="0x89b60213" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp] Trigger Hash Algirithm %d Engine Fail! @enc_hash.c(112),WARNING" ID="0x89b60383" />
+			</MSG_LOG>

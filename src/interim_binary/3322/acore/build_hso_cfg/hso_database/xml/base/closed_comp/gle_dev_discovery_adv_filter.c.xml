@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="no filter index can be scheduled. @gle_dev_discovery_adv_filter.c(58),ERROR" ID="0xeeb001d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add adv filter malloc cmd fail. @gle_dev_discovery_adv_filter.c(112),ERROR" ID="0xeeb00382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add adv filter malloc filter index fail. @gle_dev_discovery_adv_filter.c(120),ERROR" ID="0xeeb003c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add adv filter param is null. @gle_dev_discovery_adv_filter.c(152),ERROR" ID="0xeeb004c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add adv filter param repeat. @gle_dev_discovery_adv_filter.c(164),ERROR" ID="0xeeb00522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add adv filter assign filter index fail. @gle_dev_discovery_adv_filter.c(169),ERROR" ID="0xeeb0054a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="delete adv filter malloc node fail. @gle_dev_discovery_adv_filter.c(195),ERROR" ID="0xeeb0061a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="delete adv filter param is null. @gle_dev_discovery_adv_filter.c(222),ERROR" ID="0xeeb006f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="delete adv filter filter index err. @gle_dev_discovery_adv_filter.c(235),ERROR" ID="0xeeb0075a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="switch adv filter param is null. @gle_dev_discovery_adv_filter.c(258),ERROR" ID="0xeeb00812" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="switch adv filter param err. @gle_dev_discovery_adv_filter.c(270),ERROR" ID="0xeeb00872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="switch adv filter malloc fail. @gle_dev_discovery_adv_filter.c(282),ERROR" ID="0xeeb008d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add adv filter cfm malloc fail. @gle_dev_discovery_adv_filter.c(304),ERROR" ID="0xeeb00982" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add adv filter cfm result fail. @gle_dev_discovery_adv_filter.c(335),ERROR" ID="0xeeb00a7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="delete adv filter cfm result fail. @gle_dev_discovery_adv_filter.c(365),ERROR" ID="0xeeb00b6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="config adv filter cmd is empty. @gle_dev_discovery_adv_filter.c(446),INFO" ID="0xeeb00df5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="cmd param data err. @gle_dev_discovery_adv_filter.c(456),ERROR" ID="0xeeb00e42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv filter send list empty. @gle_dev_discovery_adv_filter.c(462),INFO" ID="0xeeb00e75" />
+			</MSG_LOG>

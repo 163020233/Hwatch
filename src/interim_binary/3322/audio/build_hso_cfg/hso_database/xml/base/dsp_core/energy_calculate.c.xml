@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[hifi][energy_clc] enter mute scene, node: %u, energy: 0x%08X @energy_calculate.c(86),WARNING" ID="0x989202b3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][energy_clc] exit mute scene, node: %u, energy: 0x%08X @energy_calculate.c(93),WARNING" ID="0x989202eb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][energy_clc] check param, node: %u @energy_calculate.c(142),WARNING" ID="0x98920473" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][energy_clc] check param, node: %u, frame: 0x%08X @energy_calculate.c(148),WARNING" ID="0x989204a3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][energy_clc] check param, node: %u, bit_depth: %u @energy_calculate.c(156),WARNING" ID="0x989204e3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][energy_clc] check param, node: %u, bits_bytes: %u @energy_calculate.c(162),WARNING" ID="0x98920513" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][energy_clc] check param, node: %u, sample_rate: %u @energy_calculate.c(168),WARNING" ID="0x98920543" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][energy_clc] node: %u | total_frame:  %u | mute_frame:  %u @energy_calculate.c(232),WARNING" ID="0x98920743" />
+			</MSG_LOG>

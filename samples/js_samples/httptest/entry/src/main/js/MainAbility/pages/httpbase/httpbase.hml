@@ -1,0 +1,58 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="getRequest">
+            <text class="todo-title">GetRequest</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="getRequestLoop">
+            <text class="todo-title">GetRequest循环</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="putRequest">
+            <text class="todo-title">PutRequest</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="putRequestLoop">
+            <text class="todo-title">PutRequest循环</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="deleteRequest">
+            <text class="todo-title">DeleteRequest</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="deleteRequestLoop">
+            <text class="todo-title">DeleteRequest循环</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="postRequest">
+            <text class="todo-title">PostRequest</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="postRequestLoop">
+            <text class="todo-title">PostRequest循环</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="headRequest">
+            <text class="todo-title">HeadRequest</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="headRequestLoop">
+            <text class="todo-title">HeadRequest循环</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="requestInStream">
+            <text class="todo-title">requestInStream</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="requestInStreamOnce">
+            <text class="todo-title">requestInStreamOnce</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="requestInStreamOff">
+            <text class="todo-title">requestInStreamOff</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="requestInStreamLoop">
+            <text class="todo-title">requestInStream循环</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="download">
+            <text class="todo-title">Download</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="upload">
+            <text class="todo-title">Upload</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="stopDataReceive">
+            <text class="todo-title">stopDataReceive</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color : rebeccapurple;" on:click="replaceHomePage">
+            <text class="todo-title">BACK</text>
+        </list-item>
+    </list>
+</div>

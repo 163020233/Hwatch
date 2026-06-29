@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]dm_classic_get_connected_link, bd_addr 0x%02x:0x%02x:*:*:*:0x%02x not exist! @dm_classic_comm.c(81),INFO" ID="0x89e8028d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]con_info_list,conhdl is %d, bd_addr is 0x%02x:0x%02x:*:*:*:0x%02x @dm_classic_comm.c(86),INFO" ID="0x89e802b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]dm_classic_add_con_info bd_addr is 0x%02x:0x%02x:0x%02x:*:*:* @dm_classic_comm.c(126),INFO" ID="0x89e803f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]dm_classic_con_info_delete bd_addr is 0x%02x:0x%02x:*:*:*:0x%02x @dm_classic_comm.c(153),INFO" ID="0x89e804cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp] HCI (0x0C1A) write_scan_enable=%u. @dm_classic_comm.c(216),INFO" ID="0x89e806c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]dm_classic_wr_sec_conn_host_supp_act, sec_con_host_supp=%d @dm_classic_comm.c(535),INFO" ID="0x89e810bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]dm_classic_wr_sec_conn_host_supp fail, scan_en=%d, acl_nb=%d @dm_classic_comm.c(539),INFO" ID="0x89e810dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]dm_classic_hci_min_key_size, key_min_size[%u] @dm_classic_comm.c(944),INFO" ID="0x89e81d85" />
+			</MSG_LOG>

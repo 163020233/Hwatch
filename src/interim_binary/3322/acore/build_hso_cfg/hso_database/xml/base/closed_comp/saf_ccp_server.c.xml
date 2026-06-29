@@ -1,0 +1,46 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with inst_id = %d @saf_ccp_server.c(78),ERROR" ID="0xe9c20272" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with inst_id = %d @saf_ccp_server.c(104),ERROR" ID="0xe9c20342" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with inst_id = %d @saf_ccp_server.c(131),ERROR" ID="0xe9c2041a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] set feature state, same feature state @saf_ccp_server.c(138),ERROR" ID="0xe9c20452" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with inst_id = %d @saf_ccp_server.c(158),ERROR" ID="0xe9c204f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with inst_id = %d @saf_ccp_server.c(186),ERROR" ID="0xe9c205d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with inst_id = %d @saf_ccp_server.c(206),ERROR" ID="0xe9c20672" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with inst_id = %d @saf_ccp_server.c(238),ERROR" ID="0xe9c20772" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with inst_id = %d @saf_ccp_server.c(275),ERROR" ID="0xe9c2089a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with call_id = %d @saf_ccp_server.c(339),ERROR" ID="0xe9c20a9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] call ringing, call state err: %u @saf_ccp_server.c(352),ERROR" ID="0xe9c20b02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with call_id = %d @saf_ccp_server.c(371),ERROR" ID="0xe9c20b9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] accept call state err, call_state = %u @saf_ccp_server.c(388),ERROR" ID="0xe9c20c22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] terminate fail get call_id: %u with inst invaild @saf_ccp_server.c(435),ERROR" ID="0xe9c20d9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] terminate fail call_id: %u invaild @saf_ccp_server.c(454),ERROR" ID="0xe9c20e32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with call_id = %d @saf_ccp_server.c(485),ERROR" ID="0xe9c20f2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] call local hold, call state err: %u @saf_ccp_server.c(502),ERROR" ID="0xe9c20fb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] call remote hold, call state err: %u @saf_ccp_server.c(514),ERROR" ID="0xe9c21012" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with call_id = %d @saf_ccp_server.c(549),ERROR" ID="0xe9c2112a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] call local retrieve, call state err: %u @saf_ccp_server.c(565),ERROR" ID="0xe9c211aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] call remote retrieve, call state err: %u @saf_ccp_server.c(576),ERROR" ID="0xe9c21202" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] inst not found with call_id = %d @saf_ccp_server.c(599),ERROR" ID="0xe9c212ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][ccps] call state err call_id = %d state = %d @saf_ccp_server.c(615),ERROR" ID="0xe9c2133a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(660),ERROR" ID="0xe9c214a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(698),ERROR" ID="0xe9c215d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(714),ERROR" ID="0xe9c21652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(728),ERROR" ID="0xe9c216c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(744),ERROR" ID="0xe9c21742" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(755),ERROR" ID="0xe9c2179a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(765),ERROR" ID="0xe9c217ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(775),ERROR" ID="0xe9c2183a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(855),ERROR" ID="0xe9c21aba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(873),ERROR" ID="0xe9c21b4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(888),ERROR" ID="0xe9c21bc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(899),ERROR" ID="0xe9c21c1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(909),ERROR" ID="0xe9c21c6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(923),ERROR" ID="0xe9c21cda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(937),ERROR" ID="0xe9c21d4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(951),ERROR" ID="0xe9c21dba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server register fail, param null! @saf_ccp_server.c(964),ERROR" ID="0xe9c21e22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server already register! @saf_ccp_server.c(969),ERROR" ID="0xe9c21e4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] server register failed! ret = %u @saf_ccp_server.c(975),ERROR" ID="0xe9c21e7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] call id init failed: %d @saf_ccp_server.c(980),ERROR" ID="0xe9c21ea2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][ccps] group init failed! ret = %u @saf_ccp_server.c(985),ERROR" ID="0xe9c21eca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][ccps] server not register! @saf_ccp_server.c(1036),ERROR" ID="0xe9c22062" />
+			</MSG_LOG>

@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_comm_task_start sched insert fail task_id(0x%x) @evt_task_fsm.c(26),WARNING" ID="0x880800d3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_comm_task_start sched delate task fail task_id(0x%x) @evt_task_fsm.c(28),WARNING" ID="0x880800e3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_comm_task_start sched update fail task_id(0x%x) @evt_task_fsm.c(40),WARNING" ID="0x88080143" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_comm_task_end sched delate task fail task_id(0x%x) @evt_task_fsm.c(53),WARNING" ID="0x880801ab" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]evt_task_comm_fsm_except_handler except msg src_id(0x%x)dst_id(0x%x)msg_id(0x%x) @evt_task_fsm.c(62),WARNING" ID="0x880801f3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_single_task_start sched insert fail task_id(0x%x) @evt_task_fsm.c(75),WARNING" ID="0x8808025b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]evt_task_single_task_start sched delate task fail task_id(0x%x) @evt_task_fsm.c(77),WARNING" ID="0x8808026b" />
+			</MSG_LOG>

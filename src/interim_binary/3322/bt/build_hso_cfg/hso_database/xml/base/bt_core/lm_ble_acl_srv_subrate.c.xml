@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_ble_subrate_ind_check_hci_param, env_ptr is null @lm_ble_acl_srv_subrate.c(117),ERROR" ID="0x8aca03aa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_ble_subrate_ind_check_hci:subrate = %d,delay = %d,connection_timeout = %d,half_time_to = %d @lm_ble_acl_srv_subrate.c(126),INFO" ID="0x8aca03f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_subrate_calc_reference_event_counter: subrate=%d, i=%d, final_offset=%d @lm_ble_acl_srv_subrate.c(298),INFO" ID="0x8aca0955" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_ble_llcp_subrate_ind: pdu_op = %d,pdu_sub_rate = %d,pdu_sub_lat = %d,pdu_ref_ev_counter = %d @lm_ble_acl_srv_subrate.c(325),INFO" ID="0x8aca0a2d" />
+			</MSG_LOG>

@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2][GLE_SCAN]evt_task_gle_scan_start_cbk, evt_status=%d @evt_task_gle_scan_cbk.c(57),WARNING" ID="0x8aaa01cb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_SCAN]chk_continue, prev_ts:0x%x, next_ts:0x%x, free_ts:0x%x, remain_duration:%d @evt_task_gle_scan_cbk.c(94),INFO" ID="0x8aaa02f5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_SCAN]chk_continue, remain_duration:%d, old_ts=0x%x, new_ts=0x%x, curr_ts=0x%x @evt_task_gle_scan_cbk.c(108),INFO" ID="0x8aaa0365" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][GLE_SCAN]evt_task_gle_scan_restart, ts=0x%x, asap_limit=0x%x, dur_min=%d @evt_task_gle_scan_cbk.c(206),WARNING" ID="0x8aaa0673" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_scan_evt_cbk, timestamp=0x%x, current time=0x%x, state=%d, task_id=0x%x @evt_task_gle_scan_cbk.c(234),INFO" ID="0x8aaa0755" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle][scan] gle_scan_state: %d @evt_task_gle_scan_cbk.c(255),WARNING" ID="0x8aaa07fb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_scan_abnormal_cbk, timestamp=0x%x, current time=0x%x, state=%d, task_id=0x%x @evt_task_gle_scan_cbk.c(287),INFO" ID="0x8aaa08fd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_scan_cancel_cbk, timestamp=0x%x, current time=0x%x, state=%d, task_id=0x%x @evt_task_gle_scan_cbk.c(335),INFO" ID="0x8aaa0a7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_SCAN]evt_task_gle_scan_isr_cbk es_elt mismatch @evt_task_gle_scan_cbk.c(379),WARNING" ID="0x8aaa0bdb" />
+			</MSG_LOG>

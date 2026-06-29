@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="hci struct to stream new fail @gle_hci_send_data.c(54),ERROR" ID="0xedcc01b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hci struct to stream memcpy fail @gle_hci_send_data.c(64),ERROR" ID="0xedcc0202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle hci command encode send tl create par fail  @gle_hci_send_data.c(83),ERROR" ID="0xedcc029a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle hci command encode send tl memcpy error! len = %02x @gle_hci_send_data.c(87),ERROR" ID="0xedcc02ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE HCI] hci data send busy, num: %x. @gle_hci_send_data.c(137),INFO" ID="0xedcc044d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="gle hci acb data send2tl in len:%d, blen:%d, num:%d, plen:%d, pb:%d @gle_hci_send_data.c(150),INFO" ID="0xedcc04b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE HCI][send data] lcid:%x, total:%u, send data packet count:%u  @gle_hci_send_data.c(155),INFO" ID="0xedcc04dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE HCI] hci data send busy, num:%d, handle:%d, used_num:%d. @gle_hci_send_data.c(226),INFO" ID="0xedcc0715" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="gle hci acb data send2tl in len:%d, blen:%d, num:%d, pb:%d, hdl:%d, large_data_num:%d @gle_hci_send_data.c(247),INFO" ID="0xedcc07bd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE HCI][send data] lcid:%x, total:%u, send data packet count:%u  @gle_hci_send_data.c(256),INFO" ID="0xedcc0805" />
+			</MSG_LOG>

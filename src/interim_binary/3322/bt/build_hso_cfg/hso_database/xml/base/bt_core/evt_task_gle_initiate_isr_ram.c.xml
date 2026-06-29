@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="es_insert_elt_gle_urgent err! task_id = %#x @evt_task_gle_initiate_isr_ram.c(105),INFO" ID="0x8bec034d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_initiate_rx_handle, unexpected behavior! @evt_task_gle_initiate_isr_ram.c(166),INFO" ID="0x8bec0535" />
+			</MSG_LOG>

@@ -1,0 +1,10 @@
+<div class="container" onswipe="swipeGrids">
+        <div class="container">
+                <marquee class="title" style="text-orientation: {{orientation}};">
+                        跑马灯文本翻转测试测试
+                </marquee>
+                <input class="game_level_btn_confirm" type="button" value="{{ orientation }}"
+                       on:click="Changeangle()"/>
+        </div>
+</div>
+

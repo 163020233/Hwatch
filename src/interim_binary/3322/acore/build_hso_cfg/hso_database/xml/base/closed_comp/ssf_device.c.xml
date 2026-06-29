@@ -1,0 +1,99 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="no device found by device_id %u @ssf_device.c(165),ERROR" ID="0xef9c052a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="device has no obj @ssf_device.c(170),ERROR" ID="0xef9c0552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="reach max device numbe, %u @ssf_device.c(220),ERROR" ID="0xef9c06e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DEV] malloc in device config failed @ssf_device.c(229),ERROR" ID="0xef9c072a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no device %u found in insert. @ssf_device.c(312),ERROR" ID="0xef9c09c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="device %u has too much sle_obj %u @ssf_device.c(317),ERROR" ID="0xef9c09ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no obj %u found in delete. @ssf_device.c(400),ERROR" ID="0xef9c0c82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] sle_device_storage_obj failed, obj_id: %u @ssf_device.c(407),ERROR" ID="0xef9c0cba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no device %u found in delete. @ssf_device.c(434),ERROR" ID="0xef9c0d92" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][DEV] ageing remove device_id: %u, addr: %02x:**:**:**:%02x:%02x @ssf_device.c(459),INFO" ID="0xef9c0e5d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] device each member obj num %u exceed max %u @ssf_device.c(473),ERROR" ID="0xef9c0eca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] find exist coop obj_id: %u @ssf_device.c(478),ERROR" ID="0xef9c0ef2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] alloc coop obj_id: %u @ssf_device.c(507),ERROR" ID="0xef9c0fda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] alloc member obj with exist obj: %u @ssf_device.c(529),INFO" ID="0xef9c108d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] alloc member obj_id: %u @ssf_device.c(533),ERROR" ID="0xef9c10aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add member obj to member obj list failed @ssf_device.c(535),ERROR" ID="0xef9c10ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] alloc coop obj with exist obj: %u @ssf_device.c(564),INFO" ID="0xef9c11a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add member obj to member obj list failed @ssf_device.c(569),ERROR" ID="0xef9c11ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] recover coop obj. device num: %u, obj: %u @ssf_device.c(590),INFO" ID="0xef9c1275" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] no obj %u found in storage. @ssf_device.c(607),ERROR" ID="0xef9c12fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] obj[%u] get device num is zero. @ssf_device.c(613),INFO" ID="0xef9c132d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] malloc obj: %u num: %u failed in storage. @ssf_device.c(618),ERROR" ID="0xef9c1352" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] sle_device_storage_obj index: %u, device_id: %u @ssf_device.c(623),INFO" ID="0xef9c137d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] get addr failed in storage, device_id=0x%x @ssf_device.c(626),ERROR" ID="0xef9c1392" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] get device list failed in storage, err: %d @ssf_device.c(645),ERROR" ID="0xef9c142a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] add obj to storage failed, err: %d @ssf_device.c(651),ERROR" ID="0xef9c145a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no device found by device_id %u @ssf_device.c(664),ERROR" ID="0xef9c14c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] alloc coop obj. device num: %u, obj: %u @ssf_device.c(681),INFO" ID="0xef9c154d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] sle_device_storage_obj failed, obj_id: %u @ssf_device.c(694),ERROR" ID="0xef9c15b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] sle_device_storage_device_auth_info failed, obj_id: %u, device_id: %u @ssf_device.c(702),ERROR" ID="0xef9c15f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no obj %u found @ssf_device.c(712),ERROR" ID="0xef9c1642" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no obj %u found @ssf_device.c(761),ERROR" ID="0xef9c17ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="btos_malloc in get obj failed @ssf_device.c(796),ERROR" ID="0xef9c18e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="btos_malloc in full match get obj failed @ssf_device.c(888),ERROR" ID="0xef9c1bc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="btos_malloc obj_device_list failed @ssf_device.c(899),ERROR" ID="0xef9c1c1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no device %u found in set conn id. @ssf_device.c(940),ERROR" ID="0xef9c1d62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no device %u found in set conn state. @ssf_device.c(952),ERROR" ID="0xef9c1dc2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no device %u found in set conn state. @ssf_device.c(964),ERROR" ID="0xef9c1e22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no device %u found in get conn id. @ssf_device.c(996),ERROR" ID="0xef9c1f22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no device %u found in get conn state. @ssf_device.c(1011),ERROR" ID="0xef9c1f9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle get obj by priority malloc failed @ssf_device.c(1091),ERROR" ID="0xef9c221a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no device %u found in check paired. @ssf_device.c(1120),ERROR" ID="0xef9c2302" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][device] no obj=%u found in check paired. @ssf_device.c(1131),ERROR" ID="0xef9c235a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no obj %u found @ssf_device.c(1147),ERROR" ID="0xef9c23da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle get all device ids malloc failed @ssf_device.c(1161),ERROR" ID="0xef9c244a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle get all device addrs malloc failed @ssf_device.c(1166),ERROR" ID="0xef9c2472" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no obj %u found @ssf_device.c(1190),ERROR" ID="0xef9c2532" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no obj %u found @ssf_device.c(1202),ERROR" ID="0xef9c2592" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="no obj %u found @ssf_device.c(1239),ERROR" ID="0xef9c26ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="device state %d @ssf_device.c(1248),ERROR" ID="0xef9c2702" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1263),ERROR" ID="0xef9c277a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] device %u has invalid call inst id. @ssf_device.c(1268),ERROR" ID="0xef9c27a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1279),ERROR" ID="0xef9c27fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] get vas inst, no device %u found. @ssf_device.c(1290),ERROR" ID="0xef9c2852" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] get vas inst, device %u has invalid vas inst id. @ssf_device.c(1295),ERROR" ID="0xef9c287a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] set vas inst, no device %u found. @ssf_device.c(1306),ERROR" ID="0xef9c28d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1317),ERROR" ID="0xef9c292a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1328),ERROR" ID="0xef9c2982" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1339),ERROR" ID="0xef9c29da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1350),ERROR" ID="0xef9c2a32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1361),ERROR" ID="0xef9c2a8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DEVICE] update call speaker volume callback is null. @ssf_device.c(1375),INFO" ID="0xef9c2afd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1385),ERROR" ID="0xef9c2b4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1396),ERROR" ID="0xef9c2ba2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DEVICE] update media volume callback is null. @ssf_device.c(1410),INFO" ID="0xef9c2c15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1420),ERROR" ID="0xef9c2c62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1453),ERROR" ID="0xef9c2d6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] get ep info fail! @ssf_device.c(1500),ERROR" ID="0xef9c2ee2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1519),ERROR" ID="0xef9c2f7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEVICE] no device %u found. @ssf_device.c(1529),ERROR" ID="0xef9c2fca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AS] no obj %u found. @ssf_device.c(1538),ERROR" ID="0xef9c3012" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] obj %u device %u paired but not discovered. @ssf_device.c(1545),ERROR" ID="0xef9c304a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] device info is null! @ssf_device.c(1557),ERROR" ID="0xef9c30aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][AS] device_id is: %u, new update to state is: %u. @ssf_device.c(1561),INFO" ID="0xef9c30cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] obj info is null! @ssf_device.c(1569),ERROR" ID="0xef9c310a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] obj info is null! @ssf_device.c(1580),ERROR" ID="0xef9c3162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] sle_obj_info is null! @ssf_device.c(1600),ERROR" ID="0xef9c3202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] obj info is null! @ssf_device.c(1612),ERROR" ID="0xef9c3262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AS] device_info is null! @ssf_device.c(1621),ERROR" ID="0xef9c32aa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="i[%d] device[%d] member_id[%d] @ssf_device.c(1624),INFO" ID="0xef9c32c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] trying to clear device info device_id = %d @ssf_device.c(1882),INFO" ID="0xef9c3ad5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] get device list failed in storage, err: %x @ssf_device.c(1970),ERROR" ID="0xef9c3d92" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] obj device num is zero delete obj[%u], err: %x @ssf_device.c(1975),INFO" ID="0xef9c3dbd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] add obj to storage failed, err: %x @ssf_device.c(1981),ERROR" ID="0xef9c3dea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] sle_device_storage_obj failed, obj_id: %u @ssf_device.c(2007),ERROR" ID="0xef9c3eba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] sle_device_storage_device_auth_info failed, obj_id: %u, device_id: %u @ssf_device.c(2015),ERROR" ID="0xef9c3efa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DEV] insert addr is zero @ssf_device.c(2037),ERROR" ID="0xef9c3faa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DEV] addr[%02x][%02x] dynamic insert obj alloc new obj[%u] @ssf_device.c(2057),INFO" ID="0xef9c404d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DEV] addr[%02x][%02x] dynamic insert obj already in obj[%u] @ssf_device.c(2063),INFO" ID="0xef9c407d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][DEV] sle obj[%u] insert addr[%02x][%02x] device[%u] err[%x] @ssf_device.c(2070),ERROR" ID="0xef9c40b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DEV] update device channel failed, err: %d @ssf_device.c(2082),ERROR" ID="0xef9c4112" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] device[%u] already in channel[%x] @ssf_device.c(2091),ERROR" ID="0xef9c415a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DEV] device[%u] change channel[%x] succ @ssf_device.c(2094),INFO" ID="0xef9c4175" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DEV] device[%u] change channel[%x] storage failed ret[%x] @ssf_device.c(2099),ERROR" ID="0xef9c419a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DEV] bs_sle_remove_addr addr is null @ssf_device.c(2107),ERROR" ID="0xef9c41da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DEV] remove addr[%02x][%02x] device[%u] paired @ssf_device.c(2115),ERROR" ID="0xef9c421a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][DEV] remove addr[%02x][%02x] device[%u] not in obj, ret[%x] @ssf_device.c(2123),ERROR" ID="0xef9c425a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][DEV] succ remove addr[%02x][%02x] device[%u] in obj[%u] @ssf_device.c(2131),INFO" ID="0xef9c429d" />
+			</MSG_LOG>

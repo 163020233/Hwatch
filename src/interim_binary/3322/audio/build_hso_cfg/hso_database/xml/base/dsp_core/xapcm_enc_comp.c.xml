@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi][aenc][pcm enc] pcm_1ch_upmix_to_2ch @xapcm_enc_comp.c(217),WARNING" ID="0x992606cb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xapcm_enc_comp.c(298),ERROR" ID="0x99260952" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xapcm_enc_comp.c(311),ERROR" ID="0x992609ba" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][aenc][pcm enc] input bit depth: %u, ch: %u, output bit depth: %u, ch: %u @xapcm_enc_comp.c(342),WARNING" ID="0x99260ab3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][aenc][pcm enc] unsupport bit depth convert, input bit depth: %u, output bit depth: %u @xapcm_enc_comp.c(548),ERROR" ID="0x99261122" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call pcm_enc_bit_depth_convert Failed, Error Code: [0x%08X] @xapcm_enc_comp.c(630),ERROR" ID="0x992613b2" />
+			</MSG_LOG>

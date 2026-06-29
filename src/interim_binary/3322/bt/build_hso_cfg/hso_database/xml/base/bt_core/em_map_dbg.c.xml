@@ -1,0 +1,66 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_RF_START_ADDR=%d. @em_map_dbg.c(24),INFO" ID="0x8b7400c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC0_EEQ_NORMAL_OFFSET_INIT=%d. @em_map_dbg.c(25),INFO" ID="0x8b7400cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC0_EEQ_URGENT_OFFSET_INIT=%d. @em_map_dbg.c(26),INFO" ID="0x8b7400d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC1_EEQ_NORMAL_OFFSET_INIT=%d. @em_map_dbg.c(27),INFO" ID="0x8b7400dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC1_EEQ_URGENT_OFFSET_INIT=%d. @em_map_dbg.c(28),INFO" ID="0x8b7400e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC0_CLASSIC_INT_QUEUE_OFFSET_INIT=%d. @em_map_dbg.c(29),INFO" ID="0x8b7400ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC0_BLE_INT_QUEUE_OFFSET_INIT=%d. @em_map_dbg.c(30),INFO" ID="0x8b7400f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC0_SLE_INT_QUEUE_OFFSET_INIT=%d. @em_map_dbg.c(31),INFO" ID="0x8b7400fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC1_CLASSIC_INT_QUEUE_OFFSET_INIT=%d. @em_map_dbg.c(32),INFO" ID="0x8b740105" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC1_BLE_INT_QUEUE_OFFSET_INIT=%d. @em_map_dbg.c(33),INFO" ID="0x8b74010d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_MAC1_SLE_INT_QUEUE_OFFSET_INIT=%d. @em_map_dbg.c(34),INFO" ID="0x8b740115" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CHNL_SCAN_OFFSET_INIT=%d. @em_map_dbg.c(35),INFO" ID="0x8b74011d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BLE_ENC_PLAIN_OFFSET_INIT=%d. @em_map_dbg.c(36),INFO" ID="0x8b740125" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BLE_ENC_CIPHER_OFFSET_INIT=%d. @em_map_dbg.c(37),INFO" ID="0x8b74012d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BLE_FAL_OFFSET_INIT=%d. @em_map_dbg.c(38),INFO" ID="0x8b740135" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BLE_RAL_OFFSET_INIT=%d. @em_map_dbg.c(39),INFO" ID="0x8b74013d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_ISCAN_FHS_OFFSET_INIT=%d. @em_map_dbg.c(40),INFO" ID="0x8b740145" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_PAGE_FHS_OFFSET_INIT=%d. @em_map_dbg.c(41),INFO" ID="0x8b74014d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_SED_OFFSET_INIT=%d. @em_map_dbg.c(42),INFO" ID="0x8b740155" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BGLE_SED_OFFSET_INIT=%d. @em_map_dbg.c(43),INFO" ID="0x8b74015d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_TXPD_OFFSET_INIT=%d. @em_map_dbg.c(44),INFO" ID="0x8b740165" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BGLE_TXPD_OFFSET_INIT=%d. @em_map_dbg.c(45),INFO" ID="0x8b74016d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_COMM_TXSD_OFFSET_INIT=%d. @em_map_dbg.c(46),INFO" ID="0x8b740175" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_RXPD_OFFSET_INIT=%d. @em_map_dbg.c(47),INFO" ID="0x8b74017d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BLE_RXPD_OFFSET_INIT=%d. @em_map_dbg.c(48),INFO" ID="0x8b740185" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_SLE_RXPD_OFFSET_INIT=%d. @em_map_dbg.c(49),INFO" ID="0x8b74018d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_TX_BUFF_CNTL_OFFSET_INIT=%d. @em_map_dbg.c(50),INFO" ID="0x8b740195" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_TX_BUFF_OFFSET_INIT=%d. @em_map_dbg.c(51),INFO" ID="0x8b74019d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_EIR_TX_BUFF_OFFSET_INIT=%d. @em_map_dbg.c(52),INFO" ID="0x8b7401a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_STP_TX_BUFF_OFFSET_INIT=%d. @em_map_dbg.c(53),INFO" ID="0x8b7401ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BGLE_TX_BUFF_CNTL_OFFSET_INIT=%d. @em_map_dbg.c(54),INFO" ID="0x8b7401b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_SLE_TX_BUFF_OFFSET_INIT=%d. @em_map_dbg.c(55),INFO" ID="0x8b7401bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BGLE_TX_BUFF_S_OFFSET_INIT=%d. @em_map_dbg.c(56),INFO" ID="0x8b7401c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_CLASSIC_RX_BUFF_CNTL_OFFSET_INIT=%d. @em_map_dbg.c(57),INFO" ID="0x8b7401cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_RX_BUFF_OFFSET_INIT=%d. @em_map_dbg.c(58),INFO" ID="0x8b7401d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_FREQ_TBL_2G_OFFSET_INIT=%d. @em_map_dbg.c(59),INFO" ID="0x8b7401dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_FREQ_TBL_5G1_OFFSET_INIT=%d. @em_map_dbg.c(60),INFO" ID="0x8b7401e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_FREQ_TBL_5G8_OFFSET_INIT=%d. @em_map_dbg.c(61),INFO" ID="0x8b7401ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_WBS_TX_BUFF_OFFSET_INIT=%d. @em_map_dbg.c(62),INFO" ID="0x8b7401f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_WBS_RX_BUFF_OFFSET_INIT=%d. @em_map_dbg.c(63),INFO" ID="0x8b7401fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_PWR_LEVEL_LIMIT_BY_FREQ_INDEX_START=%d. @em_map_dbg.c(64),INFO" ID="0x8b740205" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_AUTO_ENG_OPR_MEM_OFFSET_INIT=%d. @em_map_dbg.c(65),INFO" ID="0x8b74020d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_AUTO_ENG_TABLE_OFFSET_INIT=%d. @em_map_dbg.c(66),INFO" ID="0x8b740215" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_REG_TRANS_OFFSET_INIT=%d. @em_map_dbg.c(67),INFO" ID="0x8b74021d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_96K_END=%d. @em_map_dbg.c(68),INFO" ID="0x8b740225" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] **************** EM 96K REMAIN = %d **************** @em_map_dbg.c(69),INFO" ID="0x8b74022d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_ESCO_CTRL_OFFSET_INIT=%d. @em_map_dbg.c(71),INFO" ID="0x8b74023d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_SLE_C_FRAME_FREQ_TABLE_OFFSET_INIT=%d. @em_map_dbg.c(72),INFO" ID="0x8b740245" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BLE_TX_BUFF_OFFSET_INIT=%d. @em_map_dbg.c(73),INFO" ID="0x8b74024d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_SLE_HADM_BUFFER_OFFSET_INIT=%d. @em_map_dbg.c(74),INFO" ID="0x8b740255" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_BLE_CS_FH_FREQ_OFFSET_INIT=%d. @em_map_dbg.c(75),INFO" ID="0x8b74025d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_AUDIO_BUFF_OFFSET_INIT=%d. @em_map_dbg.c(76),INFO" ID="0x8b740265" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_AUDIO_BUFF_END=%d. @em_map_dbg.c(77),INFO" ID="0x8b74026d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_ICB_TX_BUFFER_OFFSET_INIT=%d. @em_map_dbg.c(78),INFO" ID="0x8b740275" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_GLE_ACB_DATA_TXBUFF_OFFSET_INIT=%d. @em_map_dbg.c(79),INFO" ID="0x8b74027d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_ACB_USED_END=%d. @em_map_dbg.c(80),INFO" ID="0x8b740285" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_END=%d. @em_map_dbg.c(81),INFO" ID="0x8b74028d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] EM_SIZE=%d. @em_map_dbg.c(82),INFO" ID="0x8b740295" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] **************** EM 32K REMAIN = %d **************** @em_map_dbg.c(83),INFO" ID="0x8b74029d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] size of classic_sed=%d. @em_map_dbg.c(85),INFO" ID="0x8b7402ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] size of classic_txpd=%d. @em_map_dbg.c(86),INFO" ID="0x8b7402b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] size of classic_rxpd=%d. @em_map_dbg.c(87),INFO" ID="0x8b7402bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] size of bgle_sed=%d. @em_map_dbg.c(88),INFO" ID="0x8b7402c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] size of bgle_txpd=%d. @em_map_dbg.c(89),INFO" ID="0x8b7402cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM_DBG] size of bgle_rxpd=%d. @em_map_dbg.c(90),INFO" ID="0x8b7402d5" />
+			</MSG_LOG>

@@ -1,0 +1,27 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="ble core: report conn status to mcu report status on addr:0x%02x:**:**:**:%02x:%02x @ble_core.c(85),INFO" ID="0xec7402ad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble core: ble core report conn status to mcu conn_state:%d, conn_handle:%d, cap:%d, type:%d @ble_core.c(88),INFO" ID="0xec7402c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[pair] all keys have not been distributed. @ble_core.c(104),INFO" ID="0xec740345" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[pair]ble core: report pair status to mcu rmt_dev_hdl = %d, pair_result = %d @ble_core.c(109),INFO" ID="0xec74036d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv set terminate ahi_b pointer is NULL. @ble_core.c(115),INFO" ID="0xec74039d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble core: set ble adv addr type fail: %d @ble_core.c(136),ERROR" ID="0xec740442" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble log ble general set use private addr g_config_le_s_can_use_privacy = %d use_private_addr = %d @ble_core.c(149),INFO" ID="0xec7404ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble core: start pair rmt addr is NULL @ble_core.c(157),ERROR" ID="0xec7404ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble core: App Start Ble Pair @ble_core.c(161),INFO" ID="0xec74050d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble core: ble start pair fail: %d @ble_core.c(167),ERROR" ID="0xec74053a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble core: ble disconnect when start pair @ble_core.c(170),ERROR" ID="0xec740552" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble core: ble state ind rmt is NULL @ble_core.c(186),ERROR" ID="0xec7405d2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble core: ble connect change, state = 0x%x, reason = 0x%x, conn_handle = %d, role = 0x%x @ble_core.c(190),INFO" ID="0xec7405f5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble core: ble connect change, addr type:%d addr %02x:**:**:**:%02x:%02x @ble_core.c(192),INFO" ID="0xec740605" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble core: ble connected peer address: 0x%02x:**:**:**:0x%02x:0x%02x @ble_core.c(199),INFO" ID="0xec74063d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble core: ble disconnect, reason = 0x%x @ble_core.c(216),INFO" ID="0xec7406c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble core: ble update rmt_addr memcpy fail ret : %d @ble_core.c(230),ERROR" ID="0xec740732" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble core: ble update identity_addr memcpy fail ret : %d @ble_core.c(237),ERROR" ID="0xec74076a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble core: ble clean key identity_addr memcpy fail ret : %d @ble_core.c(250),ERROR" ID="0xec7407d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble core: app ble smp key handle message is NULL @ble_core.c(260),ERROR" ID="0xec740822" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[pair]ble core: report pair keys to mcu  @ble_core.c(264),INFO" ID="0xec740845" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble core: BLE ENCRYTION SUCCEED @ble_core.c(273),INFO" ID="0xec74088d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble core: BLE KEY MISS @ble_core.c(281),ERROR" ID="0xec7408ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble core: rmt_addr is NULL @ble_core.c(286),ERROR" ID="0xec7408f2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble core: status&amp;connection_handle&amp;maxtx&amp;maxrx, 0x%02x &amp; 0x%02x &amp; 0x%02x &amp; 0x%02x @ble_core.c(302),INFO" ID="0xec740975" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble core: BLE PAIR FAIL @ble_core.c(309),ERROR" ID="0xec7409aa" />
+			</MSG_LOG>

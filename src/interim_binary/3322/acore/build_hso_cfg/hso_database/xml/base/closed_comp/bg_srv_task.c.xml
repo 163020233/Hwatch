@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][INFO] enter btsrv_task_init @bg_srv_task.c(83),INFO" ID="0xe88c029d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] btsrv_init: create msg queue fail @bg_srv_task.c(88),ERROR" ID="0xe88c02c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] btsrv_init: create msg queue fail @bg_srv_task.c(96),ERROR" ID="0xe88c0302" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[btsrv][INFO] btsrv_send_simple_msg:NO message!!! msg_id = %d @bg_srv_task.c(153),ERROR" ID="0xe88c04ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[btsrv][INFO] btsrv_send_simple_msg:NO message!!! msg_id = %d @bg_srv_task.c(159),ERROR" ID="0xe88c04fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] btsrv_init: create msg queue fail @bg_srv_task.c(172),ERROR" ID="0xe88c0562" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hilog]sensorhub btsrv_task_init comes! @bg_srv_task.c(179),INFO" ID="0xe88c059d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[error]sensorhub sle task init fail msg_id != 0  @bg_srv_task.c(181),ERROR" ID="0xe88c05aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hilog]sensorhub sle btsrv_task_body comes! @bg_srv_task.c(196),INFO" ID="0xe88c0625" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[btsrv][ERROR] btsrv send simple message send fail msg_id: %d param0: %x ret: %08x @bg_srv_task.c(216),ERROR" ID="0xe88c06c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[btsrv send msg] msg_id:%d ret:%d @bg_srv_task.c(219),INFO" ID="0xe88c06dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] btsrv_init: create msg queue fail @bg_srv_task.c(230),ERROR" ID="0xe88c0732" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][INFO] btsrv_init: message queue create success @bg_srv_task.c(234),INFO" ID="0xe88c0755" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[btsrv][ERROR] btsrv send simple message send fail msg_id: %d param0: %x ret: %08x @bg_srv_task.c(286),ERROR" ID="0xe88c08f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[btsrv send msg] msg_id:%d ret:%d @bg_srv_task.c(290),INFO" ID="0xe88c0915" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send task msg task_id:%d @bg_srv_task.c(325),INFO" ID="0xe88c0a2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send task data task_id:%d @bg_srv_task.c(362),INFO" ID="0xe88c0b55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[btsrv task] msg_id:%d @bg_srv_task.c(408),INFO" ID="0xe88c0cc5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[btsrv task] msg_hdl-&gt;msg_id:%d @bg_srv_task.c(414),INFO" ID="0xe88c0cf5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[btsrv task] add msg_id:%d @bg_srv_task.c(426),INFO" ID="0xe88c0d55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[btsrv task] get msg_id:%d func failed @bg_srv_task.c(443),INFO" ID="0xe88c0ddd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="btsrv handle task msg msg-&gt;msg_id:%d @bg_srv_task.c(451),INFO" ID="0xe88c0e1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[btsrv][INFO] handle funcs is null msg_id:%x @bg_srv_task.c(456),INFO" ID="0xe88c0e45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sensorhub sle_service thread build fail! @bg_srv_task.c(473),ERROR" ID="0xe88c0eca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sensorhub sle service init success! @bg_srv_task.c(476),INFO" ID="0xe88c0ee5" />
+			</MSG_LOG>

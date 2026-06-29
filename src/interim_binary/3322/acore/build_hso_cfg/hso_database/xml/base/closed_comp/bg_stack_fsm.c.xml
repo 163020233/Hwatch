@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[TIMRE_ADD][STACK_TIMER] timer_init failed @bg_stack_fsm.c(602),ERROR" ID="0xeb4812d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[TIMRE_ADD][STACK_TIMER] TIMER=0x%x, TIME=%u @bg_stack_fsm.c(626),INFO" ID="0xeb481395" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TIMRE_ADD][STACK_TIMER] timer_init failed @bg_stack_fsm.c(650),ERROR" ID="0xeb481452" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[TIMRE_ADD][STACK_TIMER] TIMER=0x%x, TIME=%u @bg_stack_fsm.c(678),INFO" ID="0xeb481535" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TIMER_EXPIR]timer has been free; not need free! @bg_stack_fsm.c(782),WARNING" ID="0xeb481873" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TIMER_EXPIR]timeout but no right timer! @bg_stack_fsm.c(820),WARNING" ID="0xeb4819a3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[timer_expire_in_sch_lite]timer has been free; not need free! @bg_stack_fsm.c(836),WARNING" ID="0xeb481a23" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[TIMER_EXPIRE_LITE][STACK_TIMER] ft_arg:0x%x timer_id:0x%x! @bg_stack_fsm.c(850),INFO" ID="0xeb481a95" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[TIMER_EXPIRE][STACK_TIMER] ft_arg:0x%x timer_id:0x%x! @bg_stack_fsm.c(961),INFO" ID="0xeb481e0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TIMER_DEL][STACK_TIMER] inFt is NULL! @bg_stack_fsm.c(974),INFO" ID="0xeb481e75" />
+			</MSG_LOG>

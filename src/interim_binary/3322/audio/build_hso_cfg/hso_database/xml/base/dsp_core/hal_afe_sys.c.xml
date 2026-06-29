@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[hifi]ana offset = 0x%04x, value = 0x%08x. @hal_afe_sys.c(55),INFO" ID="0x989c01bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_sys.c(96),INFO" ID="0x989c0305" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @hal_afe_sys.c(102),INFO" ID="0x989c0335" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @hal_afe_sys.c(113),INFO" ID="0x989c038d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @hal_afe_sys.c(124),INFO" ID="0x989c03e5" />
+			</MSG_LOG>

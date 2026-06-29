@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_imb_create_request_cbk par null error @gle_aa_iso_con_ui.c(309),ERROR" ID="0xee0e09aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="op_ev = 0x%04X  @gle_aa_iso_con_ui.c(312),INFO" ID="0xee0e09c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_iob_create_request_cbk par null error @gle_aa_iso_con_ui.c(319),ERROR" ID="0xee0e09fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="op_ev = 0x%04X  @gle_aa_iso_con_ui.c(322),INFO" ID="0xee0e0a15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_imb_established_cbk null error @gle_aa_iso_con_ui.c(440),ERROR" ID="0xee0e0dc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_iob_established_cbk null error @gle_aa_iso_con_ui.c(454),ERROR" ID="0xee0e0e32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_imb_report_label_cbk null error @gle_aa_iso_con_ui.c(469),ERROR" ID="0xee0e0eaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_iob_report_label_cbk null error @gle_aa_iso_con_ui.c(479),ERROR" ID="0xee0e0efa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_imb_report_label_cbk null error @gle_aa_iso_con_ui.c(490),ERROR" ID="0xee0e0f52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_iob_report_label_cbk null error @gle_aa_iso_con_ui.c(500),ERROR" ID="0xee0e0fa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_imb_report_label_cbk null error @gle_aa_iso_con_ui.c(511),ERROR" ID="0xee0e0ffa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_iob_report_label_cbk null error @gle_aa_iso_con_ui.c(521),ERROR" ID="0xee0e104a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE AA]gle_aa_iso_data_trans_indicator_report null error @gle_aa_iso_con_ui.c(533),ERROR" ID="0xee0e10aa" />
+			</MSG_LOG>

@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="check_port_data_head packet len error, len = %u, off = %u, head_len = %u. @gle_tp_connectionless_mode.c(43),ERROR" ID="0xee24015a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="check_port_data_head version error, version = %u. @gle_tp_connectionless_mode.c(51),ERROR" ID="0xee24019a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle_recv_port_data packet error. @gle_tp_connectionless_mode.c(60),ERROR" ID="0xee2401e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="sle_recv_port_data packet error, len = %u, off = %u. @gle_tp_connectionless_mode.c(66),ERROR" ID="0xee240212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="cbk_data mem new failed @gle_tp_connectionless_mode.c(84),ERROR" ID="0xee2402a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="data mem cpy failed @gle_tp_connectionless_mode.c(94),ERROR" ID="0xee2402f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] send connectionless data: bt os new failed! @gle_tp_connectionless_mode.c(134),ERROR" ID="0xee240432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="stack gle send port data memcpy fail. @gle_tp_connectionless_mode.c(145),ERROR" ID="0xee24048a" />
+			</MSG_LOG>

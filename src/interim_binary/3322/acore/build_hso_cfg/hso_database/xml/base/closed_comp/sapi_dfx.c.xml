@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="bth change global_value %d to %d! @sapi_dfx.c(37),INFO" ID="0xede8012d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ipc send%d fail  @sapi_dfx.c(124),ERROR" ID="0xede803e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="enable bt heartbeat monitor timer new fail! @sapi_dfx.c(139),WARNING" ID="0xede8045b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt core is done!!! @sapi_dfx.c(174),ERROR" ID="0xede80572" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BT_HEARTBEAT] Unexpected state:0x%x! @sapi_dfx.c(186),INFO" ID="0xede805d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="IPC recv bt heartbeat data is NULL @sapi_dfx.c(194),INFO" ID="0xede80615" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BT_HEARTBEAT] Unexpected state:0x%x! @sapi_dfx.c(209),INFO" ID="0xede8068d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BT_HEARTBEAT] recv pkt cnt:0x%x! @sapi_dfx.c(213),INFO" ID="0xede806ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="enable bt heartbeat monitor timer new fail! @sapi_dfx.c(235),INFO" ID="0xede8075d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BT_HEARTBEAT] initialized! @sapi_dfx.c(239),INFO" ID="0xede8077d" />
+			</MSG_LOG>

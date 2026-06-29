@@ -1,0 +1,17 @@
+<scroll class="scroll-container" value="vertical">
+    <div class="div-container">
+        <marquee style="width: 200px; height: 100px;"> 这是一个scroll容器测试用例 </marquee>
+        <text class="test-title">设置两个方向都可滑动</text>
+        <scroll class="scroll-view">
+            <input type="button" style="height: 300px; width: 300px; background-color : steelblue;"> button </input>
+        </scroll>
+        <text class="test-title">设置仅垂直方向可滑动</text>
+        <scroll class="scroll-view" value="vertical">
+            <input type="button" style="height: 300px; width: 300px; background-color : steelblue;"> button </input>
+        </scroll>
+        <text class="test-title">设置仅水平方向可滑动</text>
+        <scroll class="scroll-view" value="horizontal">
+            <input type="button" style="height: 300px; width: 300px; background-color : steelblue;"> button </input>
+        </scroll>
+    </div>
+</scroll>

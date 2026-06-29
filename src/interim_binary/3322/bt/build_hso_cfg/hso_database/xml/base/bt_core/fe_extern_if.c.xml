@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[ERROR][fe_adpll_start_tx]chnnl=%d mode=%d @fe_extern_if.c(57),ERROR" ID="0x89a201ca" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ERROR][fe_al_start_tx]chnnl=%d freq=%d mode=%d @fe_extern_if.c(71),ERROR" ID="0x89a2023a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ERROR][fe_al_start_tx]chnnl=%d freq=%d mode=%d @fe_extern_if.c(108),ERROR" ID="0x89a20362" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ERROR][fe_al_start_tx]chnnl=%d freq=%d mode=%d @fe_extern_if.c(134),ERROR" ID="0x89a20432" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]freq = %d,mode=%d @fe_extern_if.c(137),INFO" ID="0x89a2044d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bt_adpll_start_tx_if::freq_idx[%d] mode[%d] @fe_extern_if.c(198),INFO" ID="0x89a20635" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bt_adpll_start_tx_if::freq_idx[%d] mode[%d] @fe_extern_if.c(224),INFO" ID="0x89a20705" />
+			</MSG_LOG>

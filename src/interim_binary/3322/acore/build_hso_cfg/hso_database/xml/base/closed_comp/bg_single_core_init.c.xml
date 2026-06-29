@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="BTH_VENDOR: bt vendor single core init start @bg_single_core_init.c(50),INFO" ID="0xed1a0195" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BTH_VENDOR: bt vendor single core init end @bg_single_core_init.c(61),INFO" ID="0xed1a01ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BTH_VENDOR: bt vendor single core init start @bg_single_core_init.c(66),INFO" ID="0xed1a0215" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BTH_VENDOR: bt vendor single core init end @bg_single_core_init.c(88),INFO" ID="0xed1a02c5" />
+			</MSG_LOG>

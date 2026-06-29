@@ -1,0 +1,69 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../build/gn/config.gni")
+
+group("lib") {
+    deps = []
+    if (defined(LOSCFG_LIB_LIBSEC) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["libsec:sec"]
+    }
+    if (defined(LOSCFG_LIB_LIBC) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["libc"]
+    }
+    if (defined(LOSCFG_COMPAT_POSIX) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["liteos_libc"]
+    }
+    if (defined(LOSCFG_LIB_LIBM) && !defined(LOSCFG_SAFETY_KERNEL)) {
+        deps += ["libm"]
+    }
+    if (defined(LOSCFG_LIB_ZLIB)) {
+        deps += ["zlib"]
+    }
+    if (defined(LOSCFG_ARCH_ARM_V7A) || defined(LOSCFG_ARCH_ARM_V7R) || defined(LOSCFG_ARCH_CORTEX_R52)) {
+        deps += ["liteos_libc/arch/arm/armv7:armv7"]
+    } else if (defined(LOSCFG_ARCH_RISCV32)) {
+        deps += ["liteos_libc/arch/riscv32:riscv32"]
+    } else if (defined(LOSCFG_ARCH_ARM_AARCH64)) {
+        deps += ["liteos_libc/arch/arm/aarch64/generic:aarch64"]
+    }
+
+}
+
+config("public") {
+    include_dirs = ["$RTOSLITETOPDIR/platform/huawei_secure_c/include"]
+    arch = ""
+    if (defined(LOSCFG_ARCH_ARM_AARCH32)) {
+        arch = "arm"
+    } else if (defined(LOSCFG_ARCH_ARM_AARCH64)) {
+        arch = "aarch64"
+    } else if (defined(LOSCFG_ARCH_RISCV_RV32IMC)) {
+        arch = "riscv32"
+    }
+
+    if (defined(LOSCFG_LIB_LIBC)) {
+        include_dirs += [
+            "$RTOSLITETOPDIR/$open_source_path/musl/arch/$arch",
+            "$RTOSLITETOPDIR/$open_source_path/musl/arch/generic",
+            "$LITEOSTOPDIR/lib/liteos_libc/include",
+            "$LITEOSTOPDIR/kernel_s/base/include",
+            "$RTOSLITETOPDIR/$open_source_path/musl/include",
+        ]
+    }
+    if (defined(LOSCFG_LIB_LIBMAT)) {
+        include_dirs += [
+            "$LITEOSTOPDIR/lib/libmat"
+        ]
+    }
+
+    if (defined(LOSCFG_LIB_ZLIB)) {
+        include_dirs += ["$RTOSLITETOPDIR/$open_source_path/zlib"]
+    }
+    if (defined(LOSCFG_LIB_LIBSEC)) {
+        configs = [
+            "libsec:public"
+        ]
+    }
+}

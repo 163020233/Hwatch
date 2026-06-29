@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[L3][BLE_ACL]map_should_update, xor[%d] = 0x%02X @lm_ble_acl_srv_map_ram.c(70),INFO" ID="0x8ac80235" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_ble_acl_set_map_patch srv_desc is null:con_hdl=%d, map[1][0]:%x, map[3][2]:%x, map[4]:%x @lm_ble_acl_srv_map_ram.c(170),INFO" ID="0x8ac80555" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_ble_acl_set_map_patch map ind nack:con_hdl=%d, map[1][0]:%x, map[3][2]:%x, map[4]:%x @lm_ble_acl_srv_map_ram.c(181),INFO" ID="0x8ac805ad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_ble_acl_set_map_patch map ind ack:con_hdl=%d, map[1][0]:%x, map[3][2]:%x, map[4]:%x @lm_ble_acl_srv_map_ram.c(188),INFO" ID="0x8ac805e5" />
+			</MSG_LOG>

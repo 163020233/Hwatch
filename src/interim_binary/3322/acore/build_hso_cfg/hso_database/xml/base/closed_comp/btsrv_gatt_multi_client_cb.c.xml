@@ -1,0 +1,20 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="init osal mutex gattc_multi_cbk_list_lock failed! @btsrv_gatt_multi_client_cb.c(30),ERROR" ID="0xe89200f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc multi client service cbk reg start hdl:%02x, end_hdl:%02x @btsrv_gatt_multi_client_cb.c(96),INFO" ID="0xe8920305" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc register multi callbacks param error @btsrv_gatt_multi_client_cb.c(114),ERROR" ID="0xe8920392" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="gattc register multi callbacks client_id:%d, conn_id:%d status error @btsrv_gatt_multi_client_cb.c(121),ERROR" ID="0xe89203ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc client cbk reg fail @btsrv_gatt_multi_client_cb.c(136),INFO" ID="0xe8920445" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gattc multi client service cbk reg client_id:%02x, start hdl:%02x, end_hdl:%02x @btsrv_gatt_multi_client_cb.c(157),INFO" ID="0xe89204ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc unregister multi callbacks param error @btsrv_gatt_multi_client_cb.c(183),ERROR" ID="0xe89205ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc unregister multi callbacks node error @btsrv_gatt_multi_client_cb.c(190),ERROR" ID="0xe89205f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gattc multi client service cbk unreg success @btsrv_gatt_multi_client_cb.c(205),INFO" ID="0xe892066d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble_gattc_notification_multi_cbk conn_id:%02x, chara handle:%02x @btsrv_gatt_multi_client_cb.c(220),INFO" ID="0xe89206e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble_gattc_notification_multi_cbk conn_id:%02x, chara handle:%02x @btsrv_gatt_multi_client_cb.c(236),INFO" ID="0xe8920765" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble_gattc_indication_multi_cbk conn_id:%02x, chara handle:%02x @btsrv_gatt_multi_client_cb.c(252),INFO" ID="0xe89207e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble_gattc_indication_multi_cbk conn_id:%02x, chara handle:%02x @btsrv_gatt_multi_client_cb.c(268),INFO" ID="0xe8920865" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble_gattc_read_multi_cbk conn_id:%02x, chara handle:%02x @btsrv_gatt_multi_client_cb.c(283),INFO" ID="0xe89208dd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="read_multi_cbk conn_id:%02x, chara handle:%02x @btsrv_gatt_multi_client_cb.c(298),INFO" ID="0xe8920955" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble_gattc_write_multi_cbk conn_id:%02x, chara handle:%02x @btsrv_gatt_multi_client_cb.c(318),INFO" ID="0xe89209f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="write_multi_cbk conn_id:%02x, chara handle:%02x @btsrv_gatt_multi_client_cb.c(332),INFO" ID="0xe8920a65" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble_gattc_mtu_changed_multi_cbk conn_id:%d, mtu_size:%d @btsrv_gatt_multi_client_cb.c(352),INFO" ID="0xe8920b05" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="mtu_changed_multi_cbk conn_id:%d, mtu_size:%d @btsrv_gatt_multi_client_cb.c(362),INFO" ID="0xe8920b55" />
+			</MSG_LOG>

@@ -1,0 +1,26 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("$RTOSLITETOPDIR/build/gn/config.gni")
+
+if (defined(LOSCFG_COMPILER_ICCARM)) {
+    import("iccarm/iccarm.gni")
+    iccarm_toolchain("iccarm") {
+        cc = "iccarm"
+        cxx = "iccarm"
+        as = "iasmarm"
+        ar = "iarchive"
+        ld = "ilinkarm"
+    }
+} else if(defined(LOSCFG_COMPILER_CLANG)) {
+    import("clang/clang.gni")
+    clang_toolchain("clang") {
+        cc = "${board_toolchain_path}/clang"
+        cxx = "${board_toolchain_path}/clang++"
+        as = "${board_toolchain_path}/clang"
+        ar = "${board_toolchain_path}/llvm-ar"
+        ld = "${board_toolchain_path}/ld.lld"
+    }
+}

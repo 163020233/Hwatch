@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][TCID init] TCID exhaust, cast_mask = %u @gle_tm_hlp_reserv.c(99),WARNING" ID="0xed3e031b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle trans mgt tcid init tcid_node GLE_NEW failed @gle_tm_hlp_reserv.c(106),ERROR" ID="0xed3e0352" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][TCID init] mem exhaust, data_len = %zu @gle_tm_hlp_reserv.c(125),WARNING" ID="0xed3e03eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][TCID init] mode config parameters is NULL. @gle_tm_hlp_reserv.c(130),ERROR" ID="0xed3e0412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][TCID init] memcpy failed @gle_tm_hlp_reserv.c(139),ERROR" ID="0xed3e045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][TCID init] mode config parameters is NULL. @gle_tm_hlp_reserv.c(146),ERROR" ID="0xed3e0492" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][TCID init] mem exhaust, data_len = %zu @gle_tm_hlp_reserv.c(154),WARNING" ID="0xed3e04d3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][TCID init] mem exhaust, data_len = %zu @gle_tm_hlp_reserv.c(175),WARNING" ID="0xed3e057b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][TCID init] memcpy failed @gle_tm_hlp_reserv.c(182),ERROR" ID="0xed3e05b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][TCID init] mem exhaust, data_len = %zu @gle_tm_hlp_reserv.c(190),WARNING" ID="0xed3e05f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE TM][TCID init] memcpy failed @gle_tm_hlp_reserv.c(197),ERROR" ID="0xed3e062a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][TCID init] local TCID = 0x%04x @gle_tm_hlp_reserv.c(210),INFO" ID="0xed3e0695" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][TCID init] used TCID list new failed, used TCID = 0x%04x @gle_tm_hlp_reserv.c(224),WARNING" ID="0xed3e0703" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][TCID done] local TCID = 0x%04x @gle_tm_hlp_reserv.c(299),INFO" ID="0xed3e095d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE TM][LCID done] LCID = 0x%04x @gle_tm_hlp_reserv.c(333),INFO" ID="0xed3e0a6d" />
+			</MSG_LOG>

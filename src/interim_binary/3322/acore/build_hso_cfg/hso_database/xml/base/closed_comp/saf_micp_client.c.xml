@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][micpc] register client callback point is null! @saf_micp_client.c(48),ERROR" ID="0xe9fe0182" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micpc] client already register! @saf_micp_client.c(52),ERROR" ID="0xe9fe01a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micpc] client not register! @saf_micp_client.c(66),ERROR" ID="0xe9fe0212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micpc] read property value, state unregistered @saf_micp_client.c(85),ERROR" ID="0xe9fe02aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micpc] write property value, state unregistered @saf_micp_client.c(97),ERROR" ID="0xe9fe030a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][gcpc] cp operation, handle: %d, op: %d @saf_micp_client.c(102),INFO" ID="0xe9fe0335" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][micpc] btsrv_msg handle, msg id: %x @saf_micp_client.c(148),INFO" ID="0xe9fe04a5" />
+			</MSG_LOG>

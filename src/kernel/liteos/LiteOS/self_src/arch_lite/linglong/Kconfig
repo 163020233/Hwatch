@@ -1,0 +1,15 @@
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2021-2021. All rights reserved.
+
+#
+# Linglong arch implementations
+#
+config LOSCFG_ARCH_LINGLONG
+    bool
+    select LOSCFG_ARCH_PMU
+    help
+      Linglong architecture implementations.
+
+config LOSCFG_ARCH_CPU
+    string
+    default "linglong"  if LOSCFG_ARCH_LINGLONG
+    

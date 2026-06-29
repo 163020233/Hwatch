@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="tm signal capability failed, conn id is invalid. @sle_srv_tm.c(49),ERROR" ID="0xe8d6018a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm signal capability memcpy failed. @sle_srv_tm.c(56),ERROR" ID="0xe8d601c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[tm_signal_capability_req]failed, conn(%d) failed, ret = 0x%x @sle_srv_tm.c(63),ERROR" ID="0xe8d601fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="transmission send data failed, param is null. @sle_srv_tm.c(72),ERROR" ID="0xe8d60242" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[transmission_send_data]failed, malloc fail @sle_srv_tm.c(77),ERROR" ID="0xe8d6026a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[transmission_send_data]failed, ret = 0x%x @sle_srv_tm.c(91),ERROR" ID="0xe8d602da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm signal tcid_connect failed, conn id is invalid. @sle_srv_tm.c(107),ERROR" ID="0xe8d6035a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create_dynamic_channel, conn_req_info alloc failed. @sle_srv_tm.c(112),ERROR" ID="0xe8d60382" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[tm_signal_tcid_connect_req]failed, conn(%u) failed, ret = 0x%x @sle_srv_tm.c(139),ERROR" ID="0xe8d6045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm signal tcid_disconnect failed, conn id is invalid. @sle_srv_tm.c(153),ERROR" ID="0xe8d604ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[tm_signal_tcid_disconnect_req]failed, conn(%u) failed, ret = 0x%x @sle_srv_tm.c(160),ERROR" ID="0xe8d60502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm signal tcid_reconfig failed, conn id is invalid. @sle_srv_tm.c(173),ERROR" ID="0xe8d6056a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="reconfig_dynamic_channel, tcid_ref_info alloc failed. @sle_srv_tm.c(178),ERROR" ID="0xe8d60592" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[tm_signal_tcid_reconfig_req]failed, conn(%u) failed, ret = 0x%x @sle_srv_tm.c(212),ERROR" ID="0xe8d606a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="tm send data busy cbk failed, length:%u @sle_srv_tm.c(290),ERROR" ID="0xe8d60912" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm send data busy cbk memcpy failed. @sle_srv_tm.c(294),ERROR" ID="0xe8d60932" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle data send busy cbk, lcid is invalid. @sle_srv_tm.c(301),ERROR" ID="0xe8d6096a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="tm tcid connect cbk failed, length:%u @sle_srv_tm.c(314),ERROR" ID="0xe8d609d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm send data busy cbk memcpy failed. @sle_srv_tm.c(318),ERROR" ID="0xe8d609f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="tm trans status cbk alloc failed, length:%d @sle_srv_tm.c(332),ERROR" ID="0xe8d60a62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm send data busy cbk memcpy failed. @sle_srv_tm.c(336),ERROR" ID="0xe8d60a82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="tm tcid connect cbk failed, length:%u @sle_srv_tm.c(349),ERROR" ID="0xe8d60aea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="tm send data busy cbk memcpy failed. @sle_srv_tm.c(353),ERROR" ID="0xe8d60b0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @sle_srv_tm.c(380),INFO" ID="0xe8d60be5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle server manager init failed. @sle_srv_tm.c(400),ERROR" ID="0xe8d60c82" />
+			</MSG_LOG>

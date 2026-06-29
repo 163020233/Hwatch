@@ -1,0 +1,75 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2021-2021. All rights reserved.
+ * Description:   Chip core irq >= 0 define.
+ * Author:
+ * Create:  2021-04-21
+ */
+
+#ifndef CHIP_CORE_IRQ_H
+#define CHIP_CORE_IRQ_H
+
+#define LOCAL_INTERRUPT0 16
+#define DMA_IRQN B_DMA_IRQN
+
+typedef enum core_irq {
+/* -------------------  Processor Interrupt Numbers  ------------------------------ */
+    RESERVED_0_IRQN           = LOCAL_INTERRUPT0 + 0,
+    RESERVED_1_IRQN           = LOCAL_INTERRUPT0 + 1,
+    MCU_INT0_IRQN             = LOCAL_INTERRUPT0 + 2,
+    MCU_INT1_IRQN             = LOCAL_INTERRUPT0 + 3,
+    DSP0_INT0_IRQN            = LOCAL_INTERRUPT0 + 4,
+    DSP0_INT1_IRQN            = LOCAL_INTERRUPT0 + 5,
+    RESERVED_6_IRQN           = LOCAL_INTERRUPT0 + 6,
+    RESERVED_7_IRQN           = LOCAL_INTERRUPT0 + 7,
+    GPIO_BCPU_0_IRQN          = LOCAL_INTERRUPT0 + 8,
+    RESERVED_9_IRQN           = LOCAL_INTERRUPT0 + 9,
+    RESERVED_10_IRQN          = LOCAL_INTERRUPT0 + 10,
+    RESERVED_11_IRQN          = LOCAL_INTERRUPT0 + 11,
+    RESERVED_12_IRQN          = LOCAL_INTERRUPT0 + 12,
+    BCPU_PCLR_OK_IRQN         = LOCAL_INTERRUPT0 + 13,
+    UART_0_IRQN               = LOCAL_INTERRUPT0 + 14,   // BUART_COEX_IRQN
+    RF_PRT_IRQN               = LOCAL_INTERRUPT0 + 15,
+    RESERVED_16_IRQN          = LOCAL_INTERRUPT0 + 16,
+    RESERVED_17_IRQN          = LOCAL_INTERRUPT0 + 17,
+    RESERVED_18_IRQN          = LOCAL_INTERRUPT0 + 18,
+    RESERVED_19_IRQN          = LOCAL_INTERRUPT0 + 19,
+    RESERVED_20_IRQN          = LOCAL_INTERRUPT0 + 20,
+    B_WAKEUP_IRQN             = LOCAL_INTERRUPT0 + 21,
+    B_SLEEP_IRQN              = LOCAL_INTERRUPT0 + 22,
+    UART_1_IRQN               = LOCAL_INTERRUPT0 + 23,   // COM_UART_IRQN
+    BLPEG_IRQN                = LOCAL_INTERRUPT0 + 24,
+    RTC_0_IRQN                = LOCAL_INTERRUPT0 + 25,
+    RESERVED_26_IRQN          = LOCAL_INTERRUPT0 + 26,
+    TIMER_0_IRQN              = LOCAL_INTERRUPT0 + 27,
+    TIMER_1_IRQN              = LOCAL_INTERRUPT0 + 28,
+    TIMER_2_IRQN              = LOCAL_INTERRUPT0 + 29,
+    TIMER_3_IRQN              = LOCAL_INTERRUPT0 + 30,
+    RESERVED_31_IRQN          = LOCAL_INTERRUPT0 + 31,
+    B_DMA_IRQN                = LOCAL_INTERRUPT0 + 32,
+    BT_BB_BT_IRQN             = LOCAL_INTERRUPT0 + 33,
+    BT_BB_BLE_IRQN            = LOCAL_INTERRUPT0 + 34,
+    TSENSOR_IRQN              = LOCAL_INTERRUPT0 + 35,
+    RESERVED_36_IRQN          = LOCAL_INTERRUPT0 + 36,
+    RESERVED_37_IRQN          = LOCAL_INTERRUPT0 + 37,
+    RESERVED_38_IRQN          = LOCAL_INTERRUPT0 + 38,
+    RESERVED_39_IRQN          = LOCAL_INTERRUPT0 + 39,
+    RESERVED_40_IRQN          = LOCAL_INTERRUPT0 + 40,
+    RESERVED_41_IRQN          = LOCAL_INTERRUPT0 + 41,
+    BT_BB_GLE_IRQN            = LOCAL_INTERRUPT0 + 42,
+    RESERVED_43_IRQN          = LOCAL_INTERRUPT0 + 43,
+    RESERVED_44_IRQN          = LOCAL_INTERRUPT0 + 44,
+    RESERVED_45_IRQN          = LOCAL_INTERRUPT0 + 45,
+    RESERVED_46_IRQN          = LOCAL_INTERRUPT0 + 46,
+    RESERVED_47_IRQN          = LOCAL_INTERRUPT0 + 47,
+    BLPEG_USER_DEF_IRQN       = LOCAL_INTERRUPT0 + 48,
+    BLPEG_W2B_FUNC_IRQN       = LOCAL_INTERRUPT0 + 49,
+    BLPEG_ABORT_IRQN          = LOCAL_INTERRUPT0 + 50,
+    BLPEG_WAKEUP_DONE_IRQN    = LOCAL_INTERRUPT0 + 51,
+    BLPEG_SW_STOP_DONE_IRQN   = LOCAL_INTERRUPT0 + 52,
+    BLPEG_ABNORMAL_IRQN       = LOCAL_INTERRUPT0 + 53,
+    BLPEG_RSV_IRQN            = LOCAL_INTERRUPT0 + 54,
+
+    BUTT_IRQN
+} core_irq_t;
+
+#endif

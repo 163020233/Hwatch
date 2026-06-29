@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_ble_acl_check_tx_state, env_ptr is null @ble_acl_instant.c(57),ERROR" ID="0x8ae601ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]:env_ptr or env_ptr-&gt;conn_env is null @ble_acl_instant.c(162),INFO" ID="0x8ae60515" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_ble_acl_get_first_instant: con_hdl=%d, opcode=%x, counter=%d, add_instant=%d @ble_acl_instant.c(179),INFO" ID="0x8ae6059d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]env_ptr is null @ble_acl_instant.c(282),ERROR" ID="0x8ae608d2" />
+			</MSG_LOG>

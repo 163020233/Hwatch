@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memmove_s Failed, Error Code: [0x%08X] @plc.c(161),ERROR" ID="0x98d6050a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @plc.c(169),ERROR" ID="0x98d6054a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @plc.c(176),ERROR" ID="0x98d60582" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @plc.c(422),ERROR" ID="0x98d60d32" />
+			</MSG_LOG>

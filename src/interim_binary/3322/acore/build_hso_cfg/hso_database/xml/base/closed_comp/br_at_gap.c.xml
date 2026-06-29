@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[Error] br at gap register at fail @br_at_gap.c(458),ERROR" ID="0xea1a0e52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT]disconnect remote device get addr fail. @br_at_gap.c(500),ERROR" ID="0xea1a0fa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT]connect remote device get addr fail. @br_at_gap.c(514),ERROR" ID="0xea1a1012" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT]set_device_addr FAIL @br_at_gap.c(567),ERROR" ID="0xea1a11ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT]pair remote device get addr fail. @br_at_gap.c(596),ERROR" ID="0xea1a12a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT]cancel pair remote device get addr fail. @br_at_gap.c(614),ERROR" ID="0xea1a1332" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT]encrypt get addr fail. @br_at_gap.c(632),ERROR" ID="0xea1a13c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] get addr fail. @br_at_gap.c(650),ERROR" ID="0xea1a1452" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] get addr fail. @br_at_gap.c(668),ERROR" ID="0xea1a14e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] get addr fail. @br_at_gap.c(686),ERROR" ID="0xea1a1572" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AT]set scan mode=0x%02x @br_at_gap.c(718),INFO" ID="0xea1a1675" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT]close close scan @br_at_gap.c(727),INFO" ID="0xea1a16bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AT]br_at_set_bondable()  bondable=%d @br_at_gap.c(736),INFO" ID="0xea1a1705" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap br set bondable failed ret = 0x%x @br_at_gap.c(739),ERROR" ID="0xea1a171a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gap br set security failed ret = 0x%x @br_at_gap.c(749),ERROR" ID="0xea1a176a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] get addr fail. @br_at_gap.c(793),ERROR" ID="0xea1a18ca" />
+			</MSG_LOG>

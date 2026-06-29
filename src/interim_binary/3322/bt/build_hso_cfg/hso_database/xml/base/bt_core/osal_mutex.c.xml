@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="mutex_init:0x%x @osal_mutex.c(25),INFO" ID="0xa03e00cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_mutex.c(29),INFO" ID="0xa03e00ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="mutex inited. id:%d. @osal_mutex.c(34),INFO" ID="0xa03e0115" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mutex id invalid! @osal_mutex.c(38),INFO" ID="0xa03e0135" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="MuxCreate fail! ret=%#x. @osal_mutex.c(46),INFO" ID="0xa03e0175" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="mutex_destroy:0x%x @osal_mutex.c(54),INFO" ID="0xa03e01b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_mutex.c(57),INFO" ID="0xa03e01cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mutex destroyed or not inited! @osal_mutex.c(61),INFO" ID="0xa03e01ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="MuxDelete fail! ret=%#x. @osal_mutex.c(67),INFO" ID="0xa03e021d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_mutex.c(76),INFO" ID="0xa03e0265" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="MuxPend fail! ret=%#x. @osal_mutex.c(85),INFO" ID="0xa03e02ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="MuxPend lock: %p @osal_mutex.c(87),INFO" ID="0xa03e02bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_mutex.c(96),INFO" ID="0xa03e0305" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="MuxPend fail! ret=%#x. @osal_mutex.c(105),INFO" ID="0xa03e034d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_mutex.c(113),INFO" ID="0xa03e038d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mutex locked in ISR! @osal_mutex.c(119),INFO" ID="0xa03e03bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="MuxPend fail! ret=%#x. @osal_mutex.c(121),INFO" ID="0xa03e03cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_mutex.c(130),INFO" ID="0xa03e0415" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_mutex.c(140),INFO" ID="0xa03e0465" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="MuxPost fail! ret=%#x. @osal_mutex.c(149),INFO" ID="0xa03e04ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="MuxPost unlock: %p @osal_mutex.c(151),INFO" ID="0xa03e04bd" />
+			</MSG_LOG>

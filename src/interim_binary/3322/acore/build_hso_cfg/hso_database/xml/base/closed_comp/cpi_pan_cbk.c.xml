@@ -1,0 +1,27 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @cpi_pan_cbk.c(161),ERROR" ID="0xee6e050a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan list_new error. @cpi_pan_cbk.c(172),ERROR" ID="0xee6e0562" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan list_new error. @cpi_pan_cbk.c(181),ERROR" ID="0xee6e05aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan memnew fail. @cpi_pan_cbk.c(194),ERROR" ID="0xee6e0612" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="pan service net state=%d @cpi_pan_cbk.c(214),INFO" ID="0xee6e06b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan connect is exist. @cpi_pan_cbk.c(219),ERROR" ID="0xee6e06da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan list_new error. @cpi_pan_cbk.c(225),ERROR" ID="0xee6e070a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan is already disconnected. @cpi_pan_cbk.c(238),ERROR" ID="0xee6e0772" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="cpi_pan_service_net_state_change_rpt, net state:0x%x. @cpi_pan_cbk.c(249),INFO" ID="0xee6e07cd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="pan service filter result ipv4_only=%d addr=%02x******%02x%02x. @cpi_pan_cbk.c(256),INFO" ID="0xee6e0805" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="pan is not connected,addr:%02x******%02x%02x. @cpi_pan_cbk.c(259),ERROR" ID="0xee6e081a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="pan is not connected,addr=%02x******%02x%02x. @cpi_pan_cbk.c(271),ERROR" ID="0xee6e087a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan memnew fail. @cpi_pan_cbk.c(276),ERROR" ID="0xee6e08a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan memcpy fail. @cpi_pan_cbk.c(283),ERROR" ID="0xee6e08da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan get local addr error @cpi_pan_cbk.c(307),ERROR" ID="0xee6e099a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan get local addr invalid. @cpi_pan_cbk.c(311),ERROR" ID="0xee6e09ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="pan setup connect result=%d @cpi_pan_cbk.c(321),INFO" ID="0xee6e0a0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="pan filter_multiaddr_result=%d @cpi_pan_cbk.c(329),INFO" ID="0xee6e0a4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan acl disconnect cbk. @cpi_pan_cbk.c(350),INFO" ID="0xee6e0af5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan acl connect complete cbk. @cpi_pan_cbk.c(354),INFO" ID="0xee6e0b15" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="pan cbk is exist, app id=%d is_inner=%d. @cpi_pan_cbk.c(398),ERROR" ID="0xee6e0c72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan memnew fail. @cpi_pan_cbk.c(403),ERROR" ID="0xee6e0c9a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="pan cbk is not exist, app id=%d is_inner=%d. @cpi_pan_cbk.c(421),ERROR" ID="0xee6e0d2a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="pan cbk is exist, app id=%d is_inner=%d. @cpi_pan_cbk.c(438),ERROR" ID="0xee6e0db2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan memnew fail. @cpi_pan_cbk.c(443),ERROR" ID="0xee6e0dda" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="pan cbk is not exist, app id=%d is_inner=%d. @cpi_pan_cbk.c(461),ERROR" ID="0xee6e0e6a" />
+			</MSG_LOG>

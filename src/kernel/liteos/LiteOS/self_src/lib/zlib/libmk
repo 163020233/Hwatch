@@ -1,0 +1,18 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+include $(RTOSLITETOPDIR)/config.mk
+
+MODULE_NAME := z
+
+ARFLAGS = cr
+
+all:
+	mkdir -p $(OUT)/lib
+	cp -rf *.a $(OUT)/lib
+
+.PHONY: all
+
+include $(MODULE)

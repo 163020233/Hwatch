@@ -1,0 +1,11 @@
+{
+  "strings": {
+    "hello": "您好",
+    "world": "世界",
+    "start_text": "敲木鱼\n 正在启动...",
+    "logo_text": "敲木鱼",
+    "manual_mode_text": "手动模式",
+    "auto_mode_text": "自动模式",
+    "pause_resume_text": "点击暂停/继续"
+  }
+}

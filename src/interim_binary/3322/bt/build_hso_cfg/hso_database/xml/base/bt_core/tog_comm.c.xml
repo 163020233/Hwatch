@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tog]evt_task_classic_sync_tog0_disable. @tog_comm.c(39),INFO" ID="0x8ad0013d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][tog]evt_task_classic_sync_tog0_enable. finecnt_start=%d, slotcnt_start=%d, interval=%d @tog_comm.c(129),INFO" ID="0x8ad0040d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]tog first clk=%d, setclk=%d @tog_comm.c(293),INFO" ID="0x8ad0092d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]bt toggle start, start slot clk=%d finecnt=%d, rpt clk=%d finecnt=%d  @tog_comm.c(300),INFO" ID="0x8ad00965" />
+			</MSG_LOG>

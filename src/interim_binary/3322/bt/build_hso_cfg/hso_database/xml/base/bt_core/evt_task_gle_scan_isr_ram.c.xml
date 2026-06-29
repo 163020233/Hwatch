@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_scan_start_aux_rx, no AP in prim adv! @evt_task_gle_scan_isr_ram.c(153),WARNING" ID="0x8bea04cb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_scan_start_aux_rx, process end! @evt_task_gle_scan_isr_ram.c(189),WARNING" ID="0x8bea05eb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_scan_start_req_tx, req_offset(%d)req_max_len(%d)rsp_offset(%d)req_num(%d) @evt_task_gle_scan_isr_ram.c(277),WARNING" ID="0x8bea08ab" />
+			</MSG_LOG>

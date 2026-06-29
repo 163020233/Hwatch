@@ -1,0 +1,40 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="br call init done. @bs_br_call.c(83),ERROR" ID="0xee84029a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call deinit done. @bs_br_call.c(101),ERROR" ID="0xee84032a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br hfp connect error, result:0x%x hfp_role:%d @bs_br_call.c(178),ERROR" ID="0xee840592" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call get addr is NULL, dev_id:%d @bs_br_call.c(187),ERROR" ID="0xee8405da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call hfp is connected, dev_id:%d @bs_br_call.c(193),ERROR" ID="0xee84060a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_call.c(199),ERROR" ID="0xee84063a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call get addr is NULL, dev_id:%d @bs_br_call.c(236),ERROR" ID="0xee840762" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call param error, dev_id:%d @bs_br_call.c(242),ERROR" ID="0xee840792" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_call.c(248),ERROR" ID="0xee8407c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br call operate error, result:0x%x opt_type:%d @bs_br_call.c(287),ERROR" ID="0xee8408fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call get addr is NULL, dev_id:%d @bs_br_call.c(297),ERROR" ID="0xee84094a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call param error, dev_id:%d @bs_br_call.c(303),ERROR" ID="0xee84097a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_call.c(309),ERROR" ID="0xee8409aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call voice reco error, result:0x%x @bs_br_call.c(340),ERROR" ID="0xee840aa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call get addr is NULL, dev_id:%d @bs_br_call.c(349),ERROR" ID="0xee840aea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call param error, dev_id:%d @bs_br_call.c(355),ERROR" ID="0xee840b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_call.c(361),ERROR" ID="0xee840b4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call sco param error @bs_br_call.c(382),ERROR" ID="0xee840bf2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call get addr is NULL, dev_id:%d @bs_br_call.c(404),ERROR" ID="0xee840ca2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call param error, dev_id:%d @bs_br_call.c(410),ERROR" ID="0xee840cd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_call.c(416),ERROR" ID="0xee840d02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call send dtmf error, result:0x%x @bs_br_call.c(439),ERROR" ID="0xee840dba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call get addr is NULL, dev_id:%d @bs_br_call.c(448),ERROR" ID="0xee840e02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call param error, dev_id:%d @bs_br_call.c(454),ERROR" ID="0xee840e32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_call.c(460),ERROR" ID="0xee840e62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call send vendor error, result:0x%x @bs_br_call.c(481),ERROR" ID="0xee840f0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call get addr is NULL, dev_id:%d @bs_br_call.c(490),ERROR" ID="0xee840f52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call param error, dev_id:%d @bs_br_call.c(496),ERROR" ID="0xee840f82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_call.c(502),ERROR" ID="0xee840fb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call param error @bs_br_call.c(519),ERROR" ID="0xee84103a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call memcpy error, number len:%d @bs_br_call.c(527),ERROR" ID="0xee84107a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call param error @bs_br_call.c(538),ERROR" ID="0xee8410d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call param number is invalid. @bs_br_call.c(543),ERROR" ID="0xee8410fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_call.c(548),ERROR" ID="0xee841122" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call memcpy error @bs_br_call.c(558),ERROR" ID="0xee841172" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br call notify error, result:0x%x type:%d @bs_br_call.c(610),ERROR" ID="0xee841312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call get addr is NULL, dev_id:%d @bs_br_call.c(622),ERROR" ID="0xee841372" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br call param error, dev_id:%d @bs_br_call.c(628),ERROR" ID="0xee8413a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br call malloc error @bs_br_call.c(634),ERROR" ID="0xee8413d2" />
+			</MSG_LOG>

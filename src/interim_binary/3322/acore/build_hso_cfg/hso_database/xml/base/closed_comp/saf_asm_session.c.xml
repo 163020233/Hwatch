@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] session expired, conn_id = %u! @saf_asm_session.c(41),INFO" ID="0xe9a6014d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] session expired, send msg err! conn_id=%u @saf_asm_session.c(45),ERROR" ID="0xe9a6016a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] session, init timer err! @saf_asm_session.c(55),ERROR" ID="0xe9a601ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] session, destory timer err! @saf_asm_session.c(63),ERROR" ID="0xe9a601fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] session, mutex init err! @saf_asm_session.c(71),ERROR" ID="0xe9a6023a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] session, mutex lock err! @saf_asm_session.c(90),ERROR" ID="0xe9a602d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] session, start timer err! @saf_asm_session.c(104),ERROR" ID="0xe9a60342" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] session, stop timer err! @saf_asm_session.c(111),ERROR" ID="0xe9a6037a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] new session, memcpy err! connid = %u @saf_asm_session.c(131),ERROR" ID="0xe9a6041a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asm] session is null! @saf_asm_session.c(153),ERROR" ID="0xe9a604ca" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asm] session role err! conn_id=%u role=%u expect=%u @saf_asm_session.c(162),ERROR" ID="0xe9a60512" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asm] new session err! conn_id=%u ep_id=%u @saf_asm_session.c(175),ERROR" ID="0xe9a6057a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asm] iso is used! ep_id=%u event_group_set_id=%u event_group_id=%u @saf_asm_session.c(214),WARNING" ID="0xe9a606b3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asm] session ep removed, ep_id=%u dir=%u @saf_asm_session.c(226),INFO" ID="0xe9a60715" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asm] set ep state, ep = %u %u -&gt; %u @saf_asm_session.c(245),INFO" ID="0xe9a607ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] clear session, session lock err! conn_id = %u @saf_asm_session.c(258),ERROR" ID="0xe9a60812" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] clear session, session not found! connid = %u @saf_asm_session.c(264),ERROR" ID="0xe9a60842" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] clear session, memset err! connid = %u @saf_asm_session.c(294),ERROR" ID="0xe9a60932" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[saf][asm] session state change proc, conn_id=%u conn_state=%u sle_pair_state=%u disc_reason=%u @saf_asm_session.c(319),INFO" ID="0xe9a609fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asm] session expired proc, session not found! connid = %u @saf_asm_session.c(336),ERROR" ID="0xe9a60a82" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asm] session expired proc, session role unknown! connid=%u role=%u @saf_asm_session.c(341),ERROR" ID="0xe9a60aaa" />
+			</MSG_LOG>

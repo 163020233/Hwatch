@@ -1,0 +1,39 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] create server cbk inst_id:0x%x server_id:0x%x @ssf_ssaps_cbk.c(54),INFO" ID="0xefa401b5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] create server cbk add inst fail inst_id:0x%x server_id:0x%x @ssf_ssaps_cbk.c(59),ERROR" ID="0xefa401da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSAP][S] remove server cbk inst_id:0x%x server_id:0x%x cbk_node:0x%x @ssf_ssaps_cbk.c(109),INFO" ID="0xefa4036d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] get inst and item_id with handle:0x%x fail, can't find service_inst @ssf_ssaps_cbk.c(127),ERROR" ID="0xefa403fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] get inst and item_id with handle:0x%x fail @ssf_ssaps_cbk.c(133),ERROR" ID="0xefa4042a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] start service cbk proc @ssf_ssaps_cbk.c(144),INFO" ID="0xefa40485" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] delete service cbk proc in @ssf_ssaps_cbk.c(152),INFO" ID="0xefa404c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] read request cbk proc @ssf_ssaps_cbk.c(175),INFO" ID="0xefa4057d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] write request cbk proc @ssf_ssaps_cbk.c(187),INFO" ID="0xefa405dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] call method request cbk proc @ssf_ssaps_cbk.c(202),INFO" ID="0xefa40655" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] indicate cfm cbk proc in @ssf_ssaps_cbk.c(214),INFO" ID="0xefa406b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] mtu changed cbk proc in @ssf_ssaps_cbk.c(233),INFO" ID="0xefa4074d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] start service cbk get service inst fail handle:0x%x @ssf_ssaps_cbk.c(251),ERROR" ID="0xefa407da" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSAP][S] start service cbk server_id:0x%x handle:0x%x status:0x%x @ssf_ssaps_cbk.c(255),INFO" ID="0xefa407fd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] delete service cbk server_id:0x%x status:0x%x @ssf_ssaps_cbk.c(263),INFO" ID="0xefa4083d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] read request cbk get device with conn_id:0x%x fail @ssf_ssaps_cbk.c(274),ERROR" ID="0xefa40892" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] read request cbk get inst item id with handle:0x%x fail @ssf_ssaps_cbk.c(282),ERROR" ID="0xefa408d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] read request cbk malloc fail @ssf_ssaps_cbk.c(287),ERROR" ID="0xefa408fa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSAP][S] read request cbk server_id:0x%x device_id:0x%x inst_id:0x%x item_id:0x%x @ssf_ssaps_cbk.c(297),INFO" ID="0xefa4094d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSAP][S] read request cbk request_id:0x%x type:0x%x need_rsp:0x%x status:0x%x @ssf_ssaps_cbk.c(300),INFO" ID="0xefa40965" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] write request cbk get device with conn_id:0x%x fail @ssf_ssaps_cbk.c(316),ERROR" ID="0xefa409e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] write request cbk get inst item id with handle:0x%x fail @ssf_ssaps_cbk.c(324),ERROR" ID="0xefa40a22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] write request cbk malloc fail @ssf_ssaps_cbk.c(330),ERROR" ID="0xefa40a52" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSAP][S] write request cbk server_id:0x%x device_id:0x%x inst_id:0x%x item_id:0x%x @ssf_ssaps_cbk.c(347),INFO" ID="0xefa40add" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSAP][S] write request cbk request_id:0x%x type:0x%x need_rsp:0x%x length:0x%x status:0x%x @ssf_ssaps_cbk.c(350),INFO" ID="0xefa40af5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] call method cbk get device with conn_id:0x%x fail @ssf_ssaps_cbk.c(366),ERROR" ID="0xefa40b72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] call method cbk get inst item id with handle:0x%x fail @ssf_ssaps_cbk.c(374),ERROR" ID="0xefa40bb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][S] call method cbk malloc fail @ssf_ssaps_cbk.c(380),ERROR" ID="0xefa40be2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSAP][S] call method cbk server_id:0x%x device_id:0x%x inst_id:0x%x item_id:0x%x @ssf_ssaps_cbk.c(396),INFO" ID="0xefa40c65" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSAP][S] call method cbk request_id:0x%x need_rsp:0x%x length:0x%x @ssf_ssaps_cbk.c(398),INFO" ID="0xefa40c75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] indicate cfm cbk get device with conn_id:0x%x fail @ssf_ssaps_cbk.c(416),ERROR" ID="0xefa40d02" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSAP][S] indicate cfm cbk server_id:0x%x device_id:0x%x cfm_result:0x%x @ssf_ssaps_cbk.c(420),INFO" ID="0xefa40d25" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][S] mtu changed cbk get device with conn_id:0x%x fail @ssf_ssaps_cbk.c(432),ERROR" ID="0xefa40d82" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSAP][S] indicate cfm cbk server_id:0x%x device_id:0x%x status:0x%x @ssf_ssaps_cbk.c(437),INFO" ID="0xefa40dad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] has same cbk_node server_id:0x%x inst_id:0x%x @ssf_ssaps_cbk.c(450),ERROR" ID="0xefa40e12" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] create cbk inst fail server_id:0x%x inst_id:0x%x @ssf_ssaps_cbk.c(456),ERROR" ID="0xefa40e42" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] register callback fail server_id:0x%x inst_id:0x%x @ssf_ssaps_cbk.c(475),ERROR" ID="0xefa40eda" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSAP][S] register method func fail start_handle:0x%x end_handle:0x%x @ssf_ssaps_cbk.c(494),ERROR" ID="0xefa40f72" />
+			</MSG_LOG>

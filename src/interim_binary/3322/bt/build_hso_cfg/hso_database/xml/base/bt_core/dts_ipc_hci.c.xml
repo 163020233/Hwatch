@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]dts hci malloc fail! @dts_ipc_hci.c(40),ERROR" ID="0x8ae80142" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]memcpy_s fail!, ret=%d @dts_ipc_hci.c(46),ERROR" ID="0x8ae80172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hci]dts_ipc_recvive_hci_msg_handle ::osal_msg_queue_write_copy fail! @dts_ipc_hci.c(51),ERROR" ID="0x8ae8019a" />
+			</MSG_LOG>

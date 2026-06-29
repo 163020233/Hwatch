@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[HFP][GetServiceInfo] connection_number=0x%x, status=0x%x @hfp_fsm_ram.c(320),INFO" ID="0xebdc0a05" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[T%x][TIMEOUT]SLC NOT ESTABLISHED, TIMER=0x%x @hfp_fsm_ram.c(556),WARNING" ID="0xebdc1163" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[T%x][TIMEOUT]RING OR DIAL, TIMER=0x%x @hfp_fsm_ram.c(561),WARNING" ID="0xebdc118b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[T%x][TIMEOUT]AT CMD, LAST_CMD=0x%x, TIMER=0x%x @hfp_fsm_ram.c(565),WARNING" ID="0xebdc11ab" />
+			</MSG_LOG>

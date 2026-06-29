@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[LM][BLE_INIT]lm_ble_initiate_set_rpa_sed rpa generation %d resolution %d ral mode %d policy %d @lm_ble_initiate_ram.c(91),INFO" ID="0x8b2202dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[LM][BLE_INIT]lm_ble_initiate_set_rpa_sed current ral size %d, fal pub size %d, fal priv size %d @lm_ble_initiate_ram.c(93),INFO" ID="0x8b2202ed" />
+			</MSG_LOG>

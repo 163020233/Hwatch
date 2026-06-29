@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[Error] gattc register at fail @ble_at_gattc.c(178),ERROR" ID="0xe91e0592" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gattc register client at cmd fail @ble_at_gattc.c(202),ERROR" ID="0xe91e0652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]ble at gattc find service at cmd fail @ble_at_gattc.c(236),ERROR" ID="0xe91e0762" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]ble at gattc discovery character at cmd fail @ble_at_gattc.c(259),ERROR" ID="0xe91e081a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]ble at gattc read req by uuid at cmd fail @ble_at_gattc.c(316),ERROR" ID="0xe91e09e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gattc write req at cmd data new fail @ble_at_gattc.c(339),ERROR" ID="0xe91e0a9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gattc write req str to data fail @ble_at_gattc.c(344),ERROR" ID="0xe91e0ac2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]ble_at_gattc_find_stru_by_uuid at cmd fail @ble_at_gattc.c(460),ERROR" ID="0xe91e0e62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]ble_at_gattc_register_multi_callbacks fail @ble_at_gattc.c(480),ERROR" ID="0xe91e0f02" />
+			</MSG_LOG>

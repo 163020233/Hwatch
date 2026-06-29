@@ -1,0 +1,31 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+
+kernel_module("perf") {
+    include_dirs = [
+        "$LITEOSTOPDIR/kernel_lite/extended/include",
+        "$LITEOSTOPDIR/kernel_lite/extended/perf",
+    ]
+
+    sources = [
+        "los_perf.c",
+        "perf_output.c",
+        "perf_pmu.c",
+    ]
+
+    if (defined(LOSCFG_PERF_HW_PMU)) {
+        sources += ["pmu/perf_hw_pmu.c"]
+    }
+
+    if (defined(LOSCFG_PERF_TIMED_PMU)) {
+        sources += ["pmu/perf_timed_pmu.c"]
+    }
+
+    if (defined(LOSCFG_PERF_SW_PMU)) {
+        sources += ["pmu/perf_sw_pmu.c"]
+    }
+}

@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="bt acore set product type smp_index:0x:%x! @nv_smp_key.c(35),INFO" ID="0xe834011d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt acore set smp index 0x:%x! @nv_smp_key.c(44),INFO" ID="0xe8340165" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] bt set smp key config fail, errcode: 0x%x @nv_smp_key.c(54),ERROR" ID="0xe83401b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] bt set own addr config succ. @nv_smp_key.c(57),INFO" ID="0xe83401cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] bt read nv smp keys fail, errcode: 0x%x @nv_smp_key.c(75),ERROR" ID="0xe834025a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] bt read nv smp keys succ, real_len:%d. @nv_smp_key.c(78),INFO" ID="0xe8340275" />
+			</MSG_LOG>

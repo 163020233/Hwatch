@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BGH][IPC RECV] message queue write fail, ret = 0x%x. @tladapter.c(45),ERROR" ID="0xeb98016a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ipc send%d fail  @tladapter.c(108),ERROR" ID="0xeb980362" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sco disconnect complete sco_hdl=0x%x @tladapter.c(129),INFO" ID="0xeb98040d" />
+			</MSG_LOG>

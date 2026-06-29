@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] start init @sapi_gle_sm_inner.c(25),INFO" ID="0xed5000cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] sm link release, handle: 0x%04x @sapi_gle_sm_inner.c(70),INFO" ID="0xed500235" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE SM] sm link status: 0x%02x @sapi_gle_sm_inner.c(73),INFO" ID="0xed50024d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] init new remote device. @sapi_gle_sm_inner.c(109),INFO" ID="0xed50036d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] gle sm link init malloc fail @sapi_gle_sm_inner.c(112),ERROR" ID="0xed500382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] init old remote device. @sapi_gle_sm_inner.c(122),INFO" ID="0xed5003d5" />
+			</MSG_LOG>

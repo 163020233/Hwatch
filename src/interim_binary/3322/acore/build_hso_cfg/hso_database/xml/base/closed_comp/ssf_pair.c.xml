@@ -1,0 +1,62 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] pair module init failed, err: %u @ssf_pair.c(90),ERROR" ID="0xef8002d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get enable_preemption failed, err: %u @ssf_pair.c(101),ERROR" ID="0xef80032a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get config failed, err: %u @ssf_pair.c(114),ERROR" ID="0xef800392" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] set default conn param, ret: %u @ssf_pair.c(141),INFO" ID="0xef80046d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] set default conn param failed, err: %u @ssf_pair.c(143),ERROR" ID="0xef80047a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get role failed, err: %u @ssf_pair.c(154),ERROR" ID="0xef8004d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS] set peer device addr[%02x][%02x] with type err! ret = 0x%x @ssf_pair.c(163),INFO" ID="0xef80051d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] get is_not_auto_pair flag fail! @ssf_pair.c(174),ERROR" ID="0xef800572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] is_not_auto_pair function is enable. @ssf_pair.c(180),DBG" ID="0xef8005a6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] is_not_auto_pair function is off! @ssf_pair.c(187),DBG" ID="0xef8005de" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] just need pair after connection. @ssf_pair.c(200),INFO" ID="0xef800645" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] bs sle start pair: only execute pair operation. @ssf_pair.c(213),INFO" ID="0xef8006ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] disconnect dev by addr. @ssf_pair.c(221),INFO" ID="0xef8006ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] disconnect find no device, obj: %u @ssf_pair.c(231),ERROR" ID="0xef80073a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] disconnect find no device, obj: %u @ssf_pair.c(259),ERROR" ID="0xef80081a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] data invalied @ssf_pair.c(267),ERROR" ID="0xef80085a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] remove device pair info failed @ssf_pair.c(270),ERROR" ID="0xef800872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] remove all pairs success, begin free all obj @ssf_pair.c(283),INFO" ID="0xef8008dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] get all device failed @ssf_pair.c(290),ERROR" ID="0xef800912" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] Not auto pair after connect. @ssf_pair.c(331),INFO" ID="0xef800a5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] unsuopport pair oper. invalid role: %u @ssf_pair.c(361),ERROR" ID="0xef800b4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get role failed, err: %u @ssf_pair.c(375),ERROR" ID="0xef800bba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] role is not peripheral, role: %u @ssf_pair.c(379),ERROR" ID="0xef800bda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] connection preempt, disconnect device_id: %u @ssf_pair.c(410),INFO" ID="0xef800cd5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] pair on connected conn_id=%u, conn_state=%u, pair_state=%u @ssf_pair.c(418),INFO" ID="0xef800d15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] alloc device in pair connected failed, conn_id: %u @ssf_pair.c(429),ERROR" ID="0xef800d6a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] pair delete device conn_id=%u, conn_state=%u, pair_state=%u @ssf_pair.c(461),INFO" ID="0xef800e6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] pair delete device failed, not get obj @ssf_pair.c(479),ERROR" ID="0xef800efa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][AS] iso remove group cbk, clear peer device addr[%02x][%02x] with type err! ret = 0x%x @ssf_pair.c(491),INFO" ID="0xef800f5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] pair deleted, clear device_id %d @ssf_pair.c(495),INFO" ID="0xef800f7d" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[SSF][CONN] pair state change conn_id: %u, addr: %02x%02x, conn_state: %u, pair_state: %u, disc: %u @ssf_pair.c(509),INFO" ID="0xef800fed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] no need to handle, conn_state: %u, pair_state: %u @ssf_pair.c(520),INFO" ID="0xef801045" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] conntion param update req conn_id: %u, status %u @ssf_pair.c(530),ERROR" ID="0xef801092" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] conntion param update conn_id: 0x%04x, status 0x%x @ssf_pair.c(538),ERROR" ID="0xef8010d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] conntion param update interval 0x%x, latency 0x%x, timeout 0x%x @ssf_pair.c(541),ERROR" ID="0xef8010ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get device id fail, conn id 0x%04x @ssf_pair.c(546),DBG" ID="0xef801116" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] set phy conn_id: 0x%04x, status 0x%x @ssf_pair.c(563),ERROR" ID="0xef80119a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] set phy tx_format %d, rx_format %d, tx_phy %d, rx_phy %d @ssf_pair.c(566),ERROR" ID="0xef8011b2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] set phy tx_pilot_density %d, rx_pilot_density %d, g_feedback %d, t_feedback %d @ssf_pair.c(569),ERROR" ID="0xef8011ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] set mcs fail. @ssf_pair.c(574),ERROR" ID="0xef8011f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get device id fail, conn id 0x%04x @ssf_pair.c(582),ERROR" ID="0xef801232" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] pair request conn_id:%u, addr:0x%02x...0x%02x0x%02x not in discovery peripheral reject it @ssf_pair.c(610),ERROR" ID="0xef801312" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][CONN] pair request conn_id: %u, addr: %02x%02x @ssf_pair.c(615),INFO" ID="0xef80133d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] auth complete invalid device, conn_id: %u @ssf_pair.c(632),ERROR" ID="0xef8013c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] auth complete evt is NULL, conn_id: %u @ssf_pair.c(640),ERROR" ID="0xef801402" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] auth complete conn_id: %u, addr: %02x%02x, status: %u @ssf_pair.c(644),INFO" ID="0xef801425" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] pair complete invalid device, conn_id: %u @ssf_pair.c(661),ERROR" ID="0xef8014aa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] pair complete conn_id: %u, addr: %02x%02x, status: %u @ssf_pair.c(665),INFO" ID="0xef8014cd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] pair failed, conn_id=%u, err=%u @ssf_pair.c(673),ERROR" ID="0xef80150a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] remove device pair info failed @ssf_pair.c(677),ERROR" ID="0xef80152a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][CONN] stop invite adv, conn_id: %u, addr: %02x:**:**:**:%02x:%02x @ssf_pair.c(690),DBG" ID="0xef801596" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get device id fail, conn id 0x%04x @ssf_pair.c(699),DBG" ID="0xef8015de" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] set data len rpt: conn_id = %u,  status = %u @ssf_pair.c(708),DBG" ID="0xef801626" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get device id fail, conn id 0x%04x @ssf_pair.c(713),ERROR" ID="0xef80164a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][CONN] set data len rpt: max_rx_octets = %u,  max_tx_octets = %u @ssf_pair.c(722),DBG" ID="0xef801696" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] input param NULL @ssf_pair.c(724),ERROR" ID="0xef8016a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] sle link quality report input param NULL @ssf_pair.c(734),ERROR" ID="0xef8016f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] no need report sle asyn-link quality. @ssf_pair.c(739),INFO" ID="0xef80171d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] sle link quality report get device id fail, conn id 0x%04x @ssf_pair.c(749),ERROR" ID="0xef80176a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] read rssi wrong dev id 0x%04x @ssf_pair.c(776),ERROR" ID="0xef801842" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="call sle_read_remote_device_rssi fail: ret = %u @ssf_pair.c(781),ERROR" ID="0xef80186a" />
+			</MSG_LOG>

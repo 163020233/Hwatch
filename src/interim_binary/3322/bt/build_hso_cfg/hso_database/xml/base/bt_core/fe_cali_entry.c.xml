@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[CALI][BT]cali_item_register idx[%d] type[%d] @fe_cali_entry.c(52),ERROR" ID="0x897001a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[CALI]cali_item_register idx[%d] type[%d] @fe_cali_entry.c(62),ERROR" ID="0x897001f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[CALI]cali_process_single_item cali_item idx=%d @fe_cali_entry.c(89),INFO" ID="0x897002cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[CALI][POW_ON]fe_cali_feature_entry cur_state:spend_time %d us @fe_cali_entry.c(179),INFO" ID="0x8970059d" />
+			</MSG_LOG>

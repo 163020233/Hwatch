@@ -1,0 +1,4 @@
+<div class="container">
+    <marquee style="direction:left; width: 100px; height: 100px;"> 文字方向LTR </marquee>
+    <marquee style="direction:right; width: 100px; height: 100px;"> 文字方向RTL </marquee>
+</div>

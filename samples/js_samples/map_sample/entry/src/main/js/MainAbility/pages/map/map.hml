@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="containerTitle">
+        <text class="title" onclick="replaceHomefoPage">
+            {{ $t('strings.search_bar') }}
+        </text>
+    </div>
+    <div class="containerEdit">
+        <input class="search-input" type="text" on:change="onChange" placeholder="{{ $t('strings.placeholder') }}">
+            {{ value }}
+        </input>
+        <input type="button" class="button" onclick="oncl">
+            {{ $t('strings.send') }}
+        </input>
+    </div>
+</div>

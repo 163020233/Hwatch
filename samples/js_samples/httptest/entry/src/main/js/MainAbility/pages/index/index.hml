@@ -1,0 +1,10 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="replaceBasePage">
+            <text class="todo-title">基础用例</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="replaceComplexPage">
+            <text class="todo-title">多实例用例</text>
+        </list-item>
+    </list>
+</div>

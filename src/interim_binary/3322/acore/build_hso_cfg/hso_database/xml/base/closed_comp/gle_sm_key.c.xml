@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GLE SM] enter debug mode. @gle_sm_key.c(45),INFO" ID="0xed52016d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle set sm debug mode: [%u] @gle_sm_key.c(81),INFO" ID="0xed52028d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE SM] get salt fail,auth method:%u,ret:%d @gle_sm_key.c(105),ERROR" ID="0xed52034a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE SM] dhkey calc g addr: %02x:**:**:**:%02x:%02x @gle_sm_key.c(180),INFO" ID="0xed5205a5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[GLE SM] dhkey calc t addr: %02x:**:**:**:%02x:%02x @gle_sm_key.c(182),INFO" ID="0xed5205b5" />
+			</MSG_LOG>

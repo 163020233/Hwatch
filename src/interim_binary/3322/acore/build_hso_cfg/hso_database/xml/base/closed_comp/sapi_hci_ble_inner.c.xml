@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[HCI] le local set own addr update adv pts_mode=%d, is_le_ext_adving = %d, updated = %d @sapi_hci_ble_inner.c(147),INFO" ID="0xeb8e049d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI]le local set own addr privacy=%d @sapi_hci_ble_inner.c(213),INFO" ID="0xeb8e06ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI]le isa go idle local-&gt;leisa_cur = %02x @sapi_hci_ble_inner.c(1356),INFO" ID="0xeb8e2a65" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HCI][WHITE_LIST]TYPE=%d, ADDR=%02x:%02x:**:**:**:%02x @sapi_hci_ble_inner.c(1624),INFO" ID="0xeb8e32c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi hci lec resolving list remove local or node is NULL. @sapi_hci_ble_inner.c(1694),ERROR" ID="0xeb8e34f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI] get remote feature is NULL @sapi_hci_ble_inner.c(1728),ERROR" ID="0xeb8e3602" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HCI] remote feature 0-3: 0x%02x, 0x%02x, 0x%02x, 0x%02x @sapi_hci_ble_inner.c(1732),INFO" ID="0xeb8e3625" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HCI] remote feature 4-7: 0x%02x, 0x%02x, 0x%02x, 0x%02x @sapi_hci_ble_inner.c(1734),INFO" ID="0xeb8e3635" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI] remote feature LL Privacy not support @sapi_hci_ble_inner.c(1736),INFO" ID="0xeb8e3645" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]le local get own addr by type memcpy failed @sapi_hci_ble_inner.c(2203),ERROR" ID="0xeb8e44da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]le local get own addr by type memcpy failed @sapi_hci_ble_inner.c(2234),ERROR" ID="0xeb8e45d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI]le local get own addr by type slot = %02x, type = %02x @sapi_hci_ble_inner.c(2238),INFO" ID="0xeb8e45f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI]le local set own addr by type addr_type = %02x @sapi_hci_ble_inner.c(2247),INFO" ID="0xeb8e463d" />
+			</MSG_LOG>

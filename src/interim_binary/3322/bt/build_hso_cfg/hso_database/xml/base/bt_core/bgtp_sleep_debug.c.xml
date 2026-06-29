@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[BGTP][SLEEP_DEBUG]bgtp_sleep_debug_trace_print REG_ADDR: 0x%x trace:(0x%x ----&gt; 0x%x ----&gt; 0x%x) @bgtp_sleep_debug.c(74),WARNING" ID="0x8bbc0253" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ES][SLEEP_DEBUG]es_bt_sleep_time_calc: cur_time=%d,next_evt_time=%d,task_id=0x%x,timestamp=%d. @bgtp_sleep_debug.c(85),WARNING" ID="0x8bbc02ab" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE][SLEEP_DEBUG]bgtp_sleep_debug_gle_clk_diff: task_ready_id=0x%x, timestamp=%d. @bgtp_sleep_debug.c(96),WARNING" ID="0x8bbc0303" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE][SLEEP_DEBUG]bgtp_sleep_debug_gle_clk_diff: task_urgent_id=0x%x, timestamp=%d. @bgtp_sleep_debug.c(101),WARNING" ID="0x8bbc032b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE][SLEEP_DEBUG]bgtp_sleep_debug_gle_clk_diff:cur_time=%d,next_evt_time=%d. @bgtp_sleep_debug.c(104),WARNING" ID="0x8bbc0343" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SLEEP_DEBUG]bgtp_sleep_task_trace: cur_bt_time=0x%x,cur_gle_time=0x%x,cur_cnt=0x%x,duration=%d @bgtp_sleep_debug.c(117),INFO" ID="0x8bbc03ad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SLEEP_DEBUG]bgtp_sleep_task_trace: next_bt_time=0x%x,next_gle_time=0x%x,gle_task_id=0x%x,gle_timestamp=0x%x @bgtp_sleep_debug.c(135),INFO" ID="0x8bbc043d" />
+			</MSG_LOG>

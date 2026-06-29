@@ -1,0 +1,28 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="startAdvertising">
+            <text class="todo-title">开始广播</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="stopAdvertising">
+            <text class="todo-title">关闭广播</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="startAdvertisingWithCallback">
+            <text class="todo-title">开始带回调广播</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="stopAdvertisingWithCallback">
+            <text class="todo-title">停止带回调广播</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="addService">
+            <text class="todo-title">添加服务</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="sendNotification">
+            <text class="todo-title">发送特征变化通知</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="removeServer">
+            <text class="todo-title">删除服务</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="closeServer">
+            <text class="todo-title">注销服务端</text>
+        </list-item>
+    </list>
+</div>

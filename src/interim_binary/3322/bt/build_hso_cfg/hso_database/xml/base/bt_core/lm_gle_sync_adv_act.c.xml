@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][c_frame]lm_gle_hci_create_sync_adv_act, create fail @lm_gle_sync_adv_act.c(47),INFO" ID="0x8bc8017d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][c_frame]lm_gle_hci_create_sync_adv_act, create succ sync_adv_hdl:0x%x role:%d @lm_gle_sync_adv_act.c(51),INFO" ID="0x8bc8019d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][c_frame]lm_gle_hci_set_sync_adv_data_act data_len(%d)send_times(%d)data_sn(%d) @lm_gle_sync_adv_act.c(162),INFO" ID="0x8bc80515" />
+			</MSG_LOG>

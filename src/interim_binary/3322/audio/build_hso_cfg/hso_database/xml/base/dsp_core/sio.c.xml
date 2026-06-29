@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi]mmap i2s_cfg_reg failed. @sio.c(60),ERROR" ID="0x98e201e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]g_i2s_reg = %p @sio.c(64),INFO" ID="0x98e20205" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sizeof(i2s_cfg_reg) = 0x%08X @sio.c(65),INFO" ID="0x98e2020d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mclk = %u @sio.c(321),INFO" ID="0x98e20a0d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]word_width=%d, bit_depth=%d @sio.c(342),ERROR" ID="0x98e20ab2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sio-&gt;dsp_if = %u @sio.c(547),INFO" ID="0x98e2111d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]sio-&gt;dir = %u @sio.c(548),INFO" ID="0x98e21125" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]enable = %d @sio.c(549),INFO" ID="0x98e2112d" />
+			</MSG_LOG>

@@ -1,0 +1,110 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="cbks null error @gle_isom_core.c(100),ERROR" ID="0xee160322" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle create group result]status = 0x%x @gle_isom_core.c(191),INFO" ID="0xee1605fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] set group param group not exist id = 0x%x @gle_isom_core.c(215),INFO" ID="0xee1606bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] set group param update_group_info err status = 0x%x @gle_isom_core.c(222),ERROR" ID="0xee1606f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set group param alloc fail @gle_isom_core.c(231),ERROR" ID="0xee16073a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] remove group. cfm_info is null @gle_isom_core.c(298),INFO" ID="0xee160955" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] remove group result:0x%x @gle_isom_core.c(305),ERROR" ID="0xee16098a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] remove group result:0x%x status = 0x%x, group_id:%u @gle_isom_core.c(309),INFO" ID="0xee1609ad" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] gle member establish evt, status:0x%x member_hdl:%u, conn_id:%u @gle_isom_core.c(386),INFO" ID="0xee160c15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] gle member establish evt, group info not found @gle_isom_core.c(389),ERROR" ID="0xee160c2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] gle member establish evt member_node:0x%x @gle_isom_core.c(402),ERROR" ID="0xee160c92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] gle member establish evt, member_state:%u @gle_isom_core.c(404),ERROR" ID="0xee160ca2" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] gle member establish evt, group_node:0x%x member_node:0x%x, group_id:%u, member_id:%u, conn_id:%u, state:%u @gle_isom_core.c(411),INFO" ID="0xee160cdd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] imb establish v1 result:0x%x @gle_isom_core.c(474),ERROR" ID="0xee160ed2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] iob establish v1 result:0x%x @gle_isom_core.c(491),ERROR" ID="0xee160f5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] imb establish v2 result:0x%x @gle_isom_core.c(515),ERROR" ID="0xee16101a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] iob establish v2 result:0x%x @gle_isom_core.c(532),ERROR" ID="0xee1610a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] set data path result:0x%x @gle_isom_core.c(548),ERROR" ID="0xee161122" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] set data path result:0x%x status:0x%x, member_hdl:%u @gle_isom_core.c(553),INFO" ID="0xee16114d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set data path member not found or state not suitable @gle_isom_core.c(584),ERROR" ID="0xee161242" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] remove data path result:0x%x @gle_isom_core.c(598),ERROR" ID="0xee1612b2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] remove data path result:0x%x, status:0x%x, member_hdl:%u @gle_isom_core.c(603),INFO" ID="0xee1612dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] remove data path member not found or state not suitable @gle_isom_core.c(634),ERROR" ID="0xee1613d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] read presentation delay result:0x%x @gle_isom_core.c(648),ERROR" ID="0xee161442" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] frequency band nswitched result:0x%x @gle_isom_core.c(664),ERROR" ID="0xee1614c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] frequency band nswitched group info not found @gle_isom_core.c(669),ERROR" ID="0xee1614ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] frequency band nswitched member not found @gle_isom_core.c(675),ERROR" ID="0xee16151a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] label report result:0x%x @gle_isom_core.c(695),ERROR" ID="0xee1615ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] label report param result:0x%x @gle_isom_core.c(699),ERROR" ID="0xee1615da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] update label result:0x%x @gle_isom_core.c(753),ERROR" ID="0xee16178a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] update label param result:0x%x @gle_isom_core.c(757),ERROR" ID="0xee1617aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] update label param invaild  @gle_isom_core.c(762),ERROR" ID="0xee1617d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] autorate report result:0x%x @gle_isom_core.c(790),ERROR" ID="0xee1618b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] multicast packet complete group not find, member_con_hdl:0x%x @gle_isom_core.c(798),ERROR" ID="0xee1618f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] autorate report muticast alloc memory fail @gle_isom_core.c(805),ERROR" ID="0xee16192a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] autorate report result:0x%x @gle_isom_core.c(842),ERROR" ID="0xee161a52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] unicast packet complete group not find, member_con_hdl:0x%x @gle_isom_core.c(851),ERROR" ID="0xee161a9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set data path member not found or state not suitable @gle_isom_core.c(857),ERROR" ID="0xee161aca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] autorate report unicast alloc memory fail @gle_isom_core.c(863),ERROR" ID="0xee161afa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] reject member conn result:0x%x @gle_isom_core.c(892),ERROR" ID="0xee161be2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] reject member conn member_hdl:0x%x result:0x%x status = 0x%x @gle_isom_core.c(896),INFO" ID="0xee161c05" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] reject member, group info not found @gle_isom_core.c(900),ERROR" ID="0xee161c22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] reject member, member info not found group_node:0x%x @gle_isom_core.c(906),ERROR" ID="0xee161c52" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] iso reject member conn group_id:%u, conn_type:%u, conn_id:%u, member_id:%u, group_info:0x%x, member_info:%u @gle_isom_core.c(911),ERROR" ID="0xee161c7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] gle iso create group fail group_id = %d @gle_isom_core.c(937),ERROR" ID="0xee161d4a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] gle iso add member failed member_hdl:%u conn_id:%u @gle_isom_core.c(952),ERROR" ID="0xee161dc2" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] gle create member req group_handle:%u, member_handle:%u member_node:0x%x, member_id:%u, conn_id:%u, member_state:%u @gle_isom_core.c(966),INFO" ID="0xee161e35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] acb state change, result:0x%x @gle_isom_core.c(1057),ERROR" ID="0xee16210a" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] acb state change, group_info:0x%x, group_id:0x%x conn_type:0x%x conn_role:0x%x member_info:0x%x, member_id:0x%x @gle_isom_core.c(1085),INFO" ID="0xee1621ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] acb state change, delete member_hdl:0x%x @gle_isom_core.c(1097),INFO" ID="0xee16224d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] trans indicator report result:0x%x @gle_isom_core.c(1109),ERROR" ID="0xee1622aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] trans indicator report param result:0x%x @gle_isom_core.c(1113),ERROR" ID="0xee1622ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] packet complete fail, result:0x%x @gle_isom_core.c(1133),ERROR" ID="0xee16236a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] packet complete group not find, connection_handle:0x%x @gle_isom_core.c(1142),ERROR" ID="0xee1623b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] recv data member not find, member_handle:0x%x @gle_isom_core.c(1160),ERROR" ID="0xee162442" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] recv data member state not ready, conn_id:0x%x member_id:0x%x @gle_isom_core.c(1165),ERROR" ID="0xee16246a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] security config info recv secu_info is NULL @gle_isom_core.c(1187),ERROR" ID="0xee16251a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] enable encryption param is null @gle_isom_core.c(1198),ERROR" ID="0xee162572" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] enable encryption group not found or context is null group_info:0x%x conn_id:0x%x @gle_isom_core.c(1204),ERROR" ID="0xee1625a2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ISO] iso enable encryption group_info:0x%x, conn_type:0x%x, group_hdl:%u, status:%u @gle_isom_core.c(1210),ERROR" ID="0xee1625d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] read rssi v2 param is null @gle_isom_core.c(1240),ERROR" ID="0xee1626c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] read rssi v2 member not found or state not suitable @gle_isom_core.c(1268),ERROR" ID="0xee1627a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] release conn member invalid @gle_isom_core.c(1337),ERROR" ID="0xee1629ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] create data buffer mem alloc failed @gle_isom_core.c(1367),ERROR" ID="0xee162aba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] create data buffer mem cpy failed @gle_isom_core.c(1380),ERROR" ID="0xee162b22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] recv data group not find, connection_handle:0x%x @gle_isom_core.c(1395),ERROR" ID="0xee162b9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] recv data member not find, member_handle:0x%x @gle_isom_core.c(1408),ERROR" ID="0xee162c02" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] recv data member state not ready, conn_id:0x%x member_id:0x%x @gle_isom_core.c(1413),ERROR" ID="0xee162c2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pkt buff param err @gle_isom_core.c(1434),ERROR" ID="0xee162cd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set default group param @gle_isom_core.c(1448),INFO" ID="0xee162d45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set label member state invalid @gle_isom_core.c(1550),ERROR" ID="0xee163072" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ISO] set label, group_info:0x%x, group_id:%u, conn_type:0x%x, member_num:0x%x @gle_isom_core.c(1563),INFO" ID="0xee1630dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] iso calculate algorithm intersection for newly added devices fail @gle_isom_core.c(1613),ERROR" ID="0xee16326a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] iso calculate algorithm intersection for devices that have been added fail @gle_isom_core.c(1628),ERROR" ID="0xee1632e2" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] send security config info, group_id:0x%x, conn_id:0x%x, crypto_algo:0x%x key_deriv_algo:0x%x integr_protect_algo:0x%x status:0x%x @gle_isom_core.c(1669),INFO" ID="0xee16342d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] iso security config, optimal imb algorithm fail ret:0x%x @gle_isom_core.c(1693),ERROR" ID="0xee1634ea" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[ISO] iso security config, group_id:0x%x, group_info:0x%x, secu_info:0x%x, crypto_algo:0x%x, status:0x%x @gle_isom_core.c(1699),INFO" ID="0xee16351d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] iso security config, update and send security config info fail ret:0x%x @gle_isom_core.c(1711),ERROR" ID="0xee16357a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] iso security config, send new security config info fail ret:0x%x @gle_isom_core.c(1721),ERROR" ID="0xee1635ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set label group param invalid @gle_isom_core.c(1736),ERROR" ID="0xee163642" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] iso optimal imb algorithm fail group_id:0x%x, conntype:0x%x ret:0x%x @gle_isom_core.c(1746),INFO" ID="0xee163695" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] update label param invalid @gle_isom_core.c(1765),ERROR" ID="0xee16372a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] update label member state invalid @gle_isom_core.c(1782),ERROR" ID="0xee1637b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] create conn link invalid, conn_id:0x%x @gle_isom_core.c(1811),ERROR" ID="0xee16389a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] create conn member state invalid @gle_isom_core.c(1821),ERROR" ID="0xee1638ea" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ISO] create connection, group_info:0x%x, group_id:%u, conn_type:0x%x, member_num:0x%x @gle_isom_core.c(1833),INFO" ID="0xee16394d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] iso enable encryption group_info:0x%x, group_hdl:%u, crypto_algo:%u @gle_isom_core.c(1849),ERROR" ID="0xee1639ca" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ISO] iso enable encryption with gnode group_info:0x%x, group_hdl:%u, crypto_algo:%u state:0x%x @gle_isom_core.c(1871),INFO" ID="0xee163a7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] create conn group param invalid @gle_isom_core.c(1900),ERROR" ID="0xee163b62" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] iso establish event group_info:0x%x, group_id:0x%x @gle_isom_core.c(1909),ERROR" ID="0xee163baa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set data path group invalid @gle_isom_core.c(1935),ERROR" ID="0xee163c7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set data path member state invalid @gle_isom_core.c(1949),ERROR" ID="0xee163cea" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] set data path group_id:%u, conn_type:%u, member_id:%u handle:%u data_path_id:%u data_path_direction:%u @gle_isom_core.c(1957),INFO" ID="0xee163d2d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] remove data path group invalid @gle_isom_core.c(1972),ERROR" ID="0xee163da2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] remove data path member state invalid @gle_isom_core.c(1986),ERROR" ID="0xee163e12" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ISO] remove data path group_id:%u, conn_type:%u, handle:%u data_path_direction:%u @gle_isom_core.c(1994),INFO" ID="0xee163e55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set link high power mode group invalid @gle_isom_core.c(2010),ERROR" ID="0xee163ed2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set link high power mode member state invalid @gle_isom_core.c(2023),ERROR" ID="0xee163f3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] set link high power mode handle:0x%x @gle_isom_core.c(2029),ERROR" ID="0xee163f6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] read rssi v2 group invalid @gle_isom_core.c(2045),ERROR" ID="0xee163fea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] read rssi v2 member state invalid @gle_isom_core.c(2059),ERROR" ID="0xee16405a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] get audio quality group invalid @gle_isom_core.c(2079),ERROR" ID="0xee1640fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] get audio quality member state invalid @gle_isom_core.c(2093),ERROR" ID="0xee16416a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] remove group find group invalid @gle_isom_core.c(2120),ERROR" ID="0xee164242" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] gle conn rsp, member state invalid, find with member_id:0x%x @gle_isom_core.c(2138),ERROR" ID="0xee1642d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] gle conn rsp, member state invalid member_id:0x%x, member_info:0x%x, state:0x%x @gle_isom_core.c(2143),ERROR" ID="0xee1642fa" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[ISO] gle conn rsp, member_node:0x%x, member_hdl:%u, result:0x%x, conn_type:0x%x, state:%u @gle_isom_core.c(2155),INFO" ID="0xee16435d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] gle conn rsp, group invalid @gle_isom_core.c(2168),ERROR" ID="0xee1643c2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ISO] iso enable encrypt fail, ret:0x%x, group_node:0x%x, conn_id:%u, group_id:%u @gle_isom_core.c(2185),ERROR" ID="0xee16444a" />
+			</MSG_LOG>

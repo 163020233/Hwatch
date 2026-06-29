@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_ACL]acl_init: con_hdl %d, role 0x%x, last_sync_ts 0x%x, clk_off 0x%x @evt_task_classic_acl_comm_patch.c(57),INFO" ID="0x8c4001cd" />
+			</MSG_LOG>

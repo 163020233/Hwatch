@@ -1,0 +1,53 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BS][BLE]ble addr is not fully set up @ble_device_config.c(105),ERROR" ID="0xea58034a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS][BLE]local addr:0x%x****%x @ble_device_config.c(136),INFO" ID="0xea580445" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS][BLE]coupled addr:0x%x****%x @ble_device_config.c(137),INFO" ID="0xea58044d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble local config type error 0x%04x @ble_device_config.c(182),ERROR" ID="0xea5805b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset adv param: repeated mode id, update value! @ble_device_config.c(211),INFO" ID="0xea58069d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble add preset adv param faild: reach max num[%u]! @ble_device_config.c(217),ERROR" ID="0xea5806ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset adv param faild: mem alloc fail @ble_device_config.c(222),ERROR" ID="0xea5806f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset adv param faild: memcopy fail @ble_device_config.c(227),ERROR" ID="0xea58071a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset adv param faild: input null ptr! @ble_device_config.c(249),ERROR" ID="0xea5807ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble add preset adv param faild: invalid mode_id (%u)! @ble_device_config.c(254),ERROR" ID="0xea5807f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble rmv preset adv param faild: no match! @ble_device_config.c(278),ERROR" ID="0xea5808b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble rmv preset adv param faild: invalid input! @ble_device_config.c(289),ERROR" ID="0xea58090a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble qry preset adv param faild: adv_id (%u) no match! @ble_device_config.c(313),ERROR" ID="0xea5809ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble qry preset adv param faild: memcpy fail, ret = %d! @ble_device_config.c(321),ERROR" ID="0xea580a0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble qry preset adv param faild: invalid input! @ble_device_config.c(330),ERROR" ID="0xea580a52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble lst preset adv param faild: empty! @ble_device_config.c(351),ERROR" ID="0xea580afa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble lst preset adv param faild: input ptr null! @ble_device_config.c(361),ERROR" ID="0xea580b4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble operate preset adv param type invalid! @ble_device_config.c(387),ERROR" ID="0xea580c1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble adv set param by preset fail: null ptr! @ble_device_config.c(398),ERROR" ID="0xea580c72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble adv set param by preset fail: adv_id (%u) is wrong! @ble_device_config.c(402),ERROR" ID="0xea580c92" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ble adv set param by preset para success, adv_id = %u, mode_id = %u @ble_device_config.c(433),INFO" ID="0xea580d8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble adv set param type not support yet %04x @ble_device_config.c(450),ERROR" ID="0xea580e12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="wrong adv id %d @ble_device_config.c(510),ERROR" ID="0xea580ff2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble adv config type error 0x%04x @ble_device_config.c(537),ERROR" ID="0xea5810ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble adv config type not support yet 0x%04x @ble_device_config.c(540),ERROR" ID="0xea5810e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset scan param: repeated mode id, update value! @ble_device_config.c(568),INFO" ID="0xea5811c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble add preset scan param faild: reach max num[%u]! @ble_device_config.c(574),ERROR" ID="0xea5811f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset scan param faild: mem alloc fail @ble_device_config.c(579),ERROR" ID="0xea58121a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset scan param faild: memcopy fail @ble_device_config.c(584),ERROR" ID="0xea581242" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset scan param faild: input null ptr! @ble_device_config.c(606),ERROR" ID="0xea5812f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble add preset scan param faild: invalid mode_id (%u)! @ble_device_config.c(611),ERROR" ID="0xea58131a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble rmv preset scan param faild: no match! @ble_device_config.c(634),ERROR" ID="0xea5813d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble rmv preset scan param faild: invalid input! @ble_device_config.c(645),ERROR" ID="0xea58142a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble qry preset scan param faild: no match! @ble_device_config.c(668),ERROR" ID="0xea5814e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble qry preset scan param faild: memcpy fail, ret = %d! @ble_device_config.c(676),ERROR" ID="0xea581522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble qry preset scan param faild: invalid input! @ble_device_config.c(685),ERROR" ID="0xea58156a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble lst preset scan param faild: empty! @ble_device_config.c(705),ERROR" ID="0xea58160a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble lst preset scan param faild: input ptr null! @ble_device_config.c(715),ERROR" ID="0xea58165a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble operate preset scan param type invalid! @ble_device_config.c(740),ERROR" ID="0xea581722" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble use preset scan param faild: input ptr null! @ble_device_config.c(749),ERROR" ID="0xea58176a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="bs ble use preset scan param: scan_interval %u, scan_window %u, scan_type %u, scan_phy %u. @ble_device_config.c(770),INFO" ID="0xea581815" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble scan set param by preset para success, mode_id = %u @ble_device_config.c(782),INFO" ID="0xea581875" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble scan set param type not support yet %04x @ble_device_config.c(798),ERROR" ID="0xea5818f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble scan config type error 0x%04x @ble_device_config.c(819),ERROR" ID="0xea58199a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble scan config type not support yet %04x @ble_device_config.c(822),ERROR" ID="0xea5819b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble connect set param type not support yet %04x @ble_device_config.c(834),ERROR" ID="0xea581a12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble connect config type error 0x%04x @ble_device_config.c(856),ERROR" ID="0xea581ac2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble reconnect config type error 0x%04x @ble_device_config.c(884),ERROR" ID="0xea581ba2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble reconnect config type error 0x%04x @ble_device_config.c(923),ERROR" ID="0xea581cda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble config type error 0x%04x @ble_device_config.c(946),ERROR" ID="0xea581d92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gap_ble_set_channel_scan_switch failed %d @ble_device_config.c(967),ERROR" ID="0xea581e3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs_ble_set_channel_scan_switch input null! @ble_device_config.c(975),ERROR" ID="0xea581e7a" />
+			</MSG_LOG>

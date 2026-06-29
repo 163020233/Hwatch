@@ -1,0 +1,35 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="init hfp hf connection list lock fail! @cpi_hfp_hf.c(133),ERROR" ID="0xee72042a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="init hfp hf cancel hedl call lock fail! @cpi_hfp_hf.c(137),ERROR" ID="0xee72044a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf server start handle:%d. @cpi_hfp_hf.c(151),INFO" ID="0xee7204bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Invalid parameters, mem_location:%p len:%d. @cpi_hfp_hf.c(334),ERROR" ID="0xee720a72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="empty number! @cpi_hfp_hf.c(409),ERROR" ID="0xee720cca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x @cpi_hfp_hf.c(418),INFO" ID="0xee720d15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="invalid action_type: %d! @cpi_hfp_hf.c(433),ERROR" ID="0xee720d8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no incoming call right now! @cpi_hfp_hf.c(439),WARNING" ID="0xee720dbb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x @cpi_hfp_hf.c(461),INFO" ID="0xee720e6d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x @cpi_hfp_hf.c(486),INFO" ID="0xee720f35" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="hfp finish call conn node find, state %d, direct %d, check %d @cpi_hfp_hf.c(505),INFO" ID="0xee720fcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp finish call conn node find fail @cpi_hfp_hf.c(508),INFO" ID="0xee720fe5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x @cpi_hfp_hf.c(515),INFO" ID="0xee72101d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hdl: 0x%x @cpi_hfp_hf.c(526),INFO" ID="0xee721075" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Volume too large %d, change it to 15 @cpi_hfp_hf.c(538),WARNING" ID="0xee7210d3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Set speaker volume to %d @cpi_hfp_hf.c(543),INFO" ID="0xee7210fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Set mic volume to %d @cpi_hfp_hf.c(546),INFO" ID="0xee721115" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hdl: 0x%x @cpi_hfp_hf.c(561),INFO" ID="0xee72118d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="wrong code: %c @cpi_hfp_hf.c(564),ERROR" ID="0xee7211a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x voice recognition enabled. @cpi_hfp_hf.c(576),INFO" ID="0xee721205" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl: 0x%x voice recognition disenabled. @cpi_hfp_hf.c(587),INFO" ID="0xee72125d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mem alloc fail. @cpi_hfp_hf.c(602),ERROR" ID="0xee7212d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="connect indication memcpy fail. @cpi_hfp_hf.c(611),ERROR" ID="0xee72131a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp already connected @cpi_hfp_hf.c(617),WARNING" ID="0xee72134b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp disconnect start hfp_conn_hdl=0x%x @cpi_hfp_hf.c(633),INFO" ID="0xee7213cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp is not connected @cpi_hfp_hf.c(635),WARNING" ID="0xee7213db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp disconnect OK @cpi_hfp_hf.c(640),INFO" ID="0xee721405" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl:0x%x @cpi_hfp_hf.c(652),INFO" ID="0xee721465" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sco already connected sco_hdl:0x%x @cpi_hfp_hf.c(654),WARNING" ID="0xee721473" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp_conn_hdl:0x%x @cpi_hfp_hf.c(667),INFO" ID="0xee7214dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no sco connected @cpi_hfp_hf.c(669),WARNING" ID="0xee7214eb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="invalid codec: %d @cpi_hfp_hf.c(686),ERROR" ID="0xee721572" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="connectiong node not found addr:0x%02x:*:*:*:%02x:%02x. @cpi_hfp_hf.c(697),ERROR" ID="0xee7215ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp hf sco conn response status error! @cpi_hfp_hf.c(701),ERROR" ID="0xee7215ea" />
+			</MSG_LOG>

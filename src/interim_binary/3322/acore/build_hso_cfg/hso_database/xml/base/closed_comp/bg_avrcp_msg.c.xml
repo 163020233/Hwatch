@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] avrcp msg_id:%u exceeds the upper limit @bg_avrcp_msg.c(58),ERROR" ID="0xee2c01d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] avrcp msg_handler for msg_id:%u is null @bg_avrcp_msg.c(64),ERROR" ID="0xee2c0202" />
+			</MSG_LOG>

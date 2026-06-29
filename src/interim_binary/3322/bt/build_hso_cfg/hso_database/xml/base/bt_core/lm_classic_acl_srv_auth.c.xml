@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_check_in_secure_process:: true @lm_classic_acl_srv_auth.c(103),INFO" ID="0x89d6033d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AUT]lm_classic_acl_msg_auth_request_act:: sec_con [%u] @lm_classic_acl_srv_auth.c(202),INFO" ID="0x89d60655" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_hci_auth_request_act:: fail to create srv fsm @lm_classic_acl_srv_auth.c(217),ERROR" ID="0x89d606ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_lmp_au_rand_act:: fail to create srv fsm! @lm_classic_acl_srv_auth.c(259),ERROR" ID="0x89d6081a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_lmp_au_rand_act:: send lmp_not_ac, reason BT_LMP_LL_COLLISION @lm_classic_acl_srv_auth.c(265),INFO" ID="0x89d6084d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_link_key_reply_chose_fsm_act: null srv_desc @lm_classic_acl_srv_auth.c(298),WARNING" ID="0x89d60953" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_auth_lmp_timeout_act @lm_classic_acl_srv_auth.c(313),WARNING" ID="0x89d609cb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AUT]lm_classic_acl_auth_req_link_key_timeout_act @lm_classic_acl_srv_auth.c(328),WARNING" ID="0x89d60a43" />
+			</MSG_LOG>

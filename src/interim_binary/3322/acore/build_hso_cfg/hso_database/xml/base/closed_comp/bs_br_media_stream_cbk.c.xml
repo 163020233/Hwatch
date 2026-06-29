@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_CALL] AVDTP conn state report rmt is NULL, dev_id %d @bs_br_media_stream_cbk.c(55),ERROR" ID="0xee9c01ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media codec cbk error. @bs_br_media_stream_cbk.c(85),ERROR" ID="0xee9c02aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_stream_cbk.c(90),ERROR" ID="0xee9c02d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media stream invalid codec:%d @bs_br_media_stream_cbk.c(114),ERROR" ID="0xee9c0392" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media stream connect error. @bs_br_media_stream_cbk.c(131),ERROR" ID="0xee9c041a" />
+			</MSG_LOG>

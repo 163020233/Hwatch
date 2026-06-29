@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BS_BR_CALL] PBAP conn state report rmt is NULL, dev_id %d @bs_br_phone_book_cbk.c(39),ERROR" ID="0xeea0013a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="phone book conn state cbk thread splitting failed. @bs_br_phone_book_cbk.c(102),ERROR" ID="0xeea00332" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="phone book receive data memnew fail. @bs_br_phone_book_cbk.c(114),ERROR" ID="0xeea00392" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="phone book receive data thread splitting failed. @bs_br_phone_book_cbk.c(128),ERROR" ID="0xeea00402" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="phone book transfer complete rpt thread splitting failed. @bs_br_phone_book_cbk.c(145),ERROR" ID="0xeea0048a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="phone book error code rpt thread splitting failed. @bs_br_phone_book_cbk.c(162),ERROR" ID="0xeea00512" />
+			</MSG_LOG>

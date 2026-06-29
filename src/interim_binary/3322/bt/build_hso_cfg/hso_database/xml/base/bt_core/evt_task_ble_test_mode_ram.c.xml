@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[test mode cte sed cfg]cte_type = %d, cte_len = %d, ble_antcntnum = %d @evt_task_ble_test_mode_ram.c(83),INFO" ID="0x8c26029d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_ble_test_mode_tx_set_sed txpwr = %d, txphy = %d, tx_freq = %d, env_ptr-&gt;tx_freq = %d @evt_task_ble_test_mode_ram.c(143),INFO" ID="0x8c26047d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_ble_test_mode_tx_set_sed real tx sed phy = %d, sed addr = 0x%x @evt_task_ble_test_mode_ram.c(145),INFO" ID="0x8c26048d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_ble_test_mode_tx_set_sed UHD tx priv mode %d, polar %d, polar rate %d, pilot ratio %d @evt_task_ble_test_mode_ram.c(147),INFO" ID="0x8c26049d" />
+			</MSG_LOG>

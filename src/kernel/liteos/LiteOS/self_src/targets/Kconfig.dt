@@ -1,0 +1,62 @@
+menu "RTOS DT"
+
+config LOSCFG_DT_RTOS
+    bool "Enable RTOS DT"
+    default n
+    select LOSCFG_DT_L_XTS_FRAMEWORK
+    help
+      Answer Y to enable RTOS DT.
+
+config LOSCFG_DT_HITEST_COVERAGE
+    bool "Use HiTest Coverage When Run DT"
+    default n
+    depends on LOSCFG_DT_RTOS
+    help
+      Answer Y to enable hitest coverage.
+
+config LOSCFG_DT_LITEOS
+    bool "Developer Test for LITEOS"
+    default n
+    depends on LOSCFG_DT_RTOS
+    help
+      Answer Y to enable LITEOS DT.
+orsource "../../../dt/liteos/Kconfig"
+
+config LOSCFG_DT_OSAL
+    bool "Developer Test for OSAL"
+    default n
+    depends on LOSCFG_DT_RTOS
+    help
+      Answer Y to enable OSAL DT.
+orsource "../../../dt/osal/Kconfig"
+
+config LOSCFG_DT_POSIX
+    bool "Developer Test for POSIX"
+    default n
+    depends on LOSCFG_DT_RTOS
+    help
+      Answer Y to enable POSIX DT.
+orsource "../../../dt/posix/Kconfig"
+
+config LOSCFG_DT_RT_THREAD
+    bool "Developer Test for RT-THREAD"
+    default n
+    depends on LOSCFG_DT_RTOS
+    help
+      Answer Y to enable RT-THREAD DT.
+orsource "../../../dt/rt_thread/Kconfig"
+
+config LOSCFG_DT_FREERTOS
+    bool "Developer Test for FREERTOS"
+    default n
+    depends on LOSCFG_DT_RTOS
+    help
+      Answer Y to enable FREERTOS DT.
+orsource "../../../dt/freertos/Kconfig"
+
+endmenu
+
+config LOSCFG_DT_L_XTS_FRAMEWORK
+    bool
+    default n
+    depends on LOSCFG_DT_RTOS

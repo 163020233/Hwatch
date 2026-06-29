@@ -1,0 +1,41 @@
+config LOSCFG_PLATFORM
+    string
+    default "hi3161"          if LOSCFG_PLATFORM_HI3161
+    default "himotrix"        if LOSCFG_PLATFORM_himotrix
+
+config LOSCFG_UART1_SERIAL_SUPPORT
+    bool "uart1_serial_out"
+    default n
+    depends on LOSCFG_FAMILY_SMC
+    help
+        Answer Y to set serial output fom uart1, otherwise serial output from uart0.
+
+config TEST_LITEOS_START_TIMER
+    bool "test LiteOS start time"
+    depends on LOSCFG_FAMILY_SMC
+    default n
+    help
+        Answer Y to test LiteOS start time.
+
+choice
+    prompt "Board"
+    depends on LOSCFG_FAMILY_SMC
+    default LOSCFG_PLATFORM_HI3161
+
+config LOSCFG_PLATFORM_HI3161
+    bool "hi3161"
+    select LOSCFG_PLATFORM_HISI_RISCV
+    select LOSCFG_ARCH_RISCV_RV32F
+    select LOSCFG_USING_BOARD_LD
+    select LOSCFG_DRIVERS_UART_LITEOS
+    select LOSCFG_USING_BOARD_RESET_VECTOR
+
+config LOSCFG_PLATFORM_himotrix
+    bool "himotrix"
+    select LOSCFG_PLATFORM_HISI_RISCV
+    select LOSCFG_ARCH_RISCV_RV32F
+    select LOSCFG_USING_BOARD_LD
+    select LOSCFG_DRIVERS_UART_LITEOS
+    select LOSCFG_USING_BOARD_RESET_VECTOR
+
+endchoice

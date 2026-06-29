@@ -1,0 +1,76 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][REPORT_JOINT_RESULT]is_success = %u, next_action = %u @jitws_mng_msg.c(55),INFO" ID="0xebec01bd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[T%x][TIMEOUT][JITWS][START_JOINT_FAIL]REMOTE FAIL, OPENING_FLAG=%u, TIME=%u @jitws_mng_msg.c(81),WARNING" ID="0xebec028b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][START_JOINT_TIMER]already exist @jitws_mng_msg.c(114),WARNING" ID="0xebec0393" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[T%x][TIMEOUT][JITWS][PAUSE_JOINT_FAIL]REMOTE FAIL, TYPE=%u, TIME=%u @jitws_mng_msg.c(140),WARNING" ID="0xebec0463" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PAUSE_JOINT_TIMER]already exist @jitws_mng_msg.c(170),WARNING" ID="0xebec0553" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][SEND_PEER_JOINT_RESULT]addr memcpy fail @jitws_mng_msg.c(226),ERROR" ID="0xebec0712" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SEND_PEER_JOINT_RESULT]JIONT_TYPE=%d @jitws_mng_msg.c(230),INFO" ID="0xebec0735" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][ASSEMBLE_START_FAIL]BUFF_LEN=%u, TOTAL_LEN=%d @jitws_mng_msg.c(239),WARNING" ID="0xebec077b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][ASSEMBLE_START_FAIL]memcpy addr fail. @jitws_mng_msg.c(255),WARNING" ID="0xebec07fb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][ASSEMBLE_END_FAIL]available_len=%d @jitws_mng_msg.c(266),WARNING" ID="0xebec0853" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_HCI_FAIL]collect hci fail ret=%d @jitws_mng_msg.c(319),WARNING" ID="0xebec09fb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_HCI_FAIL]assemble hci fail ret=%d @jitws_mng_msg.c(325),WARNING" ID="0xebec0a2b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_L2CAP_FAIL]collect l2cap fail ret=%d @jitws_mng_msg.c(348),WARNING" ID="0xebec0ae3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_L2CAP_FAIL]assemble l2cap fail ret=%d @jitws_mng_msg.c(354),WARNING" ID="0xebec0b13" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVDTP_FAIL]collect avdtp fail ret=%d @jitws_mng_msg.c(379),WARNING" ID="0xebec0bdb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVDTP_FAIL]assemble avdtp fail ret=%d @jitws_mng_msg.c(386),WARNING" ID="0xebec0c13" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_RFCOMM_FAIL]collect rfcomm fail ret=%d @jitws_mng_msg.c(410),WARNING" ID="0xebec0cd3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_RFCOMM_FAIL]assemble rfcomm fail ret=%d @jitws_mng_msg.c(417),WARNING" ID="0xebec0d0b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_HFP_FAIL]collect hfp fail ret=%d @jitws_mng_msg.c(441),WARNING" ID="0xebec0dcb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_HFP_FAIL]assemble hfp fail ret=%d @jitws_mng_msg.c(448),WARNING" ID="0xebec0e03" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVCTP_FAIL]collect avctp fail ret=%d @jitws_mng_msg.c(471),WARNING" ID="0xebec0ebb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVCTP_FAIL]assemble avctp fail ret=%d @jitws_mng_msg.c(478),WARNING" ID="0xebec0ef3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVRCP_FAIL]collect avrcp fail ret=%d @jitws_mng_msg.c(500),WARNING" ID="0xebec0fa3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVRCP_FAIL]assemble avrcp fail ret=%d @jitws_mng_msg.c(507),WARNING" ID="0xebec0fdb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_BTC_FAIL]assemble btc fail ret=%d @jitws_mng_msg.c(529),WARNING" ID="0xebec108b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SEND_SYNC_DATA_FAIL]send all data oversize used_len=%u @jitws_mng_msg.c(581),WARNING" ID="0xebec122b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SEND_SYNC_DATA_FAIL]send all data fail used_len=%u @jitws_mng_msg.c(589),WARNING" ID="0xebec126b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][COLLECT_SERVICE_FAIL]assemble service data fail ret=%d buf_len=%d @jitws_mng_msg.c(615),WARNING" ID="0xebec133b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_SERVICE_FAIL]assemble main state data fail ret=%d @jitws_mng_msg.c(623),WARNING" ID="0xebec137b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SEND_SYNC_DATA_FAIL]send all data oversize used_len=%u @jitws_mng_msg.c(652),WARNING" ID="0xebec1463" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_END_FAIL]assemble end fail, ret=%d @jitws_mng_msg.c(690),WARNING" ID="0xebec1593" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SEND_SYNC_DATA_FAIL]send service data fail used_len %d is oversize @jitws_mng_msg.c(697),WARNING" ID="0xebec15cb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SEND_SYNC_DATA_FAIL]send service data fail used_len %d @jitws_mng_msg.c(705),WARNING" ID="0xebec160b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_RFCOMM_FAIL]collect rfcomm fail ret=%d @jitws_mng_msg.c(720),WARNING" ID="0xebec1683" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_HFP_FAIL]collect hfp fail ret=%d @jitws_mng_msg.c(728),WARNING" ID="0xebec16c3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVDTP_FAIL]collect avdtp fail ret=%d @jitws_mng_msg.c(742),WARNING" ID="0xebec1733" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVCTP_FAIL]collect avctp fail ret=%d @jitws_mng_msg.c(755),WARNING" ID="0xebec179b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_AVRCP_FAIL]collect avrcp fail ret=%d @jitws_mng_msg.c(763),WARNING" ID="0xebec17db" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_RFCOMM_FAIL]collect rfcomm fail ret=%d @jitws_mng_msg.c(777),WARNING" ID="0xebec184b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_SERVICE_FAIL]collect service fail ret=%d @jitws_mng_msg.c(785),WARNING" ID="0xebec188b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_L2CAP_FAIL]assemble ParaSyncHci fail, ret=%d @jitws_mng_msg.c(807),WARNING" ID="0xebec193b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_L2CAP_FAIL]collect l2cap fail, ret=%d @jitws_mng_msg.c(813),WARNING" ID="0xebec196b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_L2CAP_FAIL]assemble l2cap fail, ret=%d @jitws_mng_msg.c(819),WARNING" ID="0xebec199b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SEND_CUSTOM_DATA_FAIL]send custom data fail used_len=%d is too large @jitws_mng_msg.c(872),WARNING" ID="0xebec1b43" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][SEND_CUSTOM_DATA_FAIL]send custom data fail used_len=%d sendlen=%d @jitws_mng_msg.c(881),WARNING" ID="0xebec1b8b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_SCO_FAIL]FAIL_REASON=%u @jitws_mng_msg.c(899),WARNING" ID="0xebec1c1b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][COLLECT_BTC_FAIL]FAIL_REASON=%d @jitws_mng_msg.c(944),WARNING" ID="0xebec1d83" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][COLLECT_BTC_FAIL]cfmpar is null @jitws_mng_msg.c(954),WARNING" ID="0xebec1dd3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][JOINT_TIMER_BEGIN]TIME=%u @jitws_mng_msg.c(1005),INFO" ID="0xebec1f6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][SEND_SYNC_DATA_FAIL] @jitws_mng_msg.c(1016),WARNING" ID="0xebec1fc3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][WAIT_DSP_END] @jitws_mng_msg.c(1171),INFO" ID="0xebec249d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[T%x][TIMEOUT][JITWS][WAIT_DSP_TIMEOUT] @jitws_mng_msg.c(1194),WARNING" ID="0xebec2553" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][WAIT_DSP_BEGIN] @jitws_mng_msg.c(1211),INFO" ID="0xebec25dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][SYNC_BTC_FAIL]context is NULL @jitws_mng_msg.c(1224),ERROR" ID="0xebec2642" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SYNC_BTC_FAIL]FAIL_REASON=0x%x @jitws_mng_msg.c(1232),WARNING" ID="0xebec2683" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][START_JOINT_FAIL]FAIL_REASON=0x%x @jitws_mng_msg.c(1286),WARNING" ID="0xebec2833" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][START_JOINT_FAIL]cfm_par null @jitws_mng_msg.c(1298),WARNING" ID="0xebec2893" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS]start joint for transfer @jitws_mng_msg.c(1331),INFO" ID="0xebec299d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][PAUSE_JOINT_FAIL]FAIL_REASON=%d, PAUSE_TYPE=%d @jitws_mng_msg.c(1356),WARNING" ID="0xebec2a63" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PAUSE_JOINT_FAIL]wait 0xFE52 timeout @jitws_mng_msg.c(1358),WARNING" ID="0xebec2a73" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][STOP_JOINT_FAIL]FAIL_REASON=%d @jitws_mng_msg.c(1413),WARNING" ID="0xebec2c2b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][STOP_JOINT_FAIL]context malloc fail @jitws_mng_msg.c(1432),WARNING" ID="0xebec2cc3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][STOP_JOINT_FAIL]arg malloc fail @jitws_mng_msg.c(1440),WARNING" ID="0xebec2d03" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][SYNC_BTC_FAIL]data_valid_flag=%d, len=%d @jitws_mng_msg.c(1474),WARNING" ID="0xebec2e13" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][SYNC_BTC_FAIL]context malloc fail @jitws_mng_msg.c(1485),WARNING" ID="0xebec2e6b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[T%x][TIMEOUT][JITWS][START_JOINT_FAIL]Tx Clear timeout @jitws_mng_msg.c(1505),WARNING" ID="0xebec2f0b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][START_JOINT_TIMER]Tx CLear already exist @jitws_mng_msg.c(1529),WARNING" ID="0xebec2fcb" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS]sync_addr:0x%02x:**:**:**:%02x:%02x not in open state @jitws_mng_msg.c(1605),INFO" ID="0xebec322d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS]jitws process audio notify open ready @jitws_mng_msg.c(1612),INFO" ID="0xebec3265" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS]process audio notify open ready one_to_two_flag:%u. @jitws_mng_msg.c(1618),INFO" ID="0xebec3295" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][OPEN_AUDIO_FAIL]open audio fail open_result=%d @jitws_mng_msg.c(1621),WARNING" ID="0xebec32ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][ONE_TO_TWO] @jitws_mng_msg.c(1633),INFO" ID="0xebec330d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS]jitws slave joint record open flag @jitws_mng_msg.c(1641),INFO" ID="0xebec334d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SEND_BTC_PRIV_FAIL]send fail bufflen=%d @jitws_mng_msg.c(1674),WARNING" ID="0xebec3453" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS]jitws prv evt handle conn_handle=%x @jitws_mng_msg.c(1685),WARNING" ID="0xebec34ab" />
+			</MSG_LOG>

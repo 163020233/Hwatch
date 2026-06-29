@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="chnl_scan_restart_config format(0x%x)chmap0(0x%x) @evt_task_chnl_scan.c(160),WARNING" ID="0x88640503" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="chnl_scan_restart_config chmap1(0x%x)chmap2(0x%x)chmap3(0x%x)chmap4(0x%x) @evt_task_chnl_scan.c(162),WARNING" ID="0x88640513" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][CHNLSCAN]chnl_scan_data_save: freq=%d, rssi=%d, ma=%d @evt_task_chnl_scan.c(361),INFO" ID="0x88640b4d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][CHNLSCAN]chnl_scan_data_save: freq=%d, strong=%d, medium=%d, weak=%d @evt_task_chnl_scan.c(364),INFO" ID="0x88640b65" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="chnl_scan_data_report freq(%d)rssi(%d)freq(%d)rssi(%d) @evt_task_chnl_scan.c(437),WARNING" ID="0x88640dab" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="chnl_scan_data_report freq(%d)rssi(%d)freq(%d)rssi(%d) @evt_task_chnl_scan.c(439),WARNING" ID="0x88640dbb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="chnl_scan_data_report freq(%d)rssi(%d)freq(%d)rssi(%d) @evt_task_chnl_scan.c(441),WARNING" ID="0x88640dcb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="chnl_scan_data_report freq(%d)rssi(%d) @evt_task_chnl_scan.c(443),WARNING" ID="0x88640ddb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][CHNL_SCAN]background_interference_log, strong %d, medium %d, weak %d, interf_avg %d @evt_task_chnl_scan.c(546),INFO" ID="0x88641115" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][CHNLSCAN]ch%d: moving_avg=%d @evt_task_chnl_scan.c(746),INFO" ID="0x88641755" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]init_elt, g_chnl_scan_sched_env is NULL! @evt_task_chnl_scan.c(766),WARNING" ID="0x886417f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]evt_task_chnl_scan_sched, g_chnl_scan_sched_env is NULL! @evt_task_chnl_scan.c(829),WARNING" ID="0x886419eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]sched, es_insert_fail! @evt_task_chnl_scan.c(862),ERROR" ID="0x88641af2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]evt_task_chnl_scan_prog, g_chnl_scan_sched_env is NULL! @evt_task_chnl_scan.c(874),WARNING" ID="0x88641b53" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]chnl_scan_create, sched_desc malloc failed! @evt_task_chnl_scan.c(918),ERROR" ID="0x88641cb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]chnl_scan_create, ES_MEM_ALLOC_FAIL! @evt_task_chnl_scan.c(925),ERROR" ID="0x88641cea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]chnl_scan_create, CHNL_SCAN fsm register failed! @evt_task_chnl_scan.c(942),WARNING" ID="0x88641d73" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][CHNL_SCAN]evt_task_chnl_scan_end_act, evt_state is %d @evt_task_chnl_scan.c(996),INFO" ID="0x88641f25" />
+			</MSG_LOG>

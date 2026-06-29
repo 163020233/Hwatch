@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] malloc in announce config failed @ssf_announce_config.c(73),ERROR" ID="0xef72024a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] malloc in announce config failed @ssf_announce_config.c(107),ERROR" ID="0xef72035a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] malloc in announce config failed @ssf_announce_config.c(124),ERROR" ID="0xef7203e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] malloc in announce config failed @ssf_announce_config.c(151),ERROR" ID="0xef7204ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] malloc in announce config failed @ssf_announce_config.c(186),ERROR" ID="0xef7205d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] malloc in announce config failed @ssf_announce_config.c(224),ERROR" ID="0xef720702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] malloc in announce config failed @ssf_announce_config.c(254),ERROR" ID="0xef7207f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] malloc in announce config failed @ssf_announce_config.c(265),ERROR" ID="0xef72084a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] parse level fail. len: %u @ssf_announce_config.c(284),ERROR" ID="0xef7208e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] parse uuid fail. len: %u @ssf_announce_config.c(294),ERROR" ID="0xef720932" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] parse coop fail. len: %u @ssf_announce_config.c(302),ERROR" ID="0xef720972" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] parse vendor_id fail. len: %u @ssf_announce_config.c(339),ERROR" ID="0xef720a9a" />
+			</MSG_LOG>

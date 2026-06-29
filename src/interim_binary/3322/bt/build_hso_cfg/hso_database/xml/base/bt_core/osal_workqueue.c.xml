@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_workqueue.c(25),INFO" ID="0xa05000cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="g_wq_list is empty! @osal_workqueue.c(30),INFO" ID="0xa05000f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="find work fail! @osal_workqueue.c(39),INFO" ID="0xa050013d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_workqueue.c(49),INFO" ID="0xa050018d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="g_wq_list is empty! @osal_workqueue.c(54),INFO" ID="0xa05001b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="find work fail! @osal_workqueue.c(65),INFO" ID="0xa050020d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_workqueue.c(83),INFO" ID="0xa050029d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_workqueue.c(89),INFO" ID="0xa05002cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_workqueue.c(95),INFO" ID="0xa05002fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_workqueue.c(111),INFO" ID="0xa050037d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_workqueue.c(123),INFO" ID="0xa05003dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_workqueue.c(134),INFO" ID="0xa0500435" />
+			</MSG_LOG>

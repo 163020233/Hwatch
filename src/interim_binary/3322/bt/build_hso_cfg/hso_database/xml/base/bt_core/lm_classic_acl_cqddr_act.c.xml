@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][cqddr]new_data_rate=%d, tx_pref_rate=%d @lm_classic_acl_cqddr_act.c(35),INFO" ID="0x8a5a011d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][cqddr]recieve lmp_auto_rate, open cqddr! @lm_classic_acl_cqddr_act.c(58),INFO" ID="0x8a5a01d5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[CQDDR]cur_packet_type=0x%x, tx_pref_rate=0x%x, rx_pref_rate=0x%x @lm_classic_acl_cqddr_act.c(90),INFO" ID="0x8a5a02d5" />
+			</MSG_LOG>

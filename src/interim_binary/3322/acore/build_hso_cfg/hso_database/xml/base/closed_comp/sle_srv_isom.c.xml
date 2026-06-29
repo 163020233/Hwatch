@@ -1,0 +1,85 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ISO] create group count limit @sle_srv_isom.c(174),ERROR" ID="0xe94c0572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] create group alloc failed @sle_srv_isom.c(185),ERROR" ID="0xe94c05ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] create group alloc failed @sle_srv_isom.c(203),ERROR" ID="0xe94c065a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ISO] sle iso create group group_node:0x%x, conn_type:%u, group_id:%u conn_role:%u @sle_srv_isom.c(215),INFO" ID="0xe94c06bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] delete member group node is null. @sle_srv_isom.c(222),ERROR" ID="0xe94c06f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] delete group node is null. @sle_srv_isom.c(248),ERROR" ID="0xe94c07c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] init group param error @sle_srv_isom.c(363),ERROR" ID="0xe94c0b5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] init group node alloc failed @sle_srv_isom.c(369),ERROR" ID="0xe94c0b8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] init group failed, ret=0x%x @sle_srv_isom.c(389),ERROR" ID="0xe94c0c2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] deinit group node invalid @sle_srv_isom.c(406),ERROR" ID="0xe94c0cb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] deinit group failed, ret=0x%x @sle_srv_isom.c(414),ERROR" ID="0xe94c0cf2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] set default param conn_type:%u @sle_srv_isom.c(424),INFO" ID="0xe94c0d45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set group v1 param is NULL @sle_srv_isom.c(579),ERROR" ID="0xe94c121a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set group v1 group_id or num invalid @sle_srv_isom.c(588),ERROR" ID="0xe94c1262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set group v1 config param error @sle_srv_isom.c(592),ERROR" ID="0xe94c1282" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] set group v1 failed, ret=0x%x @sle_srv_isom.c(601),ERROR" ID="0xe94c12ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set group v2 group_id or num invalid @sle_srv_isom.c(623),ERROR" ID="0xe94c137a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set group v2 config param error @sle_srv_isom.c(627),ERROR" ID="0xe94c139a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] set group v2 failed, ret=0x%x @sle_srv_isom.c(642),ERROR" ID="0xe94c1412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] group param invalid, member_id =%u @sle_srv_isom.c(665),ERROR" ID="0xe94c14ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] member repeated, member_id=%u, conn_id:0x%x @sle_srv_isom.c(680),ERROR" ID="0xe94c1542" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] conn(%d) not exsited or connected. @sle_srv_isom.c(699),ERROR" ID="0xe94c15da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] start member label delivery group err, group_id =0x%x @sle_srv_isom.c(731),ERROR" ID="0xe94c16da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] start member label delivery mem new failed @sle_srv_isom.c(743),ERROR" ID="0xe94c173a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] start member label delivery failed, ret=0x%x @sle_srv_isom.c(757),ERROR" ID="0xe94c17aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] create conn group param invalid, group_id =0x%x @sle_srv_isom.c(776),ERROR" ID="0xe94c1842" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] create conn mem new failed @sle_srv_isom.c(790),ERROR" ID="0xe94c18b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] create conn failed, ret=0x%x @sle_srv_isom.c(807),ERROR" ID="0xe94c193a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] update label group param invalid, group_id =0x%x @sle_srv_isom.c(825),ERROR" ID="0xe94c19ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] update label mem new failed @sle_srv_isom.c(836),ERROR" ID="0xe94c1a22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] update label failed, ret=0x%x @sle_srv_isom.c(850),ERROR" ID="0xe94c1a92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set default param frame_type param invalid @sle_srv_isom.c(899),ERROR" ID="0xe94c1c1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set default param g2t param invalid @sle_srv_isom.c(910),ERROR" ID="0xe94c1c72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] set default param failed, ret=0x%x @sle_srv_isom.c(923),ERROR" ID="0xe94c1cda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] remove group node invalid, group_id =0x%x @sle_srv_isom.c(938),ERROR" ID="0xe94c1d52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] remove group failed, ret=0x%x @sle_srv_isom.c(948),ERROR" ID="0xe94c1da2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set data path param is NULL @sle_srv_isom.c(959),ERROR" ID="0xe94c1dfa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] set data path failed, ret=0x%x @sle_srv_isom.c(988),ERROR" ID="0xe94c1ee2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] remove data path failed, ret=0x%x @sle_srv_isom.c(1010),ERROR" ID="0xe94c1f92" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] release conn group invalid, id =%u conn_type =%d @sle_srv_isom.c(1025),ERROR" ID="0xe94c200a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] release conn failed, ret=0x%x @sle_srv_isom.c(1032),ERROR" ID="0xe94c2042" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] sle iso conn rsp, group not exsited, conn_type:%u, group_id:%u @sle_srv_isom.c(1049),ERROR" ID="0xe94c20ca" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] member invalid, group_id:%u, member_cnt:%u, id:%u @sle_srv_isom.c(1054),ERROR" ID="0xe94c20f2" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[ISO] sle iso conn rsp, conn_type:%u, group_id:%u, result:%u, member_id:%u, conn_id:%u @sle_srv_isom.c(1064),INFO" ID="0xe94c2145" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] sle iso conn rsp, send msg failed ret=0x%x @sle_srv_isom.c(1069),ERROR" ID="0xe94c216a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] send data iso param invalid @sle_srv_isom.c(1084),ERROR" ID="0xe94c21e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] send data memory alloc failed @sle_srv_isom.c(1089),ERROR" ID="0xe94c220a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] send data memory copy failed @sle_srv_isom.c(1100),ERROR" ID="0xe94c2262" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] send data, ret=0x%x @sle_srv_isom.c(1106),ERROR" ID="0xe94c2292" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] sle iso set link high power mode enable_high_power:%u, power_mode:%u @sle_srv_isom.c(1126),INFO" ID="0xe94c2335" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] read rssi v2 sapi gle iso read rssi v2 failed, ret = 0x%x @sle_srv_isom.c(1143),ERROR" ID="0xe94c23ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] get audio quality sapi gle iso get audio quality failed, ret = 0x%x @sle_srv_isom.c(1159),ERROR" ID="0xe94c243a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] read presentation delay failed, ret=0x%x @sle_srv_isom.c(1193),ERROR" ID="0xe94c254a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ISO] get link handle, iso group not exsited, group_id=0x%x, conn_id=0x%x, conn_type=0x%x @sle_srv_isom.c(1208),ERROR" ID="0xe94c25c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] get link handle, find member fail, member_id:%u @sle_srv_isom.c(1215),ERROR" ID="0xe94c25fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] create group cbk, iso group invalid, group_id =0x%x @sle_srv_isom.c(1239),ERROR" ID="0xe94c26ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] send msg to service type = %d @sle_srv_isom.c(1506),INFO" ID="0xe94c2f15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] create group cbk, iso group invalid, group_id =0x%x @sle_srv_isom.c(1568),ERROR" ID="0xe94c3102" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] create group cbk failed @sle_srv_isom.c(1576),ERROR" ID="0xe94c3142" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] create group cbk, err status:%u, group_id =0x%x @sle_srv_isom.c(1584),ERROR" ID="0xe94c3182" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] create group cbk, list member_cnt=0x%x, cbk member_cnt=0x%x @sle_srv_isom.c(1593),ERROR" ID="0xe94c31ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] remove group cbk, iso group not exsited, group_id =0x%x @sle_srv_isom.c(1614),ERROR" ID="0xe94c3272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] remove group cbk failed @sle_srv_isom.c(1626),ERROR" ID="0xe94c32d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ISO] sle conn req, group create fail, conn_type:%u, group_id:%u @sle_srv_isom.c(1644),ERROR" ID="0xe94c3362" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[ISO] sle conn req, conn_type:%u, group_id:%u member_id:%u, conn_id:%u @sle_srv_isom.c(1657),ERROR" ID="0xe94c33ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] sle conn req, alloc failed @sle_srv_isom.c(1661),ERROR" ID="0xe94c33ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] sle conn state change, find group fail, group_id:%u @sle_srv_isom.c(1675),ERROR" ID="0xe94c345a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] sle conn state change, find member fail, member_id:%u @sle_srv_isom.c(1686),ERROR" ID="0xe94c34b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] sle conn state change, alloc failed @sle_srv_isom.c(1698),ERROR" ID="0xe94c3512" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] sle conn state change, group_id:%u, conn_type:%u, member_id:%u, conn_id:%u, conn_state:%u, state_reason:%u @sle_srv_isom.c(1705),INFO" ID="0xe94c354d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ISO] conn state change, send msg failed ret %d @sle_srv_isom.c(1709),ERROR" ID="0xe94c356a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] label report failed @sle_srv_isom.c(1722),ERROR" ID="0xe94c35d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] label update failed @sle_srv_isom.c(1734),ERROR" ID="0xe94c3632" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] tx buffer malloc failed @sle_srv_isom.c(1794),ERROR" ID="0xe94c3812" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] conn data recv failed @sle_srv_isom.c(1806),ERROR" ID="0xe94c3872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] set data path failed @sle_srv_isom.c(1817),ERROR" ID="0xe94c38ca" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] sle set data path, conn_type:%u conn_role:%u group_id:%u member_id:%u conn_id:%u direction:%u @sle_srv_isom.c(1826),ERROR" ID="0xe94c3912" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] remove data path failed @sle_srv_isom.c(1834),ERROR" ID="0xe94c3952" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[ISO] sle remove data path, conn_type:%u conn_role:%u group_id:%u member_id:%u conn_id:%u direction:%u @sle_srv_isom.c(1843),ERROR" ID="0xe94c399a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] read presentation delay failed @sle_srv_isom.c(1851),ERROR" ID="0xe94c39da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] frequency band switched cbk failed @sle_srv_isom.c(1864),ERROR" ID="0xe94c3a42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] frequency band switched cbk failed @sle_srv_isom.c(1875),ERROR" ID="0xe94c3a9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ISO] data trans indicator report failed @sle_srv_isom.c(1890),ERROR" ID="0xe94c3b12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle iso connection init failed. @sle_srv_isom.c(1928),ERROR" ID="0xe94c3c42" />
+			</MSG_LOG>

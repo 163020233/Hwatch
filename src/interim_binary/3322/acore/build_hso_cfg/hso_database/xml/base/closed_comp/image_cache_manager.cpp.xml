@@ -1,0 +1,52 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="Invalid file path: %s @image_cache_manager.cpp(64),ERROR" ID="0xcb080202" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="File(%s) can not open. errno: %d @image_cache_manager.cpp(70),ERROR" ID="0xcb080232" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ResId is invalid: 0x%x @image_cache_manager.cpp(79),ERROR" ID="0xcb08027a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="DirId can not match: resId: 0x%x, dirId: 0x%x @image_cache_manager.cpp(84),ERROR" ID="0xcb0802a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ResId is out of the range: 0x%x @image_cache_manager.cpp(89),ERROR" ID="0xcb0802ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="FillPath failed! Length of filepath with a null terminator is greater than 64. @image_cache_manager.cpp(101),ERROR" ID="0xcb08032a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="strcpy_s failed. @image_cache_manager.cpp(105),ERROR" ID="0xcb08034a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="multiImgInfo is nullptr! @image_cache_manager.cpp(125),ERROR" ID="0xcb0803ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc node failed! @image_cache_manager.cpp(135),ERROR" ID="0xcb08043a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="multiImgInfo.info is nullptr @image_cache_manager.cpp(145),ERROR" ID="0xcb08048a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LRU free short term image %s resid: 0x%x @image_cache_manager.cpp(164),DBG" ID="0xcb080526" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LRU free long term image %s resid: 0x%x @image_cache_manager.cpp(174),DBG" ID="0xcb080576" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc for node failed! @image_cache_manager.cpp(196),ERROR" ID="0xcb080622" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ImageCacheMalloc for img data failed! @image_cache_manager.cpp(204),ERROR" ID="0xcb080662" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="File is not loaded. File: %s. @image_cache_manager.cpp(246),ERROR" ID="0xcb0807b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="MultiImgInfo is nullptr, or resId is invalid. File: %s, ResId: %u. @image_cache_manager.cpp(254),ERROR" ID="0xcb0807f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Node is nullptr. File: %s, ResId: %u. @image_cache_manager.cpp(259),ERROR" ID="0xcb08081a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LoadSingleRes failed. File: %s, ResId: %u. @image_cache_manager.cpp(276),ERROR" ID="0xcb0808a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LoadOneInMultiRes failed. File: %s, ResId: %u. @image_cache_manager.cpp(282),ERROR" ID="0xcb0808d2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="Update image info failed. Set img data to nullptr. File: %s, FileLen: %u, ResId: %u. @image_cache_manager.cpp(294),ERROR" ID="0xcb080932" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateImageNode failed! @image_cache_manager.cpp(316),ERROR" ID="0xcb0809e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fread info header failed! @image_cache_manager.cpp(334),ERROR" ID="0xcb080a72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadAllImgInfo failed! @image_cache_manager.cpp(363),ERROR" ID="0xcb080b5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadSingleImgInfo failed! node is nullptr or imgIndex is invalid. @image_cache_manager.cpp(371),ERROR" ID="0xcb080b9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadSingleImgInfo failed! @image_cache_manager.cpp(425),ERROR" ID="0xcb080d4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc ImageCache failed! @image_cache_manager.cpp(488),ERROR" ID="0xcb080f42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create ImageNode failed! @image_cache_manager.cpp(498),ERROR" ID="0xcb080f92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Read BinHeader failed @image_cache_manager.cpp(511),ERROR" ID="0xcb080ffa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Read File Out of Range @image_cache_manager.cpp(519),ERROR" ID="0xcb08103a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Initialize MultiImgInfo failed! @image_cache_manager.cpp(524),ERROR" ID="0xcb081062" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="LoadAllInMultiRes failed! Open file failed: %s @image_cache_manager.cpp(545),ERROR" ID="0xcb08110a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fread bin header failed! @image_cache_manager.cpp(558),ERROR" ID="0xcb081172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadAllImgInfo failed! @image_cache_manager.cpp(577),ERROR" ID="0xcb08120a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="LoadAllInMultiRes failed! file: %s @image_cache_manager.cpp(592),ERROR" ID="0xcb081282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateImageNode failed! @image_cache_manager.cpp(618),ERROR" ID="0xcb081352" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy info header failed! @image_cache_manager.cpp(622),ERROR" ID="0xcb081372" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy img data failed! @image_cache_manager.cpp(627),ERROR" ID="0xcb08139a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LoadOneInMultiRes failed! resId: 0x%x, file: %s @image_cache_manager.cpp(715),ERROR" ID="0xcb08165a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Can not open file, file: %s @image_cache_manager.cpp(725),ERROR" ID="0xcb0816aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Read File Out of Range @image_cache_manager.cpp(751),ERROR" ID="0xcb08177a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateImageNode failed! @image_cache_manager.cpp(823),ERROR" ID="0xcb0819ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadPartialInMultiRes failed! out of range! @image_cache_manager.cpp(887),ERROR" ID="0xcb081bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadPartialInMultiRes failed! out of range! @image_cache_manager.cpp(906),ERROR" ID="0xcb081c52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create ImageNode failed! @image_cache_manager.cpp(935),ERROR" ID="0xcb081d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Read Data Failed! @image_cache_manager.cpp(945),ERROR" ID="0xcb081d8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Res file is not loaded: %s @image_cache_manager.cpp(963),ERROR" ID="0xcb081e1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="resIdArray is nullptr, file: %s @image_cache_manager.cpp(990),ERROR" ID="0xcb081ef2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Res file is not loaded. @image_cache_manager.cpp(1004),ERROR" ID="0xcb081f62" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="buf == nullptr:%d, resIdArray == nullptr:%d @image_cache_manager.cpp(1030),ERROR" ID="0xcb082032" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Res file is not loaded: %s @image_cache_manager.cpp(1047),WARNING" ID="0xcb0820bb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Res file is not loaded. @image_cache_manager.cpp(1062),WARNING" ID="0xcb082133" />
+			</MSG_LOG>

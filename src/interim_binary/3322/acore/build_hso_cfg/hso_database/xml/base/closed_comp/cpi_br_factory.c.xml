@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[br ft] report rf tx start msg failed: %08X @cpi_br_factory.c(61),ERROR" ID="0xea5201ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[br ft] report rf rx start msg failed: %08X @cpi_br_factory.c(80),ERROR" ID="0xea520282" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[br ft] report rf trx end msg failed: %08X @cpi_br_factory.c(101),ERROR" ID="0xea52032a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[br ft] report rf reset msg failed: %08X @cpi_br_factory.c(120),ERROR" ID="0xea5203c2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="bt factory freq offset rsp freq_offset:0x%04x conn_state:%d reason_code:0x%x @cpi_br_factory.c(240),INFO" ID="0xea520785" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt factory freq offset rsp cbk @cpi_br_factory.c(242),INFO" ID="0xea520795" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt factory gap conn acl cfm result:0x%x @cpi_br_factory.c(251),INFO" ID="0xea5207dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt factory freq offset cfm fail result:0x%04x. @cpi_br_factory.c(321),ERROR" ID="0xea520a0a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="bt factory freq offset cfm status:0x%x con_hdl:0x%x freq_offset:0x%x. @cpi_br_factory.c(333),INFO" ID="0xea520a6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt factory req freq offset error invalid handle @cpi_br_factory.c(355),ERROR" ID="0xea520b1a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bt factory req freq offset ret:0x%04x handl:0x%04x @cpi_br_factory.c(359),INFO" ID="0xea520b3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt factory freq offset calc invalid action:%d. @cpi_br_factory.c(378),ERROR" ID="0xea520bd2" />
+			</MSG_LOG>

@@ -1,0 +1,127 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="ssaps get link qos state failed, conn id is invalid. @sle_srv_ssap_server.c(74),ERROR" ID="0xe8cc0252" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssaps get link qos state failed, conn id %u is busy. @sle_srv_ssap_server.c(79),ERROR" ID="0xe8cc027a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssaps get link qos state failed, conn id %u is busy. @sle_srv_ssap_server.c(87),ERROR" ID="0xe8cc02ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="alloc handle node: handle = %u @sle_srv_ssap_server.c(103),INFO" ID="0xe8cc033d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle server_id %u not exist @sle_srv_ssap_server.c(172),ERROR" ID="0xe8cc0562" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="sle server_id %u clear service fail ret 0x%x @sle_srv_ssap_server.c(180),ERROR" ID="0xe8cc05a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle unregister server invalid server_id. @sle_srv_ssap_server.c(216),ERROR" ID="0xe8cc06c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle unregister server failed ret 0x%x. @sle_srv_ssap_server.c(224),ERROR" ID="0xe8cc0702" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle unregister server %d success. @sle_srv_ssap_server.c(228),INFO" ID="0xe8cc0725" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle unregister server failed server_id %d. @sle_srv_ssap_server.c(243),ERROR" ID="0xe8cc079a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="sle desc node:[type:%#x][operate_indication:%#x][permission: %#x] @sle_srv_ssap_server.c(254),INFO" ID="0xe8cc07f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="sle property node:[handle:%#x][operate_indication:%#x][permission:%#x] @sle_srv_ssap_server.c(262),INFO" ID="0xe8cc0835" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="sle service info:[handle:%d][is_primary:%d][is_active: %d] @sle_srv_ssap_server.c(273),INFO" ID="0xe8cc088d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="show ssaps service ERROR: input node NULL! @sle_srv_ssap_server.c(286),ERROR" ID="0xe8cc08f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="show ssaps service list start!--------- @sle_srv_ssap_server.c(289),INFO" ID="0xe8cc090d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="show ssaps service list end!--------- @sle_srv_ssap_server.c(295),INFO" ID="0xe8cc093d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle server num reached maximum @sle_srv_ssap_server.c(337),ERROR" ID="0xe8cc0a8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle malloc fail @sle_srv_ssap_server.c(350),ERROR" ID="0xe8cc0af2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle ssap server node app_uuid memcpy fail @sle_srv_ssap_server.c(355),ERROR" ID="0xe8cc0b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle unlikely, failed to find available server id @sle_srv_ssap_server.c(371),ERROR" ID="0xe8cc0b9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle service num reached maximum: %d @sle_srv_ssap_server.c(409),ERROR" ID="0xe8cc0cca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle malloc service_node fail @sle_srv_ssap_server.c(415),ERROR" ID="0xe8cc0cfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle service uuid memcpy fail @sle_srv_ssap_server.c(420),ERROR" ID="0xe8cc0d22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle property memnew fail @sle_srv_ssap_server.c(446),ERROR" ID="0xe8cc0df2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle property uuid memcpy fail @sle_srv_ssap_server.c(451),ERROR" ID="0xe8cc0e1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle property val memnew fail @sle_srv_ssap_server.c(459),ERROR" ID="0xe8cc0e5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle property value memcpy fail @sle_srv_ssap_server.c(464),ERROR" ID="0xe8cc0e82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle descriptor memnew fail @sle_srv_ssap_server.c(488),ERROR" ID="0xe8cc0f42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle descriptor uuid memcpy fail @sle_srv_ssap_server.c(500),ERROR" ID="0xe8cc0fa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle descriptor val memnew fail @sle_srv_ssap_server.c(508),ERROR" ID="0xe8cc0fe2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle descriptor val memcpy fail @sle_srv_ssap_server.c(512),ERROR" ID="0xe8cc1002" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle ssap failed to register cbk. @sle_srv_ssap_server.c(530),ERROR" ID="0xe8cc1092" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add service failed, server id invaild. @sle_srv_ssap_server.c(545),ERROR" ID="0xe8cc110a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle service(%#x) is inactive, please start last service first. @sle_srv_ssap_server.c(552),ERROR" ID="0xe8cc1142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle failed to add service node. @sle_srv_ssap_server.c(558),ERROR" ID="0xe8cc1172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property failed, server id invaild. @sle_srv_ssap_server.c(578),ERROR" ID="0xe8cc1212" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property failed, service handle invaild. @sle_srv_ssap_server.c(583),ERROR" ID="0xe8cc123a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle service(%#x) is active, can not add more. @sle_srv_ssap_server.c(589),ERROR" ID="0xe8cc126a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle failed to add property node. @sle_srv_ssap_server.c(595),ERROR" ID="0xe8cc129a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property pointer is null. @sle_srv_ssap_server.c(606),ERROR" ID="0xe8cc12f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="input param uuid len err %u. @sle_srv_ssap_server.c(610),ERROR" ID="0xe8cc1312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="input param uuid permissions err %#x. @sle_srv_ssap_server.c(615),ERROR" ID="0xe8cc133a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property failed, server id invaild. @sle_srv_ssap_server.c(626),ERROR" ID="0xe8cc1392" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property failed, service handle invaild. @sle_srv_ssap_server.c(631),ERROR" ID="0xe8cc13ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle service(%#x) is active, can not add more. @sle_srv_ssap_server.c(637),ERROR" ID="0xe8cc13ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property failed, property handle invaild. @sle_srv_ssap_server.c(642),ERROR" ID="0xe8cc1412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle failed to add property node. @sle_srv_ssap_server.c(648),ERROR" ID="0xe8cc1442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle register server pointer is null. @sle_srv_ssap_server.c(665),ERROR" ID="0xe8cc14ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle register server uuid len err %u. @sle_srv_ssap_server.c(669),ERROR" ID="0xe8cc14ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle register server memcpy len %u. @sle_srv_ssap_server.c(676),ERROR" ID="0xe8cc1522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle failed to add server node. @sle_srv_ssap_server.c(682),ERROR" ID="0xe8cc1552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle register server failed ret 0x%x. @sle_srv_ssap_server.c(688),ERROR" ID="0xe8cc1582" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle unregister server failed ret 0x%x. @sle_srv_ssap_server.c(709),ERROR" ID="0xe8cc162a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add service pointer is null. @sle_srv_ssap_server.c(725),ERROR" ID="0xe8cc16aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle add service uuid len err %u. @sle_srv_ssap_server.c(729),ERROR" ID="0xe8cc16ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add service result new memory failed. @sle_srv_ssap_server.c(740),ERROR" ID="0xe8cc1722" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add service uuid new memory failed. @sle_srv_ssap_server.c(749),ERROR" ID="0xe8cc176a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add service memcpy fail @sle_srv_ssap_server.c(754),ERROR" ID="0xe8cc1792" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle add service uuid send bt_service failed. ret %#x @sle_srv_ssap_server.c(760),ERROR" ID="0xe8cc17c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add service pointer is null. @sle_srv_ssap_server.c(783),ERROR" ID="0xe8cc187a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property result new memory failed. @sle_srv_ssap_server.c(826),ERROR" ID="0xe8cc19d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property uuid new memory failed. @sle_srv_ssap_server.c(836),ERROR" ID="0xe8cc1a22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property memcpy fail @sle_srv_ssap_server.c(842),ERROR" ID="0xe8cc1a52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle add property uuid new send bt_service failed. ret %#x @sle_srv_ssap_server.c(848),ERROR" ID="0xe8cc1a82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add property pointer is null. @sle_srv_ssap_server.c(873),ERROR" ID="0xe8cc1b4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add descriptor pointer is null. @sle_srv_ssap_server.c(910),ERROR" ID="0xe8cc1c72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps add descriptor new result memory fail. @sle_srv_ssap_server.c(921),ERROR" ID="0xe8cc1cca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps add descriptor new result memory fail. @sle_srv_ssap_server.c(931),ERROR" ID="0xe8cc1d1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add descriptor memcpy fail @sle_srv_ssap_server.c(936),ERROR" ID="0xe8cc1d42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssaps add descriptor new result send bt_service fail, ret %#x @sle_srv_ssap_server.c(942),ERROR" ID="0xe8cc1d72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add descriptor pointer is null. @sle_srv_ssap_server.c(967),ERROR" ID="0xe8cc1e3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle add method or event pointer is null. @sle_srv_ssap_server.c(993),ERROR" ID="0xe8cc1f0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle start service failed, server id invaild. @sle_srv_ssap_server.c(1036),ERROR" ID="0xe8cc2062" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle start service failed, service handle invaild. @sle_srv_ssap_server.c(1041),ERROR" ID="0xe8cc208a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle service(%#x) is active, can not start more. @sle_srv_ssap_server.c(1047),ERROR" ID="0xe8cc20ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle start server failed ret 0x%x. @sle_srv_ssap_server.c(1075),ERROR" ID="0xe8cc219a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle server_id %u not exist @sle_srv_ssap_server.c(1097),ERROR" ID="0xe8cc224a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle delete all service failed. ret 0x%x. @sle_srv_ssap_server.c(1107),ERROR" ID="0xe8cc229a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi ssaps update item value by property_handle len = %u param error @sle_srv_ssap_server.c(1126),ERROR" ID="0xe8cc2332" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="property_handle = 0x%02x, len = %u @sle_srv_ssap_server.c(1131),INFO" ID="0xe8cc235d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps update item value by buff mem new failed @sle_srv_ssap_server.c(1137),ERROR" ID="0xe8cc238a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps update item value by property_handle mem cpy failed @sle_srv_ssap_server.c(1149),ERROR" ID="0xe8cc23ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi ssaps update item value by property_handle len = %u param error @sle_srv_ssap_server.c(1166),ERROR" ID="0xe8cc2472" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="property_handle = 0x%02x, len = %u @sle_srv_ssap_server.c(1171),INFO" ID="0xe8cc249d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps update item value by property_handle mem new failed @sle_srv_ssap_server.c(1177),ERROR" ID="0xe8cc24ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps update item value by property_handle mem cpy failed @sle_srv_ssap_server.c(1187),ERROR" ID="0xe8cc251a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle notify indicate failed, param is NULL. @sle_srv_ssap_server.c(1206),ERROR" ID="0xe8cc25b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssapc write cmd failed, link is busy. @sle_srv_ssap_server.c(1212),ERROR" ID="0xe8cc25e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle notify indicate failed, server id is invalid. @sle_srv_ssap_server.c(1231),ERROR" ID="0xe8cc267a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssaps ntf mtu check failed, param-&gt;value_len %u, mtu 0x%x @sle_srv_ssap_server.c(1238),ERROR" ID="0xe8cc26b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle notify indicate failed ret 0x%x. @sle_srv_ssap_server.c(1248),ERROR" ID="0xe8cc2702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps update item value by uuid param error @sle_srv_ssap_server.c(1268),ERROR" ID="0xe8cc27a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi ssaps update item value by uuid len = %u @sle_srv_ssap_server.c(1273),INFO" ID="0xe8cc27cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps update item value by uuid mem new failed @sle_srv_ssap_server.c(1278),ERROR" ID="0xe8cc27f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps update item value by uuid mem cpy failed @sle_srv_ssap_server.c(1290),ERROR" ID="0xe8cc2852" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps update item value by uuid mem cpy failed @sle_srv_ssap_server.c(1296),ERROR" ID="0xe8cc2882" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle notify indicate failed, param is NULL. @sle_srv_ssap_server.c(1314),ERROR" ID="0xe8cc2912" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle notify indicate failed, server id is invalid. @sle_srv_ssap_server.c(1327),ERROR" ID="0xe8cc297a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssaps ntf by uuid mtu check failed, param-&gt;value_len %u, mtu 0x%x @sle_srv_ssap_server.c(1334),ERROR" ID="0xe8cc29b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle notify indicate failed ret 0x%x. @sle_srv_ssap_server.c(1346),ERROR" ID="0xe8cc2a12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle event notify_indicate failed, param err. @sle_srv_ssap_server.c(1363),ERROR" ID="0xe8cc2a9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle event notify indicate failed, server id is invalid. @sle_srv_ssap_server.c(1372),ERROR" ID="0xe8cc2ae2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssaps ntf by uuid mtu check failed, param-&gt;value_len %u, mtu 0x%x @sle_srv_ssap_server.c(1379),ERROR" ID="0xe8cc2b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle event notify_indicate param check failed. @sle_srv_ssap_server.c(1394),ERROR" ID="0xe8cc2b92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps_event_notify_indicate mem new failed @sle_srv_ssap_server.c(1401),ERROR" ID="0xe8cc2bca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ssaps_event_notify_indicate mem cpy failed @sle_srv_ssap_server.c(1412),ERROR" ID="0xe8cc2c22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssaps_event_notify_indicate failed ret 0x%x. @sle_srv_ssap_server.c(1418),ERROR" ID="0xe8cc2c52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle ssaps set info, mtu size 0x%x. @sle_srv_ssap_server.c(1441),ERROR" ID="0xe8cc2d0a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="mtu_size:%d, version:%d @sle_srv_ssap_server.c(1445),INFO" ID="0xe8cc2d2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle send response failed ret 0x%x. @sle_srv_ssap_server.c(1448),ERROR" ID="0xe8cc2d42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle send response failed, param is NULL. @sle_srv_ssap_server.c(1467),ERROR" ID="0xe8cc2dda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle send response, status isn't success, status :%x. @sle_srv_ssap_server.c(1472),ERROR" ID="0xe8cc2e02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle send response failed, param len upper limit exceeded. @sle_srv_ssap_server.c(1476),ERROR" ID="0xe8cc2e22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle send response failed, server id is invalid. @sle_srv_ssap_server.c(1481),ERROR" ID="0xe8cc2e4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps send response mem new failed @sle_srv_ssap_server.c(1489),ERROR" ID="0xe8cc2e8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi ssaps send response mem cpy failed @sle_srv_ssap_server.c(1498),ERROR" ID="0xe8cc2ed2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle send response failed ret 0x%x. @sle_srv_ssap_server.c(1506),ERROR" ID="0xe8cc2f12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uapi ssaps send method response mem new failed @sle_srv_ssap_server.c(1526),ERROR" ID="0xe8cc2fb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uapi ssaps send method response mem cpy failed @sle_srv_ssap_server.c(1535),ERROR" ID="0xe8cc2ffa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle send method response failed, param is NULL. @sle_srv_ssap_server.c(1553),ERROR" ID="0xe8cc308a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle send method response failed, param len upper limit exceeded. @sle_srv_ssap_server.c(1559),ERROR" ID="0xe8cc30ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle send method response failed, server id is invalid. @sle_srv_ssap_server.c(1564),ERROR" ID="0xe8cc30e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ssaps method rsp mtu check failed, param-&gt;value_len %u, mtu 0x%x @sle_srv_ssap_server.c(1571),ERROR" ID="0xe8cc311a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle send method response failed ret 0x%x. @sle_srv_ssap_server.c(1576),ERROR" ID="0xe8cc3142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle set data trans state failed, param is wrong. @sle_srv_ssap_server.c(1596),ERROR" ID="0xe8cc31e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle set data trans state failed, ret 0x%x. @sle_srv_ssap_server.c(1601),ERROR" ID="0xe8cc320a" />
+			</MSG_LOG>

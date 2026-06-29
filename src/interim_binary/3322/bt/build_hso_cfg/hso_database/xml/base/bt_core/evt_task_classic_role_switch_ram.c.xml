@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_RSW]role_switch_end: con_hdl %d, reason %d, role %d @evt_task_classic_role_switch_ram.c(145),INFO" ID="0x8b5e048d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_RSW]role_switch_end env_ptr-&gt;rsw_par is null @evt_task_classic_role_switch_ram.c(149),WARNING" ID="0x8b5e04ab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]role_switch_end: free fhs buf, con_hdl %d @evt_task_classic_role_switch_ram.c(179),INFO" ID="0x8b5e059d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_RSW]create_es_task: con_hdl %d, timestamp=0x%x, afh_en=%d, role=%d @evt_task_classic_role_switch_ram.c(239),WARNING" ID="0x8b5e077b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_RSW]create_es_task: insert_elt fail, con_hdl %d, status=%d, ts:%x, limit_ts:%x @evt_task_classic_role_switch_ram.c(247),WARNING" ID="0x8b5e07bb" />
+			</MSG_LOG>

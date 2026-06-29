@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[afh] txack_srv_act: con_hdl %d, ack received after instant @lm_classic_acl_srv_afh_ram.c(137),INFO" ID="0x8c44044d" />
+			</MSG_LOG>

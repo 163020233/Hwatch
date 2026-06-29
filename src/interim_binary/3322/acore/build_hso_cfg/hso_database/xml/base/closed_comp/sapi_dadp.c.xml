@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[DADP][AUDIO-&gt;BT][SET_RENDER_RSP]audio set fail @sapi_dadp.c(61),WARNING" ID="0xeb9e01eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;AUDIO][GET_RENDER_REQ]dadp get render req ONCE @sapi_dadp.c(65),INFO" ID="0xeb9e020d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][BT-&gt;AUDIO][SET_RENDER_RSP] err_toggle_spp_ts=%u current=%u @sapi_dadp.c(82),INFO" ID="0xeb9e0295" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][AUDIO-&gt;BT][RECV_AUDIO_MSG]cmd_id=%d @sapi_dadp.c(106),INFO" ID="0xeb9e0355" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;AUDIO][STOP_TOGGLE]new buf fail @sapi_dadp.c(173),ERROR" ID="0xeb9e056a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;AUDIO][STOP_TOGGLE]send msg @sapi_dadp.c(183),INFO" ID="0xeb9e05bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;AUDIO][STOP_TOGGLE]ipc fail ret=%d @sapi_dadp.c(186),ERROR" ID="0xeb9e05d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][PREFER_RATE]connection hdl:0x%04x rate:%u @sapi_dadp.c(194),INFO" ID="0xeb9e0615" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP]a2dp_audio: memcpy_s failed! @sapi_dadp.c(208),ERROR" ID="0xeb9e0682" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP] memcpy fail @sapi_dadp.c(240),ERROR" ID="0xeb9e0782" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][SET_RENDER_REQ]ipc fail ret=%d @sapi_dadp.c(246),ERROR" ID="0xeb9e07b2" />
+			</MSG_LOG>

@@ -1,0 +1,10 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="replaceClient">
+            <text class="todo-title">client</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="replaceServer">
+            <text class="todo-title">server</text>
+        </list-item>
+    </list>
+</div>

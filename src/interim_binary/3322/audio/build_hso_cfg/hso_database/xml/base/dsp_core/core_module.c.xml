@@ -1,0 +1,34 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mid.u32 = 0x%08X @core_module.c(130),ERROR" ID="0x98420412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mod_pool-&gt;node_count = %u @core_module.c(131),ERROR" ID="0x9842041a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mod_pool-&gt;mod_type = 0x%08X @core_module.c(132),ERROR" ID="0x98420422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_module.c(149),INFO" ID="0x984204ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_module.c(151),ERROR" ID="0x984204ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_module.c(158),ERROR" ID="0x984204f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(188),INFO" ID="0x984205e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_module.c(198),INFO" ID="0x98420635" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_module.c(204),ERROR" ID="0x98420662" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_module.c(212),ERROR" ID="0x984206a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(220),INFO" ID="0x984206e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_module.c(264),INFO" ID="0x98420845" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mod_pool-&gt;used_num = %u @core_module.c(271),ERROR" ID="0x9842087a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mod_pool-&gt;node_count = %u @core_module.c(272),ERROR" ID="0x98420882" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]mod_node is null @core_module.c(278),ERROR" ID="0x984208b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(296),INFO" ID="0x98420945" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_module.c(306),INFO" ID="0x98420995" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mod_pool-&gt;free_num = %u @core_module.c(313),ERROR" ID="0x984209ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mod_pool-&gt;node_count = %u @core_module.c(314),ERROR" ID="0x984209d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(333),INFO" ID="0x98420a6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_module.c(348),INFO" ID="0x98420ae5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(383),INFO" ID="0x98420bfd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_module.c(395),INFO" ID="0x98420c5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mod_pool-&gt;free_num = %u @core_module.c(401),ERROR" ID="0x98420c8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mod_pool-&gt;node_count = %u @core_module.c(402),ERROR" ID="0x98420c92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(429),INFO" ID="0x98420d6d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_module.c(436),INFO" ID="0x98420da5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(441),INFO" ID="0x98420dcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_module.c(453),INFO" ID="0x98420e2d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(456),INFO" ID="0x98420e45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_module.c(466),INFO" ID="0x98420e95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(476),INFO" ID="0x98420ee5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_module.c(483),INFO" ID="0x98420f1d" />
+			</MSG_LOG>

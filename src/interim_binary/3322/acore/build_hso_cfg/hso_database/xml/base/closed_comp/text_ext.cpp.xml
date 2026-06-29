@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="fontName %s no register, use default font @text_ext.cpp(92),ERROR" ID="0xcace02e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc buffer for utf16Text failed. @text_ext.cpp(129),ERROR" ID="0xcace040a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="text_ is nullptr. @text_ext.cpp(332),ERROR" ID="0xcace0a62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc for shapingLineText failed. @text_ext.cpp(485),ERROR" ID="0xcace0f2a" />
+			</MSG_LOG>

@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="micpc read capture state fail, ret:%d @saf_at_micp.c(127),ERROR" ID="0xe99003fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="micpc set capture state fail, ret:%d @saf_at_micp.c(138),ERROR" ID="0xe9900452" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="micpc register cbks fail, ret:%d @saf_at_micp.c(152),ERROR" ID="0xe99004c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="micpc unregister cbks fail, ret:%d @saf_at_micp.c(163),ERROR" ID="0xe990051a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="micps start service fail, ret:%d @saf_at_micp.c(177),ERROR" ID="0xe990058a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="micps register cbks fail, ret:%d @saf_at_micp.c(190),ERROR" ID="0xe99005f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="micps report capture state fail, ret:%d @saf_at_micp.c(201),ERROR" ID="0xe990064a" />
+			</MSG_LOG>

@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][SERVICE] unhandled msg id! @bs_ssap_msg.c(48),ERROR" ID="0xefa80182" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSAP][SERVICE] handle with msg id:0x%x proc @bs_ssap_msg.c(55),INFO" ID="0xefa801bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSAP][SERVICE] handle msg to proc 2! @bs_ssap_msg.c(80),ERROR" ID="0xefa80282" />
+			</MSG_LOG>

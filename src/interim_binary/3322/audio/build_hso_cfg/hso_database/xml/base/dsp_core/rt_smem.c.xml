@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi]assert failed. @rt_smem.c(64),WARNING" ID="0x98da0203" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]assert failed. @rt_smem.c(72),WARNING" ID="0x98da0243" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]size = %u @rt_smem.c(183),INFO" ID="0x98da05bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]align_size = %u @rt_smem.c(188),INFO" ID="0x98da05e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]new_size = %u @rt_smem.c(195),INFO" ID="0x98da061d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]user_ptr = %p @rt_smem.c(300),INFO" ID="0x98da0965" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]size = %p @rt_smem.c(301),INFO" ID="0x98da096d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]rmem = %p @rt_smem.c(410),INFO" ID="0x98da0cd5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]mem = %p @rt_smem.c(437),INFO" ID="0x98da0dad" />
+			</MSG_LOG>

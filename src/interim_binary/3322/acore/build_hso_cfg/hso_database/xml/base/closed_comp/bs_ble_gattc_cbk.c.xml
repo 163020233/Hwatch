@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC]read cb invalid conn_id %d @bs_ble_gattc_cbk.c(70),ERROR" ID="0xeea40232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC]read cb malloc failed @bs_ble_gattc_cbk.c(75),ERROR" ID="0xeea4025a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC]read cb malloc failed @bs_ble_gattc_cbk.c(84),ERROR" ID="0xeea402a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC]write cb invalid conn_id %d @bs_ble_gattc_cbk.c(105),ERROR" ID="0xeea4034a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC]notify cb invalid conn_id %d @bs_ble_gattc_cbk.c(121),ERROR" ID="0xeea403ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC]notify cb malloc failed @bs_ble_gattc_cbk.c(126),ERROR" ID="0xeea403f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC]notify cb malloc failed @bs_ble_gattc_cbk.c(135),ERROR" ID="0xeea4043a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC]indicate cb invalid conn_id %d @bs_ble_gattc_cbk.c(157),ERROR" ID="0xeea404ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC]indicate cb malloc failed @bs_ble_gattc_cbk.c(162),ERROR" ID="0xeea40512" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC]indicate cb malloc failed @bs_ble_gattc_cbk.c(171),ERROR" ID="0xeea4055a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC]mtu changed cb invalid conn_id %d @bs_ble_gattc_cbk.c(192),ERROR" ID="0xeea40602" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC]unregister callbacks invalid device id %d @bs_ble_gattc_cbk.c(215),ERROR" ID="0xeea406ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC]register callbacks invalid device id %d @bs_ble_gattc_cbk.c(227),ERROR" ID="0xeea4071a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC]gattc register failed, no mem @bs_ble_gattc_cbk.c(234),ERROR" ID="0xeea40752" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC]gattc register success, client_id: %d @bs_ble_gattc_cbk.c(246),INFO" ID="0xeea407b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC]register callbacks failed %d @bs_ble_gattc_cbk.c(256),ERROR" ID="0xeea40802" />
+			</MSG_LOG>

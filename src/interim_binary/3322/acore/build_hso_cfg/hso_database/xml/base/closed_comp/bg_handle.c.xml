@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GAP] create handle list_node_new_func failed @bg_handle.c(181),ERROR" ID="0xeac805aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP] create handle memcpy failed @bg_handle.c(191),ERROR" ID="0xeac805fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP] activate handle memcpy failed @bg_handle.c(267),ERROR" ID="0xeac8085a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]fast act handle memcpy failed @bg_handle.c(308),ERROR" ID="0xeac809a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP]to expire wait handle2 to expire @bg_handle.c(435),INFO" ID="0xeac80d9d" />
+			</MSG_LOG>

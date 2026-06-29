@@ -1,0 +1,25 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] set find service whitelist failed, err=%u @ssf_init.c(102),ERROR" ID="0xef9e0332" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] sle enable conn module failed, err=%u @ssf_init.c(146),ERROR" ID="0xef9e0492" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] sle enable pair module failed, err=%u @ssf_init.c(151),ERROR" ID="0xef9e04ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][INIT] not first enable, return OK @ssf_init.c(155),INFO" ID="0xef9e04dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] device manager register cbks failed, err=%u @ssf_init.c(170),ERROR" ID="0xef9e0552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] sle task init failed, err=%u @ssf_init.c(177),ERROR" ID="0xef9e058a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] sle enable failed, err=%u @ssf_init.c(182),ERROR" ID="0xef9e05b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][INIT] disable sle service begin @ssf_init.c(191),INFO" ID="0xef9e05fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] disconnect all failed, err=%u @ssf_init.c(194),ERROR" ID="0xef9e0612" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] sle service power on cb, status=%u @ssf_init.c(204),INFO" ID="0xef9e0665" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][INIT] distribute app_id: %u, state: %u, ptr: %p @ssf_init.c(216),DBG" ID="0xef9e06c6" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SLE][INIT] set acb offset failed, err=%u @ssf_init.c(229),ERROR" ID="0xef9e072a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SLE][INIT] set acb offset failed, err=%u @ssf_init.c(234),ERROR" ID="0xef9e0752" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][INIT] sle service enable cb, status=POWER_ON_FAIL @ssf_init.c(275),ERROR" ID="0xef9e089a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] sle service enable cb received, status=%u @ssf_init.c(280),INFO" ID="0xef9e08c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] register common client failed, err=%u @ssf_init.c(284),ERROR" ID="0xef9e08e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] register dis client failed, err=%u @ssf_init.c(289),ERROR" ID="0xef9e090a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] get local addr failed, err=%u @ssf_init.c(296),ERROR" ID="0xef9e0942" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][INIT] init failed. invalid role @ssf_init.c(313),ERROR" ID="0xef9e09ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] sle service disable cb: %u @ssf_init.c(321),INFO" ID="0xef9e0a0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][INIT] register dis client failed, err=%u @ssf_init.c(326),ERROR" ID="0xef9e0a32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][INIT] invalid sle enable callbacks @ssf_init.c(341),ERROR" ID="0xef9e0aaa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][INIT] update callbacks. app: %u, ptr :0x%p @ssf_init.c(350),INFO" ID="0xef9e0af5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][INIT] add callbacks. app: %u, ptr: 0x%p @ssf_init.c(356),INFO" ID="0xef9e0b25" />
+			</MSG_LOG>

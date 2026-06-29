@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[SMP]smp print local atype:%d, addr:0x%02x:**:**:**:%02x:%02x @smp_aes.c(759),INFO" ID="0xeae817bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP]smp calc csrk malloc r failed @smp_aes.c(803),ERROR" ID="0xeae8191a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP]smp calc csrk malloc ER failed @smp_aes.c(809),ERROR" ID="0xeae8194a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP]smp calc irk malloc d failed @smp_aes.c(843),ERROR" ID="0xeae81a5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP]smp calc irk malloc r failed @smp_aes.c(849),ERROR" ID="0xeae81a8a" />
+			</MSG_LOG>

@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]hci_bt_reset_nb. @hci_bt.c(110),WARNING" ID="0x887c0373" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]hci_bt_cmd_received unknown hci cmd opcode(0x%x) @hci_bt.c(164),WARNING" ID="0x887c0523" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]hci_bt_cmd_received opcode(0x%x) out of command window, cmd_pkt_num(%d) @hci_bt.c(172),WARNING" ID="0x887c0563" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]hci_bt_received opcode(0x%x) invalid payl_len, min_size=%d, cmd_length=%d. @hci_bt.c(181),WARNING" ID="0x887c05ab" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[INFO][HCI]hci_iso_tx_data_alloc:conhdl_flags=0x%02x,len=%d @hci_bt.c(318),INFO" ID="0x887c09f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[WARNING][HCI]hci_iso_tx_buf_alloc: temporary buf alloc fail! @hci_bt.c(332),WARNING" ID="0x887c0a63" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[WARNING][HCI]em_buf_iso_buf_alloc fail! @hci_bt.c(339),WARNING" ID="0x887c0a9b" />
+			</MSG_LOG>

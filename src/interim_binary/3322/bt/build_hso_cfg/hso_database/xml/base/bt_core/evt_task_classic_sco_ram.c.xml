@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_sco_create_es_task, acl_env_ptr is null @evt_task_classic_sco_ram.c(168),ERROR" ID="0x8b0c0542" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_SCO]isr_cbk: late_isr! con_hdl 0x%x @evt_task_classic_sco_ram.c(209),ERROR" ID="0x8b0c068a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP]evt_task_classic_sco_sched nullptr, acl_es_elt=%p, acl_env_ptr=%p @evt_task_classic_sco_ram.c(355),ERROR" ID="0x8b0c0b1a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SCO]sco_sched: anchor_point=0x%x, current_prio=%d, dura_min=%d, acl_prio=%d @evt_task_classic_sco_ram.c(402),INFO" ID="0x8b0c0c95" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_SCO]sco_sched: acl_ts = 0x%x, acl_last_sync_ts = %d, t_esco = %d @evt_task_classic_sco_ram.c(410),INFO" ID="0x8b0c0cd5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_SCO]event_cbk: con_hdl %d, invalid nb_prog:%d @evt_task_classic_sco_ram.c(535),WARNING" ID="0x8b0c10bb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_SCO]sket_cbk: con_hdl %d, invalid nb_prog:%d @evt_task_classic_sco_ram.c(585),WARNING" ID="0x8b0c124b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_sco_update_daycounter, sco_env_ptr is null @evt_task_classic_sco_ram.c(688),ERROR" ID="0x8b0c1582" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_ACL]update_daycounter: acl daycounter rolls over 0, daycounter=%d @evt_task_classic_sco_ram.c(705),WARNING" ID="0x8b0c160b" />
+			</MSG_LOG>

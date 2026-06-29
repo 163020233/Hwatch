@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_c_frame] nb_prog=%d @evt_task_gle_c_frame_isr.c(48),WARNING" ID="0x8bce0183" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][c_frame]evt_task_gle_c_frame_evt_cbk, sw_prio(0x%x)hwprio(0x%x)ts(0x%x)curclk(0x%x) @evt_task_gle_c_frame_isr.c(77),INFO" ID="0x8bce026d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][c_frame]evt_task_gle_c_frame_abnormal_cbk nb_prog=%d @evt_task_gle_c_frame_isr.c(99),WARNING" ID="0x8bce031b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgle][c_frame]evt_task_gle_c_frame_abnormal_cbk, timestamp:%d, delay:%d @evt_task_gle_c_frame_isr.c(125),WARNING" ID="0x8bce03eb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][c_frame]evt_task_gle_c_frame_rx_cbk, status:0x%x, ble_used_ch_idx:%d, rssi:%d, curclk0x%x @evt_task_gle_c_frame_isr.c(178),WARNING" ID="0x8bce0593" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][c_frame]evt_task_gle_c_frame_start_cbk t_rx_format(0x%x)t_rx_phy(0x%x)t_rx_pilot(0x%x)pwr:%d @evt_task_gle_c_frame_isr.c(252),WARNING" ID="0x8bce07e3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][c_frame]evt_task_gle_c_frame_start_cbk, ts:0x%x, rxwin:%d, sedclockoff:0x%x, G_TS:0x%x @evt_task_gle_c_frame_isr.c(254),WARNING" ID="0x8bce07f3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgle][c_frame]evt_task_gle_c_frame_cancel_cbk, timestamp:%d, delay:%d @evt_task_gle_c_frame_isr.c(308),WARNING" ID="0x8bce09a3" />
+			</MSG_LOG>

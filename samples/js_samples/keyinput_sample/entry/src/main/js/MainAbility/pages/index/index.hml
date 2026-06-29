@@ -1,0 +1,7 @@
+<div class="container" onswipe="swipe">
+    <list class="listcontainer">
+        <list-item class="listitem" for="{{pages}}">
+            <text class="btn"  on:click="onClick($item.path)">{{$item.title}}</text>
+        </list-item>
+    </list>
+</div>

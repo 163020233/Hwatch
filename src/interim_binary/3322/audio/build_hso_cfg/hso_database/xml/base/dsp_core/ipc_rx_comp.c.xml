@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call uapi_ipc_register_rx_handler Failed, Error Code: [0x%08X] @ipc_rx_comp.c(54),ERROR" ID="0x98be01b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call uapi_ipc_register_rx_handler Failed, Error Code: [0x%08X] @ipc_rx_comp.c(87),ERROR" ID="0x98be02ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call uapi_ipc_register_rx_handler Failed, Error Code: [0x%08X] @ipc_rx_comp.c(115),ERROR" ID="0x98be039a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]msg-&gt;log_level = %u @ipc_rx_comp.c(135),ERROR" ID="0x98be043a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call uapi_ipc_register_rx_handler Failed, Error Code: [0x%08X] @ipc_rx_comp.c(152),ERROR" ID="0x98be04c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call uapi_ipc_register_rx_handler Failed, Error Code: [0x%08X] @ipc_rx_comp.c(186),ERROR" ID="0x98be05d2" />
+			</MSG_LOG>

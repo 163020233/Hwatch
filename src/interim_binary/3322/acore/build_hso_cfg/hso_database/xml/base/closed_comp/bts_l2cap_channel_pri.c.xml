@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP] l2cap channel reg psm error, ret=0x%x  @bts_l2cap_channel_pri.c(90),ERROR" ID="0xe87c02d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP] l2cap channel unreg psm error, ret=0x%x  @bts_l2cap_channel_pri.c(106),ERROR" ID="0xe87c0352" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2CAP] l2cap channel conn remote addr=0x%02x:**:**:**:0x%02x:0x%02x, psm:0x%x  @bts_l2cap_channel_pri.c(132),ERROR" ID="0xe87c0422" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP] l2cap channel conn remote error, ret=0x%x  @bts_l2cap_channel_pri.c(135),ERROR" ID="0xe87c043a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP] l2cap channel disconn remote, cid=0x%x  @bts_l2cap_channel_pri.c(152),INFO" ID="0xe87c04c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP] l2cap channel disconn remote error, ret=0x%x  @bts_l2cap_channel_pri.c(155),ERROR" ID="0xe87c04da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP] l2cap channel send data error, ret=0x%x  @bts_l2cap_channel_pri.c(192),ERROR" ID="0xe87c0602" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2CAP] l2cap channel event cbk, arg is null  @bts_l2cap_channel_pri.c(247),ERROR" ID="0xe87c07ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP] l2cap channel event cbk, event=0x%x  @bts_l2cap_channel_pri.c(250),INFO" ID="0xe87c07d5" />
+			</MSG_LOG>

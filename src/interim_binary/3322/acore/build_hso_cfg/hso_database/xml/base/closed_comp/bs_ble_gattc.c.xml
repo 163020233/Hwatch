@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[BS][GATTC] unregister client: %d, result: %d @bs_ble_gattc.c(32),INFO" ID="0xeea20105" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="service node is NULL @bs_ble_gattc.c(39),ERROR" ID="0xeea2013a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC]service malloc fail @bs_ble_gattc.c(127),ERROR" ID="0xeea203fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC]service param malloc fail @bs_ble_gattc.c(135),ERROR" ID="0xeea2043a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC] find all service failed %d @bs_ble_gattc.c(160),ERROR" ID="0xeea20502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC] find all service success @bs_ble_gattc.c(162),INFO" ID="0xeea20515" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC] find service by uuid failed %d @bs_ble_gattc.c(179),ERROR" ID="0xeea2059a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC] read failed %d @bs_ble_gattc.c(192),ERROR" ID="0xeea20602" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC] exchange mtu result: %d @bs_ble_gattc.c(204),INFO" ID="0xeea20665" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC] register client fail @bs_ble_gattc.c(211),ERROR" ID="0xeea2069a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC] register client succ, client id: %d @bs_ble_gattc.c(213),INFO" ID="0xeea206ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTC] find service malloc fail @bs_ble_gattc.c(234),ERROR" ID="0xeea20752" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTC] write result: %d @bs_ble_gattc.c(277),INFO" ID="0xeea208ad" />
+			</MSG_LOG>

@@ -1,0 +1,73 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[DADP][PRINT_DISCONTINUOUS_SN]LAST_SN=%u, CUR_SN=%u @dadp_tws_ctrl.c(486),INFO" ID="0xec380f35" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[DADP][MEDIA_DATA]DATA_LENGTH=%d, SN=%d, TIMESTAMP=%d @dadp_tws_ctrl.c(491),INFO" ID="0xec380f5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][SYNC_RENDER_REQ]IPC MSG SEND. toggle_diff:%d @dadp_tws_ctrl.c(534),INFO" ID="0xec3810b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][SYNC_RENDER_REQ]ipc fail ret=%d @dadp_tws_ctrl.c(537),ERROR" ID="0xec3810ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][AUDIO-&gt;BT][UNDERFLOW_IND]fail @dadp_tws_ctrl.c(560),WARNING" ID="0xec381183" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][AUDIO-&gt;BT][UNDERFLOW_IND]dma_cnt=%u underrun_cnt=%u @dadp_tws_ctrl.c(564),WARNING" ID="0xec3811a3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][AUDIO-&gt;BT][UNDERFLOW_IND] unstable @dadp_tws_ctrl.c(571),WARNING" ID="0xec3811db" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][AUDIO-&gt;BT][UNDERFLOW_IND] underflow_count %d @dadp_tws_ctrl.c(584),WARNING" ID="0xec381243" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][AUDIO-&gt;BT][OVERFLOW_IND] @dadp_tws_ctrl.c(608),WARNING" ID="0xec381303" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][BT-&gt;BT][SEND_PEER_PRIV_MSG]msg_type=%d, data_len=%d @dadp_tws_ctrl.c(620),INFO" ID="0xec381365" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[DADP][BT-&gt;BT][SEND_SCENE_CHANGE_REQ]scene_flag=%d audio_scene=%d dsp_audio_scene=%d @dadp_tws_ctrl.c(652),INFO" ID="0xec381465" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][STOP_TOGGLE_FAIL]par is null @dadp_tws_ctrl.c(680),WARNING" ID="0xec381543" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][STOP_TOGGLE_FAIL] @dadp_tws_ctrl.c(686),ERROR" ID="0xec381572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][STOP_TOGGLE] @dadp_tws_ctrl.c(696),INFO" ID="0xec3815c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][GET_TOGGLE_FAIL]par is null @dadp_tws_ctrl.c(718),WARNING" ID="0xec381673" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][GET_TOGGLE_FAIL]toggle_cnt is invalid @dadp_tws_ctrl.c(727),WARNING" ID="0xec3816bb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][GET_TOGGLE_RESULT]toggle_cnt=%u @dadp_tws_ctrl.c(732),INFO" ID="0xec3816e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][GET_BTCLK_FAIL]par is null @dadp_tws_ctrl.c(760),WARNING" ID="0xec3817c3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][GET_BTCLK_RESULT]bt_clk=0x%x, toggle_cnt=%u @dadp_tws_ctrl.c(767),INFO" ID="0xec3817fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][GET_BTCLK] @dadp_tws_ctrl.c(782),INFO" ID="0xec381875" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][PUT_RENDER_RSP]IPC MSG SEND. @dadp_tws_ctrl.c(804),INFO" ID="0xec381925" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][PUT_RENDER_RSP]ipc fail ret=%d @dadp_tws_ctrl.c(807),ERROR" ID="0xec38193a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][AUDIO-&gt;BT][AUDIO_CRAZY_MSG] @dadp_tws_ctrl.c(830),WARNING" ID="0xec3819f3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][AUDIO-&gt;BT][PUT_AUDIO_RENDER_REQ]toggle_cnt=%d @dadp_tws_ctrl.c(833),INFO" ID="0xec381a0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][AUTODELAY]codec=%d, not sbc @dadp_tws_ctrl.c(867),WARNING" ID="0xec381b1b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][DELAY]change audio delay, sub_ms=%d @dadp_tws_ctrl.c(876),WARNING" ID="0xec381b63" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][SET AUDIO SCENE]scene=%d @dadp_tws_ctrl.c(884),INFO" ID="0xec381ba5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][SET AUDIO SCENE]is streaming @dadp_tws_ctrl.c(898),WARNING" ID="0xec381c13" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][SET AUDIO SCENE]not stable @dadp_tws_ctrl.c(901),WARNING" ID="0xec381c2b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][SET AUDIO CODEC]codec=%u sample_rate=%u @dadp_tws_ctrl.c(933),INFO" ID="0xec381d2d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[DADP][SET SCENE PARA]codec=%d toggle_delay=%d audio_delay=%d @dadp_tws_ctrl.c(946),INFO" ID="0xec381d95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][START_TOGGLE_FAIL]par is null @dadp_tws_ctrl.c(987),WARNING" ID="0xec381edb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][START_TOGGLE_RESULT]status=%d @dadp_tws_ctrl.c(995),INFO" ID="0xec381f1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][START_TOGGLE_ACCORD_BTCLK]toggle is start @dadp_tws_ctrl.c(1010),WARNING" ID="0xec381f93" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][START_TOGGLE_ACCORD_BTCLK] @dadp_tws_ctrl.c(1015),INFO" ID="0xec381fbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][START_TOGGLE_ACCORD_DELAY]par is null @dadp_tws_ctrl.c(1043),WARNING" ID="0xec38209b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][START_TOGGLE_ACCORD_DELAY]joint is not in ready @dadp_tws_ctrl.c(1053),INFO" ID="0xec3820ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][START_TOGGLE_ACCORD_DELAY_RESULT]btclk=0x%x @dadp_tws_ctrl.c(1061),INFO" ID="0xec38212d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[DADP][BT-&gt;DSP][DELAY_CHANGE_REQ]pre_toggle_cnt=%u, mute_toggle_cnt=%u, stop_toggle_cnt=%u, start_toggle_cnt=%u delay_toggle_cnt=%u @dadp_tws_ctrl.c(1125),INFO" ID="0xec38232d" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[DADP][BT-&gt;DSP][DELAY_CHANGE_REQ]mute_toggle_ts=%u, stop_toggle_ts=%u, start_toggle_ts=%u, dbg_start_toggle_ts=%u audio_delay=%u audio_scene=%u @dadp_tws_ctrl.c(1129),INFO" ID="0xec38234d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][DELAY_CHANGE_REQ]ipc fail ret=%d @dadp_tws_ctrl.c(1132),ERROR" ID="0xec382362" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][AUDIO-&gt;BT][DELAY_CHANGE_RSP]fail @dadp_tws_ctrl.c(1141),WARNING" ID="0xec3823ab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][dadp_start_music_toggle_delay_cbk] err=%d @dadp_tws_ctrl.c(1150),INFO" ID="0xec3823f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][dadp_get_music_toggle_and_clk_cbk] bt_clk =%d toggle_cnt=%d @dadp_tws_ctrl.c(1180),INFO" ID="0xec3824e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][dadp_delay_change_get_toggle_count_cbk] toggle_cnt=%d @dadp_tws_ctrl.c(1219),INFO" ID="0xec38261d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[DADP][dadp_change_delay_accord_bt_clk] tog not start, flag=%d audio_scene=%d dsp_audio_scene=%d @dadp_tws_ctrl.c(1230),INFO" ID="0xec382675" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP]get_render_rsp is NULL @dadp_tws_ctrl.c(1247),WARNING" ID="0xec3826fb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[DADP][AUDIO-&gt;BT][GET_RENDER_RSP]time_stamp=%u,toggle_cnt=%u,tsRatio=%u last_time_stamp=%u @dadp_tws_ctrl.c(1252),INFO" ID="0xec382725" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][GET_TOGGLE_INFO_REQ]Rol is err @dadp_tws_ctrl.c(1273),ERROR" ID="0xec3827ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][GET_TOGGLE_INFO_REQ]IPC MSG SEND. @dadp_tws_ctrl.c(1290),INFO" ID="0xec382855" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][GET_TOGGLE_INFO_REQ]ipc fail ret=%x @dadp_tws_ctrl.c(1293),WARNING" ID="0xec38286b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP]get_toggle_info_rsp is NULL @dadp_tws_ctrl.c(1302),WARNING" ID="0xec3828b3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[DADP][AUDIO-&gt;BT][GET_GET_TOGGLE_INFO_RSP]time_stamp=%u,toggle_cnt=%u,tsRatio=%u last_time_stamp=%u @dadp_tws_ctrl.c(1307),INFO" ID="0xec3828dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][GET_DELAY_REQ] @dadp_tws_ctrl.c(1329),INFO" ID="0xec38298d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][GET_DELAY_REQ]ipc fail ret=%d @dadp_tws_ctrl.c(1332),ERROR" ID="0xec3829a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][AUDIO-&gt;BT][GET_DELAY]fail @dadp_tws_ctrl.c(1341),WARNING" ID="0xec3829eb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[DADP][AUDIO-&gt;BT][GET_DELAY]min_delay=%u max_delay=%u @dadp_tws_ctrl.c(1345),WARNING" ID="0xec382a0b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][AUDIO-&gt;BT][GET_DELAY] audio_scene_stable = %d @dadp_tws_ctrl.c(1365),WARNING" ID="0xec382aab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][AUTODELAY]start timestamp=%u @dadp_tws_ctrl.c(1433),INFO" ID="0xec382ccd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][AUDIO-&gt;BT][RECV_AUDIO_GET_PEER_SYNC]ptr is null @dadp_tws_ctrl.c(1460),WARNING" ID="0xec382da3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][AUDIO-&gt;BT][AUDIO_GET_PEER_SYNC]datalen=%d @dadp_tws_ctrl.c(1464),INFO" ID="0xec382dc5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[DADP][BT-&gt;DSP][SET_RENDER_REQ]IPC MSG SEND. toggle_len=%d, audio_delay=%d audio_scene=%d @dadp_tws_ctrl.c(1540),INFO" ID="0xec383025" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][SET_RENDER_REQ]ipc fail ret=%d @dadp_tws_ctrl.c(1543),ERROR" ID="0xec38303a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][GET_RENDER_REQ]dadp get render req ONCE @dadp_tws_ctrl.c(1578),INFO" ID="0xec383155" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP][GET_RENDER_REQ]dadp get render req TWICE @dadp_tws_ctrl.c(1590),INFO" ID="0xec3831b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][AUDIO_EMPTY_HANDLE]: enter  @dadp_tws_ctrl.c(1621),INFO" ID="0xec3832ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][AUDIO_EMPTY_HANDLE]: Audio Is Not Ampty And Set Active State  @dadp_tws_ctrl.c(1639),WARNING" ID="0xec38333b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[TWS][AUDIO_EMPTY_HANDLE]: g_pkt_empty_counter=%d @dadp_tws_ctrl.c(1654),WARNING" ID="0xec3833b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][AUDIO_EMPTY_HANDLE]: Audio Is Empty And Has Release Device  @dadp_tws_ctrl.c(1656),WARNING" ID="0xec3833c3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][AUDIO_EMPTY_HANDLE]: start timer  @dadp_tws_ctrl.c(1658),WARNING" ID="0xec3833d3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][AUDIO_EMPTY_HANDLE]: TWS_COM_AUDIO_DATA_CTRL  @dadp_tws_ctrl.c(1672),WARNING" ID="0xec383443" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[TWS][AUDIO_EMPTY_HANDLE]: start timer  @dadp_tws_ctrl.c(1675),WARNING" ID="0xec38345b" />
+			</MSG_LOG>

@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="uuid put memcpy fail @gle_uuid.c(19),ERROR" ID="0xedb8009a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[uuid put]memcpy_s fail @gle_uuid.c(23),ERROR" ID="0xedb800ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uuid get memcpy fail @gle_uuid.c(34),ERROR" ID="0xedb80112" />
+			</MSG_LOG>

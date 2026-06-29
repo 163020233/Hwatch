@@ -1,0 +1,168 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_init Failed, Error Code: [0x%08X] @core_ai.c(203),ERROR" ID="0x982e065a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_deinit Failed, Error Code: [0x%08X] @core_ai.c(216),ERROR" ID="0x982e06c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pcm_attr-&gt;samples_per_frame = %u @core_ai.c(244),ERROR" ID="0x982e07a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]pcm_attr-&gt;sample_rate = %u @core_ai.c(245),ERROR" ID="0x982e07aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_ai.c(267),ERROR" ID="0x982e085a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_output_event_callback Failed, Error Code: [0x%08X] @core_ai.c(312),ERROR" ID="0x982e09c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_send_frame Failed, Error Code: [0x%08X] @core_ai.c(343),ERROR" ID="0x982e0aba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]event = %d @core_ai.c(353),INFO" ID="0x982e0b0d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi]frame_sample(%d) should be integral multiple of merge_sample(%d). @core_ai.c(373),ERROR" ID="0x982e0baa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call memcpy_s Failed, Error Code: [0x%08X] @core_ai.c(380),ERROR" ID="0x982e0be2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_get_i2s_attr Failed, Error Code: [0x%08X] @core_ai.c(514),ERROR" ID="0x982e1012" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_rx-&gt;open Failed, Error Code: [0x%08X] @core_ai.c(525),ERROR" ID="0x982e106a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_rx-&gt;set_enable Failed, Error Code: [0x%08X] @core_ai.c(544),ERROR" ID="0x982e1102" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_rx-&gt;close Failed, Error Code: [0x%08X] @core_ai.c(549),ERROR" ID="0x982e112a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_rx-&gt;set_enable Failed, Error Code: [0x%08X] @core_ai.c(567),ERROR" ID="0x982e11ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][ai] Invalid AI Port: 0x%x @core_ai.c(580),ERROR" ID="0x982e1222" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_afe-&gt;open Failed, Error Code: [0x%08X] @core_ai.c(587),ERROR" ID="0x982e125a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_afe-&gt;set_enable Failed, Error Code: [0x%08X] @core_ai.c(603),ERROR" ID="0x982e12da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_afe-&gt;close Failed, Error Code: [0x%08X] @core_ai.c(608),ERROR" ID="0x982e1302" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_afe-&gt;set_enable Failed, Error Code: [0x%08X] @core_ai.c(625),ERROR" ID="0x982e138a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]port = %u @core_ai.c(640),ERROR" ID="0x982e1402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_vad-&gt;open Failed, Error Code: [0x%08X] @core_ai.c(648),ERROR" ID="0x982e1442" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]port_inst-&gt;vad_timeout = %u @core_ai.c(654),INFO" ID="0x982e1475" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_vad-&gt;set_enable Failed, Error Code: [0x%08X] @core_ai.c(669),ERROR" ID="0x982e14ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_vad-&gt;close Failed, Error Code: [0x%08X] @core_ai.c(674),ERROR" ID="0x982e1512" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_vad-&gt;set_enable Failed, Error Code: [0x%08X] @core_ai.c(697),ERROR" ID="0x982e15ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]rx_type = 0x%08X @core_ai.c(749),INFO" ID="0x982e176d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]afe_type = 0x%08X @core_ai.c(750),INFO" ID="0x982e1775" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]vad_type = 0x%08X @core_ai.c(751),INFO" ID="0x982e177d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_open_rx Failed, Error Code: [0x%08X] @core_ai.c(757),ERROR" ID="0x982e17aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_open_afe Failed, Error Code: [0x%08X] @core_ai.c(765),ERROR" ID="0x982e17ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_open_vad Failed, Error Code: [0x%08X] @core_ai.c(775),ERROR" ID="0x982e183a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_close_vad Failed, Error Code: [0x%08X] @core_ai.c(791),ERROR" ID="0x982e18ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_close_afe Failed, Error Code: [0x%08X] @core_ai.c(796),ERROR" ID="0x982e18e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_close_rx Failed, Error Code: [0x%08X] @core_ai.c(801),ERROR" ID="0x982e190a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_get_i2s_attr Failed, Error Code: [0x%08X] @core_ai.c(818),ERROR" ID="0x982e1992" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_rx-&gt;set_attr Failed, Error Code: [0x%08X] @core_ai.c(823),ERROR" ID="0x982e19ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_afe-&gt;set_attr Failed, Error Code: [0x%08X] @core_ai.c(833),ERROR" ID="0x982e1a0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_open_vad Failed, Error Code: [0x%08X] @core_ai.c(842),ERROR" ID="0x982e1a52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_close_vad Failed, Error Code: [0x%08X] @core_ai.c(847),ERROR" ID="0x982e1a7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]rx_type = 0x%08X @core_ai.c(869),ERROR" ID="0x982e1b2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adc_mode = 0x%08X @core_ai.c(888),ERROR" ID="0x982e1bc2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]dev_type = 0x%08X @core_ai.c(906),ERROR" ID="0x982e1c52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]vad_mod = 0x%08X @core_ai.c(925),ERROR" ID="0x982e1cea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ret = %d @core_ai.c(1014),WARNING" ID="0x982e1fb3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_get_module Failed, Error Code: [0x%08X] @core_ai.c(1040),ERROR" ID="0x982e2082" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]port = 0x%08X @core_ai.c(1041),INFO" ID="0x982e208d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_alloc Failed, Error Code: [0x%08X] @core_ai.c(1072),ERROR" ID="0x982e2182" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_calc_frame_buf Failed, Error Code: [0x%08X] @core_ai.c(1080),ERROR" ID="0x982e21c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_open_dev Failed, Error Code: [0x%08X] @core_ai.c(1087),ERROR" ID="0x982e21fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_ai.c(1116),ERROR" ID="0x982e22e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_close_dev Failed, Error Code: [0x%08X] @core_ai.c(1126),ERROR" ID="0x982e2332" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_free Failed, Error Code: [0x%08X] @core_ai.c(1135),ERROR" ID="0x982e237a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_ai.c(1242),ERROR" ID="0x982e26d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_ai.c(1291),ERROR" ID="0x982e285a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_rx_enable Failed, Error Code: [0x%08X] @core_ai.c(1300),ERROR" ID="0x982e28a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_vad_enable Failed, Error Code: [0x%08X] @core_ai.c(1316),ERROR" ID="0x982e2922" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_ai.c(1336),ERROR" ID="0x982e29c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_calc_frame_buf Failed, Error Code: [0x%08X] @core_ai.c(1345),ERROR" ID="0x982e2a0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_dev_attr Failed, Error Code: [0x%08X] @core_ai.c(1351),ERROR" ID="0x982e2a3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]decimal = %d @core_ai.c(1368),ERROR" ID="0x982e2ac2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]decimal = %d @core_ai.c(1375),ERROR" ID="0x982e2afa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]integer = %d @core_ai.c(1380),ERROR" ID="0x982e2b22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ai_check_preci_volume Failed, Error Code: [0x%08X] @core_ai.c(1395),ERROR" ID="0x982e2b9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ai_check_preci_volume Failed, Error Code: [0x%08X] @core_ai.c(1407),ERROR" ID="0x982e2bfa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ai_add_preci_volume Failed, Error Code: [0x%08X] @core_ai.c(1426),ERROR" ID="0x982e2c92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_inst-&gt;dev_afe-&gt;set_volume Failed, Error Code: [0x%08X] @core_ai.c(1432),ERROR" ID="0x982e2cc2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_inst-&gt;dev_afe-&gt;get_volume Failed, Error Code: [0x%08X] @core_ai.c(1451),ERROR" ID="0x982e2d5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_enable Failed, Error Code: [0x%08X] @core_ai.c(1473),ERROR" ID="0x982e2e0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_rx-&gt;set_audio_scene Failed, Error Code: [0x%08X] @core_ai.c(1485),ERROR" ID="0x982e2e6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_enable Failed, Error Code: [0x%08X] @core_ai.c(1493),ERROR" ID="0x982e2eaa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_rx-&gt;set_audio_scene Failed, Error Code: [0x%08X] @core_ai.c(1524),ERROR" ID="0x982e2fa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_rx-&gt;set_audio_scene Failed, Error Code: [0x%08X] @core_ai.c(1543),ERROR" ID="0x982e303a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ai_proc_bmic_disconnect_event Failed, Error Code: [0x%08X] @core_ai.c(1568),ERROR" ID="0x982e3102" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ai_proc_bmic_rec_disconnect_event Failed, Error Code: [0x%08X] @core_ai.c(1575),ERROR" ID="0x982e313a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_output_event_callback Failed, Error Code: [0x%08X] @core_ai.c(1615),ERROR" ID="0x982e327a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ai_port_set_audio_scene Failed, Error Code: [0x%08X] @core_ai.c(1622),ERROR" ID="0x982e32b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_get_module Failed, Error Code: [0x%08X] @core_ai.c(1669),ERROR" ID="0x982e342a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ai = 0x%08X @core_ai.c(1670),INFO" ID="0x982e3435" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ai detach output connector, ai handle: 0x%08X @core_ai.c(1703),WARNING" ID="0x982e353b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ai attach output connector, ai handle: 0x%08X @core_ai.c(1714),WARNING" ID="0x982e3593" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1731),INFO" ID="0x982e361d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1734),INFO" ID="0x982e3635" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_init Failed, Error Code: [0x%08X] @core_ai.c(1740),ERROR" ID="0x982e3662" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_init Failed, Error Code: [0x%08X] @core_ai.c(1746),ERROR" ID="0x982e3692" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1752),INFO" ID="0x982e36c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1760),INFO" ID="0x982e3705" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1762),INFO" ID="0x982e3715" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1767),INFO" ID="0x982e373d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_deinit Failed, Error Code: [0x%08X] @core_ai.c(1773),ERROR" ID="0x982e376a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_deinit Failed, Error Code: [0x%08X] @core_ai.c(1780),ERROR" ID="0x982e37a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1784),INFO" ID="0x982e37c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1790),INFO" ID="0x982e37f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1791),INFO" ID="0x982e37fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1797),INFO" ID="0x982e382d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1798),INFO" ID="0x982e3835" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]port = %d @core_ai.c(1841),ERROR" ID="0x982e398a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1849),INFO" ID="0x982e39cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_ai_check_port Failed, Error Code: [0x%08X] @core_ai.c(1854),ERROR" ID="0x982e39f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1870),INFO" ID="0x982e3a75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_alloc Failed, Error Code: [0x%08X] @core_ai.c(1876),ERROR" ID="0x982e3aa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_open Failed, Error Code: [0x%08X] @core_ai.c(1885),ERROR" ID="0x982e3aea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_add_inst Failed, Error Code: [0x%08X] @core_ai.c(1892),ERROR" ID="0x982e3b22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][ai] create handle: 0x%08X @core_ai.c(1908),WARNING" ID="0x982e3ba3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1909),INFO" ID="0x982e3bad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][ai] destroy handle: 0x%08X @core_ai.c(1917),WARNING" ID="0x982e3beb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1920),INFO" ID="0x982e3c05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @core_ai.c(1924),ERROR" ID="0x982e3c22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_free Failed, Error Code: [0x%08X] @core_ai.c(1936),ERROR" ID="0x982e3c82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1940),INFO" ID="0x982e3ca5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1949),INFO" ID="0x982e3ced" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1953),INFO" ID="0x982e3d0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1962),INFO" ID="0x982e3d55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1965),INFO" ID="0x982e3d6d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][ai] start handle: 0x%08X @core_ai.c(1973),WARNING" ID="0x982e3dab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(1976),INFO" ID="0x982e3dc5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_enable Failed, Error Code: [0x%08X] @core_ai.c(1981),ERROR" ID="0x982e3dea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(1992),INFO" ID="0x982e3e45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][ai] stop handle: 0x%08X @core_ai.c(2000),WARNING" ID="0x982e3e83" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2003),INFO" ID="0x982e3e9d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_enable Failed, Error Code: [0x%08X] @core_ai.c(2009),ERROR" ID="0x982e3eca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2014),INFO" ID="0x982e3ef5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2023),INFO" ID="0x982e3f3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2030),INFO" ID="0x982e3f75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2040),INFO" ID="0x982e3fc5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_attr Failed, Error Code: [0x%08X] @core_ai.c(2046),ERROR" ID="0x982e3ff2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2051),INFO" ID="0x982e401d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2060),INFO" ID="0x982e4065" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2078),INFO" ID="0x982e40f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_inst-&gt;dev_afe-&gt;get_volume_config Failed, Error Code: [0x%08X] @core_ai.c(2110),ERROR" ID="0x982e41f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_inst-&gt;dev_afe-&gt;set_volume_config Failed, Error Code: [0x%08X] @core_ai.c(2128),ERROR" ID="0x982e4282" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_get_volume_config Failed, Error Code: [0x%08X] @core_ai.c(2143),ERROR" ID="0x982e42fa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi][ai]set volume ch %d |type(ana/dig/soft): %d |value: [%d, %d] @core_ai.c(2159),WARNING" ID="0x982e437b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_volume_config Failed, Error Code: [0x%08X] @core_ai.c(2163),ERROR" ID="0x982e439a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2178),INFO" ID="0x982e4415" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2180),INFO" ID="0x982e4425" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2190),INFO" ID="0x982e4475" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_reset_vad Failed, Error Code: [0x%08X] @core_ai.c(2194),ERROR" ID="0x982e4492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2198),INFO" ID="0x982e44b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2208),INFO" ID="0x982e4505" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_get_volume Failed, Error Code: [0x%08X] @core_ai.c(2214),ERROR" ID="0x982e4532" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2218),INFO" ID="0x982e4555" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi]ai set volume, handle: 0x%08X, integer: %d, decimal: %d @core_ai.c(2233),WARNING" ID="0x982e45cb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2243),INFO" ID="0x982e461d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_volume Failed, Error Code: [0x%08X] @core_ai.c(2250),ERROR" ID="0x982e4652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2254),INFO" ID="0x982e4675" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2263),INFO" ID="0x982e46bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ai get mute, ai handle: 0x%08X @core_ai.c(2268),WARNING" ID="0x982e46e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2272),INFO" ID="0x982e4705" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_inst-&gt;dev_afe-&gt;set_mute Failed, Error Code: [0x%08X] @core_ai.c(2287),ERROR" ID="0x982e477a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2302),INFO" ID="0x982e47f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ai set mute, ai handle: 0x%08X @core_ai.c(2305),WARNING" ID="0x982e480b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_mute Failed, Error Code: [0x%08X] @core_ai.c(2313),ERROR" ID="0x982e484a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi][ai] set mute %u |handle: 0x%x |scene: %u @core_ai.c(2322),WARNING" ID="0x982e4893" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2323),INFO" ID="0x982e489d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]decimal = %d @core_ai.c(2331),ERROR" ID="0x982e48da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]integer = %d @core_ai.c(2336),ERROR" ID="0x982e4902" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]cali_volume-&gt;mic_num = %u @core_ai.c(2356),ERROR" ID="0x982e49a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_set_volume Failed, Error Code: [0x%08X] @core_ai.c(2371),ERROR" ID="0x982e4a1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_get_volume Failed, Error Code: [0x%08X] @core_ai.c(2396),ERROR" ID="0x982e4ae2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call dev_rx-&gt;get_status Failed, Error Code: [0x%08X] @core_ai.c(2404),ERROR" ID="0x982e4b22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_get_volume_config Failed, Error Code: [0x%08X] @core_ai.c(2422),ERROR" ID="0x982e4bb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call port_get_volume_config Failed, Error Code: [0x%08X] @core_ai.c(2430),ERROR" ID="0x982e4bf2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_get_buffer_info Failed, Error Code: [0x%08X] @core_ai.c(2448),ERROR" ID="0x982e4c82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_ai.c(2473),INFO" ID="0x982e4d4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ai_get_proc_info Failed, Error Code: [0x%08X] @core_ai.c(2479),ERROR" ID="0x982e4d7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_ai.c(2483),INFO" ID="0x982e4d9d" />
+			</MSG_LOG>

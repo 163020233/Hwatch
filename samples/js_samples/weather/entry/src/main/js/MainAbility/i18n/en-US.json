@@ -1,0 +1,16 @@
+{
+  "strings": {
+    "hello": "Hello",
+    "world": "World",
+    "location_text": "Pidu District",
+    "weather_text": "sunny",
+    "air_text": "good",
+    "notice_text": "It won't rain in the next hour",
+    "yesterday_text": "yesterday",
+    "yesterday_air_text": "excellent",
+    "today_text": "today",
+    "today_air_text": "good",
+    "tomorrow_text": "tomorrow",
+    "tomorrow_air_text": "good"
+  }
+}

@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] avctp msg_id:%u exceeds the upper limit @bg_avctp_msg.c(51),ERROR" ID="0xee2e019a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] avctp msg_handler for msg_id:%u is null @bg_avctp_msg.c(57),ERROR" ID="0xee2e01ca" />
+			</MSG_LOG>

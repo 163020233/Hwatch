@@ -1,0 +1,35 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_COMMAND_COMPLETE len(%u) error @stream2stru.c(37),ERROR" ID="0xed26012a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_NUMBER_OF_COMPLETED_DATA_BLOCKS len(%u) error @stream2stru.c(72),ERROR" ID="0xed260242" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_NUMBER_OF_COMPLETED_DATA_BLOCKS plen(%u) error @stream2stru.c(80),ERROR" ID="0xed260282" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_CONNECTIONLESS_SLAVE_BROADCAST_RECEIVE stru_len(%u) error @stream2stru.c(96),ERROR" ID="0xed260302" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_CONNECTIONLESS_SLAVE_BROADCAST_RECEIVE plen(%u) error @stream2stru.c(103),ERROR" ID="0xed26033a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI][C--&gt;H] HCI_EVI_SYNCHRONOUS_CONNECTION_COMPLETE bd memcpy fail @stream2stru.c(123),ERROR" ID="0xed2603da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_SYNCHRONIZATION_TRAIN_RECEIVED stru_len(%u) fail @stream2stru.c(141),ERROR" ID="0xed26046a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_SYNCHRONIZATION_TRAIN_RECEIVED stru_len(%u) error @stream2stru.c(148),ERROR" ID="0xed2604a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_SYNCHRONIZATION_TRAIN_RECEIVED sub_stru_len(%u) error @stream2stru.c(155),ERROR" ID="0xed2604da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] hci event recv. EVENT_INDEX=0x%x @stream2stru.c(165),INFO" ID="0xed26052d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] hci inquiry result with rssi plen(%u) error @stream2stru.c(186),ERROR" ID="0xed2605d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci inquiry result with rssi memcpy num_responses error @stream2stru.c(200),ERROR" ID="0xed260642" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci inquiry result with rssi memcpy clock_offset error @stream2stru.c(205),ERROR" ID="0xed26066a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_EXTENDED_INQUIRY_RESULT plen(%u) error @stream2stru.c(227),ERROR" ID="0xed26071a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_READ_REMOTE_VERSION_INFORMATION_COMPLETE stru_len(%u) error @stream2stru.c(244),ERROR" ID="0xed2607a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI][HCI_EVI_QOS_SETUP_COMPLETE] memcpy error @stream2stru.c(256),ERROR" ID="0xed260802" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_FLOW_SPECIFICATION_COMPLETE stru_len(%u) error @stream2stru.c(270),ERROR" ID="0xed260872" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_LE_META stru_len(%u) error @stream2stru.c(282),ERROR" ID="0xed2608d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_INQUIRY_RESULT plen(%u) error @stream2stru.c(314),ERROR" ID="0xed2609d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_INQUIRY_RESULT plen(%u) error @stream2stru.c(323),ERROR" ID="0xed260a1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_DISCONNECTION_COMPLETE plen(%u) error @stream2stru.c(340),ERROR" ID="0xed260aa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_READ_REMOTE_SUPPORTED_FEATURES_COMPLETE plen(%u) error @stream2stru.c(359),ERROR" ID="0xed260b3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_EVI_USER_CONFIRMATION_REQUEST plen(%u) error @stream2stru.c(368),ERROR" ID="0xed260b82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_OPC_READ_BUFFER_SIZE plen(%u) error @stream2stru.c(420),ERROR" ID="0xed260d22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] hci cmd complete event recv. OPCODE=0x%x @stream2stru.c(452),INFO" ID="0xed260e25" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][C--&gt;H] HCI_OPC_READ_LOCAL_VERSION_INFORMATION len(%u) error @stream2stru.c(538),ERROR" ID="0xed2610d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci cmd cmplete stream to struct by opcode READ_LOCAL_VERSION_INFORMATION memcpy error @stream2stru.c(545),ERROR" ID="0xed26110a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci cmd cmplete stream to struct by opcode memcpy error @stream2stru.c(562),ERROR" ID="0xed261192" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci le meta stream to struct memcpy error @stream2stru.c(609),ERROR" ID="0xed26130a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci le meta stream to struct UHD_PHY_UPDATE_COMPLETE memcpy error @stream2stru.c(622),ERROR" ID="0xed261372" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci le meta stream to struct PERIODIC_ADVERTISING_SYNC_ESTABLISHED memcpy error @stream2stru.c(635),ERROR" ID="0xed2613da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci le meta stream to struct PERIODIC_ADVERTISING_SYNC_ESTABLISHED_SUFFIX memcpy error @stream2stru.c(645),ERROR" ID="0xed26142a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci le meta stream to struct PERIODIC_ADVERTISING_REPORT memcpy error @stream2stru.c(656),ERROR" ID="0xed261482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]hci le meta stream to struct ADVERTISING_REPORT memcpy error @stream2stru.c(668),ERROR" ID="0xed2614e2" />
+			</MSG_LOG>

@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xaflac_dec_comp.c(290),ERROR" ID="0x99140912" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;bit_depth = %u @xaflac_dec_comp.c(295),ERROR" ID="0x9914093a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xaflac_dec_comp.c(300),ERROR" ID="0x99140962" />
+			</MSG_LOG>

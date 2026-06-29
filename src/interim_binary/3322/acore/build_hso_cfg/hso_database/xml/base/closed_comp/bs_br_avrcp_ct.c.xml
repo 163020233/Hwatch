@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="br media event cbk param error! @bs_br_avrcp_ct.c(40),ERROR" ID="0xee920142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media avrcp connect state error! @bs_br_avrcp_ct.c(45),ERROR" ID="0xee92016a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media avrcp get attribute error result=0x%x @bs_br_avrcp_ct.c(71),ERROR" ID="0xee92023a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media avrcp connect state error! @bs_br_avrcp_ct.c(81),ERROR" ID="0xee92028a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ignore event id event_id:0x%x @bs_br_avrcp_ct.c(112),ERROR" ID="0xee920382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media avrcp connect state error! @bs_br_avrcp_ct.c(122),ERROR" ID="0xee9203d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media avrcp connect state error! @bs_br_avrcp_ct.c(133),ERROR" ID="0xee92042a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media avrcp connect state error! @bs_br_avrcp_ct.c(144),ERROR" ID="0xee920482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_avrcp_ct.c(149),ERROR" ID="0xee9204aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media avrcp connect state error! @bs_br_avrcp_ct.c(162),ERROR" ID="0xee920512" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_avrcp_ct.c(232),ERROR" ID="0xee920742" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_avrcp_ct.c(239),ERROR" ID="0xee92077a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_avrcp_ct.c(256),ERROR" ID="0xee920802" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="init profs avrcp lock fail! @bs_br_avrcp_ct.c(287),ERROR" ID="0xee9208fa" />
+			</MSG_LOG>

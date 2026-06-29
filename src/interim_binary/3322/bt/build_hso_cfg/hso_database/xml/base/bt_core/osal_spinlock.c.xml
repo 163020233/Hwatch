@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="ERROR: param invalid, %p! @osal_spinlock.c(20),INFO" ID="0xa04600a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_spinlock.c(25),INFO" ID="0xa04600cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_spinlock.c(41),INFO" ID="0xa046014d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_spinlock.c(54),INFO" ID="0xa04601b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_spinlock.c(69),INFO" ID="0xa046022d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_spinlock.c(92),INFO" ID="0xa04602e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_spinlock.c(106),INFO" ID="0xa0460355" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_spinlock.c(119),INFO" ID="0xa04603bd" />
+			</MSG_LOG>

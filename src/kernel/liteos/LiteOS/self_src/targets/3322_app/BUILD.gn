@@ -1,0 +1,200 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../build/gn/config.gni")
+if (linx_liteos_contexthub_product) {
+    import("//third_party/bounds_checking_function/libsec_src.gni")
+}
+
+if (system_view_enable) {
+    THIRDPARTY_PATH = "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/vendor/huawei/domains/wearable/thirdparty"
+}
+
+if (defined(LOSCFG_PLATFORM_SH_CE)) {
+    VENDOR_PLATFORM = "ce"
+} else if (defined(LOSCFG_PLATFORM_SH_AN)) {
+    VENDOR_PLATFORM = "an"
+} else if (defined(LOSCFG_PLATFORM_SH_BBK)) {
+    VENDOR_PLATFORM = "bbk"
+}
+
+kernel_module("3322_app") {
+    sources = ["board.c"]
+    sources += ["os_adapt/os_adapt.c"]
+    
+    deps = ["oh_mini"]
+
+    #if (defined(libsec_sources)) {
+    #    sources += libsec_sources
+    #}
+    if (!linx_liteos_contexthub_product) {
+        sources += [
+            #trace
+            "trace/shb_trace.c",
+
+            #basesrc/platform/arch/arm
+            #"vendor/basesrc/platform/arch/arm/los_vendor.S",
+            "vendor/basesrc/platform/arch/arm/startup_iar.s",
+            "vendor/basesrc/platform/arch/arm/arm_exec_dump.c",
+            "vendor/basesrc/platform/arch/arm/arm_stub.c",
+
+            #basesrc/platform/bsp/platdrv/timer
+            "vendor/basesrc/platform/bsp/platdrv/timer/tick.c",
+            "vendor/basesrc/platform/bsp/platdrv/timer/timer.c",
+
+            #basesrc/platform/bsp/platdrv/timestamp
+            "vendor/basesrc/platform/bsp/platdrv/timestamp/timestamp.c",
+
+            #basesrc/platform/component/platdrv/boot
+            "vendor/basesrc/platform/component/platdrv/boot/main.c",
+            "vendor/basesrc/platform/component/platdrv/boot/board_config.c",
+
+            #basesrc/platform/osal/liteos/onetrack
+            "vendor/basesrc/platform/osal/liteos/onetrack/heap_onetrack.c",
+            "vendor/basesrc/platform/osal/liteos/onetrack/liteos_hal_adapt.c",
+            "vendor/basesrc/platform/osal/liteos/onetrack/osal_liteos_onetrack.c",
+
+            #basesrc/platform/osal/liteos
+            "vendor/basesrc/platform/osal/liteos/osal_liteos.c",
+
+            #basesrc/platform/bsp/platdrv/bus
+            "vendor/basesrc/platform/bsp/platdrv/bus/bus_controller.c",
+            "vendor/basesrc/platform/bsp/platdrv/bus/io_host_cfg.c",
+            "vendor/basesrc/platform/bsp/platdrv/bus/uart_host_cfg.c",
+
+            #basesrc/platform/bsp/platdrv/bus/VENDOR_PLATFORM
+            "vendor/basesrc/platform/bsp/platdrv/bus/$VENDOR_PLATFORM/io_plat_cfg.c",
+            "vendor/basesrc/platform/bsp/platdrv/bus/$VENDOR_PLATFORM/uart_plat_cfg.c",
+
+            #basesrc/platform/bsp/platdrv/io
+            "vendor/basesrc/platform/bsp/platdrv/io/pinmux.c",
+
+            #basesrc/platform/bsp/platdrv/uart
+            "vendor/basesrc/platform/bsp/platdrv/uart/printf.c",
+            "vendor/basesrc/platform/bsp/platdrv/uart/shell.c",
+            "vendor/basesrc/platform/bsp/platdrv/uart/uart.c",
+            "vendor/basesrc/platform/bsp/platdrv/uart/uart_core.c",
+        ]
+
+        if (defined(LOSCFG_INTERRUPT_VENDOR)) {
+            sources += ["vendor/basesrc/platform/arch/arm/nvic_hwi.c",]
+        }
+
+        if (defined(LOSCFG_FS_FAT)) {
+            sources += [
+                #basesrc/platform/bsp/platdrv/mmc
+                "vendor/basesrc/platform/bsp/platdrv/mmc/block.c",
+                "vendor/basesrc/platform/bsp/platdrv/mmc/emmc.c",
+                "vendor/basesrc/platform/bsp/platdrv/mmc/emmc_fat.c",
+                "vendor/basesrc/platform/bsp/platdrv/mmc/sdhci.c",
+                "vendor/basesrc/platform/bsp/platdrv/mmc/sdhci_cqtest.c",
+                "vendor/basesrc/platform/bsp/platdrv/mmc/sdhci_zodiac_apus.c",
+
+                #basesrc/platform/bsp/platdrv/partition
+                "vendor/basesrc/platform/bsp/platdrv/partition/partition.c"
+            ]
+        }
+
+        if (CONFIG_SYSTEM_VIEW) {
+            sources += [
+                #THIRDPARTY_PATH/segger/SystemView
+                "$THIRDPARTY_PATH/segger/SystemView/SEGGER/SEGGER_RTT.c",
+                "$THIRDPARTY_PATH/segger/SystemView/SEGGER/SEGGER_SYSVIEW.c",
+                "$THIRDPARTY_PATH/segger/SystemView/Sample/LiteOS/SEGGER_SYSVIEW_LiteOS.c",
+                "$THIRDPARTY_PATH/segger/SystemView/Sample/LiteOS/Config/SEGGER_SYSVIEW_Config_LiteOS.c",
+            ]
+        }
+
+        if (defined(LOSCFG_SHELL)) {
+            sources -= ["vendor/basesrc/platform/bsp/platdrv/uart/shell.c"]
+        }
+    }
+}
+
+config("${LOSCFG_PLATFORM}_public") {
+    include_dirs = ["$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/oh_mini/include",]
+    include_dirs += ["$LITEOSTOPDIR/compat/linux/include"]
+    include_dirs += ["$LITEOSTOPDIR/drivers/base/include"]
+    if (defined(LOSCFG_KERNEL_MEM_BESTFIT_LITTLE)) {
+        include_dirs += ["$LITEOSTOPDIR/$linx_liteos_kernel_path/base/mem/bestfit_little"]
+    } else {
+        include_dirs += ["$LITEOSTOPDIR/$linx_liteos_kernel_path/base/mem/bestfit"]
+    }
+
+    defines = [
+            "__INT32_TYPE__=int",
+            "_UINT32_TYPE__",
+            "USE_HAL_DRIVER",
+            "CONFIG_PRIVATE_DIRENT_STRUCT=1",
+            "_ALL_SOURCE",
+            "__COMPILER_HUAWEILITEOS__",
+    ]
+
+    if (defined(libsec_include_dirs)) {
+        include_dirs += libsec_include_dirs
+        defines += [ "SECUREC_IN_KERNEL=0" ]
+    }
+
+    if (linx_liteos_contexthub_product) {
+    } else {
+        include_dirs += [
+            "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/vendor/include",
+            "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/vendor/include/arm",
+            "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/vendor/ap/platform/$VENDOR_PLATFORM",
+            "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/vendor/platform/$VENDOR_PLATFORM/include",
+        ]
+        if (defined(LOSCFG_FS_FAT)) {
+            include_dirs += [
+                "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/vendor/include/mmc",
+                "$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM/vendor/include/partition",
+            ]
+        }
+        if (CONFIG_SYSTEM_VIEW) {
+            defines += ["CONFIG_SYSTEM_VIEW"]
+            include_dirs += [
+                "$THIRDPARTY_PATH/segger/SystemView/Config",
+                "$THIRDPARTY_PATH/segger/SystemView/SEGGER",
+                "$THIRDPARTY_PATH/segger/SystemView/Sample/LiteOS",
+            ]
+        }
+        defines += [
+            "CONFIG_CPU_ARM",
+            "PLATFORM_CONFIG",
+            "CONFIG_UART",
+            "CONFIG_FTIMER",
+            "__LITEOS_ONETRACK__",
+            "CONFIG_SENSORHUB_TRACE",
+            "CONFIG_IOMCU_BOOTSTRAP",
+            "BSP_DEBUG"
+        ]
+        
+        if (defined(LOSCFG_FS_FAT)) {
+            defines += ["CONFIG_LITEOS_FAT_FS"]
+        }
+
+        if (defined(LOSCFG_PLATFORM_SH_BBK)) {
+            defines += ["BANK_SIZE=32768"]
+        } else {
+            defines += ["BANK_SIZE=65536", "CONFIG_UART_V500", "CONFIG_LITE_SUBSYS"]
+        }
+
+        if (!defined(LOSCFG_LIB_LIBSEC)) {
+            defines += ["LITEOS_ADAPT_SENSORHUB_LOG"]
+        }
+
+        if (defined(LOSCFG_PLATFORM_SH_AN)) {
+            defines += ["CONFIG_TIMER_V510",
+                        "TCM_SIZE=1048576",
+                        "SOC_IOMCU_DTCM_BASE_ADDR=0x20000000",
+                        "CONFIG_SENSORHUB_OH_MINI"
+                        ]
+            if (!defined(LOSCFG_SHELL)) {
+                defines += ["_USE_SHELL"]
+            }
+        } else if (defined(LOSCFG_PLATFORM_SH_CE)) {
+            defines += ["CONFIG_TIMER_V500"]
+        }
+    }
+}

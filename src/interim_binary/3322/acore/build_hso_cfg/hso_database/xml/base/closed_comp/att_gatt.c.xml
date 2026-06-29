@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ATT]gatt hdl value cbk memcpy error @att_gatt.c(68),ERROR" ID="0xec460222" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gatt reg service UUID[0x%04x] start hdl[0x%x], end hdl[0x%x] @att_gatt.c(1022),INFO" ID="0xec461ff5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]gatt reg character memcpy error @att_gatt.c(1123),ERROR" ID="0xec46231a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="gatt reg character UUID[0x%04x] hdl[0x%x], value hdl[0x%x], len[0x%x] properties[0x%x] @att_gatt.c(1131),INFO" ID="0xec46235d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]gatt reg descriptor memcpy error @att_gatt.c(1188),ERROR" ID="0xec462522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]gatt reg descriptor memcpy error @att_gatt.c(1194),ERROR" ID="0xec462552" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="gatt reg descriptor UUID[0x%04x], hdl[0x%x], len[0x%x] @att_gatt.c(1200),INFO" ID="0xec462585" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gatt_server_service_changed get next item NULL! @att_gatt.c(1234),ERROR" ID="0xec462692" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]gatt server multiple variable notify send memcpy error @att_gatt.c(1495),ERROR" ID="0xec462eba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GATT]Cannot find gatt cbk function @att_gatt.c(1764),INFO" ID="0xec463725" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gatt task write default memcpy error @att_gatt.c(2360),ERROR" ID="0xec4649c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]att uuid get memcpy error @att_gatt.c(2609),ERROR" ID="0xec46518a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]att uuid put memcpy ATT_UUID128_LEN error @att_gatt.c(2635),ERROR" ID="0xec46525a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ATT]att uuid put memcpy error @att_gatt.c(2639),ERROR" ID="0xec46527a" />
+			</MSG_LOG>

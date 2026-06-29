@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_RSW]role_switch_release_txpd: txdesc_idx = %x, opcode = 0x%x, txdone = %x @evt_task_classic_role_switch.c(82),WARNING" ID="0x89fa0293" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_RSW]fhs_rx: rxpd_addr_err, con_hdl:0x%x, rxpd_ptr 0x%x, cur_rxpd_ptr 0x%x @evt_task_classic_role_switch.c(140),ERROR" ID="0x89fa0462" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]prepare_fhs: alloc fhs tx buff fail, con_hdl %d @evt_task_classic_role_switch.c(190),INFO" ID="0x89fa05f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_RSW]1st_pkt_rx: rxpd_addr_err, con_hdl %d, rxpd_ptr 0x%x, cur_rxpd_ptr 0x%x @evt_task_classic_role_switch.c(236),ERROR" ID="0x89fa0762" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_RSW]fhs_rx_check: redundant FHS, nb_rx %d, cur_idx %d, next_rxdone %d, next_rxtype %d @evt_task_classic_role_switch.c(268),INFO" ID="0x89fa0865" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_RSW]step_tdd_per: free fhs buf, con_hdl @evt_task_classic_role_switch.c(316),INFO" ID="0x89fa09e5" />
+			</MSG_LOG>

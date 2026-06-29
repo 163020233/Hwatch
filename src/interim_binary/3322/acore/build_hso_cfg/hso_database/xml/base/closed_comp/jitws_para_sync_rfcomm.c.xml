@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][RFCOMM][COLLECT_RFCOMM]collect stable DDLCI=%u, STATUS=%u @jitws_para_sync_rfcomm.c(68),INFO" ID="0xebf40225" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][RFCOMM][COLLECT_RFCOMM]Drop Unstable DDLCI=%u, STATUS=%u @jitws_para_sync_rfcomm.c(73),INFO" ID="0xebf4024d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][RFCOMM][COLLECT_RFCOMM]DJITWS_CollectRfcommData enter @jitws_para_sync_rfcomm.c(83),INFO" ID="0xebf4029d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][RFCOMM]jitws update dlcix from parse data enter dlcix_new-&gt;ddlci=%u, dlcix_new-&gt;cbk_ev=%d @jitws_para_sync_rfcomm.c(113),INFO" ID="0xebf4038d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][RFCOMM] jitws parse dlci0 dlci0-&gt;cid=%u, dlcix_count=%d @jitws_para_sync_rfcomm.c(161),INFO" ID="0xebf4050d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][RFCOMM]jitws parse dlci0 dlci0new-&gt;cid=%u @jitws_para_sync_rfcomm.c(188),INFO" ID="0xebf405e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_RFCOMM_FAIL]Invalid buf or len @jitws_para_sync_rfcomm.c(218),INFO" ID="0xebf406d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][PARSE_RFCOMM_FAIL]no acl link! @jitws_para_sync_rfcomm.c(222),INFO" ID="0xebf406f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][PARSE_RFCOMM_FAIL]parse dlci0 fail, ret = %u @jitws_para_sync_rfcomm.c(229),WARNING" ID="0xebf4072b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][PARSE_RFCOMM_FAIL]parse dlcix fail, ret = %u @jitws_para_sync_rfcomm.c(236),WARNING" ID="0xebf40763" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][PARSE_RFCOMM_FAIL]data error, parse_len(%d), len(%d) @jitws_para_sync_rfcomm.c(242),WARNING" ID="0xebf40793" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS][RFCOMM]jitws collect rfcomm credits ddlci=0x%x, credit_IN=%d, credit_OUT=%d @jitws_para_sync_rfcomm.c(276),INFO" ID="0xebf408a5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS][RFCOMM][JITWS_ParseRfcommCredit_before] ddlci=0x%x, credit_IN=%d, credit_OUT=%d @jitws_para_sync_rfcomm.c(314),INFO" ID="0xebf409d5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[JITWS][RFCOMM][JITWS_ParseRfcommCredit_after] ddlci=0x%x, credit_IN=%d, credit_OUT=%d @jitws_para_sync_rfcomm.c(319),INFO" ID="0xebf409fd" />
+			</MSG_LOG>

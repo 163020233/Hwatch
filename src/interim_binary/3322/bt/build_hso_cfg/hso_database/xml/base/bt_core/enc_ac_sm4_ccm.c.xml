@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] encrypt_generate_ccm_nonce memcpy failed @enc_ac_sm4_ccm.c(81),ERROR" ID="0x89b4028a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] encrypt_generate_ccm_nonce memcpy failed @enc_ac_sm4_ccm.c(95),ERROR" ID="0x89b402fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] encrypt_sm4_ccm_set_aad memcpy failed @enc_ac_sm4_ccm.c(134),ERROR" ID="0x89b40432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] encrypt_sm4_ccm_set_aad memcpy failed @enc_ac_sm4_ccm.c(137),ERROR" ID="0x89b4044a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] encrypt_set_sm4_ccm_task fails: need cancal callback for callback param @enc_ac_sm4_ccm.c(262),WARNING" ID="0x89b40833" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] Trigger SM4-CCM Encryption Engine Fail! @enc_ac_sm4_ccm.c(324),WARNING" ID="0x89b40a23" />
+			</MSG_LOG>

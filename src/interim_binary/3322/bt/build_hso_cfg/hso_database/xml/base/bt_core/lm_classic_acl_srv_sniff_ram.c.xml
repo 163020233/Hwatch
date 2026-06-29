@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sniff_sub]btc ssr bqb support @lm_classic_acl_srv_sniff_ram.c(129),INFO" ID="0x8afe040d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sniff_sub]lm_classic_acl_compute_remote_sniff_subrate, sniff_interval is zero @lm_classic_acl_srv_sniff_ram.c(205),WARNING" ID="0x8afe066b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][sniff_sub]ssr event output: Maximum_Transmit_Latency:%d, Maximum_Receive_Latency:%d, Minimum_Remote_Timeout:%d, Minimum_Local_Timeout:%d @lm_classic_acl_srv_sniff_ram.c(295),INFO" ID="0x8afe093d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][sniff_sub]lmp ssr req output: Max_Sniff_Subrate:%d, Min_Sniff_Mode_Timeout:%d, Sniff_Subrating_Instant:0x%x @lm_classic_acl_srv_sniff_ram.c(350),INFO" ID="0x8afe0af5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][sniff_sub]lmp ssr res output: Max_Sniff_Subrate:%d, Min_Sniff_Mode_Timeout:%d, Sniff_Subrating_Instant:0x%x @lm_classic_acl_srv_sniff_ram.c(382),INFO" ID="0x8afe0bf5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_enter_sniff_mode sniff enter failed @lm_classic_acl_srv_sniff_ram.c(407),WARNING" ID="0x8afe0cbb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][sniff_sub]lm_classic_acl_enter_sniff_mode, local_sniff_sub_req:%d @lm_classic_acl_srv_sniff_ram.c(436),INFO" ID="0x8afe0da5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_add_sniff_hl get offset failed @lm_classic_acl_srv_sniff_ram.c(528),WARNING" ID="0x8afe1083" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][acl]lm_classic_acl_add_sniff_peer get offset failed @lm_classic_acl_srv_sniff_ram.c(576),WARNING" ID="0x8afe1203" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]sear unsniff  @lm_classic_acl_srv_sniff_ram.c(653),INFO" ID="0x8afe146d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]mear unsniff  @lm_classic_acl_srv_sniff_ram.c(659),INFO" ID="0x8afe149d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_sniff_conflict_resched, acl link %d desc is NULL @lm_classic_acl_srv_sniff_ram.c(716),WARNING" ID="0x8afe1663" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_sniff_conflict_resched, no need to check conflict @lm_classic_acl_srv_sniff_ram.c(728),INFO" ID="0x8afe16c5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_sniff_conflict_resched: sniff_offset %d, judge_intv_offset %d, con_hdl %d, conflict %d @lm_classic_acl_srv_sniff_ram.c(740),INFO" ID="0x8afe1725" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]mear unsniff  @lm_classic_acl_srv_sniff_ram.c(818),INFO" ID="0x8afe1995" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L3][BT_SNIFF] Remove sniff interval node con_hdl %d @lm_classic_acl_srv_sniff_ram.c(851),INFO" ID="0x8afe1a9d" />
+			</MSG_LOG>

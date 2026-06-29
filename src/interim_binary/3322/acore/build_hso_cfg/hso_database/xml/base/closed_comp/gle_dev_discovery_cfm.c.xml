@@ -1,0 +1,40 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="update adv params success @gle_dev_discovery_cfm.c(45),INFO" ID="0xed62016d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="discard temp adv params @gle_dev_discovery_cfm.c(50),WARNING" ID="0xed620193" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="set adv params cfm adv_handle = 0x%x @gle_dev_discovery_cfm.c(71),INFO" ID="0xed62023d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="find mgr_adv_item null by adv_handle = 0x%x @gle_dev_discovery_cfm.c(75),ERROR" ID="0xed62025a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="tx_power_value = %d @gle_dev_discovery_cfm.c(90),INFO" ID="0xed6202d5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="opcode = 0x%04x, result = 0x%x, data_offset = %u, data_len = %u @gle_dev_discovery_cfm.c(126),INFO" ID="0xed6203f5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ind_type = 0x%x, status = 0x%x, cur_status = 0x%x, next_status = 0x%x @gle_dev_discovery_cfm.c(168),INFO" ID="0xed620545" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd set adv data cfm fail: input NULL! @gle_dev_discovery_cfm.c(192),ERROR" ID="0xed620602" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle set adv data cfm adv_handle = 0x%x @gle_dev_discovery_cfm.c(197),INFO" ID="0xed62062d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="find mgr_adv_item null by adv_handle = 0x%x @gle_dev_discovery_cfm.c(201),ERROR" ID="0xed62064a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd set adv enable cfm fail: input NULL! @gle_dev_discovery_cfm.c(216),ERROR" ID="0xed6206c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle set adv enable cfm adv_handle = 0x%x @gle_dev_discovery_cfm.c(221),INFO" ID="0xed6206ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="find mgr_adv_item null by adv_handle = 0x%x @gle_dev_discovery_cfm.c(225),WARNING" ID="0xed62070b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="read adv data len cfm cmd_result = 0x%x @gle_dev_discovery_cfm.c(260),ERROR" ID="0xed620822" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="max_adv_data_len = 0x%04x @gle_dev_discovery_cfm.c(264),INFO" ID="0xed620845" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="read adv sets num cfm cmd_result = 0x%x @gle_dev_discovery_cfm.c(280),ERROR" ID="0xed6208c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="supported_adv_sets_num = 0x%x @gle_dev_discovery_cfm.c(284),INFO" ID="0xed6208e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="remove adv set cfm adv_handle = 0x%x @gle_dev_discovery_cfm.c(298),INFO" ID="0xed620955" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle clear adv set cfm @gle_dev_discovery_cfm.c(321),INFO" ID="0xed620a0d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="clear adv set cfm cmd_result = 0x%x @gle_dev_discovery_cfm.c(328),ERROR" ID="0xed620a42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="advertising terminated evt param null @gle_dev_discovery_cfm.c(352),ERROR" ID="0xed620b02" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="status = 0x%x, advertising_handle = 0x%x, connection_handle = 0x%x @gle_dev_discovery_cfm.c(357),INFO" ID="0xed620b2d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="advertising terminated evt failed and ignore @gle_dev_discovery_cfm.c(364),ERROR" ID="0xed620b62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="find adv_item is null by adv_handle = 0x%x @gle_dev_discovery_cfm.c(370),ERROR" ID="0xed620b92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd set scan params cfm fail: input NULL! @gle_dev_discovery_cfm.c(384),ERROR" ID="0xed620c02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd set scan enable cfm scan enabled @gle_dev_discovery_cfm.c(409),INFO" ID="0xed620ccd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd set scan enable cfm scan disabled @gle_dev_discovery_cfm.c(414),INFO" ID="0xed620cf5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle dd set scan enable cfm scan wrong status: 0x%x @gle_dev_discovery_cfm.c(417),ERROR" ID="0xed620d0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd adv report duplicate check fail: input NULL! @gle_dev_discovery_cfm.c(434),ERROR" ID="0xed620d92" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="adv_report is duplicate, addr: %02x:**:**:**:%02x:%02x, event_type: 0x%02x @gle_dev_discovery_cfm.c(455),INFO" ID="0xed620e3d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="adv_report is not duplicate, addr: %02x:**:**:**:%02x:%02x, event_type: 0x%02x @gle_dev_discovery_cfm.c(465),INFO" ID="0xed620e8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv report duplicate list new fail @gle_dev_discovery_cfm.c(472),ERROR" ID="0xed620ec2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv report cfm par null error @gle_dev_discovery_cfm.c(503),ERROR" ID="0xed620fba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv report cfm event_parameter null error @gle_dev_discovery_cfm.c(508),ERROR" ID="0xed620fe2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_report cbk report_info new fail @gle_dev_discovery_cfm.c(515),ERROR" ID="0xed62101a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_report cbk memcpy fail @gle_dev_discovery_cfm.c(521),ERROR" ID="0xed62104a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_report cbk memcpy fail @gle_dev_discovery_cfm.c(527),ERROR" ID="0xed62107a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="config adv filter cfm par null error @gle_dev_discovery_cfm.c(563),ERROR" ID="0xed62119a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="config adv filter cfm event_parameter null error @gle_dev_discovery_cfm.c(568),ERROR" ID="0xed6211c2" />
+			</MSG_LOG>

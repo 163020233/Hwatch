@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="a2dp_audio: sdk callback fail, src: %d, src_cbk %p, snk_cbk %p @sdk_av.c(830),ERROR" ID="0xeb8019f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp_audio: set codec config fail ret=:%x @sdk_av.c(1734),ERROR" ID="0xeb803632" />
+			</MSG_LOG>

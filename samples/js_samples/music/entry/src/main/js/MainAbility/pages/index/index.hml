@@ -1,0 +1,7 @@
+<stack class="stack">
+    <div class="container">
+        <image class="logo_img" src="/common/images/xima_logo.png"></image>
+        <text class="logo_text">{{ $t('strings.logo_text') }}</text>
+        <text class="logo_mini">{{ $t('strings.logo_mini') }}</text>
+    </div>
+</stack>

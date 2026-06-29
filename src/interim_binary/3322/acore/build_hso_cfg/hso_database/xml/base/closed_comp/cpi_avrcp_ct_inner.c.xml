@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(306),ERROR" ID="0xee640992" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(317),ERROR" ID="0xee6409ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(334),ERROR" ID="0xee640a72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(345),ERROR" ID="0xee640aca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(363),ERROR" ID="0xee640b5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(375),ERROR" ID="0xee640bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(388),ERROR" ID="0xee640c22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(405),ERROR" ID="0xee640caa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(423),ERROR" ID="0xee640d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(441),ERROR" ID="0xee640dca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(459),ERROR" ID="0xee640e5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(477),ERROR" ID="0xee640eea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(489),ERROR" ID="0xee640f4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(507),ERROR" ID="0xee640fda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(522),ERROR" ID="0xee641052" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(535),ERROR" ID="0xee6410ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(551),ERROR" ID="0xee64113a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_avrcp_ct_inner.c(569),ERROR" ID="0xee6411ca" />
+			</MSG_LOG>

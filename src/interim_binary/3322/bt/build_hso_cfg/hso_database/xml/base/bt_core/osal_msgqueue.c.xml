@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="QueueCreate fail! ret=%#x. @osal_msgqueue.c(21),INFO" ID="0xa03c00ad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="qName:%s qID=0x%x @osal_msgqueue.c(25),INFO" ID="0xa03c00cd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="QueueWriteCopy fail! ret=%#x qID=0x%lx @osal_msgqueue.c(38),INFO" ID="0xa03c0135" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="QueueWriteHeadCopy fail! ret=%#x qID=0x%lx @osal_msgqueue.c(48),INFO" ID="0xa03c0185" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="QueueReadCopy fail! ret=%#x. @osal_msgqueue.c(57),INFO" ID="0xa03c01cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="QueueDelete fail! ret=%#x. @osal_msgqueue.c(66),INFO" ID="0xa03c0215" />
+			</MSG_LOG>

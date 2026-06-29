@@ -1,0 +1,34 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="WebSocketInit">
+            <text class="todo-title">WebSocketInit</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="WebSocketConnect">
+            <text class="todo-title">WebSocketConnect</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="WebSocketConnectWithOption">
+            <text class="todo-title">WebSocketConnectWithOption</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="SendMessage">
+            <text class="todo-title">SendMessage</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="SendBinary">
+            <text class="todo-title">SendBinary</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="SendAppend">
+            <text class="todo-title">SendAppend</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="CloseConnection">
+            <text class="todo-title">CloseConnection</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="SendMessageLoop">
+            <text class="todo-title">SendMessage循环</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="SendBinaryLoop">
+            <text class="todo-title">SendBinary循环</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="requestInStreamLoop">
+            <text class="todo-title">requestInStream循环</text>
+        </list-item>
+    </list>
+</div>

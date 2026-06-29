@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="open fail! fd=%d, errno=%d @osal_fileops.c(28),INFO" ID="0xa03600e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_fileops.c(33),INFO" ID="0xa036010d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_fileops.c(45),INFO" ID="0xa036016d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_fileops.c(55),INFO" ID="0xa03601bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_fileops.c(64),INFO" ID="0xa0360205" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_fileops.c(75),INFO" ID="0xa036025d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_fileops.c(89),INFO" ID="0xa03602cd" />
+			</MSG_LOG>

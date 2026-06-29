@@ -1,0 +1,9 @@
+<div class="container">
+    <text class="title" on:click="replaceHomefoPage">
+        语言: {{language}}
+        窗口宽度: {{windowWidth}}
+        窗口高度: {{windowHeight}}
+        屏幕密度: {{screenDensity}}
+        窗口形状：{{screenShape}}
+    </text>
+</div>

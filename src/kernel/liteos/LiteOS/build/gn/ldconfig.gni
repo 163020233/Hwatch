@@ -1,0 +1,360 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("$RTOSLITETOPDIR/build/gn/config.gni")
+import("$RTOSLITETOPDIR/build/gn/libstatic.gni")
+liteos_config_file = rebase_path("../../.config")
+
+kconfig_out_dir = rebase_path("$root_out_dir")
+
+LITEOS_MENUCONFIG_H = rebase_path("$root_out_dir/menuconfig.h")
+
+import("$root_out_dir/liteos_kconfig.gni")
+
+LITEOS_LD_OPTS = [
+  "--relax-gp",
+  "-O2",
+  "--gc-sections",
+  "--enjal8m",
+  "--print-memory-usage",
+  "-nostdlib",
+  "-static",
+  "--icf=all", #Constant folding in the link phase, can retain only one of the two same functions.
+]
+LITEOS_LD_PATH = [
+    "-L/$LITEOSTOPDIR/../build/scripts/ld",
+    "-L/$kconfig_out_dir/libs",
+    "-L/$LITEOSTOPDIR/tools/build",
+    "-L/$LITEOSTOPDIR/targets/$LOSCFG_PLATFORM",
+    "-L/${board_toolchain_path}/../lib/clang/15.0.4/lib-lld/rv32imfdcxlinxma_xlinxmb_xlinxmc_xlinxmd_ilp32d",
+    "-L/${board_toolchain_path}/../riscv32-elf/lib-lld/rv32imfdcxlinxma_xlinxmb_xlinxmc_xlinxmd_ilp32d",
+]
+
+if (defined(LOSCFG_SAFETY_KERNEL)) {
+  LITEOS_LD_PATH +=["-T/$kconfig_out_dir/liteos.ld"]
+} else{
+  LITEOS_LD_PATH +=["-T/$kconfig_out_dir/board.ld"]
+}
+
+# Dependent lib, reference los_config.cmake
+LITEOS_DEP_LIBS_EXT = ["-lkernel"]
+  if (defined(LOSCFG_COMPILER_CLANG)) {
+    if (defined(LOSCFG_COMPILER_RISCV_CLANG_UNKNOWN) || defined(LOSCFG_COMPILER_RISCV_CLANG_MUSL)) {
+        LITEOS_DEP_LIBS_EXT += ["-lclang_rt.builtins-riscv32"]
+    }
+ }
+ if (defined(LOSCFG_KERNEL_CPPSUPPORT)) {
+        if (defined(LOSCFG_COMPILER_CLANG)) {
+            LITEOS_DEP_LIBS_EXT += [
+                "-lc++",
+                "-lc++abi",
+                "-lunwind",
+            ]
+        }
+ }
+ if (defined(LOSCFG_SAFETY_KERNEL)) {
+  if (defined(LOSCFG_LIB_LIBM)) {
+    LITEOS_DEP_LIBS_EXT += ["-lm"]
+  }
+
+  LITEOS_DEP_LIBS_EXT += ["-lusr"]
+  LITEOS_DEP_LIBS_EXT += ["-loh_mini"]
+  LITEOS_DEP_LIBS_EXT += ["-lbase"]
+  LITEOS_DEP_LIBS_EXT += ["-linit"]
+  LITEOS_DEP_LIBS_EXT += ["-lsyscalls"]
+  LITEOS_DEP_LIBS_EXT += ["-ldrvbox"]
+  LITEOS_DEP_LIBS_EXT += ["-lusrdrvlib"]
+  LITEOS_DEP_LIBS_EXT += ["-lriscv"]
+  LITEOS_DEP_LIBS_EXT += ["-ltargets"]
+  LITEOS_DEP_LIBS_EXT += ["-lsec"]
+  LITEOS_DEP_LIBS_EXT += ["-lc"]
+  if (defined(LOSCFG_KERNEL_DYNLOAD)) {
+    LITEOS_DEP_LIBS_EXT += ["-ldynkernel"]
+  }
+  if (defined(LOSCFG_FS_FAT)) {
+    LITEOS_DEP_LIBS_EXT += ["-lfat"]
+  }
+  if (defined(LOSCFG_FS_FAT_CACHE)) {
+    LITEOS_DEP_LIBS_EXT += ["-lbcache"]
+  }
+  if (defined(LOSCFG_FS_VFS)) {
+    LITEOS_DEP_LIBS_EXT += ["-lvfs"]
+    if (defined(LOSCFG_COMPAT_LINUX)) {
+      LITEOS_DEP_LIBS_EXT += ["-lmulti_partition"]
+    }
+  }
+
+  if (defined(LOSCFG_TEST_FS_FAT)) {
+    LITEOS_DEP_LIBS_EXT += ["-ltest_fs_vfat"]
+  }
+
+  if (defined(LOSCFG_TEST_FS_PROC)) {
+    LITEOS_DEP_LIBS_EXT += ["-ltest_fs_proc"]
+  }
+
+  if (defined(LOSCFG_TEST_FS_VFS)) {
+    LITEOS_DEP_LIBS_EXT += ["-ltest_fs_vfs"]
+  }
+
+  if (defined(LOSCFG_TEST_MTD_FAT)) {
+    LITEOS_DEP_LIBS_EXT += ["-ltest_mtd_fat"]
+  }
+
+  if (defined(LOSCFG_FS_VFS_BLOCK_DEVICE)) {
+      LITEOS_DEP_LIBS_EXT += ["-lbch"]
+  }
+  if (defined(LOSCFG_DRIVER_DISK)) {
+    LITEOS_DEP_LIBS_EXT += ["-ldisk"]
+  }
+  if (defined(LOSCFG_FS_PROC)) {
+    LITEOS_DEP_LIBS_EXT += ["-lproc"]
+  }
+  if (defined(LOSCFG_DRIVERS_MMC)) {
+      LITEOS_DEP_LIBS_EXT += ["-lmmc"]
+  }
+  if (defined(LOSCFG_KERNEL_CPPSUPPORT)) {
+      LITEOS_DEP_LIBS_EXT += ["-lcppsupport"]
+  }
+
+  if (defined(LOSCFG_COMPAT_POSIX)) {
+      LITEOS_DEP_LIBS_EXT += ["-lposix"]
+  }
+  if (defined(LOSCFG_COMPAT_CMSIS)) {
+      LITEOS_DEP_LIBS_EXT += ["-lcmsis_user"]
+      LITEOS_DEP_LIBS_EXT += ["-lcmsis_kernel"]
+  }
+
+  if (!defined(LOSCFG_INTERRUPT_VENDOR)) {
+    LITEOS_DEP_LIBS_EXT += ["-linterrupt"]
+  }
+
+  if (defined(LOSCFG_DRIVERS_BASE)) {
+    LITEOS_DEP_LIBS_EXT += ["-ldriverbase"]
+  }
+
+  if (defined(LOSCFG_COMPAT_LINUX)) {
+    LITEOS_DEP_LIBS_EXT += ["-llinux"]
+  }
+
+  if (defined(LOSCFG_FS_COMPAT_NUTTX)) {
+    LITEOS_DEP_LIBS_EXT += ["-lcompat"]
+  }
+
+  if (defined(LOSCFG_TEST)) {
+    LITEOS_DEP_LIBS_EXT += ["-ltest_s"]
+    LITEOS_DEP_LIBS_EXT += ["-ldrvboxtest"]
+    LITEOS_DEP_LIBS_EXT += ["-lboxatest"]
+    LITEOS_DEP_LIBS_EXT += ["-lboxbtest"]
+  } else {
+    LITEOS_DEP_LIBS_EXT += ["-ltboxA"]
+    LITEOS_DEP_LIBS_EXT += ["-ltboxB"]
+  }
+}
+####Kernel command####
+#task_shellcmd.c -utask_shellcmd
+#cpup_shellcmd.c -ucpup_shellcmd
+#shell_shellcmd.c -uhelp_shellcmd
+#mempt_shellcmd.c -ufree_shellcmd -umemcheck_shellcmd -uuname_shellcmd -ureadreg_shellcmd -uwritereg_shellcmd
+#sem_shellcmd.c -usem_shellcmd
+#sysinfo_shellcmd.c -usysteminfo_shellcmd
+#swtmr_shellcmd.c -uswtmr_shellcmd
+#hwi_shell.c -uhwi_shellcmd
+#lpm_shellcmd.c -ulpm_shellcmd
+#dynload_shellcmd.c -uldinit_shellcmd -ucall_shellcmd -ufindsym_shellcmd -ulddrop_shellcmd -umclose_shellcmd -umopen_shellcmd
+LITEOS_TABLES_KERNEL_LDFLAGS = [
+    "-utask_shellcmd",
+    "-ucpup_shellcmd",
+    "-uhelp_shellcmd",
+    "-ufree_shellcmd",
+    "-usem_shellcmd",
+    "-umutex_shellcmd",
+    "-uqueue_shellcmd",
+    "-usysteminfo_shellcmd",
+    "-uswtmr_shellcmd",
+    "-uhwi_shellcmd",
+    "-ustack_shellcmd",
+    "-ulpm_shellcmd",
+    "-ufindsym_shellcmd",
+    "-uzbar_scan_shellcmd",
+    "-udmesg_shellcmd",
+    "-udate_shellcmd",
+    "-ureadExcInfo_shellcmd",
+    "-uwatch_shellcmd",
+    "-udeadlock_shellcmd",
+    "-uschedstatstart_shellcmd",
+    "-uschedstatstop_shellcmd",
+    "-uschedstatinfo_shellcmd",
+]
+
+####Net command####
+#api_shell.c -uarp_shellcmd -uifconfig_shellcmd -uping_shellcmd -utftp_shellcmd -unetstat_shellcmd -udns_shellcmd -untpdate_shellcmd
+#telnet_loop.c -utelnet_shellcmd
+LITEOS_TABLES_NET_LDFLAGS = [ 
+    "-uarp_shellcmd",
+    "-utelnet_shellcmd",
+]
+
+####FS command####
+#vfs_shellcmd.c -ucd_shellcmd -ucat_shellcmd -uls_shellcmd -upwd_shellcmd -urm_shellcmd -urmdir_shellcmd -umkdir_shellcmd -utouch_shellcmd -uumount_shellcmd -umount_shellcmd -usync_shellcmd -ustatfs_shellcmd -ucp_shellcmd
+#fat_shellcmd.c -uformat_shellcmd
+#mtd_shellcmd.c -upartition_shellcmd
+#proc_shellcmd.c -uwriteproc_shellcmd
+#disk_shellcmd.c -upartinfo_shellcmd
+LITEOS_TABLES_FS_LDFLAGS = [ 
+    "-ucd_shellcmd",
+    "-uformat_shellcmd",
+    "-upartition_shellcmd",
+    "-uwriteproc_shellcmd",
+    "-upartinfo_shellcmd",
+    "-uumount_shellcmd",
+    "-umount_shellcmd",
+    "-uvirstatfs_shellcmd",
+    "-ulsfd_shellcmd",
+    "-ufatfsck_shellcmd",
+    "-udd_shellcmd",
+]
+
+####Tools command####
+#iperf_shell.c -uiperf_shellcmd
+LITEOS_TABLES_TOOLS_LDFLAGS = [
+    "-uiperf_shellcmd",
+    "-ulwip_dump_shellcmd",
+]
+
+####Extend command####
+#reset_shell.c -ureset_shellcmd
+#bcm_wifi.c -ustartap_shellcmd -ustopap_shellcmd -ubcmwifi_shellcmd
+#misc_shell.c -uhimd_shellcmd -uhimm_shellcmd
+#ddrs_shell.c -uhiddrs_shellcmd
+#nand_shell.c -unand_bad_shellcmd
+#i2c_shell.c -ui2c_read_shellcmd -ui2c_write_shellcmd
+#spi_shell.c -ussp_read_shellcmd -ussp_write_shellcmd
+#uart_shell.c -uuart_config_shellcmd -uuart_write_shellcmd -uuart_read_shellcmd -uuart_close_shellcmd
+LITEOS_TABLES_EXTEND_LDFLAGS = [
+    "-ureset_shellcmd",
+    "-ustartap_shellcmd",
+    "-uhimd_shellcmd",
+    "-uhiddrs_shellcmd",
+    "-unand_bad_shellcmd",
+    "-ui2c_read_shellcmd",
+    "-ussp_read_shellcmd",
+    "-uuart_config_shellcmd",
+    "-uusb_debug_shellcmd",
+]
+
+LITEOS_TABLES_DRIVER_LDFLAGS = [
+    "-ui2c_init",
+    "-ugpio_init",
+    "-uregulator_init",
+    "-umtd_init_list",
+    "-uhispi_init",
+    "-uhifmc100_init",
+    "-uhisfc350_init",
+    "-unand_hifmc100_init",
+    "-uhifmc100_parallel_init",
+    "-usd_mci_init",
+    "-uhi_mci_init",
+    "-upl011_init",
+    "-uhinfc620_init",
+    "-uhisnfc100_init",
+    "-uregulator_machine_init",
+    "-uhisimeidia_regulator_init",
+    "-ucpufreq_init",
+    "-uhisilicon_cpufreq_init",
+    "-ucpufreq_machine_init",
+    "-udevfreq_init",
+    "-umedia_devfreq_init",
+    "-udevfreq_machine_init",
+    "-uhieth_machine_init",
+    "-uhigmac_machine_init",
+    "-umachine_init"
+]
+
+####FS MAP####
+#fs_mount.c -ug_fsmap_wow -ug_fsmap_wow_end
+LITEOS_TABLES_WOW_LDFLAGS = LITEOS_TABLES_DRIVER_LDFLAGS
+LITEOS_TABLES_WOW_LDFLAGS += [
+    "-ujffs_fsmap",
+    "-uprocfs_fsmap",
+    "-ug_fsmap_wow",
+]
+
+#fs_mount.c -ug_fsmap_scatter -ug_fsmap_scatter_end
+LITEOS_TABLES_SCATTER_LDFLAGS = LITEOS_TABLES_DRIVER_LDFLAGS
+LITEOS_TABLES_SCATTER_LDFLAGS += [
+    "-ug_fsmap_scatter",
+]
+
+LITEOS_TABLES_FSMAP_LDFLAGS = [
+    "-uramfs_fsmap",
+    "-unfs_fsmap",
+    "-ufat_fsmap",
+    "-uyaffs_fsmap",
+    "-ulittlefs_fsmap",
+    "-uromfs_fsmap",
+    "-ug_fsmap",
+]
+
+LITEOS_TABLES_TRUSTZONE_LDFLAGS = [
+    "-uArchSecureAllocContext",
+]
+
+LITEOS_TABLES_ASLR_LDFLAGS = [
+    "-ukernel_startup",
+    "-ug_aslrRelInfo",
+    "-ug_aslrTableInfo",
+]
+
+LITEOS_TABLES_HPL_LDFLAGS = [
+    "-ug_hplFormatNum",
+    "-ug_metadata",
+]
+
+LITEOS_TABLES_INIT_LEVEL_LDFLAGS = [
+    "-uinitFn_OsLmsInit",
+    "-uinitFn_OsWowWriteFlashTaskCreate",
+    "-uinitFn_OsTraceInit",
+    "-uinitFn_OsDynloadInit",
+    "-uinitFn_OsHwiBottomHalfInit",
+    "-uinitFn_OsHwiInit",
+    "-uinitFn_OsMpInit",
+    "-uinitFn_OsSchedInit",
+    "-uinitFn_OsSwtmrInit",
+    "-uinitFn_OsIdleTaskCreate",
+    "-uinitFn_OsTaskMonInit",
+    "-uinitFn_OsTickInit",
+    "-uinitFn_OsRegister",
+    "-uinitFn_OsAppTaskCreate",
+    "-uinitFn_ArchExcInit",
+    "-uinitFn_OsTestInit",
+    "-uinitFn_OsDriverBaseInit",
+    "-uinitFn_OsVfsInit",
+    "-uinitFn_DoInitcalls",
+    "-uinitFn_OsWorkqueueInit",
+    "-uinitFn_HrtimersInit",
+    "-uinitFn_DoOsLkLoggerInit",
+    "-uinitFn_OsDmesgInit",
+    "-uinitFn_DoOsMemSystemInit",
+    "-uinitFn_OsMemExcInteractionDoInit",
+    "-uinitFn_OsTaskInit",
+    "-uinitFn_OsIpcInit",
+    "-uinitFn_OsCpupInit",
+    "-uinitFn_OsHplInit",
+    "-uinitFn_OsLpConfigInit",
+]
+
+LITEOS_TABLES_LDFLAGS =
+    LITEOS_TABLES_KERNEL_LDFLAGS +
+    LITEOS_TABLES_NET_LDFLAGS +
+    LITEOS_TABLES_FS_LDFLAGS +
+    LITEOS_TABLES_TOOLS_LDFLAGS +
+    LITEOS_TABLES_EXTEND_LDFLAGS +
+    LITEOS_TABLES_FSMAP_LDFLAGS +
+    LITEOS_TABLES_WOW_LDFLAGS +
+    LITEOS_TABLES_SCATTER_LDFLAGS +
+    LITEOS_TABLES_DRIVER_LDFLAGS +
+    LITEOS_TABLES_TRUSTZONE_LDFLAGS +
+    LITEOS_TABLES_ASLR_LDFLAGS +
+    LITEOS_TABLES_INIT_LEVEL_LDFLAGS

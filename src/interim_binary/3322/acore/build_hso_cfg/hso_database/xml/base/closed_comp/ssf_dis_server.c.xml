@@ -1,0 +1,29 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DIS] start server callback server_id:0x%x handle:0x%x status:0x%x @ssf_dis_server.c(48),INFO" ID="0xefb80185" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] start server callback, success register dis server @ssf_dis_server.c(52),ERROR" ID="0xefb801a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] read cb para is NULL! @ssf_dis_server.c(61),INFO" ID="0xefb801ed" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][DIS] read callback server_id:0x%x conn_id:0x%x handle:0x%x type:0x%x status:0x%x @ssf_dis_server.c(66),INFO" ID="0xefb80215" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] write cb para is NULL! @ssf_dis_server.c(74),INFO" ID="0xefb80255" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][DIS] write callback server_id:0x%x conn_id:0x%x handle:0x%x type:0x%x status:0x%x @ssf_dis_server.c(79),INFO" ID="0xefb8027d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DIS] notify property trans data ret:0x%x property_index:%d @ssf_dis_server.c(98),ERROR" ID="0xefb80312" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] notify property trans data success @ssf_dis_server.c(100),INFO" ID="0xefb80325" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] set_manufacture_info fail, param err! @ssf_dis_server.c(110),ERROR" ID="0xefb80372" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] set_manufacture_info, len = %u @ssf_dis_server.c(113),INFO" ID="0xefb8038d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] set manufacture_info fail ret:0x%x @ssf_dis_server.c(117),ERROR" ID="0xefb803aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] set_device_model_info fail, param err! @ssf_dis_server.c(128),ERROR" ID="0xefb80402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] set_device_model_info, len = %u @ssf_dis_server.c(131),INFO" ID="0xefb8041d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] set_device_model_info fail ret:0x%x @ssf_dis_server.c(135),ERROR" ID="0xefb8043a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] set_device_name fail, param err! @ssf_dis_server.c(146),ERROR" ID="0xefb80492" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] set_device_name, len = %u @ssf_dis_server.c(149),INFO" ID="0xefb804ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] set_device_name fail ret:0x%x @ssf_dis_server.c(153),ERROR" ID="0xefb804ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] set_device_appearance info fail, param err! @ssf_dis_server.c(164),ERROR" ID="0xefb80522" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] set_device_appearance, device_appearance = 0x%x @ssf_dis_server.c(167),INFO" ID="0xefb8053d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] set_device_appearance info fail ret:0x%x @ssf_dis_server.c(174),ERROR" ID="0xefb80572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] register server fail, state error @ssf_dis_server.c(184),ERROR" ID="0xefb805c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] register server fail ret:0x%x @ssf_dis_server.c(189),ERROR" ID="0xefb805ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] register callback fail ret:0x%x @ssf_dis_server.c(202),ERROR" ID="0xefb80652" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DIS] unregister server fail! ret 0x%x @ssf_dis_server.c(211),ERROR" ID="0xefb8069a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] value print err, param err! @ssf_dis_server.c(222),ERROR" ID="0xefb806f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] malloc err! @ssf_dis_server.c(229),ERROR" ID="0xefb8072a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DIS] log data copy err! @ssf_dis_server.c(234),ERROR" ID="0xefb80752" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[SSF][DIS] value: %d %d %d %d %d %d @ssf_dis_server.c(243),ERROR" ID="0xefb8079a" />
+			</MSG_LOG>

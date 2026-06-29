@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[hifi][afe_manager_use_mic_dec] mic_dec_ch: %d, mic_dec_use_cnt: %u. @afe_manager.c(30),INFO" ID="0x980800f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][afe_manager_free_mic_dec] mic_dec_ch: %d, mic_dec_use_cnt: %u. @afe_manager.c(50),INFO" ID="0x98080195" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][afe_manager_get_mic_dec_use_cnt] mic_dec_ch: %d, mic_dec_use_cnt: %u. @afe_manager.c(61),INFO" ID="0x980801ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][afe_manager_use_adc] adc_ch: %d, adc_use_cnt: %u. @afe_manager.c(75),INFO" ID="0x9808025d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][afe_manager_free_adc] adc_ch: %d, adc_use_cnt: %u. @afe_manager.c(95),INFO" ID="0x980802fd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][afe_manager_get_adc_use_cnt] adc_ch: %d, adc_use_cnt: %u. @afe_manager.c(105),INFO" ID="0x9808034d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][afe_manager_use_dac] dac_ch: %d, dac_use_cnt: %u. @afe_manager.c(157),INFO" ID="0x980804ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][afe_manager_free_dac] dac_ch: %d, dac_use_cnt: %u. @afe_manager.c(177),INFO" ID="0x9808058d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][afe_manager_get_dac_use_cnt] dac_ch: %d, dac_use_cnt: %u. @afe_manager.c(188),INFO" ID="0x980805e5" />
+			</MSG_LOG>

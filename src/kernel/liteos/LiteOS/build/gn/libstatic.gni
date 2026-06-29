@@ -1,0 +1,116 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("config.gni")
+import("$root_out_dir/liteos_kconfig.gni")
+
+if (defined(LOSCFG_ARCH_ARM_AARCH32)) {
+    arch = "arm"
+} else if (defined(LOSCFG_ARCH_ARM_AARCH64)) {
+    arch = "aarch64"
+} else if (defined(LOSCFG_ARCH_RISCV_RV32IMC)) {
+    arch = "riscv32"
+}
+
+LITEOS_GN_MEMORY_INCLUDE = []
+
+if (defined(LOSCFG_MEM_BESTFIT)) {
+    LITEOS_GN_MEMORY_INCLUDE += [
+        "${LITEOSTOPDIR}/${rtos_lite_kernel_path}/base/mem/bestfit",
+    ]
+}
+
+if (defined(LOSCFG_MEM_BESTFIT_LITTLE)) {
+    LITEOS_GN_MEMORY_INCLUDE += [
+        "${LITEOSTOPDIR}/${rtos_lite_kernel_path}/base/mem/bestfit_little",
+    ]
+}
+
+if (defined(LOSCFG_MEM_SLAB_EXTENTION)) {
+    LITEOS_GN_MEMORY_INCLUDE += [
+        "${LITEOSTOPDIR}/${rtos_lite_kernel_path}/base/mem/slab",
+    ]
+}
+
+if (defined(LOSCFG_MEM_TASK_STAT)) {
+    LITEOS_GN_MEMORY_INCLUDE += [
+        "${LITEOSTOPDIR}/${rtos_lite_kernel_path}/base/mem/common/memstat",
+    ]
+}
+
+LITEOS_GN_SYSCALLS_KERNEL_INCLUDE = [
+    "${LITEOSTOPDIR}/$arch_path/riscv/include",
+    "${LITEOSTOPDIR}/$arch_path/riscv/syscalls/include",
+    "${LITEOSTOPDIR}/$arch_path/riscv/syscalls/include/kernel",
+]
+
+LITEOS_GN_SYSCALLS_USR_INCLUDE = [
+    "${LITEOSTOPDIR}/$arch_path/riscv/include",
+    "${LITEOSTOPDIR}/$arch_path/riscv/syscalls/include",
+    "${LITEOSTOPDIR}/$arch_path/riscv/syscalls/include/usr",
+]
+
+LITEOS_GN_KERNEL_INCLUDE = [
+    "${LITEOSTOPDIR}/${rtos_lite_kernel_path}/include",
+    "${LITEOSTOPDIR}/${rtos_lite_kernel_path}/base/include",
+    "${LITEOSTOPDIR}/${rtos_lite_kernel_path}/extended/include",
+]
+
+LITEOS_GN_USR_INCLUDE = [
+    "${LITEOSTOPDIR}/targets/$LOSCFG_PLATFORM/include",
+    "${LITEOSTOPDIR}/targets/$LOSCFG_PLATFORM/box/boxes_cfg",
+    "${LITEOSTOPDIR}/targets/$LOSCFG_PLATFORM/box/usrdrvlib",
+    "${LITEOSTOPDIR}/targets/$LOSCFG_PLATFORM/vendor/include",
+]
+
+LITEOS_GN_LIB_INCLUDE = [
+    "${LITEOSTOPDIR}/lib/liteos_libc/include",
+    "${LITEOSTOPDIR}/lib/liteos_libc/time",
+    "${LITEOSTOPDIR}/lib/libc/include",
+    "${RTOSLITETOPDIR}/platform/huawei_secure_c/include",
+]
+
+LITEOS_GN_OPENSOURCE_INCLUDE = [
+    "${LITEOSTOPDIR}/compat/linux/include",
+    "${LITEOSTOPDIR}/compat/nuttx/include",
+    "${RTOSLITETOPDIR}/open_source/musl/arch/${arch}",
+    "${RTOSLITETOPDIR}/open_source/musl/arch/generic",
+    "${RTOSLITETOPDIR}/open_source/musl/include",
+]
+
+LITEOS_GN_DRIVER_INCLUDE = [
+    "${LITEOSTOPDIR}/drivers/interrupt/include",
+    "${LITEOSTOPDIR}/drivers/timer/include",
+]
+
+LITEOS_GN_TEST_INCLUDE = [
+    "${LITEOSTOPDIR}/${test_path}/include",
+]
+
+LITEOS_GN_COMPAT_INCLUDE = []
+if (defined(LOSCFG_COMPAT_POSIX)) {
+    LITEOS_GN_COMPAT_INCLUDE += [
+        "$LITEOSTOPDIR/compat",
+    ]
+}
+
+if (defined(LOSCFG_COMPAT_CMSIS)) {
+    LITEOS_GN_COMPAT_INCLUDE += [
+        "$LITEOSTOPDIR/compat/cmsis",
+    ]
+    if (defined(LOSCFG_COMPAT_CMSIS_VER_2)) {
+        LITEOS_GN_COMPAT_INCLUDE += [
+            "$RTOSLITETOPDIR/$open_source_path/CMSIS/CMSIS/RTOS2/Include",
+        ]
+    }
+}
+
+LITEOS_GN_KSTATIC_INCLUDE = LITEOS_GN_SYSCALLS_KERNEL_INCLUDE + LITEOS_GN_KERNEL_INCLUDE +
+    LITEOS_GN_USR_INCLUDE + LITEOS_GN_MEMORY_INCLUDE + LITEOS_GN_LIB_INCLUDE +
+    LITEOS_GN_OPENSOURCE_INCLUDE + LITEOS_GN_DRIVER_INCLUDE + LITEOS_GN_TEST_INCLUDE + LITEOS_GN_COMPAT_INCLUDE
+
+LITEOS_GN_USTATIC_INCLUDE = LITEOS_GN_SYSCALLS_USR_INCLUDE + LITEOS_GN_KERNEL_INCLUDE +
+    LITEOS_GN_USR_INCLUDE + LITEOS_GN_MEMORY_INCLUDE + LITEOS_GN_LIB_INCLUDE +
+    LITEOS_GN_OPENSOURCE_INCLUDE + LITEOS_GN_DRIVER_INCLUDE + LITEOS_GN_TEST_INCLUDE + LITEOS_GN_COMPAT_INCLUDE

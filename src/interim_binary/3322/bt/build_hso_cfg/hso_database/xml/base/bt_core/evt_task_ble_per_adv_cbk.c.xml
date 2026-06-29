@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[PER ADV]evt_task_ble_per_adv_common_cbk: prog_num is 0! @evt_task_ble_per_adv_cbk.c(33),ERROR" ID="0x8a96010a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[PER ADV]next_ts=0x%x, isr_ts=0x%x @evt_task_ble_per_adv_cbk.c(58),INFO" ID="0x8a9601d5" />
+			</MSG_LOG>

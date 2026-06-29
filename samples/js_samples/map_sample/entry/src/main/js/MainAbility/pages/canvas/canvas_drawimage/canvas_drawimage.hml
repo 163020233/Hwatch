@@ -1,0 +1,8 @@
+<div class="container" onswipe="swipeExit">
+        <stack class="game">
+                <canvas class="canvas" ref="canvas"></canvas>
+        </stack>
+        <input class="game_level_btn_confirm" type="button" value="{{ orientation }}"
+               on:click="Changeangle()"/>
+</div>
+

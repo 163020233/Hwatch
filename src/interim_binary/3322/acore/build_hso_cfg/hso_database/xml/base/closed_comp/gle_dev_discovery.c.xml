@@ -1,0 +1,31 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="gle dd mgr free adv item @gle_dev_discovery.c(42),INFO" ID="0xed600155" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd mgr item cleanup @gle_dev_discovery.c(64),INFO" ID="0xed600205" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd mgr cleanup @gle_dev_discovery.c(79),INFO" ID="0xed60027d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bg_dl_list_count = %u, supported_adv_sets_num = 0x%x @gle_dev_discovery.c(101),INFO" ID="0xed60032d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd mgr adv item node new fail @gle_dev_discovery.c(108),ERROR" ID="0xed600362" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv handle[0x%x] already enabled, please disable first @gle_dev_discovery.c(134),WARNING" ID="0xed600433" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="data_total_len = %u, mgr_data_offset = %u error @gle_dev_discovery.c(174),ERROR" ID="0xed600572" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="data_total_len = %u, mgr_data_offset = %u error @gle_dev_discovery.c(210),ERROR" ID="0xed600692" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="mgr_adv_item-&gt;status = 0x%x @gle_dev_discovery.c(242),INFO" ID="0xed600795" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="adv_data_offset = %u, adv_data_len = %u @gle_dev_discovery.c(248),INFO" ID="0xed6007c5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="scan_rsp_data_offset = %u, scan_rsp_data_len = %u @gle_dev_discovery.c(270),INFO" ID="0xed600875" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv_handle = 0x%x @gle_dev_discovery.c(305),INFO" ID="0xed60098d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create adv_item is null @gle_dev_discovery.c(310),WARNING" ID="0xed6009b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="mgr_adv_item-&gt;adv_status = 0x%x @gle_dev_discovery.c(373),INFO" ID="0xed600bad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no mgr_adv_item to be disabled @gle_dev_discovery.c(381),WARNING" ID="0xed600beb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="adv_handle = 0x%x, enable = 0x%x @gle_dev_discovery.c(402),INFO" ID="0xed600c95" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="find adv_item is null by adv_handle = 0x%x @gle_dev_discovery.c(406),ERROR" ID="0xed600cb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="mgr_adv_item-&gt;status = 0x%x error @gle_dev_discovery.c(414),ERROR" ID="0xed600cf2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="adv_handle = 0x%x, enable = 0x%x, adv_status = 0x%x @gle_dev_discovery.c(425),INFO" ID="0xed600d4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_status already enabled @gle_dev_discovery.c(427),WARNING" ID="0xed600d5b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_status not enabled @gle_dev_discovery.c(429),WARNING" ID="0xed600d6b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gle remove adv adv_hanldle = 0x%x @gle_dev_discovery.c(447),INFO" ID="0xed600dfd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="find adv_item null by adv_handle = 0x%x @gle_dev_discovery.c(451),ERROR" ID="0xed600e1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_status already enabled, please disable first @gle_dev_discovery.c(456),WARNING" ID="0xed600e43" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle clear adv @gle_dev_discovery.c(474),INFO" ID="0xed600ed5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd mgr enable scan scan status has been enable @gle_dev_discovery.c(511),WARNING" ID="0xed600ffb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dd mgr enable scan scan status has been disable @gle_dev_discovery.c(513),WARNING" ID="0xed60100b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle read maximum adv data len @gle_dev_discovery.c(536),INFO" ID="0xed6010c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle read maximum adv data len @gle_dev_discovery.c(547),INFO" ID="0xed60111d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[dd]event = 0x%x @gle_dev_discovery.c(596),INFO" ID="0xed6012a5" />
+			</MSG_LOG>

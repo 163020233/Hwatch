@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="gle_hci_gle_tx_test_enable_act con_hdl 0x%x @lm_gle_test_mode_act.c(65),INFO" ID="0x88f2020d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_test_mode_evt_task_end con_hdl0x%x @lm_gle_test_mode_act.c(104),INFO" ID="0x88f20345" />
+			</MSG_LOG>

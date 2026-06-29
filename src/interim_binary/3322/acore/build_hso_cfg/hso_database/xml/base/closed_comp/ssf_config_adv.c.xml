@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="sle config adv ctrl speed: clear config! @ssf_config_adv.c(139),INFO" ID="0xefb2045d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sle config adv ctrl speed faild: invalid mode_id (%u)! @ssf_config_adv.c(143),ERROR" ID="0xefb2047a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONFIG] sle config adv ctrl secret key! len:%d @ssf_config_adv.c(182),INFO" ID="0xefb205b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONFIG] sle config adv ctrl secret key! param err @ssf_config_adv.c(184),ERROR" ID="0xefb205c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset adv param: repeated mode id, update value! @ssf_config_adv.c(275),DBG" ID="0xefb2089e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle add preset adv param faild: reach max num[%u]! @ssf_config_adv.c(283),ERROR" ID="0xefb208da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset adv param faild: mem alloc fail @ssf_config_adv.c(288),ERROR" ID="0xefb20902" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset adv param faild: memcopy fail @ssf_config_adv.c(293),ERROR" ID="0xefb2092a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle add preset adv param faild: invalid input! @ssf_config_adv.c(303),ERROR" ID="0xefb2097a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle add preset adv param faild: invalid mode_id (%u)! @ssf_config_adv.c(308),ERROR" ID="0xefb209a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle rmv preset adv param faild: no match! @ssf_config_adv.c(332),ERROR" ID="0xefb20a62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle rmv preset adv param faild: invalid input! @ssf_config_adv.c(343),ERROR" ID="0xefb20aba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle qry preset adv param faild: no match! @ssf_config_adv.c(366),ERROR" ID="0xefb20b72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle qry preset adv param faild: memcpy fail, ret = %d! @ssf_config_adv.c(374),ERROR" ID="0xefb20bb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle qry preset adv param faild: invalid input! @ssf_config_adv.c(383),ERROR" ID="0xefb20bfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle lst preset adv param faild: empty! @ssf_config_adv.c(403),ERROR" ID="0xefb20c9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle lst preset adv param faild: input ptr null! @ssf_config_adv.c(413),ERROR" ID="0xefb20cea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle operate preset adv param type invalid! @ssf_config_adv.c(438),ERROR" ID="0xefb20db2" />
+			</MSG_LOG>

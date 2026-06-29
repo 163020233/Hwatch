@@ -1,0 +1,24 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @cpi_avrcp_tg_cbk.c(149),ERROR" ID="0xee6204aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_avrcp_tg_cbk.c(181),ERROR" ID="0xee6205aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_avrcp_tg_cbk.c(185),ERROR" ID="0xee6205ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_avrcp_tg_cbk.c(212),ERROR" ID="0xee6206a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_avrcp_tg_cbk.c(216),ERROR" ID="0xee6206c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_avrcp_tg_cbk.c(245),ERROR" ID="0xee6207aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_avrcp_tg_cbk.c(249),ERROR" ID="0xee6207ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memset fail. @cpi_avrcp_tg_cbk.c(276),ERROR" ID="0xee6208a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg_cbk.c(285),ERROR" ID="0xee6208ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="create timer error! ret: %x @cpi_avrcp_tg_cbk.c(294),ERROR" ID="0xee620932" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="start timer error! ret: %x @cpi_avrcp_tg_cbk.c(300),ERROR" ID="0xee620962" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp is not connected. @cpi_avrcp_tg_cbk.c(320),ERROR" ID="0xee620a02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp regist notify event already. @cpi_avrcp_tg_cbk.c(328),ERROR" ID="0xee620a42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memnew fail. @cpi_avrcp_tg_cbk.c(339),ERROR" ID="0xee620a9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp memcpy fail. @cpi_avrcp_tg_cbk.c(343),ERROR" ID="0xee620aba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_tg_cbk.c(367),ERROR" ID="0xee620b7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_tg_cbk.c(389),ERROR" ID="0xee620c2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_tg_cbk.c(401),ERROR" ID="0xee620c8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_tg_cbk.c(420),ERROR" ID="0xee620d22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg_cbk.c(426),ERROR" ID="0xee620d52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="avrcp tg cbk is exist,app_id=%d @cpi_avrcp_tg_cbk.c(552),ERROR" ID="0xee621142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memnew fail. @cpi_avrcp_tg_cbk.c(557),ERROR" ID="0xee62116a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp memcpy fail. @cpi_avrcp_tg_cbk.c(562),ERROR" ID="0xee621192" />
+			</MSG_LOG>

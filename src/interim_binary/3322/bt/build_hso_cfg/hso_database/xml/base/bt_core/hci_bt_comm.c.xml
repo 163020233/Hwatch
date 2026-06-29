@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]hci_bt_cmd_reject: opcode = 0x%x, err_code = 0x%x @hci_bt_comm.c(898),INFO" ID="0x8a4e1c15" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]hci_get_cmd_table nullptr. opcode=0x%x, err_code=0x%x @hci_bt_comm.c(917),INFO" ID="0x8a4e1cad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]hci_bt_cmd_get_dest_id: unkown conhdl! @hci_bt_comm.c(999),INFO" ID="0x8a4e1f3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]hci_bt_send_hw_err: err_code(0x%x) @hci_bt_comm.c(1062),WARNING" ID="0x8a4e2133" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]hci_bt_pack_le_evt get unknown subcode(0x%x) @hci_bt_comm.c(1110),WARNING" ID="0x8a4e22b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]hci_bt_pack_evt get unknown evt_code(0x%x) @hci_bt_comm.c(1138),WARNING" ID="0x8a4e2393" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]hci_bt_vendor_evt get unknown subcode(0x%x) @hci_bt_comm.c(1163),WARNING" ID="0x8a4e245b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]hci_vendor_specific_cmd_upk @hci_bt_comm.c(1511),INFO" ID="0x8a4e2f3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]hci_vendor_specific_cmd_cmp_evt_pk @hci_bt_comm.c(1680),INFO" ID="0x8a4e3485" />
+			</MSG_LOG>

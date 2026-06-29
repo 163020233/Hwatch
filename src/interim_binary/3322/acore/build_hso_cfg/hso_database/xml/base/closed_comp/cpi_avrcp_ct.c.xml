@@ -1,0 +1,30 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="addr is not exist. @cpi_avrcp_ct.c(34),ERROR" ID="0xee640112" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp is still connected. @cpi_avrcp_ct.c(50),ERROR" ID="0xee640192" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp conn addr is error. @cpi_avrcp_ct.c(61),ERROR" ID="0xee6401ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp conn addr is error. @cpi_avrcp_ct.c(71),ERROR" ID="0xee64023a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="address is null. @cpi_avrcp_ct.c(80),ERROR" ID="0xee640282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="key operatiion is not in valid scope: 0x41~0x7F @cpi_avrcp_ct.c(84),ERROR" ID="0xee6402a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct addr check error. @cpi_avrcp_ct.c(89),ERROR" ID="0xee6402ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="address is null. @cpi_avrcp_ct.c(103),ERROR" ID="0xee64033a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="key operatiion is not in valid scope: 0x41~0x7F @cpi_avrcp_ct.c(107),ERROR" ID="0xee64035a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct addr check error. @cpi_avrcp_ct.c(112),ERROR" ID="0xee640382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="address is null. @cpi_avrcp_ct.c(126),ERROR" ID="0xee6403f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="invalid param @cpi_avrcp_ct.c(132),ERROR" ID="0xee640422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct addr check error. @cpi_avrcp_ct.c(137),ERROR" ID="0xee64044a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct addr check error @cpi_avrcp_ct.c(160),ERROR" ID="0xee640502" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="avrcp ct unregister not supported event:0x%x @cpi_avrcp_ct.c(164),ERROR" ID="0xee640522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="address is null. @cpi_avrcp_ct.c(174),ERROR" ID="0xee640572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp addr is error or attr num is 0 @cpi_avrcp_ct.c(180),ERROR" ID="0xee6405a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct addr check error. @cpi_avrcp_ct.c(186),ERROR" ID="0xee6405d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct memcpy_s error @cpi_avrcp_ct.c(202),ERROR" ID="0xee640652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="address is null. @cpi_avrcp_ct.c(214),ERROR" ID="0xee6406b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct addr check error @cpi_avrcp_ct.c(219),ERROR" ID="0xee6406da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="address is null. @cpi_avrcp_ct.c(235),ERROR" ID="0xee64075a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct addr check error @cpi_avrcp_ct.c(240),ERROR" ID="0xee640782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="address is null. @cpi_avrcp_ct.c(254),ERROR" ID="0xee6407f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="volume is not in valid scope: 0~0x7F @cpi_avrcp_ct.c(258),ERROR" ID="0xee640812" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct addr check error @cpi_avrcp_ct.c(263),ERROR" ID="0xee64083a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vol:0x%x @cpi_avrcp_ct.c(266),INFO" ID="0xee640855" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="address is null. @cpi_avrcp_ct.c(278),ERROR" ID="0xee6408b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp ct addr check error @cpi_avrcp_ct.c(283),ERROR" ID="0xee6408da" />
+			</MSG_LOG>

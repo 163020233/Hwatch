@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp] lm_gle_scan_check_scan_param, invalid frame_type %d @lm_gle_scan_act.c(41),INFO" ID="0x88c6014d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_gle_scan_check_scan_param, invalid params,i(%d),scan_type(%d),window%d,interval(%d) @lm_gle_scan_act.c(48),WARNING" ID="0x88c60183" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_gle_scan_check_scan_param, invalid params,i(%d),scan_type(%d),window%d,interval(%d) @lm_gle_scan_act.c(60),WARNING" ID="0x88c601e3" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]set_scan_params_act, own_address_type=%d, scan_filter_policy=%d, scan_frame_formats=%d @lm_gle_scan_act.c(108),INFO" ID="0x88c60365" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]set_scan_params_act, own_address_type=%d, scan_filter_policy=%d, scan_phys=%d @lm_gle_scan_act.c(111),INFO" ID="0x88c6037d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]set_scan_params_act, scan_type=%d, scan_interval=%d, scan_window=%d @lm_gle_scan_act.c(114),INFO" ID="0x88c60395" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_scan_off_hci_set_scan_data_act, scan_data_len:%d @lm_gle_scan_act.c(123),INFO" ID="0x88c603dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_set_scan_enable, scan evt task env exists, start task fsm! @lm_gle_scan_act.c(239),INFO" ID="0x88c6077d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_set_scan_enable, switch to scanning state @lm_gle_scan_act.c(254),INFO" ID="0x88c607f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]set_scan_enable_act, scan_enable=%d, filter_duplicates=%d @lm_gle_scan_act.c(263),INFO" ID="0x88c6083d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]hci_set_scan_enable_act, scan_enable=%d, filter_duplicates=%d @lm_gle_scan_act.c(316),INFO" ID="0x88c609e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_gle_scanning_hci_set_scan_data_act, scan_data_len:%d @lm_gle_scan_act.c(355),INFO" ID="0x88c60b1d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]lm_gle_scan_report_adv, evt_type=0x%x, data_len=%d, rssi=%d, secondary_phy=%d @lm_gle_scan_act.c(462),INFO" ID="0x88c60e75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[sle_reset]stop scan complete @lm_gle_scan_act.c(499),INFO" ID="0x88c60f9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_gle_scan_event_sched_stop_act, switch to LM_GLE_STATE_SCAN_OFF @lm_gle_scan_act.c(520),INFO" ID="0x88c61045" />
+			</MSG_LOG>

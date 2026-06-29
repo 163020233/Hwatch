@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[COEX]lm_coex_party_mode_set, con_hdl=%d, value =%d, g_party_a2dp_st=0x%x, g_party_a2dp_cnt=%d @coex_bt_acl_process.c(127),INFO" ID="0x8b5003fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[COEX]evt_task_coex_music_code_type_set, bt_a2dp_rate_state[%d] @coex_bt_acl_process.c(400),INFO" ID="0x8b500c85" />
+			</MSG_LOG>

@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="HID_CORE: find NULL connection by addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(36),INFO" ID="0xec700125" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="HID_CORE: Add new instance, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(49),INFO" ID="0xec70018d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="HID_CORE: L2Cap connect req, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(73),INFO" ID="0xec70024d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="HID_CORE: L2Cap disconnect req, cid: 0x%x @hid_core.c(88),INFO" ID="0xec7002c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="HID_CORE: get disconnect reason: %d @hid_core.c(140),INFO" ID="0xec700465" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="HID_CORE: get connect result: %d @hid_core.c(206),INFO" ID="0xec700675" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="HID_CORE: L2CapCtrlChnlConnectInd state: %d, cid: %d, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(250),INFO" ID="0xec7007d5" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="HID_CORE: L2CapCtrlChnlConnectCfm state: %d, cid: %d, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(280),INFO" ID="0xec7008c5" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="HID_CORE: L2CapCtrlChnlConnectComplete state: %d, cid: %d, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(312),INFO" ID="0xec7009c5" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="HID_CORE: L2CapCtrlChnlDisconnectComplete, state: %d, int_cid: %d, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(377),INFO" ID="0xec700bcd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="HID_CORE: L2CapIntChnlConnectInd state: %d, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(427),INFO" ID="0xec700d5d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="HID_CORE: L2CapIntChnlConnectCfm state: %d, cid: %d, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(463),INFO" ID="0xec700e7d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="HID_CORE: L2CapIntChnlConnectComplete state: %d, cid : %d, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(500),INFO" ID="0xec700fa5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="HID_CORE: reject for int_cid[%d] != cid[%d] @hid_core.c(532),INFO" ID="0xec7010a5" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="HID_CORE: L2CapIntChnlDisconnectComplete, state: %d, ctrl_cid: %d, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(540),INFO" ID="0xec7010e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="HID_CORE: hid fsm device done @hid_core.c(592),INFO" ID="0xec701285" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="HID_CORE: L2CapConnectReq, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(627),INFO" ID="0xec70139d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="HID_CORE: hid fsm device connect req, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(651),INFO" ID="0xec70145d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="HID_CORE: hid fsm device connect req, state: 0x%x @hid_core.c(667),INFO" ID="0xec7014dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="HID_CORE: hid fsm device disconnect req, addr: 0x02%x:**:**:**:0x02%x:0x02%x @hid_core.c(700),INFO" ID="0xec7015e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="HID_CORE: hid fsm device disconnect req, state: 0x%x @hid_core.c(709),INFO" ID="0xec70162d" />
+			</MSG_LOG>

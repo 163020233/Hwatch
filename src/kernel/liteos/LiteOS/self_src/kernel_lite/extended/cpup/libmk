@@ -1,0 +1,16 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+include $(RTOSLITETOPDIR)/config.mk
+
+MODULE_NAME := $(notdir $(shell pwd))
+
+all:
+	mkdir -p $(OUT)/lib
+	cp -rf $(LITEOS_CPU_TYPE)/*.a $(OUT)/lib
+
+.PHONY: all
+
+include $(MODULE)

@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CALL] register callback is NULL, app_id: %u @ssf_call_manager.c(40),ERROR" ID="0xef8e0142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CALL] unregister callback @ssf_call_manager.c(58),INFO" ID="0xef8e01d5" />
+			</MSG_LOG>

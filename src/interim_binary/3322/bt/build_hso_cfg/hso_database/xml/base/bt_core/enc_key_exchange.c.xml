@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="encrypt_set_key_exchange_task attempt to set invalid key exchange algorithm %d @enc_key_exchange.c(51),WARNING" ID="0x890c019b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp] Trigger Key Exchange Algirithm %d Engine Fail! @enc_key_exchange.c(116),WARNING" ID="0x890c03a3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp] Validate Key Exchange Public Key for Algirithm %d Fail! @enc_key_exchange.c(186),WARNING" ID="0x890c05d3" />
+			</MSG_LOG>

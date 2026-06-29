@@ -1,0 +1,160 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+
+kernel_module("gadget") {
+    # 定义路径变量
+    USB_ROOT_PATH = "${LITEOSTOPDIR}/drivers/usb"
+    OPENSOURCE_PATH = "../../../../open_source"
+
+    NUTTX_USB_PATH = "${OPENSOURCE_PATH}/incubator-nuttx/liteos/drivers/usb"
+    NUTTX_USB_GADGET_PATH = "${NUTTX_USB_PATH}/gadget"
+    NUTTX_USB_HEAD_PATH = "${LITEOSTOPDIR}/compat/nuttx/include"
+
+    ADAPT_OS = "adapt_liteos"
+    ADAPT_OS_PATH = "${USB_ROOT_PATH}/${ADAPT_OS}"
+    ADAPT_KAL_PATH = "${ADAPT_OS_PATH}/kal/include"
+
+    include_dirs = [
+        "${USB_ROOT_PATH}",
+        "${ADAPT_OS_PATH}",
+        "${ADAPT_KAL_PATH}",
+        "${NUTTX_USB_PATH}",
+        "${NUTTX_USB_HEAD_PATH}",
+        "${NUTTX_USB_GADGET_PATH}",
+    ]
+
+    # Define source files
+    sources = []
+
+    if (defined(LOSCFG_DRIVERS_USB2_DEVICE_CONTROLLER) || defined(LOSCFG_DRIVERS_USB3_DEVICE_CONTROLLER)) {
+        CONTROLLER_DEVICE_SRC = "${USB_ROOT_PATH}/controller/usb_device"
+    }
+    if (defined(LOSCFG_DRIVERS_USB2_DEVICE_CONTROLLER)) {
+        sources += [
+            "${CONTROLLER_DEVICE_SRC}/dwc_otg_pcd_intr.c",
+            "${CONTROLLER_DEVICE_SRC}/dwc_otg_pcd.c",
+            "${CONTROLLER_DEVICE_SRC}/udc.c",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB3_DEVICE_CONTROLLER)) {
+        ADAPT_OS_CONTROLLER_DEVICE_SRC = "${ADAPT_OS_PATH}/controller/usb_device"
+        sources += [
+            "${CONTROLLER_DEVICE_SRC}/cil_intr.c",
+            "${CONTROLLER_DEVICE_SRC}/cil.c",
+            "${CONTROLLER_DEVICE_SRC}/ep0.c",
+            "${CONTROLLER_DEVICE_SRC}/linux_gadget.c",
+            "${ADAPT_OS_CONTROLLER_DEVICE_SRC}/linux_plat.c",
+            "${CONTROLLER_DEVICE_SRC}/pcd_intr.c",
+            "${CONTROLLER_DEVICE_SRC}/pcd.c",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_HiUSBC3X_CONTROLLER)) {
+        USB3_SELF_DEVELOP_CONTROLLER_PATH = "${USB_ROOT_PATH}/controller/usb_device/hiusbc_controller"
+        sources += [
+            "${USB3_SELF_DEVELOP_CONTROLLER_PATH}/hiusbc_adapt.c",
+            "${USB3_SELF_DEVELOP_CONTROLLER_PATH}/hiusbc_core.c",
+            "${USB3_SELF_DEVELOP_CONTROLLER_PATH}/hiusbc_transfer.c",
+            "${USB3_SELF_DEVELOP_CONTROLLER_PATH}/hiusbc_event.c",
+            "${USB3_SELF_DEVELOP_CONTROLLER_PATH}/hiusbc_gadget.c",
+            "${USB3_SELF_DEVELOP_CONTROLLER_PATH}/hiusbc_setup.c",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_COMPOSITE_GADGET)) {
+        sources += [
+            "composite_adapter.c",
+            "${NUTTX_USB_GADGET_PATH}/composite.c",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_ETH_SER_GADGET) || defined(LOSCFG_DRIVERS_USB_ECM_SER_GADGET)) {
+        sources += [
+            "f_multi.c",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_SERIAL_GADGET) || defined(LOSCFG_DRIVERS_USB_ETH_SER_GADGET) ||
+        defined(LOSCFG_DRIVERS_USB_ECM_SER_GADGET) || defined(LOSCFG_DRIVERS_USB_UAC_HID_EXT_SER_FUNC) ||
+        defined(LOSCFG_DRIVERS_USB_MASS_STORAGE_EXT_SER_FUNC) ) {
+        sources += [
+            "usbd_acm.c",
+            "f_acm.c"
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_ETHERNET_GADGET) || defined(LOSCFG_DRIVERS_USB_ETH_SER_GADGET)) {
+        sources += [
+            "${NUTTX_USB_GADGET_PATH}/rndis.c",
+            "f_rndis.c",
+            "usbd_eth_common.c",
+            "${NUTTX_USB_GADGET_PATH}/queue/sq_count.c",
+            "${NUTTX_USB_GADGET_PATH}/queue/sq_remfirst.c",
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_HID_GADGET) || defined(LOSCFG_DRIVERS_USB_UAC_HID_GADGET)) {
+        sources += [
+            "f_hid.c",
+            "usbd_hid.c"
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_DFU_GADGET)) {
+        sources += [
+            "f_dfu.c"
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_UVC_GADGET) || defined(LOSCFG_DRIVERS_USB_CAMERA_GADGET)) {
+        sources += [
+            "usbd_video.c",
+            "camera_control.c"
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_UAC_GADGET) || defined(LOSCFG_DRIVERS_USB_CAMERA_GADGET) || defined(LOSCFG_DRIVERS_USB_UAC_HID_GADGET)) {
+        sources += [
+            "usbd_audio.c", "f_uac.c"
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_CAMERA_GADGET)) {
+        sources += [
+            "f_camera.c"
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_UAC_HID_GADGET)) {
+        sources += [
+            "f_uac_hid.c"
+        ]
+    }
+
+    if (defined(LOSCFG_DRIVERS_USB_ECM_GADGET) || defined(LOSCFG_DRIVERS_USB_ECM_SER_GADGET)) {
+        sources += [
+            "f_ecm.c",
+            "usbd_eth_common.c"
+        ]
+    }
+    configs += [
+        ":private",
+    ]
+}
+
+config("private") {
+    if (defined(LOSCFG_USB_DMA_OFFSET)) {
+        defines = ["CFG_USB_DMA_OFFSET = ${LOSCFG_USB_DMA_OFFSET}"]
+    }
+    cflags = []
+    if (!defined(LOSCFG_COMPILER_ICCARM)) {
+        cflags += [
+            "-Wno-sign-compare",
+        ]
+    }
+}

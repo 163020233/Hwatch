@@ -1,0 +1,31 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="sle iso create group, mem_info NULL @sle_at_isom.c(38),ERROR" ID="0xe9460132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle iso label report, mem_info or label_report NULL @sle_at_isom.c(60),ERROR" ID="0xe94601e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle iso label update, mem_info NULL @sle_at_isom.c(78),ERROR" ID="0xe9460272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle iso connect state change, mem_info NULL @sle_at_isom.c(92),ERROR" ID="0xe94602e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sle iso connect request, mem_info NULL @sle_at_isom.c(109),ERROR" ID="0xe946036a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle iso callback register fail:0x%x @sle_at_isom.c(201),ERROR" ID="0xe946064a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle iso data indicator report callback register fail:0x%x @sle_at_isom.c(216),ERROR" ID="0xe94606c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]iso_set_default_param fail:0x%x @sle_at_isom.c(244),ERROR" ID="0xe94607a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]create_iso_group fail:0x%x @sle_at_isom.c(262),ERROR" ID="0xe9460832" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_at_iso_deinit_group fail:0x%x @sle_at_isom.c(278),ERROR" ID="0xe94608b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]create_iso_group fail:0x%x @sle_at_isom.c(289),ERROR" ID="0xe946090a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]member param parse failed @sle_at_isom.c(445),ERROR" ID="0xe9460dea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]create_iso_group fail:0x%x @sle_at_isom.c(457),ERROR" ID="0xe9460e4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_iso_remove_group fail:0x%x @sle_at_isom.c(476),ERROR" ID="0xe9460ee2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] mult conn info str len invalid! @sle_at_isom.c(486),ERROR" ID="0xe9460f32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to conn_id error! @sle_at_isom.c(493),ERROR" ID="0xe9460f6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to member_id error! @sle_at_isom.c(499),ERROR" ID="0xe9460f9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]member num invalid:%u @sle_at_isom.c(510),ERROR" ID="0xe9460ff2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_iso_create_member_connection fail:0x%x @sle_at_isom.c(520),ERROR" ID="0xe9461042" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_at_iso_remove_connections fail:0x%x @sle_at_isom.c(531),ERROR" ID="0xe946109a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_at_iso_set_data_path fail:0x%x @sle_at_isom.c(545),ERROR" ID="0xe946110a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_at_iso_remove_data_path fail:0x%x @sle_at_isom.c(556),ERROR" ID="0xe9461162" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]member num invalid:%u @sle_at_isom.c(566),ERROR" ID="0xe94611b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_at_iso_set_label fail:0x%x @sle_at_isom.c(575),ERROR" ID="0xe94611fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]member num invalid:%u @sle_at_isom.c(585),ERROR" ID="0xe946124a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_at_iso_update_label fail:0x%x @sle_at_isom.c(595),ERROR" ID="0xe946129a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] iso send data fail @sle_at_isom.c(610),ERROR" ID="0xe9461312" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] iso string to data error! @sle_at_isom.c(614),ERROR" ID="0xe9461332" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_at_iso_send_data fail:0x%x @sle_at_isom.c(621),ERROR" ID="0xe946136a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error]sle_at_iso_remove_connections fail:0x%x @sle_at_isom.c(636),ERROR" ID="0xe94613e2" />
+			</MSG_LOG>

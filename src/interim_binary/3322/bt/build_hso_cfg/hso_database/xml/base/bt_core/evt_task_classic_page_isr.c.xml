@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PAGE]fsm_change_self: get desc failed @evt_task_classic_page_isr.c(61),WARNING" ID="0x896201eb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PAGE]evt_page_prog: con_hdl %d, att_nb = %d @evt_task_classic_page_isr.c(108),WARNING" ID="0x89620363" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PAGE]start_cbk: get desc elt failed @evt_task_classic_page_isr.c(126),WARNING" ID="0x896203f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PAGE]evt_cbk: get desc failed @evt_task_classic_page_isr.c(166),WARNING" ID="0x89620533" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PAGE]cancel_cbk: get desc failed @evt_task_classic_page_isr.c(195),WARNING" ID="0x8962061b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PAGE]abnormal_cbk: get desc failed @evt_task_classic_page_isr.c(258),WARNING" ID="0x89620813" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PAGE]evt_restore: tx_desc_ptr == 0, em init: con_hdl %d @evt_task_classic_page_isr.c(283),INFO" ID="0x896208dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_PAGE]evt_task_classic_page_backoff_scan_check, timestamp:0x%x, ble_scan_start_ts:0x%x, page_start_ts:0x%x @evt_task_classic_page_isr.c(300),INFO" ID="0x89620965" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_PAGE]evt_task_classic_page_backoff, timestamp:0x%x, page_timesamp:0x%x,type_dur = 0x%x, g_es_scan_inq_backoff_val:%d @evt_task_classic_page_isr.c(345),INFO" ID="0x89620acd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_PAGE]evt_task_classic_page_backoff, page_start_ts:0x%x, page_dur_ts:0x%x, g_es_scan_inq_backoff_page_val:0x%x @evt_task_classic_page_isr.c(350),INFO" ID="0x89620af5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_PAGE]page_backoff: clk = 0x%x, type_dur = 0x%x, next_ts = 0x%x, stage = %d @evt_task_classic_page_isr.c(367),INFO" ID="0x89620b7d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_PAGE]step_page, insert failed, timestamp 0x%x, es prio %d, duration %d, asap limit 0x%x @evt_task_classic_page_isr.c(405),WARNING" ID="0x89620cab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PAGE]evt_task_classic_page_step_page, ble_scan_env_ptr is null @evt_task_classic_page_isr.c(413),WARNING" ID="0x89620ceb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PAGE] window:0x%x, intv:0x%x @evt_task_classic_page_isr.c(419),INFO" ID="0x89620d1d" />
+			</MSG_LOG>

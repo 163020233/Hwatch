@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <dependencies>
+    <dependency>
+        <versionType>BVersion</versionType>
+        <repoType>Generic</repoType>
+        <repoUsage>Software</repoUsage>
+        <id>
+            <offering>HiCFBB</offering>
+            <version>CFBB 2.10.1.B001</version>
+        </id>
+        <copies>
+            <copy>
+                <source>hiide/vsix.tar.gz</source>
+                <dest>binary/</dest>
+            </copy>
+        </copies>
+    </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,30 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="br avrcp error, result:0x%x avrcp_role:%d @bs_br_media_control.c(182),ERROR" ID="0xee8e05b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_control.c(191),ERROR" ID="0xee8e05fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media avrcp is connected, dev_id:%d @bs_br_media_control.c(197),ERROR" ID="0xee8e062a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_control.c(203),ERROR" ID="0xee8e065a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br avrcp disconnect error, result:0x%x avrcp_role:%d @bs_br_media_control.c(229),ERROR" ID="0xee8e072a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_control.c(238),ERROR" ID="0xee8e0772" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media param error, dev_id:%d @bs_br_media_control.c(244),ERROR" ID="0xee8e07a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_control.c(250),ERROR" ID="0xee8e07d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media register position notify interval:%lu @bs_br_media_control.c(318),INFO" ID="0xee8e09f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br media operate req error, result:0x%x type:%d @bs_br_media_control.c(333),ERROR" ID="0xee8e0a6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_control.c(343),ERROR" ID="0xee8e0aba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media param error, dev_id:%d @bs_br_media_control.c(349),ERROR" ID="0xee8e0aea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_control.c(355),ERROR" ID="0xee8e0b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media param error @bs_br_media_control.c(375),ERROR" ID="0xee8e0bba" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="br media update info error, result:0x%x type:%d param:%d @bs_br_media_control.c(399),ERROR" ID="0xee8e0c7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_control.c(409),ERROR" ID="0xee8e0cca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media param error, dev_id:%d @bs_br_media_control.c(415),ERROR" ID="0xee8e0cfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_control.c(421),ERROR" ID="0xee8e0d2a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="br media volume operate error, result:0x%x type:%d volume:%d @bs_br_media_control.c(462),ERROR" ID="0xee8e0e72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_control.c(472),ERROR" ID="0xee8e0ec2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media param error, dev_id:%d @bs_br_media_control.c(478),ERROR" ID="0xee8e0ef2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_control.c(484),ERROR" ID="0xee8e0f22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media param error @bs_br_media_control.c(506),ERROR" ID="0xee8e0fd2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="br media volume notify error, result:0x%x volume:%d @bs_br_media_control.c(513),ERROR" ID="0xee8e100a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media get addr is NULL, dev_id:%d @bs_br_media_control.c(523),ERROR" ID="0xee8e105a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="br media param error, dev_id:%d @bs_br_media_control.c(529),ERROR" ID="0xee8e108a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media malloc error @bs_br_media_control.c(535),ERROR" ID="0xee8e10ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media control init done @bs_br_media_control.c(550),ERROR" ID="0xee8e1132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="br media control deinit done @bs_br_media_control.c(562),ERROR" ID="0xee8e1192" />
+			</MSG_LOG>

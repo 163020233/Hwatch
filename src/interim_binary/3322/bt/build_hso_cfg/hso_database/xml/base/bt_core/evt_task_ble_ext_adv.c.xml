@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ADV]unknown phy %d @evt_task_ble_ext_adv.c(78),WARNING" ID="0x89100273" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][adv]patch:evt_task_ble_adv_init_elt, elt-&gt;timestamp:0x%x @evt_task_ble_ext_adv.c(308),WARNING" ID="0x891009a3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][adv]patch:evt_task_ble_ext_adv_aux_init_elt, elt-&gt;timestamp:0x%x @evt_task_ble_ext_adv.c(343),WARNING" ID="0x89100abb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][AE] per adv is not supportted @evt_task_ble_ext_adv.c(565),WARNING" ID="0x891011ab" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][adv]evt_task_ble_ext_adv_adv_aux_insert, evt task start fail! @evt_task_ble_ext_adv.c(1020),WARNING" ID="0x89101fe3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_ble_ext_adv_prim_clear_mac, env_ptr is null @evt_task_ble_ext_adv.c(1062),ERROR" ID="0x89102132" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ADV]adv_type mismatch: %d @evt_task_ble_ext_adv.c(1218),WARNING" ID="0x89102613" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_ble_aux_adv_idle_event_int, elt is null @evt_task_ble_ext_adv.c(1317),WARNING" ID="0x8910292b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_ble_aux_adv_idle_event_int, env_ptr is null @evt_task_ble_ext_adv.c(1324),WARNING" ID="0x89102963" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]aux_adv_idle_event_int:sed_id:%d, stop_type(0x%x),env_ptr-&gt;evt_status(0x%x),cur_clk(0x%x) @evt_task_ble_ext_adv.c(1342),INFO" ID="0x891029f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_ble_aux_adv_ending_event_int, elt is null @evt_task_ble_ext_adv.c(1374),ERROR" ID="0x89102af2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_ble_aux_adv_ending_event_int, env_ptr is null @evt_task_ble_ext_adv.c(1382),ERROR" ID="0x89102b32" />
+			</MSG_LOG>

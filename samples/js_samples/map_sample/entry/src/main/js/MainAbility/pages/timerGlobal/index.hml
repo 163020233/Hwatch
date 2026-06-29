@@ -1,0 +1,13 @@
+<div class="container">
+    <input type="button" class="title" on:click="createGlobalTimer">
+        createGlobalTimer
+    </input>
+
+    <input type="button" class="title" style="margin-top: 10px;" on:click="deleteGlobalTimer">
+        deleteGlobalTimer
+    </input>
+
+    <input type="button" class="title" style="margin-top: 10px;" on:click="exit">
+        exit
+    </input>
+</div>

@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi]out packet memcpy failed @xaopus_enc_comp.c(70),ERROR" ID="0x99220232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]audio_osal_kmalloc for opus encoder Failed @xaopus_enc_comp.c(94),ERROR" ID="0x992202f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]opus encoder init Failed @xaopus_enc_comp.c(100),ERROR" ID="0x99220322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]opus encode Failed! @xaopus_enc_comp.c(164),ERROR" ID="0x99220522" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xaopus_enc_comp.c(280),ERROR" ID="0x992208c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xaopus_enc_comp.c(284),ERROR" ID="0x992208e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;bit_depth = %u @xaopus_enc_comp.c(288),ERROR" ID="0x99220902" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]resource not enough @xaopus_enc_comp.c(310),ERROR" ID="0x992209b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]Encoder create Failed @xaopus_enc_comp.c(319),ERROR" ID="0x992209fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call opusenc_process_frame Failed, Error Code: [0x%08X] @xaopus_enc_comp.c(398),ERROR" ID="0x99220c72" />
+			</MSG_LOG>

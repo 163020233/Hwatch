@@ -1,0 +1,20 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_enhanced_pcl_send_msg, env_ptr is null @lm_classic_acl_power_control_act_ram.c(54),ERROR" ID="0x8af001b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L3][BT_PCL]enhanced_pcl_send_msg, level %d @lm_classic_acl_power_control_act_ram.c(66),INFO" ID="0x8af00215" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L3][BT_PCL]legacy_pcl_send_msg, LMP_INCR_PWR_REQ @lm_classic_acl_power_control_act_ram.c(86),INFO" ID="0x8af002b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L3][BT_PCL]legacy_pcl_send_msg, LMP_DECR_PWR_REQ @lm_classic_acl_power_control_act_ram.c(100),INFO" ID="0x8af00325" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][acl]enhanced_pcl_process, PWR_ADJ_REQ_INC_MAX, last_rssi_acc = %d, avg_cnt = %d @lm_classic_acl_power_control_act_ram.c(134),INFO" ID="0x8af00435" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][acl]enhanced_pcl_process, PWR_ADJ_REQ_INC_1_STEP, last_rssi_acc = %d, avg_cnt = %d @lm_classic_acl_power_control_act_ram.c(138),INFO" ID="0x8af00455" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][acl]enhanced_pcl_process, PWR_ADJ_REQ_DEC_1_STEP, last_rssi_acc = %d, avg_cnt = %d @lm_classic_acl_power_control_act_ram.c(143),INFO" ID="0x8af0047d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_legacy_pcl_process, env_ptr is null @lm_classic_acl_power_control_act_ram.c(153),ERROR" ID="0x8af004ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][acl]legacy_pcl_process, PWR_ADJ_REQ_INC_1_STEP, last_rssi_acc = %d, avg_cnt = %d @lm_classic_acl_power_control_act_ram.c(161),INFO" ID="0x8af0050d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][acl]legacy_pcl_process, PWR_ADJ_REQ_DEC_1_STEP, last_rssi_acc = %d, avg_cnt = %d @lm_classic_acl_power_control_act_ram.c(165),INFO" ID="0x8af0052d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][L3][pcl]lm_classic_acl_hci_rd_enh_pwr_act max_pwr = %d @lm_classic_acl_power_control_act_ram.c(192),INFO" ID="0x8af00605" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][L3][pcl]lm_classic_acl_hci_rd_enh_pwr_act act_pwr = %d @lm_classic_acl_power_control_act_ram.c(200),INFO" ID="0x8af00645" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]lm_classic_lmp_incr_pwr_req_act tx power = 0x%x @lm_classic_acl_power_control_act_ram.c(278),INFO" ID="0x8af008b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]lm_classic_lmp_send_max tx power = 0x%x @lm_classic_acl_power_control_act_ram.c(289),INFO" ID="0x8af0090d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]lm_classic_lmp_decr_pwr_req_act tx power = 0x%x @lm_classic_acl_power_control_act_ram.c(314),INFO" ID="0x8af009d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]lm_classic_lmp_send_min tx power = 0x%x @lm_classic_acl_power_control_act_ram.c(323),INFO" ID="0x8af00a1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]lm_classic_lmp_dec_power_act enhanced power = 0x%x @lm_classic_acl_power_control_act_ram.c(352),INFO" ID="0x8af00b05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][acl]lm_classic_lmp_inc_power_act enhanced power = 0x%x @lm_classic_acl_power_control_act_ram.c(377),INFO" ID="0x8af00bcd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L3][BT_PCL]set_high_power_mode, con_hdl=0x%04x, enable=%d @lm_classic_acl_power_control_act_ram.c(473),INFO" ID="0x8af00ecd" />
+			</MSG_LOG>

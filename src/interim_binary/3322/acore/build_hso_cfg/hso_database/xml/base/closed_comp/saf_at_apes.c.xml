@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf apes register server fail, ret: 0x%x @saf_at_apes.c(109),ERROR" ID="0xe98c036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_apes.c(132),ERROR" ID="0xe98c0422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_apes.c(160),ERROR" ID="0xe98c0502" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf apes set create attribute group fail, ret: 0x%x @saf_at_apes.c(202),ERROR" ID="0xe98c0652" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf apes start service fail, ret: 0x%x @saf_at_apes.c(220),ERROR" ID="0xe98c06e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_apes.c(234),ERROR" ID="0xe98c0752" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf apes change location fail, ret: 0x%x @saf_at_apes.c(242),ERROR" ID="0xe98c0792" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf apes change avaliable contexts fail, ret: 0x%x @saf_at_apes.c(258),ERROR" ID="0xe98c0812" />
+			</MSG_LOG>

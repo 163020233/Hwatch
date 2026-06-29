@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="gle cm init enter @sapi_gle_cm_inner.c(20),INFO" ID="0xed6e00a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle cm cleanup enter @sapi_gle_cm_inner.c(32),INFO" ID="0xed6e0105" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read remote version param new fail @sapi_gle_cm_inner.c(40),ERROR" ID="0xed6e0142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="set data len new fail @sapi_gle_cm_inner.c(59),ERROR" ID="0xed6e01da" />
+			</MSG_LOG>

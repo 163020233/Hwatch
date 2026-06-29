@@ -1,0 +1,96 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem] unknown llcp message con_hdl %d, llcp opcode 0x%x @lm_gle_acb_srv_cs.c(206),INFO" ID="0x893e0675" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_acb_slem_config_id_set, desc is NULL, config_id:%d @lm_gle_acb_srv_cs.c(226),WARNING" ID="0x893e0713" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]config_id_set, get free link source fail, config_id:%d @lm_gle_acb_srv_cs.c(235),INFO" ID="0x893e075d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_acb_slem_hdl_set, desc is NULL, config_id:%d @lm_gle_acb_srv_cs.c(246),WARNING" ID="0x893e07b3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]slem hdl set fail, config_id:%d, slem_hdl:%d @lm_gle_acb_srv_cs.c(255),INFO" ID="0x893e07fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_acb_slem_hdl_get, desc is NULL, config_id:%d @lm_gle_acb_srv_cs.c(265),WARNING" ID="0x893e084b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]slem hdl get fail, config_id:%d @lm_gle_acb_srv_cs.c(273),INFO" ID="0x893e088d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]slem_link_status_set, no match link info, config_id:%d, status:%d @lm_gle_acb_srv_cs.c(289),INFO" ID="0x893e090d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_acb_slem_link_status_get, desc is NULL, config_id:%d @lm_gle_acb_srv_cs.c(299),WARNING" ID="0x893e095b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]slem_link_status_get, no match link info, config_id:%d @lm_gle_acb_srv_cs.c(307),INFO" ID="0x893e099d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_acb_slem_role_set, desc is NULL, config_id:%d @lm_gle_acb_srv_cs.c(318),WARNING" ID="0x893e09f3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]slem_role_set, no match link info, config_id:%d, slem_role:%d @lm_gle_acb_srv_cs.c(327),INFO" ID="0x893e0a3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]slem_role_get, no match link info, config_id:%d @lm_gle_acb_srv_cs.c(341),INFO" ID="0x893e0aad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]slem_link_info_reset, no match link info, config_id:%d @lm_gle_acb_srv_cs.c(369),INFO" ID="0x893e0b8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[slem][parse] slem_interval=%d @lm_gle_acb_srv_cs.c(437),INFO" ID="0x893e0dad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[slem]system timeslot %d @lm_gle_acb_srv_cs.c(453),INFO" ID="0x893e0e2d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]phaseoffset=%d, tofoffset=%d @lm_gle_acb_srv_cs.c(627),INFO" ID="0x893e139d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][slem]sed_init. fm_freq=%d, ble_hadm_step_mode=%d, slem_role=%d @lm_gle_acb_srv_cs.c(660),INFO" ID="0x893e14a5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem]acb_role:%d, slem_role:%d, slem_hdl=%d, pwr=%d @lm_gle_acb_srv_cs.c(721),INFO" ID="0x893e168d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem] sed param %d, %d, %d, %d @lm_gle_acb_srv_cs.c(745),INFO" ID="0x893e174d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[slem][rcv]rcv_iq_rpt_ind %d, rpt_iq_ind %d @lm_gle_acb_srv_cs.c(759),INFO" ID="0x893e17bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]acb_slem_role=%d, slem_role=%d @lm_gle_acb_srv_cs.c(772),INFO" ID="0x893e1825" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem] evt_task_gle_slem_create fail @lm_gle_acb_srv_cs.c(809),ERROR" ID="0x893e194a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]slem param set done, con_num=%d @lm_gle_acb_srv_cs.c(829),INFO" ID="0x893e19ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]slem param set done, con_num=%d @lm_gle_acb_srv_cs.c(839),INFO" ID="0x893e1a3d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]acb_interval=%d, slem_interval=%d @lm_gle_acb_srv_cs.c(871),INFO" ID="0x893e1b3d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]offset0=%d, offset1=%d @lm_gle_acb_srv_cs.c(892),INFO" ID="0x893e1be5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]offset_value_get, offset_num overflow, offset_num:%d @lm_gle_acb_srv_cs.c(905),WARNING" ID="0x893e1c4b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]][slem][offset flag set]offset_num=%d, value=%d @lm_gle_acb_srv_cs.c(927),INFO" ID="0x893e1cfd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]offset_flag_get, offset_num overflow, offset_num:%d @lm_gle_acb_srv_cs.c(937),WARNING" ID="0x893e1d4b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_acb_srv_cs_instant_get, env_ptr is null @lm_gle_acb_srv_cs.c(952),ERROR" ID="0x893e1dc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]offset_num overflow!!! @lm_gle_acb_srv_cs.c(959),INFO" ID="0x893e1dfd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]offset_num=%d, acb_conhdl=%d @lm_gle_acb_srv_cs.c(965),INFO" ID="0x893e1e2d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][slem]lm_gle_acb_srv_cs_instant_get. last_sync_timestamp=%u, slem_interval=%u, offset_num=%u @lm_gle_acb_srv_cs.c(984),INFO" ID="0x893e1ec5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem]lm_gle_acb_srv_cs_instant_get. acb_instant_old=%u, new=%u, cs_instant=%u, clock_diff=%u @lm_gle_acb_srv_cs.c(987),INFO" ID="0x893e1edd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GTT][config ind] llcp malloc fail !!! @lm_gle_acb_srv_cs.c(999),INFO" ID="0x893e1f3d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem][rcv]rcv_iq_rpt_ind %d, rpt_iq_ind %d @lm_gle_acb_srv_cs.c(1062),INFO" ID="0x893e2135" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem]tx_pid[0]=%d, tx_pid[1]=%d, tx_id=%d, rx_id=%d @lm_gle_acb_srv_cs.c(1067),INFO" ID="0x893e215d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]connect_update, instant == 0, config_id:%d @lm_gle_acb_srv_cs.c(1106),WARNING" ID="0x893e2293" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_slem_under_ctrl_connect_update, config_id:%d @lm_gle_acb_srv_cs.c(1113),INFO" ID="0x893e22cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GTT][config ind] llcp malloc fail !!! @lm_gle_acb_srv_cs.c(1134),INFO" ID="0x893e2375" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SLEM]slem is not ready, slem_env is null, read param fail @lm_gle_acb_srv_cs.c(1193),WARNING" ID="0x893e254b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SLEM]event malloc fail, read param fail @lm_gle_acb_srv_cs.c(1202),WARNING" ID="0x893e2593" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem][config_set]slem already in process, slem_link_status:%d @lm_gle_acb_srv_cs.c(1226),WARNING" ID="0x893e2653" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SLEM] link resource apply fail !!! @lm_gle_acb_srv_cs.c(1250),INFO" ID="0x893e2715" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem][config_set]slem already in process, slem_link_status:%d @lm_gle_acb_srv_cs.c(1269),WARNING" ID="0x893e27ab" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem]con_anchor_num=%d,refresh_rate=%d,fm_freq=%d, pm_t_ip2_time=%d @lm_gle_acb_srv_cs.c(1278),INFO" ID="0x893e27f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem][refl config ind], acb_desc is NULL !!! @lm_gle_acb_srv_cs.c(1337),WARNING" ID="0x893e29cb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem][config rscv]config_id:0x%x, fm_freq:%d, slem_role:%d, instant:%d @lm_gle_acb_srv_cs.c(1346),INFO" ID="0x893e2a15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem][config_ind]slem already set param, slem_link_status:%d @lm_gle_acb_srv_cs.c(1358),WARNING" ID="0x893e2a73" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem] param init fail !!! @lm_gle_acb_srv_cs.c(1364),ERROR" ID="0x893e2aa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]update pre slem status, slem env is NULL!! @lm_gle_acb_srv_cs.c(1422),WARNING" ID="0x893e2c73" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][slem]update pre slem status, pre status:%d, curr status:%d @lm_gle_acb_srv_cs.c(1426),INFO" ID="0x893e2c95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]get instant fail @lm_gle_acb_srv_cs.c(1457),WARNING" ID="0x893e2d8b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][slem]is_cs_en:%d, instant_new:0x%x, conhdl:%d @lm_gle_acb_srv_cs.c(1476),INFO" ID="0x893e2e25" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][slem]llcp resend, offset_num:%d, con_hdl:%d, instant_new:0x%x @lm_gle_acb_srv_cs.c(1506),INFO" ID="0x893e2f15" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem]lm_gle_llcp_send_slem_en_ind, instant_new:%u, config_id:%u, acb_instant:%u, cs_offset:%u @lm_gle_acb_srv_cs.c(1540),INFO" ID="0x893e3025" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem] acb_clk_off:%u, acb_interval:%u, slem_interval:%u, cmd-&gt;is_cs_en:%u @lm_gle_acb_srv_cs.c(1542),INFO" ID="0x893e3035" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem]process err, [cmd]slem_en:%d, slem_link_status:%d, config_id:%d, slem_hdl:%d @lm_gle_acb_srv_cs.c(1561),WARNING" ID="0x893e30cb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][set slem en][refl receive]instant_new= %u, slem_hdl=%d, acb_conhdl=%d, is_en=%d @lm_gle_acb_srv_cs.c(1583),INFO" ID="0x893e317d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem][en ind]update instant, config_id:%d @lm_gle_acb_srv_cs.c(1591),INFO" ID="0x893e31bd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem][en ind]process err, slem_en:%d, slem_link_status:%d, config_id:%d, slem_hdl:%d @lm_gle_acb_srv_cs.c(1599),WARNING" ID="0x893e31fb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[slem]recv GLE_LL_SLEM_EN_IND. last_sync_timestamp=%u, instant_new=%u, config_id=%u, clk_off=%u @lm_gle_acb_srv_cs.c(1661),INFO" ID="0x893e33ed" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[slem][remote llcp]slem_info_len=%d, slem_info_type=0x%x, timestamp=0x%x, iq_chnl_num=%d @lm_gle_acb_srv_cs.c(1754),INFO" ID="0x893e36d5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem][rscv remote data]slem_info_len=%d, slem_info_type=0x%x, timestamp=0x%x, iq_chnl_num=%d @lm_gle_acb_srv_cs.c(1832),INFO" ID="0x893e3945" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[slem][recv data]slem_info_len=%d, slem_info_type=0x%x, iq_chnl_num=0x%x, vender_data_len=%d @lm_gle_acb_srv_cs.c(1876),INFO" ID="0x893e3aa5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IQ recv===] total_len=%u, timestamp=0x%x, slem_info_type=0x%x @lm_gle_acb_srv_cs.c(1921),INFO" ID="0x893e3c0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]lm_gle_llcp_slem_recv_qte_trans_data_act, evt malloc fail !!! @lm_gle_acb_srv_cs.c(1940),WARNING" ID="0x893e3ca3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]iq report evt memcpy fail!!! @lm_gle_acb_srv_cs.c(1951),INFO" ID="0x893e3cfd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem] lm_gle_acb_srv_slem_iq_data_need_drop @lm_gle_acb_srv_cs.c(2025),INFO" ID="0x893e3f4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem] evt_task_gle_acb_slem_data_disallow_insert @lm_gle_acb_srv_cs.c(2030),INFO" ID="0x893e3f75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem] abandon iq data @lm_gle_acb_srv_cs.c(2034),INFO" ID="0x893e3f95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[slem]iq trans ind malloc fail !!! @lm_gle_acb_srv_cs.c(2055),INFO" ID="0x893e403d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][slem][remote llcp]total_len=%d, local_id:%d, remote_id:%d @lm_gle_acb_srv_cs.c(2091),INFO" ID="0x893e415d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][slem][remote llcp]tof_result=%d, chmap[0]:0x%x, chmap[1]:0x%x, chmap[9]:0x%x @lm_gle_acb_srv_cs.c(2093),INFO" ID="0x893e416d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SYNC FAIL] SYNC FAILED CHANNEL NUMS = %d @lm_gle_acb_srv_cs.c(2146),INFO" ID="0x893e4315" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[slem]iq report evt malloc fail !!! @lm_gle_acb_srv_cs.c(2177),INFO" ID="0x893e440d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[slem]total_len=%d, slem_info_type=0x%x, timestamp=0x%x, iq_chnl_num=%d @lm_gle_acb_srv_cs.c(2207),INFO" ID="0x893e44fd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[slem]tof_result=%d, chmap[0]:0x%x, chmap[1]:0x%x, chmap[9]:0x%x @lm_gle_acb_srv_cs.c(2209),INFO" ID="0x893e450d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_acl_srv_slem_data_trans: slem_env is null, con_hdl 0x%x @lm_gle_acb_srv_cs.c(2316),WARNING" ID="0x893e4863" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IQ Trans] slem_role = %d @lm_gle_acb_srv_cs.c(2321),INFO" ID="0x893e488d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ToF result===]tof_result=%d, timestamp_sn=%d @lm_gle_acb_srv_cs.c(2340),INFO" ID="0x893e4925" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[IQ report===]rssi=0x%x, freq=%d, i_data=0x%x, q_data=0x%x, agc=0x%x, cfo_h=0x%x, cfo_l=0x%x @lm_gle_acb_srv_cs.c(2349),INFO" ID="0x893e496d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[CFO Report] cfo=%d, acb_conhdl=%d @lm_gle_acb_srv_cs.c(2383),INFO" ID="0x893e4a7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]lm_gle_slem_en_unknown_llcp_rsp_act, acb_desc-&gt;slem_desc == NULL @lm_gle_acb_srv_cs.c(2400),WARNING" ID="0x893e4b03" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]lm_gle_slem_en_unknown_llcp_rsp_act, not send length of 13 again @lm_gle_acb_srv_cs.c(2405),INFO" ID="0x893e4b2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_slem_en_unknown_llcp_rsp_act, slem_en:%d @lm_gle_acb_srv_cs.c(2415),INFO" ID="0x893e4b7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]llcp malloc fail !!! @lm_gle_acb_srv_cs.c(2418),WARNING" ID="0x893e4b93" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]llcp resend, refresh time and restart @lm_gle_acb_srv_cs.c(2423),INFO" ID="0x893e4bbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]lm_gle_slem_en_unknown_llcp_rsp_act, es_elt is NULL!!! @lm_gle_acb_srv_cs.c(2432),ERROR" ID="0x893e4c02" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][slem]opcode=0x%x, length=%d, config_id=0x%x @lm_gle_acb_srv_cs.c(2441),INFO" ID="0x893e4c4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_slem_process_when_acb_discon, reason:0x%x @lm_gle_acb_srv_cs.c(2456),INFO" ID="0x893e4cc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]lm_gle_slem_process_when_acb_discon, acb_desc-&gt;slem_desc == NULL! @lm_gle_acb_srv_cs.c(2458),WARNING" ID="0x893e4cd3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][slem]lm_gle_slem_process_when_acb_discon, slem_config_id:%d @lm_gle_acb_srv_cs.c(2466),INFO" ID="0x893e4d15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][slem]slem_env is NULL ! @lm_gle_acb_srv_cs.c(2470),WARNING" ID="0x893e4d33" />
+			</MSG_LOG>

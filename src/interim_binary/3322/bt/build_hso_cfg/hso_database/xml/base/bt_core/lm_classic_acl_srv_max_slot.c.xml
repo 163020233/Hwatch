@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]lm_classic_lmp_max_slot_mgt maxslot = 0x%x @lm_classic_acl_srv_max_slot.c(119),INFO" ID="0x89de03bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_send_lmp_max_slot, env_ptr is null @lm_classic_acl_srv_max_slot.c(163),ERROR" ID="0x89de051a" />
+			</MSG_LOG>

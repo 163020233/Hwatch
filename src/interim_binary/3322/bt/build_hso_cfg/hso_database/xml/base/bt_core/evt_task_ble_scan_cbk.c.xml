@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_SCAN]evt_task_ble_scan_start_cbk, evt_status=%d @evt_task_ble_scan_cbk.c(42),WARNING" ID="0x8a9c0153" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]evt_task_ble_scan_evt_cbk, rxpd_cnt:%d, rxpd_handled_cnt:%d @evt_task_ble_scan_cbk.c(87),WARNING" ID="0x8a9c02bb" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_SCAN]abnormal_cbk, late! sed_id:0x%x,ts:0x%x,cur_ts:0x%x @evt_task_ble_scan_cbk.c(132),ERROR" ID="0x8a9c0422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_SCAN]evt_task_ble_scan_isr_cbk es_elt mismatch @evt_task_ble_scan_cbk.c(198),WARNING" ID="0x8a9c0633" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]evt_task_ble_aux_scan_start_cbk, evt_status=%d, aux_rx_on:%d @evt_task_ble_scan_cbk.c(229),WARNING" ID="0x8a9c072b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]cancel_cbk, ts:0x%x, curr_ts:0x%x @evt_task_ble_scan_cbk.c(258),WARNING" ID="0x8a9c0813" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]evt_task_ble_aux_scan_evt_cbk, ts:0x%x, curr_ts:0x%x @evt_task_ble_scan_cbk.c(287),INFO" ID="0x8a9c08fd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]evt_task_ble_aux_scan_evt_cbk, rxpd_cnt:%d, rxpd_handled_cnt:%d @evt_task_ble_scan_cbk.c(295),WARNING" ID="0x8a9c093b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]evt_task_ble_aux_scan_evt_cbk, evt_status=%d, aux_rx_on:%d @evt_task_ble_scan_cbk.c(302),WARNING" ID="0x8a9c0973" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]evt_task_ble_aux_scan_abnormal_cbk, evt_status=%d, aux_rx_on:%d @evt_task_ble_scan_cbk.c(330),WARNING" ID="0x8a9c0a53" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]evt_task_ble_aux_scan_abnormal_cbk, ts:0x%x, curr_ts:0x%x @evt_task_ble_scan_cbk.c(335),INFO" ID="0x8a9c0a7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_SCAN]evt_task_ble_aux_scan_isr_cbk es_elt mismatch @evt_task_ble_scan_cbk.c(367),WARNING" ID="0x8a9c0b7b" />
+			</MSG_LOG>

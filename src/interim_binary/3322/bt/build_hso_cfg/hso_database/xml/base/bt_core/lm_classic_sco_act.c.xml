@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]lm_classic_sco_hci_setup_act, check host parameters failed! @lm_classic_sco_act.c(101),INFO" ID="0x8992032d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_trans_sco_priv_hci_setup_act, env_ptr is null @lm_classic_sco_act.c(121),ERROR" ID="0x899203ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]exit sniff @lm_classic_sco_act.c(145),INFO" ID="0x8992048d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]exit sniff @lm_classic_sco_act.c(242),INFO" ID="0x89920795" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]lm_classic_sco_lmp_esco_srv_act_ram, sco modify fail! @lm_classic_sco_act.c(301),INFO" ID="0x8992096d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]lm_classic_sco_lmp_esco_srv_act_ram, esco modify fail! @lm_classic_sco_act.c(334),INFO" ID="0x89920a75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]lm_classic_hci_enh_setup_sco_act, host parameters check failed! @lm_classic_sco_act.c(704),INFO" ID="0x89921605" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]lm_classic_sco_accept_conn_act, sco_desc is NULL @lm_classic_sco_act.c(727),INFO" ID="0x899216bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][sco]lm_classic_sco_accept_conn_act, srv_desc is NULL @lm_classic_sco_act.c(734),INFO" ID="0x899216f5" />
+			</MSG_LOG>

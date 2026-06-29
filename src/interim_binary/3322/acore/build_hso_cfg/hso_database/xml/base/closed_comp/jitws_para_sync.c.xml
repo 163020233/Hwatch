@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][GET_TABLE_FAIL]:msg is empty, buflen too small, buflen=%d, but msglen=%d @jitws_para_sync.c(30),INFO" ID="0xebf000f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[JITWS][ASSEMBLE_FAIL]after sent existing data, still obtain msg fail @jitws_para_sync.c(63),WARNING" ID="0xebf001fb" />
+			</MSG_LOG>

@@ -1,0 +1,25 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="set connect rssi param new fail @sapi_gle_con_manager.c(29),ERROR" ID="0xed8c00ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection request pointer NULL error @sapi_gle_con_manager.c(49),ERROR" ID="0xed8c018a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection request new error @sapi_gle_con_manager.c(55),ERROR" ID="0xed8c01ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection request memcpy error @sapi_gle_con_manager.c(60),ERROR" ID="0xed8c01e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection request memcpy error @sapi_gle_con_manager.c(74),ERROR" ID="0xed8c0252" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection release pointer NULL error @sapi_gle_con_manager.c(100),ERROR" ID="0xed8c0322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection release new error @sapi_gle_con_manager.c(107),ERROR" ID="0xed8c035a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection release memcpy error @sapi_gle_con_manager.c(113),ERROR" ID="0xed8c038a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection release memcpy error @sapi_gle_con_manager.c(129),ERROR" ID="0xed8c040a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle private connection param set request new fail @sapi_gle_con_manager.c(159),ERROR" ID="0xed8c04fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle private connection param set request memcpy error @sapi_gle_con_manager.c(164),ERROR" ID="0xed8c0522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection param update request new error @sapi_gle_con_manager.c(190),ERROR" ID="0xed8c05f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sapi gle connection param update request memcpy error @sapi_gle_con_manager.c(195),ERROR" ID="0xed8c061a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle ahib set acb low latency memcpy error @sapi_gle_con_manager.c(223),ERROR" ID="0xed8c06fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle ahib set acb low latency em data memcpy error @sapi_gle_con_manager.c(258),ERROR" ID="0xed8c0812" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle ahib read rssi memcpy_s error @sapi_gle_con_manager.c(287),ERROR" ID="0xed8c08fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE CM][read rssi v2] gle send fsm msg failed ret: %d @sapi_gle_con_manager.c(318),ERROR" ID="0xed8c09f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GLE CM][get audio quality] gle send fsm msg failed ret: %d @sapi_gle_con_manager.c(340),ERROR" ID="0xed8c0aa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read remote feature param new fail @sapi_gle_con_manager.c(424),ERROR" ID="0xed8c0d42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle conn manager register cbks pointer null @sapi_gle_con_manager.c(500),ERROR" ID="0xed8c0fa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[cm_set_acb_evt_param]null @sapi_gle_con_manager.c(515),ERROR" ID="0xed8c101a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[cm_set_acb_evt_param]conn_id:%u, evt_intv:%u, evt_num:%u @sapi_gle_con_manager.c(519),INFO" ID="0xed8c103d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new acb_evt_para failed @sapi_gle_con_manager.c(522),ERROR" ID="0xed8c1052" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy acb_evt_para failed @sapi_gle_con_manager.c(528),ERROR" ID="0xed8c1082" />
+			</MSG_LOG>

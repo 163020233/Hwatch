@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]update_scenario_prand_mode: memcpy error @evt_task_classic_acl_test_mode.c(77),ERROR" ID="0x8a1a026a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]update_scenario_acl_mode loopback en @evt_task_classic_acl_test_mode.c(111),WARNING" ID="0x8a1a037b" />
+			</MSG_LOG>

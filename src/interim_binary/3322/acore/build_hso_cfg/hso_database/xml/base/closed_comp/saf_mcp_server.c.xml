@@ -1,0 +1,31 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] state flags read rsp fail, ret = %u @saf_mcp_server.c(51),ERROR" ID="0xe9ee019a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(64),ERROR" ID="0xe9ee0202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(79),ERROR" ID="0xe9ee027a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(90),ERROR" ID="0xe9ee02d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] notify property proc fail, ret = %u @saf_mcp_server.c(100),ERROR" ID="0xe9ee0322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(128),ERROR" ID="0xe9ee0402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] inst not found, inst id: %u @saf_mcp_server.c(134),ERROR" ID="0xe9ee0432" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] response property value fail, ret = %u @saf_mcp_server.c(157),ERROR" ID="0xe9ee04ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(173),ERROR" ID="0xe9ee056a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] inst not found, inst id: %u @saf_mcp_server.c(179),ERROR" ID="0xe9ee059a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] notify playback position, send msg err @saf_mcp_server.c(193),ERROR" ID="0xe9ee060a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(208),ERROR" ID="0xe9ee0682" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] inst not found, inst id: %u @saf_mcp_server.c(214),ERROR" ID="0xe9ee06b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] notify playback speed fail, ret = %u @saf_mcp_server.c(243),ERROR" ID="0xe9ee079a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(253),ERROR" ID="0xe9ee07ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] inst not found, inst id: %u @saf_mcp_server.c(259),ERROR" ID="0xe9ee081a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] notify seeking speed fail, ret = %u @saf_mcp_server.c(277),ERROR" ID="0xe9ee08aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] notify feature support fail, ret = %u @saf_mcp_server.c(304),ERROR" ID="0xe9ee0982" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] notify feature support fail, ret = %u @saf_mcp_server.c(327),ERROR" ID="0xe9ee0a3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(342),ERROR" ID="0xe9ee0ab2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] inst not found, inst id: %u @saf_mcp_server.c(348),ERROR" ID="0xe9ee0ae2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(361),ERROR" ID="0xe9ee0b4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] inst not found, inst id: %u @saf_mcp_server.c(366),ERROR" ID="0xe9ee0b72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] notify media state fail, ret = %u @saf_mcp_server.c(375),ERROR" ID="0xe9ee0bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(400),ERROR" ID="0xe9ee0c82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server register fail, param null! @saf_mcp_server.c(430),ERROR" ID="0xe9ee0d72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server already register! @saf_mcp_server.c(435),ERROR" ID="0xe9ee0d9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] server register failed! ret = %u @saf_mcp_server.c(441),ERROR" ID="0xe9ee0dca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][mcps] group init failed! ret = %u @saf_mcp_server.c(446),ERROR" ID="0xe9ee0df2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][mcps] server not register! @saf_mcp_server.c(457),ERROR" ID="0xe9ee0e4a" />
+			</MSG_LOG>

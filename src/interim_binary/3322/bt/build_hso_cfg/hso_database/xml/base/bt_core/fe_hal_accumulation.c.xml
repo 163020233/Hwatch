@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[CALI] fe_wait_accum_ready::timeout modem_idx=%d mod=%d wl_iq[%d] @fe_hal_accumulation.c(49),ERROR" ID="0x89aa018a" />
+			</MSG_LOG>

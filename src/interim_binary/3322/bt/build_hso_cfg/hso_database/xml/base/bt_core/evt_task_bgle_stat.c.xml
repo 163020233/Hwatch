@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[BGLE STAT TRX]sed_idx %d,last abort subtype 0x%x,current subtype 0x%x @evt_task_bgle_stat.c(74),INFO" ID="0x8c020255" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGLE STAT TRX]sed_idx %d,other err last rxstatus 0x%x,current rxstatus 0x%x @evt_task_bgle_stat.c(231),INFO" ID="0x8c02073d" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[BGLE STAT TRX]sed_idx %d,rx empty|tx empty :0x%08x, npi|rx correct pkt 0x%08x, tx pkt|es insert fail:0x%08x, start cbk|cancel:0x%08x, evt end|rx:0x%08x, sket|abort:0x%08x @evt_task_bgle_stat.c(263),INFO" ID="0x8c02083d" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[BGLE STAT TRX]err pkt:no sync|total:0x%08x, sn|crc:0x%08x, len|mic:0x%08x,timer|other err:0x%08x, total tx kbytes|rx kbytes:0x%08x, evt abort gle|evt cnt:0x%08x, abort bt|ble:0x%08x @evt_task_bgle_stat.c(273),INFO" ID="0x8c02088d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGLE STAT TRX]env init invalid_sed_idx: %d @evt_task_bgle_stat.c(289),WARNING" ID="0x8c02090b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGLE STAT TRX]env init sed_idx: %d,env already exist 0x%x @evt_task_bgle_stat.c(296),WARNING" ID="0x8c020943" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGLE STAT TRX]sed_idx: %d, malloc failed @evt_task_bgle_stat.c(303),ERROR" ID="0x8c02097a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGLE STAT TRX]env init sed_idx: %d, env init 0x%x @evt_task_bgle_stat.c(318),INFO" ID="0x8c0209f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGLE STAT TRX]env deinit, invalid_sed_idx: %d @evt_task_bgle_stat.c(328),WARNING" ID="0x8c020a43" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGLE STAT TRX]env deinit sed_idx: %d,env not exist @evt_task_bgle_stat.c(334),WARNING" ID="0x8c020a73" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGLE STAT TRX]env deinit sed_idx: %d,  env ptr:0x%x @evt_task_bgle_stat.c(344),INFO" ID="0x8c020ac5" />
+			</MSG_LOG>

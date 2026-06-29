@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BTOS][MEM_INTEGRITY_CHECK]Not support! @osdep.c(753),INFO" ID="0xeb94178d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BTOS][MEM_NEW]ALLOC_SIZE=%u, alloc fail! @osdep.c(785),WARNING" ID="0xeb94188b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[MEM_FREE][%d][0x%x], caller:0x%x  @osdep.c(823),INFO" ID="0xeb9419bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BTOS][MEM_NEW]ALLOC_SIZE=%u, alloc fail! @osdep.c(849),WARNING" ID="0xeb941a8b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BTOS][MEM_NEW_S] btos new osal vmalloc mem new fail! @osdep.c(886),ERROR" ID="0xeb941bb2" />
+			</MSG_LOG>

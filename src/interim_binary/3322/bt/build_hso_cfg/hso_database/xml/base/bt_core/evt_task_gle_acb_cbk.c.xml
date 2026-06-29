@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_gle_acb_set_eeq_priority con_hdl 0x%x, ts 0x%x, counter %d, eeq_prio=%d @evt_task_gle_acb_cbk.c(73),INFO" ID="0x8aa0024d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgle][gle_acb] evt_task_gle_acb_evt_cbk evt_ptr is null. @evt_task_gle_acb_cbk.c(149),WARNING" ID="0x8aa004ab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_acb]evt_task_gle_acb_evt_cbk, prog_nb=%d @evt_task_gle_acb_cbk.c(156),WARNING" ID="0x8aa004e3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][gle_acb] start_cbk, prog_nb=%d @evt_task_gle_acb_cbk.c(211),WARNING" ID="0x8aa0069b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_task_gle_acb_cancel_cbk con_hdl 0x%x, ts 0x%x, counter %d, cur_prio=%d @evt_task_gle_acb_cbk.c(257),INFO" ID="0x8aa0080d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_acb_cancel_cbk con_hdl 0x%x, cur_prio=%d @evt_task_gle_acb_cbk.c(278),INFO" ID="0x8aa008b5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][GLE_ACB]evt_task_gle_acb_isr_cbk late int! con_hdl %d, elt-&gt;ts 0x%x, cur_ts 0x%x @evt_task_gle_acb_cbk.c(326),WARNING" ID="0x8aa00a33" />
+			</MSG_LOG>

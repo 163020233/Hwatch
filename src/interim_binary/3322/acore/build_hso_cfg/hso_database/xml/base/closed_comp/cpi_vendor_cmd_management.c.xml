@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="vendor memcpy fail. @cpi_vendor_cmd_management.c(83),ERROR" ID="0xee70029a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vendor get conn handle fail,ret=0x%x. @cpi_vendor_cmd_management.c(88),ERROR" ID="0xee7002c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="start set bus power service_type:%d power_level:%d @cpi_vendor_cmd_management.c(178),INFO" ID="0xee700595" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="cpi_set_page_power_reduction_cbk result=%d @cpi_vendor_cmd_management.c(188),INFO" ID="0xee7005e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="start set page power reduction, reduction_level:%d @cpi_vendor_cmd_management.c(200),INFO" ID="0xee700645" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="cpi_set_high_power_mode_cbk context is NULL @cpi_vendor_cmd_management.c(210),INFO" ID="0xee700695" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="cpi_set_high_power_mode_cbk BD_ADDR=%02x:%02x:*:*:*:%02x result=%d @cpi_vendor_cmd_management.c(217),INFO" ID="0xee7006cd" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="cpi_set_high_power_mode_cbk BD_ADDR=%02x:%02x:*:*:*:%02x num_hci_cmd_pkts=%d,opcode=0x%x status=%d @cpi_vendor_cmd_management.c(227),INFO" ID="0xee70071d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="cpi_set_high_power_mode enter @cpi_vendor_cmd_management.c(235),INFO" ID="0xee70075d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="cpi_set_high_power_mode BD_ADDR=%02x:%02x:*:*:*:%02x enable=%d conhdl=%d @cpi_vendor_cmd_management.c(256),INFO" ID="0xee700805" />
+			</MSG_LOG>

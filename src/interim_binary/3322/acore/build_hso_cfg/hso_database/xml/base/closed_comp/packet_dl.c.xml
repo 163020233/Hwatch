@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="a2dp_audio: send audio data enable = %x seq %d  len %d. @packet_dl.c(42),WARNING" ID="0xec240153" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="a2dp_audio: uapi_adp_get_buffer ret = %x seq %d len %d size %d. @packet_dl.c(49),WARNING" ID="0xec24018b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_audio: Memory cpy fail! @packet_dl.c(53),WARNING" ID="0xec2401ab" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="a2dp_audio: uapi_adp_put_buffer ret = %x seq %d len %d size %d. @packet_dl.c(62),WARNING" ID="0xec2401f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP] Memory is not enough! @packet_dl.c(104),WARNING" ID="0xec240343" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][BT-&gt;DSP][PACKET_DATA_IND]ipc fail ret=%d @packet_dl.c(128),WARNING" ID="0xec240403" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP][BT-&gt;DSP]ipc send audio data fail @packet_dl.c(154),WARNING" ID="0xec2404d3" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[DADP]dadp get active device handle REMOTE_ADDR=%02x:%02x:**:**:**:%02x @packet_dl.c(225),INFO" ID="0xec24070d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_audio: dadp_freeman_send_audio_data_dl @packet_dl.c(292),WARNING" ID="0xec240923" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP][SetActiveConnectHandle]HANDLE=0x%x @packet_dl.c(317),INFO" ID="0xec2409ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[DADP] dadp get mobile connection handle fail, can't find link @packet_dl.c(337),INFO" ID="0xec240a8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[DADP]dadp get mobile connection handle HANDLE=0x%x @packet_dl.c(341),INFO" ID="0xec240aad" />
+			</MSG_LOG>

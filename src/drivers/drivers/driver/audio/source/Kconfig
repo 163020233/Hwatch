@@ -1,0 +1,6 @@
+mainmenu "SAP SDK Configuration"
+
+source "build/Kconfig"
+source "drv/Kconfig"
+source "core/Kconfig"
+source "api/Kconfig"

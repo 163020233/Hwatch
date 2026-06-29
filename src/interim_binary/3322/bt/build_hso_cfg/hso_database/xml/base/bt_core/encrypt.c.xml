@@ -1,0 +1,2 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="encrypt_check_algorithm_support ccmctr_algo 0x%02x, hash_algo 0x%02x, integr_chk_ind 0x%02x @encrypt.c(66),INFO" ID="0x88a60215" />
+			</MSG_LOG>

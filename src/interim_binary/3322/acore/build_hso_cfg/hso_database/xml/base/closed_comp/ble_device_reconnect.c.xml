@@ -1,0 +1,40 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="reconnect scan start fail 0x%x @ble_device_reconnect.c(79),ERROR" ID="0xea5e027a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="start reconnect central fail, 0x%x @ble_device_reconnect.c(195),ERROR" ID="0xea5e061a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="start reconnect peripheral fail, 0x%x @ble_device_reconnect.c(202),ERROR" ID="0xea5e0652" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="start auto conn proc fail, ret 0x%x @ble_device_reconnect.c(217),ERROR" ID="0xea5e06ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv %d stop error @ble_device_reconnect.c(253),ERROR" ID="0xea5e07ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv %d stop error @ble_device_reconnect.c(259),ERROR" ID="0xea5e081a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble set phy failed. @ble_device_reconnect.c(390),ERROR" ID="0xea5e0c32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble connect param updata failed! @ble_device_reconnect.c(407),ERROR" ID="0xea5e0cba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset conn param: repeated mode id, update value! @ble_device_reconnect.c(437),INFO" ID="0xea5e0dad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble add preset connect param faild: reach max num[%u]! @ble_device_reconnect.c(443),ERROR" ID="0xea5e0dda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset connect param faild: mem alloc fail @ble_device_reconnect.c(448),ERROR" ID="0xea5e0e02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset connect param faild: memcopy fail @ble_device_reconnect.c(453),ERROR" ID="0xea5e0e2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset connect param faild: invalid input! @ble_device_reconnect.c(463),ERROR" ID="0xea5e0e7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble rmv preset connect param faild: no match! @ble_device_reconnect.c(486),ERROR" ID="0xea5e0f32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble rmv preset connect param faild: invalid input! @ble_device_reconnect.c(497),ERROR" ID="0xea5e0f8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble qry preset connect param faild: no match! @ble_device_reconnect.c(520),ERROR" ID="0xea5e1042" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble qry preset connect param faild: memcpy fail, ret = %d! @ble_device_reconnect.c(528),ERROR" ID="0xea5e1082" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble qry preset connect param faild: invalid input! @ble_device_reconnect.c(537),ERROR" ID="0xea5e10ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble lst preset connect param faild: empty! @ble_device_reconnect.c(557),ERROR" ID="0xea5e116a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble lst preset connect param faild: input ptr null! @ble_device_reconnect.c(567),ERROR" ID="0xea5e11ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble operate preset connect param type invalid! @ble_device_reconnect.c(592),ERROR" ID="0xea5e1282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble set connect param by mode id fail: query null! @ble_device_reconnect.c(603),ERROR" ID="0xea5e12da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble set connect param by mode id fail: ret = %u! @ble_device_reconnect.c(614),ERROR" ID="0xea5e1332" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset phy param: repeated mode id, update value! @ble_device_reconnect.c(646),INFO" ID="0xea5e1435" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble add preset phy param faild: reach max num[%u]! @ble_device_reconnect.c(651),ERROR" ID="0xea5e145a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset phy param faild: mem alloc fail @ble_device_reconnect.c(656),ERROR" ID="0xea5e1482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset phy param faild: memcopy fail @ble_device_reconnect.c(661),ERROR" ID="0xea5e14aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble add preset phy param faild: invalid input! @ble_device_reconnect.c(671),ERROR" ID="0xea5e14fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble rmv preset phy param faild: no match! @ble_device_reconnect.c(694),ERROR" ID="0xea5e15b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble rmv preset phy param faild: invalid input! @ble_device_reconnect.c(705),ERROR" ID="0xea5e160a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble qry preset phy param faild: no match! @ble_device_reconnect.c(728),ERROR" ID="0xea5e16c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble qry preset phy param faild: memcpy fail, ret = %d! @ble_device_reconnect.c(736),ERROR" ID="0xea5e1702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble qry preset phy param faild: invalid input! @ble_device_reconnect.c(745),ERROR" ID="0xea5e174a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble lst preset phy param faild: empty! @ble_device_reconnect.c(765),ERROR" ID="0xea5e17ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble lst preset phy param faild: input ptr null! @ble_device_reconnect.c(775),ERROR" ID="0xea5e183a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble operate preset phy param type invalid! @ble_device_reconnect.c(800),ERROR" ID="0xea5e1902" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs ble set phy param by mode id fail: query null! @ble_device_reconnect.c(811),ERROR" ID="0xea5e195a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble set phy param by mode id fail: ret = %u! @ble_device_reconnect.c(822),ERROR" ID="0xea5e19b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs ble set data length fail: ret = %u! @ble_device_reconnect.c(840),ERROR" ID="0xea5e1a42" />
+			</MSG_LOG>

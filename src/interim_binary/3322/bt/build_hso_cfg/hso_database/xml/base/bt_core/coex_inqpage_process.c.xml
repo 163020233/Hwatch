@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[BGTP][COEX] inquiry_recalc_anchor_point, curr_time = 0x%x, time_in = 0x%x, time_out = 0x%x @coex_inqpage_process.c(376),INFO" ID="0x8b560bc5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP][COEX] page_recalc_anchor_point, curr_time = 0x%x, time_in = 0x%x, time_out = 0x%x @coex_inqpage_process.c(394),INFO" ID="0x8b560c55" />
+			</MSG_LOG>

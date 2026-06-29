@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SMP]smp ecc gen key err. ret: 0x%x @ecdh_platform.c(33),ERROR" ID="0xeeae010a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SMP]smp gen ecdh key err. ret: 0x%x @ecdh_platform.c(70),ERROR" ID="0xeeae0232" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SMP]smp check on curve err. ret: 0x%x @ecdh_platform.c(92),ERROR" ID="0xeeae02e2" />
+			</MSG_LOG>

@@ -1,0 +1,66 @@
+config LOSCFG_TIMER_VENDOR
+    bool
+    help
+      Use vendor timer driver.
+
+config LOSCFG_ARM_GENERIC_TIMER
+    bool
+    help
+      ARM generic timer.
+
+config LOSCFG_ARM_PRIVATE_TIMER
+    bool
+    help
+      ARM private timer.
+
+config LOSCFG_CORTEX_M_SYSTICK
+    bool
+    help
+      ARM cortex-m systick.
+
+config LOSCFG_ARM_SP804_TIMER
+    bool
+    help
+      ARM sp804 dual timer.
+
+config LOSCFG_ARM_SP804_HRTIMER
+    bool
+    help
+      ARM sp804 dual timer as hrtimer.
+
+config LOSCFG_XTENSA_XEA2_TIMER
+    bool
+    help
+      Xtensa xea2 systick.
+
+config LOSCFG_XTENSA_XEA3_TIMER
+    bool
+    help
+      Xtensa xea3 systick.
+
+config LOSCFG_ARM_SP804_ADVANCED
+    bool
+    select LOSCFG_BASE_CORE_SWTMR
+    help
+      If enabled advanced driver of ARM sp804 timer.
+      If enabled, then use a swtmr and an additional hardware timer to record the system running period.
+
+config LOSCFG_RISCV32_M_TIMER
+    bool
+    help
+      RISCV32 machine timer.
+
+config LOSCFG_RISCV_HQTIMER_V500
+    bool
+    help
+      Used for specific vendor timer.
+
+config LOSCFG_RISCV_HQTIMER_V510
+    bool
+    help
+      Used for specific vendor timer.
+
+config LOSCFG_LINGLONG_TIMER
+    bool
+    help
+        LingLong1000V100 Timer

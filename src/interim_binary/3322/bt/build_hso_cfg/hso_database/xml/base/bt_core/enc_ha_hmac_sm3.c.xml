@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_pre_process_hmac_sm3_task memcpy key error! @enc_ha_hmac_sm3.c(48),ERROR" ID="0x89b80182" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_pre_process_hmac_sm3_task memcpy text error! @enc_ha_hmac_sm3.c(53),ERROR" ID="0x89b801aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_post_process_hmac_sm3_task memcpy hash error! @enc_ha_hmac_sm3.c(72),ERROR" ID="0x89b80242" />
+			</MSG_LOG>

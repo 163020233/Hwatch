@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][micps] register server callback point is null! @saf_micp_server.c(52),ERROR" ID="0xea0601a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micps] server already register! @saf_micp_server.c(57),ERROR" ID="0xea0601ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][micps] server register failed! ret = %u @saf_micp_server.c(63),ERROR" ID="0xea0601fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][micps] group init failed! ret = %u @saf_micp_server.c(68),ERROR" ID="0xea060222" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micps] server not register! @saf_micp_server.c(82),ERROR" ID="0xea060292" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micps] server not register! @saf_micp_server.c(101),ERROR" ID="0xea06032a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micps] server not register! @saf_micp_server.c(119),ERROR" ID="0xea0603ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][micps] notify property proc fail, ret = %u @saf_micp_server.c(129),ERROR" ID="0xea06040a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][micps] capture state notify fail, ret = %u @saf_micp_server.c(146),ERROR" ID="0xea060492" />
+			</MSG_LOG>

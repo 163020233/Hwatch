@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_test_mode_create_fsm @lm_gle_test_mode_fsm.c(82),INFO" ID="0x88f60295" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_test_mode_delete_fsm test_mode_handle%d @lm_gle_test_mode_fsm.c(95),INFO" ID="0x88f602fd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_test_mode_get_fsm_id creat test_mode_hdl=0x%x, ret=0x%X @lm_gle_test_mode_fsm.c(119),INFO" ID="0x88f603bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_test_mode_get_fsm_id success! @lm_gle_test_mode_fsm.c(133),INFO" ID="0x88f6042d" />
+			</MSG_LOG>

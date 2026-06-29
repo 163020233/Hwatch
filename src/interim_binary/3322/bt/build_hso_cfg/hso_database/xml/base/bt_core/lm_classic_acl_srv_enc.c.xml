@@ -1,0 +1,24 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ENC]lm_classic_acl_enc_mode_not_accept_act: code 0x%x @lm_classic_acl_srv_enc.c(286),WARNING" ID="0x89d808f3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ENC]lm_classic_acl_enc_solve_mode_collision_normal_act: code = 0x%x @lm_classic_acl_srv_enc.c(324),WARNING" ID="0x89d80a23" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_enc_confirm_key_size_act:: secure connect central start h3 clac @lm_classic_acl_srv_enc.c(355),INFO" ID="0x89d80b1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_enc_confirm_key_size_act:: LM_CLASSIC_STATE_ENC_WAIT_ENC_START_REQ @lm_classic_acl_srv_enc.c(384),INFO" ID="0x89d80c05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ENC]lm_classic_acl_enc_central_enable_enc_act:: key_size[%u] @lm_classic_acl_srv_enc.c(460),INFO" ID="0x89d80e65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_enc_peripheral_clac_key_act:: secure connect peripheral start h3 clac @lm_classic_acl_srv_enc.c(495),INFO" ID="0x89d80f7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_enc_peripheral_clac_key_act:: peripheral start E0 clac @lm_classic_acl_srv_enc.c(505),INFO" ID="0x89d80fcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_enc_enable_enc_act:: secure connect complete h3 clac, set sk @lm_classic_acl_srv_enc.c(556),INFO" ID="0x89d81165" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ENC]lm_classic_acl_pause_enc_not_accepted_act, code = 0x%x @lm_classic_acl_srv_enc.c(752),INFO" ID="0x89d81785" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_resume_enc_init_act @lm_classic_acl_srv_enc.c(771),INFO" ID="0x89d8181d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_resume_enc_resp_act @lm_classic_acl_srv_enc.c(811),INFO" ID="0x89d8195d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ENC]lm_classic_acl_hci_set_connection_enc_act:: enc_mode[%u] @lm_classic_acl_srv_enc.c(829),INFO" ID="0x89d819ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_hci_set_connection_enc_act:: enc_mode is current mode @lm_classic_acl_srv_enc.c(857),INFO" ID="0x89d81acd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_hci_set_connection_enc_act:: fail to create srv fsm @lm_classic_acl_srv_enc.c(865),ERROR" ID="0x89d81b0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ENC]lm_classic_acl_lmp_enc_mode_req_handle_act:: enc_mode[%u] @lm_classic_acl_srv_enc.c(884),INFO" ID="0x89d81ba5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_lmp_enc_mode_req_handle_act:: fail to create srv fsm! @lm_classic_acl_srv_enc.c(904),ERROR" ID="0x89d81c42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_lmp_enc_mode_req_handle_act:: send lmp_not_ac, reason BT_LMP_LL_COLLISION @lm_classic_acl_srv_enc.c(910),INFO" ID="0x89d81c75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_msg_pause_enc_req_handle_act:: invalid pause enc reqeust! @lm_classic_acl_srv_enc.c(930),WARNING" ID="0x89d81d13" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_msg_pause_enc_req_handle_act:: fail to create srv fsm! @lm_classic_acl_srv_enc.c(953),ERROR" ID="0x89d81dca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_lmp_pause_enc_req_handle_act:: fail to create srv fsm! @lm_classic_acl_srv_enc.c(989),ERROR" ID="0x89d81eea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ENC]lm_classic_acl_hci_set_refresh_enc_key_act:: status[0x%x] @lm_classic_acl_srv_enc.c(1055),INFO" ID="0x89d820fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ENC]lm_classic_acl_rx_mic_err_handle_act:: 3rd mic err refresh key @lm_classic_acl_srv_enc.c(1104),INFO" ID="0x89d82285" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_rx_mic_err_handle_act:: 4th mic err detach @lm_classic_acl_srv_enc.c(1108),ERROR" ID="0x89d822a2" />
+			</MSG_LOG>

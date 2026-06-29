@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_CQDDR]cqddr_env_init enter! @evt_task_classic_acl_cqddr_ram.c(94),INFO" ID="0x8b0402f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_CQDDR]cqddr_stat_deinit: con_hdl %d @evt_task_classic_acl_cqddr_ram.c(230),INFO" ID="0x8b040735" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_CQDDR]cqddr_init: con_hdl %d, cur_cqddr_algo_idx %d @evt_task_classic_acl_cqddr_ram.c(264),INFO" ID="0x8b040845" />
+			</MSG_LOG>

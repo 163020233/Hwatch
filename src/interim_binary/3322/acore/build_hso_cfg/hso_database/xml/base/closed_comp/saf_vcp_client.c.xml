@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] register client callback point is null! @saf_vcp_client.c(49),ERROR" ID="0xe9b6018a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] client already register! @saf_vcp_client.c(53),ERROR" ID="0xe9b601aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] client not register! @saf_vcp_client.c(67),ERROR" ID="0xe9b6021a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] read property value, state unregistered @saf_vcp_client.c(86),ERROR" ID="0xe9b602b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vcpc] write property value, state unregistered @saf_vcp_client.c(98),ERROR" ID="0xe9b60312" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][vcpc] cp operation: handle: %d, op: %d @saf_vcp_client.c(103),INFO" ID="0xe9b6033d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[vcpc] set mute state fail, err 0x%x! @saf_vcp_client.c(164),ERROR" ID="0xe9b60522" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[vcpc] set volume value fail, err 0x%x! @saf_vcp_client.c(227),ERROR" ID="0xe9b6071a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[vcpc] set audio stream volume value fail, err 0x%x! @saf_vcp_client.c(265),ERROR" ID="0xe9b6084a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[vcpc] read effective time support fail. @saf_vcp_client.c(277),ERROR" ID="0xe9b608aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[vcpc] report audio stream volume info cbk fail, volume_param is null! @saf_vcp_client.c(319),ERROR" ID="0xe9b609fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[vcpc] report audio stream volume info cbk fail, ep_num is 0! @saf_vcp_client.c(325),ERROR" ID="0xe9b60a2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[vcpc] report audio stream volume info cbk volume_info malloc fail! @saf_vcp_client.c(332),ERROR" ID="0xe9b60a62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vcpc] btsrv_msg handle, msg id: %x @saf_vcp_client.c(348),INFO" ID="0xe9b60ae5" />
+			</MSG_LOG>

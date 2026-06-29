@@ -1,0 +1,72 @@
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+import("//build/ohos.gni")
+import("../../../../../build/gn/config.gni")
+
+ohos_source_set("drv_vdec") {
+    sources = [
+        "vdec_v7.0/drv_vdec_dev.c",
+        "vdec_v7.0/drv_vdec.c",
+        "vdec_v7.0/platform/osal/liteos/drv_vdec_osal.c",
+        "vdec_v7.0/platform/sdk/fbb/drv_vdec_sdk.c",
+        "vdec_v7.0/vfmw_adpt/vfmw_v7.0/drv_vdec_vfmw.c",
+        "vdec_v7.0/vfmw_adpt/vfmw_v7.0/drv_vdec_convert.c",
+    ]
+
+    if(defined (vdec_proc_support)) {
+        sources += ["vdec_v7.0/modules/proc/drv_vdec_proc.c",]
+    }
+      
+    configs =
+      [ "${sdk_cfg_path}:sdk_public_configs" ]
+
+    configs += [":private"]
+
+    cflags = [
+        "-Werror=out-of-line-declaration",
+        "-Werror=uninitialized",
+        "-Werror=int-conversion",
+        "-Werror=enum-conversion",
+        "-Werror=long-long",
+        "-Werror=unused-variable",
+        "-Werror=unused-value",
+        "-Werror=unused-function",
+        "-Werror=unused-but-set-variable",
+        "-Werror=sign-compare",
+        "-Werror=unused-parameter",
+        "-Werror=tautological-compare",
+        "-Werror=bad-function-cast",
+        "-Werror=incompatible-pointer-types",
+        "-Werror=implicit-function-declaration",
+    ]
+}
+
+config("private") {
+    include_dirs = [
+      "../../api/include",
+      "../vfmw/vfmw_v7.0",
+      "../vfmw/vfmw_v7.0/master",
+      "vdec_v7.0",
+      "vdec_v7.0/include",
+      "vdec_v7.0/platform/osal/liteos",
+      "vdec_v7.0/platform/sdk/fbb",
+      "vdec_v7.0/vfmw_adpt/vfmw_v7.0",
+      "vdec_v7.0/modules/proc",
+    ]
+
+    defines = [
+        "EXT_VDEC_MJPEG_SUPPORT",
+        "VDEC_PROC_SUPPORT",
+        "VDEC_MAX_CHAN_NUM=3"
+    ]
+}

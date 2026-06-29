@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS]invalid server id: %d @bs_ble_gatts_cbk.c(24),ERROR" ID="0xeea800c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS]invalid server id: %d @bs_ble_gatts_cbk.c(33),ERROR" ID="0xeea8010a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BS][GATTS]service start, server_id: 0x%02x, inst_id: 0x%02x, status %d @bs_ble_gatts_cbk.c(111),INFO" ID="0xeea8037d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS]read request invalid conn_id %d @bs_ble_gatts_cbk.c(165),ERROR" ID="0xeea8052a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BS][GATTS]read request, server_id: 0x%02x, conn_id: 0x%02x, status %d @bs_ble_gatts_cbk.c(171),INFO" ID="0xeea8055d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS]read request failed to alloc mem @bs_ble_gatts_cbk.c(175),ERROR" ID="0xeea8057a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS]write request invalid conn_id %d @bs_ble_gatts_cbk.c(197),ERROR" ID="0xeea8062a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS]write request failed to alloc mem @bs_ble_gatts_cbk.c(203),ERROR" ID="0xeea8065a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS]write request failed to alloc mem @bs_ble_gatts_cbk.c(215),ERROR" ID="0xeea806ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS]write request failed to memcpy @bs_ble_gatts_cbk.c(221),ERROR" ID="0xeea806ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS]indicate confirm invalid conn_id %d @bs_ble_gatts_cbk.c(243),ERROR" ID="0xeea8079a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS]mtu changed invalid conn_id %d @bs_ble_gatts_cbk.c(253),ERROR" ID="0xeea807ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BS][GATTS]gatts register failed %d @bs_ble_gatts_cbk.c(277),ERROR" ID="0xeea808aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS]gatts register failed, no mem @bs_ble_gatts_cbk.c(284),ERROR" ID="0xeea808e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS][GATTS]gatts register success, server_id: %d, inst_id %d @bs_ble_gatts_cbk.c(298),INFO" ID="0xeea80955" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BS][GATTS]unregister all service cbk @bs_ble_gatts_cbk.c(306),INFO" ID="0xeea80995" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BS][GATTS]unregister service cbk, server_id: %d, inst_id %d @bs_ble_gatts_cbk.c(313),INFO" ID="0xeea809cd" />
+			</MSG_LOG>

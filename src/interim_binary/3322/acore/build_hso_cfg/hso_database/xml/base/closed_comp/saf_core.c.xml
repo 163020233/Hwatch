@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[saf] g_saf_core_state:from: %u to: %u! @saf_core.c(70),INFO" ID="0xe9620235" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf] saf_module_init begin! @saf_core.c(80),INFO" ID="0xe9620285" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf] saf_module_init end, g_saf_core_state = %u! @saf_core.c(104),INFO" ID="0xe9620345" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf] saf_module_deinit begin! @saf_core.c(112),INFO" ID="0xe9620385" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf] saf_module_deinit end, g_saf_core_state = %u! @saf_core.c(137),INFO" ID="0xe962044d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf] saf core has been inited, donot repeat. @saf_core.c(147),ERROR" ID="0xe962049a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf] saf core has not been inited, not supported. @saf_core.c(162),ERROR" ID="0xe9620512" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf deinit] send deinit, msg send err ret = %d @saf_core.c(168),ERROR" ID="0xe9620542" />
+			</MSG_LOG>

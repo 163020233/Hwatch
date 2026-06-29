@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_pre_process_aes_cmac_task memcpy text error! @enc_ha_aes_cmac.c(45),ERROR" ID="0x89bc016a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_pre_process_aes_cmac_task memcpy key error! @enc_ha_aes_cmac.c(48),ERROR" ID="0x89bc0182" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]encrypt_post_process_aes_cmac_task memcpy hash error! @enc_ha_aes_cmac.c(66),ERROR" ID="0x89bc0212" />
+			</MSG_LOG>

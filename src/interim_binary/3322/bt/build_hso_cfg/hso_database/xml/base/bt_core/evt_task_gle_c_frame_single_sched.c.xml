@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][c_frame]single_tx_start_cbk: env_ptr is NULL! @evt_task_gle_c_frame_single_sched.c(39),ERROR" ID="0x8bd6013a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][c_frame]single_sched_evt_cbk, prog_nb=%d @evt_task_gle_c_frame_single_sched.c(46),ERROR" ID="0x8bd60172" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][c_frame]single_sched_rx_cbk: env_ptr is NULL! sed_id 0x%x @evt_task_gle_c_frame_single_sched.c(75),ERROR" ID="0x8bd6025a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][c_frame]single_sched_rx_cbk, sed_id:%d, status:0x%x, rxpd_rssi %d, ts 0x%x @evt_task_gle_c_frame_single_sched.c(92),WARNING" ID="0x8bd602e3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][c_frame]single_sched_sket_cbk, ts 0x%x @evt_task_gle_c_frame_single_sched.c(119),INFO" ID="0x8bd603bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][c_frame]single_sched_sket_cbk: env_ptr is NULL! @evt_task_gle_c_frame_single_sched.c(122),ERROR" ID="0x8bd603d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgle][c_frame]single_sched_sket_cbk, prog_nb=%d @evt_task_gle_c_frame_single_sched.c(129),ERROR" ID="0x8bd6040a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][c_frame]single_sched_isr_cbk lateint! sed_id 0x%x, elt-&gt;ts 0x%x, cur_ts 0x%x @evt_task_gle_c_frame_single_sched.c(168),WARNING" ID="0x8bd60543" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][c_frame]single_tx_start_cbk: sed_id invalid @evt_task_gle_c_frame_single_sched.c(307),WARNING" ID="0x8bd6099b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][c_frame]single_tx_start_cbk: start before end isr ! nb_prog %d, sed_id 0x%x @evt_task_gle_c_frame_single_sched.c(314),WARNING" ID="0x8bd609d3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][c_frame]single_sched_start_cbk, stop sched, sed_id 0x%x @evt_task_gle_c_frame_single_sched.c(320),INFO" ID="0x8bd60a05" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp][c_frame]single_sched_start_cbk sed_id(%d)offset(%d)ts(0x%x)G_ts(0x%x) @evt_task_gle_c_frame_single_sched.c(340),WARNING" ID="0x8bd60aa3" />
+			</MSG_LOG>

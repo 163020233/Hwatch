@@ -1,0 +1,33 @@
+config LOSCFG_FS_YAFFS
+    bool "Enable YAFFS2"
+    default y
+    depends on LOSCFG_FS_VFS && LOSCFG_DRIVERS_MTD_NAND
+    help
+      Answer Y to enable LiteOS support yaffs2 filesystem.
+
+config LOSCFG_YAFFS_GC_STACK_SIZE
+    int "YAFFS2 gb gc stack size."
+    default LOSCFG_BASE_CORE_TSK_DEFAULT_STACK_SIZE
+    help
+      This is the configuration item for setting the yaffs bg gc stack size.
+
+config LOSCFG_YAFFS_DISABLE_BG_GC_THREAD_FUNC
+    bool "Disable BG GC"
+    default n
+    depends on LOSCFG_FS_YAFFS
+    help
+      Answer y to disable background scheduled GC functionality.
+
+config LOSCFG_YAFFS_EXTEND_SUPPORT
+      bool "Enable Yaffs extend support feature"
+      default n
+      depends on LOSCFG_FS_YAFFS
+      help
+        Answer y to enable YAFFS_EXTEND_SUPPORT feature.
+
+#config LOSCFG_FS_YAFFS_CACHE
+#   bool "Enable YAFFS2 Cache"
+#   default y
+#   depends on LOSCFG_FS_YAFFS
+#   help
+#     Answer y to support for yaffs2 cache.

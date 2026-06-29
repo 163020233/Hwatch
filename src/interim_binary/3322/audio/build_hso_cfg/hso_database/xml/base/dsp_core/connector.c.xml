@@ -1,0 +1,31 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ops-&gt;detach_output_connector Failed, Error Code: [0x%08X] @connector.c(80),ERROR" ID="0x98200282" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ops-&gt;detach_input_connector Failed, Error Code: [0x%08X] @connector.c(123),ERROR" ID="0x982003da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call platform_get_input_adp_attr Failed, Error Code: [0x%08X] @connector.c(157),ERROR" ID="0x982004ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call platform_get_output_adp_attr Failed, Error Code: [0x%08X] @connector.c(163),ERROR" ID="0x9820051a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_destroy Failed, Error Code: [0x%08X] @connector.c(192),ERROR" ID="0x98200602" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_detach_output Failed, Error Code: [0x%08X] @connector.c(216),ERROR" ID="0x982006c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_detach_input Failed, Error Code: [0x%08X] @connector.c(222),ERROR" ID="0x982006f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]input = 0x%08X @connector.c(232),ERROR" ID="0x98200742" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]output = 0x%08X @connector.c(233),ERROR" ID="0x9820074a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_alloc_data_buffer Failed, Error Code: [0x%08X] @connector.c(250),ERROR" ID="0x982007d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_attach_input Failed, Error Code: [0x%08X] @connector.c(256),ERROR" ID="0x98200802" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_attach_output Failed, Error Code: [0x%08X] @connector.c(262),ERROR" ID="0x98200832" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_get_info Failed, Error Code: [0x%08X] @connector.c(291),ERROR" ID="0x9820091a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_get_pos Failed, Error Code: [0x%08X] @connector.c(297),ERROR" ID="0x9820094a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_get_info Failed, Error Code: [0x%08X] @connector.c(304),ERROR" ID="0x98200982" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_get_delay Failed, Error Code: [0x%08X] @connector.c(390),ERROR" ID="0x98200c32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_write Failed, Error Code: [0x%08X] @connector.c(425),ERROR" ID="0x98200d4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_write Failed, Error Code: [0x%08X] @connector.c(432),ERROR" ID="0x98200d82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_write Failed, Error Code: [0x%08X] @connector.c(484),ERROR" ID="0x98200f22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_write Failed, Error Code: [0x%08X] @connector.c(523),ERROR" ID="0x9820105a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_peek Failed, Error Code: [0x%08X] @connector.c(616),ERROR" ID="0x98201342" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_poke Failed, Error Code: [0x%08X] @connector.c(647),ERROR" ID="0x9820143a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_peek Failed, Error Code: [0x%08X] @connector.c(661),ERROR" ID="0x982014aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_poke Failed, Error Code: [0x%08X] @connector.c(690),ERROR" ID="0x98201592" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_release_stream_info Failed, Error Code: [0x%08X] @connector.c(707),ERROR" ID="0x9820161a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_release_stream_info Failed, Error Code: [0x%08X] @connector.c(729),ERROR" ID="0x982016ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_flush Failed, Error Code: [0x%08X] @connector.c(773),ERROR" ID="0x9820182a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_flush Failed, Error Code: [0x%08X] @connector.c(783),ERROR" ID="0x9820187a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_reset Failed, Error Code: [0x%08X] @connector.c(798),ERROR" ID="0x982018f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ring_buf_reset Failed, Error Code: [0x%08X] @connector.c(808),ERROR" ID="0x98201942" />
+			</MSG_LOG>

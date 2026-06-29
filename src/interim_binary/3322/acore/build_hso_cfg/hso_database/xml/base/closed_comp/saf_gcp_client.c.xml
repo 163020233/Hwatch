@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] register client callback point is null! @saf_gcp_client.c(47),ERROR" ID="0xea0c017a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] client already register! @saf_gcp_client.c(51),ERROR" ID="0xea0c019a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcpc] gcp client rigister fail!:%u @saf_gcp_client.c(56),ERROR" ID="0xea0c01c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] client not register! @saf_gcp_client.c(70),ERROR" ID="0xea0c0232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] read property value, state unregistered @saf_gcp_client.c(90),ERROR" ID="0xea0c02d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][gcpc] write property value, state unregistered @saf_gcp_client.c(102),ERROR" ID="0xea0c0332" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][gcpc] cp operation, handle: %d, op: %d @saf_gcp_client.c(107),INFO" ID="0xea0c035d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][gcpc] btsrv_msg handle, msg id: %x @saf_gcp_client.c(229),INFO" ID="0xea0c072d" />
+			</MSG_LOG>

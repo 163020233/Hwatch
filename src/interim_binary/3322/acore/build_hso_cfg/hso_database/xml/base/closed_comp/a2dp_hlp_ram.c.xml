@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="audio_debug ipc_send dsp begin,sequence_number = 0x%x,length = 0x%x. @a2dp_hlp_ram.c(98),INFO" ID="0xeb9c0315" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="audio_debug ready to go =======ipc_send dsp end===ret = %d. @a2dp_hlp_ram.c(104),INFO" ID="0xeb9c0345" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]audio_debug ipc2dsp_msg_str fail @a2dp_hlp_ram.c(106),WARNING" ID="0xeb9c0353" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[offload]A2DP codec = %d, frame_size is%d @a2dp_hlp_ram.c(521),INFO" ID="0xeb9c104d" />
+			</MSG_LOG>

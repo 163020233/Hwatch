@@ -1,0 +1,24 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_SCAN]chk_continue, prev_ts:0x%x, next_ts:0x%x, free_ts:0x%x, remain_duration:%d @evt_task_ble_scan.c(110),INFO" ID="0x885c0375" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_SCAN]chk_continue, remain_duration:%d, old_ts=0x%x, new_ts=0x%x, curr_ts=0x%x @evt_task_ble_scan.c(128),INFO" ID="0x885c0405" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_SCAN]evt_task_ble_scan_restart, ts=0x%x, asap_limit=0x%x, dur_min=%d @evt_task_ble_scan.c(212),WARNING" ID="0x885c06a3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_SCAN]auxptr_time invalid:%d @evt_task_ble_scan.c(274),ERROR" ID="0x885c0892" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_SCAN]evt_task_ble_aux_scan_start, es_insert_elt not ok! @evt_task_ble_scan.c(333),WARNING" ID="0x885c0a6b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]check_aux, ext_head_flags:%d, advlen:%d @evt_task_ble_scan.c(372),WARNING" ID="0x885c0ba3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_SCAN]check_aux, rx_ext_header_len:%d, ext_head_len:%d, ble_rx_ap_flag:%d, auxptr:%d @evt_task_ble_scan.c(374),WARNING" ID="0x885c0bb3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_SCAN]check_aux, auxptr_time:%d, offset:%d, off_unit:%d, phy:%d @evt_task_ble_scan.c(376),WARNING" ID="0x885c0bc3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][scan]txpd_node alloc fail! @evt_task_ble_scan.c(617),ERROR" ID="0x885c134a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][scan]txbuff_node alloc fail! @evt_task_ble_scan.c(626),ERROR" ID="0x885c1392" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_SCAN]evt_task_ble_scan_create_desc, env_ptr is NULL @evt_task_ble_scan.c(663),WARNING" ID="0x885c14bb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_SCAN]evt_task_ble_scan_create_desc, time_info is NULL @evt_task_ble_scan.c(668),WARNING" ID="0x885c14e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_SCAN]es_create_elt fail! @evt_task_ble_scan.c(746),ERROR" ID="0x885c1752" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_SCAN]aux_elt create fail! @evt_task_ble_scan.c(752),ERROR" ID="0x885c1782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_ble_scan_start, env_ptr create fail! @evt_task_ble_scan.c(825),ERROR" ID="0x885c19ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][scan]evt_task_ble_scan_create, es_create_elt fail! @evt_task_ble_scan.c(832),ERROR" ID="0x885c1a02" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]start, interval=%d, window=%d @evt_task_ble_scan.c(840),INFO" ID="0x885c1a45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][scan]evt_task_ble_scan_create, es_insert_elt fail! @evt_task_ble_scan.c(863),ERROR" ID="0x885c1afa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]start, start_ts:0x%x, curr_ts:0x%x @evt_task_ble_scan.c(877),INFO" ID="0x885c1b6d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_SCAN]statis: curr_time=0x%x, total_time=%d, total_window=%d, start_cbk_cnt=%d @evt_task_ble_scan.c(893),INFO" ID="0x885c1bed" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_SCAN]statis: cancel_cbk_cnt=%d, evt_cbk_cnt=%d, abort_cbk_cnt=%d, abnormal_cbk_cnt=%d @evt_task_ble_scan.c(896),INFO" ID="0x885c1c05" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_SCAN]end_process, evt_status:%d, aux_rx_on:%d @evt_task_ble_scan.c(993),INFO" ID="0x885c1f0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][scan]evt_task_ble_scan_fsm_start, evt task scan fsm switch to idle! @evt_task_ble_scan.c(1041),INFO" ID="0x885c208d" />
+			</MSG_LOG>

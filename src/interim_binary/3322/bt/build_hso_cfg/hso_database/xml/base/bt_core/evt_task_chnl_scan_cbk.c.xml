@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]evt_task_chnl_scan_start_cbk, evt_task_chnl_scan_env is NULL! @evt_task_chnl_scan_cbk.c(27),WARNING" ID="0x8ae400db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]evt_task_chnl_scan_start_cbk, evt_task_chnl_scan_env-&gt;elt != elt! @evt_task_chnl_scan_cbk.c(33),WARNING" ID="0x8ae4010b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]evt_task_chnl_scan_cancel_cbk, evt_task_chnl_scan_env is NULL! @evt_task_chnl_scan_cbk.c(57),WARNING" ID="0x8ae401cb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]cancel_cbk, evt_task_chnl_scan_env-&gt;elt != elt! @evt_task_chnl_scan_cbk.c(63),WARNING" ID="0x8ae401fb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][CHNL_SCAN]cancel_cbk, evt_state %d @evt_task_chnl_scan_cbk.c(68),WARNING" ID="0x8ae40223" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]evt_task_chnl_scan_evt_cbk, elt is NULL! @evt_task_chnl_scan_cbk.c(88),WARNING" ID="0x8ae402c3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]evt_task_chnl_scan_evt_cbk, evt_task_chnl_scan_env is NULL! @evt_task_chnl_scan_cbk.c(94),WARNING" ID="0x8ae402f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]evt_task_chnl_scan_abnormal_cbk, evt_task_chnl_scan_env is NULL! @evt_task_chnl_scan_cbk.c(110),WARNING" ID="0x8ae40373" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][CHNL_SCAN]isr_cbk, env_ptr-&gt;elt != prog_elt-&gt;es_elt_ptr! @evt_task_chnl_scan_cbk.c(143),WARNING" ID="0x8ae4047b" />
+			</MSG_LOG>

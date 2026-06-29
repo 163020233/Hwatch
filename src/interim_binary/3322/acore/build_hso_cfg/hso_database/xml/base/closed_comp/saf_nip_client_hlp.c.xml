@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][nipc] network id decode, malloc fail! @saf_nip_client_hlp.c(49),ERROR" ID="0xe9dc018a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][nipc] operator name decode, malloc fail! @saf_nip_client_hlp.c(70),ERROR" ID="0xe9dc0232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][nipc] operator name decode, memcpy fail! @saf_nip_client_hlp.c(77),ERROR" ID="0xe9dc026a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][nipc] standard decode, malloc fail! @saf_nip_client_hlp.c(96),ERROR" ID="0xe9dc0302" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][nipc] signal strength decode, malloc fail! @saf_nip_client_hlp.c(112),ERROR" ID="0xe9dc0382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][nipc] call protocol list decode, malloc fail! @saf_nip_client_hlp.c(126),ERROR" ID="0xe9dc03f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][nipc] inst id map is null @saf_nip_client_hlp.c(203),INFO" ID="0xe9dc065d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][nipc] inst id map is null @saf_nip_client_hlp.c(222),INFO" ID="0xe9dc06f5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][nipc] build nis inst err, ret = %d @saf_nip_client_hlp.c(247),ERROR" ID="0xe9dc07ba" />
+			</MSG_LOG>

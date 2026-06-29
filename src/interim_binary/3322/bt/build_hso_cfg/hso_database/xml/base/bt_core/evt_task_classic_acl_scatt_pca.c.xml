@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][bt_scatt] mode on, conhdl=%d @evt_task_classic_acl_scatt_pca.c(56),INFO" ID="0x8b1001c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][bt_scatt] mode off @evt_task_classic_acl_scatt_pca.c(69),INFO" ID="0x8b10022d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_SCATT] dump:cur_index=%d @evt_task_classic_acl_scatt_pca.c(120),INFO" ID="0x8b1003c5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_SCATT] dump:clock=0x%x, shift=%d, delay_p=%d, finecnt=%d @evt_task_classic_acl_scatt_pca.c(123),INFO" ID="0x8b1003dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][bt_scatt]evt_task_classic_acl_scatt_pca_calc. @evt_task_classic_acl_scatt_pca.c(193),INFO" ID="0x8b10060d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][bt_scatt] mode off @evt_task_classic_acl_scatt_pca.c(198),INFO" ID="0x8b100635" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_SCATT] evt_task_classic_acl_scatt_pca_dump @evt_task_classic_acl_scatt_pca.c(203),INFO" ID="0x8b10065d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_SCATT] evt_task_classic_acl_scatt_pca_env_reset_ram @evt_task_classic_acl_scatt_pca.c(208),INFO" ID="0x8b100685" />
+			</MSG_LOG>

@@ -1,0 +1,43 @@
+<stack class="stack">
+
+    <stack class="stack" on:swipe="swipeExit">
+
+    <!--  top album  -->
+        <div class="album_div">
+            <div class="song_div">
+                <text class="song_text">{{ curMusic.curMusicName }}</text>
+            </div>
+            <marquee scrollamount="10" class="singer_name">{{ curMusic.singer }}</marquee>
+        </div>
+
+    <!--  center images  -->
+        <stack class="play_stack" on:click="playMusic">
+            <image class="play_img" src="/common/images/A055_010.png" if="{{ playStatus != 0 }}"/>
+            <image class="play_img" src="/common/images/A055_009.png" if="{{ playStatus == 0 }}"/>
+        </stack>
+
+        <image src="/common/images/A055_006.png" style="object-fit: contain;"
+               class="left_btn" if="{{ ! isListPlay }}" on:click="changeSong"/>
+        <image src="/common/images/A055_007.png" style="object-fit: contain;"
+               class="right_btn" if="{{ ! isListPlay }}" on:click="changeSong"/>
+
+        <image src="/common/images/A055_001.png" class="volume_img" on:click="showVolume"/>
+
+        <image src="/common/images/A055_024.png" class="settings_img" on:click="exitApp"/>
+
+        <progress type="arc" class="progress" percent="{{ progress }}"></progress>
+
+    </stack>
+    <div class="volume_div" if="{{ showVolume }}">
+        <div class="hide_div" on:swipe="swipeQuitVolume" on:click="hideVolume"></div>
+        <div class="volume_div_2" on:click="clickVolumeDiv">
+            <slider class="volume_slider" value="{{ volume }}" on:change="changeVolume" on:swipe="swipeSliderVolume"/>
+        </div>
+        <div class="hide_div" on:swipe="swipeQuitVolume" on:click="hideVolume"></div>
+    </div>
+    <div class="volume_exit" if="{{ isListPlayExit }}">
+        <input style="width: 180px; height: 80px;" type="button" on:click="backPlay(true)">退出</input>
+        <div style="width: 30px;"></div>
+        <input style="width: 180px; height: 80px;" type="button" on:click="backPlay(false)">后台播放</input>
+    </div>
+</stack>

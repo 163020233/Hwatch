@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm_classic_page_fsm_change_evt_task failed @lm_classic_page_act.c(44),WARNING" ID="0x89520163" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm_co_hci_page_env_pre lt addr get failed @lm_classic_page_act.c(86),WARNING" ID="0x895202b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][page]lm_co_hci_page_env_pre lt addr is %d @lm_classic_page_act.c(89),INFO" ID="0x895202cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][page]lm_classic_page_start l2 fsm create failed, ret 0x%x @lm_classic_page_act.c(112),WARNING" ID="0x89520383" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][page]lm_classic_page_start l2 fsm create failed, ret 0x%x @lm_classic_page_act.c(139),WARNING" ID="0x8952045b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm_classic_page_start l2 page init failed @lm_classic_page_act.c(145),WARNING" ID="0x8952048b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm_classic_page_off_hci_create_con_act check failed @lm_classic_page_act.c(196),WARNING" ID="0x89520623" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][page]lm_classic_page_off_hci_create_con_act status = 0x%x @lm_classic_page_act.c(205),WARNING" ID="0x8952066b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm_classic_page_off_hci_remote_name_act page start failed @lm_classic_page_act.c(248),WARNING" ID="0x895207c3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm_classic_page_paging_hci_create_con_can_act BD_ADDR is different @lm_classic_page_act.c(451),WARNING" ID="0x89520e1b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm_classic_page_paging_hci_remote_name_can_act BD_ADDR is different @lm_classic_page_act.c(484),WARNING" ID="0x89520f23" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]page_end_succ: link id=%d, BD_ADDR is 0x%02x:0x%02x:0x%02x:*:*:* @lm_classic_page_act.c(510),INFO" ID="0x89520ff5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm_page_end_ind_handler_succ acl link create failed! @lm_classic_page_act.c(529),WARNING" ID="0x8952108b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][page]lm_classic_page_paging_msg_page_end_act: status = %x, sed_id=%x @lm_classic_page_act.c(567),INFO" ID="0x895211bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][page]lm_classic_page_wait_rem_name_cancel_cmp_msg_page_end_act: status = %x, sed_id=%x @lm_classic_page_act.c(631),INFO" ID="0x895213bd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][page]lm_classic_page_wait_create_con_cancel_cmp_msg_page_end_act: status = %x, sed_id=%x @lm_classic_page_act.c(672),INFO" ID="0x89521505" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][page]lm_classic_page_off_hci_create_con_act status = 0x%x @lm_classic_page_act.c(722),WARNING" ID="0x89521693" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm_classic_page_paging_hci_trunc_page_can_act BD_ADDR is different @lm_classic_page_act.c(766),WARNING" ID="0x895217f3" />
+			</MSG_LOG>

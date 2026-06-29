@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_completion.c(16),INFO" ID="0xa02c0085" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MemAlloc fail! @osal_completion.c(21),INFO" ID="0xa02c00ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_completion.c(31),INFO" ID="0xa02c00fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_completion.c(40),INFO" ID="0xa02c0145" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_completion.c(52),INFO" ID="0xa02c01a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_completion.c(61),INFO" ID="0xa02c01ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param invalid! @osal_completion.c(70),INFO" ID="0xa02c0235" />
+			</MSG_LOG>

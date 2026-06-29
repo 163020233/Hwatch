@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @xa_src_pp_wrap.c(45),ERROR" ID="0x9934016a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]cmd = 0x%08X @xa_src_pp_wrap.c(46),ERROR" ID="0x99340172" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]idx = 0x%08X @xa_src_pp_wrap.c(47),ERROR" ID="0x9934017a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @xa_src_pp_wrap.c(86),INFO" ID="0x993402b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @xa_src_pp_wrap.c(91),ERROR" ID="0x993402da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Error Code: [0x%08X] @xa_src_pp_wrap.c(103),ERROR" ID="0x9934033a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @xa_src_pp_wrap.c(111),INFO" ID="0x9934037d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @xa_src_pp_wrap.c(180),INFO" ID="0x993405a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @xa_src_pp_wrap.c(217),INFO" ID="0x993406cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @xa_src_pp_wrap.c(223),INFO" ID="0x993406fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]samples = %u @xa_src_pp_wrap.c(252),ERROR" ID="0x993407e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]MAX_INPUT_CHUNK_LEN = %u @xa_src_pp_wrap.c(253),ERROR" ID="0x993407ea" />
+			</MSG_LOG>

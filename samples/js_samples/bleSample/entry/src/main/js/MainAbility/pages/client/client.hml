@@ -1,0 +1,88 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="getMtu">
+            <text class="todo-title">getMtu</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="getDeviceMtu">
+            <text class="todo-title">getDeviceMtu</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="startBLEScanWithOnBLEDeviceFind">
+            <text class="todo-title">开始扫描</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="stopBLEScan">
+            <text class="todo-title">停止扫描</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="connectWithDeviceId">
+            <text class="todo-title">connectWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="connectWithoutDeviceId">
+            <text class="todo-title">connectWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="disconnectWithDeviceId">
+            <text class="todo-title">disconnectWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="disconnectWithoutDeviceId">
+            <text class="todo-title">disconnectWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="close">
+            <text class="todo-title">close</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="getDeviceNameAndRssiValueWithDeviceId">
+            <text class="todo-title">getDeviceNameAndRssiValueWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="getDeviceNameAndRssiValueWithoutDeviceId">
+            <text class="todo-title">getDeviceNameAndRssiValueWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="getServicesWithDeviceId">
+            <text class="todo-title">getServicesWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="getServicesWithoutDeviceId">
+            <text class="todo-title">getServicesWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="writeCharacteristicValueWriteLoop">
+            <text class="todo-title">writeCharacteristicValueWriteLoop</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="writeCharacteristicValueWriteWithDeviceId">
+            <text class="todo-title">writeCharacteristicValueWriteWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="readCharacteristicValueWithDeviceId">
+            <text class="todo-title">readCharacteristicValueWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="writeCharacteristicValueWriteWithoutDeviceId">
+            <text class="todo-title">writeCharacteristicValueWriteWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="readCharacteristicValueWithoutDeviceId">
+            <text class="todo-title">readCharacteristicValueWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="writeCharacteristicValueWriteNoResponseWithDeviceId">
+            <text class="todo-title">writeCharacteristicValueWriteNoResponseWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="writeCharacteristicValueWriteNoResponseWithoutDeviceId">
+            <text class="todo-title">writeCharacteristicValueWriteNoResponseWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="writeDescriptorValueWithDeviceId">
+            <text class="todo-title">writeDescriptorValueWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="readDescriptorValueWithDeviceId">
+            <text class="todo-title">readDescriptorValueWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="writeDescriptorValueWithoutDeviceId">
+            <text class="todo-title">writeDescriptorValueWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="readDescriptorValueWithoutDeviceId">
+            <text class="todo-title">readDescriptorValueWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="setCharacteristicChangeNotificationWithDeviceId">
+            <text class="todo-title">setCharacteristicChangeNotificationWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="setCharacteristicChangeNotificationWithoutDeviceId">
+            <text class="todo-title">setCharacteristicChangeNotificationWithoutDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="setCharacteristicChangeIndicationWithDeviceId">
+            <text class="todo-title">setCharacteristicChangeIndicationWithDeviceId</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="setCharacteristicChangeIndicationWithoutDeviceId">
+            <text class="todo-title">setCharacteristicChangeIndicationWithoutDeviceId</text>
+        </list-item>
+    </list>
+</div>

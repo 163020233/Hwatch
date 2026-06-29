@@ -1,0 +1,32 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+liteos_config_file = rebase_path("../../.config")
+
+kconfig_out_dir = rebase_path("$root_out_dir")
+top_of_kconfig = rebase_path("../menuconfig/config.in")
+
+
+LITEOS_MENUCONFIG_H = rebase_path("$root_out_dir/menuconfig.h")
+if (safety_kernel) {
+  kconfig_kernel_path = "kernel_s"
+  kconfig_arch_path = "arch_s"
+  kconfig_test_path = "test_s"
+} else {
+  kconfig_kernel_path = "kernel_lite"
+  kconfig_arch_path = "arch_lite"
+  kconfig_test_path = "test"
+}
+
+
+# generating GN and menuconfig header files based on .config
+exec_script("./liteos_kconfig.py",
+            ["$liteos_config_file",
+            "$LITEOS_MENUCONFIG_H",
+            "$kconfig_out_dir/liteos_kconfig.gni"
+            ]
+)
+
+import("$root_out_dir/liteos_kconfig.gni")

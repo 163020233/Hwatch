@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;sample_rate = %u @xasilk_dec_comp.c(113),ERROR" ID="0x992e038a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;channels = %u @xasilk_dec_comp.c(118),ERROR" ID="0x992e03b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]open_param-&gt;bit_depth = %u @xasilk_dec_comp.c(122),ERROR" ID="0x992e03d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]audio_osal_kmalloc silk_dec failed! @xasilk_dec_comp.c(143),ERROR" ID="0x992e047a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call silk_sdk_get_decoder_size Failed, Error Code: [0x%08X] @xasilk_dec_comp.c(165),ERROR" ID="0x992e052a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]audio_osal_kmalloc silk_dec-&gt;ps_dec info failed! @xasilk_dec_comp.c(171),ERROR" ID="0x992e055a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call silk_sdk_init_decoder Failed, Error Code: [0x%08X] @xasilk_dec_comp.c(181),ERROR" ID="0x992e05aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]Error: Wrong Header! @xasilk_dec_comp.c(245),ERROR" ID="0x992e07aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call silk_sdk_decode Failed, Error Code: [0x%08X] @xasilk_dec_comp.c(289),ERROR" ID="0x992e090a" />
+			</MSG_LOG>

@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg6" NAME="[bgtp] a2dp_pkt_sink_statistic. acl %u, seq_err %u, handle_err %u, cid_err %u, pack_err %u, acl_data %u @a2dp_offload.c(46),INFO" ID="0x8b840175" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[bgtp] a2dp_pkt_sink_statistic. conhdl %d, audio: first %u, packing %u, succ %u, fail %u, time_interval %d(ms) @a2dp_offload.c(54),INFO" ID="0x8b8401b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[offload][bgtp]a2dp_steam is close, stop sink statistic! @a2dp_offload.c(65),INFO" ID="0x8b84020d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[offload][bgtp]a2dp_steam is open, start sink statistic! @a2dp_offload.c(77),INFO" ID="0x8b84026d" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[bgtp] a2dp_pkt_src_statistic. IPC %u, txbuff_fail %u, switch_disable %u, len_exceed %u, memcpy_fail %u, L2 %u, tx_ok %u @a2dp_offload.c(118),INFO" ID="0x8b8403b5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp] a2dp_pkt_src_statistic. conhdl %d, flow_ctrl_open %u, flow_ctrl_close %u, time_interval %d(ms) @a2dp_offload.c(123),INFO" ID="0x8b8403dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][ERROR]a2dp_add_packet_counter: index err! index=%d @a2dp_offload.c(142),ERROR" ID="0x8b840472" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][ERROR]a2dp_get_packet_counter: index err! index=%d @a2dp_offload.c(151),ERROR" ID="0x8b8404ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][ERROR]a2dp_get_packet_num_threshold: index err! index=%d @a2dp_offload.c(161),ERROR" ID="0x8b84050a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][ERROR]a2dp_get_stream_info_handle: index err! index=%d @a2dp_offload.c(170),ERROR" ID="0x8b840552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][ERROR]a2dp_get_stream_info_stream_cid_local: index err! index=%d @a2dp_offload.c(180),ERROR" ID="0x8b8405a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][ERROR]a2dp_get_stream_info_avdtp_state: index err! index=%d @a2dp_offload.c(190),ERROR" ID="0x8b8405f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][ERROR]a2dp_get_stream_info_frame_num: index err! index=%d @a2dp_offload.c(200),ERROR" ID="0x8b840642" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[offload][ERROR]a2dp_get_stream_info_frame_num: frame_size is zero! index=%d @a2dp_offload.c(207),ERROR" ID="0x8b84067a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[offload][bgtp]uapi_ipc_send_flow_ctrl_msg fail,slow_ctrl_switch=%d, status=%u @a2dp_offload.c(282),WARNING" ID="0x8b8408d3" />
+			</MSG_LOG>

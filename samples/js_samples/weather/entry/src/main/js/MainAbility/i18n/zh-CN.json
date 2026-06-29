@@ -1,0 +1,16 @@
+{
+  "strings": {
+    "hello": "您好",
+    "world": "世界",
+    "location_text": "郫都区",
+    "weather_text": "晴",
+    "air_text": "良",
+    "notice_text": "未来一小时不会下雨",
+    "yesterday_text": "昨天",
+    "yesterday_air_text": "优",
+    "today_text": "今天",
+    "today_air_text": "良",
+    "tomorrow_text": "明天",
+    "tomorrow_air_text": "良"
+  }
+}

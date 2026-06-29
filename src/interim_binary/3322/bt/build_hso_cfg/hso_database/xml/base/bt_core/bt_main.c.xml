@@ -1,0 +1,29 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]bt_reset enter @bt_main.c(191),INFO" ID="0x880205fd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]bt_mac_reset enter:rxbuf_bitmap: 0x%x, 0x%x, 0x%x, 0x%x @bt_main.c(195),INFO" ID="0x8802061d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]bt_mac_reset end:rxbuf_bitmap: 0x%x, 0x%x, 0x%x, 0x%x @bt_main.c(198),INFO" ID="0x88020635" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]em &amp; isr reset end @bt_main.c(218),INFO" ID="0x880206d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]L2_reset end @bt_main.c(225),INFO" ID="0x8802070d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]L3_reset end @bt_main.c(262),INFO" ID="0x88020835" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]fsm_reset end @bt_main.c(273),INFO" ID="0x8802088d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]bt_reset end @bt_main.c(283),INFO" ID="0x880208dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]bt_common_msg_except_process src_id(0x%x) dst_id(0x%x) msg_id(0x%x) @bt_main.c(296),WARNING" ID="0x88020943" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]bt_init enter @bt_main.c(341),INFO" ID="0x88020aad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]bt_init reset only @bt_main.c(345),INFO" ID="0x88020acd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lowpower_init end @bt_main.c(364),INFO" ID="0x88020b65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]fsm_init end @bt_main.c(371),INFO" ID="0x88020b9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]encrypt_init end @bt_main.c(375),INFO" ID="0x88020bbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]fe_tsensor_init end @bt_main.c(380),INFO" ID="0x88020be5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]fe_init end @bt_main.c(384),INFO" ID="0x88020c05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]bt_init em_end(%d) @bt_main.c(388),INFO" ID="0x88020c25" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]pwr_ctrl_init end @bt_main.c(391),INFO" ID="0x88020c3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]coex_init end @bt_main.c(396),INFO" ID="0x88020c65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]high_power_ctrl_init end @bt_main.c(401),INFO" ID="0x88020c8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]gle_isr_init end @bt_main.c(408),INFO" ID="0x88020cc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]classic_isr_init end @bt_main.c(412),INFO" ID="0x88020ce5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]L2_init end @bt_main.c(417),INFO" ID="0x88020d0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]L3_init end @bt_main.c(441),INFO" ID="0x88020dcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]hci_init end @bt_main.c(448),INFO" ID="0x88020e05" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]fe_cali_init end @bt_main.c(454),INFO" ID="0x88020e35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]bt_init end @bt_main.c(479),INFO" ID="0x88020efd" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="bt_thread_handle: current time=0x%X. es_wait_list_size=%u. fsm_msg_list_size=%u.elt_task_id=0x%X-0x%X-0x%X-0x%X. @bt_main.c(495),INFO" ID="0x88020f7d" />
+			</MSG_LOG>

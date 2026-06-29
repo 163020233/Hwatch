@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] iso msg_id:%u exceeds the upper limit @gle_isom_msg.c(65),ERROR" ID="0xedfa020a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[MSG PROC] iso msg_handler for msg_id:%u is null @gle_isom_msg.c(71),ERROR" ID="0xedfa023a" />
+			</MSG_LOG>

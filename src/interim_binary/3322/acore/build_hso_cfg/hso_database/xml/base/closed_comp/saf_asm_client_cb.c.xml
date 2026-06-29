@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] register callback memcpy fail! @saf_asm_client_cb.c(22),ERROR" ID="0xe99e00b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] unregister callback memset fail! @saf_asm_client_cb.c(31),ERROR" ID="0xe99e00fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] report discover schedule_up err! @saf_asm_client_cb.c(56),ERROR" ID="0xe99e01c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] report req result schedule_up err! @saf_asm_client_cb.c(107),ERROR" ID="0xe99e035a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] report evt schedule_up err! @saf_asm_client_cb.c(128),ERROR" ID="0xe99e0402" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] report update_bitrate schedule_up err! @saf_asm_client_cb.c(167),ERROR" ID="0xe99e053a" />
+			</MSG_LOG>

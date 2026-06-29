@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[SSF][MEDIA] can not find device_id: %u, obj_num: %u by conn_id %u @ssf_media_manager_server.c(41),ERROR" ID="0xef94014a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Get only obj from conn_id %u failed in oper: %u @ssf_media_manager_server.c(51),ERROR" ID="0xef94019a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MEDIA] register mcps failed. err: %u @ssf_media_manager_server.c(114),ERROR" ID="0xef940392" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MEDIA] add mcps inst failed. err: %u @ssf_media_manager_server.c(119),ERROR" ID="0xef9403ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][MEDIA] ssf_media_update_info_to_saf. conn_id=%u, type=%u @ssf_media_manager_server.c(128),INFO" ID="0xef940405" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][MEDIA] get remote conn_id failed. err: %u @ssf_media_manager_server.c(185),ERROR" ID="0xef9405ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MEDIA] bs_sle_media_update_info.Invalid data @ssf_media_manager_server.c(202),ERROR" ID="0xef940652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][MEDIA] bs_sle_media_update_info.malloc failed @ssf_media_manager_server.c(210),ERROR" ID="0xef940692" />
+			</MSG_LOG>

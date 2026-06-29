@@ -1,0 +1,73 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[PORT_PROFILE] port notify data failed,server id:%u, conn_id:%u @sle_srv_port_profile.c(177),ERROR" ID="0xea3c058a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port alloc, port property memory alloc failed @sle_srv_port_profile.c(193),ERROR" ID="0xea3c060a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile add_std_port create delete port node failed @sle_srv_port_profile.c(241),ERROR" ID="0xea3c078a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port alloc, get port node alloc failed @sle_srv_port_profile.c(310),ERROR" ID="0xea3c09b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port alloc, create port alloc failed @sle_srv_port_profile.c(344),ERROR" ID="0xea3c0ac2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] create private node alloc failed @sle_srv_port_profile.c(354),ERROR" ID="0xea3c0b12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port create private property node falied @sle_srv_port_profile.c(374),ERROR" ID="0xea3c0bb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] Sle port are all in used! @sle_srv_port_profile.c(379),ERROR" ID="0xea3c0bda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] sle_port_discover_server, app node calloc failed @sle_srv_port_profile.c(393),ERROR" ID="0xea3c0c4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] Sle port generate property_info falied @sle_srv_port_profile.c(402),ERROR" ID="0xea3c0c92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] sle_port_remove_local_info, manager node not exist or port not register! @sle_srv_port_profile.c(432),ERROR" ID="0xea3c0d82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] generate port info, create standard_port_info alloc failed @sle_srv_port_profile.c(515),ERROR" ID="0xea3c101a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] received property data len not match the port num @sle_srv_port_profile.c(566),ERROR" ID="0xea3c11b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] create_remote_node, create remote node alloc failed @sle_srv_port_profile.c(607),ERROR" ID="0xea3c12fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] sle_port_create_conn_node create conn node memcpy failed @sle_srv_port_profile.c(612),ERROR" ID="0xea3c1322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port_delete_remote_device sle delete connect node is null @sle_srv_port_profile.c(627),ERROR" ID="0xea3c139a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] add_remote_device addr pointer is null @sle_srv_port_profile.c(642),ERROR" ID="0xea3c1412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port_add_remote_device create conn node failed, conn id:%u @sle_srv_port_profile.c(651),ERROR" ID="0xea3c145a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[PORT_PROFILE] sle_port_ssapc_notification_cbk: client_id:%u, conn_id:%u, status error:%u @sle_srv_port_profile.c(675),ERROR" ID="0xea3c151a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port_ssapc_notification_cbk data is NULL @sle_srv_port_profile.c(680),ERROR" ID="0xea3c1542" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle_port_ssapc_notification_cbk conn_id not found %u @sle_srv_port_profile.c(687),ERROR" ID="0xea3c157a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] sle_port_subscribe_property, notify or indication are not supported! @sle_srv_port_profile.c(705),ERROR" ID="0xea3c160a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle_port_subscribe_property, write cmd falied, reg ret:%x @sle_srv_port_profile.c(721),ERROR" ID="0xea3c168a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle_port_ssapc_read_cfm_cbk, conn_id not found %u @sle_srv_port_profile.c(733),ERROR" ID="0xea3c16ea" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[PORT_PROFILE] sle_port_ssapc_read_cfm_cbk, params error, client id:%u conn_id:%u status:%u @sle_srv_port_profile.c(740),ERROR" ID="0xea3c1722" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] read property info falied, ret:0x%x @sle_srv_port_profile.c(771),ERROR" ID="0xea3c181a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[PORT_PROFILE] port ssapc register multi callbacks fail, connid:%u, ret:0x%xr @sle_srv_port_profile.c(792),ERROR" ID="0xea3c18c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port find structure all callback conn_id not found %u @sle_srv_port_profile.c(824),ERROR" ID="0xea3c19c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port find structure all callback, not found port service, connid:%ur @sle_srv_port_profile.c(843),ERROR" ID="0xea3c1a5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] sle_port_connect_state_changed_cbk, save conn device failed @sle_srv_port_profile.c(864),ERROR" ID="0xea3c1b02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] input cbk is NULL @sle_srv_port_profile.c(881),INFO" ID="0xea3c1b8d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle port add attribute descriptor failed, ret:%u. @sle_srv_port_profile.c(913),ERROR" ID="0xea3c1c8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle add service property failed, para invalid, cnt:%u. @sle_srv_port_profile.c(927),ERROR" ID="0xea3c1cfa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle add service property failed, add property ret:%u. @sle_srv_port_profile.c(950),ERROR" ID="0xea3c1db2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle add service property failed, add descriptor ret:%u. @sle_srv_port_profile.c(959),ERROR" ID="0xea3c1dfa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port server init failed, add service ret:%u @sle_srv_port_profile.c(973),ERROR" ID="0xea3c1e6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port server init failed, add property ret:%u @sle_srv_port_profile.c(982),ERROR" ID="0xea3c1eb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port server init failed, start service ret:%u @sle_srv_port_profile.c(990),ERROR" ID="0xea3c1ef2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port server register connection callbacks failed, reg callback ret:%u @sle_srv_port_profile.c(1006),ERROR" ID="0xea3c1f72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port server register server callbacks failed, reg callback ret:%u @sle_srv_port_profile.c(1016),ERROR" ID="0xea3c1fc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port alloc, the alloc_info is NULL @sle_srv_port_profile.c(1025),ERROR" ID="0xea3c200a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port alloc, the uuid len is wrong @sle_srv_port_profile.c(1029),ERROR" ID="0xea3c202a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile is not initialized, please init port profile first! @sle_srv_port_profile.c(1035),ERROR" ID="0xea3c205a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port alloc, create new node failed @sle_srv_port_profile.c(1043),ERROR" ID="0xea3c209a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile is not initialized, please init port profile first! @sle_srv_port_profile.c(1055),ERROR" ID="0xea3c20fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port delete by uuid, not find in list! @sle_srv_port_profile.c(1063),ERROR" ID="0xea3c213a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile is not initialized, please init port profile first! @sle_srv_port_profile.c(1075),ERROR" ID="0xea3c219a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port delete by port, not find in list! @sle_srv_port_profile.c(1082),ERROR" ID="0xea3c21d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile is not initialized, please init port profile first! @sle_srv_port_profile.c(1093),ERROR" ID="0xea3c222a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle_get_remote_port_by_uuid, conn_id not found %u @sle_srv_port_profile.c(1100),ERROR" ID="0xea3c2262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] get_remote_port_num, port profile not initialized, please init port profile first! @sle_srv_port_profile.c(1118),ERROR" ID="0xea3c22f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] get_remote_port_num, conn_id not found %u @sle_srv_port_profile.c(1124),ERROR" ID="0xea3c2322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] get_remote_info, port profile not initialized, please init port profile first! @sle_srv_port_profile.c(1139),ERROR" ID="0xea3c239a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] get_remote_info, get info mem is NULL! @sle_srv_port_profile.c(1144),ERROR" ID="0xea3c23c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] get_remote_info, conn_id not found %u @sle_srv_port_profile.c(1150),ERROR" ID="0xea3c23f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] get_remote_info, input mem not correct, cache uuid num is: %u @sle_srv_port_profile.c(1156),ERROR" ID="0xea3c2422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile has been inited! @sle_srv_port_profile.c(1184),WARNING" ID="0xea3c2503" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port profile init, sle reg ssap server fail,reg ret:%x @sle_srv_port_profile.c(1198),ERROR" ID="0xea3c2572" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] port profile init, sle reg ssap client fail,reg ret:%x @sle_srv_port_profile.c(1206),ERROR" ID="0xea3c25b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] init port service failed, instance init ret:%u @sle_srv_port_profile.c(1218),ERROR" ID="0xea3c2612" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile is not initialized, please init port profile first! @sle_srv_port_profile.c(1231),WARNING" ID="0xea3c267b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port_discover, the func is NULL @sle_srv_port_profile.c(1236),ERROR" ID="0xea3c26a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] sle_port_discover_server, app node calloc failed @sle_srv_port_profile.c(1246),ERROR" ID="0xea3c26f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle_port_discover_server, port profile service discovery in progress, ret:0x%x @sle_srv_port_profile.c(1260),INFO" ID="0xea3c2765" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[PORT_PROFILE] sle_port_discover_server, port profile connect failed, ret:0x%x @sle_srv_port_profile.c(1269),ERROR" ID="0xea3c27aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] sle_port_delete_by_app_id, app node not exist. @sle_srv_port_profile.c(1281),ERROR" ID="0xea3c280a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] sle_port_delete_by_app_id, manager node not exist or port not register! @sle_srv_port_profile.c(1299),ERROR" ID="0xea3c289a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] sle_port_delete_local_port_info, manager deinit failed! @sle_srv_port_profile.c(1330),ERROR" ID="0xea3c2992" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile is not initialized! @sle_srv_port_profile.c(1350),INFO" ID="0xea3c2a35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile unregister conn failed. @sle_srv_port_profile.c(1374),ERROR" ID="0xea3c2af2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile unregister client failed. @sle_srv_port_profile.c(1380),ERROR" ID="0xea3c2b22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[PORT_PROFILE] port profile unregister server failed. @sle_srv_port_profile.c(1387),ERROR" ID="0xea3c2b5a" />
+			</MSG_LOG>

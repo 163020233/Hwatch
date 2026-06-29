@@ -1,0 +1,37 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="pbap service registered @br_at_hfp_hf.c(50),INFO" ID="0xe92a0195" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp init. @br_at_hfp_hf.c(56),INFO" ID="0xe92a01c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp deinit. @br_at_hfp_hf.c(63),INFO" ID="0xe92a01fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp start server. @br_at_hfp_hf.c(70),INFO" ID="0xe92a0235" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp stop server. @br_at_hfp_hf.c(80),INFO" ID="0xe92a0285" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp registered @br_at_hfp_hf.c(90),INFO" ID="0xe92a02d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP HF connect remote device get addr fail. @br_at_hfp_hf.c(99),ERROR" ID="0xe92a031a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf connect remote device res=0x%x @br_at_hfp_hf.c(103),INFO" ID="0xe92a033d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf disconnect remote device res=0x%x @br_at_hfp_hf.c(110),INFO" ID="0xe92a0375" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf send dtmf tone res=0x%x @br_at_hfp_hf.c(117),INFO" ID="0xe92a03ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp open voice recognition res=0x%x @br_at_hfp_hf.c(124),INFO" ID="0xe92a03e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp close voice recognition res=0x%x @br_at_hfp_hf.c(131),INFO" ID="0xe92a041d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="&lt;AT&gt; HFP HF start dial number_len=%d number= @br_at_hfp_hf.c(141),INFO" ID="0xe92a046d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="invalid phone number @br_at_hfp_hf.c(143),ERROR" ID="0xe92a047a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="0x%x  @br_at_hfp_hf.c(149),INFO" ID="0xe92a04ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME=" @br_at_hfp_hf.c(151),INFO" ID="0xe92a04bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf start dial res=0x%x @br_at_hfp_hf.c(153),INFO" ID="0xe92a04cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf pick up call res=0x%x @br_at_hfp_hf.c(160),INFO" ID="0xe92a0505" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf hold active call res=0x%x @br_at_hfp_hf.c(167),INFO" ID="0xe92a053d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf reject call res=0x%x @br_at_hfp_hf.c(174),INFO" ID="0xe92a0575" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf hang up call res=0x%x @br_at_hfp_hf.c(181),INFO" ID="0xe92a05ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf connect sco res=0x%x @br_at_hfp_hf.c(188),INFO" ID="0xe92a05e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf disconnect sco res=0x%x @br_at_hfp_hf.c(195),INFO" ID="0xe92a061d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf set volume res=0x%x @br_at_hfp_hf.c(202),INFO" ID="0xe92a0655" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP hf connect status get addr fail. @br_at_hfp_hf.c(210),ERROR" ID="0xe92a0692" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf connect status=%u @br_at_hfp_hf.c(214),INFO" ID="0xe92a06b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] HFP hf sco status get addr fail. @br_at_hfp_hf.c(223),ERROR" ID="0xe92a06fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf sco status=%u @br_at_hfp_hf.c(227),INFO" ID="0xe92a071d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf send battery res=0x%x @br_at_hfp_hf.c(235),INFO" ID="0xe92a075d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf send at cmd call res=0x%x @br_at_hfp_hf.c(242),INFO" ID="0xe92a0795" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf get current calls res=0x%x @br_at_hfp_hf.c(249),INFO" ID="0xe92a07cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf re dial res=0x%x @br_at_hfp_hf.c(256),INFO" ID="0xe92a0805" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf send codec res=0x%x @br_at_hfp_hf.c(263),INFO" ID="0xe92a083d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf close nrec res=0x%x @br_at_hfp_hf.c(270),INFO" ID="0xe92a0875" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf report changed codec cap res=0x%x @br_at_hfp_hf.c(277),INFO" ID="0xe92a08ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] br at hfp register at fail @br_at_hfp_hf.c(569),ERROR" ID="0xe92a11ca" />
+			</MSG_LOG>

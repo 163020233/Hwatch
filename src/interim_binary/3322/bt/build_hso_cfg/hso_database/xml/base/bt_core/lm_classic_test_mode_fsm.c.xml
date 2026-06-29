@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="lm_bt_test_mode_fsm_exception_hci:unknown cmd msg_id=0x%x src_id=0x%x dst_id=0x%x @lm_classic_test_mode_fsm.c(32),ERROR" ID="0x89f20102" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_bt_test_mode_create_fsm::lt addr get failed @lm_classic_test_mode_fsm.c(93),ERROR" ID="0x89f202ea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_bt_test_mode_create_fsm::rslt[%d]lt_addr[0x%x] @lm_classic_test_mode_fsm.c(97),INFO" ID="0x89f2030d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_bt_test_mode_get_fsm_id::get con_handle failed @lm_classic_test_mode_fsm.c(114),ERROR" ID="0x89f20392" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_bt_test_mode_get_fsm_id::creat test_mode_hdl 0x%x! @lm_classic_test_mode_fsm.c(120),INFO" ID="0x89f203c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_bt_test_mode_get_fsm_id::fsm_id[0x%x]! @lm_classic_test_mode_fsm.c(128),INFO" ID="0x89f20405" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_bt_test_mode_delete_fsm::test_mode_handle[0x%x] @lm_classic_test_mode_fsm.c(139),INFO" ID="0x89f2045d" />
+			</MSG_LOG>

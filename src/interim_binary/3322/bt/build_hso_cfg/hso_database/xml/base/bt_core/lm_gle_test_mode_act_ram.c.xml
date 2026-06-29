@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="lm test mode rx dli end, num_packets=%d @lm_gle_test_mode_act_ram.c(36),INFO" ID="0x8b7e0125" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gle_msg_gle_test_mode_stopping_act opcode=0x%x num packets = %d, mode_type = %d, rx_rssi = %d @lm_gle_test_mode_act_ram.c(39),INFO" ID="0x8b7e013d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm test mode rx end, num_packets=%d @lm_gle_test_mode_act_ram.c(53),INFO" ID="0x8b7e01ad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="gle_msg_gle_test_mode_stopping_act opccode=0x%x num packets = %d, mode_type = %d, rx_rssi = %d @lm_gle_test_mode_act_ram.c(56),INFO" ID="0x8b7e01c5" />
+			</MSG_LOG>

@@ -1,0 +1,16 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="replaceHttps">
+            <text class="todo-title">https</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="replaceWebsockets">
+            <text class="todo-title">websockets</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="replaceHttp">
+            <text class="todo-title">http</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="replaceWebsocket">
+            <text class="todo-title">websocket</text>
+        </list-item>
+    </list>
+</div>

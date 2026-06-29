@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="g_gatt_buff_busy_num = %d, g_gatt_buff_recover_num = %d @btsrv_gatt_manager_ui.c(46),INFO" ID="0xe8900175" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="le_qos_num:%d,external_data_num:%d @btsrv_gatt_manager_ui.c(56),INFO" ID="0xe89001c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="gatt waitfor sigle timeout failed, ret:0x%x. @btsrv_gatt_manager_ui.c(137),INFO" ID="0xe890044d" />
+			</MSG_LOG>

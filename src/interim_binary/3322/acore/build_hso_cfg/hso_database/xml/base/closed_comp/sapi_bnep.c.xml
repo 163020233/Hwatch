@@ -1,0 +1,21 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="bnep addr is null. @sapi_bnep.c(54),ERROR" ID="0xedc201b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy addr fail. @sapi_bnep.c(59),ERROR" ID="0xedc201da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep addr is null. @sapi_bnep.c(70),ERROR" ID="0xedc20232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy addr fail. @sapi_bnep.c(75),ERROR" ID="0xedc2025a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep addr is null. @sapi_bnep.c(91),ERROR" ID="0xedc202da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy addr fail. @sapi_bnep.c(96),ERROR" ID="0xedc20302" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep protocol type is not matched @sapi_bnep.c(112),ERROR" ID="0xedc20382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy addr fail. @sapi_bnep.c(117),ERROR" ID="0xedc203aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy payload fail. @sapi_bnep.c(132),ERROR" ID="0xedc20422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep protocol type is not matched @sapi_bnep.c(143),ERROR" ID="0xedc2047a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy addr fail. @sapi_bnep.c(148),ERROR" ID="0xedc204a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy payload fail. @sapi_bnep.c(160),ERROR" ID="0xedc20502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep protocol type is not matched @sapi_bnep.c(171),ERROR" ID="0xedc2055a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy addr fail. @sapi_bnep.c(176),ERROR" ID="0xedc20582" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy payload fail. @sapi_bnep.c(188),ERROR" ID="0xedc205e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep protocol type is not matched @sapi_bnep.c(199),ERROR" ID="0xedc2063a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy addr fail. @sapi_bnep.c(204),ERROR" ID="0xedc20662" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy payload fail. @sapi_bnep.c(221),ERROR" ID="0xedc206ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep remote is null @sapi_bnep.c(233),ERROR" ID="0xedc2074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bnep memcpy local address fail @sapi_bnep.c(237),ERROR" ID="0xedc2076a" />
+			</MSG_LOG>

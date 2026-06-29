@@ -1,0 +1,24 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]rx_create_desc: L2 con_hdl=0x%x @evt_task_classic_test_mode.c(219),INFO" ID="0x89ee06dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]rx_create_desc: L2 FSM_TYPE_EVT_TASK_CLASSIC_TEST_MODE success @evt_task_classic_test_mode.c(234),INFO" ID="0x89ee0755" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]tx_create_desc: fsm_type=0x%x success @evt_task_classic_test_mode.c(271),INFO" ID="0x89ee087d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]get_phy_bw: unknown param mode[%d] @evt_task_classic_test_mode.c(319),ERROR" ID="0x89ee09fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]tx_set_txpd: alloc fail! @evt_task_classic_test_mode.c(346),ERROR" ID="0x89ee0ad2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]rx_set_reg: L2 intv=%d @evt_task_classic_test_mode.c(503),INFO" ID="0x89ee0fbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]tx_create: env_ptr == NULL, create env @evt_task_classic_test_mode.c(584),INFO" ID="0x89ee1245" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]tx_create: create env fail! @evt_task_classic_test_mode.c(587),INFO" ID="0x89ee125d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]tx_start: set txpd failed @evt_task_classic_test_mode.c(621),INFO" ID="0x89ee136d" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[L2][BT_TESTMODE] tx_start: timestamp[0x%X], power_level[%u], hop_freq_type[%u], freq_idx[%u], intv[%u], payload_type[%u] @evt_task_classic_test_mode.c(646),INFO" ID="0x89ee1435" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]evt_task_bt_test_mode_resched insert err. @evt_task_classic_test_mode.c(661),INFO" ID="0x89ee14ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]rx_start: con_hdl%d @evt_task_classic_test_mode.c(720),INFO" ID="0x89ee1685" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]idle_event_int: rx restart fail @evt_task_classic_test_mode.c(759),WARNING" ID="0x89ee17bb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]idle_event_int: rx recv no ok, restart and open big window! @evt_task_classic_test_mode.c(764),INFO" ID="0x89ee17e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_TESTMODE]idle_event_int: EVT_TASK_STATE_IDLE trx_type=%d @evt_task_classic_test_mode.c(767),INFO" ID="0x89ee17fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]end_process: rx try to abort @evt_task_classic_test_mode.c(788),WARNING" ID="0x89ee18a3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_TESTMODE]end_process: EVT_TASK_STATE_ENDING L2 tx end trx_mode=%d prog_num=%d @evt_task_classic_test_mode.c(791),INFO" ID="0x89ee18bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]end_process: tx try to abort @evt_task_classic_test_mode.c(804),WARNING" ID="0x89ee1923" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_TESTMODE]end_process: EVT_TASK_STATE_ENDING L2 tx end trx_mode=%d prog_num=%d @evt_task_classic_test_mode.c(807),INFO" ID="0x89ee193d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]task_end: rx try to abort @evt_task_classic_test_mode.c(832),WARNING" ID="0x89ee1a03" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_TESTMODE]task_end: EVT_TASK_STATE_IDLE L2 tx end trx_mode=%d prog_num=%d @evt_task_classic_test_mode.c(838),INFO" ID="0x89ee1a35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_TESTMODE]task_end: tx try to abort @evt_task_classic_test_mode.c(851),WARNING" ID="0x89ee1a9b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_TESTMODE]task_end: EVT_TASK_STATE_IDLE L2 tx end trx_mode=%d prog_num=%d @evt_task_classic_test_mode.c(856),INFO" ID="0x89ee1ac5" />
+			</MSG_LOG>

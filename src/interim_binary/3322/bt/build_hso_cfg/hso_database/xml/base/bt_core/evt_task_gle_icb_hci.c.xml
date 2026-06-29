@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[HCI_ICB]icb_sdu_out_build: buf_node 0x%x, len %d @evt_task_gle_icb_hci.c(83),DBG" ID="0x8c08029e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI_ICB]icb_sdu_out_free:buf_node 0x%x @evt_task_gle_icb_hci.c(96),DBG" ID="0x8c080306" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI_ICB]icb_sdu_in_alloc handle_flags 0x%x, length %d @evt_task_gle_icb_hci.c(108),DBG" ID="0x8c080366" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[WARNING][HCI_ICB]icb_sdu_in_alloc: buffer not free @evt_task_gle_icb_hci.c(122),WARNING" ID="0x8c0803d3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI_ICB]icb_sdu_in_alloc: buffer_node 0x%x @evt_task_gle_icb_hci.c(128),DBG" ID="0x8c080406" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[WARNING][HCI_ICB]icb_sdu_in_alloc: alloc fail @evt_task_gle_icb_hci.c(130),WARNING" ID="0x8c080413" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI_ICB]icb_sdu_in_alloc hci_len %d, exceed max len @evt_task_gle_icb_hci.c(156),INFO" ID="0x8c0804e5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[WARN][HCI_ICB]icb_sdu_in_alloc overflow, handle_flags 0x%x, length 0x%x @evt_task_gle_icb_hci.c(162),WARNING" ID="0x8c080513" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI_ICB]icb_sdu_in_alloc hdl 0x%x, len %d, ptr 0x%p @evt_task_gle_icb_hci.c(170),DBG" ID="0x8c080556" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR][HCI_ICB]icb_sdu_in_payload_rx: buf is null @evt_task_gle_icb_hci.c(189),WARNING" ID="0x8c0805eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[WARN][HCI_ICB]icb_sdu_in_payload_rx: data path env not exist @evt_task_gle_icb_hci.c(200),WARNING" ID="0x8c080643" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR][HCI_ICB]icb_sdu_in_payload_rx:icb sdu len error,payload len %d sdu len %d @evt_task_gle_icb_hci.c(220),WARNING" ID="0x8c0806e3" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI_ICB]icb_sdu_in_payload_rx: complete 0x%x offset %d len %d @evt_task_gle_icb_hci.c(228),DBG" ID="0x8c080726" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[HCI_ICB]icb_sdu_in_payload_rx: len %d offset %d @evt_task_gle_icb_hci.c(231),DBG" ID="0x8c08073e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI_ICB]icb_sdu_in_buf already free buf_idx:%d @evt_task_gle_icb_hci.c(255),INFO" ID="0x8c0807fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI_ICB]icb_sdu_in_empty_buf already free buf_idx:%d @evt_task_gle_icb_hci.c(273),INFO" ID="0x8c08088d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI_ICB]hci_icb_empty_sdu_in_buf_init @evt_task_gle_icb_hci.c(308),INFO" ID="0x8c0809a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI_ICB]hci_icb_sdu_in_buf_init @evt_task_gle_icb_hci.c(332),INFO" ID="0x8c080a65" />
+			</MSG_LOG>

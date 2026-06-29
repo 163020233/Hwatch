@@ -1,0 +1,83 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] create discover cache, btos_new err @saf_asm_client.c(146),ERROR" ID="0xe99c0492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] create discover ep cache,  btos_new err @saf_asm_client.c(166),ERROR" ID="0xe99c0532" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] discv cpl, btos_new err! connid = %u @saf_asm_client.c(224),ERROR" ID="0xe99c0702" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asmc] read ep err, connid=%u handle=%u @saf_asm_client.c(264),ERROR" ID="0xe99c0842" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode prefer codec err, codec count too small len=%u @saf_asm_client.c(299),ERROR" ID="0xe99c095a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] create codec list, btos_new err @saf_asm_client.c(306),ERROR" ID="0xe99c0992" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] create codec list data, btos_new err @saf_asm_client.c(319),ERROR" ID="0xe99c09fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode prefer channel err, channel data too small len=%u @saf_asm_client.c(332),ERROR" ID="0xe99c0a62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode prefer channel err, trans qos data too small len=%u @saf_asm_client.c(342),ERROR" ID="0xe99c0ab2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode prefer channel err, notrans qos data too small len=%u @saf_asm_client.c(359),ERROR" ID="0xe99c0b3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode prefer channel err, trans param err trans=%u @saf_asm_client.c(365),ERROR" ID="0xe99c0b6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode config rsp port err, port data too small len=%u @saf_asm_client.c(375),ERROR" ID="0xe99c0bba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode error codec type err, codec type too small len=%u @saf_asm_client.c(414),ERROR" ID="0xe99c0cf2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode channel param error type err, error type too small len=%u @saf_asm_client.c(427),ERROR" ID="0xe99c0d5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode metadata error type num err, error type too small len=%u @saf_asm_client.c(440),ERROR" ID="0xe99c0dc2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] decode metadata error type list err, error type too small len=%u @saf_asm_client.c(448),ERROR" ID="0xe99c0e02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] create metadata type list,  btos_new err @saf_asm_client.c(454),ERROR" ID="0xe99c0e32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] cp rsp, num_eps err! num_eps = %u @saf_asm_client.c(617),ERROR" ID="0xe99c134a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] cp rsp, op err! op = %u @saf_asm_client.c(622),ERROR" ID="0xe99c1372" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] evt notify, num err! num_eps = %u @saf_asm_client.c(632),ERROR" ID="0xe99c13c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] evt notify, op err! op = %u @saf_asm_client.c(637),ERROR" ID="0xe99c13ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] evt notify, ep_ids len err! op = %u @saf_asm_client.c(642),ERROR" ID="0xe99c1412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc]read ep rsp err, status:0x%x @saf_asm_client.c(655),ERROR" ID="0xe99c147a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] read ep rsp, schedule_down err! conn_id = %u @saf_asm_client.c(662),ERROR" ID="0xe99c14b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] cp rsp, schedule_down err! conn_id = %u @saf_asm_client.c(676),ERROR" ID="0xe99c1522" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] evt, status err! status = %u @saf_asm_client.c(688),ERROR" ID="0xe99c1582" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] evt, schedule_down err! conn_id = %u @saf_asm_client.c(694),ERROR" ID="0xe99c15b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] reg ssap cbk, err ret = %u @saf_asm_client.c(711),ERROR" ID="0xe99c163a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] discover proc, cp handle=%u @saf_asm_client.c(741),INFO" ID="0xe99c172d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] discover proc, evt handle=%u @saf_asm_client.c(750),INFO" ID="0xe99c1775" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] discover proc, find ep handle = %u @saf_asm_client.c(763),INFO" ID="0xe99c17dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] parse codec, memcpy_s codec data err @saf_asm_client.c(780),ERROR" ID="0xe99c1862" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asmc] parse channel param, communication_mode %u transmission_mode %u no support @saf_asm_client.c(797),ERROR" ID="0xe99c18ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] parse channel param, memcpy_s err @saf_asm_client.c(802),ERROR" ID="0xe99c1912" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] parse metadata param, param err @saf_asm_client.c(826),ERROR" ID="0xe99c19d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] parse metadata param, memcpy_s metadata param err @saf_asm_client.c(832),ERROR" ID="0xe99c1a02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] check session, busy! connid = %u @saf_asm_client.c(880),ERROR" ID="0xe99c1b82" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asmc] send cp req, connid = %u handle = %u err = %u @saf_asm_client.c(901),ERROR" ID="0xe99c1c2a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asmc]create session ep, ep_id=%u dir=%u attr_id=%u @saf_asm_client.c(914),INFO" ID="0xe99c1c95" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asmc]create session ep fail! ep_id=%u dir=%u attr_id=%u @saf_asm_client.c(919),INFO" ID="0xe99c1cbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] client already register! @saf_asm_client.c(934),ERROR" ID="0xe99c1d32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] client register cbks err! ret = %u @saf_asm_client.c(940),ERROR" ID="0xe99c1d62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] client registered! @saf_asm_client.c(944),INFO" ID="0xe99c1d85" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] client not register! @saf_asm_client.c(951),ERROR" ID="0xe99c1dba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] client unregistered! @saf_asm_client.c(956),INFO" ID="0xe99c1de5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] discover, client not register @saf_asm_client.c(963),ERROR" ID="0xe99c1e1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] discover, param err, direction = %u @saf_asm_client.c(969),ERROR" ID="0xe99c1e4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] report err, btos_new err! @saf_asm_client.c(980),ERROR" ID="0xe99c1ea2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] stream op proc, malloc err! op = %u @saf_asm_client.c(1104),ERROR" ID="0xe99c2282" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asmc] stream op proc, send req failed, conn_id = %u err = %u @saf_asm_client.c(1113),ERROR" ID="0xe99c22ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] create config params,  btos_new err @saf_asm_client.c(1131),ERROR" ID="0xe99c235a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] config stream, param err! ep_inst_id = %u @saf_asm_client.c(1149),ERROR" ID="0xe99c23ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] create updata params,  btos_new err @saf_asm_client.c(1184),ERROR" ID="0xe99c2502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] update bitrate, param err! @saf_asm_client.c(1196),ERROR" ID="0xe99c2562" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] create release params,  btos_new err @saf_asm_client.c(1258),ERROR" ID="0xe99c2752" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] update bitrate, param err! @saf_asm_client.c(1270),ERROR" ID="0xe99c27b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc]read ep rsp, session NULL, connid:%u @saf_asm_client.c(1295),ERROR" ID="0xe99c287a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc]read ep rsp, cache NULL! connid:%u @saf_asm_client.c(1300),ERROR" ID="0xe99c28a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc]read ep rsp, handle cache NULL! handle:%u @saf_asm_client.c(1306),ERROR" ID="0xe99c28d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc]read ep rsp err, hdl:%u @saf_asm_client.c(1313),ERROR" ID="0xe99c290a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc]cp rsp, session NULL, connid:%u @saf_asm_client.c(1341),ERROR" ID="0xe99c29ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc]cp rsp, too small connid=%u @saf_asm_client.c(1347),ERROR" ID="0xe99c2a1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc]cp rsp, btos_new err! @saf_asm_client.c(1356),ERROR" ID="0xe99c2a62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc]ep rsp err, too small connid=%u @saf_asm_client.c(1367),ERROR" ID="0xe99c2aba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asmc] ep rsp, ep null! connid = %u epid = %u @saf_asm_client.c(1375),ERROR" ID="0xe99c2afa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc]cp rsp, btos_new err! @saf_asm_client.c(1393),ERROR" ID="0xe99c2b8a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asmc] evt notify, state err! connid=%u epid=%u op=%u @saf_asm_client.c(1407),ERROR" ID="0xe99c2bfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] update bitrate req, memcpy_s bitrate data err @saf_asm_client.c(1415),ERROR" ID="0xe99c2c3a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asmc] evt notify, all err! connid=%u op=%u @saf_asm_client.c(1423),ERROR" ID="0xe99c2c7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc]cp rsp, btos_new err! @saf_asm_client.c(1436),ERROR" ID="0xe99c2ce2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[saf][asmc] evt notify, state err! connid=%u epid=%u op=%u @saf_asm_client.c(1448),ERROR" ID="0xe99c2d42" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asmc] evt notify, all err! connid=%u op=%u @saf_asm_client.c(1457),ERROR" ID="0xe99c2d8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] evt notify, session null! connid = %u @saf_asm_client.c(1471),ERROR" ID="0xe99c2dfa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][asmc] evt notify, too small connid=%u handle=%u @saf_asm_client.c(1478),ERROR" ID="0xe99c2e32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] evt notify, check err! @saf_asm_client.c(1483),ERROR" ID="0xe99c2e5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] discover proc, cache null! connid = %u @saf_asm_client.c(1502),ERROR" ID="0xe99c2ef2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][asmc] discover proc, ep num = %u @saf_asm_client.c(1513),INFO" ID="0xe99c2f4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] discover proc, create session ep cache failed! @saf_asm_client.c(1521),ERROR" ID="0xe99c2f8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] discover proc, read ep info err @saf_asm_client.c(1528),ERROR" ID="0xe99c2fc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] discover proc, create session cache failed! @saf_asm_client.c(1551),ERROR" ID="0xe99c307a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] discover proc, client not register @saf_asm_client.c(1560),ERROR" ID="0xe99c30c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][asmc] discover proc, find structure err @saf_asm_client.c(1565),ERROR" ID="0xe99c30ea" />
+			</MSG_LOG>

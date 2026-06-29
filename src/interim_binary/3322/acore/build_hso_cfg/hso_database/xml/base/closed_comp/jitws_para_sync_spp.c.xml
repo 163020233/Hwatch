@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SPP]mem new fail size:%d @jitws_para_sync_spp.c(47),ERROR" ID="0xebf6017a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SPP]SYNC_TO_PEER comm_count:%d @jitws_para_sync_spp.c(52),INFO" ID="0xebf601a5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[JITWS][SPP]SYNC_TO_PEER vport:%d svrchnl:%d @jitws_para_sync_spp.c(67),ERROR" ID="0xebf6021a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SPP]SYNC_FROM_PEER comm_count:%d @jitws_para_sync_spp.c(84),INFO" ID="0xebf602a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[JITWS][SPP]comm is NULL vport:%d @jitws_para_sync_spp.c(90),ERROR" ID="0xebf602d2" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[JITWS][SPP]SYNC_FROM_PEER vport:%d, rfhandle:%d, srvchnl:%d, port_value:%d, is_server:%d @jitws_para_sync_spp.c(102),ERROR" ID="0xebf60332" />
+			</MSG_LOG>

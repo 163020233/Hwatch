@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] register callback invalid param @ssf_volume_manager.c(36),ERROR" ID="0xef960122" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][VOLUME] unregister callback @ssf_volume_manager.c(54),INFO" ID="0xef9601b5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][VOLUME] ssf_volume_distribute_call_volume_notify: %u, volume: %u @ssf_volume_manager.c(93),INFO" ID="0xef9602ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][VOLUME] ssf_volume_distribute_media_volume_notify: %u, volume: %u @ssf_volume_manager.c(108),INFO" ID="0xef960365" />
+			</MSG_LOG>

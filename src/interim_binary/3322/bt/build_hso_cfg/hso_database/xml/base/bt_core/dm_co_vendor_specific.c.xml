@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L3][HCI_VENDOR]Unsupported vendor specific act, sub-opcode 0x%02X @dm_co_vendor_specific.c(85),WARNING" ID="0x8a5802ab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]dm_co_hci_vendor_specific_act, sub_opcode=0x%x @dm_co_vendor_specific.c(94),INFO" ID="0x8a5802f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]dm_co_hci_vendor_specific_act malloc fail @dm_co_vendor_specific.c(98),ERROR" ID="0x8a580312" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HCI][VENDOR]scene_identify:hdl=0x%x, scene=0x%x, bitrate=0x%x, low_time_delay=0x%x @dm_co_vendor_specific.c(363),INFO" ID="0x8a580b5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI][VENDOR]scene_identify hdl is not exist @dm_co_vendor_specific.c(376),INFO" ID="0x8a580bc5" />
+			</MSG_LOG>

@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]start_cbk: env_ptr is null @evt_task_classic_inq_isr.c(62),WARNING" ID="0x899e01f3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]start_cbk: es_env-&gt;es_elt != elt @evt_task_classic_inq_isr.c(69),WARNING" ID="0x899e022b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_INQ]first start cbk, evt_state=0x%x @evt_task_classic_inq_isr.c(102),INFO" ID="0x899e0335" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]evt_cbk: env_ptr is null @evt_task_classic_inq_isr.c(112),WARNING" ID="0x899e0383" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]abnormal_cbk: env_ptr is null @evt_task_classic_inq_isr.c(142),WARNING" ID="0x899e0473" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]cancel_cbk: env_ptr is null @evt_task_classic_inq_isr.c(175),WARNING" ID="0x899e057b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_INQ]start_cbk: es_env-&gt;es_elt != elt @evt_task_classic_inq_isr.c(182),WARNING" ID="0x899e05b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_INQ]cancel_cbk: env_ptr-&gt;evt_state:%d @evt_task_classic_inq_isr.c(189),WARNING" ID="0x899e05eb" />
+			</MSG_LOG>

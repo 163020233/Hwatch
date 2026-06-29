@@ -1,0 +1,161 @@
+.swiper_ctn {
+    width: 100%;
+    height: 100%;
+/*    background-color: #2e2840;*/
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.location_cnt {
+    margin-top: 40px;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.location_img {
+    width: 20px;
+    height: 20px;
+}
+
+.location_text {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.temperature_ctn {
+    height: 120px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: transparent;
+}
+
+.temperature_text {
+    font-size: 76px;
+}
+
+.weather_ctn {
+    height: 70px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.weather_img {
+    width: 55px;
+    height: 55px;
+}
+
+.weather_text {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.air_text {
+    height: 35px;
+    margin-left: 10px;
+    background-color: #deae08;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.notice_ctn {
+    width: 250px;
+    height: 45px;
+    margin-top: 10px;
+    background-color: #221f33;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice_text {
+    font-size: 22px;
+    color: #6f6e76;
+    width: 80%;
+    height: 36px;
+}
+
+.indicator_ctn {
+    width: 100%;
+    height: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.indicator_img {
+    width: 16px;
+    height: 16px;
+}
+
+/*.arrow_down {*/
+/*    margin-top: 15px;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*}*/
+
+.next_ctn {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2840;
+}
+
+.edge_ctn {
+    width: 130px;
+    height: 100%;
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center_ctn {
+    width: 130px;
+    height: 100%;
+    padding-top: 80px;
+    flex-direction: column;
+    background-color: #45354d;
+    align-items: center;
+}
+
+.gray_text {
+    color: #91879c;
+    font-size: 24px;
+}
+
+.white_text {
+    color: white;
+    font-size: 24px;
+}
+
+.right_weather_img {
+    margin-top: 10px;
+    width: 55px;
+    height: 55px;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}

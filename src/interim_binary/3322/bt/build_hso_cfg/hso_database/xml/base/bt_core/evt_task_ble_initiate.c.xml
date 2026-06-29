@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_INIT]chk_continue, prev_ts:0x%x, next_ts:0x%x, free_ts:0x%x, remain_duration:%d @evt_task_ble_initiate.c(112),INFO" ID="0x88600385" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BLE_INIT]chk_continue, remain_duration:%d, old_ts=0x%x, new_ts=0x%x, curr_ts=0x%x @evt_task_ble_initiate.c(126),INFO" ID="0x886003f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BLE_INIT]evt_task_ble_initiate_restart, ts=0x%x, asap_limit=0x%x, dur_min=%d @evt_task_ble_initiate.c(208),WARNING" ID="0x88600683" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BLE_INIT]auxptr_time invalid:%d @evt_task_ble_initiate.c(271),ERROR" ID="0x8860087a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]evt_task_ble_aux_initiate_start, es_insert_elt not ok! @evt_task_ble_initiate.c(331),WARNING" ID="0x88600a5b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][initiate]txpd_node alloc fail! @evt_task_ble_initiate.c(731),ERROR" ID="0x886016da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][initiate]txbuff_node alloc fail! @evt_task_ble_initiate.c(741),ERROR" ID="0x8860172a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]ble_initiate_set_con_req, initiate_phys=%d, txbuff_idx=%d, acl_offset=%d, acl_intv=%d @evt_task_ble_initiate.c(839),INFO" ID="0x88601a3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]es_create_elt fail! @evt_task_ble_initiate.c(881),ERROR" ID="0x88601b8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]aux_elt create fail! @evt_task_ble_initiate.c(887),ERROR" ID="0x88601bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]evt_task_ble_initiate_start, set_txpd fail! @evt_task_ble_initiate.c(1022),INFO" ID="0x88601ff5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BLE_INIT]evt_task_ble_initiate_start, set_con_req fail! @evt_task_ble_initiate.c(1028),INFO" ID="0x88602025" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BLE_INIT]end_process, evt_status:%d, aux_rx_on:%d @evt_task_ble_initiate.c(1072),INFO" ID="0x88602185" />
+			</MSG_LOG>

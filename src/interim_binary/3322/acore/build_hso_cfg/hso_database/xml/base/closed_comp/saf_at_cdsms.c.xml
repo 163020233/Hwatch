@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsms add inst fail, ret: 0x%x @saf_at_cdsms.c(144),ERROR" ID="0xe9880482" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsms set key info fail, ret: 0x%x @saf_at_cdsms.c(160),ERROR" ID="0xe9880502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_cdsms.c(171),ERROR" ID="0xe988055a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsms set secret key fail, ret: 0x%x @saf_at_cdsms.c(177),ERROR" ID="0xe988058a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsms set member count fail, ret: 0x%x @saf_at_cdsms.c(189),ERROR" ID="0xe98805ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsms set role fail, ret: 0x%x @saf_at_cdsms.c(201),ERROR" ID="0xe988064a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsms set discovery mode fail, ret: 0x%x @saf_at_cdsms.c(213),ERROR" ID="0xe98806aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_cdsms.c(231),ERROR" ID="0xe988073a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_cdsms.c(306),ERROR" ID="0xe9880992" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_cdsms.c(312),ERROR" ID="0xe98809c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] set announce data fail, ret: 0x%x @saf_at_cdsms.c(334),ERROR" ID="0xe9880a72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_cdsms.c(366),ERROR" ID="0xe9880b72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @saf_at_cdsms.c(402),ERROR" ID="0xe9880c92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf cdsms register server fail, ret: 0x%x @saf_at_cdsms.c(419),ERROR" ID="0xe9880d1a" />
+			</MSG_LOG>

@@ -1,0 +1,17 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is connected. @cpi_a2dp_snk.c(42),ERROR" ID="0xee6a0152" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk codec type is not support. @cpi_a2dp_snk.c(58),ERROR" ID="0xee6a01d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is connected. @cpi_a2dp_snk.c(64),ERROR" ID="0xee6a0202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is connected. @cpi_a2dp_snk.c(78),ERROR" ID="0xee6a0272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is not connected. @cpi_a2dp_snk.c(92),ERROR" ID="0xee6a02e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk codec type is not support. @cpi_a2dp_snk.c(115),ERROR" ID="0xee6a039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is not connected. @cpi_a2dp_snk.c(121),ERROR" ID="0xee6a03ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp_snk stream state is not open/suspend,state=%d. @cpi_a2dp_snk.c(127),ERROR" ID="0xee6a03fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is not connected. @cpi_a2dp_snk.c(146),ERROR" ID="0xee6a0492" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp_snk stream state is not open/start/suspend/start_req,state=%d. @cpi_a2dp_snk.c(154),ERROR" ID="0xee6a04d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is not connected. @cpi_a2dp_snk.c(169),ERROR" ID="0xee6a054a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp_snk stream state is not start,state=%d. @cpi_a2dp_snk.c(174),ERROR" ID="0xee6a0572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is not connected. @cpi_a2dp_snk.c(194),ERROR" ID="0xee6a0612" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="a2dp_snk stream state is not start_req,state=%d stream_hdl=0x%x. @cpi_a2dp_snk.c(200),ERROR" ID="0xee6a0642" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="a2dp_snk service is not connected. @cpi_a2dp_snk.c(215),ERROR" ID="0xee6a06ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="a2dp_snk stream state is not start_req,state=%d. @cpi_a2dp_snk.c(220),ERROR" ID="0xee6a06e2" />
+			</MSG_LOG>

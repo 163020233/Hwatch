@@ -1,0 +1,41 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_send_req_data ear link is null @tws.c(81),ERROR" ID="0x8a72028a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_send_req_data tws_req is null @tws.c(87),ERROR" ID="0x8a7202ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws] tws_send_req_data(0x%x)  @tws.c(93),INFO" ID="0x8a7202ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]mear send lmp TWS_PRIVATE_REQ_SYNC_RX_SEQN  @tws.c(132),INFO" ID="0x8a720425" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_sco_data_save @tws.c(154),INFO" ID="0x8a7204d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_mear_open_config @tws.c(159),INFO" ID="0x8a7204fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] bt_tws_rxid_en = 1 @tws.c(164),INFO" ID="0x8a720525" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_mear_open_config send lmp @tws.c(182),INFO" ID="0x8a7205b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_wait_working_check @tws.c(190),INFO" ID="0x8a7205f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_wait_working_check env is null @tws.c(193),INFO" ID="0x8a72060d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws] tws_wait_working_check ear_role=0x%x @tws.c(198),INFO" ID="0x8a720635" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][tws] acl_link_id_src=0x%x link_id=0x%x @tws.c(202),INFO" ID="0x8a720655" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_wait_working_check true @tws.c(205),INFO" ID="0x8a72066d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][tws]tws_mear_aes_sync_to_sear aes_cnt l-m-h 0x%x 0x%x 0x%x @tws.c(231),INFO" ID="0x8a72073d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_mear_aes_ccmcnt_get tws_mear_aes_sync_to_sear @tws.c(247),INFO" ID="0x8a7207bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_acl_start_cbk_handle TWS_STATE_WAIT_WORKING @tws.c(282),INFO" ID="0x8a7208d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_acl_start_cbk_handle TWS_STATE_WAIT_PAUSE @tws.c(292),INFO" ID="0x8a720925" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws] mear tws delay close, abort_flag=0x%x @tws.c(301),INFO" ID="0x8a72096d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] mear tws close @tws.c(303),INFO" ID="0x8a72097d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_mear_set_sco_open_twsidrxen 1 @tws.c(328),INFO" ID="0x8a720a45" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_sear_accept_sniff_params env == NULL || acl_desc == NULL @tws.c(420),INFO" ID="0x8a720d25" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]sear enter sniff  @tws.c(437),INFO" ID="0x8a720dad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] handle lmp TWS_PRIVATE_REQ_CMD_TWS_OPEN @tws.c(546),INFO" ID="0x8a721115" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] handle lmp TWS_PRIVATE_REQ_SYNC_RX_SEQN @tws.c(553),INFO" ID="0x8a72114d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws][flag] REQ_SYNC_RX_SEQN seqn=0x%x @tws.c(556),INFO" ID="0x8a721165" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] handle lmp TWS_PRIVATE_REQ_CMD_AES_SYNC @tws.c(560),INFO" ID="0x8a721185" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] handle lmp TWS_PRIVATE_REQ_SNIFF @tws.c(565),INFO" ID="0x8a7211ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] handle lmp TWS_PRIVATE_REQ_UNSNIFF @tws.c(569),INFO" ID="0x8a7211cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BTC_TWS-&gt;sync_control_get:err:%d @tws.c(584),ERROR" ID="0x8a721242" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][tws]mode_set_cmp_evt not report, current state is 0x%x @tws.c(596),INFO" ID="0x8a7212a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws cmp report delay @tws.c(601),INFO" ID="0x8a7212cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]tws_mode_set_send_cmp_evt fsm_msg_alloc fail @tws.c(609),ERROR" ID="0x8a72130a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp][tws]tws_aes_seqnerr_data_save rxtype:%d, rxllid:%d, rxlength:%d @tws.c(691),INFO" ID="0x8a72159d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BTC_TWS-&gt;mear:HW not ready for tws @tws.c(746),INFO" ID="0x8a721755" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]reset with ear @tws.c(822),INFO" ID="0x8a7219b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws]reset without ear @tws.c(831),INFO" ID="0x8a7219fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_for_sco_end @tws.c(890),INFO" ID="0x8a721bd5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][tws] tws_for_sco_end succ @tws.c(901),INFO" ID="0x8a721c2d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][tws] BTC_TWS-&gt;sear_sco_disc-&gt;con_hdl:0x%x sco_link_id:0x%x @tws.c(973),INFO" ID="0x8a721e6d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][tws] BTC_TWS-&gt;mear_sco_disc-&gt;con_hdl:0x%x sco_link_id:0x%x @tws.c(977),INFO" ID="0x8a721e8d" />
+			</MSG_LOG>

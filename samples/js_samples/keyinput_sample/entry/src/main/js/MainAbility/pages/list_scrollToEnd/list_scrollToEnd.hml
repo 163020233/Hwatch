@@ -1,0 +1,9 @@
+<div class="container" onswipe="swipe">
+    <div style="height: 20%;width: 100%;"></div>
+    <list class="listcontainer" ref="list" on:click="scrollToEnd" if="{{isShow}}">
+        <list-item class="listitem" for="{{todolist}}">
+            <text class="btn" >{{$item}}</text>
+        </list-item>
+    </list>
+    <div style="height: 20%;width: 100%;"></div>
+</div>

@@ -1,0 +1,14 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]evt_task_imb_min_sub_evt_pldcnt, min_tries %d, sub_evt_left %d @evt_task_gle_imb.c(172),INFO" ID="0x891a0565" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][IMG]sub_evt_trxminpldnum_sed_set, pldcnt %d, min_pldcnt %d, min_sub_evt_pldcnt %d, flush_evt_cnt %d @evt_task_gle_imb.c(210),INFO" ID="0x891a0695" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMB]imb sched en fail sed_idx %d,g2t pldcnt %d, start pldcnt %d @evt_task_gle_imb.c(277),ERROR" ID="0x891a08aa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMB]imb sched en sed_idx %d,imb active 0x%x, pending 0x%x @evt_task_gle_imb.c(288),INFO" ID="0x891a0905" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][IMB]imb env alloc fail @evt_task_gle_imb.c(518),WARNING" ID="0x891a1033" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMG]imb_instant_passed sed_idx %d:evt_cnt %d @evt_task_gle_imb.c(535),WARNING" ID="0x891a10bb" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][IMB PARAM]sed_idx=%d, group_idx=%d, t2g_pid=0x%X, t2g_sdu_intv_us=%d,t2g_pdu_len=%d, t2g_sdu_len=%d, t2g_phy=%d @evt_task_gle_imb.c(565),INFO" ID="0x891a11ad" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][IMB PARAM]t2g_bn=%d, t2g_ft=%d, t2g_mcs=%d, t2g_format=%d, t2g_pilot_ratio=%d,ch_offset=%d, start_evt_cnt=%d @evt_task_gle_imb.c(570),INFO" ID="0x891a11d5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMB PARAM]t_map_idx %d, crc_type 0x%x, crc_init 0x%x @evt_task_gle_imb.c(573),INFO" ID="0x891a11ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][imb]evt_task_env_imb_deinit: imb sed_idx %d @evt_task_gle_imb.c(581),INFO" ID="0x891a122d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][IMB]imb env already exist sed_idx %d @evt_task_gle_imb.c(607),ERROR" ID="0x891a12fa" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[L2][IMB]evt_task_imb_start, sed_idx %d: imb intv %d, sub intv %d, nse %d, g2t bn %d, t2g bn %d @evt_task_gle_imb.c(626),INFO" ID="0x891a1395" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMB]imb start pkt wait instant sed_idx %d, g2t pldcnt %d, start pldcnt %d @evt_task_gle_imb.c(637),INFO" ID="0x891a13ed" />
+			</MSG_LOG>

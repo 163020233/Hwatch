@@ -1,0 +1,23 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common]malloc uuids failed @saf_common_client.c(166),ERROR" ID="0xe9560532" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][saf common]set find service whitelist, bitmap:0x%x, count:%d @saf_common_client.c(178),INFO" ID="0xe9560595" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common]set find structure whitelist, ret:%u @saf_common_client.c(181),ERROR" ID="0xe95605aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][saf common]alloc err, msgid:%u conn_id:%u @saf_common_client.c(194),ERROR" ID="0xe9560612" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] send value msg, memcpy_s err! @saf_common_client.c(208),ERROR" ID="0xe9560682" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] send value msg err! conn_id=%u @saf_common_client.c(216),ERROR" ID="0xe95606c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] Subscribe is supported, uuid:0x%x @saf_common_client.c(263),INFO" ID="0xe956083d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] Subscribe is not supported @saf_common_client.c(267),ERROR" ID="0xe956085a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] subscribe property, write cmd is wrong @saf_common_client.c(287),ERROR" ID="0xe95608fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[saf][saf common] build service inst, uuid:[%02x%02x] @saf_common_client.c(302),INFO" ID="0xe9560975" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] read property value, msg alloc err @saf_common_client.c(396),ERROR" ID="0xe9560c62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] write property value, msg alloc err @saf_common_client.c(434),ERROR" ID="0xe9560d92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf common] method request, msg alloc err @saf_common_client.c(474),ERROR" ID="0xe9560ed2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf]handle value proc err, wrong handle @saf_common_client.c(493),ERROR" ID="0xe9560f6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] handle value proc, handle_idx = 0x%x @saf_common_client.c(511),INFO" ID="0xe9560ffd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][saf common] send saf cbk msg, ret = 0x%x @saf_common_client.c(521),ERROR" ID="0xe956104a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf_common] malloc msg fail! @saf_common_client.c(535),ERROR" ID="0xe95610ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][saf_common] send msg err! @saf_common_client.c(541),ERROR" ID="0xe95610ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf common] already registered! @saf_common_client.c(551),INFO" ID="0xe956113d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf common] ssapc register failed! ret = %u @saf_common_client.c(556),ERROR" ID="0xe9561162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf common] ssapc not register @saf_common_client.c(567),INFO" ID="0xe95611bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf common] ssapc unregister failed! ret = %u @saf_common_client.c(572),ERROR" ID="0xe95611e2" />
+			</MSG_LOG>

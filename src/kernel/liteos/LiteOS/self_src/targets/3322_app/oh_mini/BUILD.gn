@@ -1,0 +1,31 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+
+kernel_module("oh_mini") {
+    deps = [":libc_adapt"]
+
+    defines = ["CONFIG_PRIVATE_DIRENT_STRUCT"]
+
+    #sources = [
+    #    "src/stub.c",
+    #    "src/shb_exc_info.c",
+    #    "src/shb_task_switch.c",
+    #    "src/fs_remove.c",
+    #    "src/disk_partition.c",
+    #    ]
+}
+
+kernel_module("libc_adapt") {
+    sources = [
+        "src/adapt_time.c",
+        #"src/adapt_strlcpy.c",
+    ]
+    # Put the private header file in the front.
+    default_config = configs
+    configs = []
+    configs = ["$LITEOSTOPDIR/lib/libc:private"] + default_config
+}

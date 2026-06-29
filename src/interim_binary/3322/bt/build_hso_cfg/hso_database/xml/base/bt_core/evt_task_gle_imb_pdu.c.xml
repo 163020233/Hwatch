@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg5" NAME="[L2][IMB]imb_pdu_init sed_idx %d: nse %d, bn %d, ft %d, nb_queue %d @evt_task_gle_imb_pdu.c(137),INFO" ID="0x8c0e044d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMB]imb_expect_pldcnt start_pldcnt %d, pldcnt %d @evt_task_gle_imb_pdu.c(198),INFO" ID="0x8c0e0635" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMB]imb tx prepare err:pdu pldcnt %d, expect_pldcnt %d, queue nb %d @evt_task_gle_imb_pdu.c(243),ERROR" ID="0x8c0e079a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMB]imb_tx_prepare sed_idx %d:new %d, queue_size %d @evt_task_gle_imb_pdu.c(287),DBG" ID="0x8c0e08fe" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[L2][IMB]imb_trxdone exceed max:sed_idx %d, queue_pldcnt %d, sed_pldcnt %d, queue_nb %d, trdir %d @evt_task_gle_imb_pdu.c(315),INFO" ID="0x8c0e09dd" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[L2][IMB]imb_trx_done sed_idx %d: queue pldcnt %d, queue idx %d, trdir %d [tx:0, rx:1], pkt_num %d @evt_task_gle_imb_pdu.c(341),DBG" ID="0x8c0e0aae" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMB]imb rxpkt rxpldcnt error, pdu %d, rxpd %d,queue nb %d @evt_task_gle_imb_pdu.c(360),ERROR" ID="0x8c0e0b42" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][IMB]imb rxpkt pdu queue pdu already uesed, cursor %d, status %d @evt_task_gle_imb_pdu.c(368),ERROR" ID="0x8c0e0b82" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][IMB]imb_rx_handle sed_idx %d: status:0x%04X, rx_len %d, frequency_band|ch_idx 0x%04X, pi|sn|nesn 0x%04x, rssi %d, cur_ts %d @evt_task_gle_imb_pdu.c(424),INFO" ID="0x8c0e0d45" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][IMB]recv data isr imb error,rxpd idx %d, rxlinklbl %d, rxdone %d @evt_task_gle_imb_pdu.c(495),ERROR" ID="0x8c0e0f7a" />
+			</MSG_LOG>

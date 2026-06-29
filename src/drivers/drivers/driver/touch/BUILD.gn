@@ -1,0 +1,43 @@
+# Copyright (c) 2022 Huawei Device Co., Ltd.
+import("//build/ohos.gni")
+import("../../../../../build/gn/config.gni")
+
+ohos_static_library("touch_driver") {
+    sources = [
+        "touch_screen_drv.c",
+        "touch_screen_queue1.c",
+    ]
+
+    if (defined(TPTYPE_TMA525B)) {
+        sources += [
+            "tma525b_touch/tma525b_ctrl.c",
+            "tma525b_touch/tma525b_drv1.c",
+            "tma525b_touch/tma525b_touch1.c",
+        ]
+    } else {
+        sources = [
+            "ztw523_touch/ztw523_ctrl.c",
+            "ztw523_touch/ztw523_drv1.c",
+            "ztw523_touch/ztw523_touch1.c",
+        ]
+    }
+
+    configs =
+      [ "${sdk_cfg_path}:sdk_public_configs" ]
+
+    configs += [":private"]
+
+    cflags = [
+        "-Wno-incompatible-function-pointer-types",
+        "-Wno-unused-function",
+    ]
+}
+
+config("private") {
+    if (defined(TPTYPE_TMA525B)) {
+        include_dirs = [
+            "tma525b_touch",
+            "${SDK_TOP_DIR}/middleware/services/gui/hal/input/include",
+        ]
+    }
+}

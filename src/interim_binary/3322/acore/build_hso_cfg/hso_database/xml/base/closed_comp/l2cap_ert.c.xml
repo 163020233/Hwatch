@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP]SDU Reassemble BuffNew Error, sdu_len=%u @l2cap_ert.c(189),ERROR" ID="0xeadc05ea" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2CAP]SDU Reassemble memcpy Error, ret=%u, destSize=%u, srcSize=%u @l2cap_ert.c(197),ERROR" ID="0xeadc062a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2CAP]SDU Reassemble memcpy Error, ret=%u, destSize=%u, srcSize=%u @l2cap_ert.c(212),ERROR" ID="0xeadc06a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2CAP]l2cap ert adjust ack frames_sent = %u @l2cap_ert.c(620),ERROR" ID="0xeadc1362" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2CAP] Srejlist is NULL @l2cap_ert.c(870),ERROR" ID="0xeadc1b32" />
+			</MSG_LOG>

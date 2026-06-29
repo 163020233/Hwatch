@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc read inst name fail, ret: 0x%x @saf_at_ccpc.c(368),ERROR" ID="0xe97c0b82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc read feature state fail, ret: 0x%x @saf_at_ccpc.c(379),ERROR" ID="0xe97c0bda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc read protocol support fail, ret: 0x%x @saf_at_ccpc.c(390),ERROR" ID="0xe97c0c32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc read last call info fail, ret: 0x%x @saf_at_ccpc.c(401),ERROR" ID="0xe97c0c8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc read call status fail, ret: 0x%x @saf_at_ccpc.c(411),ERROR" ID="0xe97c0cda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc read media inst id fail, ret: 0x%x @saf_at_ccpc.c(422),ERROR" ID="0xe97c0d32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc read net selection fail, ret: 0x%x @saf_at_ccpc.c(433),ERROR" ID="0xe97c0d8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc read call operation support fail, ret: 0x%x @saf_at_ccpc.c(444),ERROR" ID="0xe97c0de2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc outgoing call fail, ret: 0x%x @saf_at_ccpc.c(467),ERROR" ID="0xe97c0e9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc accept call fail, ret: 0x%x @saf_at_ccpc.c(478),ERROR" ID="0xe97c0ef2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc terminate call fail, ret: 0x%x @saf_at_ccpc.c(488),ERROR" ID="0xe97c0f42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc hold call fail, ret: 0x%x @saf_at_ccpc.c(498),ERROR" ID="0xe97c0f92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc retrieve call fail, ret: 0x%x @saf_at_ccpc.c(508),ERROR" ID="0xe97c0fe2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] saf ccpc new fail! @saf_at_ccpc.c(518),ERROR" ID="0xe97c1032" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] saf ccpc string to data error! @saf_at_ccpc.c(522),ERROR" ID="0xe97c1052" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc merge calls fail, ret: 0x%x @saf_at_ccpc.c(529),ERROR" ID="0xe97c108a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] saf ccpc new fail! @saf_at_ccpc.c(541),ERROR" ID="0xe97c10ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] saf ccpc string to data error! @saf_at_ccpc.c(545),ERROR" ID="0xe97c110a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc get call info fail, ret: 0x%x @saf_at_ccpc.c(552),ERROR" ID="0xe97c1142" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc unregister client fail, ret: 0x%x @saf_at_ccpc.c(564),ERROR" ID="0xe97c11a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccpc register client fail, ret: 0x%x @saf_at_ccpc.c(587),ERROR" ID="0xe97c125a" />
+			</MSG_LOG>

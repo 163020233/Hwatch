@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[hifi]free_list is empty. @common_profile.c(182),ERROR" ID="0x981c05b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]find block failed. @common_profile.c(209),ERROR" ID="0x981c068a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[hifi]&lt;MEM: %-16s&gt; addr[0x%08x, 0x%08x], size[%u] @common_profile.c(228),WARNING" ID="0x981c0723" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]malloc_cnt = %u @common_profile.c(236),ERROR" ID="0x981c0762" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]MALLOC_BLOCK_NUM = %u @common_profile.c(237),ERROR" ID="0x981c076a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]malloc_cnt = %u @common_profile.c(239),INFO" ID="0x981c077d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call mem_stat_init Failed, Error Code: [0x%08X] @common_profile.c(509),ERROR" ID="0x981c0fea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call mem_stat_deinit Failed, Error Code: [0x%08X] @common_profile.c(522),ERROR" ID="0x981c1052" />
+			</MSG_LOG>

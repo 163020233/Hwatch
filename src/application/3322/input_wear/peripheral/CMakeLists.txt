@@ -1,0 +1,7 @@
+#===============================================================================
+# @brief    cmake file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2023. All rights reserved.
+#===============================================================================
+add_subdirectory_if_exist(button)
+add_subdirectory_if_exist(crown)
+add_subdirectory_if_exist(touch)

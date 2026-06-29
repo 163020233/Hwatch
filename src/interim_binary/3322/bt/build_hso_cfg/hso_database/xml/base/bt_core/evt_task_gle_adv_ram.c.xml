@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgle][gle_adv]gle_adv_pack_aux_c_frame_info, txbuff max c_len(%d)txpd_len(%d) @evt_task_gle_adv_ram.c(248),INFO" ID="0x8bc607c5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgle][gle_adv]gle_adv_pack_aux_c_frame_info, pack ok,adv_ts(0x%x)txlen:%d, ts:0x%x, offset:%d @evt_task_gle_adv_ram.c(259),INFO" ID="0x8bc6081d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_reset]stop adv complete(adv_handle=0x%x) @evt_task_gle_adv_ram.c(270),INFO" ID="0x8bc60875" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgle][adv]evt_task_gle_adv_create_es_task, evt task start fail! @evt_task_gle_adv_ram.c(317),WARNING" ID="0x8bc609eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_adv_set_adv_en, init_txnode fail! @evt_task_gle_adv_ram.c(375),INFO" ID="0x8bc60bbd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_gle_adv_set_adv_en, evt task start fail! @evt_task_gle_adv_ram.c(390),WARNING" ID="0x8bc60c33" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_adv_set_param:adv_handle(%d),adv_mode(%d),interval(%d),tx_pwr(%d) @evt_task_gle_adv_ram.c(488),INFO" ID="0x8bc60f45" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_adv_set_param:channel_map(0x%x),gt_role_ind(%d),req_max_num(%d),req_notif_en(%d) @evt_task_gle_adv_ram.c(490),INFO" ID="0x8bc60f55" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_adv_set_param:sec_format(%d),sec_phy(%d),sec_mcs(%d),sec_pilot(%d) @evt_task_gle_adv_ram.c(492),INFO" ID="0x8bc60f65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[sle_reset]stop adv complete(adv_handle=0x%x) @evt_task_gle_adv_ram.c(505),INFO" ID="0x8bc60fcd" />
+			</MSG_LOG>

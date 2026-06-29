@@ -1,0 +1,10 @@
+{
+    "OUT_BIN_DIR" : "output/3322/nv_bin",
+    "OUT_BIN_NAME" : "3322_all_nv.bin",
+    "BUILD_TEMP_PATH" : "output/3322",
+
+    "NV_TARGET_JSON_PATH" : "middleware/chips/3322/nv/nv_config/cfg/nv_target.json",
+    "NV_RELATIVE_PATH" : "output/3322/nv_bin/temp",
+    "NV_DEFAULT_CFG_DIR" : "middleware/chips/3322/nv/nv_config/cfg",
+    "DATABASE_TXT_FILE" : "output/3322/nv_bin"
+}

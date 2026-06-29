@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="ble_check_ll_privacy_add_ral in, %02x:%02x:xx:xx:xx:%02x @gap_reserv.c(403),INFO" ID="0xed1e0c9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GAP] gaph identity addr update link not found  @gap_reserv.c(433),ERROR" ID="0xed1e0d8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[GAP] gaph identity addr update link id addr fail ret %d @gap_reserv.c(440),ERROR" ID="0xed1e0dc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BLE]sync up start fail, par is null @gap_reserv.c(467),ERROR" ID="0xed1e0e9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BLE]sync up start fail, result:0x%x @gap_reserv.c(483),ERROR" ID="0xed1e0f1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BLE]sync up event, status:0x%x @gap_reserv.c(491),INFO" ID="0xed1e0f5d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BLE]set param fail, par is null @gap_reserv.c(501),ERROR" ID="0xed1e0faa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BLE]set_param_done fail, result:0x%x @gap_reserv.c(516),ERROR" ID="0xed1e1022" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BLE]set param done event, status:0x%x @gap_reserv.c(523),INFO" ID="0xed1e105d" />
+			</MSG_LOG>

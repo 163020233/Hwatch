@@ -1,0 +1,8 @@
+include $(RTOSLITETOPDIR)/config.mk
+
+MODULE_$(LOSCFG_COMPAT_CMSIS) += cmsis
+MODULE_$(LOSCFG_COMPAT_LINUX) += linux
+MODULE_$(LOSCFG_COMPAT_RT_THREAD) += rt-thread
+MODULE_$(LOSCFG_COMPAT_FREERTOS) += freertos
+
+include $(MODULE)

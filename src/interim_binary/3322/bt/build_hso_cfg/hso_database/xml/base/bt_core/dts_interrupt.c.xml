@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="osal_irq_request FAIL, ret = 0x%x @dts_interrupt.c(83),WARNING" ID="0x89b2029b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]dts_ble_sub0_intc_init:req_ret:%d, set_ret:%d @dts_interrupt.c(88),INFO" ID="0x89b202c5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="osal_irq_request FAIL, ret = 0x%x @dts_interrupt.c(118),WARNING" ID="0x89b203b3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="osal_irq_request FAIL, ret = 0x%x @dts_interrupt.c(152),WARNING" ID="0x89b204c3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="enter dts_osal_sniff_wakeup_done_isr @dts_interrupt.c(202),INFO" ID="0x89b20655" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="enter dts_osal_sniff_abnormal_isr @dts_interrupt.c(260),INFO" ID="0x89b20825" />
+			</MSG_LOG>

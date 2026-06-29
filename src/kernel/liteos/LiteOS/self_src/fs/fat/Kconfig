@@ -1,0 +1,149 @@
+config LOSCFG_FS_FAT
+    bool "Enable FAT"
+    default y
+    depends on LOSCFG_FS_VFS
+    select LOSCFG_DRIVER_DISK
+    help
+      Answer Y to enable LiteOS support fat filesystem.
+
+config LOSCFG_FS_FAT_CACHE
+    bool "Enable FAT Cache"
+    default y
+    depends on LOSCFG_FS_FAT
+    select LOSCFG_COMPAT_LINUX
+    select LOSCFG_COMPAT_LINUX_RBTREE
+    help
+      Answer Y to enable LiteOS fat filesystem support cache.
+
+config LOSCFG_FS_FAT_BLOCK_NUMS
+    int "Fat Cache Block Numbers"
+    default 32
+    depends on LOSCFG_FS_FAT_CACHE
+    help
+      This represents Fat cache block numbers configuration.
+
+config LOSCFG_FS_FAT_CACHE_SYNC_THREAD
+    bool "Enable FAT Cache Sync Thread"
+    default n
+    depends on LOSCFG_FS_FAT_CACHE
+    help
+      Answer Y to enable LiteOS fat filesystem support cache sync thread.
+
+config LOSCFG_FS_FAT_CACHE_PROC
+    bool "Enable FAT Cache Proc"
+    default y
+    depends on LOSCFG_FS_PROC
+    depends on LOSCFG_FS_FAT_CACHE
+    help
+      Answer Y to enable LiteOS fat filesystem support cache proc file.
+
+config LOSCFG_FS_FAT_CACHE_INDEPENDENT_MEMORY_POOL
+    bool "Enable FAT Cache Use Independent Memory Pool"
+    default n
+    depends on LOSCFG_FS_FAT_CACHE
+    help
+      Answer Y to enable LiteOS fat cache use independent memory pool.
+
+config LOSCFG_FS_FAT_DCACHE
+    bool "Enable FAT Dentry Cache"
+    default n
+    depends on LOSCFG_FS_FAT
+    help
+      Answer Y to enable LiteOS fat filesystem support dentry cache.
+
+config LOSCFG_FS_FAT_TRIM
+    bool "Enable FAT Trim"
+    default n
+    depends on LOSCFG_FS_FAT && LOSCFG_DRIVERS_MMC
+    help
+      Answer Y to enable LiteOS fat filesystem support trim.
+
+choice
+    depends on LOSCFG_FS_FAT_TRIM
+    prompt "FAT Trim"
+    default LOSCFG_FS_FAT_UNI_TRIM
+    help
+      Enable FAT Uni-Trim.
+      Enable FAT Direct-Trim.
+
+config LOSCFG_FS_FAT_UNI_TRIM
+    bool "Enable FAT Uni-Trim"
+    depends on LOSCFG_FS_FAT_TRIM
+    help
+      Answer Y to enable LiteOS fat filesystem support unite trim.
+
+config LOSCFG_FS_FAT_DIRECT_TRIM
+    bool "Enable FAT Direct-Trim"
+    depends on LOSCFG_FS_FAT_TRIM
+    help
+      Answer Y to enable LiteOS fat filesystem support direct trim.
+
+endchoice
+
+config LOSCFG_FS_FAT_CHINESE
+    bool "Enable Chinese"
+    default y
+    depends on LOSCFG_FS_FAT
+    help
+      Answer Y to enable LiteOS fat filesystem support Chinese.
+
+choice
+    depends on LOSCFG_FS_FAT_CHINESE
+    prompt "Chinese Encode"
+    default LOSCFG_FS_FAT_CHINESE_GB2312
+
+config LOSCFG_FS_FAT_CHINESE_GB2312
+    bool "Enable GB2312 Chinese Encode"
+    depends on LOSCFG_FS_FAT_CHINESE
+    help
+      Answer Y to enable Chinese encode with GB2312.
+
+config LOSCFG_FS_FAT_CHINESE_UTF_8
+    bool "Enable UTF-8 Chinese Encode"
+    depends on LOSCFG_FS_FAT_CHINESE
+    help
+      Answer Y to enable Chinese encode with UTF-8.
+endchoice
+
+config LOSCFG_FS_FAT_VIRTUAL_PARTITION
+    bool "Enable Virtual Partition"
+    default n
+    depends on LOSCFG_FS_FAT
+
+config LOSCFG_FS_FAT_VOLUMES
+    int "The max number of volumes that fatfs support"
+    depends on LOSCFG_FS_FAT
+    default 16
+
+config LOSCFG_FS_FAT_INDEPENDENT_MEMORY_POOL
+    bool "Enable FAT Use Independent Memory Pool"
+    default n
+    depends on LOSCFG_FS_FAT
+    help
+      Answer Y to enable LiteOS fat use independent memory pool.
+
+config LOSCFG_FS_FAT_WRITE_WITH_SYNC
+    bool "Enable FAT Write With Sync Operation"
+    default y
+    depends on LOSCFG_FS_FAT
+    help
+      Answer Y to enable LiteOS fat filesystem write with sync which enhance data integrality but degrade performance.
+
+choice
+    depends on LOSCFG_FS_FAT
+    prompt "LFN Buffer"
+    default LOSCFG_FS_FAT_STACK_LFN
+
+config LOSCFG_FS_FAT_STACK_LFN
+    bool "Use Stack As LFN Buffer"
+    depends on LOSCFG_FS_FAT
+    help
+      Answer Y to use stack as LFN working buffer
+
+config LOSCFG_FS_FAT_HEAP_LFN
+    bool "Use Heap As LFN Buffer"
+    depends on LOSCFG_FS_FAT
+    help
+      Answer Y to use heap as LFN working buffer
+
+  endchoice

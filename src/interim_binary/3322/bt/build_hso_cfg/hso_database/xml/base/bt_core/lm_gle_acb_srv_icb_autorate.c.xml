@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_create_icb_autorate_srv_fsm, fsm_param = NULL @lm_gle_acb_srv_icb_autorate.c(50),ERROR" ID="0x8ba20192" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_create_icb_autorate_srv_fsm, srv_desc creat fail @lm_gle_acb_srv_icb_autorate.c(66),ERROR" ID="0x8ba20212" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_icb_autorate_srv_idle_act Can't find srv 0x%x, msg 0x%x @lm_gle_acb_srv_icb_autorate.c(88),ERROR" ID="0x8ba202c2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="lm_gle_icb_autorate_srv_idle_act: src_fsm_type=0x%x, icb_conhdl=%d, update_instant=%u @lm_gle_acb_srv_icb_autorate.c(98),INFO" ID="0x8ba20315" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR] lm_gle_icb_autorate_srv_idle_act, format llcp msg failed, src_fsm_type=0x%x, icb_conhdl=%d. @lm_gle_acb_srv_icb_autorate.c(116),ERROR" ID="0x8ba203a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_icb_autorate_srv_rec_ack_act, acb_desc is null, acb_conhdl=%d @lm_gle_acb_srv_icb_autorate.c(140),ERROR" ID="0x8ba20462" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_icb_autorate_srv_rec_ack_act: acb_conhdl=%d @lm_gle_acb_srv_icb_autorate.c(144),INFO" ID="0x8ba20485" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_icb_autorate_srv_rec_ack_act, srv_desc is null, acb_conhdl=%d @lm_gle_acb_srv_icb_autorate.c(149),ERROR" ID="0x8ba204aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_icb_autorate_srv_ack_timeout_act, acb_desc is null, acb_conhdl=%d @lm_gle_acb_srv_icb_autorate.c(193),ERROR" ID="0x8ba2060a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_icb_autorate_srv_ack_timeout_act: acb_conhdl=%d @lm_gle_acb_srv_icb_autorate.c(197),INFO" ID="0x8ba2062d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_icb_autorate_del_srv_fsm_act, acb_desc_ptr is null @lm_gle_acb_srv_icb_autorate.c(211),ERROR" ID="0x8ba2069a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_icb_autorate_del_srv_fsm_act, icb_srv_desc is null @lm_gle_acb_srv_icb_autorate.c(219),ERROR" ID="0x8ba206da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_icb_autorate_del_srv_fsm_act, srv_param is null @lm_gle_acb_srv_icb_autorate.c(227),ERROR" ID="0x8ba2071a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_icb_autorate_del_srv_fsm_act: icb_conhdl=%d, src_fsm_type=0x%x @lm_gle_acb_srv_icb_autorate.c(233),INFO" ID="0x8ba2074d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_icb_autorate_srv_wait_instant_act, acb_desc is null, acb_conhdl=%d @lm_gle_acb_srv_icb_autorate.c(245),ERROR" ID="0x8ba207aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="lm_gle_icb_autorate_srv_wait_instant_act: acb_conhdl=%d @lm_gle_acb_srv_icb_autorate.c(250),INFO" ID="0x8ba207d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_icb_autorate_srv_rec_ack_act, srv_desc is null, acb_conhdl=%d @lm_gle_acb_srv_icb_autorate.c(256),ERROR" ID="0x8ba20802" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_icb_autorate_send_param_update_cmp, srv_param is null @lm_gle_acb_srv_icb_autorate.c(273),ERROR" ID="0x8ba2088a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_icb_autorate_send_param_update_cmp: icb_conhdl=%d, status=%d. @lm_gle_acb_srv_icb_autorate.c(279),INFO" ID="0x8ba208bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_icb_autorate_send_param_update_cmp, srv_param is null @lm_gle_acb_srv_icb_autorate.c(296),ERROR" ID="0x8ba20942" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_icb_autorate_add_instant_prog: icb_conhdl=%d, update_instant=%u. @lm_gle_acb_srv_icb_autorate.c(302),INFO" ID="0x8ba20975" />
+			</MSG_LOG>

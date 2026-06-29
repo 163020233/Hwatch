@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[Error] DIS set data malloc failed. @ble_at_gatts_profile.c(422),ERROR" ID="0xe9240d32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] DIS set data failed, type %d. @ble_at_gatts_profile.c(426),ERROR" ID="0xe9240d52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] DIS set data failed, wrong type %d. @ble_at_gatts_profile.c(459),ERROR" ID="0xe9240e5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] DIS get data failed, wrong type %d. @ble_at_gatts_profile.c(495),ERROR" ID="0xe9240f7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] HID set value malloc failed. @ble_at_gatts_profile.c(549),ERROR" ID="0xe924112a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatt send indication str to data fail @ble_at_gatts_profile.c(554),ERROR" ID="0xe9241152" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="memset fail: %d @ble_at_gatts_profile.c(561),ERROR" ID="0xe924118a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatts profile register at fail @ble_at_gatts_profile.c(637),ERROR" ID="0xe92413ea" />
+			</MSG_LOG>

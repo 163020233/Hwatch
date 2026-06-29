@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[bgtp][ble_adv]evt_task_ble_adv_start_cbk, adv_stop_type=%d, evt_status=%d @evt_task_ble_adv_cbk.c(43),WARNING" ID="0x8a94015b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ADV]evt_status isn't ES_EVT_ACTIVE @evt_task_ble_adv_cbk.c(75),ERROR" ID="0x8a94025a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt task ble adv resched fail! @evt_task_ble_adv_cbk.c(84),WARNING" ID="0x8a9402a3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ADV]evt_status isn't ES_EVT_ACTIVE @evt_task_ble_adv_cbk.c(101),ERROR" ID="0x8a94032a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt task ble adv resched fail! @evt_task_ble_adv_cbk.c(110),WARNING" ID="0x8a940373" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ADV]evt_status isn't ES_EVT_ACTIVE @evt_task_ble_adv_cbk.c(127),ERROR" ID="0x8a9403fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt task ble adv resched fail! @evt_task_ble_adv_cbk.c(136),WARNING" ID="0x8a940443" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ADV]evt_status isn't ES_EVT_ACTIVE @evt_task_ble_adv_cbk.c(159),ERROR" ID="0x8a9404fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt task ble adv resched fail! @evt_task_ble_adv_cbk.c(179),WARNING" ID="0x8a94059b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt_task_ble_ext_adv_adv_aux_insert fail! @evt_task_ble_adv_cbk.c(226),WARNING" ID="0x8a940713" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt task ble adv resched fail! @evt_task_ble_adv_cbk.c(295),WARNING" ID="0x8a94093b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt task ble adv resched fail! @evt_task_ble_adv_cbk.c(317),WARNING" ID="0x8a9409eb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]evt task ble adv resched fail! @evt_task_ble_adv_cbk.c(339),WARNING" ID="0x8a940a9b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="get rx isr in prim adv @evt_task_ble_adv_cbk.c(430),ERROR" ID="0x8a940d72" />
+			</MSG_LOG>

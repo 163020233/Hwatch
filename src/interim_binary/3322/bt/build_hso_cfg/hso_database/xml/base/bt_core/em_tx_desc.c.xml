@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="hw_em_txpd_dump_info:%d, 0x%x @em_tx_desc.c(108),WARNING" ID="0x888a0363" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_txpd fail size(%d) @em_tx_desc.c(126),WARNING" ID="0x888a03f3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="em_alloc_txcntl fail sed_idx(%d) @em_tx_desc.c(165),ERROR" ID="0x888a052a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="em_alloc_comm_txsd fail size @em_tx_desc.c(267),WARNING" ID="0x888a085b" />
+			</MSG_LOG>

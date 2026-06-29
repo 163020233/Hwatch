@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AUTORATE] member info malloc err @ssf_autorate_process.c(61),INFO" ID="0xefbe01ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AUTORATE] change rate get member info err:%x @ssf_autorate_process.c(96),INFO" ID="0xefbe0305" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][AUTORATE] iog param malloc err @ssf_autorate_process.c(102),INFO" ID="0xefbe0335" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AUTORATE] reply rate[%d] err  @ssf_autorate_process.c(148),ERROR" ID="0xefbe04a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AUTORATE] get member info err ret %x @ssf_autorate_process.c(165),ERROR" ID="0xefbe052a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AUTORATE] update label error ret:0x%x @ssf_autorate_process.c(178),ERROR" ID="0xefbe0592" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AUTORATE] update phy label[%d] err @ssf_autorate_process.c(207),ERROR" ID="0xefbe067a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][AUTORATE] set level used err [%x] @ssf_autorate_process.c(264),ERROR" ID="0xefbe0842" />
+			</MSG_LOG>

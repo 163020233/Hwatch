@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][classic_sub0_isr] isr(%d) not registered yet @classic_isr.c(176),INFO" ID="0x89840585" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp]classic_sub%d_swint_isr @classic_isr.c(196),INFO" ID="0x89840625" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[classic_err_int][sub%d]comm_errint1=0x%x, comm_errint2=0x%x, classic_errint=0x%x @classic_isr.c(214),WARNING" ID="0x898406b3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[classic_err_int]clk=0x%x, fincnt=%d @classic_isr.c(216),WARNING" ID="0x898406c3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[classic_err_int][sub%d]comm_errint1=0x%x, comm_errint2=0x%x, classic_errint=0x%x @classic_isr.c(220),ERROR" ID="0x898406e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[classic_err_int]clk=0x%x, fincnt=%d @classic_isr.c(222),ERROR" ID="0x898406f2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP]classic_errorint_isr rbuf_rls0(0x%x)bitmap_prt0(0x%x)rxpd_ctrl(0x%x)rxbuf_error_info(0x%x) @classic_isr.c(229),INFO" ID="0x8984072d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[EM]cur_classic_rxpd_idx is %d @classic_isr.c(234),WARNING" ID="0x89840753" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][classic_sub1_isr] isr(%d) not registered yet @classic_isr.c(303),INFO" ID="0x8984097d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp_restore_int] classic sub0 ISR queue remain clear::[%d][0x%x] @classic_isr.c(400),WARNING" ID="0x89840c83" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp_restore_int] classic sub1 ISR queue remain clear::[%d][0x%x] @classic_isr.c(409),WARNING" ID="0x89840ccb" />
+			</MSG_LOG>

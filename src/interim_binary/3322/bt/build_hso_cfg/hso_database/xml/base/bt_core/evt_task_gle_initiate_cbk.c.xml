@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[L2][GLE_INIT]evt_task_gle_initiate_start_cbk, evt_status=%d @evt_task_gle_initiate_cbk.c(69),WARNING" ID="0x8aa6022b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_INIT]chk_continue, prev_ts:0x%x, next_ts:0x%x, free_ts:0x%x, remain_duration:%d @evt_task_gle_initiate_cbk.c(102),INFO" ID="0x8aa60335" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_INIT]chk_continue, remain_duration:%d, old_ts=0x%x, new_ts=0x%x, curr_ts=0x%x @evt_task_gle_initiate_cbk.c(116),INFO" ID="0x8aa603a5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][GLE_INIT]evt_task_gle_initiate_restart, ts=0x%x, asap_limit=0x%x, dur_min=%d @evt_task_gle_initiate_cbk.c(214),WARNING" ID="0x8aa606b3" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_cancel_cbk, timestamp=0x%x, current time=0x%x, state=%d, task_id=0x%x @evt_task_gle_initiate_cbk.c(238),INFO" ID="0x8aa60775" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]evt_task_gle_initiate_abnormal_cbk, timestamp=0x%x, current time=0x%x, state=%d, task_id=0x%x @evt_task_gle_initiate_cbk.c(316),INFO" ID="0x8aa609e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_INIT]evt_task_gle_initiate_isr_cbk es_elt mismatch @evt_task_gle_initiate_cbk.c(366),WARNING" ID="0x8aa60b73" />
+			</MSG_LOG>

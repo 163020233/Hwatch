@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_RSW]start_cbk: timestamp 0x%x, new_con_end_ts 0x%x sed_id %d, att_nb %d @evt_task_classic_role_switch_isr.c(123),INFO" ID="0x89fc03dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]evt_cbk: nb_prog == 0, con_hdl %d @evt_task_classic_role_switch_isr.c(155),ERROR" ID="0x89fc04da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]evt_cbk: con_hdl %d, event is not active @evt_task_classic_role_switch_isr.c(159),WARNING" ID="0x89fc04fb" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_RSW]cancel_cbk: con_hdl %d, ts 0x%x, clk 0x%x @evt_task_classic_role_switch_isr.c(183),WARNING" ID="0x89fc05bb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]cancel_cbk: cancel insert again fail, con_hdl %d @evt_task_classic_role_switch_isr.c(201),INFO" ID="0x89fc064d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]cancel_cbk: cancel timeout, con_hdl %d @evt_task_classic_role_switch_isr.c(203),INFO" ID="0x89fc065d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]sket_cbk: nb_prog == 0, con_hdl %d  @evt_task_classic_role_switch_isr.c(220),ERROR" ID="0x89fc06e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]sket_cbk: con_hdl %d, event is not active @evt_task_classic_role_switch_isr.c(228),WARNING" ID="0x89fc0723" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]sket cbk: con_hdl %d @evt_task_classic_role_switch_isr.c(230),INFO" ID="0x89fc0735" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_RSW]role_switch_step_tdd con_hdl(%d)frame_ok(%d)timestamp(0x%x)cur_clk(0x%x) @evt_task_classic_role_switch_isr.c(280),INFO" ID="0x89fc08c5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_RSW]role_switch_step_tdd_role con_hdl(%d)clk_off(0x%x)timestamp(0x%x)delay(%d) @evt_task_classic_role_switch_isr.c(310),INFO" ID="0x89fc09b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]step_tdd: es_insert_fail, con_hdl %d @evt_task_classic_role_switch_isr.c(314),ERROR" ID="0x89fc09d2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_RSW]step_piconet: switch not rx poll/null, con_hdl %d clock 0x%x @evt_task_classic_role_switch_isr.c(362),WARNING" ID="0x89fc0b53" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_RSW]step_piconet: role switch timeout, con_hdl %d @evt_task_classic_role_switch_isr.c(365),WARNING" ID="0x89fc0b6b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_classic_role_switch_idle_pkt_rev_act, env_ptr is null @evt_task_classic_role_switch_isr.c(402),ERROR" ID="0x89fc0c92" />
+			</MSG_LOG>

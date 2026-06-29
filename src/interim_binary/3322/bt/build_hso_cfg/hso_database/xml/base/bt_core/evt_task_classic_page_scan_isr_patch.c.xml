@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]step_1st: poll received @evt_task_classic_page_scan_isr_patch.c(67),WARNING" ID="0x8c3a021b" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bqtp][pscan]step_page: insert ok, delay=0x%x, timestamp=0x%x, current_ts=0x%x, limit 0x%x @evt_task_classic_page_scan_isr_patch.c(142),INFO" ID="0x8c3a0475" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bqtp][pscan]step_page: es_insert_fail, delay 0x%x, timestamp 0x%x, cur_ts 0x%x, limit 0x%x @evt_task_classic_page_scan_isr_patch.c(151),INFO" ID="0x8c3a04bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]cancel_cbk: get desc failed @evt_task_classic_page_scan_isr_patch.c(178),WARNING" ID="0x8c3a0593" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PSCAN]cancel_cbk: get desc failed, es_env-&gt;es_elt != elt @evt_task_classic_page_scan_isr_patch.c(183),WARNING" ID="0x8c3a05bb" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_PSCAN]cancel_cbk: con_hdl %d, cur_clk:0x%x, asap_limit:0x%x @evt_task_classic_page_scan_isr_patch.c(209),INFO" ID="0x8c3a068d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][BT_PSCAN]pscan_resched: ts = 0x%x, asap_limit = 0x%x, prio = %d @evt_task_classic_page_scan_isr_patch.c(258),WARNING" ID="0x8c3a0813" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_PSCAN]pscan_resched: con_hdl %d, step = %d, new_end_ts = 0x%x, rem_slots = %d @evt_task_classic_page_scan_isr_patch.c(260),WARNING" ID="0x8c3a0823" />
+			</MSG_LOG>

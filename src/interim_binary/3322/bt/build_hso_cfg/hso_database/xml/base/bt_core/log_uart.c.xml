@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[log_uart]data error, r1=0x%x, len1=0x%x, r2=0x%x, len2=0x%x @log_uart.c(466),ERROR" ID="0xa0900e92" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[log_uart]discard error, lregion=0x%x, len_ret=0x%x @log_uart.c(477),ERROR" ID="0xa0900eea" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[log_uart]data error, r1=0x%x, len1=0x%x, r2=0x%x, len2=0x%x @log_uart.c(502),ERROR" ID="0xa0900fb2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[log_uart]data error, r1=0x%x, len1=0x%x, r2=0x%x, len2=0x%x @log_uart.c(581),ERROR" ID="0xa090122a" />
+			</MSG_LOG>

@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][pscan]lm_classic_pscan_off_msg_scan_enable_act: page scan is enabled @lm_classic_page_scan_act.c(101),INFO" ID="0x8954032d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][pscan]lm_classic_pscan_off_msg_scan_enable_act: acl link is full @lm_classic_page_scan_act.c(107),WARNING" ID="0x8954035b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][pscan]lm_classic_pscan_enable. @lm_classic_page_scan_act.c(118),INFO" ID="0x895403b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][pscan]lm_classic_pscan_off_msg_scan_enable_act: page scan is disabled @lm_classic_page_scan_act.c(149),INFO" ID="0x895404ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_classic_page_scan_end_stop_page: same bd_addr, stop page @lm_classic_page_scan_act.c(165),INFO" ID="0x8954052d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]page_scan_succ: link id=%d, peer BD_ADDR is 0x%02x:0x%02x:*:*:*:0x%02x @lm_classic_page_scan_act.c(188),INFO" ID="0x895405e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[bgtp][lm_classic_page_scanning_msg_page_scan_end_act]src_id=0x%x @lm_classic_page_scan_act.c(196),ERROR" ID="0x89540622" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][pscan]lm_page_end_ind_handler_succ acl link create failed! @lm_classic_page_scan_act.c(215),WARNING" ID="0x895406bb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][pscan]lm_classic_page_scanning_msg_page_scan_end_act page scan start failed @lm_classic_page_scan_act.c(230),WARNING" ID="0x89540733" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp][page]lm classic page paging msg page response timeout! @lm_classic_page_scan_act.c(279),INFO" ID="0x895408bd" />
+			</MSG_LOG>

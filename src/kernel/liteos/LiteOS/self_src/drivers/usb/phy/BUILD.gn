@@ -1,0 +1,21 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../../build/gn/config.gni")
+
+kernel_module("phy") {
+    include_dirs = [
+        "${LITEOSTOPDIR}/drivers/usb/adapt_liteos",
+        "${LITEOSTOPDIR}/drivers/usb/adapt_liteos/kal/include",
+    ]
+    sources = [
+        "usb_phy.c",
+    ]
+    if (defined(LOSCFG_PLATFORM_SW21_APP)) {
+        sources += [
+            "usb3.0_phy_sw21_app.c",
+        ]
+    }
+}

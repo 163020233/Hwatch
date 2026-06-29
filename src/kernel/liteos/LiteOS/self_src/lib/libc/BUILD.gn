@@ -1,0 +1,292 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("../../../build/gn/config.gni")
+import("../../../build/gn/libstatic.gni")
+import("$root_out_dir/liteos_kconfig.gni")
+import("../lib.gni")
+if (!defined(LOSCFG_SAFETY_KERNEL)) {
+    module_switch = true
+    kernel_module("libc") {
+
+        sources = []
+        LOCAL_SRCS_LIBC = LIBC_STRING_SRC + LIBC_TIME_SRC + LIBC_CTYPE_SRC +
+                        LIBC_MULTIBYTE_SRC + LIBC_LOCALE_SRC + LIBC_ERRNO_SRC +
+                        LIBC_STDLIB_SRC + LIBC_INTERNAL_SRC
+        if (!defined(LOSCFG_SAFETY_KERNEL)) {
+            LOCAL_SRCS_LIBC += LIBC_MISC_SRC + LIBC_TEMP_SRC + LIBC_FCNTL_SRC +
+                            LIBC_SIGNAL_SRC + LIBC_NETWORK_SRC + LIBC_UNISTD_SRC + LIBC_COMPLEX_SRC +
+                            LIBC_EXIT_SRC + LIBC_LEGACY_SRC
+        }
+
+        if (!defined(LOSCFG_ARCH_FPU_ENABLE) && defined(LOSCFG_ARCH_ARM_AARCH64)) {
+            LOCAL_SRCS_LIBC -= [
+                "$LIBC_DIR_PATH/src/complex/cabs.c",
+                "$LIBC_DIR_PATH/src/stdlib/atof.c",
+                "$LIBC_DIR_PATH/src/stdlib/strtod.c",
+                "$LIBC_DIR_PATH/src/time/difftime.c",
+                "$LIBC_DIR_PATH/src/locale/strtod_l.c"
+            ]
+        }
+
+        sources += LOCAL_SRCS_LIBC + LIBC_STDIO_BASE
+        if (defined(LOSCFG_LIB_STDIO)) {
+            sources += LIBC_STDIO_SRC
+        }
+        if (defined(LOSCFG_LIB_FORMAT)) {
+            sources += LIBC_FORMAT_SRC
+        }
+
+        # add dir string / exit / errno
+        sources += [
+            "$LITEOSTOPDIR/lib/liteos_libc/string/strnchr.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/string/strnstr.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/exit/abort.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/exit/assert.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/errno/errno.c",
+        ]
+        if (defined(LOSCFG_ARCH_RISCV32)) {
+            sources -= [
+                "$LIBC_DIR_PATH/src/string/memset.c",
+                "$LIBC_DIR_PATH/src/string/memcpy.c",
+                "$LIBC_DIR_PATH/src/string/strcmp.c",
+            ]
+        }
+        # add dir stdlib / signal / tzdst /locale / init / lock
+        sources += [
+            "$LITEOSTOPDIR/lib/liteos_libc/stdlib/cstdlib.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/stdlib/memalign.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/stdlib/posix_memalign.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/stdlib/zalloc.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/signal/signal.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/tzdst/tzdst.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/lock/lock.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/locale/setlocale.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/locale/locale_map.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/locale/uselocale.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/init/libc_init.c",
+        ]
+
+        sources += [
+            "$LITEOSTOPDIR/lib/liteos_libc/time/nonisolated/time.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/time/time64.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/misc/getentropy.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/time/localtime_r.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/time/mktime.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/time/clock_gettime.c",
+        ]
+
+        if (!defined(LOSCFG_COMPAT_POSIX)) {
+            sources += ["$LIBC_DIR_PATH/src/prng/rand.c"]
+        }
+
+        if (defined(LOSCFG_LIB_STDIO)) {
+            sources -= ["$LITEOSTOPDIR/lib/liteos_libc/exit/assert.c"]
+        }
+        if (defined(LIBC_REDUNDANT_FILE)) {
+            sources -= LIBC_REDUNDANT_FILE
+        }
+        default_config = configs
+        configs = []
+        configs += [":private"] + default_config
+    }
+} else {
+    static_library("libc") {
+        sources = []
+        LOCAL_SRCS_LIBC = LIBC_STRING_SRC + LIBC_TIME_SRC + LIBC_CTYPE_SRC + LIBC_FCNTL_SRC +
+                        LIBC_MULTIBYTE_SRC + LIBC_LOCALE_SRC + LIBC_ERRNO_SRC +
+                        LIBC_STDLIB_SRC + LIBC_INTERNAL_SRC + LIBC_EXIT_SRC
+        if (!defined(LOSCFG_SAFETY_KERNEL)) {
+            LOCAL_SRCS_LIBC += LIBC_MISC_SRC + LIBC_TEMP_SRC + LIBC_FCNTL_SRC +
+                            LIBC_SIGNAL_SRC + LIBC_NETWORK_SRC + LIBC_UNISTD_SRC + LIBC_COMPLEX_SRC +
+                            LIBC_LEGACY_SRC
+        }
+
+        if (!defined(LOSCFG_ARCH_FPU_ENABLE) && defined(LOSCFG_ARCH_ARM_AARCH64)) {
+            LOCAL_SRCS_LIBC -= [
+                "$LIBC_DIR_PATH/src/complex/cabs.c",
+                "$LIBC_DIR_PATH/src/internal/floatscan.c",
+                "$LIBC_DIR_PATH/src/stdlib/atof.c",
+                "$LIBC_DIR_PATH/src/stdlib/strtod.c",
+                "$LIBC_DIR_PATH/src/time/difftime.c",
+                "$LIBC_DIR_PATH/src/locale/strtod_l.c"
+            ]
+        }
+
+        sources += LOCAL_SRCS_LIBC + LIBC_STDIO_BASE
+        if (defined(LOSCFG_LIB_STDIO)) {
+            sources += LIBC_STDIO_SRC
+        }
+        if (defined(LOSCFG_LIB_FORMAT)) {
+            sources += LIBC_FORMAT_SRC
+        }
+
+        # add dir string / exit / errno
+        sources += [
+            "$LITEOSTOPDIR/lib/liteos_libc/string/strnchr.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/string/strnstr.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/exit/abort.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/exit/assert.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/errno/errno.c",
+        ]
+        
+        # add dir stdlib / signal / tzdst /locale / init / lock
+        sources += [
+            "$LITEOSTOPDIR/lib/liteos_libc/stdlib/cstdlib.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/stdlib/memalign.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/stdlib/posix_memalign.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/stdlib/zalloc.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/tzdst/tzdst.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/lock/lock.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/locale/setlocale.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/locale/locale_map.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/locale/uselocale.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/init/libc_init.c",
+        ]
+
+        if (!defined(LOSCFG_SAFETY_KERNEL)) {
+            sources += [
+                "$LITEOSTOPDIR/lib/liteos_libc/signal/signal.c",
+                "$LITEOSTOPDIR/lib/liteos_libc/time/nonisolated/time.c",
+            ]
+        } else {
+            sources += [
+                "$LITEOSTOPDIR/lib/liteos_libc/time/isolated/time.c",
+            ]
+        }
+
+        sources += [
+            "$LITEOSTOPDIR/lib/liteos_libc/time/time64.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/misc/getentropy.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/time/localtime_r.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/time/mktime.c",
+            "$LITEOSTOPDIR/lib/liteos_libc/time/clock_gettime.c",
+        ]
+
+        if (defined(LOSCFG_ARCH_ARM_V7A) || defined(LOSCFG_ARCH_ARM_V7R) || defined(LOSCFG_ARCH_CORTEX_R52)) {
+            sources -= [
+                "$LIBC_DIR_PATH/src/string/strcmp.c",
+                "$LIBC_DIR_PATH/src/string/memcpy.c",
+                "$LIBC_DIR_PATH/src/string/strcmp.c",
+            ]
+            if (defined(LOSCFG_ARCH_FPU_VFP_NEON)) {
+                sources -= [
+                    "${LIBC_DIR_PATH}/src/string/memset.c"
+                ]
+            }
+        } else if(defined(LOSCFG_ARCH_RISCV32)) {
+            sources -= [
+                "$LIBC_DIR_PATH/src/string/memcpy.c",
+                "$LIBC_DIR_PATH/src/string/memset.c",
+                "$LIBC_DIR_PATH/src/string/strcmp.c",
+            ]
+
+            sources +=[
+                "$LITEOSTOPDIR/lib/liteos_libc/arch/riscv32/memset.S",
+                "$LITEOSTOPDIR/lib/liteos_libc/arch/riscv32/strcmp.S",
+                "$LITEOSTOPDIR/lib/liteos_libc/arch/riscv32/setjmp.S",
+                "$LITEOSTOPDIR/lib/liteos_libc/arch/riscv32/memcpy.S",
+            ]
+        } else if(defined(LOSCFG_ARCH_ARM_AARCH64)) {
+            sources -= [
+                "$LIBC_DIR_PATH/src/string/strcmp.c",
+            ]
+            if (defined(LOSCFG_ARCH_FPU_ENABLE)) {
+                sources -= [
+                    "${LIBC_DIR_PATH}/src/string/memset.c",
+                    "${LIBC_DIR_PATH}/src/string/memcpy.c",
+                    "${LIBC_DIR_PATH}/src/string/memcmp.c",
+                ]
+            }
+        }
+
+        if (!defined(LOSCFG_COMPAT_POSIX)) {
+            sources += ["$LIBC_DIR_PATH/src/prng/rand.c"]
+        }
+
+        if (defined(LOSCFG_LIB_STDIO)) {
+            sources -= ["$LITEOSTOPDIR/lib/liteos_libc/exit/assert.c"]
+        }
+
+        default_config = configs
+        configs = []
+        configs += default_config + [":private"]
+        configs += [
+            "$RTOSLITETOPDIR/build/gn:modules_public",
+            "$RTOSLITETOPDIR/build/gn:liteos_config",
+        ]
+    }
+}
+
+config("private") {
+    cflags = []
+    if (defined(LOSCFG_COMPILER_ICCARM)) {
+        cflags += [
+            "--diag_suppress=Pe068,Pe030,Pe111,Pe222,Pe223,Pe167",
+        ]
+    } else {
+        cflags += [
+            "--include",
+            "$LITEOS_MENUCONFIG_H",
+            "-Wno-unused-value",
+            "-Wno-parentheses",
+            "-Wno-strict-prototypes",
+            "-Wno-builtin-macro-redefined",
+            "-Wno-float-equal",
+            "-Wno-switch-default",
+            "-Wno-shadow",
+            "-Wno-sign-compare",
+        ]
+        
+        cflags_cc = cflags
+        asmflags = cflags
+        if (defined(LOSCFG_COMPILER_CLANG)) {
+            cflags += ["-Wno-uninitialized","-Wno-unused-but-set-variable"]
+        } else {
+            cflags += ["-Wno-maybe-uninitialized", "-Wno-unused-but-set-variable"]
+        }
+        if (defined(LOSCFG_LMS_LIBC_FULL_CHECK)) {
+            import("${RTOSLITETOPDIR}/build/gn/lmsconfig.gni")
+            cflags += LMS_COPTS
+            defines = LMS_CMACRO
+        }
+    }
+
+    include_dirs = [
+        "$LIBC_DIR_PATH/src/include",
+        "$LIBC_DIR_PATH/src/internal",
+        "$LIBC_DIR_PATH/src/crypt",
+        "$LIBC_DIR_PATH/src/ctype",
+        "$LIBC_DIR_PATH/src/dirent",
+        "$LIBC_DIR_PATH/src/errno",
+        "$LIBC_DIR_PATH/src/ipc",
+        "$LIBC_DIR_PATH/src/locale",
+        "$LIBC_DIR_PATH/src/math",
+        "$LIBC_DIR_PATH/src/multibyte",
+        "$LIBC_DIR_PATH/src/networknetwork",
+        "$LIBC_DIR_PATH/src/passwd",
+        "$LIBC_DIR_PATH/src/prng",
+        "$LIBC_DIR_PATH/src/process",
+        "$LIBC_DIR_PATH/src/regex",
+        "$LIBC_DIR_PATH/src/search",
+        "$LIBC_DIR_PATH/src/time",
+        "$LITEOSTOPDIR/lib/liteos_libc/pthread",
+        "$LITEOSTOPDIR/lib/liteos_libc/tzdst",
+        "$LITEOSTOPDIR/lib/liteos_libc/lock",
+        "$LITEOSTOPDIR/lib/liteos_libc/locale",
+        "$LITEOSTOPDIR/lib/liteos_libc/init",
+    ]
+
+    if (defined(LOSCFG_SAFETY_KERNEL)) {
+        include_dirs += LITEOS_GN_USTATIC_INCLUDE
+    }
+
+    if (defined(LOSCFG_LLTSER)) {
+        include_dirs += ["$LITEOSTOPDIR/internal/tools/gcov_ser"]
+    }
+    if (defined(LOSCFG_HW_RANDOM_ENABLE)) {
+        include_dirs += ["$LITEOSTOPDIR/drivers/random/include"]
+    }
+}

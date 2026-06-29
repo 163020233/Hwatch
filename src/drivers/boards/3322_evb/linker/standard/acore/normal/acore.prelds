@@ -1,0 +1,1498 @@
+/******************************************************************************
+ * @brief    LDS file setting the memory and code locations
+ * Copyright (c) 2018 HiSilicon (Shanghai) Technologies Co., Ltd.
+******************************************************************************/
+
+#include "memory_config_common.h"
+
+OUTPUT_ARCH(riscv)
+ENTRY(reset_vector)
+
+#define KEEP_SORT_TEXT(lib) KEEP(SORT(lib)(.text .text* .rodata .rodata* .srodata .srodata*))
+#define KEEP_SORT_DATA(lib) KEEP(SORT(lib)(.data*))
+#define KEEP_SORT_BSS(lib) KEEP(SORT(lib)(.bss*))
+
+#define SORT_TEXT(lib) SORT(lib)(.text .text* .rodata .rodata* .srodata .srodata*)
+#define SORT_DATA(lib) SORT(lib)(.data*)
+#define SORT_BSS(lib) SORT(lib)(.bss*)
+
+/* FLASH sector size is 2K */
+/* make this table consistent with the configuration given by the security core */
+MEMORY
+{
+    BOOTUP_RAM                    : ORIGIN = APP_VECTORS_ORIGIN,            LENGTH = APP_VECTORS_LENGTH
+    BOOTUP_LOAD                   : ORIGIN = APP_VECTORS_LOAD_ORIGIN,       LENGTH = APP_VECTORS_LENGTH
+
+    FLASH_PROGRAM                 : ORIGIN = APP_PROGRAM_ORIGIN,            LENGTH = APP_PROGRAM_LENGTH
+
+    ITCM                          : ORIGIN = APP_RAMTEXT_ORIGIN,            LENGTH = APP_RAMTEXT_LENGTH
+    DTCM                          : ORIGIN = REE_DTCM_ORIGIN,               LENGTH = REE_DTCM_LENGTH
+
+    PSRAM_APP_CODE                : ORIGIN = PSRAM_APP_SYN_LOAD_ADDR,       LENGTH = PSRAM_APP_SYN_LOAD_LENGTH
+
+    PSRAM_HEAP_MEM                : ORIGIN = PSRAM_HEAP_ADDR,               LENGTH = PSRAM_HEAP_LENGTH
+    PSRAM_NPU_HEAP                : ORIGIN = PSRAM_NPU_APP_HEAP_START,      LENGTH = PSRAM_NPU_APP_HEAP_LENGTH
+
+    PRESERVE_SHARE_MEM            : ORIGIN = PRESERVED_REGION_ORIGIN,       LENGTH = PRESERVED_REGION_LENGTH
+    CPUTRACE_RAM                  : ORIGIN = MCPU_TRACE_MEM_REGION_START,   LENGTH = CPU_TRACE_MEM_REGION_LENGTH
+}
+
+SECTIONS
+{
+    /* Vectors */
+    . = 0;
+    startup :
+    {
+        KEEP (*(.text.entry))
+        KEEP (*(.text.low_power_entry))
+    } > BOOTUP_RAM AT > BOOTUP_LOAD
+}
+SECTIONS
+{
+    __remote_func_start = REMOTE_FUNC_ADDR;
+    .remote_func_reserved_rodata __remote_func_start : ALIGN(8)
+    {
+        KEEP(*(.remote_func_reserved_rodata))
+        . = ALIGN(8);
+        KEEP (*(.flash_version))
+    } > FLASH_PROGRAM
+
+    .plt_ramtext :  ALIGN(8)
+    {
+        /* Main code */
+        __ramtext_begin__ = .;
+        __ramtext_load__ = LOADADDR(.plt_ramtext);
+        . = ALIGN(8);
+        /* kernel lib */
+        /* *libc.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*) */
+        *libinit.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libinterrupt.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libm.a:*sin*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libm.a:*cos*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libm.a:*tan*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libm.a:*exp*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libm.a:*sqrt*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libtargets.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libsec.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libcsysdeps.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libsegger*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libclang_rt.builtins-riscv32.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libbase.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libriscv.a:*.o* (*.text *.text* .rodata .rodata* .srodata .srodata*)
+        *liblitekey.a:*.o* (*.text *.text* .rodata .rodata* .srodata .srodata*)
+#ifndef TEST_SUITE
+        /* gui algorithm */
+        *libgfx_rm.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+#endif
+
+        /* driver code */
+#ifdef ENABLE_LTO_OPTIMIZE
+        *(.text.sfc_v2 .rodata.sfc_v2)
+        *(.text.psram_v2 .rodata.psram_v2)
+        *(.text.i2c .rodata.i2c)
+        *(.text.cpu_trace_v2 .rodata.cpu_trace_v2)
+        *(.text.spi .rodata.spi)
+        *(.text.dma .rodata.dma)
+        *(.text.uart .rodata.uart)
+        *(.text.watchdog .rodata.watchdog)
+        *(.text.tcxo .rodata.tcxo)
+        *(.text.systick .rodata.systick)
+        *(.text.pmp .rodata.pmp)
+        *(.text.efuse_porting .rodata.efuse_porting)
+        *(.text.ipc_porting .rodata.ipc_porting)
+        *(.text.mmc_porting .rodata.mmc_porting)
+        *(.text.i2c_porting .rodata.i2c_porting)
+        *(.text.fmc_porting_3322 .rodata.fmc_porting_3322)
+        *(.text.spi_porting .rodata.spi_porting)
+        *(.text.pmu_3322 .rodata.pmu_3322)
+        *(.text.3322_clocks .rodata.3322_clocks)
+        *(.text.chip_boot_config .rodata.chip_boot_config)
+        *(.text.chip_boot_port .rodata.chip_boot_port)
+        *(.text.hal_i2c .rodata.hal_i2c)
+        *(.text.hal_sfc_v2 .rodata.hal_sfc_v2)
+        *(.text.hal_spi .rodata.hal_spi)
+        *(.text.hal_dma .rodata.hal_dma)
+        *(.text.hal_uart .rodata.hal_uart)
+        *(.text.hal_pmp .rodata.hal_pmp)
+        *(.text.hal_psram_v2 .rodata.hal_psram_v2)
+        *(.text.hal_gpio .rodata.hal_gpio)
+        *(.text.hal_cpu_trace_v2 .rodata.hal_cpu_trace_v2)
+        *(.text.hal_efuse .rodata.hal_efuse)
+        *(.text.hal_watchdog .rodata.hal_watchdog)
+        *(.text.hal_rtc_unified .rodata.hal_rtc_unified)
+        *(.text.hal_ipc .rodata.hal_ipc)
+        *(.text.hal_timer .rodata.hal_timer)
+        *(.text.hal_tcxo .rodata.hal_tcxo)
+        *(.text.hal_systick .rodata.hal_systick)
+        *(.text.hal_reboot .rodata.hal_reboot)
+        *(.text.hal_reg_config .rodata.hal_reg_config)
+        *(.text.hal_calendar .rodata.hal_calendar)
+        *(.text.usb_base .rodata.usb_base)
+        *(.text.osal .rodata.osal)
+        *(.text.non_os .rodata.non_os)
+        *(.text.pm_dev .rodata.pm_dev)
+        *(.text.pm .rodata.pm)
+        *(.text.pm_veto .rodata.pm_veto)
+        *(.text.pm_sleep .rodata.pm_sleep)
+        *(.text.pm_fsm .rodata.pm_fsm)
+        *(.text.dfx_preserve .rodata.dfx_preserve)
+        *(.text.pm_dev_porting .rodata.pm_dev_porting)
+        *(.text.pm_dfx_porting .rodata.pm_dfx_porting)
+        *(.text.pm_3322 .rodata.pm_3322)
+        *(.text.pm_veto_porting .rodata.pm_veto_porting)
+        *(.text.pm_sleep_porting .rodata.pm_sleep_porting)
+        *pm_sleep_porting.a:lowpower*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *(.text.pm_porting .rodata.pm_porting)
+        *(.text.pm_fsm_porting .rodata.pm_fsm_porting)
+        *(.text.nv_porting .rodata.nv_porting)
+        *(.text.nv_ipc .rodata.nv_ipc)
+        *(.text.dfx_port_3322 .rodata.dfx_port_3322)
+        *(.text.dfx_exception .rodata.dfx_exception)
+        *(.text.update_common_3322 .rodata.update_common_3322)
+        *(.text.update_storage_3322 .rodata.update_storage_3322)
+#else
+        *driver/sfc*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/psram*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/i2c*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/cpu_trace*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/spi*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/dma*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/uart*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/watchdog*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/tcxo*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/systick*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *driver/pmp*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/porting*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/pmu*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/clocks*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/boot*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/arch*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *drivers/chips/3322/config*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* drivers/hal */
+        *hal/i2c*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/sfc_v2*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/spi*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/dma*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/uart*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/pinmux*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/pmp*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/psram_v2*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/gpio*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/cpu_trace_v2*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/efuse*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/watchdog*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/rtc_unified*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/ipc*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/timer*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/tcxo*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/systick*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/reboot*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/reg_config*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *hal/calendar*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+#ifdef DHRY_DEPLOY_IN_RAM
+        *dhry*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+#endif
+        /* usb */
+        *libusb_base.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* Kernel */
+        *kernel/osal*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *kernel/non_os*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* utils */
+        *utils/pm*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *utils/dfx/preserve*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *utils/dfx/dfx_reboot*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* middleware/chips */
+        *middleware/chips/3322/pm*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *middleware/chips/3322/nv*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *middleware/chips/3322/dfx*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *middleware/chips/3322/exception*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *middleware/chips/3322/update*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+#endif
+        /* startup code */
+#ifdef TEST_SUITE
+        *application/3322/3322_testsuite/acore*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+#else
+        *application/3322/3322_app_standard*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *(.text.3322_app_standard* .rodata.3322_app_standard*)
+#endif
+
+        /* tee ree commu */
+#ifdef ENABLE_LTO_OPTIMIZE
+        *(.text.teec_component .rodata.teec_component)
+        *libteec_component*.a:ree_tee_com*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *(.text.teec* .rodata.teec*)
+#else
+        *libteec_component*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *libteec*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+#endif
+
+#ifdef TEST_SUITE
+        /* for xip sfc flash case */
+        *test_sfc/libtest_sfc_3322.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        /* update test module */
+        *platform/testsuite/test_dhry*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *platform/testsuite/test_math*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *test/common/testsuite*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        *test_usb/libtest_usb_3322.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+        KEEP(*(.remote_call_func))
+#endif
+
+        *(.plt.itcm.text)
+        *(.plt.itcm.rodata)
+
+        . = ALIGN(8);
+        __init_array_start = .;
+        KEEP(*(.ctors .init_array*))
+        __init_array_end = .;
+        __fini_array_start = .;
+        KEEP(*(.dtors .fini_array*))
+        __fini_array_end = .;
+        . = ALIGN(8);
+    }  > ITCM AT > FLASH_PROGRAM
+
+    .sysintcall.init : ALIGN(8)
+    {
+        . = ALIGN(8);
+        __sysinitcall_start =  ABSOLUTE(.);
+        __sysinitcall0_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level0_*)))
+
+        __sysinitcall1_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level1_*)))
+
+        __sysinitcall2_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level2_*)))
+
+        __sysinitcall3_start =  ABSOLUTE(.);
+        KEEP(SORT(*libinit.a:los_init.c.o*)(.sysinitcall_level3_s0.init))
+        KEEP(SORT(*libbase.a:los_task.c.o*)(.sysinitcall_level3_s0.init))
+        KEEP(SORT(*libtargets.a:os_adapt.c.o*)(.sysinitcall_level3_s1.init))
+        KEEP(SORT(*libinit.a:los_init.c.o*)(.sysinitcall_level3_s1.init))
+        KEEP(SORT(*libbase.a:los_hwi.c.o*)(.sysinitcall_level3_s1.init))
+        KEEP(*(SORT(.sysinitcall_level3_s2.init)))
+        KEEP(*(SORT(.sysinitcall_level3_s3.init)))
+        KEEP(*(SORT(.sysinitcall_level3_s4.init)))
+
+        __sysinitcall4_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level4_*)))
+
+        __sysinitcall5_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level5_*)))
+
+        __sysinitcall6_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level6_*)))
+
+        __sysinitcall7_start =  ABSOLUTE(.);
+        KEEP(*(SORT(.sysinitcall_level7_*)))
+        __sysinitcall_end =  ABSOLUTE(.);
+        . = ALIGN(8);
+        KEEP(*( SORT (.liteos.table.*)));
+    } > ITCM AT > FLASH_PROGRAM
+
+    .initcall.init : ALIGN(8)
+    {
+        . = ALIGN(8);
+        __initcall0_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall0.init)))
+        __initcall0_end = ABSOLUTE(.);
+
+        __initcall1_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall1.init)))
+        __initcall1_end = ABSOLUTE(.);
+
+        __initcall2_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall2.init)))
+        __initcall2_end = ABSOLUTE(.);
+
+        __initcall3_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall3.init)))
+        __initcall3_end = ABSOLUTE(.);
+
+        __initcall4_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall4.init)))
+        __initcall4_end = ABSOLUTE(.);
+
+        __initcall5_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall5.init)))
+        __initcall5_end = ABSOLUTE(.);
+
+        __initcall6_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall6.init)))
+        __initcall6_end = ABSOLUTE(.);
+
+        __initcall7_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall7.init)))
+        __initcall7_end = ABSOLUTE(.);
+
+        __initcall_app_start = ABSOLUTE(.);
+        KEEP(*(SORT (.initcall.app.init)))
+        __initcall_app_end = ABSOLUTE(.);
+
+        . = ALIGN(8);
+    } > ITCM AT > FLASH_PROGRAM
+
+#ifdef TEST_SUITE
+    .oshell : ALIGN(4)
+    {
+        _oshell_start = ABSOLUTE(.);
+        KEEP(*(.oshell))
+        . = ALIGN (4);
+        _oshell_end = ABSOLUTE(.);
+    } > ITCM AT > FLASH_PROGRAM
+#endif
+}
+
+__ramtext_end__ = .;
+__ramtext_size__ = __ramtext_end__ - __ramtext_begin__;
+
+SECTIONS
+{
+    /* ohos zinit */
+    .zInit : {
+        . = ALIGN(8);
+        __zinitcall_bsp_start = .;
+        KEEP (*(.zinitcall.bsp*.init))
+        __zinitcall_bsp_end = .;
+        __zinitcall_device_start = .;
+        KEEP (*(.zinitcall.device*.init))
+        __zinitcall_device_end = .;
+        __zinitcall_core_start = .;
+        KEEP (*(.zinitcall.core*.init))
+        __zinitcall_core_end = .;
+        __zinitcall_sys_service_start = .;
+        KEEP (*(.zinitcall.sys.service*.init))
+        __zinitcall_sys_service_end = .;
+        __zinitcall_sys_feature_start = .;
+        KEEP (*(.zinitcall.sys.feature*.init))
+        __zinitcall_sys_feature_end = .;
+        __zinitcall_run_start = .;
+        KEEP (*(.zinitcall.run*.init))
+        __zinitcall_run_end = .;
+        __zinitcall_sysex_service_start = .;
+        KEEP (*(.zinitcall.sysex.service*.init))
+        __zinitcall_sysex_service_end = .;
+        __zinitcall_sysex_feature_start = .;
+        KEEP (*(.zinitcall.sysex.feature*.init))
+        __zinitcall_sysex_feature_end = .;
+
+        __zinitcall_app_service_start = .;
+        KEEP (*(.zinitcall.app.service0.init))
+        KEEP (*(.zinitcall.app.service1.init))
+        KEEP (*(SORT(.zinitcall.app.service*.init)))
+        __zinitcall_app_service_end = .;
+        __zinitcall_app_feature_start = .;
+        KEEP (*(SORT(.zinitcall.app.feature*.init)))
+        __zinitcall_app_feature_end = .;
+        __zinitcall_test_start = .;
+        KEEP (*(.zinitcall.test*.init))
+        __zinitcall_test_end = .;
+        __zinitcall_exit_start = .;
+        KEEP (*(.zinitcall.exit*.init))
+        __zinitcall_exit_end = .;
+        . = ALIGN(8);
+    } > FLASH_PROGRAM
+
+    /* Code and const data */
+    .text : ALIGN(8)
+    {
+        FILL(0xFF)
+        . = ALIGN(8);
+        *uikit*.a:*.o* (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* TODO: add close component code here begin */
+        /* new liteos libs config */
+
+        SORT(*libbg_common.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libbth_gle.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libbt_app.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libbt_host.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        SORT(*libaudio_at.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libaudio_api.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libaudio_core.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libaudio_drv.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libaudio_sample.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libaudio_vendor.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        SORT(*libhmf_demuxer.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libplugin_demuxer_hmf.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libplugin_demuxer_mjpeg.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libplugin_protocol_https.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libjs_audio_capturer.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libjs_player.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        SORT(*libvdec.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+        SORT(*libims.a:*.o*) (.text .text* .rodata .rodata* .srodata .srodata*)
+
+        /* TODO: add close component code here end */
+        *(.ramtext)
+        *(.text)
+        *(.text*)
+        *(.rodata)
+        *(.rodata*)
+        *(.flashtext)
+        *(.flashtext*)
+        *(.reg_func)
+        *(.gcc_except_table.*)
+#ifndef TEST_SUITE
+        . = ALIGN (8);
+        _oshell_start = ABSOLUTE(.);
+        KEEP(*(.oshell))
+        . = ALIGN (4);
+        _oshell_end = ABSOLUTE(.);
+#endif
+        . = ALIGN(8);
+    } > FLASH_PROGRAM
+
+    g_ram_begin = ORIGIN(DTCM);
+    g_ram_size = LENGTH(DTCM);
+
+    /* Stack in DTCM at lowest addresses */
+    .stacks (APP_USER_STACK_BASEADDR + TEE_DTCM_LENGTH) (NOLOAD) : ALIGN(16)
+    {
+         __int_stack_start = .;
+        g_system_stack_begin = .;
+        . += APP_USER_STACK_LEN;
+        . = ALIGN(16);
+        __stack_top__ = .;
+        . += APP_IRQ_STACK_LEN;
+        . = ALIGN(16);
+        __irq_stack_top__ = .;
+        . += APP_EXCP_STACK_LEN;
+        . = ALIGN(16);
+        __irq_stack_end__ = .;
+        __excp_stack_top__ = .;
+        . += APP_NMI_STACK_LEN;
+        . = ALIGN(16);
+        __nmi_stack_top__ = .;
+        g_system_stack_end = .;
+        __int_stack_end = .;
+    } > DTCM
+    g_system_stack_size = g_system_stack_end - g_system_stack_begin;
+    g_stack_system = g_system_stack_size;
+    __exc_stack_top = __excp_stack_top__;
+    __nmi_stack_top = __nmi_stack_top__;
+
+    /* Initialised data */
+    .data : ALIGN(8)
+    {
+        __data_begin__ = .;
+        __data_load__ = LOADADDR(.data);
+        . = ALIGN(8);
+
+        /* base lib */
+        SORT(*libcmsis.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libcsysdeps.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdriverbase.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*liblinux.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libm.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libmulti_partition.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libcmsis_kernel.a:*.o*) (.sdata .sdata* .data .data*)
+
+        SORT(*libsegger*.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libgfx_rm.a:*.o*) (.sdata .sdata* .data .data*)
+
+#ifdef ENABLE_LTO_OPTIMIZE
+        *(.data.gfx_rm)
+        *(.data.usb_phy)
+        *(.data.usb_base)
+        *(.data.usb_device)
+        *(.data.test_usb_3322)
+#else
+        SORT(*lib/libusb*.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*test_usb/libtest_usb_3322.a:*.o*) (.sdata .sdata* .data .data*)
+#endif
+        /* tools */
+        SORT(*libunwind.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel liteos */
+        SORT(*libc.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libc_init.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel liteos kernel */
+        SORT(*libinit.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbase.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel liteos fs */
+        SORT(*libyaffs2.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdisk.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbcache.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libvfs.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libfat.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel liteos drivers */
+        SORT(*libinterrupt.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libmmc.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdriverbase.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel liteos open_source */
+        SORT(*libproc.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_log.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel liteos targets */
+        SORT(*libtargets.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel liteos platform */
+        SORT(*libsec.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel liteos arch */
+        SORT(*libriscv.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*liblitekey.a:*.o*) (.sdata .sdata* .data .data*)
+#ifdef ENABLE_LTO_OPTIMIZE
+        *(.data.osal)
+        *(.data.non_os)
+        *(.data.x_dpal)
+        *(.data.gpu)
+        *(.data.dfx_diag)
+		*(.data.x_dpal)
+		*(.data.gpu)
+		*(.data.dfx_diag)
+		*(.data.dfx_preserve)
+		*(.data.log_file)
+		*(.data.dfx_nv)
+		*(.data.dfx_update)
+		*(.data.dfx_massdata)
+		*(.data.dfx_panic)
+		*(.data.dfx_log_reader)
+		*(.data.pm_sleep)
+		*(.data.pm_veto)
+		*(.data.nv)
+		*(.data.at)
+		*(.data.media_at)
+		*(.data.algorithm)
+		*(.data.update_common)
+		*(.data.dfx_fs)
+		*(.data.pm_dev)
+		*(.data.npu_at)
+		*(.data.gui_at)
+		*(.data.cpu_utils)
+		*(.data.dfx_massdata_reader)
+		*(.data.update_storage)
+		*(.data.update_local)
+		*(.data.teec_component*)
+		*(.data.teec*)
+		*(.data.pm_sleep_porting)
+		*(.data.pm_dev_porting)
+		*(.data.pm_dfx_porting)
+		*(.data.pm_3322)
+		*(.data.at_adapter)
+		*(.data.dfx_exception)
+		*(.data.wear_at_3322)
+		*(.data.update_common_3322)
+		*(.data.dfx_port_3322)
+		*(.data.audio_drv)
+		*(.data.audio_core)
+		*(.data.audio_api)
+		*(.data.ipc)
+		*(.data.drv_security_unified)
+		*(.data.lcd)
+		*(.data.mipi_tx)
+		*(.data.drv_timer)
+		*(.data.rtc_unified)
+		*(.data.i2c)
+		*(.data.uart)
+		*(.data.sfc_v2)
+		*(.data.cpu_trace_v2)
+		*(.data.dma)
+		*(.data.gpio)
+		*(.data.psram_v2)
+		*(.data.spi)
+		*(.data.systick)
+		*(.data.tcxo)
+		*(.data.watchdog)
+		*(.data.mtd_com)
+		*(.data.efuse)
+		*(.data.hal_security_unified)
+		*(.data.hal_gpio_v150)
+		*(.data.hal_dma_v151)
+		*(.data.hal_spi)
+		*(.data.hal_i2c)
+		*(.data.hal_uart)
+		*(.data.hal_efuse_v151)
+		*(.data.hal_pinctrl)
+		*(.data.hal_sfc_v2)
+		*(.data.hal_ipc)
+		*(.data.hal_timer)
+		*(.data.hal_psram_v2)
+		*(.data.hal_cpu_trace_v100)
+		*(.data.hal_pmp)
+		*(.data.hal_reboot)
+		*(.data.hal_systick)
+		*(.data.hal_tcxo)
+		*(.data.hal_watchdog)
+		*(.data.hal_calendar)
+		*(.data.hal_rtc_unified)
+		*(.data.uart_port*)
+		*(.data.mmc_porting*)
+		*(.data.ipc_porting*)
+		*(.data.sfc_port_3322*)
+		*(.data.cpu_trace_port*)
+		*(.data.calendar_port*)
+		*(.data.i2c_porting*)
+		*(.data.gpio_port*)
+		*(.data.efuse_porting)
+		*(.data.systick_port)
+		*(.data.tcxo_port)
+		*(.data.watchdog_port)
+		*(.data.dma_port)
+		*(.data.rtc_unified_port)
+		*(.data.psram_port)
+		*(.data.liteos_port)
+		*(.data.security_unified_port)
+		*(.data.chip_boot_port)
+		*(.data.fmc_3322*)
+		*(.data.chip_3322*)
+		*(.data.3322_clocks*)
+		*(.data.pmu_3322*)
+		*(.data.board_3322)
+		*(.data.3322_app_standard)
+		*(.data.coremark)
+		*(.data.common_boot)
+#else
+        /* kernel osal */
+        SORT(*libosal.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel non_os */
+        SORT(*libnon_os.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* kernel dpal */
+        SORT(*libx_dpal.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* middleware services gpu */
+        SORT(*libgpu.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* middleware utils */
+        SORT(*libdfx_diag.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_preserve.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*liblog_file.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_nv.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_update.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_massdata.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_panic.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_log_reader.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libpm_sleep.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libpm_veto.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libnv.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libat.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libmedia_at.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libalgorithm.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libupdate_common.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_fs.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libpm_dev.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libnpu_at.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libgui_at.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libcpu_utils.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_massdata_reader.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libupdate_storage.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libupdate_local.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* tee ree commu */
+        SORT(*libteec_component*.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libteec*.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* middleware chips */
+        SORT(*libpm_sleep_porting.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libpm_dev_porting.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libpm_dfx_porting.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libpm_3322.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libat_adapter.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_exception.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libwear_at_3322.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libupdate_common_3322.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdfx_port_3322.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* drivers driver */
+        SORT(*libaudio_drv.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_core.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_api.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libipc.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdrv_security_unified.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*liblcd.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libmipi_tx.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdrv_timer.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*librtc_unified.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libi2c.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libuart.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libsfc_v2.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libcpu_trace_v2.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdma.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libgpio.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libpsram_v2.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libspi.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libsystick.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libtcxo.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libwatchdog.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libmtd_com.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libefuse.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* drivers hal */
+        SORT(*libhal_security_unified.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_gpio_v150.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_dma_v151.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_spi.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_i2c.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_uart.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_efuse_v151.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_pinctrl.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_sfc_v2.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_ipc.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_timer.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_psram_v2.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_cpu_trace_v100.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_pmp.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_reboot.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_systick.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_tcxo.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_watchdog.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_calendar.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhal_rtc_unified.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* drivers/chips/3322/porting */
+        SORT(*libuart_port*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libmmc_porting*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libipc_porting*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libsfc_port_3322*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libcpu_trace_port*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libcalendar_port*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libi2c_porting*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libgpio_port*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libefuse_porting.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libsystick_port.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libtcxo_port.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libwatchdog_port.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libdma_port.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*librtc_unified_port.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libpsram_port.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libliteos_port.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libsecurity_unified_port.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libchip_boot_port.a:*.o*) (.data .data* .sdata .sdata*)
+
+        /* drivers/chips/3322/fmc */
+        SORT(*libfmc_3322*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libchip_3322*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*lib3322_clocks*.a:*.o*) (.data .data* .sdata .sdata*)
+        SORT(*libpmu_3322*.a:*.o*) (.data .data* .sdata .sdata*)
+
+        /* drivers  boards */
+        SORT(*libboard_3322.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* appliaction */
+        SORT(*lib3322_app_standard.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* open source */
+        SORT(*libcoremark.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* bootloader */
+        SORT(*libcommon_boot.a:*.o*) (.sdata .sdata* .data .data*)
+
+#endif
+
+#ifdef DHRY_DEPLOY_IN_RAM
+        *dhry*.o* (.data .data* .sdata .sdata*)
+#endif
+#ifdef TEST_SUITE
+        SORT(*test/common/testsuite*.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*test/platform/testsuite*.a:*.o*) (.sdata .sdata* .data .data*)
+#endif
+        *(.plt.dtcm.data)
+         _gp_ = . + 0x800;
+        __data_end__ = .;
+        . = ALIGN(8);
+    } > DTCM AT > FLASH_PROGRAM
+
+    __data_size__ = __data_end__ - __data_begin__;
+    __global_pointer$ = _gp_;
+
+    /* Uninitialised data */
+    .bss (NOLOAD): ALIGN(8)
+    {
+        . = ALIGN(8);
+        __bss_start = .;
+        __bss_begin__ = .;
+        /* TODO: add close component code here begin */
+
+        /* base lib */
+        SORT(*libcmsis.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcsysdeps.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+	    SORT(*libdriverbase.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*liblinux.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+	    SORT(*libm.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libmulti_partition.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcmsis_kernel.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        SORT(*libsegger*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libgfx_rm.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+#ifdef ENABLE_LTO_OPTIMIZE
+        *(.bss.gfx_rm)
+        *(.bss.usb_phy)
+        *(.bss.usb_base)
+        *(.bss.usb_device)
+        *(.bss.test_usb_3322)
+#else
+        SORT(*lib/libusb*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*test_usb/libtest_usb_3322.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+#endif
+        /* tools */
+        SORT(*libunwind.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel liteos lib*/
+        SORT(*libc.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libc_init.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel liteos kernel */
+        SORT(*libinit.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbase.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcpup.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel liteos fs */
+        SORT(*libyaffs2.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdisk.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbcache.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libvfs.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libfat.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel liteos drivers */
+        SORT(*libinterrupt.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libmmc.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdriverbase.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel liteos open_source */
+        SORT(*libproc.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_log.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel liteos targets */
+        SORT(*libtargets.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel liteos platform */
+        SORT(*libsec.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel liteos arch */
+        SORT(*libriscv.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*liblitekey.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+#ifdef  ENABLE_LTO_OPTIMIZE
+        *(.bss.osal)
+        *(.bss.non_os)
+        *(.bss.x_dpal)
+		*(.bss.gpu)
+		*(.bss.dfx_diag)
+		*(.bss.dfx_preserve)
+		*(.bss.log_file)
+		*(.bss.dfx_nv)
+		*(.bss.dfx_update)
+		*(.bss.dfx_massdata)
+		*(.bss.dfx_panic)
+		*(.bss.dfx_log_reader)
+		*(.bss.pm_sleep)
+		*(.bss.pm_veto)
+		*(.bss.nv)
+		*(.bss.at)
+		*(.bss.media_at)
+		*(.bss.algorithm)
+		*(.bss.update_common)
+		*(.bss.dfx_fs)
+		*(.bss.pm_dev)
+		*(.bss.npu_at)
+		*(.bss.gui_at)
+		*(.bss.cpu_utils)
+		*(.bss.dfx_massdata_reader)
+		*(.bss.update_storage)
+		*(.bss.update_local)
+		*(.bss.teec_component*)
+		*(.bss.teec*)
+		*(.bss.pm_sleep_porting)
+		*(.bss.pm_dev_porting)
+		*(.bss.pm_dfx_porting)
+		*(.bss.pm_3322)
+		*(.bss.at_adapter)
+		*(.bss.dfx_exception)
+		*(.bss.wear_at_3322)
+		*(.bss.update_common_3322)
+		*(.bss.dfx_port_3322)
+		*(.bss.audio_drv)
+		*(.bss.audio_core)
+		*(.bss.audio_api)
+		*(.bss.ipc)
+		*(.bss.drv_security_unified)
+		*(.bss.lcd)
+		*(.bss.mipi_tx)
+		*(.bss.drv_timer)
+		*(.bss.rtc_unified)
+		*(.bss.i2c)
+		*(.bss.uart)
+		*(.bss.sfc_v2)
+		*(.bss.cpu_trace_v2)
+		*(.bss.dma)
+		*(.bss.gpio)
+		*(.bss.psram_v2)
+		*(.bss.spi)
+		*(.bss.systick)
+		*(.bss.tcxo)
+		*(.bss.watchdog)
+		*(.bss.mtd_com)
+		*(.bss.efuse)
+		*(.bss.hal_security_unified)
+		*(.bss.hal_gpio_v150)
+		*(.bss.hal_dma_v151)
+		*(.bss.hal_spi)
+		*(.bss.hal_i2c)
+		*(.bss.hal_uart)
+		*(.bss.hal_efuse_v151)
+		*(.bss.hal_pinctrl)
+		*(.bss.hal_sfc_v2)
+		*(.bss.hal_ipc)
+		*(.bss.hal_timer)
+		*(.bss.hal_psram_v2)
+		*(.bss.hal_cpu_trace_v100)
+		*(.bss.hal_pmp)
+		*(.bss.hal_reboot)
+		*(.bss.hal_systick)
+		*(.bss.hal_tcxo)
+		*(.bss.hal_watchdog)
+		*(.bss.hal_calendar)
+		*(.bss.hal_rtc_unified)
+		*(.bss.uart_port*)
+		*(.bss.mmc_porting*)
+		*(.bss.ipc_porting*)
+		*(.bss.sfc_port_3322*)
+		*(.bss.cpu_trace_port*)
+		*(.bss.calendar_port*)
+		*(.bss.i2c_porting*)
+		*(.bss.gpio_port*)
+		*(.bss.efuse_porting)
+		*(.bss.systick_port)
+		*(.bss.tcxo_port)
+		*(.bss.watchdog_port)
+		*(.bss.dma_port)
+		*(.bss.rtc_unified_port)
+		*(.bss.psram_port)
+		*(.bss.liteos_port)
+		*(.bss.security_unified_port)
+		*(.bss.chip_boot_port)
+		*(.bss.fmc_3322*)
+		*(.bss.chip_3322*)
+		*(.bss.3322_clocks*)
+		*(.bss.pmu_3322*)
+		*(.bss.board_3322)
+		*(.bss.3322_app_standard)
+		*(.bss.coremark)
+		*(.bss.common_boot)
+#else
+
+        /* kernel osal */
+        SORT(*libosal.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel non_os */
+        SORT(*libnon_os.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* kernel dpal */
+        SORT(*libx_dpal.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* middleware services gpu */
+        SORT(*libgpu.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* middleware utils */
+        SORT(*libdfx_diag.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_preserve.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*liblog_file.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_nv.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_update.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_massdata.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_panic.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_log_reader.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libpm_sleep.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libpm_veto.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libnv.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libat.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libmedia_at.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libalgorithm.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libupdate_common.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_fs.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libpm_dev.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libnpu_at.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libgui_at.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcpu_utils.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_massdata_reader.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libupdate_storage.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libupdate_local.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* tee ree commu */
+        SORT(*libteec_component*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libteec*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* middleware chips */
+        SORT(*libpm_sleep_porting.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libpm_dev_porting.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libpm_dfx_porting.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libpm_3322.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libat_adapter.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_exception.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libwear_at_3322.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libupdate_common_3322.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdfx_port_3322.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* drivers driver */
+        SORT(*libaudio_drv.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_core.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_api.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libipc.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdrv_security_unified.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*liblcd.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libmipi_tx.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdrv_timer.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*librtc_unified.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libi2c.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libuart.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libsfc_v2.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcpu_trace_v2.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdma.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libgpio.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libpsram_v2.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libspi.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libsystick.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libtcxo.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libwatchdog.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libmtd_com.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libefuse.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* drivers hal */
+        SORT(*libhal_security_unified.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_gpio_v150.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_dma_v151.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_spi.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_i2c.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_uart.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_efuse_v151.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_pinctrl.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_sfc_v2.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_ipc.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_timer.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_psram_v2.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_cpu_trace_v100.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_pmp.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_reboot.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_systick.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_tcxo.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_watchdog.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_calendar.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhal_rtc_unified.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* drivers/chips/3322/porting */
+        SORT(*libuart_port*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libmmc_porting*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libipc_porting*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libsfc_port_3322*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcpu_trace_port*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcalendar_port*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libi2c_porting*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libgpio_port*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libefuse_porting.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libsystick_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libtcxo_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libwatchdog_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdma_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*librtc_unified_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libpsram_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libliteos_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libsecurity_unified_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libchip_boot_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* drivers/chips/3322/fmc */
+        SORT(*libfmc_3322*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libchip_3322*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*lib3322_clocks*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libpmu_3322*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* drivers  boards */
+        SORT(*libboard_3322.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* appliaction */
+        SORT(*lib3322_app_standard.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* open source */
+        SORT(*libcoremark.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* bootloader */
+        SORT(*libcommon_boot.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+#endif
+
+#ifdef DHRY_DEPLOY_IN_RAM
+        *dhry*.o* (.bss .bss* .sbss .sbss* COMMON)
+#endif
+        /* TODO: add close component code here end */
+#ifdef TEST_SUITE
+        SORT(*test/common/testsuite*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*test/platform/testsuite*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+#endif
+        *(.plt.dtcm.bss)
+        . = ALIGN(8);
+        __eh_frame_start = ABSOLUTE(.);
+        __eh_frame_end = ABSOLUTE(.);
+        __bss_end__ = . ;
+    } > DTCM
+    __bss_size__ = __bss_end__ - __bss_begin__;
+
+    .startup_table (NOLOAD): ALIGN(4)
+    {
+        . = ALIGN(4);
+        __startup_table_begin__ = .;
+        *(STARTUP_TABLE)
+        . = ALIGN(4);
+        __startup_table_end__ = .;
+    } > DTCM
+
+    .heap (NOLOAD): ALIGN(8)
+    {
+        . = ALIGN(8);
+        __heap_start = .;
+        g_intheap_begin = ABSOLUTE(.);
+        g_intheap_size = (ORIGIN(DTCM) + LENGTH(DTCM)) - g_intheap_begin;
+    } > DTCM
+
+#ifdef CONFIG_PSRAM_SUPPORT
+   .psram_data : ALIGN(8)
+   {
+       __psram_data_start = .;
+       __psram_data_load = LOADADDR(.psram_data);
+       . = ALIGN(8);
+
+#ifdef ENABLE_LTO_OPTIMIZE
+        *(.data.audio_utils)
+		*(.data.player)
+        *(.data.audio_decrypt)
+        *(.data.segger*)
+        *(.data.bt_host_sdk)
+        *(.data.bt_host_3322_service)
+        *(.data.bt_host_3322_sample)
+        *(.data.bt_test_audio_manager_wrapper)
+        *(.data.plugin_demuxer_mjpeg)
+        *(.data.plugin_protocol_https)
+
+        /* middleware services gui */
+        *(.data.graphic_ui)
+        *(.data.graphic_service)
+        *(.data.graphic_utils)
+        *(.data.uikit_test)
+        *(.data.display_layer)
+        *(.data.display_gfx)
+        *(.data.display_gralloc)
+        *(.data.graphic_input)
+        *(.data.uikit_ext)
+        *(.data.vdec)
+
+        /* middleware services media */
+        *(.data.media_sample_wrapper)
+        *(.data.audio_service)
+        *(.data.media_common)
+        *(.data.audio_hw)
+        *(.data.audio_primary_port)
+        *(.data.audio_bluetooth_port)
+        *(.data.audio_modem_port)
+        *(.data.audio_port_common)
+        *(.data.plugin_demuxer_raw)
+        *(.data.buffer_raw_demuxer)
+        *(.data.format_hw)
+        *(.data.hdi_camera_intf)
+        *(.data.camera_codec_hw)
+        *(.data.codec_hw)
+        *(.data.media_hal_common)
+
+        /* test platform */
+        *(.data.test_gpu)
+        *(.data.test_venc)
+        *(.data.test_mipi)
+        *(.data.test_lcd)
+
+        /* SDK packet */
+        *(.data.bg_common)
+        *(.data.bth_gle)
+        *(.data.bt_app)
+        *(.data.bt_host)
+        *(.data.audio_at)
+        *(.data.audio_api)
+        *(.data.audio_core)
+        *(.data.audio_drv)
+        *(.data.audio_sample)
+        *(.data.audio_vendor)
+        *(.data.hmf_demuxer)
+        *(.data.plugin_demuxer_hmf)
+        *(.data.plugin_demuxer_mjpeg)
+        *(.data.plugin_protocol_https)
+        *(.data.js_audio_capturer)
+        *(.data.js_player)
+        *(.data.vdec)
+        *(.data.venc)
+        *(.data.ims)
+#else
+        SORT(*libaudio_utils.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplayer.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_decrypt.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libsegger*.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_host_sdk.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_host_3322_service.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_host_3322_sample.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_test_audio_manager_wrapper.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplugin_demuxer_mjpeg.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplugin_protocol_https.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* middleware services gui */
+        SORT(*libgraphic_ui.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libgraphic_service.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libgraphic_utils.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libuikit_test.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdisplay_layer.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdisplay_gfx.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libdisplay_gralloc.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libgraphic_input.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libuikit_ext.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libvdec.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* middleware services media */
+        SORT(*libmedia_sample_wrapper.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_service.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libmedia_common.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_hw.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_primary_port.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_bluetooth_port.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_modem_port.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_port_common.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplugin_demuxer_raw.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbuffer_raw_demuxer.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libformat_hw.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhdi_camera_intf.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libcamera_codec_hw.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libcodec_hw.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libmedia_hal_common.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* test platform */
+        SORT(*libtest_gpu.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libtest_venc.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libtest_mipi.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libtest_lcd.a:*.o*) (.sdata .sdata* .data .data*)
+
+        /* SDK packet */
+        SORT(*libbg_common.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbth_gle.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_app.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libbt_host.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_at.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_api.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_core.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_drv.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_sample.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libaudio_vendor.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libhmf_demuxer.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplugin_demuxer_hmf.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplugin_demuxer_mjpeg.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libplugin_protocol_https.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libjs_audio_capturer.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libjs_player.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libvdec.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libvenc.a:*.o*) (.sdata .sdata* .data .data*)
+        SORT(*libims*.a:*.o*) (.sdata .sdata* .data .data*)
+#endif
+
+       *(.data)
+       *(.data*)
+       *(.got)
+       *(.got*)
+       *(.igot)
+       *(.igot*)
+       *(.sdata)
+       *(.sdata*)
+       . = ALIGN(8);
+       __psram_data_end = .;
+   } > PSRAM_HEAP_MEM AT > FLASH_PROGRAM
+   __psram_data_size = __psram_data_end - __psram_data_start;
+
+   .psram_bss (NOLOAD):  ALIGN(8)
+   {
+       __psram_bss_start = .;
+       __psram_bss_load = LOADADDR(.psram_bss);
+       . = ALIGN(8);
+
+#ifdef ENABLE_LTO_OPTIMIZE
+        *(.bss.audio_utils)
+		*(.bss.player)
+        *(.bss.audio_decrypt)
+        *(.bss.segger*)
+        *(.bss.bt_host_sdk)
+        *(.bss.bt_host_3322_service)
+        *(.bss.bt_host_3322_sample)
+        *(.bss.bt_test_audio_manager_wrapper)
+        *(.bss.plugin_demuxer_mjpeg)
+        *(.bss.plugin_protocol_https)
+
+        /* middleware services gui */
+        *(.bss.graphic_ui)
+        *(.bss.graphic_service)
+        *(.bss.graphic_utils)
+        *(.bss.uikit_test)
+        *(.bss.display_layer)
+        *(.bss.display_gfx)
+        *(.bss.display_gralloc)
+        *(.bss.graphic_input)
+        *(.bss.uikit_ext)
+        *(.bss.vdec)
+
+        /* middleware services media */
+        *(.bss.media_sample_wrapper)
+        *(.bss.audio_service)
+        *(.bss.media_common)
+        *(.bss.audio_hw)
+        *(.bss.audio_primary_port)
+        *(.bss.audio_bluetooth_port)
+        *(.bss.audio_modem_port)
+        *(.bss.audio_port_common)
+        *(.bss.plugin_demuxer_raw)
+        *(.bss.buffer_raw_demuxer)
+        *(.bss.format_hw)
+        *(.bss.hdi_camera_intf)
+        *(.bss.camera_codec_hw)
+        *(.bss.codec_hw)
+        *(.bss.media_hal_common)
+
+        /* test platform */
+        *(.bss.test_gpu)
+        *(.bss.test_venc)
+        *(.bss.test_mipi)
+        *(.bss.test_lcd)
+
+        /* SDK packet */
+        *(.bss.bg_common)
+        *(.bss.bth_gle)
+        *(.bss.bt_app)
+        *(.bss.bt_host)
+        *(.bss.audio_at)
+        *(.bss.audio_api)
+        *(.bss.audio_core)
+        *(.bss.audio_drv)
+        *(.bss.audio_sample)
+        *(.bss.audio_vendor)
+        *(.bss.hmf_demuxer)
+        *(.bss.plugin_demuxer_hmf)
+        *(.bss.plugin_demuxer_mjpeg)
+        *(.bss.plugin_protocol_https)
+        *(.bss.js_audio_capturer)
+        *(.bss.js_player)
+        *(.bss.vdec)
+        *(.bss.venc)
+        *(.bss.ims)
+#else
+        SORT(*libaudio_utils.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplayer.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_decrypt.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_host_sdk.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_host_3322_service.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_host_3322_sample.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_test_audio_manager_wrapper.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplugin_demuxer_mjpeg.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplugin_protocol_https.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* middleware services gui */
+        SORT(*libgraphic_ui.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libgraphic_service.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libgraphic_utils.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libuikit_test.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdisplay_layer.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdisplay_gfx.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libdisplay_gralloc.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libgraphic_input.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libuikit_ext.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libvdec.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* middleware services media */
+        SORT(*libmedia_sample_wrapper.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_service.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libmedia_common.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_hw.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_primary_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_bluetooth_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_modem_port.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_port_common.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplugin_demuxer_raw.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbuffer_raw_demuxer.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libformat_hw.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhdi_camera_intf.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcamera_codec_hw.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libcodec_hw.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libmedia_hal_common.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* test platform */
+        SORT(*libtest_gpu.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libtest_venc.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libtest_mipi.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libtest_lcd.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+
+        /* SDK packet */
+        SORT(*libbg_common.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbth_gle.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_app.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libbt_host.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_at.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_api.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_core.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_drv.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_sample.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libaudio_vendor.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libhmf_demuxer.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplugin_demuxer_hmf.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplugin_demuxer_mjpeg.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libplugin_protocol_https.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libjs_audio_capturer.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libjs_player.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libvdec.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libvenc.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+        SORT(*libims*.a:*.o*) (.bss .bss* .sbss .sbss* COMMON)
+#endif
+
+       *(.bss)
+       *(.bss*)
+       *(.sbss)
+       *(.sbss*)
+       *(COMMON)
+       . = ALIGN(8);
+       __psram_bss_end = .;
+   } > PSRAM_HEAP_MEM
+   __psram_bss_size = __psram_bss_end - __psram_bss_start;
+#endif
+
+    /* psram heap */
+    .extend_heap (NOLOAD): ALIGN(8)
+    {
+        . = ALIGN(8);
+        __extend_heap_start = .;
+        g_extend_heap_begin = ABSOLUTE(.);
+        g_extend_heap_size = (ORIGIN(PSRAM_HEAP_MEM) + ABSOLUTE(PSRAM_HEAP_LENGTH)) - g_extend_heap_begin;
+    } > PSRAM_HEAP_MEM
+
+    /* npu psram mempool */
+    .psram_npu_heap (NOLOAD):
+    {
+        . = ALIGN(8);
+        __psram_heap_start = .;
+        g_psram_heap_begin = ABSOLUTE(.);
+        g_psram_heap_size = (ORIGIN(PSRAM_NPU_HEAP) + LENGTH(PSRAM_NPU_HEAP)) - g_psram_heap_begin;
+    } > PSRAM_NPU_HEAP
+
+    /* Like Uninitialised data, but we don't want to 0 it. Stores backtrace among other things. */
+    .preserve (NOLOAD): ALIGN(8)
+    {
+        . = ALIGN(8);
+        KEEP(*(preserve))
+    } > PRESERVE_SHARE_MEM
+
+    .cputrace_mem (NOLOAD):
+    {
+        . = ALIGN(8);
+        KEEP(*(cputrace_mem))
+    } > CPUTRACE_RAM
+}
+
+/* Check Flash total size */
+// ASSERT(((FOTA_FLASH_REGION_START + FOTA_FLASH_REGION_LENGTH) <= FLASH_MAX_END), "The used norflash size exceeds the maximum!");

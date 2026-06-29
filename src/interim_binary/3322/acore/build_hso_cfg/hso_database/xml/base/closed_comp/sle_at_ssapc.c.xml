@@ -1,0 +1,28 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at uuid cpy fail! @sle_at_ssapc.c(201),ERROR" ID="0xe934064a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssaps register client fail ret = 0x%x @sle_at_ssapc.c(208),ERROR" ID="0xe9340682" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle at cmd discovery structure get params fail. ret:0x%0x @sle_at_ssapc.c(227),ERROR" ID="0xe934071a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle at uuid cpy fail ret = 0x%0x. @sle_at_ssapc.c(245),ERROR" ID="0xe93407aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="sle at cmd discovery structure uuid[%u] = 0x%02x @sle_at_ssapc.c(255),INFO" ID="0xe93407fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle at cmd discovery structure get params fail ret = 0x%0x. @sle_at_ssapc.c(260),ERROR" ID="0xe9340822" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at uuid cpy fail! @sle_at_ssapc.c(291),ERROR" ID="0xe934091a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at uuid cpy fail! @sle_at_ssapc.c(319),ERROR" ID="0xe93409fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] sle at uuid cpy fail! @sle_at_ssapc.c(340),ERROR" ID="0xe9340aa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]at cmd ssapc write new fail! @sle_at_ssapc.c(362),ERROR" ID="0xe9340b52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_ssapc.c(367),ERROR" ID="0xe9340b7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle at cmd ssapc write cmd fail ret = 0x%0x. @sle_at_ssapc.c(375),ERROR" ID="0xe9340bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]at cmd ssapc write new fail! @sle_at_ssapc.c(391),ERROR" ID="0xe9340c3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_ssapc.c(396),ERROR" ID="0xe9340c62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle at cmd ssapc write req fail ret = 0x%0x. @sle_at_ssapc.c(404),ERROR" ID="0xe9340ca2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle at cmd ssapc read req fail ret = 0x%0x. @sle_at_ssapc.c(416),ERROR" ID="0xe9340d02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]at cmd ssapc call method new fail! @sle_at_ssapc.c(431),ERROR" ID="0xe9340d7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_ssapc.c(435),ERROR" ID="0xe9340d9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle at cmd ssapc call method cmd fail ret = 0x%0x. @sle_at_ssapc.c(444),ERROR" ID="0xe9340de2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error]at cmd ssapc call method new fail! @sle_at_ssapc.c(459),ERROR" ID="0xe9340e5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error][AT] string to data error! @sle_at_ssapc.c(463),ERROR" ID="0xe9340e7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle at cmd ssapc call method req fail ret = 0x%0x. @sle_at_ssapc.c(472),ERROR" ID="0xe9340ec2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc exchange info req fail, ret:0x%0x @sle_at_ssapc.c(487),ERROR" ID="0xe9340f3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] sle at uuid cpy fail ret = 0x%0x. @sle_at_ssapc.c(499),ERROR" ID="0xe9340f9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc read by uuid req fail, ret:0x%0x @sle_at_ssapc.c(507),ERROR" ID="0xe9340fda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc qos test fail, ret:0x%0x @sle_at_ssapc.c(519),ERROR" ID="0xe934103a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ssapc register cbks fail, ret:0x%0x @sle_at_ssapc.c(531),ERROR" ID="0xe934109a" />
+			</MSG_LOG>

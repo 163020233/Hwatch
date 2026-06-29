@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_llcp_imb_reject_act fsm_id 0x%x, reject_opcode 0x%x @lm_gle_imb_fsm.c(147),ERROR" ID="0x8b3e049a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] Instant cbk imb_con_hdl 0x%x, current_clock 0x%x, instant 0x%x, txpktcnt=%u @lm_gle_imb_fsm.c(194),INFO" ID="0x8b3e0615" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB]instant cbk IMB idx NOT FOUND! img_id %d, imb_id %d, img_conhdl 0x%x, imb_conhdl 0x%x @lm_gle_imb_fsm.c(201),ERROR" ID="0x8b3e064a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][img]lm_gle_imb_connect_instant_set_alarm alarm_ts: 0x%x cur_clk: 0x%x @lm_gle_imb_fsm.c(220),INFO" ID="0x8b3e06e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][img]lm_gle_imb_connect_instant_set_alarm fail @lm_gle_imb_fsm.c(231),ERROR" ID="0x8b3e073a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_img_get_offset acb_device_info is null, use default offset @lm_gle_imb_fsm.c(272),ERROR" ID="0x8b3e0882" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_img_get_offset first connect:acb_conhdl%d, imb_conhdl%d @lm_gle_imb_fsm.c(278),INFO" ID="0x8b3e08b5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_img_get_offset not first connect:acb_conhdl%d, imb_conhdl%d @lm_gle_imb_fsm.c(283),INFO" ID="0x8b3e08dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMB] lm_gle_imb_instant_calc imb_con_hdl 0x%x, imb_instant 0x%x, txccmpktcnt %u @lm_gle_imb_fsm.c(342),INFO" ID="0x8b3e0ab5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_create_imb_g_act: imb_conhdl 0x%x, acl_conhdl 0x%x, acb_instant 0x%x, imb_instance 0x%x @lm_gle_imb_fsm.c(410),INFO" ID="0x8b3e0cd5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_imb_set_label_act imb_desc is NULL for imb_conhdl=%d @lm_gle_imb_fsm.c(495),ERROR" ID="0x8b3e0f7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_imb_set_label_ack_act imb_desc is NULL for conhdl=%d @lm_gle_imb_fsm.c(535),ERROR" ID="0x8b3e10ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_imb_set_label_to_act imb_desc is NULL for conhdl=%d @lm_gle_imb_fsm.c(555),ERROR" ID="0x8b3e115a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IMB] set label timeout, conhdl %d, img_id %d, imb_id %d @lm_gle_imb_fsm.c(559),ERROR" ID="0x8b3e117a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_create_imb_t_act imb_desc is NULL for conhdl=%d @lm_gle_imb_fsm.c(575),ERROR" ID="0x8b3e11fa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IMB] lm_gle_create_imb_t_act, dst_id 0x%x, fsm_id 0x%x, imb_id %d, conhdl 0x%x @lm_gle_imb_fsm.c(579),INFO" ID="0x8b3e121d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="lm_gle_imb_tnode_instant_calc:instant_t=0x%x, instant_g=0x%x @lm_gle_imb_fsm.c(598),INFO" ID="0x8b3e12b5" />
+			</MSG_LOG>

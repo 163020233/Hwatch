@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_auth_numeric_confirm_done memcpy error! @lm_classic_acl_srv_ssp_auth_numeric.c(73),ERROR" ID="0x89ce024a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_auth_numeric_testify_confirm Mismatched! Pair Failed! @lm_classic_acl_srv_ssp_auth_numeric.c(200),WARNING" ID="0x89ce0643" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_auth_numeric_negative_testify_act Remote Refused! Pair Failed! @lm_classic_acl_srv_ssp_auth_numeric.c(241),WARNING" ID="0x89ce078b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_auth_numeric_digits_done memcpy error! @lm_classic_acl_srv_ssp_auth_numeric.c(268),ERROR" ID="0x89ce0862" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_classic_acl_srv_ssp_auth_numeric_report_digit memcpy error! @lm_classic_acl_srv_ssp_auth_numeric.c(294),ERROR" ID="0x89ce0932" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSP] lm_classic_acl_srv_ssp_auth_numeric_report_digit numeric value 0x%08x. @lm_classic_acl_srv_ssp_auth_numeric.c(298),INFO" ID="0x89ce0955" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] Stage 2(authentication) with Numeric Comparison finished successfully! @lm_classic_acl_srv_ssp_auth_numeric.c(330),INFO" ID="0x89ce0a55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_auth_numeric_user_denial User Cancelled! Pair Failed! @lm_classic_acl_srv_ssp_auth_numeric.c(361),WARNING" ID="0x89ce0b4b" />
+			</MSG_LOG>

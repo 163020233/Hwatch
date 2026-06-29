@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] bg data put overflow! @bg_data.c(73),ERROR" ID="0xe94e024a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] bg data put mem overflow! @bg_data.c(84),ERROR" ID="0xe94e02a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] bg data put mem memcpy err! @bg_data.c(88),ERROR" ID="0xe94e02c2" />
+			</MSG_LOG>

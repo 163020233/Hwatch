@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_dec_get_size Failed, Error Code: [0x%08X] @xal2hc_dec_comp.c(229),ERROR" ID="0x9918072a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]mem size for dec is invalid @xal2hc_dec_comp.c(234),ERROR" ID="0x99180752" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]malloc for l2hc struct failed @xal2hc_dec_comp.c(240),ERROR" ID="0x99180782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]malloc for decode mem failed @xal2hc_dec_comp.c(248),ERROR" ID="0x991807c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_dec_get_work_buffer_size Failed, Error Code: [0x%08X] @xal2hc_dec_comp.c(271),ERROR" ID="0x9918087a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_dec_set_work_buffer Failed, Error Code: [0x%08X] @xal2hc_dec_comp.c(285),ERROR" ID="0x991808ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][xal2hc]max_plc_count = %u @xal2hc_dec_comp.c(336),INFO" ID="0x99180a85" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]alloc for l2hc decoder failed @xal2hc_dec_comp.c(445),ERROR" ID="0x99180dea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ha_l2hc_dec_init_params Failed, Error Code: [0x%08X] @xal2hc_dec_comp.c(450),ERROR" ID="0x99180e12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_dec_init Failed, Error Code: [0x%08X] @xal2hc_dec_comp.c(456),ERROR" ID="0x99180e42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call ha_l2hc_dec_init_set_work_buffer Failed, Error Code: [0x%08X] @xal2hc_dec_comp.c(464),ERROR" ID="0x99180e82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_dec_set_param Failed, Error Code: [0x%08X] @xal2hc_dec_comp.c(474),ERROR" ID="0x99180ed2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_dec_set_scatch_buffer Failed, Error Code: [0x%08X] @xal2hc_dec_comp.c(576),ERROR" ID="0x99181202" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call audio_l2hc_dec_set_param Failed, Error Code: [0x%08X] @xal2hc_dec_comp.c(598),ERROR" ID="0x991812b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]err = %d @xal2hc_dec_comp.c(788),ERROR" ID="0x991818a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]err = %d @xal2hc_dec_comp.c(800),ERROR" ID="0x99181902" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]len = %u @xal2hc_dec_comp.c(838),ERROR" ID="0x99181a32" />
+			</MSG_LOG>

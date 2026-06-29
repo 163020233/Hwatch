@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][vaps] server not register! @saf_vap_server.c(48),ERROR" ID="0xe9d00182" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vaps] inst not found, inst id: %u @saf_vap_server.c(76),ERROR" ID="0xe9d00262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vaps] server not register! @saf_vap_server.c(92),ERROR" ID="0xe9d002e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vaps] server register fail, param null! @saf_vap_server.c(101),ERROR" ID="0xe9d0032a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vaps] server already register! @saf_vap_server.c(106),ERROR" ID="0xe9d00352" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vaps] server register failed! ret = %u @saf_vap_server.c(112),ERROR" ID="0xe9d00382" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][vaps] group init failed! ret = %u @saf_vap_server.c(117),ERROR" ID="0xe9d003aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][vaps] server not register! @saf_vap_server.c(128),ERROR" ID="0xe9d00402" />
+			</MSG_LOG>

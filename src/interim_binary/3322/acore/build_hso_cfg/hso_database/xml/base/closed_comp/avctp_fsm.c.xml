@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[AVCTPC]connect config rsp fail, cid: %d @avctp_fsm.c(209),ERROR" ID="0xeac0068a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[AVCTPC]connect cfm fail!, addr: %x***%x%x @avctp_fsm.c(297),ERROR" ID="0xeac0094a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVCTPC]connect complete fail, cid: %d @avctp_fsm.c(343),ERROR" ID="0xeac00aba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVCTPC]disconnect complete fail, cid: %d @avctp_fsm.c(389),ERROR" ID="0xeac00c2a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[AVCTPC]disconnect req fail!, addr: %x***%x%x @avctp_fsm.c(492),ERROR" ID="0xeac00f62" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[AVCTPC]data req fail!, addr: %x***%x%x @avctp_fsm.c(697),ERROR" ID="0xeac015ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[AVCTPC]data ind fail, cid: %d @avctp_fsm.c(758),ERROR" ID="0xeac017b2" />
+			</MSG_LOG>

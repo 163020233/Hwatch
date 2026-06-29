@@ -1,0 +1,24 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatts register at fail @ble_at_gatts.c(565),ERROR" ID="0xe92011aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatts register server at cmd fail @ble_at_gatts.c(595),ERROR" ID="0xe920129a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gatts add service common fail, uuid failed type:%u @ble_at_gatts.c(630),ERROR" ID="0xe92013b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gatts add character par uuid fail, type:%u @ble_at_gatts.c(676),ERROR" ID="0xe9201522" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gatts add characteristic new failed, type:%u @ble_at_gatts.c(686),ERROR" ID="0xe9201572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatts add characteristic str to data fail @ble_at_gatts.c(691),ERROR" ID="0xe920159a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gatts add descriptor par uuid fail type:%u @ble_at_gatts.c(743),ERROR" ID="0xe920173a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gatt add descriptor at cmd val new fail type:%u @ble_at_gatts.c(752),ERROR" ID="0xe9201782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatt add descriptor str to data fail @ble_at_gatts.c(757),ERROR" ID="0xe92017aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble at gatts send response param error @ble_at_gatts.c(813),ERROR" ID="0xe920196a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatt send response at cmd value new fail @ble_at_gatts.c(825),ERROR" ID="0xe92019ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatt send response str to data fail @ble_at_gatts.c(830),ERROR" ID="0xe92019f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble at gatts delete all services param error @ble_at_gatts.c(849),ERROR" ID="0xe9201a8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] ble at gatts delete single service param error @ble_at_gatts.c(862),ERROR" ID="0xe9201af2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatt send indication at cmd val new fail @ble_at_gatts.c(884),ERROR" ID="0xe9201ba2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatt send indication str to data fail @ble_at_gatts.c(889),ERROR" ID="0xe9201bca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatts notify indicate by uuid par uuid error @ble_at_gatts.c(914),ERROR" ID="0xe9201c92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatts notify indicate by uuid new fail @ble_at_gatts.c(924),ERROR" ID="0xe9201ce2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gatts notify indicate str to data fail @ble_at_gatts.c(929),ERROR" ID="0xe9201d0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gatts register multi callback uuid fail, ret = 0x%x @ble_at_gatts.c(973),ERROR" ID="0xe9201e6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gatts register multi callback fail, ret = 0x%x @ble_at_gatts.c(979),ERROR" ID="0xe9201e9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gatts register multi callback uuid fail, ret = 0x%x @ble_at_gatts.c(1001),ERROR" ID="0xe9201f4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] gatts register multi callback fail, ret = 0x%x @ble_at_gatts.c(1007),ERROR" ID="0xe9201f7a" />
+			</MSG_LOG>

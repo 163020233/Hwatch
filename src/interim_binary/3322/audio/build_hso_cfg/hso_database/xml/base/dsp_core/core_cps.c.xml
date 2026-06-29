@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]size = %u @core_cps.c(288),ERROR" ID="0x98360902" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]cnt = %u @core_cps.c(289),ERROR" ID="0x9836090a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]cnt = %u @core_cps.c(291),INFO" ID="0x9836091d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[hifi]mod_id: 0x%08x || ave: %u kcps || peak: %u kcps @core_cps.c(305),WARNING" ID="0x9836098b" />
+			</MSG_LOG>

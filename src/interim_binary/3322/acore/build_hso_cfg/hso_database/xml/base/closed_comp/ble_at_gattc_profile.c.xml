@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] DIS read data failed, wrong type %d. @ble_at_gattc_profile.c(687),ERROR" ID="0xe922157a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gattc profile register at fail @ble_at_gattc_profile.c(954),ERROR" ID="0xe9221dd2" />
+			</MSG_LOG>

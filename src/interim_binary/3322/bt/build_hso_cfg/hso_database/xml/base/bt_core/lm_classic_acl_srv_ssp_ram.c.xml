@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[SSP] lm_classic_acl_srv_ssp_create_auth_srv Method %d, Local Policy %d, Remote Policy %d @lm_classic_acl_srv_ssp_ram.c(38),INFO" ID="0x8af20135" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSP] lm_classic_acl_srv_ssp_create_auth_srv failed due to unsupported method. @lm_classic_acl_srv_ssp_ram.c(59),WARNING" ID="0x8af201db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[change link key] lm_classic_acl_srv_ssp_create_key_deriv_srv::secure auth @lm_classic_acl_srv_ssp_ram.c(99),INFO" ID="0x8af2031d" />
+			</MSG_LOG>

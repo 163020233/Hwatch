@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]em_free_classic_rxpd idx(0x%x)current_idx(%d)rxasynbuf_header_idx(%d)BT_GET_LR(0x%x)) @em_classic_rxpd.c(104),ERROR" ID="0x89800342" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[bgtp]em_free_classic_rxpd_with_rxbuff_no_free idx(0x%x)current_idx(%d)rxbuf_idx(%d)BT_GET_LR(0x%x)) @em_classic_rxpd.c(166),ERROR" ID="0x89800532" />
+			</MSG_LOG>

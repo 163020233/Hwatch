@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="acl_disconnect_info_report: rssi=%d @lm_ble_acl_disc_ram.c(42),WARNING" ID="0x8ac60153" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="acl_disconnect_info_report: null chnl scan report data @lm_ble_acl_disc_ram.c(47),WARNING" ID="0x8ac6017b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ble_reset]stop acl complete(conhdl=0x%x) @lm_ble_acl_disc_ram.c(90),INFO" ID="0x8ac602d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ble_reset]stop acl complete(conhdl=0x%x) @lm_ble_acl_disc_ram.c(106),INFO" ID="0x8ac60355" />
+			</MSG_LOG>

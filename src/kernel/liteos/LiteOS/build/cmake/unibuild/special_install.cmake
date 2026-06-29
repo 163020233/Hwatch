@@ -1,0 +1,1 @@
+# Specific operations dedicated to some platforms (ex. remove .comment/.GCC.command.line sections with path/UID/timestamp, etc.)

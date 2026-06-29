@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @sle_srv_rf.c(93),INFO" ID="0xe8d202ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[gle factory evt proc] param NULL. @sle_srv_rf.c(117),ERROR" ID="0xe8d203aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle factory evt proc] type invalid. cmd/evt(%#x) @sle_srv_rf.c(124),ERROR" ID="0xe8d203e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle factory evt proc] malloc fail. cmd/evt(%#x) @sle_srv_rf.c(130),ERROR" ID="0xe8d20412" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[gle factory evt proc] type invalid. cmd/evt(%#x) @sle_srv_rf.c(153),ERROR" ID="0xe8d204ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[gle factory evt proc] seng bt_service fail ret %#x evt %#x @sle_srv_rf.c(159),ERROR" ID="0xe8d204fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="radio frequency tx start malloc failed @sle_srv_rf.c(181),ERROR" ID="0xe8d205aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="radio frequency tx start failed, failed, ret = 0x%x @sle_srv_rf.c(204),ERROR" ID="0xe8d20662" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="radio frequency rx start malloc failed @sle_srv_rf.c(221),ERROR" ID="0xe8d206ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="radio frequency rx start failed, ret = 0x%x @sle_srv_rf.c(239),ERROR" ID="0xe8d2077a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="radio frequency tx|rx end malloc failed @sle_srv_rf.c(255),ERROR" ID="0xe8d207fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="radio frequency tx|rx end failed, failed, ret = 0x%x @sle_srv_rf.c(266),ERROR" ID="0xe8d20852" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="radio frequency reset malloc failed @sle_srv_rf.c(281),ERROR" ID="0xe8d208ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="radio frequency reset failed, failed, ret = 0x%x @sle_srv_rf.c(292),ERROR" ID="0xe8d20922" />
+			</MSG_LOG>

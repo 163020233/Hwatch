@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[AT] err, cmd ssapc write new fail. @sle_at_sample_performance.c(132),ERROR" ID="0xe93c0422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] err, string to data error! @sle_at_sample_performance.c(136),ERROR" ID="0xe93c0442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] err, cmd ssaps notify new fail. @sle_at_sample_performance.c(164),ERROR" ID="0xe93c0522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AT] err, string to data error! @sle_at_sample_performance.c(169),ERROR" ID="0xe93c054a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[AT] cmd ssaps notify: server_id[%u] conn_id[%u] handle[%#x] value_len[%u]. @sle_at_sample_performance.c(184),ERROR" ID="0xe93c05c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="qos interval cfg fail, ret:%#x @sle_at_sample_performance.c(193),ERROR" ID="0xe93c060a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="register qos state cbks fail, ret:%#x @sle_at_sample_performance.c(203),ERROR" ID="0xe93c065a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="performance clean client recv pkt count fail, ret:%#x @sle_at_sample_performance.c(219),ERROR" ID="0xe93c06da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="performance clean server recv pkt count fail, ret:%#x @sle_at_sample_performance.c(230),ERROR" ID="0xe93c0732" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="performance reg recv cbks fail, ret:%d @sle_at_sample_performance.c(240),ERROR" ID="0xe93c0782" />
+			</MSG_LOG>

@@ -1,0 +1,160 @@
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2019-2020. All rights reserved.
+
+#
+# ARM 64-bit(Aarch64) implementations
+#
+config LOSCFG_ARCH_ARM_AARCH64
+    bool
+    select LOSCFG_LIB_LIBC
+    help
+      64-bit ARM architecture implementations.
+      AArch64 was introduced in ARMv8-A and is included in subsequent versions of ARMV8-A.
+
+#
+# Architecture Versions
+#
+config LOSCFG_ARCH_ARM_V8A
+    bool
+    select LOSCFG_ARCH_ARM_AARCH64
+    select LOSCFG_ARCH_PMU
+    help
+      ARMv8-A supported Aarch32 and Aarch64. If this option is chosen, the target platform needs
+      to specified whether the core runs in Aarch32 or Aarch64 mode.
+
+config LOSCFG_ARCH_ARM_VER
+    string
+    default "armv8-a" if LOSCFG_ARCH_ARM_V8A
+
+config LOSCFG_ARCH_ARM_AARCH64_LSE
+    bool
+    help
+        Support armv8.1-lse feature.
+
+config LOSCFG_ARCH_ARM_AARCH64_LSE_ATOMIC
+    bool
+    default y
+    prompt "Enable armv8.1-lse atomic instructions"
+    depends on LOSCFG_ARCH_ARM_AARCH64_LSE
+    help
+        Enable armv8.1-lse atomic instructions.
+
+#
+# Supported Processor Cores
+#
+config LOSCFG_ARCH_CORTEX_A53
+    bool
+    select LOSCFG_ARCH_ARM_V8A
+
+config LOSCFG_ARCH_CORTEX_A55
+    bool
+    select LOSCFG_ARCH_ARM_V8A
+    select LOSCFG_ARCH_ARM_AARCH64_LSE
+
+config LOSCFG_ARCH_LINXCORE_610
+    bool
+    select LOSCFG_ARCH_ARM_V8A
+    select LOSCFG_ARCH_ARM_AARCH64_LSE
+
+config LOSCFG_ARCH_CPU
+    string
+    default "cortex-a53" if LOSCFG_ARCH_CORTEX_A53
+# No cortex-a55 compiler. Use the cortex-a53 compiler.
+    default "cortex-a53" if LOSCFG_ARCH_CORTEX_A55
+# No linx610 compiler. Use the cortex-a76 compiler.
+    default "cortex-a76" if LOSCFG_ARCH_LINXCORE_610
+
+config LOSCFG_ARCH_RAS
+    bool
+    default n
+    depends on LOSCFG_ARCH_ARM_AARCH64
+    help
+      This option allows CPUs that support Reliability, Availability and Serviceability (RAS) extensions.
+
+menu "Mmu Configurations"
+    depends on LOSCFG_ARCH_MMU_ENABLE
+choice
+    prompt "Physical page size"
+config LOSCFG_ARCH_ARM64_4K_PAGES
+    bool "4KB"
+endchoice
+config LOSCFG_ARCH_ARM64_PAGE_SIZE
+    hex
+    default 0x1000 if LOSCFG_ARCH_ARM64_4K_PAGES
+config LOSCFG_ARCH_ARM64_PAGE_SHIFT
+    int
+    default 12 if LOSCFG_ARCH_ARM64_4K_PAGES
+choice
+    prompt "Virtual address bits"
+    default LOSCFG_ARCH_ARM64_VA_BITS_39
+    help
+      Choose the maximum virtual address space size.
+config LOSCFG_ARCH_ARM64_VA_BITS_39
+    depends on LOSCFG_ARCH_ARM64_4K_PAGES
+    bool "39-bit"
+config LOSCFG_ARCH_ARM64_VA_BITS_48
+    bool "48-bit"
+endchoice
+config LOSCFG_ARCH_ARM64_VA_BITS
+    int
+    default 39 if LOSCFG_ARCH_ARM64_VA_BITS_39
+    default 48 if LOSCFG_ARCH_ARM64_VA_BITS_48
+choice
+    prompt "Physical address bits"
+    default LOSCFG_ARCH_ARM64_PA_BITS_40
+    help
+      Choose the maximum physical address space size referring to ID_AA64MMFR0_EL1.PARange register.
+config LOSCFG_ARCH_ARM64_PA_BITS_32
+    bool "32-bit"
+config LOSCFG_ARCH_ARM64_PA_BITS_36
+    bool "36-bit"
+config LOSCFG_ARCH_ARM64_PA_BITS_40
+    bool "40-bit"
+config LOSCFG_ARCH_ARM64_PA_BITS_42
+    bool "42-bit"
+config LOSCFG_ARCH_ARM64_PA_BITS_44
+    bool "44-bit"
+config LOSCFG_ARCH_ARM64_PA_BITS_48
+    bool "48-bit"
+endchoice
+config LOSCFG_ARCH_ARM64_PA_BITS
+    int
+    default 32 if LOSCFG_ARCH_ARM64_PA_BITS_32
+    default 36 if LOSCFG_ARCH_ARM64_PA_BITS_36
+    default 40 if LOSCFG_ARCH_ARM64_PA_BITS_40
+    default 42 if LOSCFG_ARCH_ARM64_PA_BITS_42
+    default 44 if LOSCFG_ARCH_ARM64_PA_BITS_44
+    default 48 if LOSCFG_ARCH_ARM64_PA_BITS_48
+config LOSCFG_ARCH_MMU_PAGE_TBL_LVL
+    int
+    default 3 if LOSCFG_ARCH_ARM64_VA_BITS_39 && LOSCFG_ARCH_ARM64_4K_PAGES
+    default 4 if LOSCFG_ARCH_ARM64_VA_BITS_48 && LOSCFG_ARCH_ARM64_4K_PAGES
+    help
+        The level of page tables is determined by page size and virtual address bits.
+        Bits num of Ln page table level equals 3 subtracted from page shift bits num,
+        then table levels num can be calculated by va bits num.
+        Ex2: 4K granule / 39-bits --> (39 - 12) / (12 - 3) = 3
+        Ex1: 4K granule / 48-bits --> (48 - 12) / (12 - 3) = 4
+
+config LOSCFG_ARCH_ARM64_TEMP_PGTABLE_L1
+    bool
+    depends on !LOSCFG_ARCH_ARM64_TEMP_PGTABLE_L2 && !LOSCFG_ARCH_ARM64_TEMP_PGTABLE_L3
+    help
+      Level1 1G.
+config LOSCFG_ARCH_ARM64_TEMP_PGTABLE_L2
+    bool
+    depends on !LOSCFG_ARCH_ARM64_TEMP_PGTABLE_L3
+    help
+      Level2 2M.
+config LOSCFG_ARCH_ARM64_TEMP_PGTABLE_L3
+    bool
+    help
+      Level3 4K.
+endmenu
+
+config LOSCFG_ARCH_EXC_RECOVER
+    bool "Enable Exception recovery mechanism"
+    default n
+    depends on LOSCFG_ARCH_ARM_AARCH64
+    help
+      This option will Enable Exception recovery mechanism.
+

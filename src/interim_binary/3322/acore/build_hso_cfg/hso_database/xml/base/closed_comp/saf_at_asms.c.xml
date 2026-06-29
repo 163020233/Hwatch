@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[Error] [asm] set config rsp string to data error! @saf_at_asms.c(367),ERROR" ID="0xe9780b7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] [asm] set update bitrate string to data error! @saf_at_asms.c(474),ERROR" ID="0xe9780ed2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] [asm] set update bitrate string to data error! @saf_at_asms.c(490),ERROR" ID="0xe9780f52" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asms] update bitrate fail:0x%x @saf_at_asms.c(529),ERROR" ID="0xe978108a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] [asms] set codec data fail:0x%x @saf_at_asms.c(560),ERROR" ID="0xe9781182" />
+			</MSG_LOG>

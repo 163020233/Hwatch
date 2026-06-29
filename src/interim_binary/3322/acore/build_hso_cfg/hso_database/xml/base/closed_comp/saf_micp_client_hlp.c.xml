@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][micpc] report capture state err, malloc fail! @saf_micp_client_hlp.c(39),ERROR" ID="0xe9fc013a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][micpc] cp rsp, data len err, data_len = %u @saf_micp_client_hlp.c(51),ERROR" ID="0xe9fc019a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micpc] cp rsp, op check err! @saf_micp_client_hlp.c(57),ERROR" ID="0xe9fc01ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][micpc] report volume info proc err, malloc fail! @saf_micp_client_hlp.c(64),ERROR" ID="0xe9fc0202" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[saf][micpc] build mics inst err, ret = %d @saf_micp_client_hlp.c(164),ERROR" ID="0xe9fc0522" />
+			</MSG_LOG>

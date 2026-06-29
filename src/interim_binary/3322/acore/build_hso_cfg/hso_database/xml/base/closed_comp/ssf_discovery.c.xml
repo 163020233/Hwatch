@@ -1,0 +1,65 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] register subprocess callbacks failed, err: %u @ssf_discovery.c(102),ERROR" ID="0xef7e0332" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] get role failed, err: %u @ssf_discovery.c(118),ERROR" ID="0xef7e03b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bs sle get seek speed fail: ret = %u, mode_id = %u! @ssf_discovery.c(143),ERROR" ID="0xef7e047a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle set seek param by mode id %u fail: query null! @ssf_discovery.c(151),ERROR" ID="0xef7e04ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle set seek param by preset success! @ssf_discovery.c(169),INFO" ID="0xef7e054d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] set scan param failed, err: %u @ssf_discovery.c(204),ERROR" ID="0xef7e0662" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] set seek param failed, err: %u @ssf_discovery.c(209),ERROR" ID="0xef7e068a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] start seek failed, err: %u @ssf_discovery.c(214),ERROR" ID="0xef7e06b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bs sle set adv param by preset: not support now. @ssf_discovery.c(259),WARNING" ID="0xef7e081b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="bs sle get adv speed fail: ret = %u, mode_id = %u! @ssf_discovery.c(264),ERROR" ID="0xef7e0842" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bs sle set adv param by mode id %u fail: query null! @ssf_discovery.c(271),ERROR" ID="0xef7e087a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] set adv param by preset fail: memcpy fail! @ssf_discovery.c(282),ERROR" ID="0xef7e08d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] set adv param by preset fail: subprocess fail, err = %u @ssf_discovery.c(287),ERROR" ID="0xef7e08fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] set adv param by preset ok. @ssf_discovery.c(296),INFO" ID="0xef7e0945" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DISC] set announce param failed, err: %u, handle: %u @ssf_discovery.c(341),ERROR" ID="0xef7e0aaa" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DISC] set announce data failed, adv: %u, err: %u, len: %u @ssf_discovery.c(390),ERROR" ID="0xef7e0c32" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DISC] start announce failed, adv: %u, err: %u @ssf_discovery.c(395),ERROR" ID="0xef7e0c5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][CONN] dest_addr is NULL @ssf_discovery.c(419),ERROR" ID="0xef7e0d1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] set reconn announce param failed, err: %d @ssf_discovery.c(424),ERROR" ID="0xef7e0d42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] set announce data failed, err: %d @ssf_discovery.c(442),ERROR" ID="0xef7e0dd2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] start announce failed, err: %d @ssf_discovery.c(447),ERROR" ID="0xef7e0dfa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] set coop announce param failed, err: %d @ssf_discovery.c(465),ERROR" ID="0xef7e0e8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] set announce data failed, err: %u @ssf_discovery.c(492),ERROR" ID="0xef7e0f62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][CONN] start announce failed, err: %u @ssf_discovery.c(497),ERROR" ID="0xef7e0f8a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] get peer addr failed, err: %u @ssf_discovery.c(536),ERROR" ID="0xef7e10c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] get local addr failed, err: %u @ssf_discovery.c(543),ERROR" ID="0xef7e10fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DISC] sle_start_discovery_action_by_role: g_connected:%u type:%u @ssf_discovery.c(570),INFO" ID="0xef7e11d5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DISC] enter sle_stop_current_action: g_cur_action:%u type:%u @ssf_discovery.c(597),INFO" ID="0xef7e12ad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DISC]connected_state:%u g_cur_action:%u @ssf_discovery.c(631),INFO" ID="0xef7e13bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC]local conn mode is not peripheral mode @ssf_discovery.c(634),ERROR" ID="0xef7e13d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC]action unchanged, keep current g_cur_action:%u @ssf_discovery.c(644),INFO" ID="0xef7e1425" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC]action changed, stop g_cur_action:%u @ssf_discovery.c(647),INFO" ID="0xef7e143d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] stop discovery action failed err:%u @ssf_discovery.c(650),ERROR" ID="0xef7e1452" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] start discovery action failed err:%u @ssf_discovery.c(655),ERROR" ID="0xef7e147a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] stop scan action failed err:%u @ssf_discovery.c(662),ERROR" ID="0xef7e14b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] start discovery aaction failed err:%u @ssf_discovery.c(667),ERROR" ID="0xef7e14da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] start discovery find mode failed, type: %u @ssf_discovery.c(682),ERROR" ID="0xef7e1552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] already in discovery mode %u @ssf_discovery.c(687),ERROR" ID="0xef7e157a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] enter bs_sle_start_discovery: type:%u @ssf_discovery.c(700),INFO" ID="0xef7e15e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] get need disconnect all failed, err: %u @ssf_discovery.c(711),ERROR" ID="0xef7e163a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] disconnect all failed, err: %u @ssf_discovery.c(717),ERROR" ID="0xef7e166a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] start discovery failed, type: %u @ssf_discovery.c(723),ERROR" ID="0xef7e169a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DISC] start member conn fail, err: %u role: %u @ssf_discovery.c(733),INFO" ID="0xef7e16ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] enter bs_sle_stop_discovery: type:%u @ssf_discovery.c(740),INFO" ID="0xef7e1725" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] stop discovery find mode failed, type: %u @ssf_discovery.c(747),ERROR" ID="0xef7e175a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] not in discovery mode %u @ssf_discovery.c(752),ERROR" ID="0xef7e1782" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] stop discovery failed, type: %u @ssf_discovery.c(758),ERROR" ID="0xef7e17b2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DISC] announce state change, id: %u, status: %u, temp: %d @ssf_discovery.c(798),INFO" ID="0xef7e18f5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][DISC] seek state change, status: %u, temp: %d @ssf_discovery.c(811),INFO" ID="0xef7e195d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] malloc announce config failed @ssf_discovery.c(945),ERROR" ID="0xef7e1d8a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][DISC] start cdsm fixed conn. event: %u, addr: %02x:%02x @ssf_discovery.c(972),INFO" ID="0xef7e1e65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] connect mananger device @ssf_discovery.c(983),DBG" ID="0xef7e1ebe" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] need connect remote device, but failed, err=%u @ssf_discovery.c(986),ERROR" ID="0xef7e1ed2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] seek result is NULL @ssf_discovery.c(1000),ERROR" ID="0xef7e1f42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] malloc failed @ssf_discovery.c(1005),ERROR" ID="0xef7e1f6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] malloc failed @ssf_discovery.c(1014),ERROR" ID="0xef7e1fb2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] send msg failed %u @ssf_discovery.c(1023),ERROR" ID="0xef7e1ffa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] get role failed, err: %u @ssf_discovery.c(1035),ERROR" ID="0xef7e205a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] role is not peripheral, role: %u @ssf_discovery.c(1039),ERROR" ID="0xef7e207a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] already in auto conn mode @ssf_discovery.c(1043),ERROR" ID="0xef7e209a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] close peripheral disc mode. @ssf_discovery.c(1047),INFO" ID="0xef7e20bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] start directed reconnect @ssf_discovery.c(1050),INFO" ID="0xef7e20d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][DISC] start reconnect directed adv failed, err: %u @ssf_discovery.c(1053),ERROR" ID="0xef7e20ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][DISC] stop directed reconnect @ssf_discovery.c(1062),INFO" ID="0xef7e2135" />
+			</MSG_LOG>

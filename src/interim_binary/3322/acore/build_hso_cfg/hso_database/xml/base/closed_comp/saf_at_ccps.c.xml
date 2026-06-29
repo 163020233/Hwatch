@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps add inst fail, ret: 0x%x @saf_at_ccps.c(246),ERROR" ID="0xe97e07b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps set inst name fail, ret: 0x%x @saf_at_ccps.c(265),ERROR" ID="0xe97e084a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps set icon obtain way fail, ret: 0x%x @saf_at_ccps.c(283),ERROR" ID="0xe97e08da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps set feature state fail, ret: 0x%x @saf_at_ccps.c(294),ERROR" ID="0xe97e0932" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps set protocol support fail, ret: 0x%x @saf_at_ccps.c(312),ERROR" ID="0xe97e09c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps set media instance id fail, ret: 0x%x @saf_at_ccps.c(323),ERROR" ID="0xe97e0a1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps set operation support fail, ret: 0x%x @saf_at_ccps.c(334),ERROR" ID="0xe97e0a72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps call incoming fail, ret: 0x%x @saf_at_ccps.c(361),ERROR" ID="0xe97e0b4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps call accept fail, ret: 0x%x @saf_at_ccps.c(373),ERROR" ID="0xe97e0baa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps call teminate fail, ret: 0x%x @saf_at_ccps.c(384),ERROR" ID="0xe97e0c02" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps call outgoing fail, ret: 0x%x @saf_at_ccps.c(411),ERROR" ID="0xe97e0cda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps call ringing fail, ret: 0x%x @saf_at_ccps.c(423),ERROR" ID="0xe97e0d3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps call hold fail, ret: 0x%x @saf_at_ccps.c(434),ERROR" ID="0xe97e0d92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps call retrieve fail, ret: 0x%x @saf_at_ccps.c(445),ERROR" ID="0xe97e0dea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] saf ccps alloc call_ids failed @saf_at_ccps.c(457),ERROR" ID="0xe97e0e4a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps call merge fail, ret: 0x%x @saf_at_ccps.c(463),ERROR" ID="0xe97e0e7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[Error] saf ccps register server fail, ret: 0x%x @saf_at_ccps.c(480),ERROR" ID="0xe97e0f02" />
+			</MSG_LOG>

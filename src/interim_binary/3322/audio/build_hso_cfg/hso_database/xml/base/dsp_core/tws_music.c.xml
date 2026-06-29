@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[hifi][tws_music] send_data_cnt: %u |cur_data_size: %u |total_data_size: %u @tws_music.c(34),WARNING" ID="0x99020113" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_music] invalid adp type! @tws_music.c(54),ERROR" ID="0x990201b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_music] adp has already registered @tws_music.c(59),ERROR" ID="0x990201da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_music] register adp handle: 0x%x @tws_music.c(69),WARNING" ID="0x9902022b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[hifi][tws_music] unregister invalid adp handle: 0x%x |the registered adp handle: 0x%x @tws_music.c(82),ERROR" ID="0x99020292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi][tws_music] unregister adp handle: 0x%x @tws_music.c(86),WARNING" ID="0x990202b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi][tws_music] adp is NULL! @tws_music.c(101),ERROR" ID="0x9902032a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_adp_send_stream Failed, Error Code: [0x%08X] @tws_music.c(107),ERROR" ID="0x9902035a" />
+			</MSG_LOG>

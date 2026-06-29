@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="[ICB] Tog already started! Current handle %d, new handle %d, timestamp 0x%x, interval %d @tog_icb.c(31),WARNING" ID="0x8b8c00fb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] tog_icb_start, slotcnt_start=%u, finecnt_start=%d, event_counter=%u, interval=%d. @tog_icb.c(47),INFO" ID="0x8b8c017d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] tog_icb_start end, g_basetime_cnt=%u, g_finetime_cnt=%d, cur_clock=%u. @tog_icb.c(71),INFO" ID="0x8b8c023d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][DATA_PATH]tog_icb_start_recording, slotcnt_start 0x%x, finecnt_start 0x%x, interval 0x%x @tog_icb.c(93),INFO" ID="0x8b8c02ed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][DATA_PATH]tog_icb_start_recording end, cur_clock 0x%x, slotcnt_start 0x%x, finecnt_start 0x%x. @tog_icb.c(104),INFO" ID="0x8b8c0345" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ICB] Tog not started! Current type %d, handle %d @tog_icb.c(117),WARNING" ID="0x8b8c03ab" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] tog_icb_start_play, slotcnt_start=%u, finecnt_start=%d, interval=%d @tog_icb.c(132),INFO" ID="0x8b8c0425" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[BGTP] tog_icb_start_play end, cur_clock=%u, slotcnt_start=%u, finecnt_start=%d. @tog_icb.c(143),INFO" ID="0x8b8c047d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] tog_icb_send_dsp_toggle_info, start_toggle_cnt=%u, start_pkt_seq_num=%d, rx_bn=%d, delay=%d @tog_icb.c(170),INFO" ID="0x8b8c0555" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ICB] Tog not started! Current type %d, handle %d, event_counter=%u @tog_icb.c(180),WARNING" ID="0x8b8c05a3" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[ICB] cali, g_counter=%d, g_base_cnt=%u, g_fine_cnt=%d, cur_base_cnt=%u, cur_fine_cnt=%d, base_off=%d, fine_off=%d @tog_icb.c(203),INFO" ID="0x8b8c065d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ICB] Tog not started! Current type %d, handle %d @tog_icb.c(216),WARNING" ID="0x8b8c06c3" />
+			</MSG_LOG>

@@ -1,0 +1,109 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_port_status_notify no port cbk find! @ssf_port_and_trans.c(133),ERROR" ID="0xefae042a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][PORT] sle_port_receive_data_cbk:tc_handle:%u,data_len:%u,src:%u,dst:%u @ssf_port_and_trans.c(174),INFO" ID="0xefae0575" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_port_receive_data_cbk no port cbk find! @ssf_port_and_trans.c(177),ERROR" ID="0xefae058a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] Maximum established connections reached. @ssf_port_and_trans.c(199),ERROR" ID="0xefae063a" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[SSF][PORT] ssf_handle_disconnect_cbk: device_id=%u, uuid=0x%x, uuid_len=%u, src=%u, dst=%u, tc_handle=%u @ssf_port_and_trans.c(211),INFO" ID="0xefae069d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_port_manager_unregister_callbacks failed @ssf_port_and_trans.c(222),ERROR" ID="0xefae06f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_port_receive_data_cbk no port cbk find! @ssf_port_and_trans.c(229),ERROR" ID="0xefae072a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] No available data slot for the new connection! @ssf_port_and_trans.c(263),ERROR" ID="0xefae083a" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[SSF][PORT] ssf_handle_connect_cbk: device_id=%u, uuid=0x%x, uuid_len=%u src=%u, dst=%u, tc_handle=%u @ssf_port_and_trans.c(276),INFO" ID="0xefae08a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_port_dynamic_channel_state_changed_cbk: result is NULL! @ssf_port_and_trans.c(291),ERROR" ID="0xefae091a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_port_dynamic_channel_state_changed_cbk get local fail! @ssf_port_and_trans.c(298),ERROR" ID="0xefae0952" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_port_dynamic_channel_state_changed_cbk, maximum connections reached. @ssf_port_and_trans.c(313),ERROR" ID="0xefae09ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_port_dynamic_channel_state_changed_cbk get dst_port fail! @ssf_port_and_trans.c(324),ERROR" ID="0xefae0a22" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][PORT] sle_port_property_cbk app_id:%u, conn_id:%u, type:%u, portnum:%u @ssf_port_and_trans.c(378),INFO" ID="0xefae0bd5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_property_cbk app_id:%u not found or not pending @ssf_port_and_trans.c(385),ERROR" ID="0xefae0c0a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][PORT] sle_port_property_cbk err:%u, local connid:%u, conn_id:%u @ssf_port_and_trans.c(391),ERROR" ID="0xefae0c3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] not find valid dst_port! @ssf_port_and_trans.c(401),ERROR" ID="0xefae0c8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] no dst_port can be connected @ssf_port_and_trans.c(404),ERROR" ID="0xefae0ca2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][PORT] sle_port_property_cbk :src_port=%u dst_port=%u tc_mode=%u @ssf_port_and_trans.c(416),INFO" ID="0xefae0d05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_property_cbk err:alloc_dynamic_channel err:%u! @ssf_port_and_trans.c(419),ERROR" ID="0xefae0d1a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_get_remote_info_by_conn_id port_num:%u @ssf_port_and_trans.c(438),INFO" ID="0xefae0db5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SLE][PORT] malloc uuid_info_list failed @ssf_port_and_trans.c(444),ERROR" ID="0xefae0de2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_get_remote_port_num_by_conn_id failed err:%u @ssf_port_and_trans.c(467),ERROR" ID="0xefae0e9a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] No remote ports found for conn_id:%u @ssf_port_and_trans.c(474),ERROR" ID="0xefae0ed2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SLE][PORT] malloc remote_info.port_info_list failed @ssf_port_and_trans.c(485),ERROR" ID="0xefae0f2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_get_remote_info_by_conn_id failed err:%u @ssf_port_and_trans.c(492),ERROR" ID="0xefae0f62" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][PORT] sle_port_property_cbk app_id:%u, conn_id:%u, type:%u, portnum:%u @ssf_port_and_trans.c(506),INFO" ID="0xefae0fd5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] property_cbk no finished @ssf_port_and_trans.c(509),ERROR" ID="0xefae0fea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_get_device_id_by_conn_id failed @ssf_port_and_trans.c(516),ERROR" ID="0xefae1022" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] sle_port_property_uuid_cbk err, no find local uuid_cbk @ssf_port_and_trans.c(522),ERROR" ID="0xefae1052" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] uuid_cbk null! @ssf_port_and_trans.c(531),ERROR" ID="0xefae109a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] devid:%u @ssf_port_and_trans.c(534),INFO" ID="0xefae10b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_get_remote_conn_id failed, dev_id:%u! @ssf_port_and_trans.c(537),ERROR" ID="0xefae10ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_register_callbacks devid:%u rewrite @ssf_port_and_trans.c(545),INFO" ID="0xefae110d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_create_local_port append failed, devid: %u @ssf_port_and_trans.c(552),ERROR" ID="0xefae1142" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] cannot locate newly added cbk node, dev_id:%u @ssf_port_and_trans.c(559),ERROR" ID="0xefae117a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_discover_server failed, err:%u @ssf_port_and_trans.c(568),ERROR" ID="0xefae11c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] rollback: delete newly added cbk node, dev_id:%u @ssf_port_and_trans.c(571),INFO" ID="0xefae11dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] get max port number failed, err:%u! @ssf_port_and_trans.c(595),ERROR" ID="0xefae129a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] get max port number failed, err:%u! @ssf_port_and_trans.c(600),ERROR" ID="0xefae12c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] get max port number failed, err:%u! @ssf_port_and_trans.c(605),ERROR" ID="0xefae12ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_profile_init failed, err:%u! @ssf_port_and_trans.c(610),ERROR" ID="0xefae1312" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_register_callbacks port:%u! @ssf_port_and_trans.c(626),INFO" ID="0xefae1395" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PORT] sle_port_manager_register_callbacks failed, port: %u, err:%u! @ssf_port_and_trans.c(635),ERROR" ID="0xefae13da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_register_callbacks port: %u rewrite @ssf_port_and_trans.c(645),INFO" ID="0xefae142d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_create_local_port append failed, port: %u @ssf_port_and_trans.c(656),ERROR" ID="0xefae1482" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_unregister_callbacks port:%u! @ssf_port_and_trans.c(675),DBG" ID="0xefae151e" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PORT] sle_port_manager_unregister_callbacks failed, port: %u, err:%u! @ssf_port_and_trans.c(688),ERROR" ID="0xefae1582" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_create_local_port malloc failed! @ssf_port_and_trans.c(714),ERROR" ID="0xefae1652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_create_local_port append failed! @ssf_port_and_trans.c(721),ERROR" ID="0xefae168a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][PORT] sle_port_append_port_node: src_port:%u, app_id:%u, uuid:%02X%02X, auto_flag:%u @ssf_port_and_trans.c(728),INFO" ID="0xefae16c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_create_local_port, port is NULL! @ssf_port_and_trans.c(737),ERROR" ID="0xefae170a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_create_local_port, max port num ! @ssf_port_and_trans.c(741),ERROR" ID="0xefae172a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_create_local_port, uuid alloc port already! @ssf_port_and_trans.c(745),ERROR" ID="0xefae174a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_create_local_port, alloc app_id failed! @ssf_port_and_trans.c(750),ERROR" ID="0xefae1772" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[SSF][PORT] bs_sle_port_create_local_port, uuid: %02X%02X, uuid_len: %u, manufacturer_id:%u autoflag:%u app_id:%u @ssf_port_and_trans.c(755),INFO" ID="0xefae179d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_create_local_port failed err:%u @ssf_port_and_trans.c(761),ERROR" ID="0xefae17ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_create_local_port, port is 0! @ssf_port_and_trans.c(766),ERROR" ID="0xefae17f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_delete_by_port failed! err=%u @ssf_port_and_trans.c(773),ERROR" ID="0xefae182a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_create_local_port, port alloc already! @ssf_port_and_trans.c(776),ERROR" ID="0xefae1842" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PORT] bs_sle_port_create_remote_port, uuid: %u, port:%u @ssf_port_and_trans.c(796),DBG" ID="0xefae18e6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_create_remote_port err! @ssf_port_and_trans.c(799),ERROR" ID="0xefae18fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_static_connect_channel conn_id=%u @ssf_port_and_trans.c(822),INFO" ID="0xefae19b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_connect, alloc channel err:%u! @ssf_port_and_trans.c(831),ERROR" ID="0xefae19fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PORT] port %u max %u @ssf_port_and_trans.c(855),ERROR" ID="0xefae1aba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] connection has existed, dev_id: %u @ssf_port_and_trans.c(861),ERROR" ID="0xefae1aea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_connect, no available channel @ssf_port_and_trans.c(876),ERROR" ID="0xefae1b62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_connect, port discover busy err: %u @ssf_port_and_trans.c(882),INFO" ID="0xefae1b95" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_connect, port discover err: %u @ssf_port_and_trans.c(886),ERROR" ID="0xefae1bb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_connect, maximum connections reached. @ssf_port_and_trans.c(897),ERROR" ID="0xefae1c0a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SSF][PORT] port conn, dev:%u, remote:%u @ssf_port_and_trans.c(901),INFO" ID="0xefae1c2d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_get_remote_conn_id failed, dev_id:%u! @ssf_port_and_trans.c(903),ERROR" ID="0xefae1c3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_connect, no local_port use connect! @ssf_port_and_trans.c(908),ERROR" ID="0xefae1c62" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_connect, no reg. port: %u! @ssf_port_and_trans.c(913),ERROR" ID="0xefae1c8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_connect, no local_port! @ssf_port_and_trans.c(918),ERROR" ID="0xefae1cb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_connect dynamic connection failed! @ssf_port_and_trans.c(928),ERROR" ID="0xefae1d02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_write_data_by_uuid, invaild  data_len @ssf_port_and_trans.c(947),ERROR" ID="0xefae1d9a" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[SSF][PORT] bs_sle_port_write_data_by_uuid, dev_id:%u, uuid: %02X%02X, uuid_len:%u len:%u! @ssf_port_and_trans.c(952),INFO" ID="0xefae1dc5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_write_data_by_uuid, invaild dev_id:%u ! @ssf_port_and_trans.c(955),ERROR" ID="0xefae1dda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_write_data_by_uuid err, no connect find! @ssf_port_and_trans.c(962),ERROR" ID="0xefae1e12" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][PORT] bs_sle_port_write_data_by_uuid, tc_handle:%u,conn_id:%u,src_port:%u,dst_port:%u! @ssf_port_and_trans.c(977),DBG" ID="0xefae1e8e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_send_data fail %u! @ssf_port_and_trans.c(981),ERROR" ID="0xefae1eaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_write_data_by_uuid err, no valid channel! @ssf_port_and_trans.c(989),ERROR" ID="0xefae1eea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_write_data_by_port, invaild data_len @ssf_port_and_trans.c(1009),ERROR" ID="0xefae1f8a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][PORT] bs_sle_port_write_data_by_port, dev_id:%u, src_port:%u, dst_port:%u, len:%u @ssf_port_and_trans.c(1014),INFO" ID="0xefae1fb5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_write_data_by_port, invaild dev_id:%u ! @ssf_port_and_trans.c(1017),ERROR" ID="0xefae1fca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_write_data_by_port, no connect port found ! @ssf_port_and_trans.c(1023),ERROR" ID="0xefae1ffa" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SSF][PORT] bs_sle_port_write_data_by_port, tc_handle:%u,conn_id:%u,src_port:%u,dst_port:%u! @ssf_port_and_trans.c(1038),DBG" ID="0xefae2076" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_write_data_by_port fail %u! @ssf_port_and_trans.c(1042),ERROR" ID="0xefae2092" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_write_data_by_port, no valid channel ! @ssf_port_and_trans.c(1050),ERROR" ID="0xefae20d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] port disconn by uuid is null, dev_id:%u @ssf_port_and_trans.c(1059),ERROR" ID="0xefae211a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][PORT] bs_sle_port_disconnect_by_uuid,  dev_id: %u, uuid[%u]: %u! @ssf_port_and_trans.c(1066),DBG" ID="0xefae2156" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_disconnect_by_uuid, invaild dev_id:%u ! @ssf_port_and_trans.c(1070),ERROR" ID="0xefae2172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_disconnect_by_uuid err, no connect find! @ssf_port_and_trans.c(1076),ERROR" ID="0xefae21a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_disconnect_by_uuid, error in delete_dynamic err:%u! @ssf_port_and_trans.c(1090),ERROR" ID="0xefae2212" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SSF][PORT] bs_sle_port_disconnect_by_port, dev_id:%u, src_port:%u, dst_port:%u ! @ssf_port_and_trans.c(1115),DBG" ID="0xefae22de" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_disconnect_by_port, invaild dev_id:%u! @ssf_port_and_trans.c(1118),ERROR" ID="0xefae22f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_disconnect_by_port, no connect port found ! @ssf_port_and_trans.c(1124),ERROR" ID="0xefae2322" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_disconnect_by_port, error in delete_dynamic err:%u! @ssf_port_and_trans.c(1140),ERROR" ID="0xefae23a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_destroy_by_uuid, invaild dev_id:%u! @ssf_port_and_trans.c(1161),ERROR" ID="0xefae244a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_destory_by_port, error in delete_dynamic err:%u! @ssf_port_and_trans.c(1169),ERROR" ID="0xefae248a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_manager_unregister_callbacks failed, port:%u @ssf_port_and_trans.c(1180),ERROR" ID="0xefae24e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] sle_port_receive_data_cbk no port cbk find!, port:%u @ssf_port_and_trans.c(1185),ERROR" ID="0xefae250a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_destroy: sle_port_delete_by_port failed, err:%u! @ssf_port_and_trans.c(1207),ERROR" ID="0xefae25ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_destroy: No connection, directly removing memory. @ssf_port_and_trans.c(1210),INFO" ID="0xefae25d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SSF][PORT] bs_sle_port_destroy_by_port, sle_port_delete_by_port err:%u! @ssf_port_and_trans.c(1235),ERROR" ID="0xefae269a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_destroy_by_type err, no local port! @ssf_port_and_trans.c(1274),ERROR" ID="0xefae27d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SSF][PORT] bs_sle_port_destroy_by_type err, no local port! @ssf_port_and_trans.c(1291),ERROR" ID="0xefae285a" />
+			</MSG_LOG>

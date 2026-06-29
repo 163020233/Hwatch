@@ -1,0 +1,175 @@
+{
+  "structs": [
+    {
+      "name": "hcd_mdm_mem_info_t",
+      "display_name": "mem_info",
+      "fields": [
+        {
+          "name": "timestamp",
+          "type": "timestamp"
+        },
+        {
+          "name": "total",
+          "display_name": "mem_total",
+          "enable": true,
+          "description": "total memory",
+          "unit": "byte"
+        },
+        {
+          "name": "used",
+          "display_name": "mem_used",
+          "enable": true,
+          "description": "used memory",
+          "unit": "byte"
+        },
+        {
+          "name": "free",
+          "display_name": "mem_free",
+          "enable": true,
+          "description": "free memory",
+          "unit": "byte"
+        },
+        {
+          "name": "free_node_num",
+          "display_name": "free_node_num",
+          "enable": true,
+          "description": "free node count",
+          "unit": null
+        },
+        {
+          "name": "used_node_num",
+          "display_name": "used_node_num",
+          "enable": true,
+          "description": "used node count",
+          "unit": null
+        },
+        {
+          "name": "max_free_node_size",
+          "display_name": "max_free_node_size",
+          "enable": true,
+          "description": "max free node size",
+          "unit": "byte"
+        },
+        {
+          "name": "peek_size",
+          "display_name": "peek_size",
+          "enable": true,
+          "description": "memory peek size",
+          "unit": "byte"
+        }
+      ]
+    },
+    {
+      "name": "hcd_rssi_t",
+      "display_name": "rssi",
+      "fields": [
+        {
+          "name": "timestamp",
+          "type": "timestamp"
+        },
+        {
+          "name": "rssi",
+          "display_name": "rssi",
+          "enable": true,
+          "description": "rssi",
+          "unit": "dbm"
+        }
+      ]
+    },
+    {
+      "name": "diag_cpup_info_t",
+      "display_name": "cpup",
+      "fields": [
+        {
+          "name": "timestamp",
+          "type": "timestamp"
+        },
+        {
+          "name": "cpup",
+          "display_name": "cpup",
+          "enable": true,
+          "description": "cpup",
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "name": "diag_battery_info_t",
+      "display_name": "battery_health",
+      "fields": [
+        {
+          "name": "timestamp",
+          "type": "timestamp"
+        },
+        {
+          "name": "battery_health",
+          "display_name": "battery_health",
+          "enable": true,
+          "description": "battery_health",
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "name": "diag_metrics_interval_t",
+      "fields": [
+        {
+          "name": "cmd_id",
+          "display_name": "metrics id"
+        },
+        {
+          "name": "interval",
+          "display_name": "report interval (unit:seconds)"
+        }
+      ]
+    },
+    {
+      "name": "hcd_storage_info_t",
+      "display_name": "storage_info",
+      "fields": [
+        {
+          "name": "timestamp",
+          "type": "timestamp"
+        },
+        {
+          "name": "total",
+          "display_name": "storage_total",
+          "enable": true,
+          "description": "total storage",
+          "unit": "byte"
+        },
+        {
+          "name": "used",
+          "display_name": "storage_used",
+          "enable": true,
+          "description": "used storage",
+          "unit": "byte"
+        },
+        {
+          "name": "free",
+          "display_name": "storage_free",
+          "enable": true,
+          "description": "free storage",
+          "unit": "byte"
+        }
+      ]
+    },
+    {
+      "name": "hcd_log_level_t",
+      "display_name": "log_level",
+      "fields": [
+        {
+          "name": "timestamp",
+          "type": "timestamp"
+        },
+        {
+          "name": "level",
+          "display_name": "log_level",
+          "enable": true,
+          "description": "log level reported",
+          "unit": null
+        }
+      ]
+    }
+  ]
+}

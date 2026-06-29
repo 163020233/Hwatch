@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[HCI] clear remote fail, remote is NULL. @hci_secu.c(273),INFO" ID="0xead8088d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI][LK_REQUEST] REMOTE_ADDR=%02x:%02x:**:**:**:%02x @hci_secu.c(700),INFO" ID="0xead815e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[HCI][LK_REQUEST] Remote data Not Found, Rmt Addr may be error = %x @hci_secu.c(739),INFO" ID="0xead8171d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[HCI][CHANGE_ENCRYPTION_MODE] STATUS=0x%x, HANDLE=0x%x, RESULT=0x%x @hci_secu.c(805),INFO" ID="0xead8192d" />
+			</MSG_LOG>

@@ -1,0 +1,52 @@
+<div class="container" style="flex-direction: column;">
+    <list class="todo-wrapper">
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="WebSocketConnect">
+            <text class="todo-title">WebSocketConnect</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Send128B">
+            <text class="todo-title">Send128B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Send400B">
+            <text class="todo-title">Send400B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Send1KB">
+            <text class="todo-title">Send1KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Send4KB">
+            <text class="todo-title">Send4KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="Send16KB">
+            <text class="todo-title">Send16KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="Send64KB">
+            <text class="todo-title">Send64KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="SendAppend128B">
+            <text class="todo-title">SendAppend128B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="SendAppend400B">
+            <text class="todo-title">SendAppend400B</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="SendAppend1KB">
+            <text class="todo-title">SendAppend1KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="SendAppend4KB">
+            <text class="todo-title">SendAppend4KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="SendAppend16KB">
+            <text class="todo-title">SendAppend16KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="SendAppend64KB">
+            <text class="todo-title">SendAppend64KB</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="replaceHttps">
+            <text class="todo-title">https</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: rebeccapurple;" on:click="replaceWebsockets">
+            <text class="todo-title">websockets</text>
+        </list-item>
+        <list-item class="todo-item" style="background-color: steelblue;" on:click="replaceHttp">
+            <text class="todo-title">http</text>
+        </list-item>
+    </list>
+</div>

@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[GLE DM][DM init] security management module init @gle_dm_secu_ui.c(28),INFO" ID="0xed8600e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dm secu mgt init new fail @gle_dm_secu_ui.c(32),ERROR" ID="0xed860102" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle dm secu mgt init bg link cbk fail @gle_dm_secu_ui.c(40),ERROR" ID="0xed860142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE DM][DM done] security management module done @gle_dm_secu_ui.c(50),INFO" ID="0xed860195" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[GLE DM] sm node exceed upper limit %u addr:%02x:%02x:xx:xx:xx:%02x! @gle_dm_secu_ui.c(141),INFO" ID="0xed86046d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[GLE DM] sm remove node fail, cur_num:%u max_num:%u. @gle_dm_secu_ui.c(156),ERROR" ID="0xed8604e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE DM] sm malloc fail. @gle_dm_secu_ui.c(216),ERROR" ID="0xed8606c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[GLE DM] sm memcpy fail. @gle_dm_secu_ui.c(220),ERROR" ID="0xed8606e2" />
+			</MSG_LOG>

@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[L2][GLE_IMG]stat_rssi, sed_id %d, last_rssi %d, curr_rssi %d @evt_task_gle_img_stat.c(133),INFO" ID="0x8c04042d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][GLE_IMG]stat_snr, sed_id %d, last_snr %d, curr_snr %d @evt_task_gle_img_stat.c(161),INFO" ID="0x8c04050d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][GLE_IMG]stat_did, sed_id %d, last_did %d, curr_did %d @evt_task_gle_img_stat.c(188),INFO" ID="0x8c0405e5" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][GLE_IMG]stat_trx_calc, sed_id %d, rx_pkt %02d, rx_loss %02d, tx_pkt %02d, tx_flush %02d, tx_empty|rx_empty 0x%08X, rssi %d @evt_task_gle_img_stat.c(212),INFO" ID="0x8c0406a5" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][GLE_IMG]stat_trx_calc, sed_id %d, total_per %02d, sync_err_per %02d, crc_err_per %02d, sn_err_per %02d, rx_sn_err|rx_err 0x%08X, snr %d @evt_task_gle_img_stat.c(225),INFO" ID="0x8c04070d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][GLE_IMG]stat_init, sed_id %d, malloc failed @evt_task_gle_img_stat.c(364),ERROR" ID="0x8c040b62" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[L2][GLE_IMG]stat_init, sed_id %d, env 0x%08X, stat_init %d @evt_task_gle_img_stat.c(380),INFO" ID="0x8c040be5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_IMG]stat_deinit, env ptr is null @evt_task_gle_img_stat.c(393),WARNING" ID="0x8c040c4b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][GLE_IMG]stat_deinit, sed_id %d, env 0x%08X @evt_task_gle_img_stat.c(407),INFO" ID="0x8c040cbd" />
+			</MSG_LOG>

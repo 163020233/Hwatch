@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] encode set service, malloc err @saf_cdsm_server_hlp.c(81),ERROR" ID="0xe9f2028a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[saf][cdsms] encode member address, malloc err @saf_cdsm_server_hlp.c(109),ERROR" ID="0xe9f2036a" />
+			</MSG_LOG>

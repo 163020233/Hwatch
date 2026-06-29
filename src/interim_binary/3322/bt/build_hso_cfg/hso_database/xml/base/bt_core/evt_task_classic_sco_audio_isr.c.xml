@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_SCO]esco_data_rx_msg_send: MSG_MEM_ALLOC FAIL, con_hdl @evt_task_classic_sco_audio_isr.c(120),ERROR" ID="0x899603c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_SCO]esco_data_rx: invalid rx type for mSBC, quit rx @evt_task_classic_sco_audio_isr.c(143),ERROR" ID="0x8996047a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_SCO]wbs_esco_enable: failed,uc_esco_lid=%d,uc_link_id=%d @evt_task_classic_sco_audio_isr.c(320),ERROR" ID="0x89960a02" />
+			</MSG_LOG>

@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[BLE ADV]lm_ble_send_hci_le_adv_set_terminated adv_desc is NULL @lm_ble_adv_ram.c(103),WARNING" ID="0x8b26033b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ble_reset]stop adv complete(adv_handle=0x%x) @lm_ble_adv_ram.c(114),INFO" ID="0x8b260395" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[bgtp]lm_ble_burst_adv_hci_set_param_act:adv_handle=%d,adv_burst_duration=%d,adv_burst_interval=%d @lm_ble_adv_ram.c(128),INFO" ID="0x8b260405" />
+			</MSG_LOG>

@@ -1,0 +1,21 @@
+config PRODUCT_EVB_DITING
+    bool
+    prompt "Product Evb DiTing"
+    default n
+    help
+      Select this option for Product Evb DiTing.
+
+config AT_UART_BAUDRATE
+    int
+    prompt "AT UART Baudrate"
+    default 115200
+    help
+      Set the baud rate for AT UART communication.
+      Default value is 115200.
+
+config FT_DITING
+    bool
+    prompt "Enable FT Diting Feature"
+    default n
+    help
+        This option enables the FT Diting feature.

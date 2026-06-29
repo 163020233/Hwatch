@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_ble_acl_conn_link_supv_to_act, env_ptr is null @lm_ble_acl_srv_link_supv_to.c(40),ERROR" ID="0x8ad40142" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_ble_create_link_supv_to_srv_fsm fsm_param = NULL @lm_ble_acl_srv_link_supv_to.c(88),ERROR" ID="0x8ad402c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_ble_acl_link_supv_to_srv_idle_act llcp_data is NULL! @lm_ble_acl_srv_link_supv_to.c(129),WARNING" ID="0x8ad4040b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp]lm_ble_send_link_supv_to_cmp event is NULL! @lm_ble_acl_srv_link_supv_to.c(189),WARNING" ID="0x8ad405eb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[INFO][LLC]llcp_link_superv_to_ind_handler:sup_to=%d @lm_ble_acl_srv_link_supv_to.c(206),INFO" ID="0x8ad40675" />
+			</MSG_LOG>

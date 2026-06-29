@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[autorate]lm_gle_iog_save_label_info, iog_idx: %d @lm_gle_iog_autorate.c(105),INFO" ID="0x8b9e034d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_iog_save_label_info  iog_desc is NULL for iog_hci_id=%d @lm_gle_iog_autorate.c(109),ERROR" ID="0x8b9e036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_hci_iog_param_update_act, iob_env is null @lm_gle_iog_autorate.c(165),ERROR" ID="0x8b9e052a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_hci_iog_param_update_act, iog_env is null @lm_gle_iog_autorate.c(170),ERROR" ID="0x8b9e0552" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="lm_gle_iob_corrcet_instant:iob_conhdl=%d, anchor_point=%d, iog_offset=%d, iog_new_offset=%d @lm_gle_iog_autorate.c(192),INFO" ID="0x8b9e0605" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[autorate]lm_gle_hci_iog_param_update_act, conhdl: %d @lm_gle_iog_autorate.c(198),INFO" ID="0x8b9e0635" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_hci_iog_param_update_act, cmd is disallowed @lm_gle_iog_autorate.c(207),WARNING" ID="0x8b9e067b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] lm gle create iob param update srv fsm failed, iob_condhl=%d @lm_gle_iog_autorate.c(243),ERROR" ID="0x8b9e079a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[autorate]lm_gle_dsp_iog_param_update_act, conhdl: %d, label id: %d @lm_gle_iog_autorate.c(260),INFO" ID="0x8b9e0825" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lm_gle_dsp_iog_param_update_act, cmd is disallowed @lm_gle_iog_autorate.c(266),WARNING" ID="0x8b9e0853" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] lm gle create iob param update srv fsm failed, iob_condhl=%d @lm_gle_iog_autorate.c(304),ERROR" ID="0x8b9e0982" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_iob_format_param_update_llcp_msg, param is null @lm_gle_iog_autorate.c(340),ERROR" ID="0x8b9e0aa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_iob_format_param_update_llcp_msg, iob_desc is null @lm_gle_iog_autorate.c(348),ERROR" ID="0x8b9e0ae2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[autorate]lm_gle_iob_format_param_update_llcp_msg, iob_conhdl=%d, update_instant=%u, label_id=%d. @lm_gle_iog_autorate.c(354),INFO" ID="0x8b9e0b15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_iob_format_param_update_llcp_msg, pdu is null @lm_gle_iog_autorate.c(358),ERROR" ID="0x8b9e0b32" />
+			</MSG_LOG>

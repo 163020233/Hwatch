@@ -1,0 +1,64 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="Invalid param! file: %p, readSize: %u. @DialBinParser.cpp(61),ERROR" ID="0xb8ae01ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="UIMalloc fail! size: %u. @DialBinParser.cpp(66),ERROR" ID="0xb8ae0212" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="fread fail! readSize: %u. @DialBinParser.cpp(72),ERROR" ID="0xb8ae0242" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Get dial preview fail, param error! @DialBinParser.cpp(81),ERROR" ID="0xb8ae028a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(88),ERROR" ID="0xb8ae02c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="file fseek 0 failed! @DialBinParser.cpp(96),ERROR" ID="0xb8ae0302" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(102),ERROR" ID="0xb8ae0332" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s dial name fail! @DialBinParser.cpp(111),ERROR" ID="0xb8ae037a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s dial description fail! @DialBinParser.cpp(118),ERROR" ID="0xb8ae03b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fp is nullptr! @DialBinParser.cpp(162),ERROR" ID="0xb8ae0512" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="update dial param error! @DialBinParser.cpp(166),ERROR" ID="0xb8ae0532" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial header fail, allom header mem fail! @DialBinParser.cpp(175),ERROR" ID="0xb8ae057a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial header fail, param error! @DialBinParser.cpp(184),ERROR" ID="0xb8ae05c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(191),ERROR" ID="0xb8ae05fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="file fseek 0 failed! @DialBinParser.cpp(200),ERROR" ID="0xb8ae0642" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(206),ERROR" ID="0xb8ae0672" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="capability %u not support state %d! @DialBinParser.cpp(215),ERROR" ID="0xb8ae06ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(236),ERROR" ID="0xb8ae0762" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Parse dial view fail, view type id is %u! @DialBinParser.cpp(244),ERROR" ID="0xb8ae07a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial static image fail, file is nullptr! @DialBinParser.cpp(258),ERROR" ID="0xb8ae0812" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(270),ERROR" ID="0xb8ae0872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to new DialStaticImgView @DialBinParser.cpp(276),ERROR" ID="0xb8ae08a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="load img fail! file:%s resId:%x @DialBinParser.cpp(286),ERROR" ID="0xb8ae08f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial sequence image fail, file is nullptr! @DialBinParser.cpp(308),ERROR" ID="0xb8ae09a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(321),ERROR" ID="0xb8ae0a0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to new DialSequenceImgView() @DialBinParser.cpp(327),ERROR" ID="0xb8ae0a3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to add sequence! @DialBinParser.cpp(343),ERROR" ID="0xb8ae0aba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to load imgs! @DialBinParser.cpp(349),ERROR" ID="0xb8ae0aea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial rotate image fail, file is nullptr! @DialBinParser.cpp(372),ERROR" ID="0xb8ae0ba2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(385),ERROR" ID="0xb8ae0c0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to new DialRotateImgView @DialBinParser.cpp(390),ERROR" ID="0xb8ae0c32" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="load img fail! file:%s resId:%x @DialBinParser.cpp(402),ERROR" ID="0xb8ae0c92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial option image fail, file is nullptr! @DialBinParser.cpp(431),ERROR" ID="0xb8ae0d7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(445),ERROR" ID="0xb8ae0dea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(452),ERROR" ID="0xb8ae0e22" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="load img fail! file:%s resId:%x @DialBinParser.cpp(466),ERROR" ID="0xb8ae0e92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(510),ERROR" ID="0xb8ae0ff2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to new DialDigitalImgView @DialBinParser.cpp(516),ERROR" ID="0xb8ae1022" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="load img fail! file: %s resId: %x @DialBinParser.cpp(555),ERROR" ID="0xb8ae115a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial label fail, file is nullptr! @DialBinParser.cpp(586),ERROR" ID="0xb8ae1252" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(600),ERROR" ID="0xb8ae12c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to new DialLabelView @DialBinParser.cpp(606),ERROR" ID="0xb8ae12f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial arc label fail, file is nullptr! @DialBinParser.cpp(646),ERROR" ID="0xb8ae1432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(658),ERROR" ID="0xb8ae1492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to new DialArcLabelView @DialBinParser.cpp(664),ERROR" ID="0xb8ae14c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="param error! @DialBinParser.cpp(703),ERROR" ID="0xb8ae15fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="load img fail! file: %s resId: %x @DialBinParser.cpp(713),ERROR" ID="0xb8ae164a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(727),ERROR" ID="0xb8ae16ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial box progress fail, file is nullptr! @DialBinParser.cpp(742),ERROR" ID="0xb8ae1732" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(755),ERROR" ID="0xb8ae179a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to new DialBoxProgressView @DialBinParser.cpp(761),ERROR" ID="0xb8ae17ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial arc progress fail, file is nullptr! @DialBinParser.cpp(797),ERROR" ID="0xb8ae18ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(810),ERROR" ID="0xb8ae1952" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to new DialArcProgressView @DialBinParser.cpp(816),ERROR" ID="0xb8ae1982" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial video fail, file is nullptr! @DialBinParser.cpp(858),ERROR" ID="0xb8ae1ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(871),ERROR" ID="0xb8ae1b3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to new DialVideoView @DialBinParser.cpp(877),ERROR" ID="0xb8ae1b6a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="load img fail! file: %s resId: %x @DialBinParser.cpp(891),ERROR" ID="0xb8ae1bda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial click fail, file is nullptr! @DialBinParser.cpp(911),ERROR" ID="0xb8ae1c7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(924),ERROR" ID="0xb8ae1ce2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Parse dial kaleidoscope fail, file is nullptr! @DialBinParser.cpp(948),ERROR" ID="0xb8ae1da2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc or read fail! @DialBinParser.cpp(961),ERROR" ID="0xb8ae1e0a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="load img fail! file: %s resId: %x @DialBinParser.cpp(977),ERROR" ID="0xb8ae1e8a" />
+			</MSG_LOG>

@@ -1,0 +1,28 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="adv_params_len = %zu new fail @sapi_gle_dev_discovery.c(36),ERROR" ID="0xed940122" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy adv params failed @sapi_gle_dev_discovery.c(44),ERROR" ID="0xed940162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy ext param failed @sapi_gle_dev_discovery.c(53),ERROR" ID="0xed9401aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy adv data failed @sapi_gle_dev_discovery.c(64),ERROR" ID="0xed940202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy scan rsp data failed @sapi_gle_dev_discovery.c(75),ERROR" ID="0xed94025a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv_gt_role = 0x%x @sapi_gle_dev_discovery.c(82),INFO" ID="0xed940295" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy conn param failed @sapi_gle_dev_discovery.c(92),ERROR" ID="0xed9402e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_params point null @sapi_gle_dev_discovery.c(109),ERROR" ID="0xed94036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_params memcpy fail @sapi_gle_dev_discovery.c(123),ERROR" ID="0xed9403da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi_gle_private_set_adv_data sizeof(struct bth_gle_set_adv_params) = %zu new fail @sapi_gle_dev_discovery.c(170),ERROR" ID="0xed940552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi_gle_private_set_adv_data adv_data len %u new fail @sapi_gle_dev_discovery.c(179),ERROR" ID="0xed94059a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sapi_gle_private_set_adv_data scan_rsp_data len %u new fail @sapi_gle_dev_discovery.c(192),ERROR" ID="0xed940602" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_enable point null @sapi_gle_dev_discovery.c(219),ERROR" ID="0xed9406da" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="adv_handle = 0x%x, adv_enable = 0x%x @sapi_gle_dev_discovery.c(224),INFO" ID="0xed940705" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv_enable new fail @sapi_gle_dev_discovery.c(228),ERROR" ID="0xed940722" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="handle = 0x%x @sapi_gle_dev_discovery.c(248),INFO" ID="0xed9407c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="handle mem new failed @sapi_gle_dev_discovery.c(252),ERROR" ID="0xed9407e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="scan_params pointer null @sapi_gle_dev_discovery.c(273),ERROR" ID="0xed94088a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_scan_params new fail @sapi_gle_dev_discovery.c(280),ERROR" ID="0xed9408c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_scan_params memcpy fail @sapi_gle_dev_discovery.c(285),ERROR" ID="0xed9408ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="scan_enable pointer null @sapi_gle_dev_discovery.c(304),ERROR" ID="0xed940982" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_scan_enable new fail @sapi_gle_dev_discovery.c(309),ERROR" ID="0xed9409aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_set_public_addr new fail @sapi_gle_dev_discovery.c(331),ERROR" ID="0xed940a5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle_set_public_addr memcpy fail @sapi_gle_dev_discovery.c(335),ERROR" ID="0xed940a7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="addr pointer null @sapi_gle_dev_discovery.c(354),ERROR" ID="0xed940b12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gle get public address memcpy fail @sapi_gle_dev_discovery.c(358),ERROR" ID="0xed940b32" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="addr:0x%02x:**:**:**:%02x:%02x @sapi_gle_dev_discovery.c(363),INFO" ID="0xed940b5d" />
+			</MSG_LOG>

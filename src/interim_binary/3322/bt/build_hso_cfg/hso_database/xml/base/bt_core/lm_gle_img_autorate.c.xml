@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] lm_gle_img_param_update_check, acb_env_ptr is null, acb_conhdl=%d. @lm_gle_img_autorate.c(49),ERROR" ID="0x8ba0018a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ERROR] lm_gle_img_param_update_check, imb_cnt %d is invalid, label_set_cnt %d @lm_gle_img_autorate.c(97),ERROR" ID="0x8ba0030a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] lm_gle_img_param_update_check, env_ptr is null, img_conhdl=%d. @lm_gle_img_autorate.c(105),ERROR" ID="0x8ba0034a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] lm_gle_img_param_update_check, imb status is invalid, imb_conhdl=%d. @lm_gle_img_autorate.c(119),ERROR" ID="0x8ba003ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] lm_gle_img_param_update_check, label_id %d is invalid. @lm_gle_img_autorate.c(126),ERROR" ID="0x8ba003f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_imb_param_udpate_get_instant img_desc is NULL for img_id=%d @lm_gle_img_autorate.c(146),ERROR" ID="0x8ba00492" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_imb_param_udpate_get_instant imb_desc is NULL for imb_conhdl=%d @lm_gle_img_autorate.c(152),ERROR" ID="0x8ba004c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] lm_gle_imb_param_udpate_get_instant acb_elt is NULL for acb_conhdl=%d @lm_gle_img_autorate.c(179),ERROR" ID="0x8ba0059a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[autorate]lm_gle_imb_param_udpate_get_instant, label_id=%d, imb_intv=%u, last_ts=%u, anchor_p=%u. @lm_gle_img_autorate.c(187),INFO" ID="0x8ba005dd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[autorate]lm_gle_imb_param_udpate_get_instant, acb_intv=%u, acb_duration=%u, acb_instant_point=%u. @lm_gle_img_autorate.c(189),INFO" ID="0x8ba005ed" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[autorate]lm_gle_hci_img_param_update_act, img_id=%d, label_id=%d, imb_cnt=%d. @lm_gle_img_autorate.c(198),INFO" ID="0x8ba00635" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]lm_gle_hci_img_param_update_act, cmd is disallowed, status=0x%x. @lm_gle_img_autorate.c(203),ERROR" ID="0x8ba0065a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[autorate]lm_gle_hci_img_param_update_act, img_id=%d, imb_conhdl=%d. @lm_gle_img_autorate.c(209),INFO" ID="0x8ba0068d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] lm gle create imb param update srv fsm failed, imb_condhl=%d @lm_gle_img_autorate.c(216),ERROR" ID="0x8ba006c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[autorate]lm_gle_hci_img_param_update_act, ignore imb_conhdl=%d @lm_gle_img_autorate.c(230),INFO" ID="0x8ba00735" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] lm_gle_hci_img_param_update_act fsm msg alloc error! @lm_gle_img_autorate.c(236),ERROR" ID="0x8ba00762" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] lm gle create imb param update srv fsm failed, imb_condhl=%d @lm_gle_img_autorate.c(248),ERROR" ID="0x8ba007c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_imb_format_param_update_llcp_msg, param is null @lm_gle_img_autorate.c(270),ERROR" ID="0x8ba00872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_imb_format_param_update_llcp_msg, imb_desc is null @lm_gle_img_autorate.c(278),ERROR" ID="0x8ba008b2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[autorate]lm_gle_imb_format_param_update_llcp_msg, imb_conhdl=%d, update_instant=%u, label_id=%d. @lm_gle_img_autorate.c(284),INFO" ID="0x8ba008e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]lm_gle_imb_format_param_update_llcp_msg, pdu is null @lm_gle_img_autorate.c(288),ERROR" ID="0x8ba00902" />
+			</MSG_LOG>

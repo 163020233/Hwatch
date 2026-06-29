@@ -1,0 +1,39 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2022-2022. All rights reserved.
+#===============================================================================
+config SPI_USING_V100
+    bool
+    prompt "Using SPI V100."
+    default y
+    depends on DRIVER_SUPPORT_SPI
+
+config SPI_USING_V151
+    bool
+    prompt "Using SPI V151."
+    default y
+    depends on DRIVER_SUPPORT_SPI
+
+config SPI_USING_V151_100
+    bool
+    prompt "Using SPI V151_100."
+    default n
+    depends on DRIVER_SUPPORT_SPI
+
+config SPI_IP_VERSION_V151_PRO
+    bool
+    prompt "Using SPI V151 with updata."
+    default n
+    depends on DRIVER_SUPPORT_SPI
+
+choice
+    prompt "Select SPI expend mode."
+    default SPI_SUPPORT_SINGLE_SPI_TYPE_B
+    config SPI_SUPPORT_SINGLE_SPI_TYPE_A
+        bool "SPI support expend A mode."
+        depends on SPI_IP_VERSION_V151_PRO
+    config SPI_SUPPORT_SINGLE_SPI_TYPE_B
+        bool "SPI support expend B mode."
+    config SPI_SUPPORT_SINGLE_SPI_TYPE_C
+        bool "SPI support expend C mode."
+endchoice

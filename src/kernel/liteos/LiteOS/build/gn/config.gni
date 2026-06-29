@@ -1,0 +1,30 @@
+#===============================================================================
+# @brief    compiler file
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2013-2025. All rights reserved.
+#===============================================================================
+
+import("$root_out_dir/liteos_kconfig.gni")
+import("../../self_src/targets/$LOSCFG_PLATFORM/board.gni")
+
+LIBC_DIR_PATH = "$RTOSLITETOPDIR/open_source/musl"
+open_source_path = "open_source"
+
+if (defined(LOSCFG_COMPILER_ICCARM)) {
+    toolchain_type = "iccarm"
+}  else if(defined(LOSCFG_COMPILER_CLANG)) {
+    toolchain_type = "clang"
+}
+
+if (defined(LOSCFG_SAFETY_KERNEL)) {
+    rtos_lite_kernel_path = "kernel_s"
+    arch_path = "arch_s"
+    test_path = "test_s"
+} else {
+    rtos_lite_kernel_path = "kernel_lite"
+    arch_path = "arch_lite"
+    test_path = "test"
+}
+
+import("template.gni")
+
+has_dynload_gsymbol = false

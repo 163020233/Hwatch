@@ -1,0 +1,18 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ACore] smp keys write in. @bt_database_smp_ble.c(56),INFO" ID="0xe83001c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] smp keys write err. @bt_database_smp_ble.c(59),ERROR" ID="0xe83001da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] smp keys write memcpy err. @bt_database_smp_ble.c(63),ERROR" ID="0xe83001fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble save smp key param error. @bt_database_smp_ble.c(71),INFO" ID="0xe830023d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get smp keys param err! @bt_database_smp_ble.c(117),ERROR" ID="0xe83003aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get smp keys memcpy err! @bt_database_smp_ble.c(139),ERROR" ID="0xe830045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get smp keys param err! @bt_database_smp_ble.c(160),ERROR" ID="0xe8300502" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble get smp keys id_index 0x%x peer_addr %02x:**:**:**:%02x:%02x @bt_database_smp_ble.c(182),WARNING" ID="0xe83005b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble acore smp keys memcmp err, addr not match! @bt_database_smp_ble.c(184),WARNING" ID="0xe83005c3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get smp keys memcpy err! @bt_database_smp_ble.c(191),ERROR" ID="0xe83005fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore delete smp key memcpy err! @bt_database_smp_ble.c(221),ERROR" ID="0xe83006ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore memset smp key err! @bt_database_smp_ble.c(224),ERROR" ID="0xe8300702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get bonded device memcpy err! @bt_database_smp_ble.c(247),ERROR" ID="0xe83007ba" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="ble set nv page_num 0x%x write_index 0x%x peer_addr %02x:**:**:**:**:%02x @bt_database_smp_ble.c(288),WARNING" ID="0xe8300903" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt acore save smp full, write_index:%02x! @bt_database_smp_ble.c(322),INFO" ID="0xe8300a15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get delete memcpy err! @bt_database_smp_ble.c(365),ERROR" ID="0xe8300b6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore delete smp key memset err! @bt_database_smp_ble.c(370),ERROR" ID="0xe8300b92" />
+			</MSG_LOG>

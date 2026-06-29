@@ -1,0 +1,16 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="pan is not init. @cpi_pan.c(29),ERROR" ID="0xee6e00ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan is not init. @cpi_pan.c(42),ERROR" ID="0xee6e0152" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan init done. @cpi_pan.c(58),ERROR" ID="0xee6e01d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan memnew error. @cpi_pan.c(64),ERROR" ID="0xee6e0202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan memset error. @cpi_pan.c(68),ERROR" ID="0xee6e0222" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan deinit done. @cpi_pan.c(80),ERROR" ID="0xee6e0282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan is not init. @cpi_pan.c(95),ERROR" ID="0xee6e02fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan service net is on. @cpi_pan.c(106),ERROR" ID="0xee6e0352" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="pan get remote servce status:0x%x. @cpi_pan.c(119),INFO" ID="0xee6e03bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan memnew fail. @cpi_pan.c(127),ERROR" ID="0xee6e03fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan service net is on. @cpi_pan.c(139),ERROR" ID="0xee6e045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan service net is off. @cpi_pan.c(155),ERROR" ID="0xee6e04da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan memnew fail. @cpi_pan.c(160),ERROR" ID="0xee6e0502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="avrcp service is not connected. @cpi_pan.c(175),ERROR" ID="0xee6e057a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan service write data error, net is off. @cpi_pan.c(193),ERROR" ID="0xee6e060a" />
+			</MSG_LOG>

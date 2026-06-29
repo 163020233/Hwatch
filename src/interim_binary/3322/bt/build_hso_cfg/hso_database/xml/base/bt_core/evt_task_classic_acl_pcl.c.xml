@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PCL]erro_num=%d rssi_delta=%d(sco level 5) @evt_task_classic_acl_pcl.c(42),INFO" ID="0x8ae20155" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PCL]erro_num=%d rssi_delta=%d(sco level 6) @evt_task_classic_acl_pcl.c(54),INFO" ID="0x8ae201b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][BT_PCL]sco_power_level_6_transfer_state, INC_PWR is invalid @evt_task_classic_acl_pcl.c(68),WARNING" ID="0x8ae20223" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_PCL]SCO acl_pcl_log, link %d, last_rssi_delta %d, err_num %d, power level %d @evt_task_classic_acl_pcl.c(228),INFO" ID="0x8ae20725" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][BT_PCL]ACL acl_pcl_log, link %d, last_rssi_delta %d, retrans %d, power level %d @evt_task_classic_acl_pcl.c(233),INFO" ID="0x8ae2074d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PCL]sco_differ_process, decision is DEC_PWR, is_sco %d, curr_level %d @evt_task_classic_acl_pcl.c(268),INFO" ID="0x8ae20865" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][BT_PCL]sco_differ_process, decision is INC_PWR, is_sco %d, curr_level %d @evt_task_classic_acl_pcl.c(273),INFO" ID="0x8ae2088d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][BT_PCL]sco_differ_process, decision is END_PCL, is_sco %d @evt_task_classic_acl_pcl.c(279),INFO" ID="0x8ae208bd" />
+			</MSG_LOG>

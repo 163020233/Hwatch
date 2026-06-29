@@ -1,0 +1,109 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[ERROR] check_loopback_mode, env_ptr is null, iob_conhdl 0x%x @evt_task_gle_iob.c(125),ERROR" ID="0x88fa03ea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[bgtp]evt_task_gle_iob_disc_without_terminate last_sync_timestamp(0x%x) reason(%d) @evt_task_gle_iob.c(169),INFO" ID="0x88fa054d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="iob_counter:%d, phy info, tx_format:%d, rx_format:%d, txphy:%d, rxphy:%d @evt_task_gle_iob.c(173),INFO" ID="0x88fa056d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="map info, map0:0x%x, map0:0x%x, map2:0x%x, map3:0x%x @evt_task_gle_iob.c(175),INFO" ID="0x88fa057d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="connection_timeout:%d, map4:0x%x, tx_pilot_ratio:0x%x, rx_pilot_ratio:0x%x @evt_task_gle_iob.c(177),INFO" ID="0x88fa058d" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="last_sync_timestamp:0x%x, cur_time:0x%x, start_cnt:%d, end_cnt:%d, abnormal_cnt:%d, cancel_cnt:%d, abort_cnt:%d @evt_task_gle_iob.c(180),INFO" ID="0x88fa05a5" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="last_timestamp:0x%x, last_timestamp_g:0x%x, clk_off:0x%x, rxwin=%d, delay=%d @evt_task_gle_iob.c(182),INFO" ID="0x88fa05b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="txpd-&gt;ble_txprocessed: %d @evt_task_gle_iob.c(228),INFO" ID="0x88fa0725" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_gle_iob_set_timeout: conhdl=%d, timeout=%d @evt_task_gle_iob.c(258),INFO" ID="0x88fa0815" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_gle_iob_check_timeout, conhdl=%d, con_timeout: %d, iob_env-&gt;last_sync_timestamp: %d @evt_task_gle_iob.c(271),INFO" ID="0x88fa087d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="evt_task_gle_iob_prog_hci_data, tx_node is NULL! @evt_task_gle_iob.c(449),ERROR" ID="0x88fa0e0a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_iob_prog_hci_data, con_hdl:%d, iob_counter:%u, txdesc_cnt_used:%d, tx_flush_time:%d @evt_task_gle_iob.c(471),INFO" ID="0x88fa0ebd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] gle_loopback_mode, alloc mem fail! @evt_task_gle_iob.c(489),ERROR" ID="0x88fa0f4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] iob_tx_node_init, alloc mem fail! @evt_task_gle_iob.c(505),ERROR" ID="0x88fa0fca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]add_loopback_pkt_txnode, tx_node is null! @evt_task_gle_iob.c(544),ERROR" ID="0x88fa1102" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]add_loopback_pkt_txnode, tx_buff_node is null! @evt_task_gle_iob.c(551),ERROR" ID="0x88fa113a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_gle_iob_end_process, iob_conhdl: %d, evt_state: %d, num_of_active_channel: %d @evt_task_gle_iob.c(607),INFO" ID="0x88fa12fd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob_stat_report:cnt_diff_total=%d,cnt_diff_max=%d,cnt_total_nb=%d,ackrate=%d @evt_task_gle_iob.c(630),INFO" ID="0x88fa13b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_iob_stat_report, event is null @evt_task_gle_iob.c(646),ERROR" ID="0x88fa1432" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob restart: iob_conhdl=%d,txnode_counter=%d,cur_iob_counter=%d,cnt_diff=%d @evt_task_gle_iob.c(724),INFO" ID="0x88fa16a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR] iob_iso_statistics_info, the test time is out of range. @evt_task_gle_iob.c(742),ERROR" ID="0x88fa1732" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_wvt_mode_iso_statistics_info:rx_syncerr=%d, rx_rcverr=%d, rx_noerr=%d, rx_per=%d @evt_task_gle_iob.c(762),INFO" ID="0x88fa17d5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] evt_wvt_mode_iso_statistics_info:tx_ack=%d, tx_flushed=%d, tx_ack_rate=%d, rate=%d bit/s @evt_task_gle_iob.c(764),INFO" ID="0x88fa17e5" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="iob_statistics: iob_conhdl=%d,rssi_avg=%d,rx_per=%d,rx_rcv_err=%d,rx_sync_err=%d,rx_pkt_noerr=%d, rx_pkt_sn_err=%d @evt_task_gle_iob.c(853),INFO" ID="0x88fa1aad" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="iob_statistics: start_cnt=%d,end_cnt=%d,abnormal_cnt=%d,cancel_cnt=%d,abort_cnt=%d,insert_fail_cnt=%d,rx_len=%d @evt_task_gle_iob.c(857),INFO" ID="0x88fa1acd" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="iob_statistics:snr_avg=%d,did_avg=%d,max_snr=%d,min_snr=%d, max_did=%d, min_did=%d @evt_task_gle_iob.c(860),INFO" ID="0x88fa1ae5" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="iob_statistics: nse=%d, iob_counter=%d, ts=%d, delay=%d, clkoff=%d, rx_win=%d @evt_task_gle_iob.c(863),INFO" ID="0x88fa1afd" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IOB_L2]calc_iog_cnt_diff: anchor_point_g=0x%x, cur_time=0x%x, event_end_ts=0x%x, elt_ts=0x%x @evt_task_gle_iob.c(991),INFO" ID="0x88fa1efd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IOB_L2]calc_iog_cnt_diff return, iob_conhdl: %d, sdu_intv: %u, interval: %u @evt_task_gle_iob.c(999),INFO" ID="0x88fa1f3d" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[IOB_L2]calc_iog_cnt_diff: anchor_point_g=0x%x, cur_time=0x%x, event_end_ts=0x%x, last_packet_ts=0x%x, next_start_ts=0x%x, iog_counter=%u, sn_cnt_diff=%u @evt_task_gle_iob.c(1013),INFO" ID="0x88fa1fad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IOB]data_flush_config, sn_high_counter: %d, pkt_seq_num: %d, first_pkt_seq_num: %d, sn_cnt_diff: %d @evt_task_gle_iob.c(1021),INFO" ID="0x88fa1fed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]pkt_seq_num is smaller than first_pkt_seq_num @evt_task_gle_iob.c(1028),ERROR" ID="0x88fa2022" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IOB]expected_iog_counter: %d, expected_iob_counter: %d, last_arrived_counter: %d, cur_pld_cnt: %d @evt_task_gle_iob.c(1037),INFO" ID="0x88fa206d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="pld_cnt: %u, tx_flush_time: %u, cur_g_time: %u @evt_task_gle_iob.c(1050),INFO" ID="0x88fa20d5" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][GLE_IOB]sed_llchmap_log, con_hdl %d, gle_fh_alg_sel %d, ble_fh_en %d, ble_ch_idx %d, 5g_trx_en %d, bgle_freq_sel %d, llchmap_sel %d @evt_task_gle_iob.c(1311),INFO" ID="0x88fa28fd" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[L2][GLE_IOB]sed_llchmap_log, freq_start_idx %d, llchmap[0-4] 0x%04X 0x%04X 0x%04X 0x%04X 0x%04X @evt_task_gle_iob.c(1314),INFO" ID="0x88fa2915" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][GLE_IOB]sed_llchmap_log, llchmap_ext[0-6] 0x%04X 0x%04X 0x%04X 0x%04X 0x%04X 0x%04X 0x%04X @evt_task_gle_iob.c(1317),INFO" ID="0x88fa292d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_iob_flush_and_free_txnode:flushtime=%d,gtime=%d,txpld_flush|done=%x,pld_cnt=%d @evt_task_gle_iob.c(1380),INFO" ID="0x88fa2b25" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_gle_iob_flush_rdy_queue:flushtime=%d,gtime=%d,pld_cnt=%d @evt_task_gle_iob.c(1430),INFO" ID="0x88fa2cb5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[L2][GLE_IOB]evt_task_gle_iob_prog, iob_env is NULL! @evt_task_gle_iob.c(1480),WARNING" ID="0x88fa2e43" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_iob_start_cbk, iob_env is null @evt_task_gle_iob.c(1500),ERROR" ID="0x88fa2ee2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[IOB_L2]evt_task_gle_iob_start_cbk, con_hdl: %d, iob_env-&gt;iob_counter: %d, ts=0x%x @evt_task_gle_iob.c(1508),INFO" ID="0x88fa2f25" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][GLE_IOB]evt_task_gle_iob_start_cbk, evt_status=%d @evt_task_gle_iob.c(1512),WARNING" ID="0x88fa2f43" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[BGTP] ACL rx error, 8 packet status 0x%x, 0x%x, 0x%x, 0x%x @evt_task_gle_iob.c(1561),WARNING" ID="0x88fa30cb" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[iob]save_time_info sync_g_clk_p: %d, sync_clk_p: %d, sync_delay_p: %d, sync_counter_p: %d @evt_task_gle_iob.c(1605),INFO" ID="0x88fa322d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[iob]rxpd_info_records error! rxpd_index: %d rxpd_offset: %d @evt_task_gle_iob.c(1629),WARNING" ID="0x88fa32eb" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[L2][GLE_PCL]iob_get_pcl_info, con_hdl %d, latency %d, role %d, rx_per %d, rssi_delta %d @evt_task_gle_iob.c(1665),INFO" ID="0x88fa340d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[L2][GLE_IOB_PCL]high_power_control, iob_link %d, pwrlev %d, iob_band %d, sed_txpwr %d @evt_task_gle_iob.c(1695),INFO" ID="0x88fa34fd" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[L2][GLE_IOB_PCL]high_power_control, iob_link=%d, pwrlev=%d, rssi_delta=%d, sn_err_per=%d, pcl_hp_low_cnt=%d, sed_txpwr=%d @evt_task_gle_iob.c(1708),INFO" ID="0x88fa3565" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_iob_dual_ant_statistics, iob_env is null @evt_task_gle_iob.c(1723),ERROR" ID="0x88fa35da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_iob_dual_ant_process, iob_env is null @evt_task_gle_iob.c(1752),ERROR" ID="0x88fa36c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][GLE_IOB]process_rx_desc_isr, RX SYNCERR, con_hdl %d, frequency_band %d @evt_task_gle_iob.c(1810),INFO" ID="0x88fa3895" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][GLE_IOB]process_rx_desc_isr, con_hdl %d, status %x, rxlen %d, rxsn %d, nesn %d, frequency_band %d, xnpi %d @evt_task_gle_iob.c(1869),INFO" ID="0x88fa3a6d" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="[L2][GLE_IOB]process_rx_desc_isr err,con_hdl %d,rxnpi %d,rxmd 0x%02X,rxsn %d,nesn %d,status 0x%04X, frequency_band %d @evt_task_gle_iob.c(1913),INFO" ID="0x88fa3bcd" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="txpd-&gt;ble_txdone:%d, ble_txpld_flush:%d, ble_gle_flush_clkcnt:%d, cur_time:%d, txflushtime:%d @evt_task_gle_iob.c(1985),INFO" ID="0x88fa3e0d" />
+			<MSG STRUCTURE="diag_log_msg7" NAME="iob_rxpd_info: iob_counter %d, rxpd0 0x%x, rxpd1 0x%x, rxpd2 0x%x, rxpd3 0x%x, rxpd4 0x%x, rxpd5 0x%x @evt_task_gle_iob.c(2019),INFO" ID="0x88fa3f1d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IOB_L2]cen_reschedule reinsert, conhdl=%d, cur_counter=%d, next_ts=0x%x, subevent_left=%d @evt_task_gle_iob.c(2036),INFO" ID="0x88fa3fa5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[IOB_L2]cen_reschedule restart, conhdl=%d, next_counter=%d, next_ts=0x%x, cur_clock=0x%x @evt_task_gle_iob.c(2061),INFO" ID="0x88fa406d" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[IOB_L2]peri_reschedule restart, next_ts=0x%x, cur_clock=0x%x, delay=%d, rxwin=%d, clk_off=%d @evt_task_gle_iob.c(2180),INFO" ID="0x88fa4425" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[IOB_L2]peri_reschedule reinsert, conhdl=%d, cur_counter=%d, next_ts=0x%x, subevent_left:%d, clk_off=%d @evt_task_gle_iob.c(2217),INFO" ID="0x88fa454d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[WARN]evt_task_gle_iob_insert_elt,dur_min[%d],ts[%d] @evt_task_gle_iob.c(2246),WARNING" ID="0x88fa4633" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="es_elt-&gt;timestamp: %d, es_elt-&gt;sed_id: %d, wait_list size: %d, g_es_env_v2.finetarget_time: %d @evt_task_gle_iob.c(2272),INFO" ID="0x88fa4705" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_iob_reschedule, subevent_left is 0 @evt_task_gle_iob.c(2288),ERROR" ID="0x88fa4782" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[L2][GLE_IOB]evt_cbk another iob_env evt_cbk_late is true, cur_time: %d, iob_conhdl: %d @evt_task_gle_iob.c(2318),WARNING" ID="0x88fa4873" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_cbk iob env is null isr_pos: %d @evt_task_gle_iob.c(2347),INFO" ID="0x88fa495d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][GLE_IOB]evt_cbk, evt_state %d @evt_task_gle_iob.c(2358),WARNING" ID="0x88fa49b3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sket_cbk iob env is null @evt_task_gle_iob.c(2415),INFO" ID="0x88fa4b7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[L2][GLE_IOB]sket_cbk, evt_state %d @evt_task_gle_iob.c(2425),WARNING" ID="0x88fa4bcb" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="[BGTP] evt_task_gle_iob_sket_cbk con_hdl 0x%x, ts 0x%x, subevent_left %d, subinterval %d, nextlink %d @evt_task_gle_iob.c(2441),INFO" ID="0x88fa4c4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="rx_cbk iob env is null @evt_task_gle_iob.c(2453),INFO" ID="0x88fa4cad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_cancel_cbk con_hdl 0x%x, ts 0x%x @evt_task_gle_iob.c(2479),INFO" ID="0x88fa4d7d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_cancel_cbk con_hdl 0x%x, cur_prio=%d @evt_task_gle_iob.c(2486),INFO" ID="0x88fa4db5" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="iob cancel acb:cancel_nb=%d,prio=%d,empty_nb=%d,elt=0x%x @evt_task_gle_iob.c(2513),INFO" ID="0x88fa4e8d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_gle_iob_stop_cbk:cancel_nb=%d,next_prio=%d,iob_prio=%d @evt_task_gle_iob.c(2567),INFO" ID="0x88fa503d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_task_gle_iob_stop_cbk:next_es_elt task_type=0x%x @evt_task_gle_iob.c(2569),INFO" ID="0x88fa504d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_iob_update_sed_phy_info tx_format(0x%x)rx_format(0x%x)tx_phy(0x%x)rx_phy(0x%x) @evt_task_gle_iob.c(2686),INFO" ID="0x88fa53f5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_gle_iob_update_sed_phy_info tx_pilot_ratio(0x%x)rx_pilot_ratio(0x%x)mcs(0x%x) @evt_task_gle_iob.c(2688),INFO" ID="0x88fa5405" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_iob_update_sed_phy_info tx_format(0x%x)rx_format(0x%x)tx_phy(0x%x)rx_phy(0x%x) @evt_task_gle_iob.c(2728),INFO" ID="0x88fa5545" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_iob_update_sed_phy_info tx_pilot(0x%x)rx_pilot(0x%x)mcs_g2t(0x%x)mcs_t2g(0x%x) @evt_task_gle_iob.c(2730),INFO" ID="0x88fa5555" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IOB]evt_task_gle_iob_update_sed_phy_info hw_rxwinsz_us=%d @evt_task_gle_iob.c(2749),INFO" ID="0x88fa55ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_task_gle_iob_init_sed, iog_env-&gt;role: %d @evt_task_gle_iob.c(2892),INFO" ID="0x88fa5a65" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP]evt_task_gle_iob_init iob_env-&gt;iog_idx: %d @evt_task_gle_iob.c(2958),ERROR" ID="0x88fa5c72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP]evt_task_gle_iob_init acb_conhdl: %d @evt_task_gle_iob.c(2965),ERROR" ID="0x88fa5caa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IOB]evt_task_gle_iob_init hw_rxwinsz_us=%d @evt_task_gle_iob.c(3009),INFO" ID="0x88fa5e0d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_gle_iob_cal_iog_cnt_diff, iog_update_ts: %d, prog_anchor_point: %d, last_timestamp: %d @evt_task_gle_iob.c(3040),INFO" ID="0x88fa5f05" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_gle_iob_set_sn_high_counter, iob_conhdl: %d sn_high_counter: %d @evt_task_gle_iob.c(3067),INFO" ID="0x88fa5fdd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_gle_iob_create_es_task, es_elt-&gt;timestamp: %d, es_elt-&gt;delay: %d @evt_task_gle_iob.c(3080),INFO" ID="0x88fa6045" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IOB]iob channel first insert fail! conhdl: %d @evt_task_gle_iob.c(3089),WARNING" ID="0x88fa608b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="evt_task_gle_iob_create_es_task, iob_conhdl: %d, timestamp: %d, iog_cnt_diff: %d @evt_task_gle_iob.c(3119),INFO" ID="0x88fa617d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="evt_task_gle_iob_get_nb_tx_desc:conhdl=%d, txdesccnt=%d @evt_task_gle_iob.c(3136),INFO" ID="0x88fa6205" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="evt_task_gle_iob_tx_desc_init fail conhdl(%d) @evt_task_gle_iob.c(3175),ERROR" ID="0x88fa633a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_init_es_elt_static con_hdl %d, duration_min 0x%x @evt_task_gle_iob.c(3213),INFO" ID="0x88fa646d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BGTP] evt_task_gle_iob_create con_hdl 0x%x, task type 0x%x @evt_task_gle_iob.c(3218),INFO" ID="0x88fa6495" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP]evt_task_gle_iob_create iob iob_env exist, con_hdl %d @evt_task_gle_iob.c(3225),ERROR" ID="0x88fa64ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[IOB_L2] evt_task_gle_iob_start, con_hdl: %d @evt_task_gle_iob.c(3284),INFO" ID="0x88fa66a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ERROR]evt_task_gle_iob_start, iob_env is null @evt_task_gle_iob.c(3287),ERROR" ID="0x88fa66ba" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="evt_task_gle_iob_get_first_timestamp: prog_anchor_point=%d, us_offset=%d, clk_off=%d, prog_anchor_point_g=%d @evt_task_gle_iob.c(3328),INFO" ID="0x88fa6805" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="evt_task_gle_iob_get_first_timestamp, prog_anchor_point=%d, sync_clk_p=%u, delay=%d, clk_off=%d, prog_anchor_point_g=%d @evt_task_gle_iob.c(3341),INFO" ID="0x88fa686d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ERROR]evt_task_gle_iob_isr_cbk isr_pos 0x%x @evt_task_gle_iob.c(3391),ERROR" ID="0x88fa69fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BGTP] evt_task_gle_iob_destory con_hdl 0x%x @evt_task_gle_iob.c(3545),INFO" ID="0x88fa6ecd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] evt_task_gle_iob_destory, iog_env is null @evt_task_gle_iob.c(3564),ERROR" ID="0x88fa6f62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[bgtp] evt_task_gle_iob_destory, acb_env is null @evt_task_gle_iob.c(3580),ERROR" ID="0x88fa6fe2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[autorate]evt_task_gle_iob_anchor_point_update, timestamp before: %d, sync_diff: %u, iog_offset: %d @evt_task_gle_iob.c(3620),INFO" ID="0x88fa7125" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[autorate]evt_task_gle_iob_anchor_point_update, next_ts: %d, clk_off=%d, sync_g_clk_p=%d, subevent_left=%d, duration_min 0x%x, rx_win=%d @evt_task_gle_iob.c(3665),INFO" ID="0x88fa728d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[autorate]evt_task_gle_iob_param_update_instant_cbk, iob_conhdl: %d @evt_task_gle_iob.c(3708),INFO" ID="0x88fa73e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="iob_param_update_instant_cbk, no ack!! @evt_task_gle_iob.c(3759),INFO" ID="0x88fa757d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[autorate] evt_task_gle_iob_notify_ack_recv, iob_env is null, iob_conhdl=%d @evt_task_gle_iob.c(3769),ERROR" ID="0x88fa75ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[autorate]evt_task_gle_iob_notify_ack_recv, iob_conhdl: %d @evt_task_gle_iob.c(3774),INFO" ID="0x88fa75f5" />
+			</MSG_LOG>
