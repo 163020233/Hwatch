@@ -145,7 +145,7 @@ fbb setup
 通过 Git 克隆 SDK 仓库到本地：
 
 ```bash
-git clone https://gitcode.com/HiSpark/hs-fbb_inner.git
+git clone https://gitcode.com/HiSpark/hs-fbb.git
 ```
 
 > **📌 首次克隆需要登录**：首次下载时会提示输入 GitCode 的用户名和密码，按提示输入账号信息即可。
@@ -159,14 +159,14 @@ git clone https://gitcode.com/HiSpark/hs-fbb_inner.git
 进入 SDK 目录，初始化并下载编译器子模块：
 
 ```bash
-cd hs-fbb_inner
+cd hs-fbb
 git submodule init
 git submodule update --remote
 ```
 
 **Windows 必须执行：修复工具链符号链接**
 
-Git 在 Windows 上克隆工具链时，符号链接会以纯文本文件形式保存，直接编译会报"此版本不适合在当前 Windows 版本运行"。工具链下载完成后需在 SDK 根目录（`hs-fbb_inner`）执行以下命令修复：
+Git 在 Windows 上克隆工具链时，符号链接会以纯文本文件形式保存，直接编译会报"此版本不适合在当前 Windows 版本运行"。工具链下载完成后需在 SDK 根目录（`hs-fbb`）执行以下命令修复：
 
 > **📌 提示**：建议在**命令提示符（cmd）或 PowerShell** 中执行以下命令，不要在 Git Bash 中执行，否则路径解析可能出错。
 
@@ -197,7 +197,7 @@ SDK 下载完成后，导出 `FBB_SDK_DIR` 环境变量，指向 SDK 的 `src` �
 **Windows（PowerShell）：**
 
 ```powershell
-$env:FBB_SDK_DIR = "<实际路径>\hs-fbb_inner\src"
+$env:FBB_SDK_DIR = "<实际路径>\hs-fbb\src"
 ```
 
 > **📌 注意**：请将 `<实际路径>` 替换为 SDK 实际所在目录，路径不能包含空格或中文字符。
@@ -207,7 +207,7 @@ $env:FBB_SDK_DIR = "<实际路径>\hs-fbb_inner\src"
 **Linux：**
 
 ```bash
-export FBB_SDK_DIR="<实际路径>/hs-fbb_inner/src"
+export FBB_SDK_DIR="<实际路径>/hs-fbb/src"
 ```
 
 > **📌 注意**：请将 `<实际路径>` 替换为 SDK 实际所在目录；`~` 在双引号内不会展开，请使用 `$HOME` 替代 `~`。
