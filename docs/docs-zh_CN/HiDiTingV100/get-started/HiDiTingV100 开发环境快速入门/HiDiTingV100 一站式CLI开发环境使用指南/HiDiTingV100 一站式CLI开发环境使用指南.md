@@ -220,6 +220,7 @@ export FBB_SDK_DIR="<实际路径>/hs-fbb_inner/src"
 
 ### 4. 创建并编译工程
 
+> **📌 SDK 源码修改（编译前必做）**：`<sdk_dir>/src/application/samples/CMakeLists.txt` 第 10 行需将 `CMAKE_SOURCE_DIR` 改为 `ROOT_DIR`，否则编译时头文件路径解析失败。
 > **📌 前置编译依赖检查：patch 工具**：编译过程中部分脚本依赖 `patch`，若未安装会报错。编译前请确认已安装：
 > ```bash
 > patch -v
