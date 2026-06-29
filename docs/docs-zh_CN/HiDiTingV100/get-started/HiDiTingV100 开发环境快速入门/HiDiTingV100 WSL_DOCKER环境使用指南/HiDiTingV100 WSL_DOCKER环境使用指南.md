@@ -246,11 +246,11 @@ cd src
 ## 开发板
 开发板接线图：
 
-<img src="../../../../../../vendor/HiDiTingV100/开发板接线图.png" width="700" height="540" />
+待补充，敬请期待！
 
 实体开发板：
 
-<img src="../../../../../../vendor/HiDiTingV100/实体开发板.png" width="400" height="580" />
+待补充，敬请期待！
 
 - 电源：type-c 5V电源供电
 - 屏幕：MIPI/QSPI屏幕
