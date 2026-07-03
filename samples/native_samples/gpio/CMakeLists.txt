@@ -10,7 +10,6 @@ set(SOURCES
 )
 
 set(PUBLIC_HEADER
-    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 set(PRIVATE_HEADER
@@ -18,6 +17,7 @@ set(PRIVATE_HEADER
     ${ROOT_DIR}/middleware/utils/at/at
     ${ROOT_DIR}/middleware/utils/at/at/include
     ${ROOT_DIR}/middleware/utils/at/at/src
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 set(PRIVATE_DEFINES
