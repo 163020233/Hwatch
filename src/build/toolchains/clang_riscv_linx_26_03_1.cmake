@@ -110,6 +110,22 @@ elseif(${BUILD_PLATFORM} MATCHES "windows")
     set(LIB_GCC "" CACHE PATH "" FORCE)
 endif()
 
+# When no vendored compiler is found under ROOT_DIR, find_env_exe() falls back
+# to find_program() and resolves the compiler from PATH (e.g. an fbb/hs-fbb
+# managed toolchain under ~/.hs-fbb). COMPILER_ROOT/COMPILER_ROOT_WIN above
+# still point at the (nonexistent) vendored path in that case, which breaks
+# anything derived from them (e.g. LITEOS_COMPILER_GCC_INCLUDE's C++ stdlib
+# include path). Re-derive COMPILER_ROOT from where the compiler actually was
+# found so those downstream paths stay correct.
+if(NOT USE_LOCAL_COMPILER)
+    get_filename_component(_ACTUAL_COMPILER_BIN_DIR "${CMAKE_CXX_COMPILER}" DIRECTORY)
+    get_filename_component(COMPILER_ROOT "${_ACTUAL_COMPILER_BIN_DIR}/.." ABSOLUTE)
+    if(${BUILD_PLATFORM} MATCHES "windows")
+        set(COMPILER_ROOT_WIN ${COMPILER_ROOT})
+    endif()
+    message(STATUS "Local vendored compiler not found; using resolved system compiler root: ${COMPILER_ROOT}, compiler: ${CMAKE_C_COMPILER}")
+endif()
+
 function(correct_multilib in_var out_var)
     #[[ 通过-print-libgcc-file-name选项获取rt库类型，存在不准确的情况，性能和codesize存在差异, 这里进行手动修正
         -march=rv32imcxlinxma_xlinxmb_xlinxmc -mabi=ilp32获取的是rv32imc_ilp32，修正为rv32imcxlinxma_xlinxmb_xlinxmc_xlinxmd_ilp32
@@ -144,7 +160,7 @@ endfunction()
 
 if(DEFINED CMAKE_C_COMPILER)
     execute_process(
-        COMMAND ${CMAKE_C_COMPILER} ${CCFLAGS} -print-libgcc-file-name
+        COMMAND ${CMAKE_C_COMPILER} ${CCFLAGS} --rtlib=compiler-rt -print-libgcc-file-name
         OUTPUT_VARIABLE LIBGCC_PATH
         OUTPUT_STRIP_TRAILING_WHITESPACE
     )
