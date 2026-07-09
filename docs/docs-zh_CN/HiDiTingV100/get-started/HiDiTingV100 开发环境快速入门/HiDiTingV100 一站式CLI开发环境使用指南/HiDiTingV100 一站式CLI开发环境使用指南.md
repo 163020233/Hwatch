@@ -142,83 +142,19 @@ fbb setup
 
 ### 1. SDK 下载
 
-通过 Git 克隆 SDK 仓库到本地：
+执行以下命令下载 SDK，`<sdk_dir>` 替换为用户指定的存放路径：
 
 ```bash
-git clone https://gitcode.com/HiSpark/hs-fbb.git
+fbb sdk install hs-fbb@master --dir <sdk_dir>
+cd <sdk_dir>
+fbb setup
 ```
-
-> **📌 首次克隆需要登录**：首次下载时会提示输入 GitCode 的用户名和密码，按提示输入账号信息即可。
 
 > **⚠️ 注意**：SDK 目录路径不能包含空格或中文字符，否则 CMake 工具链解析会出现异常。
 
 ---
 
-### 2. 工具链下载
-
-进入 SDK 目录，初始化并下载编译器子模块：
-
-```bash
-cd hs-fbb
-git submodule init
-git submodule update --remote
-```
-
-**Windows 必须执行：修复工具链符号链接**
-
-Git 在 Windows 上克隆工具链时，符号链接会以纯文本文件形式保存，直接编译会报"此版本不适合在当前 Windows 版本运行"。工具链下载完成后需在 SDK 根目录（`hs-fbb`）执行以下命令修复：
-
-> **📌 提示**：建议在**命令提示符（cmd）或 PowerShell** 中执行以下命令，不要在 Git Bash 中执行，否则路径解析可能出错。
-
-```powershell
-C:\Users\<用户名>\.hs-fbb\venv\Scripts\python src/tools/bin/fbb_tool/fbb.py fix-toolchain
-```
-
-> **⚠️ 子模块下载时提示凭证错误**
->
-> 若执行 `git submodule update` 时出现如下错误：
-> ```
-> bash: line 1: /dev/tty: No such device or address
-> error: failed to execute prompt script (exit code 1)
-> fatal: could not read Username for 'https://gitcode.com': No such file or directory
-> ```
-> 原因是 Git 无法弹出交互式凭证输入窗口。先配置凭证缓存：
-> ```bash
-> git config --global credential.helper store
-> ```
-> 配置后重新执行 `git submodule update --remote`，此时会弹出凭证输入框，输入 GitCode 用户名和密码后凭证将被保存，后续无需重复输入。
-
----
-
-### 3. 配置 SDK 路径
-
-SDK 下载完成后，导出 `FBB_SDK_DIR` 环境变量，指向 SDK 的 `src` 目录，使 `fbb` 命令能自动定位 SDK：
-
-**Windows（PowerShell）：**
-
-```powershell
-$env:FBB_SDK_DIR = "<实际路径>\hs-fbb\src"
-```
-
-> **📌 注意**：请将 `<实际路径>` 替换为 SDK 实际所在目录，路径不能包含空格或中文字符。
-
-> **📌 如需永久生效**：将上述命令添加到 PowerShell Profile（`$PROFILE`）中，重新打开终端后即可生效。
-
-**Linux：**
-
-```bash
-export FBB_SDK_DIR="<实际路径>/hs-fbb/src"
-```
-
-> **📌 注意**：请将 `<实际路径>` 替换为 SDK 实际所在目录；`~` 在双引号内不会展开，请使用 `$HOME` 替代 `~`。
-
-> **📌 如需永久生效**：将上述命令添加到 `~/.bashrc` 或 `~/.zshrc` 中，执行 `source ~/.bashrc` 使其立即生效。
-
-> **📌 说明**：配置 `FBB_SDK_DIR` 后，所有 `fbb` 命令均可在任意目录下执行，无需 `cd` 进入 SDK 目录。也可每次通过 `--sdk-dir <路径>` 临时指定。
-
----
-
-### 4. 创建并编译工程
+### 2. 创建并编译工程
 
 > **📌 前置编译依赖检查：patch 工具**：编译过程中部分脚本依赖 `patch`，若未安装会报错。编译前请确认已安装：
 > ```bash
@@ -308,9 +244,9 @@ build_component()
 ```bash
 # 烧写（-f 指定固件包路径，--manual-reset 用于手动触发复位）
 # Windows
-fbb flash -f "$env:FBB_SDK_DIR\output\3322\fwpkg\diting-community.fwpkg" --port COM3 --chip Hi3322 --manual-reset --timeout 600
+fbb flash -f "output\3322\fwpkg\diting-community.fwpkg" --port COM3 --chip Hi3322 --manual-reset --timeout 600
 # Linux（普通用户登录烧写前需先授予串口权限 chmod 777 /dev/ttyUSB0）
-fbb flash -f "$FBB_SDK_DIR/output/3322/fwpkg/diting-community.fwpkg" --port /dev/ttyUSB0 --chip Hi3322 --manual-reset --timeout 600
+fbb flash -f "output/3322/fwpkg/diting-community.fwpkg" --port /dev/ttyUSB0 --chip Hi3322 --manual-reset --timeout 600
 
 # 串口监视（根据实际需要选择波特率）
 fbb monitor --port COM3 --baud 750000
@@ -532,9 +468,9 @@ fbb flash -f <固件路径> [选项]
 ```bash
 # 标准烧写（手动按 RESET）
 # Windows
-fbb flash -f "$env:FBB_SDK_DIR\output\3322\fwpkg\diting-community.fwpkg" --port COM3 --chip Hi3322 --manual-reset --timeout 600
+fbb flash -f "output\3322\fwpkg\diting-community.fwpkg" --port COM3 --chip Hi3322 --manual-reset --timeout 600
 # Linux（普通用户登录烧写前需先授予串口权限 chmod 777 /dev/ttyUSB0）
-fbb flash -f "$FBB_SDK_DIR/output/3322/fwpkg/diting-community.fwpkg" --port /dev/ttyUSB0 --chip Hi3322 --manual-reset --timeout 600
+fbb flash -f "output/3322/fwpkg/diting-community.fwpkg" --port /dev/ttyUSB0 --chip Hi3322 --manual-reset --timeout 600
 ```
 
 ---
