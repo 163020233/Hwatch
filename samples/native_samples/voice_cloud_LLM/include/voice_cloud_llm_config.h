@@ -49,6 +49,8 @@ extern "C" {
 #define VOICE_CLOUD_LLM_CONNECT_TIMEOUT_MS   10000
 #define VOICE_CLOUD_LLM_RESPONSE_TIMEOUT_MS  30000
 #define VOICE_CLOUD_LLM_IDLE_TIMEOUT_MS      15000
+#define VOICE_CLOUD_LLM_INTERRUPT_POLL_MS    1000
+#define VOICE_CLOUD_LLM_CALL_DESTROY_MS      500
 /*
  * Silence energy gate for the capture thread. When the device is in
  * IDLE_LISTENING between conversation turns, PCM batches whose RMS falls

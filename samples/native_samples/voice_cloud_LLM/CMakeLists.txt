@@ -23,6 +23,8 @@ set(PRIVATE_HEADER
     ${ROOT_DIR}/middleware/services/media/foundation/audio_capturer/interfaces/kits
     ${ROOT_DIR}/middleware/services/media/foundation/audiomanager/interfaces/kits/audiomanager/cpp
     ${ROOT_DIR}/middleware/services/media/foundation/audiomanager/interfaces/kits/audiocommon
+    ${ROOT_DIR}/middleware/services/media/foundation/audiomanager/frameworks/audiostream/include/cpp
+    ${ROOT_DIR}/application/ux/interfaces/solution/bg
     ${OHOS_DIR}/foundation/arkui/ace_engine_lite/frameworks/src/core/modules/netstack/websocket/include
     ${OHOS_DIR}/third_party/cJSON
 )

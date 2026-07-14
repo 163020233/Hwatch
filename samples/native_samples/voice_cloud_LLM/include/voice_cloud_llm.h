@@ -34,6 +34,20 @@ bool VoiceCloudLlmIsIdleListening(void);
  */
 bool VoiceCloudLlmIsUplinkStreaming(void);
 
+/*
+ * True while a phone call is active (SCO audio streaming).  Checked at
+ * every audio-stream start point to prevent ASR/capture/player init from
+ * corrupting system audio state during a call.
+ */
+bool VoiceCloudLlmIsCallInterrupted(void);
+
+/*
+ * Called from OnInterrupt to trigger ReturnToWakeup on the worker thread.
+ * Posts an ERROR message so that cleanup runs on the worker, not the
+ * audio platform's interrupt callback thread.
+ */
+void VoiceCloudLlmPostCallInterrupt(void);
+
 #ifdef __cplusplus
 }
 #endif
