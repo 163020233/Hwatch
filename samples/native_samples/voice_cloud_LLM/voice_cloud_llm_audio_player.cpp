@@ -11,6 +11,7 @@
 
 #include "audio_manager.h"
 #include "audio_manager_service.h"
+#include "audio_stream_out.h"
 #include "cmsis_os2.h"
 #include "errcode.h"
 #include "media_thread_adapt.h"
@@ -24,6 +25,10 @@
 using Audio::AudioInterrupt;
 using Audio::AudioManager;
 using Audio::InterruptListener;
+
+extern "C" bool VoiceCloudLlmIsCallInterrupted(void);
+extern "C" int32_t VoiceCloudLlmAudioPlayerStop(void);
+extern "C" void VoiceCloudLlmPostCallInterrupt(void);
 
 #ifndef WEARABLE_LOG_MODULE_SMART_VOICE
 #define WEARABLE_LOG_MODULE_SMART_VOICE 0
@@ -71,6 +76,10 @@ public:
     {
         WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
             "voice cloud llm player interrupt, type=%d, hint=%d\r\n", type, hint);
+        if (type == 1) {
+            VoiceCloudLlmAudioPlayerStop();
+            VoiceCloudLlmPostCallInterrupt();
+        }
     }
 };
 
@@ -85,6 +94,7 @@ struct VoiceCloudLlmPlayerContext {
     std::atomic<bool> drainRequested;
     osMessageQueueId_t queue;
     MediaThreadIdHandle thread;
+    std::unique_ptr<Audio::AudioStreamOut> streamOut;
     AudioSession sessionId;
     AudioRendererConfig renderConfig;
     AudioInterrupt interrupt;
@@ -92,8 +102,9 @@ struct VoiceCloudLlmPlayerContext {
     uint32_t chunkBytes;
 
     VoiceCloudLlmPlayerContext()
-        : started(false), stopRequested(false), drainRequested(false), queue(nullptr), thread(nullptr),
-          sessionId(AUDIO_SESSION_ID_NONE), interruptActive(false), chunkBytes(0)
+        : started(false), stopRequested(false), drainRequested(false),
+          queue(nullptr), thread(nullptr),
+          streamOut(nullptr), sessionId(AUDIO_SESSION_ID_NONE), interruptActive(false), chunkBytes(0)
     {
         std::memset(&renderConfig, 0, sizeof(renderConfig));
     }
@@ -312,7 +323,10 @@ void *VoiceCloudLlmAudioPlayerThread(void *argument)
             }
             const uint8_t *silenceData =
                 (silenceCount == 0) ? g_fadeChunk : g_zeroChunk;
-            const int32_t wRet = AudioStreamOutStreamWrite(silenceData, chunkBytes);
+            uint64_t gapWrittenSize = 0;
+            AudioRendererConfig gapRenderConfig = {};
+            const int32_t wRet = g_playerCtx.streamOut->StreamWrite(
+                silenceData, chunkBytes, gapWrittenSize, gapRenderConfig);
             if (wRet == ERRCODE_SUCC) {
                 lastWriteCompleteTick = osKernelGetTickCount();
                 updateRingEst(lastWriteCompleteTick);
@@ -370,8 +384,10 @@ void *VoiceCloudLlmAudioPlayerThread(void *argument)
                         osDelay(paceMsNeutral - since);
                     }
                 }
-                const int32_t wRet =
-                    AudioStreamOutStreamWrite(g_fadeChunk, chunkBytes);
+                uint64_t fadeWrittenSize = 0;
+                AudioRendererConfig fadeRenderConfig = {};
+                const int32_t wRet = g_playerCtx.streamOut->StreamWrite(
+                    g_fadeChunk, chunkBytes, fadeWrittenSize, fadeRenderConfig);
                 if (wRet == ERRCODE_SUCC) {
                     lastWriteCompleteTick = osKernelGetTickCount();
                     updateRingEst(lastWriteCompleteTick);
@@ -426,6 +442,8 @@ void *VoiceCloudLlmAudioPlayerThread(void *argument)
             uint32_t firstFailOffset = UINT32_MAX;
             const uint32_t writeStartTick = osKernelGetTickCount();
             int32_t lastErr = 0;
+            uint64_t writtenSize = 0;
+            AudioRendererConfig streamWriteRenderConfig = {};
             while (offset < frame.len && !g_playerCtx.stopRequested.load()) {
                 const uint32_t remain = frame.len - offset;
                 const uint32_t writeLen = remain < chunk ? remain : chunk;
@@ -447,14 +465,20 @@ void *VoiceCloudLlmAudioPlayerThread(void *argument)
                         }
                     }
                 }
-                int32_t writeRet = AudioStreamOutStreamWrite(frame.data + offset, writeLen);
+                writtenSize = 0;
+                streamWriteRenderConfig = {};
+                int32_t writeRet = g_playerCtx.streamOut->StreamWrite(
+                    frame.data + offset, writeLen, writtenSize, streamWriteRenderConfig);
                 if (writeRet != ERRCODE_SUCC) {
                     if (firstFailOffset == UINT32_MAX) {
                         firstFailOffset = offset;
                     }
                     /* Jitter safety net: one DAC frame of backoff + one retry. */
                     osDelay(VOICE_CLOUD_LLM_UPLINK_FRAME_MS);
-                    writeRet = AudioStreamOutStreamWrite(frame.data + offset, writeLen);
+                    writtenSize = 0;
+                    streamWriteRenderConfig = {};
+                    writeRet = g_playerCtx.streamOut->StreamWrite(
+                        frame.data + offset, writeLen, writtenSize, streamWriteRenderConfig);
                     totalRetries++;
                 }
                 if (writeRet != ERRCODE_SUCC) {
@@ -523,8 +547,13 @@ void VoiceCloudLlmPlayerCleanup()
         osDelay(VOICE_CLOUD_LLM_PLAYER_DRAIN_GRACE_MS);
     }
     VoiceCloudLlmFlushPlayerQueue();
-    (void)AudioStreamOutStop();
-    (void)AudioStreamOutDeinit();
+    if (g_playerCtx.streamOut) {
+        (void)g_playerCtx.streamOut->Stop();
+    }
+    if (g_playerCtx.streamOut) {
+        (void)g_playerCtx.streamOut->Release();
+        g_playerCtx.streamOut.reset();
+    }
     if (g_playerCtx.interruptActive) {
         (void)g_audioManager.DeactivateAudioInterrupt(g_playerCtx.interrupt);
         g_playerCtx.interruptActive = false;
@@ -539,6 +568,7 @@ void VoiceCloudLlmPlayerCleanup()
     g_playerCtx.drainRequested.store(false);
     g_playerCtx.started.store(false);
     g_playerCtx.chunkBytes = 0;
+    g_playerCtx.thread = nullptr;
 }
 
 uint32_t VoiceCloudLlmFrameBytes(const VoiceCloudLlmConfig *config)
@@ -566,6 +596,11 @@ extern "C" int32_t VoiceCloudLlmAudioPlayerStart(const VoiceCloudLlmConfig *conf
         WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
             "[voice_cloud_llm] player start skipped, already started\r\n");
         return ERRCODE_SUCC;
+    }
+    if (VoiceCloudLlmIsCallInterrupted()) {
+        WEARABLE_LOGW(WEARABLE_LOG_MODULE_SMART_VOICE,
+            "[voice_cloud_llm] player start blocked — call is active\r\n");
+        return ERRCODE_FAIL;
     }
     WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
         "[voice_cloud_llm] player start, rate=%u ch=%u bits=%u frameMs=%u\r\n",
@@ -615,12 +650,18 @@ extern "C" int32_t VoiceCloudLlmAudioPlayerStart(const VoiceCloudLlmConfig *conf
     }
     g_playerCtx.interruptActive = true;
 
-    if (AudioStreamOutInit(g_playerCtx.renderConfig) != ERRCODE_SUCC) {
+    g_playerCtx.streamOut = std::unique_ptr<Audio::AudioStreamOut>(new Audio::AudioStreamOut());
+    if (g_playerCtx.streamOut == nullptr) {
+        WEARABLE_LOGE(WEARABLE_LOG_MODULE_SMART_VOICE, "voice cloud llm audio stream out create fail\r\n");
+        VoiceCloudLlmPlayerCleanup();
+        return ERRCODE_FAIL;
+    }
+    if (g_playerCtx.streamOut->Init(g_playerCtx.renderConfig) != ERRCODE_SUCC) {
         WEARABLE_LOGE(WEARABLE_LOG_MODULE_SMART_VOICE, "voice cloud llm audio stream out init fail\r\n");
         VoiceCloudLlmPlayerCleanup();
         return ERRCODE_FAIL;
     }
-    if (AudioStreamOutPlay() != ERRCODE_SUCC) {
+    if (g_playerCtx.streamOut->Play() != ERRCODE_SUCC) {
         WEARABLE_LOGE(WEARABLE_LOG_MODULE_SMART_VOICE, "voice cloud llm audio stream out play fail\r\n");
         VoiceCloudLlmPlayerCleanup();
         return ERRCODE_FAIL;

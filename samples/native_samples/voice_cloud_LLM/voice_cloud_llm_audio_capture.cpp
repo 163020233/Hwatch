@@ -11,6 +11,7 @@
 
 #include "audio_manager.h"
 #include "audio_manager_service.h"
+#include "audio_stream_in.h"
 #include "cmsis_os2.h"
 #include "errcode.h"
 #include "media_thread_adapt.h"
@@ -42,6 +43,9 @@ extern "C" int32_t VoiceCloudLlmPostAudioFrame(const uint8_t *data, uint32_t len
 extern "C" bool VoiceCloudLlmIsWakeupTestMode(void);
 extern "C" bool VoiceCloudLlmIsIdleListening(void);
 extern "C" bool VoiceCloudLlmIsUplinkStreaming(void);
+extern "C" bool VoiceCloudLlmIsCallInterrupted(void);
+extern "C" int32_t VoiceCloudLlmAudioCaptureStop(void);
+extern "C" void VoiceCloudLlmPostCallInterrupt(void);
 
 namespace {
 
@@ -54,6 +58,10 @@ public:
     {
         WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
             "voice cloud llm capture interrupt, type=%d, hint=%d\r\n", type, hint);
+        if (type == 1) {
+            VoiceCloudLlmAudioCaptureStop();
+            VoiceCloudLlmPostCallInterrupt();
+        }
     }
 };
 
@@ -61,6 +69,7 @@ struct VoiceCloudLlmCaptureContext {
     std::atomic<bool> started;
     std::atomic<bool> stopRequested;
     MediaThreadIdHandle thread;
+    std::unique_ptr<Audio::AudioStreamIn> streamIn;
     uint8_t *buffer;
     uint32_t frameBytes;
     AudioSession sessionId;
@@ -68,7 +77,7 @@ struct VoiceCloudLlmCaptureContext {
     bool interruptActive;
 
     VoiceCloudLlmCaptureContext()
-        : started(false), stopRequested(false), thread(nullptr), buffer(nullptr), frameBytes(0),
+        : started(false), stopRequested(false), thread(nullptr), streamIn(nullptr), buffer(nullptr), frameBytes(0),
           sessionId(AUDIO_SESSION_ID_NONE), interruptActive(false)
     {
     }
@@ -145,8 +154,17 @@ void *VoiceCloudLlmAudioCaptureThread(void *argument)
             batchOffset = 0;
         }
         uint32_t size = g_captureCtx.frameBytes;
-        const int32_t ret = AudioStreamInObtainBuffer(g_captureCtx.buffer + batchOffset, &size);
-        if (ret != ERRCODE_SUCC || size == 0) {
+        CapturerBuffer capBuffer;
+        capBuffer.data = g_captureCtx.buffer + batchOffset;
+        capBuffer.size = size;
+        capBuffer.frameCount = 0;
+        const int32_t ret = g_captureCtx.streamIn->ObtainBuffer(capBuffer, false);
+        if (ret <= 0) {
+            size = 0;
+        } else {
+            size = static_cast<uint32_t>(ret);
+        }
+        if (size == 0) {
             osDelay(10);
             continue;
         }
@@ -203,11 +221,16 @@ void *VoiceCloudLlmAudioCaptureThread(void *argument)
 
 void VoiceCloudLlmCaptureCleanup(void)
 {
-    (void)AudioStreamInStop();
+    if (g_captureCtx.streamIn) {
+        (void)g_captureCtx.streamIn->Stop();
+    }
     if (g_captureCtx.thread != nullptr) {
         MediaThreadJoin(&g_captureCtx.thread);
     }
-    (void)AudioStreamInDeinit();
+    if (g_captureCtx.streamIn) {
+        (void)g_captureCtx.streamIn->Release();
+        g_captureCtx.streamIn.reset();
+    }
     if (g_captureCtx.buffer != nullptr) {
         std::free(g_captureCtx.buffer);
         g_captureCtx.buffer = nullptr;
@@ -216,6 +239,7 @@ void VoiceCloudLlmCaptureCleanup(void)
     g_captureCtx.sessionId = AUDIO_SESSION_ID_NONE;
     g_captureCtx.stopRequested.store(false);
     g_captureCtx.started.store(false);
+    g_captureCtx.thread = nullptr;
     if (g_captureCtx.interruptActive) {
         (void)g_audioManager.DeactivateAudioInterrupt(g_captureCtx.interrupt);
         g_captureCtx.interruptActive = false;
@@ -234,6 +258,11 @@ extern "C" int32_t VoiceCloudLlmAudioCaptureStart(const VoiceCloudLlmConfig *con
         WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
             "[voice_cloud_llm] capture start skipped, already started\r\n");
         return ERRCODE_SUCC;
+    }
+    if (VoiceCloudLlmIsCallInterrupted()) {
+        WEARABLE_LOGW(WEARABLE_LOG_MODULE_SMART_VOICE,
+            "[voice_cloud_llm] capture start blocked — call is active\r\n");
+        return ERRCODE_FAIL;
     }
     WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
         "[voice_cloud_llm] capture start, rate=%u ch=%u bits=%u frameMs=%u wakeupTestMode=%d\r\n",
@@ -275,12 +304,18 @@ extern "C" int32_t VoiceCloudLlmAudioCaptureStart(const VoiceCloudLlmConfig *con
     }
     g_captureCtx.interruptActive = true;
 
-    if (AudioStreamInInit(captureConfig) != ERRCODE_SUCC) {
+    g_captureCtx.streamIn = std::unique_ptr<Audio::AudioStreamIn>(new Audio::AudioStreamIn());
+    if (g_captureCtx.streamIn == nullptr) {
+        WEARABLE_LOGE(WEARABLE_LOG_MODULE_SMART_VOICE, "voice cloud llm audio stream in create fail\r\n");
+        VoiceCloudLlmCaptureCleanup();
+        return ERRCODE_FAIL;
+    }
+    if (g_captureCtx.streamIn->Init(captureConfig) != ERRCODE_SUCC) {
         WEARABLE_LOGE(WEARABLE_LOG_MODULE_SMART_VOICE, "voice cloud llm audio stream in init fail\r\n");
         VoiceCloudLlmCaptureCleanup();
         return ERRCODE_FAIL;
     }
-    if (AudioStreamInStart() != ERRCODE_SUCC) {
+    if (g_captureCtx.streamIn->Start() != ERRCODE_SUCC) {
         WEARABLE_LOGE(WEARABLE_LOG_MODULE_SMART_VOICE, "voice cloud llm audio stream in start fail\r\n");
         VoiceCloudLlmCaptureCleanup();
         return ERRCODE_FAIL;
@@ -340,3 +375,4 @@ extern "C" int32_t VoiceCloudLlmAudioCaptureStop(void)
     WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE, "[voice_cloud_llm] capture stopped\r\n");
     return ERRCODE_SUCC;
 }
+

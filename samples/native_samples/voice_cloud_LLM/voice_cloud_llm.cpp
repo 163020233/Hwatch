@@ -12,10 +12,12 @@
 #include "voice_cloud_llm_errcode.h"
 #include "voice_cloud_llm_protocol.h"
 
+#include "ux_api_bt_audio.h"
 #include "cmsis_os2.h"
 #include "intelligent_voice_asr_engine.h"
 #include "media_thread_adapt.h"
 
+#include <atomic>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
@@ -98,6 +100,8 @@ enum VoiceCloudLlmState {
     VOICE_CLOUD_LLM_STATE_IDLE_LISTENING,
     VOICE_CLOUD_LLM_STATE_ERROR_RECOVER,
     VOICE_CLOUD_LLM_STATE_RETURN_WAKEUP,
+    /* Audio focus preempted by higher-priority stream (phone call). */
+    VOICE_CLOUD_LLM_STATE_INTERRUPTED,
 };
 
 enum VoiceCloudLlmMsgType {
@@ -179,6 +183,35 @@ const uint32_t VOICE_CLOUD_LLM_PENDING_FRAMES_MAX = 20;
 
 VoiceCloudLlmContext g_voiceCloudCtx = {};
 
+/*
+ * Poll the SCO audio stream state to detect an active phone call.
+ * UX_API_BT_STREAM_STATE_STREAMING means a call is in progress.
+ */
+static bool VoiceCloudLlmIsScoActive(void)
+{
+    uint16_t deviceNum = 0;
+    const ux_api_bt_device_info_t *devices =
+        ux_api_bt_get_device_info(UX_API_BT_AS_PERIPHERAL, UX_API_BT_PROTOCOL_BR, &deviceNum);
+    if (devices == nullptr || deviceNum == 0) {
+        return false;
+    }
+
+    const ux_api_bt_audio_info_t *audioInfo =
+        ux_api_bt_audio_get_info(UX_API_BT_PROFILE_SCO, &devices[0].addr);
+    if (audioInfo == nullptr) {
+        return false;
+    }
+
+    return audioInfo->stream_state == UX_API_BT_STREAM_STATE_STARTING ||
+           audioInfo->stream_state == UX_API_BT_STREAM_STATE_STREAMING ||
+           audioInfo->stream_state == UX_API_BT_STREAM_STATE_STOPPING;
+}
+
+extern "C" bool VoiceCloudLlmIsCallInterrupted(void)
+{
+    return VoiceCloudLlmIsScoActive();
+}
+
 const char *VoiceCloudLlmStateName(VoiceCloudLlmState state)
 {
     switch (state) {
@@ -193,6 +226,7 @@ const char *VoiceCloudLlmStateName(VoiceCloudLlmState state)
         case VOICE_CLOUD_LLM_STATE_IDLE_LISTENING:      return "IDLE_LISTENING";
         case VOICE_CLOUD_LLM_STATE_ERROR_RECOVER:       return "ERROR_RECOVER";
         case VOICE_CLOUD_LLM_STATE_RETURN_WAKEUP:       return "RETURN_WAKEUP";
+        case VOICE_CLOUD_LLM_STATE_INTERRUPTED:     return "INTERRUPTED";
         default:                                        return "?";
     }
 }
@@ -222,6 +256,7 @@ void VoiceCloudLlmWorker(void *argument);
 void VoiceCloudLlmFreeMsgPayload(VoiceCloudLlmMsg *msg);
 void VoiceCloudLlmHandleResponseTimeout(VoiceCloudLlmContext *ctx);
 void VoiceCloudLlmDeleteRuntime(VoiceCloudLlmContext *ctx);
+void VoiceCloudLlmReturnToWakeup(void);
 
 void VoiceCloudLlmSetState(VoiceCloudLlmContext *ctx, VoiceCloudLlmState state)
 {
@@ -345,6 +380,9 @@ uint32_t VoiceCloudLlmGetQueueWaitMs(VoiceCloudLlmContext *ctx)
              * in HandleAudioFrame (~6 Hz); this timeout is a safety net.
              */
             return VOICE_CLOUD_LLM_IDLE_TIMEOUT_MS;
+        case VOICE_CLOUD_LLM_STATE_INTERRUPTED:
+            /* poll SCO stream state every 1 s */
+            return VOICE_CLOUD_LLM_INTERRUPT_POLL_MS;
         default:
             return osWaitForever;
     }
@@ -356,6 +394,16 @@ bool VoiceCloudLlmPostSimpleMsg(VoiceCloudLlmContext *ctx, VoiceCloudLlmMsgType 
     (void)std::memset(&msg, 0, sizeof(msg));
     msg.type = type;
     return VoiceCloudLlmPostMsg(ctx, msg);
+}
+
+/*
+ * Called from OnInterrupt to trigger cleanup on the worker thread.
+ * Posts an ERROR message — the worker's ERROR handler already contains
+ * the ReturnToWakeup logic and deduplicates via INTERRUPTED state.
+ */
+extern "C" void VoiceCloudLlmPostCallInterrupt(void)
+{
+    (void)VoiceCloudLlmPostSimpleMsg(&g_voiceCloudCtx, VOICE_CLOUD_LLM_MSG_ERROR);
 }
 
 bool VoiceCloudLlmPostStopMsg(VoiceCloudLlmContext *ctx)
@@ -393,6 +441,11 @@ void VoiceCloudLlmFreeMsgPayload(VoiceCloudLlmMsg *msg)
 
 int32_t VoiceCloudLlmStartWakeupRecognition()
 {
+    if (VoiceCloudLlmIsCallInterrupted()) {
+        WEARABLE_LOGW(WEARABLE_LOG_MODULE_SMART_VOICE,
+            "[voice_cloud_llm] ASR start blocked — call is active\r\n");
+        return ERRCODE_FAIL;
+    }
     VoiceCloudLlmContext *ctx = &g_voiceCloudCtx;
     (void)std::memset(&ctx->asrInitParams, 0, sizeof(ctx->asrInitParams));
     ctx->asrInitParams.enableNpu = false;
@@ -441,6 +494,9 @@ void VoiceCloudLlmStopAndDeinitAsr()
 bool VoiceCloudLlmCanAcceptWakeup(VoiceCloudLlmContext *ctx)
 {
     if (ctx == nullptr) {
+        return false;
+    }
+    if (VoiceCloudLlmIsCallInterrupted()) {
         return false;
     }
     if (ctx->mutex != nullptr) {
@@ -650,6 +706,7 @@ uint32_t VoiceCloudLlmPendingFlush(VoiceCloudLlmContext *ctx)
     return flushed;
 }
 
+
 void VoiceCloudLlmReturnToWakeup()
 {
     VoiceCloudLlmContext *ctx = &g_voiceCloudCtx;
@@ -671,6 +728,19 @@ void VoiceCloudLlmReturnToWakeup()
     const int32_t wsRet = VoiceCloudLlmWsClose();
     if (wsRet != 0) {
         WEARABLE_LOGW(WEARABLE_LOG_MODULE_SMART_VOICE, "voice cloud llm ws close fail, ret=%d\r\n", wsRet);
+    }
+
+    /*
+     * If a call is active we cannot touch ASR.  Park in INTERRUPTED and
+     * wait for the 1 s poll in HandleResponseTimeout to detect SCO
+     * stopped, at which point it calls back here, deinits and restarts
+     * ASR normally.
+     */
+    if (VoiceCloudLlmIsCallInterrupted()) {
+        WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
+            "[voice_cloud_llm] call active after cleanup, entering INTERRUPTED\r\n");
+        VoiceCloudLlmSetState(ctx, VOICE_CLOUD_LLM_STATE_INTERRUPTED);
+        return;
     }
 
     VoiceCloudLlmStopAndDeinitAsr();
@@ -766,6 +836,11 @@ bool VoiceCloudLlmSendSessionUpdate()
 
 bool VoiceCloudLlmStartAudioPipelines()
 {
+    if (VoiceCloudLlmIsCallInterrupted()) {
+        WEARABLE_LOGW(WEARABLE_LOG_MODULE_SMART_VOICE,
+            "[voice_cloud_llm] audio pipelines blocked — call is active\r\n");
+        return false;
+    }
     /*
      * Mic is already running from VoiceCloudLlmConnectToCloud (early capture)
      * in the common case. AudioCaptureStart short-circuits if already started,
@@ -819,6 +894,11 @@ bool VoiceCloudLlmStartAudioPipelines()
  */
 int32_t VoiceCloudLlmAudioPlayerStartWithRetry(const VoiceCloudLlmConfig *config)
 {
+    if (VoiceCloudLlmIsCallInterrupted()) {
+        WEARABLE_LOGW(WEARABLE_LOG_MODULE_SMART_VOICE,
+            "[voice_cloud_llm] player start blocked — call is active\r\n");
+        return ERRCODE_FAIL;
+    }
     const int32_t kRetries = 3;
     const uint32_t kBackoffMs = 50;
     int32_t ret = 0;
@@ -843,6 +923,17 @@ void VoiceCloudLlmHandleServerEvent(const VoiceCloudLlmMsg &msg)
 {
     const VoiceCloudLlmServerEvent &event = msg.event;
     VoiceCloudLlmContext *ctx = &g_voiceCloudCtx;
+
+    /*
+     * During a phone call (INTERRUPTED) the WS is closed and the audio
+     * hardware is off.  Stale server events already in the queue before
+     * the interrupt was processed must be dropped — an AUDIO_DELTA would
+     * otherwise try to start the player mid-call.
+     */
+    if (VoiceCloudLlmGetState(ctx) == VOICE_CLOUD_LLM_STATE_INTERRUPTED) {
+        return;
+    }
+
     /*
      * AUDIO_DELTA is the high-frequency path (~30+ events per turn) and the
      * player thread already prints a richer per-frame line ([player] #N ...).
@@ -875,6 +966,18 @@ void VoiceCloudLlmHandleServerEvent(const VoiceCloudLlmMsg &msg)
             }
             break;
         case VOICE_CLOUD_LLM_EVENT_AUDIO_DELTA:
+            /*
+             * If a call is active we cannot start the player.  Skip the
+             * retry loop and go directly to cleanup instead of wasting
+             * 150 ms on attempts that are guaranteed to fail.
+             */
+            if (VoiceCloudLlmIsCallInterrupted()) {
+                WEARABLE_LOGW(WEARABLE_LOG_MODULE_SMART_VOICE,
+                    "[voice_cloud_llm] AUDIO_DELTA blocked — call is active\r\n");
+                VoiceCloudLlmSetState(ctx, VOICE_CLOUD_LLM_STATE_ERROR_RECOVER);
+                VoiceCloudLlmReturnToWakeup();
+                break;
+            }
             /*
              * First audio_delta of this turn — release the mic overlay (in case
              * speech_stopped did not fire), then bring up the player. Once
@@ -1141,6 +1244,18 @@ void VoiceCloudLlmHandleResponseTimeout(VoiceCloudLlmContext *ctx)
                 "voice cloud llm idle timeout (queue silent), returning to wakeup\r\n");
             VoiceCloudLlmReturnToWakeup();
             return;
+        case VOICE_CLOUD_LLM_STATE_INTERRUPTED:
+            /*
+             * Polling the SCO stream: if the call has ended, restart.
+             * ReturnToWakeup will restart ASR and enter IDLE_WAKEUP.
+             */
+            if (!VoiceCloudLlmIsCallInterrupted()) {
+                osDelay(VOICE_CLOUD_LLM_CALL_DESTROY_MS);
+                WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
+                    "[voice_cloud_llm] call ended, returning to wakeup\r\n");
+                VoiceCloudLlmReturnToWakeup();
+            }
+            return;
         default:
             return;
     }
@@ -1200,9 +1315,11 @@ void VoiceCloudLlmWorker(void *argument)
                  * no-ops or we cycle through teardown/wakeup-restart repeatedly.
                  */
                 const VoiceCloudLlmState curState = VoiceCloudLlmGetState(ctx);
-                if (curState == VOICE_CLOUD_LLM_STATE_IDLE_WAKEUP) {
+                if (curState == VOICE_CLOUD_LLM_STATE_IDLE_WAKEUP ||
+                    curState == VOICE_CLOUD_LLM_STATE_INTERRUPTED) {
                     WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
-                        "[voice_cloud_llm] worker: ERROR msg ignored, already IDLE_WAKEUP\r\n");
+                        "[voice_cloud_llm] worker: ERROR msg ignored, state=%s\r\n",
+                        VoiceCloudLlmStateName(curState));
                     break;
                 }
                 WEARABLE_LOGE(WEARABLE_LOG_MODULE_SMART_VOICE,
@@ -1421,6 +1538,26 @@ extern "C" errcode_t VoiceCloudLlmStart(void)
     if (ret != 0) {
         WEARABLE_LOGE(WEARABLE_LOG_MODULE_SMART_VOICE,
             "[voice_cloud_llm] Start wakeup recognition fail, ret=%d\r\n", ret);
+        /*
+         * If a call is in progress, don't tear down the runtime.  Enter
+         * INTERRUPTED instead — the worker polls every 1 s, and when
+         * the call ends HandleResponseTimeout calls ReturnToWakeup
+         * which restarts ASR and transitions to IDLE_WAKEUP.
+         */
+        if (VoiceCloudLlmIsCallInterrupted()) {
+            WEARABLE_LOGI(WEARABLE_LOG_MODULE_SMART_VOICE,
+                "[voice_cloud_llm] call active, entering INTERRUPTED (will resume when call ends)\r\n");
+            VoiceCloudLlmSetState(ctx, VOICE_CLOUD_LLM_STATE_INTERRUPTED);
+            ctx->started = true;
+            /*
+             * The worker is blocked on osMessageQueueGet with
+             * osWaitForever (IDLE_WAKEUP default timeout).  Post a
+             * dummy message to unblock it so it re-reads the state
+             * and picks up the 1000 ms INTERRUPTED poll interval.
+             */
+            (void)VoiceCloudLlmPostSimpleMsg(ctx, VOICE_CLOUD_LLM_MSG_ERROR);
+            return ERRCODE_SUCC;
+        }
         VoiceCloudLlmDestroyRuntime(ctx);
         return ERRCODE_FAIL;
     }
