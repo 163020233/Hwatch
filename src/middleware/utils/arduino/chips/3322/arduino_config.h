@@ -175,4 +175,10 @@
 #define ARDUINO_I2S_SD_IN_PIN 3
 #endif
 
+// USB macros (not applicable on this target, but kept for compatibility)
+#define SERIAL_PORT_MONITOR Serial
+#define SERIAL_PORT_HARDWARE Serial
+#define SERIAL_PORT_HARDWARE1 Serial1
+#define SERIAL_PORT_HARDWARE2 Serial2
+
 #endif /* ARDUINO_CONFIG_H */
