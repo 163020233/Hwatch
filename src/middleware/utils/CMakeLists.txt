@@ -5,6 +5,7 @@
 add_subdirectory_if_exist(algorithm)
 add_subdirectory_if_exist(app_init)
 add_subdirectory_if_exist(app_version)
+add_subdirectory_if_exist(arduino)
 add_subdirectory_if_exist(at)
 add_subdirectory_if_exist(board_config)
 add_subdirectory_if_exist(bootloader)
