@@ -122,7 +122,7 @@
 /* ============================================================================
  * SPI master bus clock (SPI.cpp). 3322 SSI source clock is 64MHz
  * (flashboot_3322/tee_test.c: TEE_SPI_BUS_CLK = 64000000). SDK uses bus_clk as
- * the baud-rate divider base: SCK = bus_clk / clk_div. ws63 uses 32MHz.
+ * the baud-rate divider base: SCK = bus_clk / clk_div.
  * ============================================================================ */
 #if !defined(ARDUINO_SPI_BUS_CLK_HZ)
 #define ARDUINO_SPI_BUS_CLK_HZ 64000000UL
