@@ -262,16 +262,8 @@ void TwoWire::end()
     uapi_i2c_unregister_irq_callback(_i2c_bus);
 #endif
 
-    // Distinguish master/slave deinit
-    if (_master_mode) {
-        uapi_i2c_deinit(_i2c_bus);
-    } else {
-#if defined(CONFIG_I2C_SUPPORT_SLAVE) && (CONFIG_I2C_SUPPORT_SLAVE == 1)
-        uapi_i2c_slave_deinit(_i2c_bus);
-#else
-        // Stub slave mode: no actual init was done, skip deinit
-#endif
-    }
+    // Both master and slave use the same deinit API
+    uapi_i2c_deinit(_i2c_bus);
 
     // Unregister this instance from IRQ callback routing
     if (_i2c_bus < I2C_BUS_MAX_NUMBER) {
