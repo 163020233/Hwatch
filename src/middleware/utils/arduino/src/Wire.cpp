@@ -515,7 +515,7 @@ void TwoWire::onRequest(i2c_request_callback_t function)
 }
 
 // Slave mode polling - call this in loop() for slave operation
-// When CONFIG_I2C_SUPPORT_SLAVE is enabled:
+// When CONFIG_I2C_SUPPORT_SLAVE is enabled
 //   - Checks for incoming data from master via uapi_i2c_slave_read()
 //   - Triggers onReceive callback when data is received
 //   - Triggers onRequest callback when master wants to read
