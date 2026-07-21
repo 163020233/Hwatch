@@ -129,7 +129,7 @@ public:
 
     // Slave mode: Polling
     // Call this in loop() for slave operation
-    // When CONFIG_I2C_SUPPORT_SLAVE enabled:
+    // When CONFIG_I2C_SUPPORT_SLAVE enabled
     //   - Checks for master write (slave receive) via uapi_i2c_slave_read()
     //   - Handles master read (slave request) via uapi_i2c_slave_write()
     //   - Triggers registered callbacks
