@@ -93,10 +93,6 @@
 #define CONFIG_I2C_SUPPORT_MASTER 1
 #endif
 
-/* 3322 i2c driver has no uapi_i2c_slave_deinit (slave cleanup uses the shared
- * bus deinit uapi_i2c_deinit). Alias so Wire.cpp's slave path compiles. */
-#define uapi_i2c_slave_deinit uapi_i2c_deinit
-
 /* ============================================================================
  * SPI master pin assignment (SPI.cpp). 3322 menuconfig: CONFIG_SPI_SUPPORT_MASTER=y.
  * Pin numbers below are PLACEHOLDERS — replace with real 3322 GPIO/pinmux from
