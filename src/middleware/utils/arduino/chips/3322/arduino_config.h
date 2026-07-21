@@ -27,8 +27,6 @@
  * multi-serial is wired.
  * ============================================================================ */
 #define HAVE_HWSERIAL0
-/* #define HAVE_HWSERIAL1 */   /* not wired yet */
-/* #define HAVE_HWSERIAL2 */   /* not wired yet */
 
 /* ============================================================================
  * GPIO digital IO — always on.
