@@ -7,6 +7,8 @@
 #include "drv_pke.h"
 #include "crypto_pke_common.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_DRV_PKE_API
+
 int drv_cipher_pke_init(void)
 {
     return CRYPTO_SUCCESS;

@@ -10,6 +10,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_CURVE_POINT_MUL
+
 int hal_pke_alg_curve_base_point_mul(const drv_pke_data *d, const drv_pke_ecc_point *r)
 {
     drv_pke_ecc_point base;
@@ -66,7 +68,7 @@ CRYPTO_STATIC int inner_curve_ecfp_mont_ladder(const unsigned char *k, const uns
 
     /* Step 2: pre process for curve montgomery ladder calculation. */
     ret = inner_batch_instr_process(&instr_curve25519_pre_ladder, work_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* Step 3: point add + times point calculation to calculate the point multiplication. */
     k_data.data = (unsigned char *)k;
@@ -74,7 +76,7 @@ CRYPTO_STATIC int inner_curve_ecfp_mont_ladder(const unsigned char *k, const uns
     loop_num = len * CRYPTO_BITS_IN_BYTE - crypto_pke_common_get_high_0_bit_length(&k_data);
 
     ret = hal_pke_loop_batch_compute_romable(loop_num, k, NULL, len, batch_instr_loop);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
 
     return ret;
 }
@@ -106,11 +108,11 @@ CRYPTO_STATIC int inner_curve_ecfp_mul(const unsigned char *decode_d, const unsi
 
     /* Step 2: Montgomery Ladder to calculate the point multiplication for curve25519/curve448. */
     ret = inner_curve_ecfp_mont_ladder(decode_d, decode_px, curve->p, curve->ksize);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_curve_ecfp_mont_ladder failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_curve_ecfp_mont_ladder failed\n");
 
     /* Step 3: Jacobin to Affine coordinate system tranform. */
     ret = inner_curve_ecfp_xz_to_x(curve->p, curve->ksize);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_curve_ecfp_xz_to_x failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_curve_ecfp_xz_to_x failed\n");
 
     /* Step 4: get data result from PKE DRAM. */
     hal_pke_get_ram_romable(curve_addr_x2, rx, len);
@@ -137,10 +139,11 @@ int hal_pke_alg_curve_point_mul(const drv_pke_data *d, const drv_pke_ecc_point *
     inner_decode_point_x(decode_px, p->x, p->length);
 
     ret = inner_curve_ecfp_mul(decode_d, decode_px, local_rx, klen);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_curve_ecfp_mul failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_curve_ecfp_mul failed\n");
 
     if (inner_drv_is_zero(local_rx, klen)) {
-        crypto_log_err("rx is zero!\n");
+
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
 

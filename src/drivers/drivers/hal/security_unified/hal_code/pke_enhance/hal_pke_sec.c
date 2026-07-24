@@ -14,6 +14,8 @@
 #include "crypto_drv_common.h"
 #include "crypto_pke_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_ENHANCE_HAL_PKE_SEC
+
 #ifndef CONFIG_PKE_CALC_TIMEOUT_US
 #define CONFIG_PKE_CALC_TIMEOUT_US      60000
 #endif
@@ -34,11 +36,13 @@ int32_t hal_pke_wait_done_sec(void)
     }
     if (i >= CONFIG_PKE_CALC_TIMEOUT_US) {
         hal_pke_debug_romable();
+        drv_set_err(ERROR_PKE_WAIT_DONE_TIMEOUT, "direct error return");
         return ERROR_PKE_WAIT_DONE_TIMEOUT;
     }
 
     if (pke_reg_read(PKE_FAILURE_FLAG) != 0) {
         hal_pke_debug_romable();
+        drv_set_err(ERROR_PKE_LOGIC, "direct error return");
         return ERROR_PKE_LOGIC;
     }
     /* robust error check. */
@@ -46,6 +50,7 @@ int32_t hal_pke_wait_done_sec(void)
     if (result.bits.alarm_int == PKE_ALARM_STATUS_EFFECTIVE_CODE) {
         pke_reg_write(PKE_ALARM_STATUS, PKE_ALARM_STATUS_CLEAN_CODE);   // clear warn interrupt
         hal_pke_debug_romable();
+        drv_set_err(ERROR_PKE_ROBUST_WARNING, "direct error return");
         return ERROR_PKE_ROBUST_WARNING;
     }
 
@@ -92,10 +97,10 @@ int32_t hal_pke_loop_batch_compute_sec(uint32_t loop_num,
 
         if (batch_instr[bit_2] != NULL) {
             ret = hal_pke_batch_compute_sec(batch_instr[bit_2]->instr_addr, batch_instr[bit_2]->instr_num);
-            crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
+            drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
         }
     }
-    crypto_chk_return(i != klen * CRYPTO_BITS_IN_BYTE, CRYPTO_ENHANCE_FAILURE, "for loop is not ended\n");
+    drv_err_chk_return(i != klen * CRYPTO_BITS_IN_BYTE, CRYPTO_ENHANCE_FAILURE, "for loop is not ended\n");
 
     return CRYPTO_ENHANCE_SUCCESS;
 }
@@ -117,7 +122,7 @@ int32_t hal_pke_set_dram_mask(void)
 
     ret = hal_trng_get_random_romable(&mask);
     if (ret != CRYPTO_SUCCESS) {
-        crypto_log_err("hal_trng_get_random_romable error!\n");
+        drv_set_err(ERROR_UNEXPECTED, "logged error");
         return ret;
     }
     pke_reg_write(PKE_DRAM_MASK, mask);

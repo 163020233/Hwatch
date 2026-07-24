@@ -13,6 +13,8 @@
 #include "hal_pke_func.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_ENHANCE_PKE_ALG_ECC_INV_MOD_SEC
+
 #define MAX_ECC_LENGTH        72
 
 int hal_pke_alg_ecc_inv_mod_sec(const drv_pke_data *a, const drv_pke_data *c, const drv_pke_data *rand_data)
@@ -45,7 +47,7 @@ int hal_pke_alg_ecc_inv_mod_sec(const drv_pke_data *a, const drv_pke_data *c, co
     mod_n.length = klen;
 
     ret = crypto_pke_common_add_mod(a, rand_data, &rand_mod_data, &mod_n); /* rand_mod = k + rand mod n */
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_add_mod failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_add_mod failed\n");
 
     hal_pke_set_ram_romable(ecc_addr_m, ecc_curve->n, klen);
     hal_pke_set_ram_romable(ecc_addr_cz, rand_data->data, rand_data->length);
@@ -53,11 +55,11 @@ int hal_pke_alg_ecc_inv_mod_sec(const drv_pke_data *a, const drv_pke_data *c, co
 
     /* 2. start calculate. */
     ret = inner_batch_instr_process_sec(&instr_ecfn_inv_sec_pre_new, work_len);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* Step 2. start inv calculate. */
     ret = hal_pke_loop_batch_compute_sec(ecc_curve->key_valid_bit, n_2, NULL, klen, batch_instr_loop);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
 
     /* get data out from DRAM ecc_addr_s, the result is montgomeried. */
     hal_pke_get_ram_romable(ecc_addr_s, c->data, c->length);

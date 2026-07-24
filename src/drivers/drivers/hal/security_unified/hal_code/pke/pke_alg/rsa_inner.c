@@ -11,6 +11,8 @@
 
 #include "crypto_pke_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_RSA_INNER
+
 #define PKE_MONT_BIT_LEN        128
 #define PKE_MONT_LEN_IN_BYTE    16
 #define PKE_MONT_LEN_IN_WORD    4
@@ -64,12 +66,13 @@ static int inner_get_loop_number(unsigned int aligned_len, unsigned int *loop_nu
     for (; i < crypto_array_size(g_rrn_loop_table); i++) {
         if (aligned_len == g_rrn_loop_table[i].aligned_len) {
             ret = inner_batch_instr_process(g_rrn_loop_table[i].batch_instr, work_len);
-            crypto_chk_func_return(inner_batch_instr_process, ret);
+            drv_err_chk_func_return(inner_batch_instr_process, ret);
             *loop_number = g_rrn_loop_table[i].loop_number;
             return CRYPTO_SUCCESS;
         }
     }
-    crypto_log_err("invalid modulur\n");
+
+    drv_set_err(PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "direct error return");
     return PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM);
 }
 
@@ -87,12 +90,12 @@ static int inner_rsa_rrn(const unsigned char *n, const unsigned int key_size)
 
     /* Step3: prepare data for loop calculate. */
     ret = inner_get_loop_number(key_size, &cnt);
-    crypto_chk_func_return(inner_get_loop_number, ret);
+    drv_err_chk_func_return(inner_get_loop_number, ret);
 
     /* Step 4.2: start calculate square multiplication modulur. */
     for (i = 0; i < cnt; i++) {
         ret = inner_batch_instr_process(&instr_rsa_rrn_mul, 0);
-        crypto_chk_func_return(inner_batch_instr_process, ret);
+        drv_err_chk_func_return(inner_batch_instr_process, ret);
     }
     return ret;
 }

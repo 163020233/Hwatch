@@ -9,6 +9,8 @@
 #include "crypto_hash_struct.h"
 #include "drv_trng.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_DRV_PKE_PRIV
+
 /* result size */
 #define HASH_SIZE_SHA_1                            20
 #define HASH_SIZE_SHA_224                          28
@@ -31,7 +33,7 @@ uint32_t drv_get_hash_len(const drv_pke_hash_type hash_type)
         case DRV_PKE_HASH_TYPE_SHA512:
             return HASH_SIZE_SHA_512;
         default:
-            crypto_log_err("unsupport hash type\n");
+            drv_set_err(ERROR_UNEXPECTED, "logged error");
             return HASH_SIZE_SHA_256;
     }
 }
@@ -234,7 +236,8 @@ int pkcs1_get_hash(const drv_pke_hash_type hash_type, const drv_pke_data *label,
         }
     }
     if (item == NULL) {
-        crypto_log_err("unsupport hash type\n");
+
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_UNSUPPORT), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_UNSUPPORT);
     }
 
@@ -245,7 +248,7 @@ int pkcs1_get_hash(const drv_pke_hash_type hash_type, const drv_pke_data *label,
         h_hash.length = hash_info->hash_len;
 
         ret = crypto_pke_common_calc_hash(label, 1, hash_info->hash_type, &h_hash);
-        crypto_chk_return(ret != TD_SUCCESS, ret, "crypto_pke_common_calc_hash failed, ret is 0x%x\n", ret);
+        drv_err_chk_return(ret != TD_SUCCESS, ret, "crypto_pke_common_calc_hash failed, ret is 0x%x\n", ret);
     }
 #endif
 
@@ -265,16 +268,17 @@ int inner_get_random_with_nonzero_octets(unsigned char *random, unsigned int siz
     unsigned int try_times = 0;
 
     ret = inner_get_random(random, size);
-    crypto_chk_return(ret != TD_SUCCESS, ret, "inner_get_random failed\n");
+    drv_err_chk_return(ret != TD_SUCCESS, ret, "inner_get_random failed\n");
 
     for (i = 0; i < size; i++) {
         try_times = 0;
         while (random[i] == 0 && try_times < PKE_RANDOM_MAX_TRY_TIMES) {
             ret = inner_get_random(&random[i], 1);
-            crypto_chk_return(ret != TD_SUCCESS, ret, "inner_get_random failed\n");
+            drv_err_chk_return(ret != TD_SUCCESS, ret, "inner_get_random failed\n");
             try_times++;
         }
         if (try_times >= PKE_RANDOM_MAX_TRY_TIMES) {
+            drv_set_err(CRYPTO_FAILURE, "direct error return");
             return CRYPTO_FAILURE;
         }
     }
@@ -289,16 +293,18 @@ int inner_get_limit_random(unsigned char *rand, const unsigned char *limit, cons
         start_idx++;
     }
     if (start_idx == size) {
-        crypto_log_err("the limit is zero!\n");
+
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
     (void)memset_s(rand, size, 0, size);
     ret = inner_get_random(&rand[start_idx], size - start_idx);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_get_random failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_get_random failed\n");
 
     /* Check is required, cause memset for rand may set limit[0] to zero. */
     if (limit[start_idx] == 0) {
-        crypto_log_err("limit[0] is zero!\n");
+
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
     rand[start_idx] = rand[start_idx] % limit[start_idx];
@@ -344,17 +350,18 @@ int inner_sm2_kdf(const drv_pke_ecc_point *param, unsigned char *out, const unsi
         ct = crypto_cpu_to_be32(i + 1);
         /* *** H = SM3(X || Y || CT) *** */
         ret = crypto_pke_common_calc_hash(arr, crypto_array_size(arr), DRV_PKE_HASH_TYPE_SM3, &hash);
-        crypto_chk_return(ret != TD_SUCCESS, ret, "crypto_pke_common_calc_hash failed, ret is 0x%x\n", ret);
+        drv_err_chk_return(ret != TD_SUCCESS, ret, "crypto_pke_common_calc_hash failed, ret is 0x%x\n", ret);
 
         if (i == (block - 1)) {
             ret = memcpy_s(out + i * CRYPTO_SM2_LEN_IN_BYTES, CRYPTO_SM2_LEN_IN_BYTES, h,
                 klen - i * CRYPTO_SM2_LEN_IN_BYTES);
-            crypto_chk_return(ret != EOK, ret, "memcpy_s failed, ret is 0x%x\n", ret);
+            drv_err_chk_return(ret != EOK, ret, "memcpy_s failed, ret is 0x%x\n", ret);
         } else {
             (void)memcpy_s(out + i * CRYPTO_SM2_LEN_IN_BYTES, CRYPTO_SM2_LEN_IN_BYTES, h, CRYPTO_SM2_LEN_IN_BYTES);
         }
     }
     if (inner_drv_is_zero(out, klen)) {
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
 
@@ -390,24 +397,28 @@ int32_t inner_modular_chk(const drv_pke_data *p, bool is_odd_required)
         }
     }
     if (length_chk_valid == false) {
-        crypto_log_err("modular length is invalid!\n");
+
+        drv_set_err(ERROR_INVALID_RSA_MODULAR, "direct error return");
         return ERROR_INVALID_RSA_MODULAR;
     }
     /* 2. even check. */
     if (is_odd_required) {
         if ((p->data[p->length - 1] & 0x1) == 0) {
-            crypto_log_err("modular is even!\n");
+
+            drv_set_err(ERROR_INVALID_RSA_MODULAR, "direct error return");
             return ERROR_INVALID_RSA_MODULAR;
         }
     }
     /* 3. zero check. */
     if (inner_drv_is_zero(p->data, p->length)) {
-        crypto_log_err("modular is zero!\n");
+
+        drv_set_err(ERROR_INVALID_RSA_MODULAR, "direct error return");
         return ERROR_INVALID_RSA_MODULAR;
     }
     /* 4. modular valid bit check. */
     if (crypto_pke_common_get_high_0_bit_length(p) > CRYPTO_PKE_MAX_OFFSET_VALID_BIT) {
-        crypto_log_err("modular valid bit is too small!\n");
+
+        drv_set_err(ERROR_INVALID_RSA_MODULAR, "direct error return");
         return ERROR_INVALID_RSA_MODULAR;
     }
 
@@ -423,5 +434,6 @@ int32_t inner_ecdsa_type_check(drv_pke_ecc_curve_type ecc_type)
     if (curve_id == SM2_CURVE_ID) {
         return CRYPTO_SUCCESS;
     }
+    drv_set_err(ERROR_INVALID_PARAM, "direct error return");
     return ERROR_INVALID_PARAM;
 }

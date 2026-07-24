@@ -6,6 +6,8 @@
 */
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_COMMON_CRYPTO_REGISTER
+
 ROM_SHARE_BSS malloc_func_t g_crypto_malloc_func;
 ROM_SHARE_BSS free_func_t g_crypto_free_func;
 ROM_SHARE_BSS get_cpu_type_func_t g_get_cpu_type_func;

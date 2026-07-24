@@ -10,6 +10,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ED_MUL_SUB
+
 #define NEED_PAD_ZERO       1
 #define NO_NEED_PAD_ZERO    0
 #define ED25519_KEY_LEN     32
@@ -46,23 +48,23 @@ int hal_pke_alg_ed_mul_sub(const drv_pke_data *s_data, const drv_pke_data *h_dat
 
     /* Step 2: data preparation, include data montgomery and data copy. */
     ret = inner_batch_instr_process(&instr_ed25519_mul_sub_pre, work_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* Step 4: start calculate. */
     loop_num = klen * CRYPTO_BITS_IN_BYTE - crypto_pke_common_get_two_bn_high_0_bit_length(s_data, h_data);
 
     ret =  hal_pke_loop_batch_compute_romable(loop_num, h_data->data, s_data->data, klen, batch_instr_loop);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
 
     /* Step 5: Check whether C is equal to R. */
     hal_pke_set_ram_romable(ed_addr_rx, R_point->x, R_point->length);
     hal_pke_set_ram_romable(ed_addr_ry, R_point->y, R_point->length);
 
     hal_pke_get_ram_romable(ed_addr_cx, result, ED25519_KEY_LEN);
-    crypto_chk_return(inner_drv_is_zero(result, ED25519_KEY_LEN), CRYPTO_FAILURE, "cx is zero\n");
+    drv_err_chk_return(inner_drv_is_zero(result, ED25519_KEY_LEN), CRYPTO_FAILURE, "cx is zero\n");
 
     hal_pke_get_ram_romable(ed_addr_cy, result, ED25519_KEY_LEN);
-    crypto_chk_return(inner_drv_is_zero(result, ED25519_KEY_LEN), CRYPTO_FAILURE, "cy is zero\n");
+    drv_err_chk_return(inner_drv_is_zero(result, ED25519_KEY_LEN), CRYPTO_FAILURE, "cy is zero\n");
 
     return CRYPTO_SUCCESS;
 }

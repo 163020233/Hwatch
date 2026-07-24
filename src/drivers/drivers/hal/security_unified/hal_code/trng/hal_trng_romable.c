@@ -11,6 +11,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_TRNG_HAL_TRNG_ROMABLE
+
 ROM_SHARE_BSS hal_trng_func_table_t g_trng_table;
 
 bool hal_trng_is_ready_romable(void)
@@ -45,6 +47,7 @@ int32_t hal_trng_get_random_romable(uint32_t *randnum)
         }
     }
     hal_trng_debug_romable();
+    drv_set_err(ERROR_GET_TRNG_TIMEOUT, "direct error return");
     return ERROR_GET_TRNG_TIMEOUT;
 }
 

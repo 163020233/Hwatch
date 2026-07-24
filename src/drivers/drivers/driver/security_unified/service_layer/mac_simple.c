@@ -13,6 +13,8 @@
 #include "security_mac.h"
 #include "drv_symc.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_MAC_SIMPLE
+
 #ifdef CONFIG_SYMC_SUPPORT_CBC_MAC
 errcode_t uapi_drv_cipher_cbc_mac(uapi_drv_cipher_symc_alg_t alg,
     const uint8_t *key, uint32_t key_len, uint32_t keyslot_handle,
@@ -140,7 +142,7 @@ errcode_t uapi_drv_cipher_cmac_ctx_deinit(mac_handle_t ctx, uint32_t ctx_size)
 {
     int32_t ret;
     crypto_service_postprocess(SYMC_MODULE_ID);
-    crypto_chk_goto_with_ret(ret, ctx == 0, exit, ERROR_PARAM_IS_NULL, "ctx is null\n");
+    drv_err_chk_goto_with_ret(ret, ctx == 0, exit, ERROR_PARAM_IS_NULL, "ctx is null\n");
     (void)memset_s((void *)ctx, ctx_size, 0, ctx_size);
     ret = 0;
 exit:

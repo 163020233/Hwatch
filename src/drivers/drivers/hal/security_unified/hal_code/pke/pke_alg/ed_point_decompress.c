@@ -10,6 +10,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ED_POINT_DECOMPRESS
+
 #define ED25519_KEY_LEN     32
 static int inner_recovery_x(const unsigned char *y, const unsigned char *p, unsigned char *x, unsigned char sign,
     unsigned int byte_len)
@@ -36,18 +38,18 @@ static int inner_recovery_x(const unsigned char *y, const unsigned char *p, unsi
     /* 2. start recovery x from y by curve equation. x^2 = (y^2 - 1) / (d*y^2 + 1) (mod p) */
     /* 2.1 preprocess, initialize the data, use batch process step. */
     ret = inner_batch_instr_process(&instr_ed25519_recover_x_pre, work_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* calculate by binary data, from high address to low address. */
     mod_p_5_data.data = (unsigned char *)mod_p_5;
     mod_p_5_data.length = DRV_PKE_LEN_256;
     loop_num = DRV_PKE_LEN_256 * CRYPTO_BITS_IN_BYTE - crypto_pke_common_get_high_0_bit_length(&mod_p_5_data);
     ret = hal_pke_loop_batch_compute_romable(loop_num, mod_p_5, NULL, DRV_PKE_LEN_256, batch_instr_loop);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_loop_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_loop_batch_instr_process failed\n");
 
     /* 2.2 postprocess, demontgomery and complete reduction */
     ret = inner_batch_instr_process(&instr_ed25519_recover_x_post, work_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* 3. get result from DRAM. */
     hal_pke_get_ram_romable(ed_addr_t0, t0, byte_len);
@@ -63,17 +65,19 @@ static int inner_recovery_x(const unsigned char *y, const unsigned char *p, unsi
         ret = inner_batch_instr_process(&instr_ed25519_cpy_tx1_to_tx0, work_len);
     } else {
         /* Otherwise, no square root exists for modulo p, and decoding fails. */
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
-    crypto_chk_func_return(inner_batch_instr_process, ret);
+    drv_err_chk_func_return(inner_batch_instr_process, ret);
     /* Finally, use the x_0 bit to select the right square root. */
     if (inner_drv_is_zero(x, byte_len) && sign == 0x01) {
         /* If x = 0, and x_0 = 1, decoding fails. */
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     } else if ((x[byte_len - 1] & 0x01) != sign) {
         /* if x_0 != x mod 2, set x <-- p - x. */
         ret = inner_batch_instr_process(&instr_ed25519_cpy_tx1_to_tx0, work_len);
-        crypto_chk_func_return(inner_batch_instr_process, ret);
+        drv_err_chk_func_return(inner_batch_instr_process, ret);
         hal_pke_get_ram_romable(ed_addr_tx0, x, byte_len);
     }
 
@@ -94,11 +98,11 @@ int hal_pke_alg_ecc_point_decompress(const drv_pke_data *p, const drv_pke_ecc_po
     /* The y-coordinate is recovered simply by clearing the bit 255. */
     point_decompress->y[0] &= 0x7F;
     /* If the resulting value pkey->y is >= p, decoding fails. */
-    crypto_chk_return(memcmp(point_decompress->y, ed_p, ED25519_KEY_LEN) >= 0, ERROR_INVALID_PARAM,
+    drv_err_chk_return(memcmp(point_decompress->y, ed_p, ED25519_KEY_LEN) >= 0, ERROR_INVALID_PARAM,
         "pkey->y must smaller than p\n");
 
     ret = inner_recovery_x(point_decompress->y, ed_p, point_decompress->x, sign, ED25519_KEY_LEN);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_recovery_x failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_recovery_x failed\n");
 
     return CRYPTO_SUCCESS;
 }

@@ -11,26 +11,28 @@
 #include "drv_keyslot.h"
 #include "crypto_hash_common.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_HASH_DRV_PBKDF2_SOFT
+
 int32_t inner_pbkdf2_param_chk(const crypto_kdf_pbkdf2_ex_param *param, const uint8_t *out, uint32_t out_len)
 {
     crypto_hash_type type;
 
-    crypto_chk_return(param == TD_NULL, ERROR_PARAM_IS_NULL, "param is NULL\n");
-    crypto_chk_return(out == TD_NULL, ERROR_PARAM_IS_NULL, "out is NULL\n");
+    drv_err_chk_return(param == TD_NULL, ERROR_PARAM_IS_NULL, "param is NULL\n");
+    drv_err_chk_return(out == TD_NULL, ERROR_PARAM_IS_NULL, "out is NULL\n");
 
     if (param->plen != 0) {
-        crypto_chk_return(param->password == TD_NULL, ERROR_PARAM_IS_NULL, "password is NULL\n");
+        drv_err_chk_return(param->password == TD_NULL, ERROR_PARAM_IS_NULL, "password is NULL\n");
     }
     if (param->slen != 0) {
-        crypto_chk_return(param->salt == TD_NULL, ERROR_PARAM_IS_NULL, "salt is NULL\n");
+        drv_err_chk_return(param->salt == TD_NULL, ERROR_PARAM_IS_NULL, "salt is NULL\n");
     }
-    crypto_chk_return(param->count == 0, ERROR_INVALID_PARAM, "count is invalid\n");
+    drv_err_chk_return(param->count == 0, ERROR_INVALID_PARAM, "count is invalid\n");
 
-    crypto_chk_return(out_len == 0 || out_len >= CRYPTO_PBKDF2_OUT_MAX_LENGTH,
+    drv_err_chk_return(out_len == 0 || out_len >= CRYPTO_PBKDF2_OUT_MAX_LENGTH,
         ERROR_INVALID_PARAM, "out_len is invalid\n");
 
     type = param->hash_type;
-    crypto_chk_return(type != CRYPTO_HASH_TYPE_HMAC_SHA1 && type != CRYPTO_HASH_TYPE_HMAC_SHA224 &&
+    drv_err_chk_return(type != CRYPTO_HASH_TYPE_HMAC_SHA1 && type != CRYPTO_HASH_TYPE_HMAC_SHA224 &&
         type != CRYPTO_HASH_TYPE_HMAC_SHA256 && type != CRYPTO_HASH_TYPE_HMAC_SHA384 &&
         type != CRYPTO_HASH_TYPE_HMAC_SHA512 && type != CRYPTO_HASH_TYPE_HMAC_SM3,
         ERROR_INVALID_PARAM, "hash_type is invalid!\n");
@@ -64,7 +66,7 @@ static int32_t inner_pbkdf2_update(void *pbkdf2_ctx, uint32_t count, bool is_har
             real_count = crypto_min(left, MAX_PBKDF2_ITERATION_TIMES);
 
             ret = drv_cipher_pbkdf2_update_hardware(pbkdf2_ctx, real_count);
-            crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_update_soft failed\n");
+            drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_update_soft failed\n");
 
             left -= real_count;
         }
@@ -73,13 +75,13 @@ static int32_t inner_pbkdf2_update(void *pbkdf2_ctx, uint32_t count, bool is_har
         /* Case 2. Hardware Version1 */
         if (count > MAX_PBKDF2_ITERATION_TIMES) {
             ret = drv_cipher_pbkdf2_update_soft(pbkdf2_ctx, count - MAX_PBKDF2_ITERATION_TIMES);
-            crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_update_soft failed\n");
+            drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_update_soft failed\n");
 
             left = MAX_PBKDF2_ITERATION_TIMES;
         }
 
         ret = drv_cipher_pbkdf2_update_hardware(pbkdf2_ctx, left);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_update_soft failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_update_soft failed\n");
         return CRYPTO_SUCCESS;
 #endif
     }
@@ -130,13 +132,13 @@ static int32_t inner_pbkdf2_process(const crypto_kdf_pbkdf2_ex_param *param, uin
         real_out_len = crypto_min(left, hmac_len);
 
         ret = drv_cipher_pbkdf2_set_salt(pbkdf2_ctx, param->salt, param->slen, i + 1);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_set_salt failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_set_salt failed\n");
 
         ret = inner_pbkdf2_update(pbkdf2_ctx, param->count, is_hardware_support);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pbkdf2_update failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pbkdf2_update failed\n");
 
         ret = drv_cipher_pbkdf2_finish(pbkdf2_ctx, out + i * hmac_len, real_out_len);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_finish failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_finish failed\n");
 
         left -= real_out_len;
         i++;
@@ -149,7 +151,7 @@ int32_t drv_cipher_pbkdf2(const crypto_kdf_pbkdf2_param *param, uint8_t *out, co
 {
     crypto_kdf_pbkdf2_ex_param param_ex = { 0 };
 
-    crypto_chk_return(param == TD_NULL, ERROR_PARAM_IS_NULL, "param is NULL\n");
+    drv_err_chk_return(param == TD_NULL, ERROR_PARAM_IS_NULL, "param is NULL\n");
 
     param_ex.hash_type = param->hash_type;
     param_ex.password = param->password;
@@ -167,14 +169,14 @@ int32_t drv_cipher_pbkdf2_ex(const crypto_kdf_pbkdf2_ex_param *param, uint8_t *o
     crypto_drv_func_enter();
 
     ret = inner_pbkdf2_param_chk(param, out, out_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pbkdf2_param_chk failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pbkdf2_param_chk failed\n");
 
     ret = drv_cipher_pbkdf2_setup(&pbkdf2_ctx, param->hash_type,
         param->password, param->plen, CRYPTO_INVALID_KEYSLOT_HANDLE);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_setup failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_pbkdf2_setup failed\n");
 
     ret = inner_pbkdf2_process(param, out, out_len, pbkdf2_ctx);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_pbkdf2_teardown, "inner_pbkdf2_process failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_pbkdf2_teardown, "inner_pbkdf2_process failed\n");
 
 exit_pbkdf2_teardown:
     drv_cipher_pbkdf2_teardown(pbkdf2_ctx);
@@ -204,7 +206,7 @@ int32_t drv_cipher_pbkdf2_setup(void **ctx, crypto_hash_type hash_type,
     }
 
     pbkdf2_ctx = crypto_malloc_coherent(sizeof(drv_pbkdf2_ctx_t));
-    crypto_chk_return(pbkdf2_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(pbkdf2_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
     (void)memset_s(pbkdf2_ctx, sizeof(drv_pbkdf2_ctx_t), 0, sizeof(drv_pbkdf2_ctx_t));
 
     pbkdf2_ctx->block_size = crypto_hash_get_block_size(hash_type) / CRYPTO_BITS_IN_BYTE;
@@ -217,21 +219,21 @@ int32_t drv_cipher_pbkdf2_setup(void **ctx, crypto_hash_type hash_type,
      */
     if (plen <= pbkdf2_ctx->block_size) {
         ret = memcpy_s(pbkdf2_ctx->password, sizeof(pbkdf2_ctx->password), password, plen);
-        crypto_chk_goto_with_ret(ret, ret != EOK, error_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_goto_with_ret(ret, ret != EOK, error_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
     } else {
         ret = drv_cipher_hash_compute(crypto_hash_remove_hmac_flag(hash_type), password, plen,
             (uint8_t *)pbkdf2_ctx->password, pbkdf2_ctx->result_size);
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, error_free, "hash_compute failed\n");
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, error_free, "hash_compute failed\n");
     }
 
     if ((keyslot_handle == CRYPTO_INVALID_KEYSLOT_HANDLE) && (klad_engine != CRYPTO_KLAD_ENGINE_INVALID)) {
         ret = drv_keyslot_setup(&pbkdf2_ctx->keyslot_handle, CRYPTO_KEYSLOT_TYPE_HMAC);
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, error_free, "drv_keyslot_setup failed\n");
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, error_free, "drv_keyslot_setup failed\n");
         pbkdf2_ctx->is_local_keyslot = true;
 
         ret = drv_keyslot_set_clear_key(pbkdf2_ctx->keyslot_handle, klad_engine,
             (uint8_t *)pbkdf2_ctx->password, pbkdf2_ctx->block_size);
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, error_keyslot_teardown, "drv_keyslot_set_clear_key failed\n");
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, error_keyslot_teardown, "drv_keyslot_set_clear_key failed\n");
     } else {
         pbkdf2_ctx->keyslot_handle = keyslot_handle;
     }
@@ -292,7 +294,7 @@ int32_t drv_cipher_pbkdf2_set_salt(void *ctx, const uint8_t *salt, uint32_t slen
     if (!is_salt_overflow) {
         data_pad = (uint8_t *)pbkdf2_ctx->data;
         ret = memcpy_s(data_pad, sizeof(pbkdf2_ctx->data), salt, slen);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
         data_pad[slen + 3] = count & 0xff;          /* 3: need fill 32bit i, big endian padding */
         data_pad[slen + 2] = (count >> 8) & 0xff;   /* 2/8: need fill 32bit i, big endian padding */
@@ -310,23 +312,23 @@ int32_t drv_cipher_pbkdf2_set_salt(void *ctx, const uint8_t *salt, uint32_t slen
      * is_salt_overflow = true, means iteration_count reduce by 1.
     */
     ret = drv_cipher_hmac_compute_setup(&hmac_ctx);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hmac_compute_setup failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hmac_compute_setup failed\n");
 
     ret = drv_cipher_hmac_compute_start(hmac_ctx, pbkdf2_ctx->hash_type,
         (uint8_t *)pbkdf2_ctx->password, pbkdf2_ctx->block_size, CRYPTO_INVALID_KEYSLOT_HANDLE);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac_compute_start failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac_compute_start failed\n");
 
     ret = drv_cipher_hmac_compute_update(hmac_ctx, salt, slen);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac_compute_update failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac_compute_update failed\n");
 
     ret = drv_cipher_hmac_compute_update(hmac_ctx, (uint8_t *)(&count_be32), sizeof(count_be32));
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac_compute_update failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac_compute_update failed\n");
 
     ret = drv_cipher_hmac_compute_finish(hmac_ctx, (uint8_t *)pbkdf2_ctx->result, pbkdf2_ctx->result_size);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac_compute_finish failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac_compute_finish failed\n");
 
     ret = memcpy_s(pbkdf2_ctx->data, sizeof(pbkdf2_ctx->data), pbkdf2_ctx->result, pbkdf2_ctx->result_size);
-    crypto_chk_goto_with_ret(ret, ret != EOK, exit_teardown, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_goto_with_ret(ret, ret != EOK, exit_teardown, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     pbkdf2_ctx->data_len = pbkdf2_ctx->result_size;
     pbkdf2_ctx->is_salt_overflow = true;
@@ -348,7 +350,7 @@ int32_t drv_cipher_pbkdf2_update_soft(void *ctx, uint32_t iteration_count)
         ret = drv_cipher_hmac_compute(pbkdf2_ctx->hash_type,
             (uint8_t *)pbkdf2_ctx->password, pbkdf2_ctx->block_size, pbkdf2_ctx->keyslot_handle,
             (uint8_t *)pbkdf2_ctx->data, pbkdf2_ctx->data_len, (uint8_t *)pbkdf2_ctx->data, pbkdf2_ctx->result_size);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_hmac_compute failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_hmac_compute failed\n");
         inner_pbkdf2_word_xor(pbkdf2_ctx->data, pbkdf2_ctx->result, pbkdf2_ctx->result_size);
         pbkdf2_ctx->data_len = pbkdf2_ctx->result_size;
     }
@@ -362,7 +364,7 @@ int32_t drv_cipher_pbkdf2_finish(void *ctx, uint8_t *out_key, uint32_t out_key_l
     int32_t ret;
 
     ret = memcpy_s(out_key, out_key_len, pbkdf2_ctx->result, out_key_len);
-    crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     return CRYPTO_SUCCESS;
 }

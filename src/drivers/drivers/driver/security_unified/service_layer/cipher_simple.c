@@ -15,6 +15,8 @@
 #include "security_km.h"
 #include "security_symc.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_CIPHER_SIMPLE
+
 #if defined(CONFIG_SYMC_SUPPORT_ECB) || defined(CONFIG_SYMC_SUPPORT_CBC) || defined(CONFIG_SYMC_SUPPORT_CTR) || \
     defined(CONFIG_SYMC_SUPPORT_OFB) || defined(CONFIG_SYMC_SUPPORT_CFB8) || defined(CONFIG_SYMC_SUPPORT_CFB128)
 errcode_t uapi_drv_cipher_symc_crypt(uint32_t alg, const uint8_t *src, uint8_t *dst, uint32_t data_len,

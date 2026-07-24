@@ -12,6 +12,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_SPACC_HAL_SYMC_ROMABLE
+
 #define REE_CPU_MASK        0x1
 #define TEE_CPU_MASK        0x2
 
@@ -59,6 +61,7 @@ int32_t hal_symc_chn_init_romable(uint32_t chn_num, hal_symc_entry_in_t entry_in
     /* Step 2. Check if lock success. */
     used = spacc_reg_read(SPACC_SYM_CHN_LOCK);
     if (CHN_WHO_USED_GET(used, chn_num) != cpu_mask) {
+        drv_set_err(ERROR_CHN_BUSY, "direct error return");
         return ERROR_CHN_BUSY;
     }
 
@@ -124,7 +127,7 @@ int32_t hal_symc_crypt_romable(uint32_t symc_alg,
 
     /* Step 1. Try to alloc one free chn. */
     ret = hal_symc_try_alloc_chn_romable(&chn_num);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ERROR_CHN_BUSY);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ERROR_CHN_BUSY);
 
     idx = chn_num - 1;
 
@@ -139,10 +142,10 @@ int32_t hal_symc_crypt_romable(uint32_t symc_alg,
         }
 
         ret = hal_keyslot_mcipher_lock_romable(local_keyslot_chn);
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_free_chn);
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_free_chn);
 
         ret = hal_keyslot_mcipher_send_clear_key_romable(local_keyslot_chn, key, key_len, kl_key_cfg_val);
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_keyslot_unlock);
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_keyslot_unlock);
     }
 
     /* Step 3. Configure IN_SYM_CHN_KEY_CTRL and IN_SYM_OUT_CTRL. */
@@ -165,7 +168,7 @@ int32_t hal_symc_crypt_romable(uint32_t symc_alg,
     entry_in = &g_symc_entry_in[idx][g_symc_idx_in[idx]];
     if (iv != NULL) {
         ret = memcpy_s(entry_in->iv, sizeof(entry_in->iv), iv, CRYPTO_AES_IV_SIZE);
-        crypto_chk_goto_with_ret(ret, ret != EOK, exit_keyslot_unlock, ERROR_MEMCPY_S);
+        drv_err_chk_goto_with_ret(ret, ret != EOK, exit_keyslot_unlock, ERROR_MEMCPY_S);
     }
 
     /* Step 5. Configure input node info. */
@@ -200,7 +203,7 @@ int32_t hal_symc_crypt_romable(uint32_t symc_alg,
     if (is_noout == false) {
         crypto_cache_inv((uintptr_t)entry_out->sym_start_addr, len);
     }
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_keyslot_unlock);
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_keyslot_unlock);
 
     /* Step 10. Update iv. */
     if (iv != NULL) {
@@ -208,7 +211,7 @@ int32_t hal_symc_crypt_romable(uint32_t symc_alg,
             entry_in->iv[i] = spacc_reg_read(CHANN_CIPHER_IVOUT(chn_num) + i * CRYPTO_WORD_WIDTH);
         }
         ret = memcpy_s(iv, CRYPTO_AES_IV_SIZE, entry_in->iv, sizeof(entry_in->iv));
-        crypto_chk_goto_with_ret(ret, ret != EOK, exit_keyslot_unlock, ERROR_MEMCPY_S);
+        drv_err_chk_goto_with_ret(ret, ret != EOK, exit_keyslot_unlock, ERROR_MEMCPY_S);
     }
 
     ret = CRYPTO_SUCCESS;
@@ -262,6 +265,7 @@ int32_t hal_symc_wait_done_romable(uint32_t chn_num, bool is_noout)
     }
     if (i >= CRYPTO_SYMC_CALC_WAIT_TIMEOUT) {
         hal_symc_debug_romable(chn_num);
+        drv_set_err(ERROR_SYMC_CALC_TIMEOUT, "direct error return");
         return ERROR_SYMC_CALC_TIMEOUT;
     }
     return CRYPTO_SUCCESS;

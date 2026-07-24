@@ -6,6 +6,8 @@
 */
 #include "crypto_hash_common.h"
 
+#define FILE_ID FILE_ID_COMMON_CRYPTO_HASH_COMMON
+
 typedef struct {
     crypto_hash_type hash_type;
     const uint8_t *g_state;
@@ -100,10 +102,10 @@ int32_t crypto_hash_common_get_state(crypto_hash_type hash_type, uint32_t *state
             break;
         }
     }
-    crypto_chk_return(i >= crypto_array_size(g_hash_state), ERROR_INVALID_PARAM, "wrong hash type\n");
+    drv_err_chk_return(i >= crypto_array_size(g_hash_state), ERROR_INVALID_PARAM, "wrong hash type\n");
 
     ret = memcpy_s(state, *state_size, g_hash_state[i].g_state, g_hash_state[i].val_size);
-    crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     *state_size = g_hash_state[i].val_size;
     return CRYPTO_SUCCESS;
@@ -118,6 +120,7 @@ int32_t crypto_hash_common_type_check(crypto_hash_type hash_type)
             return CRYPTO_SUCCESS;
         }
     }
+    drv_set_err(CRYPTO_FAILURE, "direct error return");
     return CRYPTO_FAILURE;
 }
 

@@ -10,6 +10,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_SM2_COMPUTE_S
+
 static int sm2_ecfn_sign_s(const drv_pke_data *k, const drv_pke_data *d, const drv_pke_data *n,
     const drv_pke_data *r, const drv_pke_data *s)
 {
@@ -28,7 +30,7 @@ static int sm2_ecfn_sign_s(const drv_pke_data *k, const drv_pke_data *d, const d
 
     /* Step 2: start calculate. montgomery the data, and calculate (1 + dA) & (k - r*dA). */
     ret = inner_batch_instr_process(&instr_sm2_sign_s_pre_6, work_len);
-    crypto_chk_func_return(inner_batch_instr_process, ret);
+    drv_err_chk_func_return(inner_batch_instr_process, ret);
     /* Step 2.1 get data from the DRAM. 1+da from ecc_addr_k, k-r*da from ecc_addr_e */
     hal_pke_get_ram_romable(ecc_addr_k, k_inv, n->length);
 
@@ -36,11 +38,11 @@ static int sm2_ecfn_sign_s(const drv_pke_data *k, const drv_pke_data *d, const d
     aa = (drv_pke_data) {.data = k_inv, .length = n->length};
 
     ret = hal_pke_alg_ecc_inv_mod(&aa, s);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_inv_mod failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_inv_mod failed\n");
 
     /* Step 4: calculate k_inv * (k - r*da) mod n. and demontgomery the r & s. */
     ret = inner_batch_instr_process(&instr_sm2_sign_s_post_6, work_len);
-    crypto_chk_func_return(inner_batch_instr_process, ret);
+    drv_err_chk_func_return(inner_batch_instr_process, ret);
 
     /* Step 5: get data out from the DRAM. */
     hal_pke_get_ram_romable(ecc_addr_s, s->data, s->length);
@@ -65,10 +67,10 @@ int hal_pke_alg_sm2_compute_s(const drv_pke_data *d, const drv_pke_data *k,
     n.length = ecc_curve->ksize;
 
     ret = inner_update_modulus(n.data, n.length, init_param->mont_param_n);
-    crypto_chk_func_return(inner_update_modulus, ret);
+    drv_err_chk_func_return(inner_update_modulus, ret);
 
     ret = sm2_ecfn_sign_s(k, d, &n, r, s);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "sm2_ecfn_sign_s failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "sm2_ecfn_sign_s failed\n");
 
     return ret;
 }

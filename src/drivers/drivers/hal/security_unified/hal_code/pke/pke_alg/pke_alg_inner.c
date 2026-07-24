@@ -11,6 +11,8 @@
 #include "crypto_drv_common.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_PKE_ALG_INNER
+
 int inner_pke_alg_resume(void)
 {
     return hal_pke_lock_romable();

@@ -10,6 +10,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_SM2_ADD_MOD
+
 int hal_pke_alg_sm2_add_mod(const drv_pke_data *a, const drv_pke_data *b, const drv_pke_data *c)
 {
     int ret = CRYPTO_FAILURE;
@@ -30,7 +32,7 @@ int hal_pke_alg_sm2_add_mod(const drv_pke_data *a, const drv_pke_data *b, const 
 
     /* Step 2: start calculate. */
     ret = inner_batch_instr_process(&instr_sm2_verify_t_3, work_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* Step 3: get data out of DRAM. */
     hal_pke_get_ram_romable(ecc_addr_t, c->data, c->length);

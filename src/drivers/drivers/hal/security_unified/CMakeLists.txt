@@ -57,6 +57,7 @@ set(COMPONENT_PUBLIC_CCFLAGS
 )
 
 set(COMPONENT_CCFLAGS
+    SHELL:-include ${ROOT_DIR}/drivers/drivers/driver/security_unified/include/drv_include/drv_errno.h
 )
 
 set(WHOLE_LINK

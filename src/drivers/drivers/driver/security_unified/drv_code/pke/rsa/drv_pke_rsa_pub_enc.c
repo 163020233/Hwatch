@@ -6,6 +6,8 @@
 */
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_RSA_DRV_PKE_RSA_PUB_ENC
+
 #define RSA_PADLEN_11              11
 
 static int32_t rsa_encrypt(
@@ -36,19 +38,20 @@ static int32_t rsa_encrypt(
 #if defined(CONFIG_PKE_RSA_V15_SUPPORT)
         case DRV_PKE_RSA_SCHEME_PKCS1_V15: {
             ret = pkcs1_v15_encrypt(&en_pack);
-            crypto_chk_return(ret != TD_SUCCESS, ret, "pkcs1_v15_encrypt failed, ret is 0x%x\n", ret);
+            drv_err_chk_return(ret != TD_SUCCESS, ret, "pkcs1_v15_encrypt failed, ret is 0x%x\n", ret);
             break;
         }
 #endif
 #if defined(CONFIG_PKE_RSA_V21_SUPPORT)
         case DRV_PKE_RSA_SCHEME_PKCS1_V21: {
             ret = pkcs1_oaep_encrypt(hash_type, &en_pack, label);
-            crypto_chk_return(ret != TD_SUCCESS, ret, "pkcs1_oaep_encrypt failed, ret is 0x%x\n", ret);
+            drv_err_chk_return(ret != TD_SUCCESS, ret, "pkcs1_oaep_encrypt failed, ret is 0x%x\n", ret);
             break;
         }
 #endif
         default:
-            crypto_log_err("Invalid rsa encrypt padding type.\n");
+
+            drv_set_err(PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "direct error return");
             return PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM);
     }
     return ret;
@@ -71,16 +74,16 @@ static int32_t pke_rsa_encrypt(
     drv_pke_data tmp_out_data = { .data = output->data, .length = klen };
 
     em = crypto_malloc_coherent(klen);
-    crypto_chk_return(em == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(em == NULL, ERROR_MALLOC, "malloc failed\n");
     (void)memset_s(em, klen, 0x00, klen);
 
     ret = rsa_encrypt(scheme, hash_type, em, klen, input, label);
-    crypto_chk_goto(ret != TD_SUCCESS, exit_free, "rsa_encrypt failed, ret is 0x%x\n", ret);
+    drv_err_chk_goto(ret != TD_SUCCESS, exit_free, "rsa_encrypt failed, ret is 0x%x\n", ret);
 
     em_data.data = em;
     em_data.length = klen;
     ret = drv_cipher_pke_exp_mod(&n_data, &e_data, &em_data, &tmp_out_data);
-    crypto_chk_goto(ret != TD_SUCCESS, exit_free, "drv_cipher_pke_exp_mod failed, ret is 0x%x\n", ret);
+    drv_err_chk_goto(ret != TD_SUCCESS, exit_free, "drv_cipher_pke_exp_mod failed, ret is 0x%x\n", ret);
     if (memcmp(em_data.data, tmp_out_data.data, klen) == 0) {
         ret = PKE_COMPAT_ERRNO(ERROR_PKE_RSA_SAME_DATA);
         goto exit_free;
@@ -121,23 +124,23 @@ int32_t drv_cipher_pke_rsa_public_encrypt(
     klen = pub_key->len;
     input_len = input->length;
     hash_len = drv_get_hash_len(hash_type);
-    crypto_chk_return(hash_len == 0, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "hash_type is Invalid\n");
+    drv_err_chk_return(hash_len == 0, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "hash_type is Invalid\n");
 
-    crypto_chk_return(klen != DRV_PKE_LEN_1024 && klen != DRV_PKE_LEN_2048 && klen != DRV_PKE_LEN_3072 &&
+    drv_err_chk_return(klen != DRV_PKE_LEN_1024 && klen != DRV_PKE_LEN_2048 && klen != DRV_PKE_LEN_3072 &&
         klen != DRV_PKE_LEN_4096, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "klen is Invalid\n");
     /*
      * For V15, the plain_text's max length is klen - 11.
      * For OAEP, the plain_text's max length is klen - 2 * hash_len - 2.
      */
     if (scheme == DRV_PKE_RSA_SCHEME_PKCS1_V15) {
-        crypto_chk_return(input_len > klen - RSA_PADLEN_11, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+        drv_err_chk_return(input_len > klen - RSA_PADLEN_11, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
             "input_len is too long for V15\n");
     } else {
-        crypto_chk_return(input_len > klen - 2 * hash_len - 2,  // 2: refer to comment.
+        drv_err_chk_return(input_len > klen - 2 * hash_len - 2,  // 2: refer to comment.
             PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "input_len is too long for V21\n");
     }
-    crypto_chk_return(input_len == 0, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "input_len is zero\n");
-    crypto_chk_return(output->length < klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "output_len is Invalid\n");
+    drv_err_chk_return(input_len == 0, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "input_len is zero\n");
+    drv_err_chk_return(output->length < klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "output_len is Invalid\n");
 
     ret = pke_rsa_encrypt(scheme, hash_type, pub_key, input, label, output);
     if (ret == TD_SUCCESS) {

@@ -13,6 +13,8 @@
 #include "pke_alg_inner.h"
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_ENHANCE_PKE_ALG_ECC_POINT_MUL_SEC
+
 #define MAX_ECC_LENGTH        72
 #define PKE_MONT_LEN_IN_WORD 4
 #define ALIGNED_IN_16_BYTE 16
@@ -53,7 +55,7 @@ static int inner_hal_pke_alg_compute_t_s_sec(const drv_pke_data *k, const drv_pk
 
     /* STEP1.1: get rand_t (1, 2**(rand_bit_len-1)) */
     ret = inner_get_random_sec(rand_t, RAND_T_LEN);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_get_random failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_get_random failed\n");
 
     /* STEP1.2: r_t = r_t | 2**(rand_bit_len-1) */
     random_delay();
@@ -73,7 +75,7 @@ static int inner_hal_pke_alg_compute_t_s_sec(const drv_pke_data *k, const drv_pk
 
     /* STEP1.4: run instr to calculate t */
     ret = inner_batch_instr_process_sec(&instr_ecfp_blind_key_t, work_len);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* STEP1.5: get final t */
     hal_pke_get_ram_romable(ecc_addr_t3, t_data->data, t_data->length);
@@ -90,10 +92,10 @@ static int inner_hal_pke_alg_compute_t_s_sec(const drv_pke_data *k, const drv_pk
 
     /* STEP2.2: get rand_s (1, 2**(max_bit_len - bit_len_old - 1)) */
     rand_s = crypto_malloc_coherent(rand_s_byte_len);
-    crypto_chk_return(rand_s == NULL, ERROR_MALLOC, "crypto_malloc rand_s failed\n");
+    drv_err_chk_return(rand_s == NULL, ERROR_MALLOC, "crypto_malloc rand_s failed\n");
 
     ret = inner_get_random_sec(rand_s, rand_s_byte_len);
-    crypto_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free_s, "inner_get_random failed\n");
+    drv_err_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free_s, "inner_get_random failed\n");
 
     /* STEP2.3: r_s = r_s | 2**(max_bit_len - bit_len_old - 1) */
     /* make sure highest bit is 1, higher bit is 0 */
@@ -105,7 +107,7 @@ static int inner_hal_pke_alg_compute_t_s_sec(const drv_pke_data *k, const drv_pk
 
     /* STEP2.5: run instr to calculate s */
     ret = inner_batch_instr_process_sec(&instr_ecfp_blind_key_s, work_len);
-    crypto_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free_s, "inner_batch_instr_process failed\n");
+    drv_err_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free_s, "inner_batch_instr_process failed\n");
 
     /* STEP2.6: get final s */
     hal_pke_get_ram_romable(ecc_addr_s, s_data->data, s_data->length);
@@ -127,25 +129,25 @@ static int inner_gen_random_point_sec(unsigned int klen)
     const rom_lib *batch_instr_loop[] = {&instr_ecfp_mul_c_double_22, &instr_ecfp_mul_jj_22_23, NULL, NULL};
 
     ret = inner_get_random_sec(rand_z, z_len);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_get_random failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_get_random failed\n");
 
     hal_pke_set_ram_romable(ecc_addr_pz, rand_z, z_len);
 
     ret = inner_batch_instr_process_sec(&instr_ecfp_blind_gen_point_r, klen);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     ret = inner_get_random_sec(rand_k, k_len);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_get_random failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_get_random failed\n");
     random_delay();
     rand_k[0] |= 0x80; /* make sure highest bit is 1 */
     random_delay();
 
     loop_num = k_len * CRYPTO_BITS_IN_BYTE;
     ret = hal_pke_loop_batch_compute_sec(loop_num, rand_k, NULL, k_len, batch_instr_loop);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
 
     ret = inner_batch_instr_process_sec(&instr_ecfp_blind_gen_point_t_new, klen);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     return ret;
 }
@@ -169,13 +171,13 @@ static int inner_point_mul_calculate_sec(const drv_pke_data t_data, const drv_pk
 
     /* 混淆随机点 */
     ret = inner_get_random_sec((unsigned char *)&tmp_r, sizeof(tmp_r));
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_get_random failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_get_random failed\n");
     random_delay();
     tmp_r %= 4;    /* 4: tmpr is rand 0 1 2 3 */
     random_delay();
 
     ret = inner_batch_instr_process_sec(&mix_point[tmp_r], klen);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* 产生初始点 */
     init_flag = \
@@ -183,7 +185,7 @@ static int inner_point_mul_calculate_sec(const drv_pke_data t_data, const drv_pk
         (uint32_t)crypto_pke_common_get_bit_from_low_to_high(s_data.data, s_data.length, max_bit_len - 1);
     init_flag ^= tmp_r;
     ret = inner_batch_instr_process_sec(&init_point[init_flag], klen);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* 循环计算 */
     s_data_mask = ((tmp_r & 0x1) == 0) ? 0 : 0xff;
@@ -192,11 +194,11 @@ static int inner_point_mul_calculate_sec(const drv_pke_data t_data, const drv_pk
         s_data.data[i] ^= s_data_mask;
         t_data.data[i] ^= t_data_mask;
     }
-    crypto_chk_return(i != s_data.length && i != t_data.length, CRYPTO_ENHANCE_FAILURE, "for loop is not ended\n");
+    drv_err_chk_return(i != s_data.length && i != t_data.length, CRYPTO_ENHANCE_FAILURE, "for loop is not ended\n");
 
     loop_num = max_bit_len - 1;
     ret = hal_pke_loop_batch_compute_sec(loop_num, s_data.data, t_data.data, s_data.length, batch_instr_loop);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
     return ret;
 }
 
@@ -224,14 +226,14 @@ int hal_pke_alg_ecc_point_mul_sec(const drv_pke_data *k, const drv_pke_ecc_point
     max_ts_len = klen + RAND_T_LEN;
 
     buffer = crypto_malloc_coherent(max_ts_len * 2);    /* 2: t and s */
-    crypto_chk_return(buffer == NULL, ERROR_MALLOC, "crypto_malloc failed\n");
+    drv_err_chk_return(buffer == NULL, ERROR_MALLOC, "crypto_malloc failed\n");
 
     t_data.data = buffer;
     t_data.length = max_ts_len;
     s_data.data = buffer + max_ts_len;
     s_data.length = max_ts_len;
     ret = inner_hal_pke_alg_compute_t_s_sec(k, ecc_curve, &t_data, &s_data, &max_bit_len);
-    crypto_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free, "inner_update_modulus failed\n");
+    drv_err_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free, "inner_update_modulus failed\n");
 
     /* Step 2: set p/point/mont_param into register, work_len recovery klen. */
     hal_pke_set_work_len_romable(klen);
@@ -242,26 +244,26 @@ int hal_pke_alg_ecc_point_mul_sec(const drv_pke_data *k, const drv_pke_ecc_point
 
     /* Step 3: generate random point */
     ret = inner_gen_random_point_sec(klen);
-    crypto_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free, "inner_gen_random_point failed\n");
+    drv_err_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free, "inner_gen_random_point failed\n");
 
     /* Step 4: 混淆随机点，产生初始点，循环运算 */
     ret = inner_point_mul_calculate_sec(t_data, s_data, klen, max_bit_len);
-    crypto_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free, "inner_point_mul_calculate failed\n");
+    drv_err_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, free, "inner_point_mul_calculate failed\n");
 
     /* Step 5: trans result data from jacobin coordinate system to affine coordinate system. */
     ret = inner_ecfp_jac_to_aff(&mod_p);
     random_delay();
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, free, "inner_ecfp_jac_to_aff failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, free, "inner_ecfp_jac_to_aff failed\n");
     random_delay();
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, free, "inner_ecfp_jac_to_aff failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, free, "inner_ecfp_jac_to_aff failed\n");
     ret = CRYPTO_ENHANCE_SUCCESS;
 
     /* Step 6. demontgomery data. */
     ret = inner_ecfp_demontgomery_data_aff(r);
     random_delay();
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, free, "inner_ecfp_demontgomery_data_aff failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, free, "inner_ecfp_demontgomery_data_aff failed\n");
     random_delay();
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, free, "inner_ecfp_demontgomery_data_aff failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, free, "inner_ecfp_demontgomery_data_aff failed\n");
     ret = CRYPTO_ENHANCE_SUCCESS;
 
 free:

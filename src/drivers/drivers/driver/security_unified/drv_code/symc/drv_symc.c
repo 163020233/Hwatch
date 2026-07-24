@@ -11,9 +11,11 @@
 
 #include "hal_keyslot.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_SYMC_DRV_SYMC
+
 #define SYMC_COMPAT_ERRNO(err_code)     DRV_COMPAT_ERRNO(ERROR_MODULE_SYMC, err_code)
 #define symc_null_ptr_chk(ptr)   \
-    crypto_chk_return((ptr) == TD_NULL, SYMC_COMPAT_ERRNO(ERROR_PARAM_IS_NULL), #ptr" is NULL\n")
+    drv_err_chk_return((ptr) == TD_NULL, SYMC_COMPAT_ERRNO(ERROR_PARAM_IS_NULL), #ptr" is NULL\n")
 
 #define DRV_SYMC_BUF_LEN    256
 
@@ -55,6 +57,7 @@ static int32_t inner_symc_alg_chk(uint32_t alg)
             return CRYPTO_SUCCESS;
         }
     }
+    drv_set_err(ERROR_INVALID_PARAM, "direct error return");
     return ERROR_INVALID_PARAM;
 }
 
@@ -78,7 +81,7 @@ int drv_cipher_symc_crypt(uint32_t alg, const uint8_t *src, uint8_t *dst, uint32
         symc_null_ptr_chk(key);
     }
     ret = inner_symc_alg_chk(alg);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "invalid alg\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "invalid alg\n");
 
 #if defined(CONFIG_SPACC_NON_ALIGNED_ADDR_SUPPORT)
     crypto_unused(aligned_buf);
@@ -100,7 +103,7 @@ int drv_cipher_symc_crypt(uint32_t alg, const uint8_t *src, uint8_t *dst, uint32
     }
     /* process unaligned address. */
     aligned_buf = crypto_malloc_coherent(DRV_SYMC_BUF_LEN);
-    crypto_chk_return(aligned_buf == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(aligned_buf == NULL, ERROR_MALLOC, "malloc failed\n");
 
     src_phys_addr = crypto_get_phys_addr(aligned_buf);
     dst_phys_addr = src_phys_addr;
@@ -108,15 +111,15 @@ int drv_cipher_symc_crypt(uint32_t alg, const uint8_t *src, uint8_t *dst, uint32
     while (left > 0) {
         processing_len = crypto_min(left, DRV_SYMC_BUF_LEN);
         ret = memcpy_s(aligned_buf, DRV_SYMC_BUF_LEN, src + processed_len, processing_len);
-        crypto_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy failed\n");
+        drv_err_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy failed\n");
 
         ret = hal_cipher_symc_crypt(crypto_get_symc_alg(alg), crypto_get_symc_work_mode(alg),
             crypto_get_symc_bit_width(alg), src_phys_addr, dst_phys_addr, processing_len,
             iv, key, key_len, keyslot_handle, is_decrypt);
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hal_cipher_symc_crypt failed\n");
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hal_cipher_symc_crypt failed\n");
 
         ret = memcpy_s(dst + processed_len, data_len - processed_len, aligned_buf, processing_len);
-        crypto_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy failed\n");
+        drv_err_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy failed\n");
 
         left -= processing_len;
         processed_len += processing_len;
@@ -150,18 +153,18 @@ int32_t drv_cipher_symc_setup(void **ctx, uint32_t alg,
         symc_null_ptr_chk(key);
     }
     /* key_len check. */
-    crypto_chk_return(key_len != CRYPTO_128_KEY_LEN && key_len != CRYPTO_192_KEY_LEN && key_len != CRYPTO_256_KEY_LEN,
+    drv_err_chk_return(key_len != CRYPTO_128_KEY_LEN && key_len != CRYPTO_192_KEY_LEN && key_len != CRYPTO_256_KEY_LEN,
         SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "key_len is invalid\n");
     ret = inner_symc_alg_chk(alg);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "invalid alg\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "invalid alg\n");
 
     symc_ctx = crypto_malloc_coherent(sizeof(drv_symc_simple_ctx));
-    crypto_chk_return(symc_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(symc_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
     (void)memset_s(symc_ctx, sizeof(drv_symc_simple_ctx), 0, sizeof(drv_symc_simple_ctx));
 
     if (keyslot_handle == CRYPTO_INVALID_KEYSLOT_HANDLE) {
         ret = memcpy_s(symc_ctx->key, sizeof(symc_ctx->key), key, key_len);
-        crypto_chk_goto_with_ret(ret, ret != EOK, error_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_goto_with_ret(ret, ret != EOK, error_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
     }
 
     symc_ctx->keyslot_handle = keyslot_handle;
@@ -184,7 +187,7 @@ int32_t drv_cipher_symc_ecb_update(void *ctx, const uint8_t *src, uint8_t *dst, 
     drv_symc_simple_ctx *symc_ctx = (drv_symc_simple_ctx *)ctx;
 
     symc_null_ptr_chk(symc_ctx);
-    crypto_chk_return((data_len % CRYPTO_AES_BLOCK_SIZE_IN_BYTES) != 0, ERROR_SYMC_LEN_NOT_ALIGNED);
+    drv_err_chk_return((data_len % CRYPTO_AES_BLOCK_SIZE_IN_BYTES) != 0, ERROR_SYMC_LEN_NOT_ALIGNED);
 
     return drv_cipher_symc_crypt(symc_ctx->alg, src, dst, data_len, NULL, symc_ctx->key, symc_ctx->key_len,
         symc_ctx->keyslot_handle, symc_ctx->is_encrypt);
@@ -195,7 +198,7 @@ int32_t drv_cipher_symc_cbc_update(void *ctx, const uint8_t *src, uint8_t *dst, 
     drv_symc_simple_ctx *symc_ctx = (drv_symc_simple_ctx *)ctx;
 
     symc_null_ptr_chk(symc_ctx);
-    crypto_chk_return((data_len % CRYPTO_AES_BLOCK_SIZE_IN_BYTES) != 0, ERROR_SYMC_LEN_NOT_ALIGNED);
+    drv_err_chk_return((data_len % CRYPTO_AES_BLOCK_SIZE_IN_BYTES) != 0, ERROR_SYMC_LEN_NOT_ALIGNED);
 
     return drv_cipher_symc_crypt(symc_ctx->alg, src, dst, data_len, iv, symc_ctx->key, symc_ctx->key_len,
         symc_ctx->keyslot_handle, symc_ctx->is_encrypt);
@@ -238,7 +241,7 @@ int32_t drv_cipher_symc_ctr_update(void *ctx, const uint8_t *src, uint8_t *dst, 
     processing_len = left - left % CRYPTO_AES_BLOCK_SIZE_IN_BYTES;
     ret = drv_cipher_symc_crypt(symc_ctx->alg, src + processed_len, dst + processed_len, processing_len,
         nonce_counter, symc_ctx->key, symc_ctx->key_len, symc_ctx->keyslot_handle, symc_ctx->is_encrypt);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
     left -= processing_len;
     processed_len += processing_len;
 
@@ -248,7 +251,7 @@ int32_t drv_cipher_symc_ctr_update(void *ctx, const uint8_t *src, uint8_t *dst, 
         ret = drv_cipher_symc_crypt(symc_ctx->alg, symc_ctx->stream_block, symc_ctx->stream_block,
             sizeof(symc_ctx->stream_block), nonce_counter, symc_ctx->key, symc_ctx->key_len, symc_ctx->keyslot_handle,
             symc_ctx->is_encrypt);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
 
         (void)memcpy_s(stream_block, CRYPTO_AES_BLOCK_SIZE_IN_BYTES,
             symc_ctx->stream_block, sizeof(symc_ctx->stream_block));
@@ -304,7 +307,7 @@ int32_t drv_cipher_symc_ofb_update(void *ctx, const uint8_t *src, uint8_t *dst, 
         processing_len = left;
         ret = drv_cipher_symc_crypt(symc_ctx->alg, src + processed_len, dst + processed_len, processing_len,
             iv, symc_ctx->key, symc_ctx->key_len, symc_ctx->keyslot_handle, symc_ctx->is_encrypt);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
     
         left -= processing_len;
         processed_len += processing_len;
@@ -355,7 +358,7 @@ int32_t drv_cipher_symc_cfb128_update(void *ctx, const uint8_t *src, uint8_t *ds
         if (left != 0) {
             ret = drv_cipher_symc_crypt(symc_ctx->alg, src + processed_len, dst + processed_len, left,
                 iv, symc_ctx->key, symc_ctx->key_len, symc_ctx->keyslot_handle, symc_ctx->is_encrypt);
-            crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
+            drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
             *iv_off = left % CRYPTO_AES_BLOCK_SIZE_IN_BYTES;
         }
     } else {
@@ -377,7 +380,7 @@ int32_t drv_cipher_symc_cfb128_update(void *ctx, const uint8_t *src, uint8_t *ds
         if (processing_len != 0) {
             ret = drv_cipher_symc_crypt(symc_ctx->alg, src + processed_len, dst + processed_len, processing_len,
                 iv, symc_ctx->key, symc_ctx->key_len, symc_ctx->keyslot_handle, symc_ctx->is_encrypt);
-            crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
+            drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
 
             left -= processing_len;
             processed_len += processing_len;
@@ -390,7 +393,7 @@ int32_t drv_cipher_symc_cfb128_update(void *ctx, const uint8_t *src, uint8_t *ds
                 crypto_compat_symc_alg(crypto_get_symc_alg(symc_ctx->alg), CRYPTO_SYMC_WORK_MODE_ECB,
                 CRYPTO_SYMC_BIT_WIDTH_128BIT), symc_ctx->stream_block, symc_ctx->stream_block,
                 CRYPTO_AES_BLOCK_SIZE_IN_BYTES, NULL, symc_ctx->key, symc_ctx->key_len, symc_ctx->keyslot_handle, true);
-            crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
+            drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
 
             (void)memcpy_s(iv, CRYPTO_AES_BLOCK_SIZE_IN_BYTES, symc_ctx->stream_block, CRYPTO_AES_BLOCK_SIZE_IN_BYTES);
             for (; *iv_off < left; (*iv_off)++) {
@@ -426,7 +429,7 @@ int32_t drv_cipher_symc_cfb8_update(void *ctx, const uint8_t *src, uint8_t *dst,
 #endif
     ret = drv_cipher_symc_crypt(symc_ctx->alg, src, dst, data_len,
         iv, symc_ctx->key, symc_ctx->key_len, symc_ctx->keyslot_handle, symc_ctx->is_encrypt);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
 
     *iv_off = (*iv_off + data_len) % CRYPTO_AES_BLOCK_SIZE_IN_BYTES;
 #if defined(CONFIG_DRV_SYMC_CFB8_DEBUG_ENABLE)
@@ -454,7 +457,7 @@ int32_t drv_cipher_symc_cfb1_update(void *ctx, const uint8_t *src, uint8_t *dst,
 #endif
     ret = drv_cipher_symc_crypt(symc_ctx->alg, src, dst, data_len,
         iv, symc_ctx->key, symc_ctx->key_len, symc_ctx->keyslot_handle, symc_ctx->is_encrypt);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_cipher_symc_crypt failed\n");
 
     *iv_off = (*iv_off + data_len) % CRYPTO_AES_BLOCK_SIZE_IN_BYTES;
 #if defined(CONFIG_DRV_SYMC_CFB1_DEBUG_ENABLE)
@@ -481,11 +484,11 @@ int32_t drv_cipher_symc_set_key(void *ctx, const uint8_t *key, uint32_t key_len,
     drv_symc_simple_ctx *symc_ctx = (drv_symc_simple_ctx *)ctx;
     symc_null_ptr_chk(ctx);
     symc_null_ptr_chk(key);
-    crypto_chk_return(key_len != CRYPTO_128_KEY_LEN && key_len != CRYPTO_192_KEY_LEN && key_len != CRYPTO_256_KEY_LEN,
+    drv_err_chk_return(key_len != CRYPTO_128_KEY_LEN && key_len != CRYPTO_192_KEY_LEN && key_len != CRYPTO_256_KEY_LEN,
         ERROR_INVALID_PARAM, "key_len is invalid\n");
 
     ret = memcpy_s(symc_ctx->key, sizeof(symc_ctx->key), key, key_len);
-    crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     symc_ctx->keyslot_handle = keyslot_handle;
     symc_ctx->key_len = key_len;
@@ -508,7 +511,7 @@ int32_t drv_cipher_symc_set_alg(void *ctx, uint32_t alg)
 
     symc_null_ptr_chk(ctx);
     ret = inner_symc_alg_chk(alg);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "invalid alg\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "invalid alg\n");
     symc_ctx->alg = alg;
     return CRYPTO_SUCCESS;
 }

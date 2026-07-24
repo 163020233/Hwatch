@@ -8,6 +8,8 @@
 #include "hal_common.h"
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_COMMON_HAL_COMMON
+
 /* for all trng, different MICRO for different realizement. */
 void __attribute__((weak)) hal_sec_open_clk(unsigned int module_id)
 {

@@ -12,6 +12,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_HAL_PKE
+
 void hal_pke_set_ram_not_aligned(uint32_t ram_section, const uint8_t *data, uint32_t data_len, uint32_t work_len)
 {
     td_u32 i = 0;

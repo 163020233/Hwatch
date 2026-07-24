@@ -11,6 +11,8 @@
 #include "km.h"
 #include "security_hmac.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_HMAC_SHA1_SIMPLE
+
 #ifdef CONFIG_HASH_SUPPORT_HMAC_SHA1
 errcode_t uapi_drv_cipher_hmac_sha1_start(hmac_handle_t *ctx, const uint8_t *key, uint32_t key_len,
     uint32_t keyslot_handle)

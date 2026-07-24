@@ -6,6 +6,8 @@
 */
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_ECC_DRV_PKE_ECDSA_ECDH
+
 #define MAX_ECC_LENGTH      72
 /* According to SEC1 "3.3.2 Elliptic Curve Cofactor Diffie-Hellman Primitive" */
 static int inner_ecc_gen_ecdh_key(const drv_pke_ecc_point *input_pub_key, const drv_pke_data *input_priv_key,
@@ -29,7 +31,7 @@ static int inner_ecc_gen_ecdh_key(const drv_pke_ecc_point *input_pub_key, const 
     */
 
     ret = hal_pke_alg_ecc_point_mul(input_priv_key, input_pub_key, &rr);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_point_mul failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_point_mul failed\n");
 
     crypto_pke_dump_data("P(x)", rr.x, input_priv_key->length);
     /* Step 2. Check that if P(x, y) is ZERO. */
@@ -48,6 +50,7 @@ int drv_cipher_pke_ecc_gen_ecdh_key(drv_pke_ecc_curve_type curve_type, const drv
 #if defined(CONFIG_PKE_CURVE_ECDH_SUPPORT)
         return drv_cipher_pke_curve_gen_ecdh_key(curve_type, input_pub_key, input_priv_key, output_shared_key);
 #else
+        drv_set_err(ERROR_UNSUPPORT, "direct error return");
         return ERROR_UNSUPPORT;
 #endif
     }
@@ -63,18 +66,18 @@ int drv_cipher_pke_ecc_gen_ecdh_key(drv_pke_ecc_curve_type curve_type, const drv
 
     /* length check. */
     klen = crypto_pke_get_klen(curve_type);
-    crypto_chk_return(input_priv_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(input_priv_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "input_priv_key->length is invalid\n");
-    crypto_chk_return(input_pub_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(input_pub_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "input_pub_key->length is invalid\n");
-    crypto_chk_return(output_shared_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(output_shared_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "output_shared_key->length is invalid\n");
 
     ret = hal_pke_alg_ecc_init(curve_type);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
 
     ret = inner_ecc_gen_ecdh_key(input_pub_key, input_priv_key, output_shared_key);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_ecc_gen_ecdh_key failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_ecc_gen_ecdh_key failed\n");
 
 exit_deinit:
     hal_pke_alg_ecc_deinit();

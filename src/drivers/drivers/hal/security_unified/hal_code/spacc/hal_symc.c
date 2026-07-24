@@ -11,6 +11,8 @@
 #include "hal_spacc_reg.h"
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_SPACC_HAL_SYMC
+
 static void hal_cipher_symc_print_entry_in(const hal_symc_entry_in_t *entry_in)
 {
     crypto_unused(entry_in);
@@ -226,7 +228,7 @@ int hal_cipher_symc_cmac(crypto_symc_alg symc_alg,
             aligned_len -= CRYPTO_AES_BLOCK_SIZE_IN_BYTES;
         }
         ret = hal_cipher_symc_cbc_mac(symc_alg, data_phys_addr, aligned_len, mac, key, key_len, keyslot_chn_num);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_cbc_mac failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_cbc_mac failed\n");
     }
     tail_len = data_len - aligned_len;
     return hal_cipher_symc_crypt(symc_alg, CRYPTO_SYMC_WORK_MODE_CMAC, CRYPTO_SYMC_BIT_WIDTH_128BIT,

@@ -10,6 +10,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_SYMC_DRV_SYMC_GHASH
+
 #if defined(CONFIG_DRV_SYMC_DEBUG_ENABLE)
 #define crypto_drv_symc_ghash_dump        crypto_dump_data
 #else
@@ -20,7 +22,7 @@
 
 #define SYMC_COMPAT_ERRNO(err_code)     DRV_COMPAT_ERRNO(ERROR_MODULE_SYMC, err_code)
 #define symc_null_ptr_chk(ptr)   \
-    crypto_chk_return((ptr) == NULL, SYMC_COMPAT_ERRNO(ERROR_PARAM_IS_NULL), #ptr" is NULL\n")
+    drv_err_chk_return((ptr) == NULL, SYMC_COMPAT_ERRNO(ERROR_PARAM_IS_NULL), #ptr" is NULL\n")
 
 typedef struct {
     unsigned char ghash[16];
@@ -44,16 +46,16 @@ int drv_symc_ghash_start(void **ctx, crypto_symc_alg symc_alg,
         symc_null_ptr_chk(key);
     }
     /* key_len check. */
-    crypto_chk_return(key_len != CRYPTO_128_KEY_LEN && key_len != CRYPTO_192_KEY_LEN && key_len != CRYPTO_256_KEY_LEN,
+    drv_err_chk_return(key_len != CRYPTO_128_KEY_LEN && key_len != CRYPTO_192_KEY_LEN && key_len != CRYPTO_256_KEY_LEN,
         SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "key_len is invalid\n");
 
     ghash_ctx = crypto_malloc_coherent(sizeof(drv_ghash_ctx_t));
-    crypto_chk_return(ghash_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(ghash_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
     (void)memset_s(ghash_ctx, sizeof(drv_ghash_ctx_t), 0, sizeof(drv_ghash_ctx_t));
 
     if (keyslot_handle == 0xFFFFFFFF) {
         ret = memcpy_s(ghash_ctx->key, sizeof(ghash_ctx->key), key, key_len);
-        crypto_chk_goto_with_ret(ret, ret != EOK, error_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_goto_with_ret(ret, ret != EOK, error_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
     }
     ghash_ctx->key_len = key_len;
     ghash_ctx->keyslot_handle = keyslot_handle;
@@ -87,7 +89,7 @@ int drv_symc_ghash_update(void *ctx, const unsigned char *data, unsigned int dat
 
     processing_len = crypto_min(DRV_SYMC_GHASH_BUF_LEN - tail_len, data_len);
     ret = memcpy_s(ghash_ctx->buf + tail_len, DRV_SYMC_GHASH_BUF_LEN - tail_len, data, processing_len);
-    crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     ghash_ctx->tail_len += processing_len;
     processed_len += processing_len;
@@ -96,7 +98,7 @@ int drv_symc_ghash_update(void *ctx, const unsigned char *data, unsigned int dat
     if (ghash_ctx->tail_len == DRV_SYMC_GHASH_BUF_LEN) {
         ret = hal_cipher_symc_gcm_ghash(ghash_ctx->symc_alg, crypto_get_phys_addr(ghash_ctx->buf),
             DRV_SYMC_GHASH_BUF_LEN, ghash_ctx->ghash, ghash_ctx->key, ghash_ctx->key_len, ghash_ctx->keyslot_handle);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_gcm_ghash failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_gcm_ghash failed\n");
         ghash_ctx->tail_len = 0;
     }
 
@@ -104,7 +106,7 @@ int drv_symc_ghash_update(void *ctx, const unsigned char *data, unsigned int dat
     processing_len = left - left % DRV_SYMC_GHASH_BUF_LEN;
     ret = hal_cipher_symc_gcm_ghash(ghash_ctx->symc_alg, crypto_get_phys_addr(data + processed_len),
         processing_len, ghash_ctx->ghash, ghash_ctx->key, ghash_ctx->key_len, ghash_ctx->keyslot_handle);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_gcm_ghash failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_gcm_ghash failed\n");
 
     left -= processing_len;
     processed_len += processing_len;
@@ -112,11 +114,11 @@ int drv_symc_ghash_update(void *ctx, const unsigned char *data, unsigned int dat
     while (left >= DRV_SYMC_GHASH_BUF_LEN) {
         processing_len = DRV_SYMC_GHASH_BUF_LEN;
         ret = memcpy_s(ghash_ctx->buf, DRV_SYMC_GHASH_BUF_LEN, data + processed_len, processing_len);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
         ret = hal_cipher_symc_gcm_ghash(ghash_ctx->symc_alg, crypto_get_phys_addr(ghash_ctx->buf),
             DRV_SYMC_GHASH_BUF_LEN, ghash_ctx->ghash, ghash_ctx->key, ghash_ctx->key_len, ghash_ctx->keyslot_handle);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_gcm_ghash failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_gcm_ghash failed\n");
 
         left -= processing_len;
         processed_len += processing_len;
@@ -153,10 +155,10 @@ int drv_symc_ghash_finish(void *ctx, unsigned char ghash[16])
 
         ret = hal_cipher_symc_gcm_ghash(ghash_ctx->symc_alg, crypto_get_phys_addr(ghash_ctx->buf), processing_len,
             ghash_ctx->ghash, ghash_ctx->key, ghash_ctx->key_len, ghash_ctx->keyslot_handle);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_gcm_ghash failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_gcm_ghash failed\n");
     }
     ret = memcpy_s(ghash, CRYPTO_AES_BLOCK_SIZE_IN_BYTES, ghash_ctx->ghash, CRYPTO_AES_BLOCK_SIZE_IN_BYTES);
-    crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     return 0;
 }

@@ -22,6 +22,8 @@
 #include "trng.h"
 #include "ipc_ecdh_clac.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_IPC_ECDH_CLAC
+
 #define IPC_ECDH_SEND_TIMEOUT 500
 
 #ifdef IPC_NEW

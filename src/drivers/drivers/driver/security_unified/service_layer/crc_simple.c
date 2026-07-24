@@ -11,6 +11,8 @@
 #include "sl_common.h"
 #include "security_crc.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_CRC_SIMPLE
+
 #ifdef CONFIG_SYMC_SUPPORT_CRC16
 errcode_t uapi_drv_cipher_crc16_compute(const uint8_t *data, uint32_t data_len, uint16_t *out_crc)
 {

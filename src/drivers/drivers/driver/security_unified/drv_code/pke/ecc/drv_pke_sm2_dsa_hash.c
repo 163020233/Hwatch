@@ -6,6 +6,8 @@
 */
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_ECC_DRV_PKE_SM2_DSA_HASH
+
 #define ENTLA_LEN                   2
 #define ZA_ARR_SIZE                 8
 #define E_ARR_SIZE                  2
@@ -41,13 +43,13 @@ static int inner_sm2_dsa_hash(const drv_pke_data *sm2_id, const drv_pke_ecc_poin
     arr[7] = (const drv_pke_data) { .data = (unsigned char *)pub_key->y, .length = CRYPTO_SM2_LEN_IN_BYTES };
 
     ret = crypto_pke_common_calc_hash(arr, ZA_ARR_SIZE, DRV_PKE_HASH_TYPE_SM3, &hash_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_calc_hash failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_calc_hash failed\n");
 
     /* e = Hash(Za||M) */
     arr[0] = (const drv_pke_data) { .data = hash_data.data, .length = CRYPTO_SM2_LEN_IN_BYTES };
     arr[1] = (const drv_pke_data) { .data = msg->data, .length = msg->length };
     ret = crypto_pke_common_calc_hash(arr, E_ARR_SIZE, DRV_PKE_HASH_TYPE_SM3, &hash_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_calc_hash failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_calc_hash failed\n");
 
     return ret;
 }
@@ -71,16 +73,16 @@ int drv_cipher_pke_sm2_dsa_hash(const drv_pke_data *sm2_id, const drv_pke_ecc_po
     pke_null_ptr_chk(hash->data);
 
     /* length check. */
-    crypto_chk_return(pub_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(pub_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "pub_key->length is invalid\n");
-    crypto_chk_return(hash->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(hash->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "hash->length is invalid\n");
 
     ret = hal_pke_alg_ecc_init(DRV_PKE_ECC_TYPE_SM2);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
 
     ret = inner_sm2_dsa_hash(sm2_id, pub_key, msg, hash);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_sm2_dsa_hash failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_sm2_dsa_hash failed\n");
 
 exit_deinit:
     hal_pke_alg_ecc_deinit();

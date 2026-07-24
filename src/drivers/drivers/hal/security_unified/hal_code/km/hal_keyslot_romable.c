@@ -19,6 +19,8 @@
 #include "security_enhancement.h"
 #endif
 
+#define FILE_ID FILE_ID_HAL_CODE_KM_HAL_KEYSLOT_ROMABLE
+
 #define REE_KL_KEY_SEC_CFG_VAL  0x1E
 #define TEE_KL_KEY_SEC_CFG_VAL  0x3F
 
@@ -142,6 +144,7 @@ CRYPTO_STATIC int32_t inner_keyslot_lock(uint32_t keyslot_num, bool is_hmac)
 
     stat.u32 = km_reg_read(KC_RD_LOCK_STATUS);
     if (lock_state_expected != stat.bits.rd_lock_status) {
+        drv_set_err(ERROR_CHN_BUSY, "direct error return");
         return ERROR_CHN_BUSY;
     }
 #endif
@@ -225,7 +228,7 @@ CRYPTO_STATIC int32_t inner_send_clear_key(uint32_t keyslot_chn, const uint8_t *
 
     /* Step 6. Wait finish. */
     ret = hal_keyslot_wait_done_romable();
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_clean);
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_clean);
 
 #if !defined(CONFIG_HKM_SUPPORT)
     if (key_len != HKL_KEY_LEN) {
@@ -235,7 +238,7 @@ CRYPTO_STATIC int32_t inner_send_clear_key(uint32_t keyslot_chn, const uint8_t *
         km_reg_write(KL_CLR_CTRL, clr_ctrl.u32);
 
         ret = hal_keyslot_wait_done_romable();
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_clean);
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_clean);
     }
 #endif
 
@@ -281,14 +284,17 @@ int32_t hal_keyslot_wait_done_romable(void)
         crypto_udelay(1);
     }
     if (i >= CRYPTO_KLAD_CLR_ROUTE_TIMEOUT) {
+        drv_set_err(ERROR_KLAD_TIMEOUT, "direct error return");
         return ERROR_KLAD_TIMEOUT;
     }
 
     /* Step 7. Error check. */
     if (km_reg_read(KL_ERROR) != 0) {
+        drv_set_err(ERROR_KM_KL_LOGIC, "direct error return");
         return ERROR_KM_KL_LOGIC;
     }
     if (km_reg_read(KC_ERROR) != 0) {
+        drv_set_err(ERROR_KM_KC_LOGIC, "direct error return");
         return ERROR_KM_KC_LOGIC;
     }
 
@@ -339,11 +345,11 @@ int32_t hal_keyslot_send_effective_key_romable(uint32_t keyslot_chn, const uint8
 
     /* Step 4. Klad lock. */
     ret = hal_klad_lock_romable();
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_mutex_unlock);
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_mutex_unlock);
 
     /* Step 5. Rkp lock. */
     ret = hal_rkp_lock_romable();
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_klad_unlock);
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_klad_unlock);
 
     /* Step 6. Start rkp kdf calculation. */
     /* 6.1 Configure salt. */
@@ -369,7 +375,7 @@ int32_t hal_keyslot_send_effective_key_romable(uint32_t keyslot_chn, const uint8
 
     /* Step 7. Wait rkp done. */
     ret = hal_rkp_kdf_wait_done_romable();
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_rkp_unlock);
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_rkp_unlock);
 
     /* Step 8. Klad send key. */
     com_ctrl.u32 = kl_com_ctrl_val;
@@ -378,7 +384,7 @@ int32_t hal_keyslot_send_effective_key_romable(uint32_t keyslot_chn, const uint8
     km_reg_write(KL_COM_CTRL, com_ctrl.u32);
 
     ret = hal_klad_com_route_wait_done_romable();
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_rkp_unlock);
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_rkp_unlock);
 #if !defined(CONFIG_HKM_SUPPORT)
     if (key_len > HKL_KEY_LEN) {
         if (hal_kl_key_cfg_is_hmac(kl_key_cfg_val)) {
@@ -390,7 +396,7 @@ int32_t hal_keyslot_send_effective_key_romable(uint32_t keyslot_chn, const uint8
         km_reg_write(KL_COM_CTRL, com_ctrl.u32);
 
         ret = hal_klad_com_route_wait_done_romable();
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_rkp_unlock);
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_rkp_unlock);
     }
 #endif
 
@@ -435,6 +441,7 @@ int32_t hal_klad_lock_romable(void)
         crypto_udelay(1);
     }
     if (i >= CONFIG_KLAD_LOCK_TIMEOUT) {
+        drv_set_err(ERROR_KLAD_LOCK, "direct error return");
         return ERROR_KLAD_LOCK;
     }
     return CRYPTO_SUCCESS;
@@ -468,6 +475,7 @@ int32_t hal_rkp_lock_romable(void)
         crypto_udelay(1);
     }
     if (i >= CONFIG_RKP_LOCK_TIMEOUT) {
+        drv_set_err(ERROR_RKP_LOCK_TIMEOUT, "direct error return");
         return ERROR_RKP_LOCK_TIMEOUT;
     }
     return CRYPTO_SUCCESS;
@@ -497,11 +505,13 @@ int32_t hal_rkp_kdf_wait_done_romable(void)
     }
 
     if (i >= CONFIG_RKP_WAIT_TIMEOUT) {
+        drv_set_err(ERROR_RKP_CALC_TIMEOUT, "direct error return");
         return ERROR_RKP_CALC_TIMEOUT;
     }
 
     /* check kdf err. */
     if (km_reg_read(KDF_ERROR) != 0) {
+        drv_set_err(ERROR_KM_RKP_LOGIC, "direct error return");
         return ERROR_KM_RKP_LOGIC;
     }
 
@@ -532,13 +542,16 @@ int32_t hal_klad_com_route_wait_done_romable(void)
     hal_keyslot_debug_romable();
 #endif
     if (i >= CONFIG_KLAD_COM_ROUTE_TIMEOUT) {
+        drv_set_err(ERROR_KLAD_TIMEOUT, "direct error return");
         return ERROR_KLAD_TIMEOUT;
     }
 
     if (km_reg_read(KL_ERROR) != 0) {
+        drv_set_err(ERROR_KM_KL_LOGIC, "direct error return");
         return ERROR_KM_KL_LOGIC;
     }
     if (km_reg_read(KC_ERROR) != 0) {
+        drv_set_err(ERROR_KM_KC_LOGIC, "direct error return");
         return ERROR_KM_KC_LOGIC;
     }
 
@@ -551,7 +564,7 @@ int hal_rkp_deob_update_romable(uint32_t rkp_deob_cfg_val)
     rkp_deob_cfg deob_cfg;
 
     ret = hal_rkp_lock_romable();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "rkp lock failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "rkp lock failed\n");
 
     deob_cfg.u32 = rkp_deob_cfg_val;
     deob_cfg.bits.deob_update_req = 0x1; /* start calculation */
@@ -582,12 +595,14 @@ int32_t hal_rkp_deob_wait_done_romable(void)
         crypto_udelay(1);
     }
     if (i >= CONFIG_RKP_WAIT_TIMEOUT) {
+        drv_set_err(ERROR_RKP_CALC_TIMEOUT, "direct error return");
         return ERROR_RKP_CALC_TIMEOUT;
     }
 
     /* check deob err. */
     deob_err = km_reg_read(DEOB_ERROR);
     if (deob_err != 0) {
+        drv_set_err(ERROR_KM_RKP_LOGIC, "direct error return");
         return ERROR_KM_RKP_LOGIC;
     }
 
@@ -620,7 +635,7 @@ int32_t hal_keyslot_hmac_send_clear_key_romable(uint32_t keyslot_chn, const uint
 
     if (key != NULL) {
         ret = memcpy_s(key_padding, sizeof(key_padding), key, key_len);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S);
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S);
     }
 
     hal_keyslot_mutex_lock_romable();
@@ -647,7 +662,7 @@ int32_t hal_keyslot_hmac_send_clear_key_romable(uint32_t keyslot_chn, const uint
 
         /* Step 6. Wait finish. */
         ret = hal_keyslot_wait_done_romable();
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_clean);
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_clean);
     }
 
 exit_clean:
@@ -803,6 +818,7 @@ int32_t hal_keyslot_free_chn_default(uint32_t chn_num, uint32_t keyslot_type)
         return CRYPTO_SUCCESS;
     }
     hal_keyslot_mutex_unlock_romable();
+    drv_set_err(ERROR_INVALID_HANDLE, "direct error return");
     return ERROR_INVALID_HANDLE;
 }
 

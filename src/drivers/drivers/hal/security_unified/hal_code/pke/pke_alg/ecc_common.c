@@ -10,6 +10,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ECC_COMMON
+
 /* ECC Curve Parameters. */
 ROM_SHARE_BSS const pke_default_parameters *g_ecc_params;
 ROM_SHARE_BSS uint32_t g_ecc_num = 0;
@@ -73,13 +75,13 @@ int hal_pke_alg_ecc_init(drv_pke_ecc_curve_type curve_type)
     int ret;
 
     ret = inner_pke_alg_resume();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
 
     ret = hal_pke_alg_ecc_get_param(curve_type, &g_ecc_curve, &g_init_param);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, error_unlock, "hal_pke_alg_ecc_get_param failed\n");
-    crypto_chk_goto_with_ret(ret, g_ecc_curve == NULL, error_unlock, CRYPTO_FAILURE,
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, error_unlock, "hal_pke_alg_ecc_get_param failed\n");
+    drv_err_chk_goto_with_ret(ret, g_ecc_curve == NULL, error_unlock, CRYPTO_FAILURE,
         "hal_pke_alg_ecc_get_param for ecc_curve failed\n");
-    crypto_chk_goto_with_ret(ret, g_init_param == NULL, error_unlock, CRYPTO_FAILURE,
+    drv_err_chk_goto_with_ret(ret, g_init_param == NULL, error_unlock, CRYPTO_FAILURE,
         "hal_pke_alg_ecc_get_param for init_param failed\n");
 
     if (curve_type == DRV_PKE_ECC_TYPE_FIPS_P521R) {
@@ -147,7 +149,7 @@ int __attribute__((weak)) hal_pke_alg_ecc_get_param(drv_pke_ecc_curve_type curve
 {
     uint32_t i;
     const pke_default_parameters *param = NULL;
-    crypto_chk_return(g_ecc_params == NULL, CRYPTO_FAILURE, "ecc_param not register!\n");
+    drv_err_chk_return(g_ecc_params == NULL, CRYPTO_FAILURE, "ecc_param not register!\n");
 
     for (i = 0; i < g_ecc_num; i++) {
         param = &g_ecc_params[i];
@@ -163,6 +165,7 @@ int __attribute__((weak)) hal_pke_alg_ecc_get_param(drv_pke_ecc_curve_type curve
     if (ecc_init_param != NULL) {
         *ecc_init_param = NULL;
     }
-    crypto_log_err("curve_type 0x%x not register!\n", curve_type);
+
+    drv_set_err(ERROR_UNSUPPORT, "direct error return");
     return ERROR_UNSUPPORT;
 }

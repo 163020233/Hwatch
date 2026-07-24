@@ -19,18 +19,23 @@
 #include "km.h"
 #include "sl_common.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_SL_COMMON
+
 #define ERRCODE_SECURITY_UNIFIED      0x80001500
 #define hash_null_ptr_chk(ptr)   \
-    crypto_chk_return((ptr) == TD_NULL, ERRCODE_SECURITY_PARAM_IS_NULL, #ptr" is NULL\r\n")
+    drv_err_chk_return((ptr) == TD_NULL, ERRCODE_SECURITY_PARAM_IS_NULL, #ptr" is NULL\r\n")
 
 errcode_t crypto_sl_common_get_errcode(int32_t from_errcode)
 {
     errcode_t ret = (uint32_t)from_errcode & 0xFF;
     if ((uint32_t)from_errcode == CRYPTO_SUCCESS) {
+        drv_print_err_chain();
         return ERRCODE_SUCC;
     } else if ((uint32_t)from_errcode == CRYPTO_FAILURE) {
+        drv_print_err_chain();
         return ERRCODE_FAIL;
     }
+    drv_print_err_chain();
     return ERRCODE_SECURITY_UNIFIED + ret;
 }
 
@@ -38,10 +43,13 @@ errcode_t crypto_sl_enhance_get_errcode(int32_t from_errcode)
 {
     errcode_t ret = (uint32_t)from_errcode & 0xFF;
     if ((uint32_t)from_errcode == CRYPTO_ENHANCE_SUCCESS) {
+        drv_print_err_chain();
         return ERRCODE_SUCC;
     } else if ((uint32_t)from_errcode == CRYPTO_ENHANCE_FAILURE) {
+        drv_print_err_chain();
         return ERRCODE_FAIL;
     }
+    drv_print_err_chain();
     return ERRCODE_SECURITY_UNIFIED + ret;
 }
 
@@ -56,11 +64,11 @@ errcode_t crypto_hmac_start(hmac_handle_t *ctx, uint32_t hash_type,
     int32_t ret;
     crypto_service_preprocess(HASH_MODULE_ID);
     ret = drv_cipher_hmac_compute_setup((void **)ctx);
-    crypto_chk_goto(ret != ERRCODE_SUCC, exit_post_process, "hmac setup failed\r\n");
+    drv_err_chk_goto(ret != ERRCODE_SUCC, exit_post_process, "hmac setup failed\r\n");
 
     ret = drv_cipher_hmac_compute_start((void *)(*ctx), (crypto_hash_type)hash_type,
         key, key_len, keyslot_handle);
-    crypto_chk_goto(ret != ERRCODE_SUCC, error_teardown, "hmac start failed!\r\n");
+    drv_err_chk_goto(ret != ERRCODE_SUCC, error_teardown, "hmac start failed!\r\n");
 
     return crypto_sl_common_get_errcode(ret);
 
@@ -139,4 +147,3 @@ errcode_t uapi_drv_cipher_hash_compute_clone(hash_handle_t dst_handle, hash_hand
     return ERRCODE_SECURITY_UNSUPPORT;
 }
 #endif /* CONFIG_SECURITY_UNIFIED_SUPPORT_HASH || CONFIG_SECURITY_UNIFIED_SUPPORT_SYMC */
-

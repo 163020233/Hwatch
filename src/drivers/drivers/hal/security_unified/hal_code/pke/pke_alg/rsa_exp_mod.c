@@ -11,6 +11,8 @@
 
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_RSA_EXP_MOD
+
 #define MAX_OFFSET_OF_VALID_BIT 2
 
 static int rsa_exp_mod(const drv_pke_data *n, const drv_pke_data *k, const drv_pke_data *in,
@@ -31,7 +33,7 @@ static int rsa_exp_mod(const drv_pke_data *n, const drv_pke_data *k, const drv_p
     hal_pke_set_work_len_romable(work_len);
 
     ret = inner_update_rsa_modulus(n->data, n->length);
-    crypto_chk_func_return(inner_update_rsa_modulus, ret);
+    drv_err_chk_func_return(inner_update_rsa_modulus, ret);
 
     /* step 1: data montgomery and copy. */
     /* 1. set data into DRAM. */
@@ -42,7 +44,7 @@ static int rsa_exp_mod(const drv_pke_data *n, const drv_pke_data *k, const drv_p
     hal_pke_set_ram_word_romable(rsa_addr_const_1, n->length, -1, 0x1);
     /* 2. start calculate. */
     ret = inner_batch_instr_process(&instr_rsa_exp_pre_6, 0);
-    crypto_chk_func_return(inner_batch_instr_process, ret);
+    drv_err_chk_func_return(inner_batch_instr_process, ret);
 
     /*
      * 1) k->data is one byte array, k->length is the byte number.
@@ -56,17 +58,17 @@ static int rsa_exp_mod(const drv_pke_data *n, const drv_pke_data *k, const drv_p
             if ((start_flag == false) && (bit_2 != 0)) {
                 start_flag = true;
                 ret = inner_batch_instr_process(rom_lib_list[bit_2], 0);
-                crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+                drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
             } else if (start_flag == true) {
                 ret = inner_batch_instr_process(rom_lib_list[bit_2], 0);
-                crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+                drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
             }
         }
     }
 
     /* step 3: data demontgomery and twice modulus reduction. */
     ret = inner_batch_instr_process(&instr_rsa_exp_post_3, 0);
-    crypto_chk_func_return(inner_batch_instr_process, ret);
+    drv_err_chk_func_return(inner_batch_instr_process, ret);
 
     /* step 4: get data out. */
     (void)memset_s(out->data, out->length, 0x00, out->length);
@@ -80,7 +82,7 @@ int32_t hal_pke_alg_rsa_exp_mod(const drv_pke_data *n, const drv_pke_data *k, co
     const drv_pke_data *out)
 {
     int32_t ret = inner_pke_alg_resume();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
 
     ret = rsa_exp_mod(n, k, in, out);
     inner_pke_alg_suspend();

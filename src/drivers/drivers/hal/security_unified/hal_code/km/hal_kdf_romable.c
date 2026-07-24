@@ -9,6 +9,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_KM_HAL_KDF_ROMABLE
+
 #define KDF_SW_GEN                          3
 
 void hal_kdf_pbkdf2_set_val_romable(const uint32_t *data, uint32_t data_len)
@@ -66,7 +68,7 @@ int32_t hal_kdf_pbkdf2_compute_romable(uint32_t alg, uint16_t iter_count,
     km_reg_write(RKP_CMD_CFG, cfgval.u32);
 
     ret = hal_rkp_kdf_wait_done_romable();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_rkp_kdf_wait_done_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_rkp_kdf_wait_done_romable failed\n");
 
     /* get u_state_out if need, for update. */
     if (u_state_out != NULL) {

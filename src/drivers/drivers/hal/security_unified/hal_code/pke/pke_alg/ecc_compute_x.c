@@ -10,6 +10,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ECC_COMPUTE_X
+
 /* Only used for hal_pke_alg_ecc_compute_x. */
 static int point_multi_mul_sim(const drv_pke_data *u1, const drv_pke_data *u2)
 {
@@ -47,7 +49,7 @@ static int point_multi_mul_sim(const drv_pke_data *u1, const drv_pke_data *u2)
                 cnt++;
             } else {
                 ret = inner_batch_instr_process_opt(rom_lib_first_list[bit_2]);
-                crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
+                drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
                 first_flag = true;
                 break;
             }
@@ -60,7 +62,7 @@ static int point_multi_mul_sim(const drv_pke_data *u1, const drv_pke_data *u2)
     loop_num = u1->length * CRYPTO_BITS_IN_BYTE - cnt - 1;
     ret = hal_pke_loop_batch_compute_romable(loop_num, u2->data, u1->data, crypto_min(u1->length, u2->length),
         batch_instr_loop);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
 
     return CRYPTO_SUCCESS;
 }
@@ -82,7 +84,7 @@ int hal_pke_alg_ecc_compute_x(const drv_pke_data *u1, const drv_pke_data *u2,
     /* Step 1: montgomery the input point. */
     /* Here q_jac_x and q_jac_y will set to px and py. */
     ret = inner_ecfp_montgomery_data_aff(q, &pp, NULL);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_montgomery_data_aff failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_montgomery_data_aff failed\n");
 
     /* Step 2: A = P + Q, from affine to jacobin. */
     hal_pke_set_ram_romable(ecc_addr_gx, init_param->g_jac_x, ecc_curve->ksize);
@@ -90,19 +92,19 @@ int hal_pke_alg_ecc_compute_x(const drv_pke_data *u1, const drv_pke_data *u2,
 
     /* point add A = G + Q. */
     ret = inner_batch_instr_process_opt(&instr_ecfp_add_ja_verify_18);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
 
     /* Step 3: simultaneous calculate multi-multiplication. */
     ret = point_multi_mul_sim(u1, u2);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "point_multi_mul_sim failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "point_multi_mul_sim failed\n");
 
     /* Step 4: trans Jacobin to Affine. */
     ret = inner_ecfp_jac_to_aff(&pp);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_jac_to_aff failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_jac_to_aff failed\n");
 
     /* Step 5: demontgomery, just process, not get data out of the DRAM. */
     ret = inner_ecfp_demontgomery_data_aff(NULL);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_demontgomery_data_aff failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_demontgomery_data_aff failed\n");
 
     /* Step 6: get result out from PKE data RAM. only need to get r.x for compare. */
     hal_pke_get_ram_romable(ecc_addr_cx, x->data, x->length);

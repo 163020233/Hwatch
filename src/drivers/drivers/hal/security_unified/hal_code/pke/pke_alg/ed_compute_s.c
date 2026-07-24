@@ -9,6 +9,9 @@
 #include "crypto_pke_common.h"
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
+
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ED_COMPUTE_S
+
 #define ED25519_KEY_LEN     32
 
 /* s = (r + h * a) % q. */
@@ -33,7 +36,7 @@ int hal_pke_alg_ed_compute_s(const drv_pke_data *r_data, const drv_pke_data *h_d
     hal_pke_set_mont_para_romable(init_param->mont_param_n);
 
     ret = inner_batch_instr_process(&instr_ed25519_calc_s, work_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     hal_pke_get_ram_romable(ed_addr_s, s_tmp, s_data->length);
 

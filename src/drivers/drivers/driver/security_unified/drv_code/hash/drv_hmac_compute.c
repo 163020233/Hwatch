@@ -11,11 +11,13 @@
 
 #include "crypto_hash_common.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_HASH_DRV_HMAC_COMPUTE
+
 CRYPTO_STATIC int32_t inner_drv_hmac_ctx_chk(const drv_hmac_ctx *ctx)
 {
     uint32_t block_size = crypto_hash_get_block_size(ctx->hash_type) / CRYPTO_BITS_IN_BYTE;
 
-    crypto_chk_return(ctx->block_size != block_size, ERROR_INVALID_PARAM,
+    drv_err_chk_return(ctx->block_size != block_size, ERROR_INVALID_PARAM,
         "invalid block_size\n");
 
     return crypto_hash_common_type_check(ctx->hash_type);
@@ -29,11 +31,11 @@ int drv_cipher_hmac_compute_setup(void **ctx)
     hash_null_ptr_chk(ctx);
 
     hmac_ctx = crypto_malloc_coherent(sizeof(drv_hmac_ctx));
-    crypto_chk_return(hmac_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(hmac_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
     (void)memset_s(hmac_ctx, sizeof(drv_hmac_ctx), 0, sizeof(drv_hmac_ctx));
 
     ret = drv_cipher_hash_compute_setup(&(hmac_ctx->hash_ctx));
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, error_free, "hash_setup failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, error_free, "hash_setup failed\n");
 
     *ctx = hmac_ctx;
     return CRYPTO_SUCCESS;
@@ -55,23 +57,24 @@ int drv_cipher_hmac_compute_start(void *ctx, crypto_hash_type hash_type,
 
     hash_null_ptr_chk(ctx);
     hash_null_ptr_chk(key);
-    crypto_chk_return(block_size > CRYPTO_HASH_BLOCK_SIZE_MAX,
+    drv_err_chk_return(block_size > CRYPTO_HASH_BLOCK_SIZE_MAX,
         ERROR_INVALID_PARAM, "invalid block_size!\n");
-    crypto_chk_return(result_size > CRYPTO_HASH_RESULT_SIZE_MAX,
+    drv_err_chk_return(result_size > CRYPTO_HASH_RESULT_SIZE_MAX,
         ERROR_INVALID_PARAM, "invalid result_size!\n");
 
     if (keyslot_handle != CRYPTO_INVALID_KEYSLOT_HANDLE) {
-        crypto_log_err("Hmac multi-part unsupport keyslot!\n");
+
+        drv_set_err(ERROR_UNSUPPORT, "direct error return");
         return ERROR_UNSUPPORT;
     }
 
     if (key_len <= block_size) {
         ret = memcpy_s(i_key_pad, sizeof(i_key_pad), key, key_len);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
     } else {
         ret = drv_cipher_hash_compute(crypto_hash_remove_hmac_flag(hash_type), key, key_len,
             i_key_pad, result_size);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hash compute failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hash compute failed\n");
     }
     for (i = 0; i < block_size; i++) {
         hmac_ctx->o_key_pad[i] = 0x5C ^ i_key_pad[i];   // 0x5c: algo requirements
@@ -79,10 +82,10 @@ int drv_cipher_hmac_compute_start(void *ctx, crypto_hash_type hash_type,
     }
 
     ret = drv_cipher_hash_compute_start(hmac_ctx->hash_ctx, crypto_hash_remove_hmac_flag(hash_type));
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "hash start failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "hash start failed\n");
 
     ret = drv_cipher_hash_compute_update(hmac_ctx->hash_ctx, i_key_pad, block_size);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, error_exit_clean, "hash update failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, error_exit_clean, "hash update failed\n");
 
     hmac_ctx->block_size = block_size;
     hmac_ctx->hash_type = hash_type;
@@ -103,7 +106,7 @@ int drv_cipher_hmac_compute_update(void *ctx, const unsigned char *data, unsigne
 
     hash_null_ptr_chk(ctx);
     ret = inner_drv_hmac_ctx_chk(hmac_ctx);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     return drv_cipher_hash_compute_update(hmac_ctx->hash_ctx, data, data_len);
 }
@@ -116,23 +119,23 @@ int drv_cipher_hmac_compute_finish(void *ctx, unsigned char *out_hash, unsigned 
     hash_null_ptr_chk(ctx);
     hash_null_ptr_chk(out_hash);
     ret = inner_drv_hmac_ctx_chk(hmac_ctx);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     ret = drv_cipher_hash_compute_finish(hmac_ctx->hash_ctx, out_hash, out_hash_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hash finish failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hash finish failed\n");
 
     ret = drv_cipher_hash_compute_start(hmac_ctx->hash_ctx, crypto_hash_remove_hmac_flag(hmac_ctx->hash_type));
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hash compute failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hash compute failed\n");
 
     ret = drv_cipher_hash_compute_update(hmac_ctx->hash_ctx, hmac_ctx->o_key_pad,
         hmac_ctx->block_size);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hash update failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hash update failed\n");
 
     ret = drv_cipher_hash_compute_update(hmac_ctx->hash_ctx, out_hash, out_hash_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hash update failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hash update failed\n");
 
     ret = drv_cipher_hash_compute_finish(hmac_ctx->hash_ctx, out_hash, out_hash_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hash finish failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hash finish failed\n");
 
     return CRYPTO_SUCCESS;
 }
@@ -158,16 +161,16 @@ static int inner_hmac_compute_without_keyslot(crypto_hash_type hash_type,
     int ret;
 
     ret = drv_cipher_hmac_compute_setup(&hmac_ctx);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hmac setup failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hmac setup failed\n");
 
     ret = drv_cipher_hmac_compute_start(hmac_ctx, hash_type, key, key_len, CRYPTO_INVALID_KEYSLOT_HANDLE);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac start failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac start failed\n");
 
     ret = drv_cipher_hmac_compute_update(hmac_ctx, buf, buf_len);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac update failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac update failed\n");
 
     ret = drv_cipher_hmac_compute_finish(hmac_ctx, out_hash, out_hash_len);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac finish failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hmac finish failed\n");
 
 exit_teardown:
     (void)drv_cipher_hmac_compute_teardown(hmac_ctx);
@@ -191,16 +194,16 @@ static int inner_hmac_compute_with_keyslot(crypto_hash_type hmac_type,
     uint32_t state[CRYPTO_HASH_RESULT_SIZE_MAX_IN_WORD];
     uint32_t state_size = (uint32_t)sizeof(state);
 
-    crypto_chk_return(tmp_buf_len < buf_len, ERROR_INVALID_PARAM, "invalid buf_len\n");
+    drv_err_chk_return(tmp_buf_len < buf_len, ERROR_INVALID_PARAM, "invalid buf_len\n");
 
     ret = crypto_hash_common_get_state(hmac_type, state, &state_size);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     tmp_buf = crypto_malloc_coherent(tmp_buf_len);
-    crypto_chk_return(tmp_buf == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(tmp_buf == NULL, ERROR_MALLOC, "malloc failed\n");
 
     ret = memcpy_s(tmp_buf, tmp_buf_len, buf, buf_len);
-    crypto_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
     (void)memset_s(tmp_buf + buf_len, tmp_buf_len - buf_len, 0, tmp_buf_len - buf_len);
     tmp_buf[buf_len] = 0x80;
 
@@ -216,14 +219,14 @@ static int inner_hmac_compute_with_keyslot(crypto_hash_type hmac_type,
     length_reverse = crypto_cpu_to_be32((buf_len + block_size) * CRYPTO_BITS_IN_BYTE);
     ret = memcpy_s(tmp_buf + processing_len - sizeof(length_reverse), sizeof(length_reverse),
         &length_reverse, sizeof(length_reverse));
-    crypto_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     ret = hal_cipher_hmac_compute(hmac_type, crypto_get_phys_addr(tmp_buf), processing_len,
         keyslot_handle, state, state_size);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hmac compute failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hmac compute failed\n");
 
     ret = memcpy_s(out_hash, out_hash_len, state, result_size);
-    crypto_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     ret = CRYPTO_SUCCESS;
 exit_free:

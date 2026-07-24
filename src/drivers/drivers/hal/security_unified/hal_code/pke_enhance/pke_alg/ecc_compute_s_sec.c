@@ -12,6 +12,8 @@
 #include "pke_alg_inner.h"
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_ENHANCE_PKE_ALG_ECC_COMPUTE_S_SEC
+
 static int ecc_ecfn_sign_s_sec(const drv_pke_data *k_inv, const drv_pke_data *e, const drv_pke_data *d,
     const drv_pke_data *r, const drv_pke_data *n, const drv_pke_data *s, const drv_pke_data *rand)
 {
@@ -27,7 +29,7 @@ static int ecc_ecfn_sign_s_sec(const drv_pke_data *k_inv, const drv_pke_data *e,
     work_len = n->length / ALIGNED_TO_WORK_LEN_IN_BYTE;
 
     ret = crypto_pke_common_add_mod(d, rand, &d_add_data, n);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     /* Step 1: set data into PKE DRAM. the ecc_addr_rrn and ecc_addr_const_1 have been set in intial parameters. */
     hal_pke_set_ram_romable(ecc_addr_r, r->data, r->length);
@@ -40,7 +42,7 @@ static int ecc_ecfn_sign_s_sec(const drv_pke_data *k_inv, const drv_pke_data *e,
 
     /* Step 2. start calculate. */
     ret = inner_batch_instr_process_sec(&instr_ecfn_sign_s_rand_new, work_len);
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret);
 
     /* Step 3: get data from PKE DRAM */
     hal_pke_get_ram_romable(ecc_addr_s, s->data, s->length);
@@ -67,7 +69,7 @@ int hal_pke_alg_ecc_compute_s_sec(const drv_pke_data *k, const drv_pke_data *e, 
     hal_pke_alg_ecc_init_check();
 
     buf = crypto_malloc_coherent(buf_len);
-    crypto_chk_return(buf == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(buf == NULL, ERROR_MALLOC, "malloc failed\n");
 
     k_inv_data.data = buf;
     rand_data.data = k_inv_data.data + MAX_ECC_SIZE;
@@ -77,7 +79,7 @@ int hal_pke_alg_ecc_compute_s_sec(const drv_pke_data *k, const drv_pke_data *e, 
     n.length = ecc_curve->ksize;
 
     ret = inner_get_random_sec(rand_data.data, rand_data.length);
-    crypto_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, exit_free, "inner_get_random failed\n");
+    drv_err_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, exit_free, "inner_get_random failed\n");
     if (inner_drv_is_zero(rand_data.data, rand_data.length)) {
         ret = CRYPTO_ENHANCE_FAILURE;
         goto exit_free;
@@ -85,11 +87,11 @@ int hal_pke_alg_ecc_compute_s_sec(const drv_pke_data *k, const drv_pke_data *e, 
 
     /* Step 1. Compute k_inv. */
     ret = hal_pke_alg_ecc_inv_mod_sec(k, &k_inv_data, &rand_data);
-    crypto_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, exit_free, "hal_pke_alg_ecc_inv_mod_sec failed\n");
+    drv_err_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, exit_free, "hal_pke_alg_ecc_inv_mod_sec failed\n");
 
     /* Step 2. Compute s = k_inv * (e + d * r) mod n. */
     ret = ecc_ecfn_sign_s_sec(&k_inv_data, e, d, r, &n, s, &rand_data);
-    crypto_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, exit_free, "ecc_ecfn_sign_s_sec failed\n");
+    drv_err_chk_goto(ret != CRYPTO_ENHANCE_SUCCESS, exit_free, "ecc_ecfn_sign_s_sec failed\n");
 
 exit_free:
     (void)memset_s(buf, buf_len, 0, buf_len);

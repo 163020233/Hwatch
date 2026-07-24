@@ -8,6 +8,8 @@
 #include "hal_keyslot_romable.h"
 #include "crypto_hash_common.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_KM_DRV_PBKDF2
+
 #define KM_COMPAT_ERRNO(err_code)         DRV_COMPAT_ERRNO(ERROR_MODULE_KM, err_code)
 
 static int32_t inner_get_pbkdf2_alg(crypto_hash_type hash_type, uint32_t *pbkdf2_alg)
@@ -29,6 +31,7 @@ static int32_t inner_get_pbkdf2_alg(crypto_hash_type hash_type, uint32_t *pbkdf2
             *pbkdf2_alg = PBKDF2_ALG_SEL_SM3;
             break;
         default:
+            drv_set_err(ERROR_INVALID_PARAM, "direct error return");
             return ERROR_INVALID_PARAM;
     }
     return CRYPTO_SUCCESS;
@@ -52,7 +55,7 @@ int32_t drv_cipher_pbkdf2_update_hardware(void *ctx, uint16_t iteration_count)
     (void)state_val_size;
 
     ret = inner_get_pbkdf2_alg(pbkdf2_ctx->hash_type, &pbkdf2_alg);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_get_pbkdf2_alg failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_get_pbkdf2_alg failed\n");
 
     if (pbkdf2_alg == PBKDF2_ALG_SEL_SHA384 || pbkdf2_alg == PBKDF2_ALG_SEL_SHA512) {
         padding_len = KDF_KEY_BLOCK_SIZE_1024;
@@ -61,7 +64,7 @@ int32_t drv_cipher_pbkdf2_update_hardware(void *ctx, uint16_t iteration_count)
     count = (pbkdf2_ctx->is_salt_overflow) ? (iteration_count - 1) : iteration_count;
 
     ret = hal_rkp_lock_romable();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_rkp_lock_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_rkp_lock_romable failed\n");
 
     /* set password at first, clean in the end. */
     hal_kdf_pbkdf2_set_key_romable(pbkdf2_ctx->password, pbkdf2_ctx->block_size);
@@ -69,7 +72,7 @@ int32_t drv_cipher_pbkdf2_update_hardware(void *ctx, uint16_t iteration_count)
     /* set result. */
 #if defined(CONFIG_PBKDF2_V1)
     state_val = (const uint32_t *)(uintptr_t)crypto_hash_common_get_state_iv(pbkdf2_ctx->hash_type, &state_val_size);
-    crypto_chk_goto(state_val == NULL, exit_clean, "crypto_hash_common_get_state_iv failed\n");
+    drv_err_chk_goto(state_val == NULL, exit_clean, "crypto_hash_common_get_state_iv failed\n");
     hal_kdf_pbkdf2_set_val_romable(state_val, state_val_size);
 #elif defined(CONFIG_PBKDF2_V2)
     hal_kdf_pbkdf2_set_val_romable(pbkdf2_ctx->result, pbkdf2_ctx->result_size);
@@ -93,7 +96,7 @@ int32_t drv_cipher_pbkdf2_update_hardware(void *ctx, uint16_t iteration_count)
     data_pad[pbkdf2_ctx->block_size - 4] = (data_len_in_bits >> 24) & 0xff; /* 4: 4bit 24: right move 24 */
 
     ret = hal_kdf_pbkdf2_compute_romable(pbkdf2_alg, count, pbkdf2_ctx->data, pbkdf2_ctx->data, pbkdf2_ctx->result);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "hal_kdf_pbkdf2_compute_romable failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "hal_kdf_pbkdf2_compute_romable failed\n");
     pbkdf2_ctx->data_len = pbkdf2_ctx->result_size;
 
     /* set data[result_size..] = 0. */

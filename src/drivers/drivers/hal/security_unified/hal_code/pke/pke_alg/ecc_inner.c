@@ -12,6 +12,8 @@
 #include "crypto_pke_common.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ECC_INNER
+
 #define MAX_ECC_LENGTH        72
 
 #define JAC_TO_AFF_INSTR_NUM    6
@@ -33,17 +35,17 @@ int inner_jac_to_aff_cal(const rom_lib *batch_instr, const unsigned int batch_in
     /* 2. start transform */
     /* 2.1 preprocess, initialize the data, use batch process step. */
     ret = inner_batch_instr_process_opt(&batch_instr[0]);
-    crypto_chk_func_return(inner_batch_instr_process_opt, ret);
+    drv_err_chk_func_return(inner_batch_instr_process_opt, ret);
 
     /* 2.2 expand (p-2)'s bit length to 2n, and calculate from high bit */
     loop_num = mod_p->length * CRYPTO_BITS_IN_BYTE;
 
     ret = hal_pke_loop_batch_compute_romable(loop_num, mod_p_2, NULL, mod_p->length, batch_instr_loop);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
 
     /* 2.3 postprocess, demontgomery and complete reduction */
     ret = inner_batch_instr_process_opt(&batch_instr[3]); /* 3: instr index. */
-    crypto_chk_func_return(inner_batch_instr_process_opt, ret);
+    drv_err_chk_func_return(inner_batch_instr_process_opt, ret);
 
     crypto_drv_func_exit();
     return CRYPTO_SUCCESS;
@@ -64,7 +66,7 @@ int inner_ecfp_montgomery_data_aff(const drv_pke_ecc_point *in, const drv_pke_da
 
     /* 2. start calculate */
     ret = inner_batch_instr_process_opt(&instr_ecfp_mont_p_2);
-    crypto_chk_func_return(inner_batch_instr_process_opt, ret);
+    drv_err_chk_func_return(inner_batch_instr_process_opt, ret);
 
     /* 3. get result from DRAM */
     if (out != NULL && out->x != NULL && out->y != NULL) {
@@ -83,7 +85,7 @@ int inner_ecfp_demontgomery_data_aff(const drv_pke_ecc_point *r)
 
     /* Step 1: start calculate. */
     ret = inner_batch_instr_process_opt(&instr_ecfp_demont_c_6);
-    crypto_chk_func_return(inner_batch_instr_process_opt, ret);
+    drv_err_chk_func_return(inner_batch_instr_process_opt, ret);
 
     /* Step 2: get data from PKE DRAM */
     if (r != NULL && r->x != NULL && r->y != NULL) {
@@ -104,7 +106,7 @@ int inner_update_modulus(const unsigned char *n, const unsigned int n_len, const
 
     /* 2. start calculate. */
     ret = inner_batch_instr_process_opt(&instr_ecfp_prime_n_1);
-    crypto_chk_func_return(inner_batch_instr_process_opt, ret);
+    drv_err_chk_func_return(inner_batch_instr_process_opt, ret);
 
     /* 5. get new montgomery parameters and set it into register. */
     hal_pke_set_mont_para_romable(mont_param);
@@ -123,7 +125,7 @@ int inner_ecfp_jac_to_aff(const drv_pke_data *mod_p)
 
     /* Step 2: start transfer calculation. */
     ret = inner_jac_to_aff_cal(batch_instr_block, JAC_TO_AFF_INSTR_NUM, mod_p);
-    crypto_chk_func_return(inner_jac_to_aff_cal, ret);
+    drv_err_chk_func_return(inner_jac_to_aff_cal, ret);
 
     return ret;
 }
@@ -144,7 +146,7 @@ int inner_ecfp_aff_to_jac(const drv_pke_ecc_point *in, const drv_pke_data *mod_p
 
     /* Step 2: start calculate. */
     ret = inner_batch_instr_process_opt(&instr_ecfp_cpy_p2c_3);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
 
     /* Step 3: get result from DRAM. */
     /* no need to get result out, only a common process. */

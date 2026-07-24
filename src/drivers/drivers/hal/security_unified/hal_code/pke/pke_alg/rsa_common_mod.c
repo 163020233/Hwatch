@@ -11,6 +11,8 @@
 #include "hal_pke_reg.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_RSA_COMMON_MOD
+
 #define pke_compat_instr(opcode, apos, bpos, tpos, rpos)    \
     ((opcode) | ((apos) << APOS_OFFSET) | ((bpos) << BPOS_OFFSET) |   \
         ((tpos) << TPOS_OFFSET) | ((rpos) << RPOS_OFFSET))
@@ -26,7 +28,7 @@ static int inner_rsa_mod(const drv_pke_data *a, const drv_pke_data *p, const drv
 
     /* set mont_param register. */
     ret = inner_update_rsa_modulus(p->data, p->length);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     hal_pke_set_ram_romable(rsa_addr_n, p->data, p->length);
     hal_pke_set_ram_word_romable(rsa_addr_const_1, p->length, -1, 0x1);
@@ -40,7 +42,7 @@ static int inner_rsa_mod(const drv_pke_data *a, const drv_pke_data *p, const drv
     }
 
     ret = inner_batch_instr_process(&instr_rsa_mod, 0);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     hal_pke_get_ram_romable(rsa_addr_a, c->data, c->length);
 
@@ -55,7 +57,7 @@ int hal_pke_alg_rsa_mod(const drv_pke_data *a, const drv_pke_data *p, const drv_
     crypto_pke_dump_data("p", p->data, p->length);
 
     ret = inner_pke_alg_resume();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
 
     ret = inner_rsa_mod(a, p, c);
     inner_pke_alg_suspend();
@@ -81,7 +83,7 @@ static int inner_rsa_mul(const drv_pke_data *a, const drv_pke_data *b, const drv
 
     /* 4. start calculate. */
     ret = inner_batch_instr_process(&instr_rsa_regular_mul, 0);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* 5. get result data from DRAM. */
     hal_pke_get_ram_romable(rsa_addr_s, c->data, c->length);
@@ -99,7 +101,7 @@ int hal_pke_alg_rsa_mul(const drv_pke_data *a, const drv_pke_data *b, const drv_
     crypto_pke_dump_data("b", b->data, b->length);
 
     ret = inner_pke_alg_resume();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
 
     hal_pke_set_work_len_romable(work_len);
 
@@ -150,16 +152,17 @@ static int inner_rsa_add_mod(const drv_pke_data *a, const drv_pke_data *b, const
     uint32_t times = 0;
 
     ret = inner_rsa_mod_common_process(a, b, p, RSA_MOD_ADD);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_rsa_mod_common_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_rsa_mod_common_process failed\n");
 
     do {
         /* Step 4. get result from DRAM */
         hal_pke_get_ram_romable(rsa_addr_s, c->data, c->length);
 
         ret = hal_pke_single_compute_romable(out_instr);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
         times++;
         if (times > MAX_SUB_MOD_TIMES) {
+            drv_set_err(ERROR_PKE_WAIT_DONE_TIMEOUT, "direct error return");
             return ERROR_PKE_WAIT_DONE_TIMEOUT;
         }
     } while (crypto_pke_common_data_cmp(c, p) >= 0);
@@ -180,7 +183,7 @@ int hal_pke_alg_rsa_add_mod(const drv_pke_data *a, const drv_pke_data *b, const 
     crypto_pke_dump_data("p", p->data, p->length);
 
     ret = inner_pke_alg_resume();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
 
     hal_pke_set_work_len_romable(work_len);
 
@@ -200,15 +203,16 @@ static int inner_rsa_sub_mod(const drv_pke_data *a, const drv_pke_data *b, const
     uint32_t times = 0;
 
     ret = inner_rsa_mod_common_process(a, b, p, RSA_MOD_SUB);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_rsa_mod_common_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_rsa_mod_common_process failed\n");
 
     do {
         hal_pke_get_ram_romable(rsa_addr_s, c->data, c->length);
 
         ret = hal_pke_single_compute_romable(out_instr);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
         times++;
         if (times > MAX_SUB_MOD_TIMES) {
+            drv_set_err(ERROR_PKE_WAIT_DONE_TIMEOUT, "direct error return");
             return ERROR_PKE_WAIT_DONE_TIMEOUT;
         }
     } while (crypto_pke_common_data_cmp(c, p) >= 0);
@@ -228,7 +232,7 @@ int hal_pke_alg_rsa_sub_mod(const drv_pke_data *a, const drv_pke_data *b, const 
     crypto_pke_dump_data("p", p->data, p->length);
 
     ret = inner_pke_alg_resume();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
 
     hal_pke_set_work_len_romable(work_len);
 
@@ -248,7 +252,7 @@ static int inner_rsa_mul_mod(const drv_pke_data *a, const drv_pke_data *b, const
 
     /* 1. set mont_param register. */
     ret = inner_update_rsa_modulus(p->data, p->length);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     /* 2. set data into DRAM */
     hal_pke_set_ram_romable(rsa_addr_n, p->data, p->length);
@@ -258,7 +262,7 @@ static int inner_rsa_mul_mod(const drv_pke_data *a, const drv_pke_data *b, const
 
     /* 3. start calculation processing. */
     ret = inner_batch_instr_process(&instr_rsa_mod_mul, 0);
-    crypto_chk_func_return(inner_batch_instr_process, ret);
+    drv_err_chk_func_return(inner_batch_instr_process, ret);
 
     /* 4. get result from DRAM */
     hal_pke_get_ram_romable(rsa_addr_s, c->data, c->length);
@@ -278,7 +282,7 @@ int hal_pke_alg_rsa_mul_mod(const drv_pke_data *a, const drv_pke_data *b, const 
     crypto_pke_dump_data("p", p->data, p->length);
 
     ret = inner_pke_alg_resume();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_pke_alg_resume failed\n");
 
     hal_pke_set_work_len_romable(work_len);
 
@@ -302,20 +306,20 @@ int hal_pke_alg_rsa_inv_mod(const drv_pke_data *a, const drv_pke_data *p, const 
     crypto_pke_dump_data("p", p->data, p->length);
 
     p_2 = crypto_malloc_coherent(p->length);
-    crypto_chk_return(p_2 == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(p_2 == NULL, ERROR_MALLOC, "malloc failed\n");
 
     p_2_data.data = p_2;
     p_2_data.length = p->length;
     /* Step 1. calculate p-2. */
     ret = memcpy_s(p_2, p->length, p->data, p->length);
-    crypto_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcyp_ss failed!\n");
+    drv_err_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcyp_ss failed!\n");
 
     crypto_pke_common_bn_sub_one(p_2, p->length);
     crypto_pke_common_bn_sub_one(p_2, p->length);
 
     /* Step 2. calculate by exp_mod. */
     ret = hal_pke_alg_rsa_exp_mod(p, &p_2_data, a, c);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hal_pke_alg_rsa_exp_mod failed!\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hal_pke_alg_rsa_exp_mod failed!\n");
 
     crypto_pke_dump_data("c = a^-1 mod p", c->data, c->length);
     crypto_pke_print("========== End Compute c = a^-1 mod p ==========\n");

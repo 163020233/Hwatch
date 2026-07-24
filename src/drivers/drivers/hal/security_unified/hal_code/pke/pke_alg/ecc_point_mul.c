@@ -10,6 +10,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ECC_POINT_MUL
+
 int hal_pke_alg_ecc_base_point_mul(const drv_pke_data *k, const drv_pke_ecc_point *r)
 {
     drv_pke_ecc_point base;
@@ -42,27 +44,27 @@ int hal_pke_alg_ecc_point_mul(const drv_pke_data *k, const drv_pke_ecc_point *p,
 
     /* Step 0: set montgomery param into register. */
     ret = inner_update_modulus(ecc_curve->p, klen, init_param->mont_param_p);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_update_modulus failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_update_modulus failed\n");
 
     /* Step 1: montgomery point p */
     ret = inner_ecfp_montgomery_data_aff(p, &mod_p, r);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_montgomery_data_aff failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_montgomery_data_aff failed\n");
 
     /* Step 2: trans Affine coordinate system to Jacobin coordinate system */
     ret = inner_ecfp_aff_to_jac(r, &mod_p, NULL);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_aff_to_jac failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_aff_to_jac failed\n");
 
     /* Step 3: start NAF-multiplication. */
     ret = inner_ecfp_mul_naf_cal(klen / ALIGNED_TO_WORK_LEN_IN_BYTE, k);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_mul_naf_cal failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_mul_naf_cal failed\n");
 
     /* Step 4: trans result data from jacobin coordinate system to affine coordinate system. */
     ret = inner_ecfp_jac_to_aff(&mod_p);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_jac_to_aff failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_jac_to_aff failed\n");
 
     /* Step 5. demontgomery data. */
     ret = inner_ecfp_demontgomery_data_aff(r);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_demontgomery_data_aff failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ecfp_demontgomery_data_aff failed\n");
 
     return ret;
 }

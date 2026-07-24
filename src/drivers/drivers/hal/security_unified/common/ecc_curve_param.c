@@ -7,6 +7,8 @@
 
 #include "ecc_curve_param.h"
 
+#define FILE_ID FILE_ID_COMMON_ECC_CURVE_PARAM
+
 static const pke_default_parameters g_crypto_ecc_params[] = {
 #ifdef CONFIG_PKE_SUPPORT_ECC_BP160R
     {&g_brainpool_160r1_param, &g_brainpool_160r1_init_param},

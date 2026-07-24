@@ -12,17 +12,19 @@
 #include "crypto_drv_common.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_ENHANCE_PKE_ALG_PKE_ALG_INNER_SEC
+
 int inner_pke_alg_resume_sec(void)
 {
     volatile int ret = CRYPTO_ENHANCE_FAILURE;
 
     ret = hal_pke_lock_romable();
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_lock_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_lock_romable failed\n");
 
     hal_pke_enable_noise();
 
     ret = hal_pke_set_dram_mask();
-    crypto_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "hal_pke_set_dram_mask failed\n");
+    drv_err_chk_return(ret != CRYPTO_ENHANCE_SUCCESS, ret, "hal_pke_set_dram_mask failed\n");
 
     return CRYPTO_ENHANCE_SUCCESS;
 }

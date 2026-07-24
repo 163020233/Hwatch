@@ -5,6 +5,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_CRYPTO_OSAL_SELITEOS_CRYPTO_OSAL_LIB
+
 static crypto_atomic g_deepsleep_vote[MAX_MODULE_ID] = {0};
 
 void crypto_preprocess(unsigned int module_id)

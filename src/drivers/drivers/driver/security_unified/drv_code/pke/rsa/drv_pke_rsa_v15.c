@@ -8,6 +8,8 @@
 /* According to RFC2313. */
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_RSA_DRV_PKE_RSA_V15
+
 #define RSA_PADLEN_1                1
 #define RSA_PADLEN_3                3
 #define RSA_PADLEN_11               11
@@ -21,7 +23,7 @@ int pkcs1_v15_sign(const drv_pke_hash_type hash_type, const rsa_pkcs1_pack *pack
     unsigned int idx = 0;
 
     ret = pkcs1_get_hash(hash_type, NULL, &hash_info);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "pkcs1_get_hash failed, ret is 0x%x\n", ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "pkcs1_get_hash failed, ret is 0x%x\n", ret);
 
     p = pack->em;
     p[idx++] = 0x00;
@@ -36,10 +38,10 @@ int pkcs1_v15_sign(const drv_pke_hash_type hash_type, const rsa_pkcs1_pack *pack
 
     /* T */
     ret = memcpy_s(&p[idx], pack->em_len - idx, hash_info.asn1_data, hash_info.asn1_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "memcpy_s failed, ret is 0x%x\n", ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "memcpy_s failed, ret is 0x%x\n", ret);
     idx += hash_info.asn1_len;
     ret = memcpy_s(&p[idx], pack->em_len - idx, pack->hash, hash_info.hash_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "memcpy_s failed, ret is 0x%x\n", ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "memcpy_s failed, ret is 0x%x\n", ret);
 
     return ret;
 }
@@ -53,35 +55,41 @@ int pkcs1_v15_verify(const drv_pke_hash_type hash_type, const rsa_pkcs1_pack *pa
     unsigned int idx = 0;
 
     ret = pkcs1_get_hash(hash_type, NULL, &hash_info);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "pkcs1_get_hash failed, ret is 0x%x\n", ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "pkcs1_get_hash failed, ret is 0x%x\n", ret);
 
     p = pack->em;
     if (p[idx++] != 0x00) {
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK);
     }
     if (p[idx++] != 0x01) {
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK);
     }
 
     /* PS */
     while (idx < (pack->em_len - hash_info.hash_len - hash_info.asn1_len - 1)) {
         if (p[idx++] != CRYPTO_BYTE_MAX) {
+            drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK), "direct error return");
             return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK);
         }
     }
     if (p[idx++] != 0x00) {
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK);
     }
 
     /* T */
     if (memcmp(&p[idx], hash_info.asn1_data, hash_info.asn1_len) != 0) {
-        crypto_log_err("check v15 asn1 failed!\n");
+
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK);
     }
 
     idx += hash_info.asn1_len;
     if (memcmp(&p[idx], pack->hash, hash_info.hash_len) != 0) {
-        crypto_log_err("check v15 hash failed!\n");
+
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_VERIFY_V15_CHECK);
     }
 
@@ -103,7 +111,7 @@ int pkcs1_v15_encrypt(const rsa_pkcs1_pack *pack)
     /* PS */
     ret = inner_get_random_with_nonzero_octets(&p[idx], ps_len);
     if (ret != CRYPTO_SUCCESS) {
-        crypto_log_err("get random ps failed!\n");
+        drv_set_err(ERROR_UNEXPECTED, "logged error");
         return ret;
     }
     idx += ps_len;
@@ -112,7 +120,7 @@ int pkcs1_v15_encrypt(const rsa_pkcs1_pack *pack)
     /* M */
     if (pack->data_len != 0) {
         ret = memcpy_s(&p[idx], pack->em_len - idx, pack->data, pack->data_len);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "memcpy_s failed, ret is 0x%x\n", ret);
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "memcpy_s failed, ret is 0x%x\n", ret);
     }
 
     return CRYPTO_SUCCESS;
@@ -130,12 +138,14 @@ int pkcs1_v15_decrypt(rsa_pkcs1_pack *pack)
 
     p = pack->em;
     if (p[idx++] != 0x00) {
-        crypto_log_err("padding check failed!\n");
+
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_V15_CHECK), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_V15_CHECK);
     }
 
     if (p[idx++] != 0x02) { // 0x02 see comment above func
-        crypto_log_err("padding check failed!\n");
+
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_V15_CHECK), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_V15_CHECK);
     }
 
@@ -145,7 +155,8 @@ int pkcs1_v15_decrypt(rsa_pkcs1_pack *pack)
     }
 
     if (p[idx++] != 0x00) {
-        crypto_log_err("padding check failed!\n");
+
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_V15_CHECK), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_V15_CHECK);
     }
 
@@ -153,14 +164,15 @@ int pkcs1_v15_decrypt(rsa_pkcs1_pack *pack)
     /* Result-1.1 According to Hint-1.1, pack->em_len > RSA_PADLEN_11(11),
      * so expression 'pack->em_len - RSA_PADLEN_11' will never reverse. */
     if (len > pack->em_len - RSA_PADLEN_11) {
-        crypto_log_err("padding check failed!\n");
+
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_V15_CHECK), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_V15_CHECK);
     }
 
     /* M */
     if (len != 0) {
         ret = memcpy_s(pack->data, pack->data_len, &p[idx], len);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_BUFFER_TOO_SMALL),
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, PKE_COMPAT_ERRNO(ERROR_PKE_RSA_CRYPTO_BUFFER_TOO_SMALL),
             "memcpy_s failed, ret is 0x%x\n", ret);
     }
     pack->data_len = len; // record length of plain text for return

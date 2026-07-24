@@ -10,6 +10,8 @@
 #include "crypto_drv_common.h"
 #include "sl_common.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_KM_SIMPLE
+
 errcode_t uapi_drv_keyslot_setup(uint32_t *keyslot_handle, uapi_drv_keyslot_type_t keyslot_type)
 {
     int32_t ret;

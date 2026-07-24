@@ -7,6 +7,8 @@
 #include "drv_pke_priv.h"
 #include "crypto_pke_common.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_ECC_DRV_PKE_ECDSA_SIGN
+
 #define MAX_TRY_TIMES   100
 #define MAX_ECC_LENGTH        72
 #define MAX_ECC_BUF_LEN         (MAX_ECC_LENGTH * 2)
@@ -33,14 +35,14 @@ static int32_t inner_ecdsa_sign(const drv_pke_data *priv_key, const drv_pke_data
     const uint8_t *ecc_n = hal_pke_alg_ecc_get_n();
 
     buf = crypto_malloc_coherent(MAX_ECC_BUF_LEN);
-    crypto_chk_return(buf == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(buf == NULL, ERROR_MALLOC, "malloc failed\n");
 
     k_data.data = buf;
     kp_point.y = k_data.data + MAX_ECC_LENGTH;
 
     /* Step 1. Generate k, which is in [1, n - 1] */
     ret = inner_get_limit_random(k_data.data, ecc_n, priv_key->length);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "inner_get_limit_random failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "inner_get_limit_random failed\n");
     crypto_pke_dump_data("random k", k_data.data, priv_key->length);
 
     /* Step 2. Compute kp = k * P(x, y) */
@@ -48,7 +50,7 @@ static int32_t inner_ecdsa_sign(const drv_pke_data *priv_key, const drv_pke_data
     crypto_pke_dump_data("k", k_data.data, priv_key->length);
 
     ret = hal_pke_alg_ecc_base_point_mul(&k_data, &kp_point);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hal_pke_alg_ecc_base_point_mul failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hal_pke_alg_ecc_base_point_mul failed\n");
 
     crypto_pke_dump_data("kp(x)", kp_point.x, kp_point.length);
     crypto_pke_dump_data("kp(y)", kp_point.y, kp_point.length);
@@ -67,7 +69,7 @@ static int32_t inner_ecdsa_sign(const drv_pke_data *priv_key, const drv_pke_data
     crypto_pke_dump_data("r", r_data.data, r_data.length);
 
     ret = hal_pke_alg_ecc_compute_s(&k_data, hash, priv_key, &r_data, &s_data);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hal_pke_alg_ecc_compute_s failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_free, "hal_pke_alg_ecc_compute_s failed\n");
 
     crypto_pke_dump_data("s", s_data.data, s_data.length);
     crypto_pke_print("========== End Compute s = k^-1(e + dr) mod n ==========\n");
@@ -98,16 +100,16 @@ static int32_t inner_ecdsa_sign_param_chk(drv_pke_ecc_curve_type curve_type, con
     pke_null_ptr_chk(sig->s);
 
     ret = inner_ecdsa_type_check(curve_type);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "invalid curve_type\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "invalid curve_type\n");
 
     /* length check. */
     klen = crypto_pke_get_klen(curve_type);
-    crypto_chk_return(priv_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(priv_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "priv_key->length is invalid\n");
-    crypto_chk_return(sig->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(sig->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "sig->length is invalid\n");
 
-    crypto_chk_return(inner_ecc_hash_len_check(klen, hash->length) != CRYPTO_SUCCESS,
+    drv_err_chk_return(inner_ecc_hash_len_check(klen, hash->length) != CRYPTO_SUCCESS,
         PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "invalid hash_type!\n");
 
     return CRYPTO_SUCCESS;
@@ -123,7 +125,7 @@ int32_t drv_cipher_pke_ecdsa_sign(drv_pke_ecc_curve_type curve_type, const drv_p
     uint8_t hash_buf[DRV_PKE_LEN_256];
 
     ret = inner_ecdsa_sign_param_chk(curve_type, priv_key, hash, sig);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     hash_data.data = hash->data;
     hash_data.length = crypto_min(priv_key->length, hash->length);
@@ -132,6 +134,7 @@ int32_t drv_cipher_pke_ecdsa_sign(drv_pke_ecc_curve_type curve_type, const drv_p
 #if defined(CONFIG_PKE_SUPPORT_SM2_SIGN)
         return drv_cipher_pke_sm2_sign(priv_key, &hash_data, sig);
 #else
+        drv_set_err(ERROR_UNSUPPORT, "direct error return");
         return ERROR_UNSUPPORT;
 #endif
     }
@@ -140,12 +143,12 @@ int32_t drv_cipher_pke_ecdsa_sign(drv_pke_ecc_curve_type curve_type, const drv_p
         hash_data.length = crypto_min(hash_data.length, HASH_SHA224_RESULT_SIZE);
         diff = DRV_PKE_LEN_256 - hash_data.length;
         ret = memcpy_s(&hash_buf[diff], DRV_PKE_LEN_256 - diff, hash_data.data, hash_data.length);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S);
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S);
         hash_data.data = hash_buf;
         hash_data.length = DRV_PKE_LEN_256;
     }
     ret = hal_pke_alg_ecc_init(curve_type);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
 
     for (i = 0; i < MAX_TRY_TIMES; i++) {
         ret = inner_ecdsa_sign(priv_key, &hash_data, sig);
@@ -153,12 +156,12 @@ int32_t drv_cipher_pke_ecdsa_sign(drv_pke_ecc_curve_type curve_type, const drv_p
             ret == PKE_COMPAT_ERRNO(ERROR_ECDSA_SIGN_S_IS_ZERO)) {
             continue;
         }
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_ecdsa_sign failed\n");
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_ecdsa_sign failed\n");
         ret = CRYPTO_SUCCESS;
         goto exit_deinit;
     }
 
-    crypto_log_err("pke sign try max time!\n");
+    drv_set_err(ERROR_UNEXPECTED, "logged error");
     ret = PKE_COMPAT_ERRNO(ERROR_TRY_TIMES);
 exit_deinit:
     hal_pke_alg_ecc_deinit();

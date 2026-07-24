@@ -9,6 +9,9 @@
 #include "crypto_pke_common.h"
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
+
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ED_POINT_MUL_COMPRESS
+
 #define ED25519_KEY_LEN     32
 
 #define POINT_NAF_INSTR_NUM     3
@@ -21,11 +24,11 @@ static int inner_ed_ecfp_mul_naf_cal(unsigned int work_len, const drv_pke_data *
 
     /* Step 1: data montgomerize and data copy. the point and the initial parameters should have been set. */
     ret = inner_batch_instr_process(&instr_ed25519_mul_a_pre, work_len);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
 
     /* Step 2: NAF point multiplication. */
     ret = inner_point_mul_naf(batch_instr_block, POINT_NAF_INSTR_NUM, k);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_point_mul_naf failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_point_mul_naf failed\n");
 
     return ret;
 }
@@ -40,7 +43,7 @@ static int inner_ed_ecfp_xyz_to_xy(const drv_pke_data *mod_p)
     };
 
     ret = inner_jac_to_aff_cal(batch_instr_block, JAC_TO_AFF_INSTR_NUM, mod_p);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_jac_to_aff_cal failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_jac_to_aff_cal failed\n");
 
     return ret;
 }
@@ -84,10 +87,10 @@ int hal_pke_alg_ed_point_mul_compress(const drv_pke_data *p, const drv_pke_ecc_p
     hal_pke_set_mont_para_romable(init_param->mont_param_p);
 
     ret = inner_ed_ecfp_mul_naf_cal(work_len, p);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ed_ecfp_mul_naf_cal failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ed_ecfp_mul_naf_cal failed\n");
 
     ret = inner_ed_ecfp_xyz_to_xy(&p_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ed_ecfp_xyz_to_xy failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_ed_ecfp_xyz_to_xy failed\n");
 
     hal_pke_get_ram_romable(ed_addr_cx, pG_point.x, pG_point.length);
     hal_pke_get_ram_romable(ed_addr_cy, pG_point.y, pG_point.length);

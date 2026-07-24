@@ -6,6 +6,8 @@
 */
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_ECC_DRV_PKE_SM2_PUB_ENC
+
 #define SM2_KEY_SIZE        32
 #define SM2_PC_UNCOMPRESS   0x04
 #define SM3_HASH_LEN        32
@@ -53,7 +55,7 @@ static int inner_sm2_public_encrypt(const drv_pke_ecc_point *pub_key, const drv_
     idx += plain_text->length;
     /* Step A1. generate k in [1, n - 1] */
     ret = inner_get_limit_random(k, sm2_n, pub_key->length);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_get_limit_random failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_get_limit_random failed\n");
 
 #if defined(CONFIG_PKE_SM2_TRACE_ENABLE)
     crypto_dump_data("random k", k, pub_key->length);
@@ -65,7 +67,7 @@ static int inner_sm2_public_encrypt(const drv_pke_ecc_point *pub_key, const drv_
     crypto_dump_data("random k", k, pub_key->length);
 #endif
     ret = hal_pke_alg_ecc_base_point_mul(&k_data, &c1_point);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_base_point_mul failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_base_point_mul failed\n");
 #if defined(CONFIG_PKE_SM2_TRACE_ENABLE)
     crypto_dump_data("C1(x1)", c1_point.x, c1_point.length);
     crypto_dump_data("C1(y1)", c1_point.y, c1_point.length);
@@ -80,7 +82,7 @@ static int inner_sm2_public_encrypt(const drv_pke_ecc_point *pub_key, const drv_
     crypto_dump_data("Pb(y)", pub_key->y, pub_key->length);
 #endif
     ret = hal_pke_alg_ecc_point_mul(&k_data, pub_key, &kpb_point);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_point_mul failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_point_mul failed\n");
 #if defined(CONFIG_PKE_SM2_TRACE_ENABLE)
     crypto_dump_data("kPb(x)", kpb_point.x, kpb_point.length);
     crypto_dump_data("kPb(y)", kpb_point.y, kpb_point.length);
@@ -96,7 +98,7 @@ static int inner_sm2_public_encrypt(const drv_pke_ecc_point *pub_key, const drv_
     crypto_dump_data("y2", kpb_point.y, kpb_point.length);
 #endif
     ret = inner_sm2_kdf(&kpb_point, t, plain_text->length);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_sm2_kdf failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_sm2_kdf failed\n");
 #if defined(CONFIG_PKE_SM2_TRACE_ENABLE)
     crypto_dump_data("t", t, plain_text->length);
     crypto_print("========== End Compute t = kdf(x2 || y2, klen) ==========\n");
@@ -129,7 +131,7 @@ static int inner_sm2_public_encrypt(const drv_pke_ecc_point *pub_key, const drv_
     arr[2].data = kpb_y;    // 2: position to store kpb_y_data
     arr[2].length = SM2_KEY_SIZE;   // 2: position to store kpb_y_length
     ret = crypto_pke_common_calc_hash(arr, crypto_array_size(arr), DRV_PKE_HASH_TYPE_SM3, &c3_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_calc_hash failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_calc_hash failed\n");
 #if defined(CONFIG_PKE_SM2_TRACE_ENABLE)
     crypto_dump_data("C3", c3_data.data, c3_data.length);
     crypto_print("========== End Compute Compute C3 = Hash(x2 || M || y2) ==========\n");
@@ -158,17 +160,17 @@ int drv_cipher_pke_sm2_public_encrypt(const drv_pke_ecc_point *pub_key, const dr
     pke_null_ptr_chk(cipher_text->data);
 
     /* length check. */
-    crypto_chk_return(pub_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(pub_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "pub_key->length is invalid\n");
     /* For SM2 Crypto, the cipher_text is 97 longer than plain_text. */
-    crypto_chk_return(cipher_text->length < plain_text->length + CRYPTO_SM2_ADD_LENGTH_IN_BYTE,
+    drv_err_chk_return(cipher_text->length < plain_text->length + CRYPTO_SM2_ADD_LENGTH_IN_BYTE,
         PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "cipher_text->length is not enough\n");
 
     ret = hal_pke_alg_ecc_init(DRV_PKE_ECC_TYPE_SM2);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
 
     ret = inner_sm2_public_encrypt(pub_key, plain_text, cipher_text);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_sm2_public_encrypt failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_sm2_public_encrypt failed\n");
 
     ((drv_pke_data *)cipher_text)->length = plain_text->length + CRYPTO_SM2_ADD_LENGTH_IN_BYTE;
 exit_deinit:

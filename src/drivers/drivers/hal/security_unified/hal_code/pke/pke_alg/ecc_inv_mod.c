@@ -12,6 +12,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ECC_INV_MOD
+
 int hal_pke_alg_ecc_inv_mod(const drv_pke_data *a, const drv_pke_data *c)
 {
     int ret;
@@ -36,11 +38,11 @@ int hal_pke_alg_ecc_inv_mod(const drv_pke_data *a, const drv_pke_data *c)
 
     /* 2. start calculate. */
     ret = inner_batch_instr_process_opt(&instr_ecfn_inv_pre_5);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
 
     /* Step 2. start inv calculate. */
     ret = hal_pke_loop_batch_compute_romable(ecc_curve->key_valid_bit, n_2, NULL, klen, batch_instr_loop);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_loop_batch_compute_romable failed\n");
 
     /* get data out from DRAM ecc_addr_s, the result is montgomeried. */
     hal_pke_get_ram_romable(ecc_addr_s, c->data, c->length);

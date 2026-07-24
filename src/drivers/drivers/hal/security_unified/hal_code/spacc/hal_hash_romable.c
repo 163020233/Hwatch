@@ -12,6 +12,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_SPACC_HAL_HASH_ROMABLE
+
 #define REE_CPU_MASK        0x1
 #define TEE_CPU_MASK        0x2
 
@@ -53,6 +55,7 @@ int32_t hal_hash_chn_init_romable(uint32_t chn_num, hal_hash_entry_in_t entry_in
     /* Step 2. Check if lock success. */
     used = spacc_reg_read(SPACC_HASH_CHN_LOCK);
     if (CHN_WHO_USED_GET(used, chn_num) != cpu_mask) {
+        drv_set_err(ERROR_CHN_BUSY, "direct error return");
         return ERROR_CHN_BUSY;
     }
 
@@ -96,7 +99,7 @@ int32_t hal_hash_compute_romable(uint32_t hash_alg,
 
     /* Step 1. Try alloc hash channel. */
     ret = hal_hash_try_alloc_chn_romable(&chn_num);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ERROR_CHN_BUSY);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ERROR_CHN_BUSY);
 
     idx = chn_num - 1;
     /* Step 2. Configure IN_HASH_CHN_KEY_CTRL and state_in. */
@@ -125,7 +128,7 @@ int32_t hal_hash_compute_romable(uint32_t hash_alg,
 
     /* Step 6. Wait compute finish. */
     ret = hal_hash_wait_done_romable(chn_num);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_free_chn);
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_free_chn);
 
     /* Step 7. Update state_out. */
     if (state_out != NULL) {
@@ -175,6 +178,7 @@ int32_t hal_hash_wait_done_romable(uint32_t chn_num)
     }
     if (i >= CRYPTO_HASH_CALC_WAIT_TIMEOUT) {
         hal_hash_debug_romable(chn_num);
+        drv_set_err(ERROR_HASH_CALC_TIMEOUT, "direct error return");
         return ERROR_HASH_CALC_TIMEOUT;
     }
     return CRYPTO_SUCCESS;

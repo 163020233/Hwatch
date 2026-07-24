@@ -10,6 +10,8 @@
 #include "crypto_drv_common.h"
 #include "security_hash_pri.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_HKDF_SIMPLE
+
 errcode_t uapi_drv_cipher_pbkdf2(const uapi_drv_cipher_kdf_pbkdf2_param_t *param, uint8_t *out, const uint32_t out_len)
 {
 #ifdef CONFIG_SECURITY_UNIFIED_SUPPORT_PBKDF2

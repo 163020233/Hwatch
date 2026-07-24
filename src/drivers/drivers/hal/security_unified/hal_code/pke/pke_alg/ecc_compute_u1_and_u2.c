@@ -11,6 +11,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ECC_COMPUTE_U1_AND_U2
+
 int hal_pke_alg_ecc_compute_u1_and_u2(const drv_pke_data *w, const drv_pke_data *e, const drv_pke_data *r,
     const drv_pke_data *u1, const drv_pke_data *u2)
 {
@@ -30,7 +32,7 @@ int hal_pke_alg_ecc_compute_u1_and_u2(const drv_pke_data *w, const drv_pke_data 
 
     /* Step 2: start calculate. */
     ret = inner_batch_instr_process_opt(&instr_ecfn_verify_u_10);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process_opt failed\n");
 
     /* Step 3: get result out of PKE DRAM */
     hal_pke_get_ram_romable(ecc_addr_u1, u1->data, u1->length);

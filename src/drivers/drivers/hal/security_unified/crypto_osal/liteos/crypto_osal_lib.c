@@ -7,6 +7,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_CRYPTO_OSAL_LITEOS_CRYPTO_OSAL_LIB
+
 static crypto_atomic g_deepsleep_vote[MAX_MODULE_ID] = {0};
 static const crypto_table_item g_module_id_table[] = {
     {KM_MODULE_ID, PM_SECURITY_KM_VETO_ID},

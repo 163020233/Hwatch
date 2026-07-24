@@ -16,6 +16,8 @@
 #include "crypto_common_macro.h"
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_PKE
+
 errcode_t uapi_drv_cipher_pke_ecc_gen_key(uapi_drv_cipher_pke_ecc_curve_type_t curve_type,
     const uapi_drv_cipher_pke_data_t *input_priv_key,
     const uapi_drv_cipher_pke_data_t *output_priv_key,

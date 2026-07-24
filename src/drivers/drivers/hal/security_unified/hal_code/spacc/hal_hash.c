@@ -9,6 +9,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_SPACC_HAL_HASH
+
 void hal_hash_debug_default(uint32_t chn_num)
 {
     uint32_t i;

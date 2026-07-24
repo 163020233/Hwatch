@@ -13,6 +13,8 @@
 #include "hal_rkp_reg.h"
 #include "hal_keyslot_romable.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_KM_HAL_KEYSLOT
+
 #if defined(CRYPTO_ERROR_ENV) && (CRYPTO_ERROR_ENV == ERROR_ENV_LITEOS)
 void hal_keyslot_debug_default(void)
 {

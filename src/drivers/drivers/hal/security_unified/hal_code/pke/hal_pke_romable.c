@@ -13,6 +13,8 @@
 #include "crypto_drv_common.h"
 #include "crypto_pke_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_HAL_PKE_ROMABLE
+
 #define TEE_LOCK_CODE   0xA5
 #define REE_LOCK_CODE   0xAA
 
@@ -72,6 +74,7 @@ int32_t hal_pke_lock_wait_done_romable(void)
     }
     if (i >= CONFIG_PKE_LOCK_TIMEOUT_US) {
         hal_pke_debug_romable();
+        drv_set_err(ERROR_PKE_LOCK_TIMEOUT, "direct error return");
         return ERROR_PKE_LOCK_TIMEOUT;
     }
     return CRYPTO_SUCCESS;
@@ -102,7 +105,7 @@ void hal_pke_set_ram_romable(uint32_t ram_section, const uint8_t *data, uint32_t
     uint32_t start_dram_addr = PKE_DRAM_BASE + ram_section * PKE_DRAM_BLOCK_LENGTH;
 
     if ((data_len % CRYPTO_WORD_WIDTH) != 0) {
-        crypto_log_err("data_len must be align to 4-byte\n");
+        drv_set_err(ERROR_UNEXPECTED, "logged error");
         return;
     }
 
@@ -240,6 +243,7 @@ static int32_t inner_normal_batch_compute_romable(uint32_t loop_num, const unsig
     unsigned char bit_2;
 
     if (loop_num > klen * CRYPTO_BITS_IN_BYTE) {
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
 
@@ -258,7 +262,7 @@ static int32_t inner_normal_batch_compute_romable(uint32_t loop_num, const unsig
 
         if (batch_instr[bit_2] != NULL) {
             ret = hal_pke_batch_compute_romable(batch_instr[bit_2]->instr_addr, batch_instr[bit_2]->instr_num);
-            crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
+            drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_batch_instr_process failed\n");
         }
     }
     return CRYPTO_SUCCESS;

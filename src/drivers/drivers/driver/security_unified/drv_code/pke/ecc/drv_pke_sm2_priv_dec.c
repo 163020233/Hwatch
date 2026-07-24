@@ -6,6 +6,8 @@
 */
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_ECC_DRV_PKE_SM2_PRIV_DEC
+
 #define SM2_KEY_SIZE            32
 #define SM3_HASH_LEN            32
 #define SM2_PC_UNCOMPRESS       0x04
@@ -42,7 +44,8 @@ static int inner_sm2_private_decrypt(const drv_pke_data *priv_key, const drv_pke
     /* cipher_text = C1 || C3 || C2 */
     /* According Part1 4.2.8, using uncompress representational form. */
     if (cipher_text->data[idx] != SM2_PC_UNCOMPRESS) {
-        crypto_log_err("invalid uncompress representational form!\n");
+
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
     idx++;
@@ -61,8 +64,8 @@ static int inner_sm2_private_decrypt(const drv_pke_data *priv_key, const drv_pke
 
     /* Step B1. Get C1 from C and check if C1 is on the curve. */
     ret = hal_pke_alg_ecc_check_dot_on_curve(&c1_point, &is_on_curve);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_check_dot_on_curve failed\n");
-    crypto_chk_return(is_on_curve != TD_TRUE, CRYPTO_FAILURE, "C1 is not on the curve!\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_check_dot_on_curve failed\n");
+    drv_err_chk_return(is_on_curve != TD_TRUE, CRYPTO_FAILURE, "C1 is not on the curve!\n");
 
     /* Step B2. Compute S = h * C1, cause h is 1, so we skip this step. */
     /* Step B3. Compute dC1(x2, y2) = dB * C1. */
@@ -72,7 +75,7 @@ static int inner_sm2_private_decrypt(const drv_pke_data *priv_key, const drv_pke
     crypto_pke_dump_data("C1(y)", c1_point.y, c1_point.length);
 
     ret = hal_pke_alg_ecc_point_mul(priv_key, &c1_point, &dc1_point);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_point_mul failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_point_mul failed\n");
 
     crypto_pke_dump_data("dC1(x1)", dc1_point.x, dc1_point.length);
     crypto_pke_dump_data("dC1(y1)", dc1_point.y, dc1_point.length);
@@ -86,7 +89,7 @@ static int inner_sm2_private_decrypt(const drv_pke_data *priv_key, const drv_pke
     crypto_pke_dump_data("y2", dc1_point.y, dc1_point.length);
 
     ret = inner_sm2_kdf(&dc1_point, t, plain_text_len);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "inner_sm2_kdf failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "inner_sm2_kdf failed\n");
 
     crypto_pke_dump_data("t", t, plain_text_len);
     crypto_pke_print("========== End Compute t = kdf(x2 || y2, klen) ==========\n");
@@ -112,7 +115,7 @@ static int inner_sm2_private_decrypt(const drv_pke_data *priv_key, const drv_pke
     arr[2].data = y2;   // 2: position to store y2_data
     arr[2].length = SM2_KEY_SIZE;   // 2: position to store y2_length
     ret = crypto_pke_common_calc_hash(arr, crypto_array_size(arr), DRV_PKE_HASH_TYPE_SM3, &u_data);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "crypto_pke_common_calc_hash failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "crypto_pke_common_calc_hash failed\n");
 
     crypto_pke_dump_data("u", u_buf, SM3_HASH_LEN);
     crypto_pke_print("========== End Compute Compute u = Hash(x2 || M' || y2) ==========\n");
@@ -122,7 +125,7 @@ static int inner_sm2_private_decrypt(const drv_pke_data *priv_key, const drv_pke
         goto exit_clean;
     }
 
-    crypto_log_err("Invalid u!\n");
+    drv_set_err(ERROR_UNEXPECTED, "logged error");
     ret = CRYPTO_FAILURE;
 exit_clean:
     (void)memset_s(dc1_point.x, dc1_point.length, 0, dc1_point.length);
@@ -145,19 +148,19 @@ int drv_cipher_pke_sm2_private_decrypt(const drv_pke_data *priv_key, const drv_p
     pke_null_ptr_chk(plain_text->data);
 
     /* length check. */
-    crypto_chk_return(priv_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(priv_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "priv_key->length is invalid\n");
     /* For SM2 Crypto, the cipher_text is 97 longer than plain_text. */
-    crypto_chk_return(cipher_text->length <= CRYPTO_SM2_ADD_LENGTH_IN_BYTE,
+    drv_err_chk_return(cipher_text->length <= CRYPTO_SM2_ADD_LENGTH_IN_BYTE,
         PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "cipher_text->length is invalid\n");
-    crypto_chk_return(plain_text->length < (cipher_text->length - CRYPTO_SM2_ADD_LENGTH_IN_BYTE),
+    drv_err_chk_return(plain_text->length < (cipher_text->length - CRYPTO_SM2_ADD_LENGTH_IN_BYTE),
         PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "plain_text->length is not enough\n");
 
     ret = hal_pke_alg_ecc_init(DRV_PKE_ECC_TYPE_SM2);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
 
     ret = inner_sm2_private_decrypt(priv_key, cipher_text, plain_text);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_sm2_private_decrypt failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_sm2_private_decrypt failed\n");
 
     ((drv_pke_data *)plain_text)->length = cipher_text->length - CRYPTO_SM2_ADD_LENGTH_IN_BYTE;
 exit_deinit:

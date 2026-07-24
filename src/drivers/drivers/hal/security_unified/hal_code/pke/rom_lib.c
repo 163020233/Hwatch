@@ -9,6 +9,8 @@
 #include "crypto_common_def.h"
 #include "rom_lib.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_ROM_LIB
+
 /*
  * preprocess, initialize the data, include copy and generate tmpera variable.
  * [fp_mul, fp_mul, fp_mul, fp_sub, fp_add]

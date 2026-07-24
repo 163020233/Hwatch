@@ -10,6 +10,8 @@
 #include "hal_pke_romable.h"
 #include "pke_alg_inner.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_PKE_PKE_ALG_ECC_COMPUTE_S
+
 static int ecc_ecfn_sign_s(const drv_pke_data *k_inv, const drv_pke_data *e, const drv_pke_data *d,
     const drv_pke_data *r, const drv_pke_data *n, const drv_pke_data *s)
 {
@@ -29,7 +31,7 @@ static int ecc_ecfn_sign_s(const drv_pke_data *k_inv, const drv_pke_data *e, con
 
     /* Step 2. start calculate. */
     ret = inner_batch_instr_process(&instr_ecfn_sign_s_12, work_len);
-    crypto_chk_func_return(inner_batch_instr_process, ret);
+    drv_err_chk_func_return(inner_batch_instr_process, ret);
 
     /* Step 3: get data from PKE DRAM */
     hal_pke_get_ram_romable(ecc_addr_s, s->data, s->length);
@@ -57,11 +59,11 @@ int hal_pke_alg_ecc_compute_s(const drv_pke_data *k, const drv_pke_data *e, cons
     n.length = ecc_curve->ksize;
     /* Step 1. Compute k_inv. */
     ret = hal_pke_alg_ecc_inv_mod(k, &k_inv_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_inv_mod failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_inv_mod failed\n");
 
     /* Step 2. Compute s = k_inv * (e + d * r) mod n. */
     ret = ecc_ecfn_sign_s(&k_inv_data, e, d, r, &n, s);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "ecc_ecfn_sign_s failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "ecc_ecfn_sign_s failed\n");
 
     return ret;
 }

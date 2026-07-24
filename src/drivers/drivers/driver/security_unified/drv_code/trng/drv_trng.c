@@ -11,9 +11,11 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_TRNG_DRV_TRNG
+
 int32_t drv_cipher_trng_get_random(uint32_t *randnum)
 {
-    crypto_chk_return(randnum == NULL, ERROR_PARAM_IS_NULL, "randnum is NULL\n");
+    drv_err_chk_return(randnum == NULL, ERROR_PARAM_IS_NULL, "randnum is NULL\n");
     return hal_trng_get_random_romable(randnum);
 }
 
@@ -25,26 +27,26 @@ int32_t drv_cipher_trng_get_multi_random(uint32_t size, uint8_t *randnum)
     uint32_t randnum_once;
     uint32_t tail;
 
-    crypto_chk_return(randnum == TD_NULL, ERROR_PARAM_IS_NULL, "randnum is NULL\n");
+    drv_err_chk_return(randnum == TD_NULL, ERROR_PARAM_IS_NULL, "randnum is NULL\n");
 
     cnt = size / CRYPTO_WORD_WIDTH;
     for (i = 0; i < cnt; i++) {
         ret = hal_trng_get_random_romable(&randnum_once);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
         ret = memcpy_s(randnum + i * CRYPTO_WORD_WIDTH, size - i * CRYPTO_WORD_WIDTH,
             &randnum_once, CRYPTO_WORD_WIDTH);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S);
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S);
     }
 
     /* less then 4 byte */
     tail = size - cnt * CRYPTO_WORD_WIDTH;
     if (tail != 0) {
         ret = hal_trng_get_random_romable(&randnum_once);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
         ret = memcpy_s(randnum + cnt * CRYPTO_WORD_WIDTH, tail, &randnum_once, tail);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S);
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S);
     }
     return CRYPTO_SUCCESS;
 }

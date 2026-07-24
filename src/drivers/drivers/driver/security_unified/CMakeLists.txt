@@ -68,6 +68,7 @@ set(COMPONENT_PUBLIC_CCFLAGS
 
 set(COMPONENT_CCFLAGS
     -Werror=cast-align
+    SHELL:-include ${ROOT_DIR}/drivers/drivers/driver/security_unified/include/drv_include/drv_errno.h
     ${LOCAL_CCFLAGS}
 )
 
@@ -128,6 +129,7 @@ list(FILTER SOURCES EXCLUDE REGEX "romable/hash_romable.c")
 list(FILTER SOURCES EXCLUDE REGEX "crypto_osal_lib.c")
 
 list(APPEND SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/drv_errno.c
     ${CMAKE_CURRENT_SOURCE_DIR}/drv_code/hash/drv_hkdf.c
     ${CMAKE_CURRENT_SOURCE_DIR}/drv_code/km/drv_pbkdf2.c
     ${CMAKE_CURRENT_SOURCE_DIR}/drv_code/km/drv_keyslot.c

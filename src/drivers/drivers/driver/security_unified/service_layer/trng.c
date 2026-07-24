@@ -13,6 +13,8 @@
 #include "sl_common.h"
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_TRNG
+
 errcode_t uapi_drv_cipher_trng_get_random(uint32_t *randnum)
 {
     crypto_service_preprocess(TRNG_MODULE_ID);

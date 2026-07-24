@@ -11,6 +11,8 @@
 #include "drv_hash.h"
 #include "drv_trng.h"
 
+#define FILE_ID FILE_ID_COMMON_CRYPTO_PKE_COMMON
+
 #define BYTE_VALUE  256
 #define MAX_ECC_LENGTH 72
 #define PKE_COMPAT_ERRNO(err_code)      HAL_COMPAT_ERRNO(ERROR_MODULE_PKE, err_code)
@@ -33,7 +35,7 @@ int32_t crypto_pke_common_secret_expand(const uint8_t *secret, uint8_t *a,
     };
 
     ret = crypto_pke_common_calc_hash(&secret_data, 1, DRV_PKE_HASH_TYPE_SHA512, &hash_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_calc_hash failed, ret is 0x%x\n", ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_calc_hash failed, ret is 0x%x\n", ret);
 
     for (i = 0; i < len; i++) {
         a[i] = h[len - 1 - i];
@@ -45,7 +47,7 @@ int32_t crypto_pke_common_secret_expand(const uint8_t *secret, uint8_t *a,
     a[0] |= 0x40;
 
     ret = memcpy_s(prefix, len, h + len, len);
-    crypto_chk_return(ret != EOK, CRYPTO_FAILURE, "memcpy_s failed\n");
+    drv_err_chk_return(ret != EOK, CRYPTO_FAILURE, "memcpy_s failed\n");
 
     return CRYPTO_SUCCESS;
 }
@@ -126,14 +128,14 @@ int32_t crypto_pke_common_bin2naf_fast(const uint8_t *x, uint8_t *positive_bits,
     uint8_t *c = NULL;
 
     buf = crypto_malloc_coherent(MAX_NAF_LEN * 3);  // 3: for xh/x3/c
-    crypto_chk_return(buf == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(buf == NULL, ERROR_MALLOC, "malloc failed\n");
 
     xh = buf;
     x3 = xh + MAX_NAF_LEN;
     c = x3 + MAX_NAF_LEN;
 
     ret = memcpy_s(xh, MAX_NAF_LEN, x, len);
-    crypto_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_goto_with_ret(ret, ret != EOK, exit_free, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     /* Step 1. xh = x >> 1. */
     inner_arry_right_shift_value(xh, len, 1);
@@ -176,7 +178,7 @@ int32_t crypto_pke_common_normal_sub(const drv_pke_data *a, const drv_pke_data *
     uint8_t carry = 0;
 
     ret = memcpy_s(c->data, c->length, a->data, a->length);
-    crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     for (i = (int)a->length - 1, j = (int)b->length - 1; i >= 1 && j >= 0; i--, j--) {
         if (a->data[i] < b->data[j] || a->data[i] - b->data[j] < carry) {
@@ -278,7 +280,7 @@ int32_t crypto_pke_rsa_hash_len_check(uint32_t klen, drv_pke_hash_type hash_type
 {
 #if defined(CONFIG_PKE_RSA_SECURITY_STRENGTH_CHECK)
     /* check whether the security strength is the same. */
-    crypto_chk_return((klen == DRV_PKE_LEN_2048 && hash_type < DRV_PKE_HASH_TYPE_SHA224) ||
+    drv_err_chk_return((klen == DRV_PKE_LEN_2048 && hash_type < DRV_PKE_HASH_TYPE_SHA224) ||
         (klen == DRV_PKE_LEN_3072 && hash_type < DRV_PKE_HASH_TYPE_SHA256) ||
         (klen == DRV_PKE_LEN_4096 && hash_type < DRV_PKE_HASH_TYPE_SHA384),
         ERROR_PKE_SECURITY_STRENGTH_NOT_MATCH, "the security strength of the hash doesn't match the rsa!\n");
@@ -305,7 +307,7 @@ static crypto_hash_type drv_pke_get_hash_type(drv_pke_hash_type hash_type)
         case DRV_PKE_HASH_TYPE_SM3:
             return CRYPTO_HASH_TYPE_SM3;
         default:
-            crypto_log_err("Invalid hash_type\n");
+            drv_set_err(ERROR_UNEXPECTED, "logged error");
             return CRYPTO_HASH_TYPE_INVALID;
     }
 }
@@ -321,22 +323,23 @@ int32_t crypto_pke_common_calc_hash(const drv_pke_data *arr, uint32_t arr_len,
 
     hash_alg = drv_pke_get_hash_type(hash_type);
     if (hash_alg == CRYPTO_HASH_TYPE_INVALID) {
+        drv_set_err(PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM), "direct error return");
         return PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM);
     }
 
     ret = drv_cipher_hash_compute_setup(&hash_ctx);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hash setup failed, ret is 0x%x\n", ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hash setup failed, ret is 0x%x\n", ret);
 
     ret = drv_cipher_hash_compute_start(hash_ctx, hash_alg);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hash start failed, ret is 0x%x\n", ret);
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hash start failed, ret is 0x%x\n", ret);
 
     for (i = 0;i < arr_len; i++) {
         ret = drv_cipher_hash_compute_update(hash_ctx, arr[i].data, arr[i].length);
-        crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hash update failed, ret is 0x%x\n", ret);
+        drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hash update failed, ret is 0x%x\n", ret);
     }
 
     ret = drv_cipher_hash_compute_finish(hash_ctx, hash->data, hash->length);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hash finish failed, ret is 0x%x\n", ret);
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_teardown, "hash finish failed, ret is 0x%x\n", ret);
 
 exit_teardown:
     (void)drv_cipher_hash_compute_teardown(hash_ctx);
@@ -375,8 +378,8 @@ int32_t crypto_pke_common_add_mod(const drv_pke_data *a, const drv_pke_data *b, 
     uint32_t len = a->length;
     uint32_t count = 0;
 
-    crypto_chk_return(a->length > MAX_ECC_LENGTH, ERROR_INVALID_PARAM, "add param length invalid!");
-    crypto_chk_return(a->length != b->length || a->length != c->length, ERROR_INVALID_PARAM, "add mod length invalid!");
+    drv_err_chk_return(a->length > MAX_ECC_LENGTH, ERROR_INVALID_PARAM, "add param length invalid!");
+    drv_err_chk_return(a->length != b->length || a->length != c->length, ERROR_INVALID_PARAM, "add mod length invalid!");
 
     and.data = and_data;
     and.length = len + 1;
@@ -394,20 +397,20 @@ int32_t crypto_pke_common_add_mod(const drv_pke_data *a, const drv_pke_data *b, 
 
     /* a + b >= n */
     while (crypto_pke_common_data_cmp(&and, n) >= 0) {
-        crypto_chk_return(count > MAX_SOFT_ADD_MOD_TIMES, ERROR_UNEXPECTED, "add mod n is too small!");
+        drv_err_chk_return(count > MAX_SOFT_ADD_MOD_TIMES, ERROR_UNEXPECTED, "add mod n is too small!");
 
         /* normal_sub required: len(a) = len(c), len(a) >= len(b), a > b. */
         ret = crypto_pke_common_normal_sub(&and, n, &sub);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_normal_sub failed!");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "crypto_pke_common_normal_sub failed!");
 
         ret = memcpy_s(and.data, and.length, sub.data, sub.length);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed!");
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed!");
 
         count++;
     }
 
     ret = memcpy_s(c->data, c->length, sub.data + 1, sub.length - 1);
-    crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed!");
+    drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed!");
     return ret;
 }
 

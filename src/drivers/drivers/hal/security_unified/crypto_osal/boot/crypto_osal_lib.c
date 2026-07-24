@@ -6,6 +6,8 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_CRYPTO_OSAL_BOOT_CRYPTO_OSAL_LIB
+
 void __attribute__((weak)) crypto_udelay(uint32_t useconds)
 {
     uapi_tcxo_delay_us(useconds);

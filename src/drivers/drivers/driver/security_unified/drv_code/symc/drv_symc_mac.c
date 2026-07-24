@@ -9,23 +9,25 @@
 
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_SYMC_DRV_SYMC_MAC
+
 #define SYMC_COMPAT_ERRNO(err_code)     DRV_COMPAT_ERRNO(ERROR_MODULE_SYMC, err_code)
 #define symc_null_ptr_chk(ptr)   \
-    crypto_chk_return((ptr) == NULL, SYMC_COMPAT_ERRNO(ERROR_PARAM_IS_NULL), #ptr" is NULL\n")
+    drv_err_chk_return((ptr) == NULL, SYMC_COMPAT_ERRNO(ERROR_PARAM_IS_NULL), #ptr" is NULL\n")
 
 CRYPTO_STATIC int32_t inner_drv_mac_ctx_chk(const drv_mac_ctx_t *ctx)
 {
-    crypto_chk_return(ctx->tail_len > DRV_SYMC_MAC_BUF_LEN,
+    drv_err_chk_return(ctx->tail_len > DRV_SYMC_MAC_BUF_LEN,
         SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "tail_len[%u] invalid\n", ctx->tail_len);
-    crypto_chk_return(ctx->key_len != CRYPTO_128_KEY_LEN && ctx->key_len != CRYPTO_192_KEY_LEN &&
+    drv_err_chk_return(ctx->key_len != CRYPTO_128_KEY_LEN && ctx->key_len != CRYPTO_192_KEY_LEN &&
         ctx->key_len != CRYPTO_256_KEY_LEN, SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "key_len is invalid\n");
-    crypto_chk_return(ctx->mode != CRYPTO_SYMC_WORK_MODE_CMAC && ctx->mode != CRYPTO_SYMC_WORK_MODE_CBC_MAC,
+    drv_err_chk_return(ctx->mode != CRYPTO_SYMC_WORK_MODE_CMAC && ctx->mode != CRYPTO_SYMC_WORK_MODE_CBC_MAC,
         SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "mode[0x%x] invalid\n", ctx->mode);
-    crypto_chk_return(ctx->symc_alg != CRYPTO_SYMC_ALG_AES && ctx->symc_alg != CRYPTO_SYMC_ALG_SM4,
+    drv_err_chk_return(ctx->symc_alg != CRYPTO_SYMC_ALG_AES && ctx->symc_alg != CRYPTO_SYMC_ALG_SM4,
         SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "symc_alg invalid\n");
 
 #if !defined(CONFIG_SYMC_SUPPORT_SM4_CMAC)
-    crypto_chk_return(ctx->symc_alg == CRYPTO_SYMC_ALG_SM4 && ctx->mode == CRYPTO_SYMC_WORK_MODE_CMAC,
+    drv_err_chk_return(ctx->symc_alg == CRYPTO_SYMC_ALG_SM4 && ctx->mode == CRYPTO_SYMC_WORK_MODE_CMAC,
         SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "sm4-cmac invalid\n");
 #endif
     return CRYPTO_SUCCESS;
@@ -40,18 +42,18 @@ static int inner_symc_mac_common_init(drv_mac_ctx_t *mac_ctx, crypto_symc_alg sy
         symc_null_ptr_chk(key);
     }
     /* key_len check. */
-    crypto_chk_return(key_len != CRYPTO_128_KEY_LEN && key_len != CRYPTO_192_KEY_LEN && key_len != CRYPTO_256_KEY_LEN,
+    drv_err_chk_return(key_len != CRYPTO_128_KEY_LEN && key_len != CRYPTO_192_KEY_LEN && key_len != CRYPTO_256_KEY_LEN,
         SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "key_len is invalid\n");
         
     /* symc_alg check. */
-    crypto_chk_return(symc_alg != CRYPTO_SYMC_ALG_AES && symc_alg != CRYPTO_SYMC_ALG_SM4,
+    drv_err_chk_return(symc_alg != CRYPTO_SYMC_ALG_AES && symc_alg != CRYPTO_SYMC_ALG_SM4,
         SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "alg is invalid\n");
 
     (void)memset_s(mac_ctx, sizeof(drv_mac_ctx_t), 0, sizeof(drv_mac_ctx_t));
 
     if (keyslot_handle == CRYPTO_INVALID_KEYSLOT_HANDLE) {
         ret = memcpy_s(mac_ctx->key, sizeof(mac_ctx->key), key, key_len);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
     }
  
     mac_ctx->key_len = key_len;
@@ -69,7 +71,7 @@ int drv_symc_mac_ctx_init(void *ctx, uint32_t ctx_size, crypto_symc_alg symc_alg
     /* pointer check. */
     symc_null_ptr_chk(ctx);
 
-    crypto_chk_return(ctx_size < sizeof(drv_mac_ctx_t),
+    drv_err_chk_return(ctx_size < sizeof(drv_mac_ctx_t),
         SYMC_COMPAT_ERRNO(ERROR_INVALID_PARAM), "ctx_size[%u] invalid\n", ctx_size);
     return inner_symc_mac_common_init(mac_ctx, symc_alg, mode, key, key_len, keyslot_handle);
 }
@@ -83,7 +85,7 @@ int drv_symc_mac_start(void **ctx, crypto_symc_alg symc_alg, crypto_symc_work_mo
     /* pointer check. */
     symc_null_ptr_chk(ctx);
     mac_ctx = crypto_malloc_coherent(sizeof(drv_mac_ctx_t));
-    crypto_chk_return(mac_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
+    drv_err_chk_return(mac_ctx == NULL, ERROR_MALLOC, "malloc failed\n");
 
     ret = inner_symc_mac_common_init(mac_ctx, symc_alg, mode, key, key_len, keyslot_handle);
     if (ret != 0) {
@@ -111,7 +113,7 @@ int drv_symc_mac_update(void *ctx, const unsigned char *data, unsigned int data_
     symc_null_ptr_chk(data);
 
     ret = inner_drv_mac_ctx_chk(mac_ctx);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     tail_len = mac_ctx->tail_len;
     if (((tail_len + data_len) % CRYPTO_AES_BLOCK_SIZE_IN_BYTES) == 0) {
@@ -121,7 +123,7 @@ int drv_symc_mac_update(void *ctx, const unsigned char *data, unsigned int data_
     processing_len = crypto_min(DRV_SYMC_MAC_BUF_LEN - tail_len, left);
     if (processing_len != 0) {
         ret = memcpy_s(mac_ctx->buf + tail_len, DRV_SYMC_MAC_BUF_LEN - tail_len, data, processing_len);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
     }
 
     mac_ctx->tail_len += processing_len;
@@ -131,7 +133,7 @@ int drv_symc_mac_update(void *ctx, const unsigned char *data, unsigned int data_
     if (mac_ctx->tail_len == DRV_SYMC_MAC_BUF_LEN) {
         ret = hal_cipher_symc_cbc_mac(mac_ctx->symc_alg, crypto_get_phys_addr(mac_ctx->buf), DRV_SYMC_MAC_BUF_LEN,
             mac_ctx->mac, mac_ctx->key, mac_ctx->key_len, mac_ctx->keyslot_handle);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
         mac_ctx->tail_len = 0;
     }
 
@@ -140,25 +142,25 @@ int drv_symc_mac_update(void *ctx, const unsigned char *data, unsigned int data_
     processing_len = left - left % DRV_SYMC_MAC_BUF_LEN;
     ret = hal_cipher_symc_cbc_mac(mac_ctx->symc_alg, crypto_get_phys_addr(data + processed_len), processing_len,
         mac_ctx->mac, mac_ctx->key, mac_ctx->key_len, mac_ctx->keyslot_handle);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
     left -= processing_len;
     processed_len += processing_len;
 #else
     while (left >= DRV_SYMC_MAC_BUF_LEN) {
         processing_len = DRV_SYMC_MAC_BUF_LEN;
         ret = memcpy_s(mac_ctx->buf, DRV_SYMC_MAC_BUF_LEN, data + processed_len, processing_len);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
         ret = hal_cipher_symc_cbc_mac(mac_ctx->symc_alg, crypto_get_phys_addr(mac_ctx->buf), DRV_SYMC_MAC_BUF_LEN,
             mac_ctx->mac, mac_ctx->key, mac_ctx->key_len, mac_ctx->keyslot_handle);
-        crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
+        drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
         left -= DRV_SYMC_MAC_BUF_LEN;
         processed_len += DRV_SYMC_MAC_BUF_LEN;
     }
 #endif
     if (left != 0) {
         ret = memcpy_s(mac_ctx->buf, DRV_SYMC_MAC_BUF_LEN, data + processed_len, left);
-        crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+        drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
     }
     mac_ctx->tail_len += left;
     if (((tail_len + data_len) % CRYPTO_AES_BLOCK_SIZE_IN_BYTES) == 0) {
@@ -199,7 +201,7 @@ static int32_t inner_symc_cmac_zero_data_len_proces(drv_mac_ctx_t *mac_ctx, unsi
     (void)memset_s(K2, sizeof(K2), 0, sizeof(K2));
     ret = drv_cipher_symc_crypt(alg, K2, K2, sizeof(K2), NULL,
         mac_ctx->key, mac_ctx->key_len, mac_ctx->keyslot_handle, true);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "compute L failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "compute L failed\n");
 
     /* Step 2. Compute K1.
      * if highest_bit(L) == 1:
@@ -237,7 +239,7 @@ static int32_t inner_symc_cmac_zero_data_len_proces(drv_mac_ctx_t *mac_ctx, unsi
     K2[0] ^= 0x80;  // 0x80: the highest bit is 1.
     ret = drv_cipher_symc_crypt(alg, K2, mac, sizeof(K2), NULL,
         mac_ctx->key, mac_ctx->key_len, mac_ctx->keyslot_handle, true);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "compute mac failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_clean, "compute mac failed\n");
 
     ret = CRYPTO_SUCCESS;
 exit_clean:
@@ -255,7 +257,7 @@ int drv_symc_mac_finish(void *ctx, unsigned char mac[16])
     symc_null_ptr_chk(ctx);
     symc_null_ptr_chk(mac);
     ret = inner_drv_mac_ctx_chk(mac_ctx);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret);
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret);
 
     if ((mac_ctx->tail_len == 0) && (mac_ctx->mode == CRYPTO_SYMC_WORK_MODE_CMAC)) {
         /* For CMAC, data_len is zero. */
@@ -272,16 +274,16 @@ int drv_symc_mac_finish(void *ctx, unsigned char mac[16])
             }
             ret = hal_cipher_symc_cbc_mac(mac_ctx->symc_alg, crypto_get_phys_addr(mac_ctx->buf),
                 processing_len, mac_ctx->mac, mac_ctx->key, mac_ctx->key_len, mac_ctx->keyslot_handle);
-            crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
+            drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
         } else {
             ret = hal_cipher_symc_cmac(mac_ctx->symc_alg, crypto_get_phys_addr(mac_ctx->buf),
                 processing_len, mac_ctx->mac, mac_ctx->key, mac_ctx->key_len,
                 mac_ctx->keyslot_handle);
-            crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
+            drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_cipher_symc_crypt failed\n");
         }
     }
     ret = memcpy_s(mac, CRYPTO_AES_BLOCK_SIZE_IN_BYTES, mac_ctx->mac, CRYPTO_AES_BLOCK_SIZE_IN_BYTES);
-    crypto_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
+    drv_err_chk_return(ret != EOK, ERROR_MEMCPY_S, "memcpy_s failed\n");
 
     return 0;
 }
@@ -302,13 +304,13 @@ int drv_symc_mac_compute(crypto_symc_alg symc_alg, crypto_symc_work_mode mode,
     void *mac_ctx = NULL;
 
     ret = drv_symc_mac_start(&mac_ctx, symc_alg, mode, key, key_len, keyslot_handle);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_symc_mac_start failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "drv_symc_mac_start failed\n");
 
     ret = drv_symc_mac_update(mac_ctx, data, data_len);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_destroy, "drv_symc_mac_update failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_destroy, "drv_symc_mac_update failed\n");
 
     ret = drv_symc_mac_finish(mac_ctx, mac);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_destroy, "drv_symc_mac_finish failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_destroy, "drv_symc_mac_finish failed\n");
 
 exit_destroy:
     (void)drv_symc_mac_destroy(mac_ctx);

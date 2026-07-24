@@ -12,6 +12,8 @@
 #include "drv_trng.h"
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_COMMON_CRYPTO_DRV_COMMON
+
 /* crypto dump functions. */
 #define MAX_DUMP_LENGHT     (512)
 #define BYTES_IN_ONE_LINE   (16)
@@ -51,8 +53,8 @@ td_s32 crypto_get_value_by_index(const crypto_table_item *table, td_u32 table_si
     const crypto_table_item *item = TD_NULL;
     td_u32 i;
 
-    crypto_chk_return(table == TD_NULL, CRYPTO_FAILURE, "table is NULL\n");
-    crypto_chk_return(value == TD_NULL, CRYPTO_FAILURE, "value is NULL\n");
+    drv_err_chk_return(table == TD_NULL, CRYPTO_FAILURE, "table is NULL\n");
+    drv_err_chk_return(value == TD_NULL, CRYPTO_FAILURE, "value is NULL\n");
 
     for (i = 0; i < table_size; i++) {
         item = &table[i];
@@ -61,7 +63,8 @@ td_s32 crypto_get_value_by_index(const crypto_table_item *table, td_u32 table_si
             return TD_SUCCESS;
         }
     }
-    crypto_log_err("Invalid Index!\n");
+
+    drv_set_err(CRYPTO_FAILURE, "direct error return");
     return CRYPTO_FAILURE;
 }
 
@@ -72,6 +75,7 @@ __attribute__((__weak__)) int32_t crypto_km_common_get_hard_key_type_item(crypto
     crypto_unused(rkp_cmd_cfg_val);
     crypto_unused(kl_com_ctrl_val);
 
+    drv_set_err(ERROR_UNSUPPORT, "direct error return");
     return ERROR_UNSUPPORT;
 }
 
@@ -96,6 +100,7 @@ void __attribute__((weak)) drv_cipher_close_all_clk(void)
 int32_t crypto_common_pri_atomic_read(crypto_common_pri_atomic *atomic)
 {
     if (atomic == NULL) {
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
     return (*atomic);
@@ -120,6 +125,7 @@ void crypto_common_pri_atomic_dec(crypto_common_pri_atomic *atomic)
 int32_t crypto_common_pri_atomic_inc_return(crypto_common_pri_atomic *atomic)
 {
     if ((atomic == NULL) || (*atomic == CRYPTO_INT32_MAX)) {
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
 
@@ -130,6 +136,7 @@ int32_t crypto_common_pri_atomic_inc_return(crypto_common_pri_atomic *atomic)
 int32_t crypto_common_pri_atomic_dec_return(crypto_common_pri_atomic *atomic)
 {
     if ((atomic == NULL) || (*atomic == 0)) {
+        drv_set_err(CRYPTO_FAILURE, "direct error return");
         return CRYPTO_FAILURE;
     }
 

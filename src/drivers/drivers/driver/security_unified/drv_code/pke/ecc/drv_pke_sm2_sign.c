@@ -6,6 +6,8 @@
 */
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_ECC_DRV_PKE_SM2_SIGN
+
 #define MAX_TRY_TIMES   100
 #define SM2_KEY_SIZE        32
 
@@ -43,7 +45,7 @@ static int inner_sm2_sign(const drv_pke_data *priv_key, const drv_pke_data *hash
     /* Step A1~A2: compute e = H(ZA || M), we can skip. */
     /* Step A3. generate k in [1, n - 1] */
     ret = inner_get_limit_random(k, sm2_n, priv_key->length);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_get_limit_random failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "inner_get_limit_random failed\n");
 
     crypto_pke_dump_data("random k", k, priv_key->length);
     /* Step A4. compute k * G. */
@@ -51,7 +53,7 @@ static int inner_sm2_sign(const drv_pke_data *priv_key, const drv_pke_data *hash
     crypto_pke_dump_data("k", k, priv_key->length);
 
     ret = hal_pke_alg_ecc_base_point_mul(&k_data, &kg_point);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_base_point_mul failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_base_point_mul failed\n");
     crypto_pke_dump_data("kg(x)", kg_point.x, kg_point.length);
     crypto_pke_dump_data("kg(y)", kg_point.y, kg_point.length);
     crypto_pke_print("========== End Compute kg = k * G ==========\n");
@@ -61,18 +63,18 @@ static int inner_sm2_sign(const drv_pke_data *priv_key, const drv_pke_data *hash
     crypto_pke_dump_data("x1", x1_data.data, x1_data.length);
 
     ret = hal_pke_alg_sm2_add_mod(hash, &x1_data, &r_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_add_mod failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_add_mod failed\n");
 
     crypto_pke_dump_data("r", r_data.data, r_data.length);
     crypto_pke_print("========== End Compute r = (e + x1) mod n==========\n");
     /* check if r is zero. */
-    crypto_chk_return(inner_drv_is_zero(r_data.data, r_data.length), PKE_COMPAT_ERRNO(ERROR_ECDSA_SIGN_R_IS_ZERO),
+    drv_err_chk_return(inner_drv_is_zero(r_data.data, r_data.length), PKE_COMPAT_ERRNO(ERROR_ECDSA_SIGN_R_IS_ZERO),
         "r is zero\n");
 
     /* check if (r + k) mod n is zero, which means r + k = n. */
     ret = hal_pke_alg_sm2_add_mod(&r_data, &k_data, &s_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_add_mod failed\n");
-    crypto_chk_return(inner_drv_is_zero(s_data.data, s_data.length), PKE_COMPAT_ERRNO(ERROR_ECDSA_SIGN_R_IS_ZERO),
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_add_mod failed\n");
+    drv_err_chk_return(inner_drv_is_zero(s_data.data, s_data.length), PKE_COMPAT_ERRNO(ERROR_ECDSA_SIGN_R_IS_ZERO),
         "r + k = n\n");
 
     /* Step A6. compute s = (((1 + d)^-1) * (k - r * d)) mod n. */
@@ -82,8 +84,8 @@ static int inner_sm2_sign(const drv_pke_data *priv_key, const drv_pke_data *hash
     crypto_pke_dump_data("r", r_data.data, r_data.length);
 
     ret = hal_pke_alg_sm2_compute_s(priv_key, &k_data, &r_data, &s_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_compute_s failed\n");
-    crypto_chk_return(inner_drv_is_zero(s_data.data, s_data.length), PKE_COMPAT_ERRNO(ERROR_ECDSA_SIGN_R_IS_ZERO),
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_compute_s failed\n");
+    drv_err_chk_return(inner_drv_is_zero(s_data.data, s_data.length), PKE_COMPAT_ERRNO(ERROR_ECDSA_SIGN_R_IS_ZERO),
         "s is zero\n");
 
     crypto_pke_dump_data("s", s_data.data, s_data.length);
@@ -111,9 +113,9 @@ int drv_cipher_pke_sm2_sign(const drv_pke_data *priv_key, const drv_pke_data *ha
     pke_null_ptr_chk(sig->s);
 
     /* length check. */
-    crypto_chk_return(priv_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(priv_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "priv_key->length is invalid\n");
-    crypto_chk_return(sig->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(sig->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "sig->length is invalid\n");
 #if defined(CONFIG_PKE_ECC_SECURITY_STRENGTH_CHECK)
     /* increase security strength check. */
@@ -121,7 +123,7 @@ int drv_cipher_pke_sm2_sign(const drv_pke_data *priv_key, const drv_pke_data *ha
 #endif
 
     ret = hal_pke_alg_ecc_init(DRV_PKE_ECC_TYPE_SM2);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
 
     hash_data.data = hash->data;
     hash_data.length = crypto_min(SM2_KEY_SIZE, hash->length);
@@ -133,7 +135,7 @@ int drv_cipher_pke_sm2_sign(const drv_pke_data *priv_key, const drv_pke_data *ha
             continue;
         }
         if (ret != CRYPTO_SUCCESS) {
-            crypto_log_err("inner_sm2_sign failed\n");
+            drv_set_err(ERROR_UNEXPECTED, "logged error");
             goto exit_deinit;
         } else {
             ret = CRYPTO_SUCCESS;

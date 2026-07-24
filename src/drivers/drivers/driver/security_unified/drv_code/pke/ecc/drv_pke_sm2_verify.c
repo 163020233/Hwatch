@@ -6,6 +6,8 @@
 */
 #include "drv_pke_priv.h"
 
+#define FILE_ID FILE_ID_DRV_CODE_PKE_ECC_DRV_PKE_SM2_VERIFY
+
 #define SM2_KEY_SIZE        32
 /*
  * According to <SM2 Elliptic Curve Public Key cryptographic algorithm>
@@ -35,10 +37,10 @@ static int inner_sm2_verify(const drv_pke_ecc_point *pub_key, const drv_pke_data
     const unsigned char *sm2_n = hal_pke_alg_ecc_get_n();
 
     /* Step B1. check if r is in [1, n - 1] */
-    crypto_chk_return(inner_drv_is_in_range(sig->r, sm2_n, SM2_KEY_SIZE) == TD_FALSE,
+    drv_err_chk_return(inner_drv_is_in_range(sig->r, sm2_n, SM2_KEY_SIZE) == TD_FALSE,
         CRYPTO_FAILURE, "sig->r is not in [1, n - 1]!\n");
     /* Step B2. check if s is in [1, n - 1] */
-    crypto_chk_return(inner_drv_is_in_range(sig->s, sm2_n, SM2_KEY_SIZE) == TD_FALSE,
+    drv_err_chk_return(inner_drv_is_in_range(sig->s, sm2_n, SM2_KEY_SIZE) == TD_FALSE,
         CRYPTO_FAILURE, "sig->s is not in [1, n - 1]!\n");
     /* Step B3-B4. compute H(ZA || M), we can skip. */
     /* Step B5. compute t = (r + s) mod n, if t = 0, return failure. */
@@ -47,7 +49,7 @@ static int inner_sm2_verify(const drv_pke_ecc_point *pub_key, const drv_pke_data
     crypto_pke_dump_data("s", s_data.data, s_data.length);
 
     ret = hal_pke_alg_sm2_add_mod(&r_data, &s_data, &t_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_add_mod failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_add_mod failed\n");
 
     crypto_pke_dump_data("t", t_data.data, t_data.length);
     crypto_pke_print("========== End Compute t = (r + s) mod n. ==========\n");
@@ -59,7 +61,7 @@ static int inner_sm2_verify(const drv_pke_ecc_point *pub_key, const drv_pke_data
     crypto_pke_dump_data("P(y)", pub_key->y, pub_key->length);
 
     ret = hal_pke_alg_ecc_compute_x(&s_data, &t_data, pub_key, &x_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_compute_x failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_compute_x failed\n");
 
     crypto_pke_dump_data("X(x)", x_data.data, x_data.length);
     crypto_pke_print("========== End Compute X(x, y) = s * G + t * P. ==========\n");
@@ -69,7 +71,7 @@ static int inner_sm2_verify(const drv_pke_ecc_point *pub_key, const drv_pke_data
     crypto_pke_dump_data("X(x)", x_data.data, x_data.length);
 
     ret = hal_pke_alg_sm2_add_mod(hash, &x_data, &t_data);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_add_mod failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_sm2_add_mod failed\n");
 
     crypto_pke_dump_data("r", t_data.data, t_data.length);
     crypto_pke_print("========== End Compute r = (e + x) mod n. ==========\n");
@@ -77,7 +79,8 @@ static int inner_sm2_verify(const drv_pke_ecc_point *pub_key, const drv_pke_data
         return CRYPTO_SUCCESS;
     }
 
-    crypto_log_err("compute r is invalid!\n");
+
+    drv_set_err(CRYPTO_FAILURE, "direct error return");
     return CRYPTO_FAILURE;
 }
 
@@ -99,21 +102,21 @@ int drv_cipher_pke_sm2_verify(const drv_pke_ecc_point *pub_key,
     pke_null_ptr_chk(sig->s);
 
     /* length check. */
-    crypto_chk_return(pub_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(pub_key->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "pub_key->length is invalid\n");
-    crypto_chk_return(sig->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
+    drv_err_chk_return(sig->length != klen, PKE_COMPAT_ERRNO(ERROR_INVALID_PARAM),
         "sig->length is invalid\n");
 #if defined(CONFIG_PKE_ECC_SECURITY_STRENGTH_CHECK)
     /* increase security strength check. */
     drv_crypto_pke_check_param(hash->length < klen);
 #endif
     ret = hal_pke_alg_ecc_init(DRV_PKE_ECC_TYPE_SM2);
-    crypto_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
+    drv_err_chk_return(ret != CRYPTO_SUCCESS, ret, "hal_pke_alg_ecc_init failed\n");
 
     hash_data.data = hash->data;
     hash_data.length = crypto_min(SM2_KEY_SIZE, hash->length);
     ret = inner_sm2_verify(pub_key, &hash_data, sig);
-    crypto_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_sm2_verify failed\n");
+    drv_err_chk_goto(ret != CRYPTO_SUCCESS, exit_deinit, "inner_sm2_verify failed\n");
 
 exit_deinit:
     hal_pke_alg_ecc_deinit();

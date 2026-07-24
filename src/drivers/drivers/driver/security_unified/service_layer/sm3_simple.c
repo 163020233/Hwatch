@@ -10,15 +10,17 @@
 #include "crypto_drv_common.h"
 #include "security_hash.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_SM3_SIMPLE
+
 #ifdef CONFIG_HASH_SUPPORT_SM3
 errcode_t uapi_drv_cipher_sm3_start(hash_handle_t *ctx)
 {
     int32_t ret;
     crypto_service_preprocess(HASH_MODULE_ID);
     ret = drv_cipher_hash_compute_setup((void **)ctx);
-    crypto_chk_goto(ret != ERRCODE_SUCC, exit_post_process, "hash setup failed\r\n");
+    drv_err_chk_goto(ret != ERRCODE_SUCC, exit_post_process, "hash setup failed\r\n");
     ret = drv_cipher_hash_compute_start((void *)(*ctx), CRYPTO_HASH_TYPE_SM3);
-    crypto_chk_goto(ret != ERRCODE_SUCC, exit_free, "hash start failed!\r\n");
+    drv_err_chk_goto(ret != ERRCODE_SUCC, exit_free, "hash start failed!\r\n");
     return crypto_sl_common_get_errcode(ret);
 
 exit_free:

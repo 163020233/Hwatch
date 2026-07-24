@@ -9,6 +9,8 @@
 #include "crypto_drv_common.h"
 #include "crypto_drv_init.h"
 
+#define FILE_ID FILE_ID_SERVICE_LAYER_SECURITY_INIT
+
 void __attribute__((weak)) uapi_drv_cipher_env_init(void)
 {
     crypto_drv_mod_init();

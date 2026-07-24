@@ -8,13 +8,15 @@
 #include "hal_fapc_reg.h"
 #include "crypto_drv_common.h"
 
+#define FILE_ID FILE_ID_HAL_CODE_FAPC_HAL_FAPC
+
 #define clr_region_val(reg, region)                   (reg) &= ~(0x03U << ((region) * 2U))
 #define set_region_val(reg, region, val)              (reg) |= ((val) & 0x03U) << ((region) * 2U)
 
 td_s32 hal_fapc_set_region_addr(td_u32 region, td_u32 start_addr, td_u32 end_addr)
 {
     crypto_hal_func_enter();
-    crypto_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
+    drv_err_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
     /* need to check address */
     fapc_reg_write(FAPC_CFG_START_ADDR(region), start_addr);
     fapc_reg_write(FAPC_CFG_END_ADDR(region), end_addr);
@@ -25,7 +27,7 @@ td_s32 hal_fapc_set_region_addr(td_u32 region, td_u32 start_addr, td_u32 end_add
 td_s32 hal_fapc_set_region_permission(td_u32 region, td_u32 read_mid, td_u32 write_mid)
 {
     crypto_hal_func_enter();
-    crypto_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
+    drv_err_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
 
     fapc_reg_write(FAPC_CFG_ALLOW_RD_ID(region), read_mid);
     fapc_reg_write(FAPC_CFG_ALLOW_WR_ID(region), write_mid);
@@ -48,7 +50,7 @@ td_s32 hal_fapc_set_region_mode(td_u32 region, crypto_fapc_region_mode region_mo
     td_u32 region_mode_reg_value = 0;
     td_u32 mode_cfg = 0;
     crypto_hal_func_enter();
-    crypto_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
+    drv_err_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
 
     switch (region_mode) {
         case CRYPTO_FAPC_REGION_MODE_NORMAL:
@@ -58,7 +60,8 @@ td_s32 hal_fapc_set_region_mode(td_u32 region, crypto_fapc_region_mode region_mo
             region_mode_reg_value = FAPC_REGION_MODE_DEC_VAL;
             break;
         default:
-            crypto_log_err("Invalid region_mode\n");
+
+            drv_set_err(TD_FAILURE, "direct error return");
             return TD_FAILURE;
     }
 
@@ -74,7 +77,7 @@ td_s32 hal_fapc_set_region_mode(td_u32 region, crypto_fapc_region_mode region_mo
 td_s32 hal_fapc_region_enable(td_u32 region, td_bool enable)
 {
     crypto_hal_func_enter();
-    crypto_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
+    drv_err_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
 
     if (enable == TD_FALSE) {
         fapc_reg_write(FAPC_CFG_APC_EN(region), 0xA);
@@ -89,7 +92,7 @@ td_s32 hal_fapc_region_lock(td_u32 region)
 {
     td_u32 lock_cfg = 0;
     crypto_hal_func_enter();
-    crypto_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
+    drv_err_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
 
     lock_cfg = fapc_reg_read(FAPC_ONE_WAY_LOCK);
     lock_cfg |= 1 << region;
@@ -105,15 +108,16 @@ td_s32 hal_fapc_set_region_iv(crypto_fapc_iv_type iv_type, const td_u8 *iv, td_u
     td_u32 i;
     uint32_t base_addr;
     crypto_hal_func_enter();
-    crypto_chk_return(iv == TD_NULL, TD_FAILURE, "iv is NULL\n");
-    crypto_chk_return(iv_length != CRYPTO_IV_LEN_IN_BYTES, TD_FAILURE, "invalid iv_length\n");
+    drv_err_chk_return(iv == TD_NULL, TD_FAILURE, "iv is NULL\n");
+    drv_err_chk_return(iv_length != CRYPTO_IV_LEN_IN_BYTES, TD_FAILURE, "invalid iv_length\n");
 
     if (iv_type == CRYPTO_FAPC_IV_TYPE_ACPU) {
         base_addr = FAPC_ACORE_IV_BASE_ADDR;
     } else if (iv_type == CRYPTO_FAPC_IV_TYPE_TEE) {
         base_addr = FAPC_SCORE_IV_BASE_ADDR;
     } else {
-        crypto_log_err("invalid iv_type!\n");
+
+        drv_set_err(ERROR_INVALID_PARAM, "direct error return");
         return ERROR_INVALID_PARAM;
     }
 
@@ -132,7 +136,7 @@ td_s32 hal_fapc_set_region_iv(crypto_fapc_iv_type iv_type, const td_u8 *iv, td_u
 td_s32 hal_fapc_set_region_iv_start_addr(td_u32 region, td_u32 start_addr)
 {
     crypto_hal_func_enter();
-    crypto_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
+    drv_err_chk_return(region >= FAPC_REGION_NUM, TD_FAILURE, "invalid region\n");
 
     fapc_reg_write(FAPC_IV_ACPU_START_ADDR(region), start_addr);
     crypto_hal_func_exit();
@@ -143,7 +147,7 @@ td_s32 hal_fapc_set_cmd_lut0(td_u32 num, td_u32 allow_ids, td_u32 lut0_ins)
 {
     fapc_cmd_lut0_reg_t cmd_lut0 = {0};
     crypto_hal_func_enter();
-    crypto_chk_return(num >= MAX_CMD_LUT0_NUM, TD_FAILURE, "invalid lut0 num\n");
+    drv_err_chk_return(num >= MAX_CMD_LUT0_NUM, TD_FAILURE, "invalid lut0 num\n");
 
     cmd_lut0.bits.cmd_lut0_allow_ids = allow_ids;
     cmd_lut0.bits.cmd_lut0_ins = lut0_ins;
@@ -157,7 +161,7 @@ td_s32 hal_fapc_set_cmd_lut0_enable(td_u32 num, td_bool enable)
 {
     fapc_cmd_lut_en_reg_t cmd_lut_en;
     crypto_hal_func_enter();
-    crypto_chk_return(num >= MAX_CMD_LUT0_NUM, TD_FAILURE, "invalid lut0 num\n");
+    drv_err_chk_return(num >= MAX_CMD_LUT0_NUM, TD_FAILURE, "invalid lut0 num\n");
 
     cmd_lut_en.u32 = fapc_reg_read(FAPC_CMD_LUT_EN);
     if (enable) {
@@ -177,7 +181,7 @@ td_s32 hal_fapc_set_cmd_lut1(td_u32 num, td_u32 flash_size, td_u32 lut1_ins, td_
     td_u32 lut1_rw;
 
     crypto_hal_func_enter();
-    crypto_chk_return(num >= MAX_CMD_LUT1_NUM, TD_FAILURE, "invalid lut1 num\n");
+    drv_err_chk_return(num >= MAX_CMD_LUT1_NUM, TD_FAILURE, "invalid lut1 num\n");
 
     cmd_lut1.bits.cmd_lut1_len = flash_size;
     cmd_lut1.bits.cmd_lut1_ins = lut1_ins;
@@ -200,7 +204,7 @@ td_s32 hal_fapc_set_cmd_lut1_enable(td_u32 num, td_bool enable)
     fapc_cmd_lut_en_reg_t cmd_lut_en;
 
     crypto_hal_func_enter();
-    crypto_chk_return(num >= MAX_CMD_LUT1_NUM, TD_FAILURE, "invalid lut1 num\n");
+    drv_err_chk_return(num >= MAX_CMD_LUT1_NUM, TD_FAILURE, "invalid lut1 num\n");
 
     cmd_lut_en.u32 = fapc_reg_read(FAPC_CMD_LUT_EN);
     if (enable) {
