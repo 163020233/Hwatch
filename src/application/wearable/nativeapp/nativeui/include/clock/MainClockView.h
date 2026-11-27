@@ -29,6 +29,10 @@
 #include "sys/time.h"
 #include "common/periodicupdate_interface.h"
 
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+#include "main/dial/ParticleDialView.h"
+#endif
+
 namespace OHOS {
 class MainClockView : public UICardPage, public PeriodicUpdateInterface {
 public:
@@ -44,6 +48,9 @@ public:
     void RefreshHeartRate(int value);
     void ClockAnimatorStart(void);
     void ClockAnimatorStop(void);
+    void OnActive(void) override;
+    void OnInactive(void) override;
+    void OnPause(void) override;
     void Update(void) override;
     uint32_t GetPeriod(void) override
     {
@@ -63,6 +70,9 @@ private:
     void ClearFirstGroupComponents();
     void ClearSecondGroupComponents();
     void ClearThirdGroupComponents();
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+    bool InitParticleView(void);
+#endif
     UIImageView *curFace{nullptr};
     UILabelButton *stepLabel{nullptr};
     UILabel *batteryLabel{nullptr};
@@ -80,6 +90,9 @@ private:
     Image *medCircle{nullptr};
     Image *smallCircle{nullptr};
     bool viewiInitStatus{false};
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+    ParticleDialView *particleView_{nullptr};
+#endif
 };
 } // namespace OHOS
 #endif // MAIN_CLOCK_VIEW_H

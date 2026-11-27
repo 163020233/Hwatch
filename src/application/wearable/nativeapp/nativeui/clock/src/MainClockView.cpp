@@ -154,6 +154,16 @@ void MainClockView::ClearThirdGroupComponents()
 MainClockView::~MainClockView()
 {
     WEARABLE_LOGD(WEARABLE_LOG_MODULE_APP, "MainClockView::~MainClockView");
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+    if (particleView_ != nullptr) {
+        particleView_->Stop();
+        if (mainSweepClock != nullptr) {
+            mainSweepClock->Remove(particleView_);
+        }
+        delete particleView_;
+        particleView_ = nullptr;
+    }
+#endif
     ClearMainClockComponents();
     ClearFirstGroupComponents();
     ClearSecondGroupComponents();
@@ -390,6 +400,18 @@ bool MainClockView::InitSweepClock(void)
     return true;
 }
 
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+bool MainClockView::InitParticleView(void)
+{
+    particleView_ = new ParticleDialView();
+    if (particleView_ == nullptr) {
+        WEARABLE_LOGE(WEARABLE_LOG_MODULE_APP, "particleView new fail");
+        return false;
+    }
+    return true;
+}
+#endif
+
 void MainClockView::PreLoad(void)
 {
     if (!viewiInitStatus) {
@@ -415,8 +437,16 @@ bool MainClockView::InitView(void)
     if (!InitSweepClock()) {
         return false;
     }
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+    if (!InitParticleView()) {
+        return false;
+    }
+#endif
 
     mainSweepClock->Add(curFace);
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+    mainSweepClock->Add(particleView_);
+#endif
     mainSweepClock->Add(stepLabel);
     mainSweepClock->Add(heartRate);
     mainSweepClock->Add(weekLabel);
@@ -448,6 +478,37 @@ bool MainClockView::InitView(void)
     InitDateTime();
     SetCoverable(true);
     return true;
+}
+
+void MainClockView::OnActive(void)
+{
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+    if (particleView_ != nullptr) {
+        if (particleView_->GetState() == Animator::STOP) {
+            particleView_->Start();
+        } else if (particleView_->GetState() == Animator::PAUSE) {
+            particleView_->Resume();
+        }
+    }
+#endif
+}
+
+void MainClockView::OnInactive(void)
+{
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+    if (particleView_ != nullptr) {
+        particleView_->Pause();
+    }
+#endif
+}
+
+void MainClockView::OnPause(void)
+{
+#if ENABLE_VGU_ENGINE && CAPABILITY_HWDRAW_PATH
+    if (particleView_ != nullptr) {
+        particleView_->Stop();
+    }
+#endif
 }
 
 void MainClockView::RefreshStep(int step)
